@@ -1,0 +1,14 @@
+# Google & AI APIs
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+google-genai
+python-dotenv
+
+# Data & UI
+streamlit
+pandas
+
+# Reporting
+gspread
+python-docx
