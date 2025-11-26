@@ -4,22 +4,40 @@ from google import genai
 from google.genai.errors import APIError
 from dotenv import load_dotenv
 
+
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 AI_CLIENT = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 
 
-def generate_questions_for_level(level_name, question_type, num_questions=2):
+def generate_questions_for_level(level_name, question_type, num_questions=3):
     """Generates structured JSON questions using the Gemini API."""
     if not AI_CLIENT:
-        print("Gemini API key not found. Returning mock data.")
-        return []
+        print("Warning: Gemini API key not found. Returning mock data.")
+        return [
+            {"title": f"Candidate Full Name", "type": "TEXT"},
+            {"title": f"What is the time complexity of Bubble Sort? ({level_name})", "type": "TEXT"}
+        ]
 
     prompt = f"""
-    Generate {num_questions} unique, short {question_type} questions for a Level {level_name} software engineering interview.
-    Format the output STRICTLY as a JSON array of dictionaries with 'title' and 'type' keys.
-    Use 'type': 'TEXT' for open answers, and 'type': 'CHOICE' for MCQs.
-    If 'type' is 'CHOICE', include an 'options' array.
+    Generate {num_questions} unique, short, relevant questions for a Level {level_name} interview focusing on {question_type}.
+
+    For coding/essay questions (L4/L5), use 'type': 'TEXT'.
+    For L2 (MCQs), use 'type': 'CHOICE' and include an 'options' array with 4 choices.
+
+    Format the output STRICTLY as a JSON array of dictionaries.
+
+    Example for TEXT:
+    [
+        {{"title": "Explain the difference between a process and a thread.", "type": "TEXT"}}
+    ]
+
+    Example for CHOICE (MCQ):
+    [
+        {{"title": "Which data structure is typically used to implement a recursive function call stack?", 
+          "type": "CHOICE", 
+          "options": ["Queue", "Heap", "Stack", "Array"]}}
+    ]
     """
 
     try:
@@ -28,8 +46,10 @@ def generate_questions_for_level(level_name, question_type, num_questions=2):
             contents=prompt
         )
 
-        # Robust parsing to remove markdown fences if present
-        json_text = response.text.strip().replace('```json', '').replace('```', '')
+        json_text = response.text.strip()
+        if json_text.startswith('```json'):
+            json_text = json_text.strip('```json').strip('```')
+
         return json.loads(json_text)
 
     except APIError as e:

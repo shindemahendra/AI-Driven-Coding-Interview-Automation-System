@@ -1,3 +1,7 @@
+# Google Credentials
+credentials.json
+service_account.json
+token.pickle
 venv/
 __pycache__/
 .env

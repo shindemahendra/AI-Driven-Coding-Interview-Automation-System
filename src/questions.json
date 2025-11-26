@@ -1,0 +1,748 @@
+{
+    "candidate": {
+        "name": "Ravi Kiran Reddy",
+        "email": "rk@gmail.com",
+        "uid": "rreddy",
+        "difficulty": "easy"
+    },
+    "L1": [
+        {
+            "question": "A clock loses 5 minutes per hour. If it is set correctly at noon, what time will it show after 6 hours?",
+            "options": [
+                "5:30 PM",
+                "6:30 PM",
+                "5:00 PM",
+                "6:00 PM"
+            ],
+            "correct_answer": "A",
+            "topic": "L1",
+            "difficulty": "medium"
+        },
+        {
+            "question": "If all Bloops are Floops, and some Floops are Gloops, then which of the following must be true?",
+            "options": [
+                "All Bloops are Gloops",
+                "Some Bloops are Gloops",
+                "Some Gloops are Bloops",
+                "None of the above"
+            ],
+            "correct_answer": "None of the above",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Given the sequence: 1, 11, 21, 1211, 111221, what is the next number?",
+            "options": [
+                "312211",
+                "211213",
+                "132211",
+                "222131"
+            ],
+            "correct_answer": "312211",
+            "topic": "L1",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Four friends are sitting in a circle. A is to the left of B, and C is to the right of B. Who is sitting to the left of C?",
+            "options": [
+                "A",
+                "B",
+                "D",
+                "Cannot be determined"
+            ],
+            "correct_answer": "D",
+            "topic": "L1",
+            "difficulty": "medium"
+        },
+        {
+            "question": "If A > B and B > C, which of the following is not necessarily true?",
+            "options": [
+                "A > C",
+                "C < A",
+                "B < A",
+                "C > B"
+            ],
+            "correct_answer": "D",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of: print(type([1, 2, 3]))?",
+            "options": [
+                "list",
+                "array",
+                "tuple",
+                "int"
+            ],
+            "correct_answer": "list",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "You have three boxes. One contains only apples, one contains only oranges, and one contains both apples and oranges. The boxes have been incorrectly labeled such that no label identifies the actual contents of the box it describes. By opening just one box, and without looking into the box, you take out one piece of fruit. By looking at the fruit, how can you immediately label all of the boxes correctly?",
+            "options": [
+                "Open the box labelled 'apples'.",
+                "Open the box labelled 'oranges'.",
+                "Open the box labelled 'apples and oranges'.",
+                "It is impossible to label all boxes correctly with just one piece of fruit."
+            ],
+            "correct_answer": "C",
+            "topic": "L1",
+            "difficulty": "hard"
+        },
+        {
+            "question": "A man is looking at a photograph. Someone asks him, \"Who are you looking at?\" He replies, \"Brothers and sisters, I have none, but that man's father is my father's son.\" Who is the man in the photograph?",
+            "options": [
+                "His son",
+                "His father",
+                "His brother",
+                "Himself"
+            ],
+            "correct_answer": "His son",
+            "topic": "L1",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A critical production bug is identified. Multiple teams are potentially involved. What is the first step you should take?",
+            "options": [
+                "Immediately start debugging the code you wrote.",
+                "Blame the other teams for the bug.",
+                "Escalate the issue to your manager without investigating.",
+                "Gather relevant information, assess the impact, and initiate a collaborative troubleshooting effort with the involved teams."
+            ],
+            "correct_answer": "Gather relevant information, assess the impact, and initiate a collaborative troubleshooting effort with the involved teams.",
+            "topic": "L5",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A farmer has 17 sheep, all but nine died. How many sheep does the farmer have left?",
+            "options": [
+                "8",
+                "9",
+                "10",
+                "17"
+            ],
+            "correct_answer": "9",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "There are 5 houses in a row. A is to the right of B, C is to the left of A, E is to the left of B, and A is to the left of D. Which house is in the middle?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_answer": "A",
+            "topic": "L1",
+            "difficulty": "medium"
+        },
+        {
+            "question": "You have two hourglasses, one measures 7 minutes, the other measures 11 minutes. How can you measure exactly 15 minutes?",
+            "options": [
+                "Start both hourglasses. When the 7-minute hourglass runs out, immediately flip it. When the 11-minute hourglass runs out, flip the 7-minute hourglass again to measure another 4 minutes.",
+                "Start both hourglasses. When the 7-minute hourglass runs out, immediately flip it. When the 11-minute hourglass runs out, there are 4 minutes left in the 7-minute hourglass. Flip it when it runs out again (7 more minutes) to get 11 minutes.",
+                "Start both hourglasses simultaneously. When the 7-minute hourglass finishes, immediately flip it over. After the 11-minute hourglass runs out, there are 4 minutes remaining in the flipped 7-minute hourglass. Flip the 7-minute hourglass again when it runs out (7 mins). Finally, immediately flip the 7-minute hourglass when the 7 minutes run out.",
+                "Start both hourglasses simultaneously. When the 7-minute hourglass finishes, immediately flip it over. After the 11-minute hourglass runs out, there are 4 minutes remaining in the flipped 7-minute hourglass. Let it run and flip it immediately (4 minutes), then when it finishes flip the 11-minute hourglass and when 4 minutes run out there are 7 minutes left which totals 15"
+            ],
+            "correct_answer": "B",
+            "topic": "L1",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Which of the following code snippets will result in printing 'Hello'?",
+            "options": [
+                "if True: print('Hello')",
+                "if False: print('Hello')",
+                "if None: print('Hello')",
+                "if 0: print('Hello')"
+            ],
+            "correct_answer": "if True: print('Hello')",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What number comes next in the sequence: 2, 6, 12, 20, ?",
+            "options": [
+                "28",
+                "30",
+                "24",
+                "32"
+            ],
+            "correct_answer": "30",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is an anagram of 'LISTEN'?",
+            "options": [
+                "SILENT",
+                "SNILTE",
+                "LITENS",
+                "LINSTE"
+            ],
+            "correct_answer": "SILENT",
+            "topic": "L1",
+            "difficulty": "easy"
+        }
+    ],
+    "L2": [
+        {
+            "question": "What is the primary purpose of the `__init__` method in a Python class?",
+            "options": [
+                "To destroy an object.",
+                "To define class-level attributes.",
+                "To initialize the object's attributes.",
+                "To call the parent class constructor."
+            ],
+            "correct_answer": "C",
+            "topic": "OOP",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following is the correct way to implement inheritance in Python?",
+            "options": [
+                "A) class Child = Parent:",
+                "B) class Child inherits Parent:",
+                "C) class Child(Parent):",
+                "D) class Child extends Parent:"
+            ],
+            "correct_answer": "C",
+            "topic": "OOP",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What does the `yield` keyword do in Python?",
+            "options": [
+                "A: Returns a value and terminates the function",
+                "B: Returns a value and suspends function execution",
+                "C: Defines a class method",
+                "D: Catches exceptions"
+            ],
+            "correct_answer": "B",
+            "topic": "Generators",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the time complexity of accessing an element in a dictionary by key?",
+            "options": [
+                "A) O(n)",
+                "B) O(log n)",
+                "C) O(1)",
+                "D) O(n log n)"
+            ],
+            "correct_answer": "C",
+            "topic": "Data Structures",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following is the primary advantage of using multiprocessing over multithreading in Python for CPU-bound tasks?",
+            "options": [
+                "A) Reduced memory consumption",
+                "B) Overcoming the Global Interpreter Lock (GIL)",
+                "C) Simplified synchronization",
+                "D) Automatic scalability"
+            ],
+            "correct_answer": "B",
+            "topic": "Concurrency",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What will `print('hello'.upper())` output?",
+            "options": [
+                "A: Hello",
+                "B: hello",
+                "C: HELLO",
+                "D: hELLo"
+            ],
+            "correct_answer": "C",
+            "topic": "String Methods",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which data structure is most suitable for implementing a priority queue?",
+            "options": [
+                "A. List",
+                "B. Stack",
+                "C. Heap",
+                "D. Queue"
+            ],
+            "correct_answer": "C",
+            "topic": "Data Structures",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the purpose of try-except blocks in Python?",
+            "options": [
+                "A) To define functions",
+                "B) To handle exceptions",
+                "C) To import modules",
+                "D) To create loops"
+            ],
+            "correct_answer": "B",
+            "topic": "Exception Handling",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is a metaclass in Python?",
+            "options": [
+                "A. A class that inherits from all other classes",
+                "B. A class that is used to create other classes",
+                "C. A class that automatically manages memory",
+                "D. A class that can only be used within other classes"
+            ],
+            "correct_answer": "B",
+            "topic": "OOP",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is the primary benefit of using virtual environments in Python?",
+            "options": [
+                "A: To improve code execution speed.",
+                "B: To isolate project dependencies.",
+                "C: To reduce memory usage.",
+                "D: To simplify debugging."
+            ],
+            "correct_answer": "B: To isolate project dependencies.",
+            "topic": "Environment Management",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+            "options": [
+                "To define class-level variables.",
+                "To prevent attribute assignment.",
+                "To reduce memory usage by pre-declaring instance attributes.",
+                "To enable multiple inheritance."
+            ],
+            "correct_answer": "C",
+            "topic": "Memory Optimization",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is a metaclass in Python?",
+            "options": [
+                "A: A subclass of all classes.",
+                "B: A class that defines how other classes are created.",
+                "C: A function that decorates classes.",
+                "D: A class used for exception handling."
+            ],
+            "correct_answer": "B: A class that defines how other classes are created.",
+            "topic": "Metaclasses",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is the purpose of `__init__` method in a Python class?",
+            "options": [
+                "A: To define the class",
+                "B: To initialize the object's attributes",
+                "C: To destroy the object",
+                "D: To call other methods"
+            ],
+            "correct_answer": "B: To initialize the object's attributes",
+            "topic": "Object-Oriented Programming",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is a metaclass in Python?",
+            "options": [
+                "A) A class that inherits from multiple classes",
+                "B) A class that creates other classes",
+                "C) A class that defines abstract methods",
+                "D) A class that is automatically garbage collected"
+            ],
+            "correct_answer": "B",
+            "topic": "Metaclasses",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is the difference between `multiprocessing` and `threading` in Python?",
+            "options": [
+                "A. `multiprocessing` uses threads, while `threading` uses processes",
+                "B. `multiprocessing` bypasses the GIL, while `threading` is limited by it",
+                "C. They are interchangeable and offer the same functionality",
+                "D. `threading` is faster than `multiprocessing`"
+            ],
+            "correct_answer": "B",
+            "topic": "Concurrency",
+            "difficulty": "hard"
+        }
+    ],
+    "L3": [
+        {
+            "question": "The following code attempts to find the maximum value in a list, but fails. What is the likely error? `def find_max(data): max_val = 0; for x in data: if x > max_val: max_val = x; return max_val`",
+            "options": [
+                "The list is empty.",
+                "The list contains only negative numbers.",
+                "The list contains strings.",
+                "The list is not sorted."
+            ],
+            "correct_answer": "The list contains only negative numbers.",
+            "topic": "Initialization Error",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What's the bug in this code?\n```python\ndef update_dictionary(data, key, value):\n    data[key].append(value)\n\nmy_dict = {'a': [1, 2], 'b': [3, 4]}\nupdate_dictionary(my_dict, 'c', 5)\nprint(my_dict)\n```",
+            "options": [
+                "KeyError",
+                "TypeError",
+                "IndexError",
+                "ValueError"
+            ],
+            "correct_answer": "KeyError",
+            "topic": "L3",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the likely issue with the following code that aims to calculate the average of a list? `def average(numbers): total = 0; for number in numbers: total += 1; return total / len(numbers)`",
+            "options": [
+                "It calculates the sum incorrectly.",
+                "It divides by zero.",
+                "It iterates incorrectly.",
+                "It initializes the total incorrectly."
+            ],
+            "correct_answer": "It calculates the sum incorrectly.",
+            "topic": "Arithmetic Error",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Consider the following buggy code:\n\nnumbers = [1, 2, 3, 4, 5]\n\nfor i in range(len(numbers)):\n    if numbers[i] % 2 == 0:\n        numbers.remove(numbers[i])\n\nprint(numbers)",
+            "options": [
+                "[1, 3, 5]",
+                "[1, 2, 3, 4, 5]",
+                "[1, 3]",
+                "[1, 2, 3]"
+            ],
+            "correct_answer": "A",
+            "topic": "Debugging",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the potential issue with this generator: `def my_generator(): for i in range(5): yield i; yield from my_generator()`",
+            "options": [
+                "It will raise a StopIteration exception immediately.",
+                "It will produce an infinite sequence.",
+                "It will only yield the first 5 numbers.",
+                "It has a syntax error."
+            ],
+            "correct_answer": "It will produce an infinite sequence.",
+            "topic": "Generator Misuse",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Given a file 'data.txt' doesn't exist, what error will this code raise? `with open('data.txt', 'r') as f: print(f.read())`",
+            "options": [
+                "ValueError",
+                "TypeError",
+                "FileNotFoundError",
+                "IOError"
+            ],
+            "correct_answer": "FileNotFoundError",
+            "topic": "File Handling",
+            "difficulty": "easy"
+        },
+        {
+            "question": "The following code results in an infinite loop. Where is the bug?\n```python\ni = 0\nwhile i < 10:\n print(i)```",
+            "options": [
+                "Missing increment of `i`",
+                "Incorrect loop condition",
+                "Missing `break` statement",
+                "Incorrect print statement"
+            ],
+            "correct_answer": "A",
+            "topic": "Debugging",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is wrong with this code snippet designed to remove duplicates? `def remove_duplicates(lst): for i in lst: if lst.count(i) > 1: lst.remove(i); return lst`",
+            "options": [
+                "It does not remove duplicates.",
+                "It modifies the list while iterating.",
+                "It has a syntax error.",
+                "It's inefficient but correct."
+            ],
+            "correct_answer": "It modifies the list while iterating.",
+            "topic": "Iteration Bug",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the most likely consequence of incorrectly handling signals (e.g., SIGINT, SIGTERM) in a long-running Python process?",
+            "options": [
+                "The process will consume excessive CPU resources",
+                "The process will be unable to shut down gracefully",
+                "The process will experience a memory leak",
+                "The process will corrupt data"
+            ],
+            "correct_answer": "B",
+            "topic": "Debugging",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Find the error in the following:\n```python\ndef remove_duplicates(data):\n    unique_data = []\n    for item in data:\n        if item not in unique_data:\n            unique_data.append(item)\n    return data\n\ndata = [1, 2, 2, 3, 4, 4, 5]\nresult = remove_duplicates(data)\nprint(result)\n```",
+            "options": [
+                "Doesn't remove duplicates",
+                "Incorrect comparison",
+                "Memory leak",
+                "Causes infinite loop"
+            ],
+            "correct_answer": "Doesn't remove duplicates",
+            "topic": "L3",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Given the following code snippet involving generators:\n\ndef my_generator():\n    i = 0\n    while True:\n        yield i\n        i += 1\n\ngen = my_generator()\nfor i in range(3):\n    print(next(gen))\n\nWhat potential issue might arise if the generator `gen` is used extensively in a multi-threaded environment?",
+            "options": [
+                "The generator will exhaust its values",
+                "The generator object is inherently thread-safe",
+                "Race conditions might occur due to the generator's state being shared",
+                "Memory leaks might occur due to the generator's persistent state"
+            ],
+            "correct_answer": "C",
+            "topic": "Debugging",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Identify the memory leak issue in the following code:\n```python\nimport weakref\n\nclass MyObject:\n    pass\n\nobj = MyObject()\ncache = {}\ncache['object'] = obj\ndel obj\nprint(cache)\n```",
+            "options": [
+                "No memory leak",
+                "Circular reference not resolved",
+                "Weak reference not used",
+                "Global scope problem"
+            ],
+            "correct_answer": "No memory leak",
+            "topic": "L3",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Consider the following code snippet with a metaclass:\n```python\nclass Meta(type):\n def __new__(mcs, name, bases, attrs):\n attrs['attribute'] = 'default'\n return super().__new__(mcs, name, bases, attrs)\n\nclass MyClass(metaclass=Meta):\n pass\n\ninstance = MyClass()\nprint(instance.attribute)```\nIf the `__new__` method in the metaclass raises an exception, what is the likely consequence?",
+            "options": [
+                "The `MyClass` class will not be created",
+                "The `MyClass` class will be created without the 'attribute' attribute",
+                "A warning will be issued, but the class will still be created",
+                "The `instance` object will not be created"
+            ],
+            "correct_answer": "A",
+            "topic": "Debugging",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is the problem with this code snippet?\n```python\ndef process_data(data):\n results = {}\n for i in range(len(data)):\n results[i] = data[i] ** 2\n return results```\nAssuming `data` can be a large list.",
+            "options": [
+                "No error, it works correctly",
+                "Doesn't handle potential exceptions",
+                "Can be improved using list comprehension for efficiency",
+                "It's using more memory than necessary. Consider a generator."
+            ],
+            "correct_answer": "D",
+            "topic": "Debugging",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A function uses a nonlocal variable, but the variable isn't defined in the enclosing scope. What error occurs?",
+            "options": [
+                "NameError",
+                "SyntaxError",
+                "UnboundLocalError",
+                "ValueError"
+            ],
+            "correct_answer": "B",
+            "topic": "Debugging",
+            "difficulty": "medium"
+        }
+    ],
+    "L5": [
+        {
+            "question": "What's the MOST important thing to consider when writing documentation?",
+            "options": [
+                "A. Making it look aesthetically pleasing.",
+                "B. Ensuring it is accurate, clear, and easy to understand for the intended audience.",
+                "C. Using technical jargon to impress other developers.",
+                "D. Focusing on documenting every single line of code."
+            ],
+            "correct_answer": "B",
+            "topic": "Documentation",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Your team is adopting a new technology, and some team members are resistant to change. How can you encourage adoption?",
+            "options": [
+                "A. Force everyone to use the new technology without providing training or support.",
+                "B. Ignore their concerns and proceed with the rollout.",
+                "C. Acknowledge their concerns, provide comprehensive training and support, highlight the benefits of the new technology, and encourage experimentation and feedback.",
+                "D. Threaten to fire anyone who doesn't embrace the new technology."
+            ],
+            "correct_answer": "C",
+            "topic": "Soft Skills",
+            "difficulty": "hard"
+        },
+        {
+            "question": "A critical system is experiencing a major outage, and multiple teams are involved in troubleshooting. How do you ensure effective communication and coordination?",
+            "options": [
+                "A. Allow each team to work independently without communication to avoid interference.",
+                "B. Designate a single point of contact to collect and disseminate information, and establish a clear communication channel.",
+                "C. Rely on email updates, which may be delayed.",
+                "D. Blame the team responsible for the initial failure."
+            ],
+            "correct_answer": "B",
+            "topic": "Soft Skills",
+            "difficulty": "hard"
+        },
+        {
+            "question": "You are presenting a technical proposal to a non-technical audience. What is the MOST important consideration?",
+            "options": [
+                "A. Using highly technical jargon to demonstrate your expertise.",
+                "B. Focusing on the technical details of the solution.",
+                "C. Explaining the proposal in a clear, concise, and accessible manner, focusing on the business value.",
+                "D. Avoiding any visuals or diagrams to keep the presentation simple."
+            ],
+            "correct_answer": "C",
+            "topic": "Communication",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the best way to provide feedback to a coworker?",
+            "options": [
+                "A. Publicly criticize their work to motivate them.",
+                "B. Save all feedback for annual performance reviews.",
+                "C. Provide specific, timely, and actionable feedback in private.",
+                "D. Only give positive feedback to avoid hurting their feelings."
+            ],
+            "correct_answer": "C",
+            "topic": "Soft Skills",
+            "difficulty": "easy"
+        },
+        {
+            "question": "A cross-functional team is consistently missing deadlines. What's the BEST approach to understand the problem?",
+            "options": [
+                "A. Blame the other team for their incompetence.",
+                "B. Schedule a blame-free retrospective to identify root causes and improve collaboration.",
+                "C. Ignore the issue since it's not your direct responsibility.",
+                "D. Publicly shame the other team in a meeting."
+            ],
+            "correct_answer": "B",
+            "topic": "Soft Skills",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A junior team member consistently misses deadlines. How should you initially address this?",
+            "options": [
+                "A. Publicly reprimand them during a team meeting.",
+                "B. Ignore it and hope they improve.",
+                "C. Schedule a private conversation to understand the challenges and offer support.",
+                "D. Immediately escalate the issue to management."
+            ],
+            "correct_answer": "C",
+            "topic": "Soft Skills",
+            "difficulty": "easy"
+        },
+        {
+            "question": "You notice a colleague taking credit for your work. What's the best course of action?",
+            "options": [
+                "A. Publicly confront them in front of the team.",
+                "B. Ignore it to avoid conflict.",
+                "C. Privately discuss the situation with your colleague and clarify the contributions.",
+                "D. Immediately report them to HR without any discussion."
+            ],
+            "correct_answer": "C",
+            "topic": "Soft Skills",
+            "difficulty": "medium"
+        },
+        {
+            "question": "You witness a colleague engaging in unethical behavior. What should you do?",
+            "options": [
+                "A. Ignore it to avoid getting involved.",
+                "B. Confront the colleague directly, potentially escalating the situation.",
+                "C. Report the behavior to the appropriate authority, such as HR or a supervisor.",
+                "D. Publicly shame the colleague to deter future misconduct."
+            ],
+            "correct_answer": "C",
+            "topic": "Ethics",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A major production outage occurs. Your team is responsible for the affected service. What is the MOST important action?",
+            "options": [
+                "A. Immediately assign blame to individual team members.",
+                "B. Focus solely on restoring the service as quickly as possible, deferring root cause analysis.",
+                "C. Assemble the team to restore the service, communicate transparently with stakeholders, and initiate root cause analysis after restoration.",
+                "D. Deny responsibility and blame another team."
+            ],
+            "correct_answer": "C",
+            "topic": "Soft Skills",
+            "difficulty": "hard"
+        },
+        {
+            "question": "You are in a meeting and a colleague makes a statement that is factually incorrect, but related to a critical decision. What do you do?",
+            "options": [
+                "A. Wait until after the meeting to tell them privately.",
+                "B. Let it slide to avoid embarrassing them in front of others.",
+                "C. Immediately and aggressively correct them in front of everyone.",
+                "D. Politely and respectfully correct the information, providing evidence if possible."
+            ],
+            "correct_answer": "D",
+            "topic": "Soft Skills",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Your team is consistently missing sprint goals. What is the MOST important step to take?",
+            "options": [
+                "A. Increase the pressure on team members to work harder.",
+                "B. Blame individual team members for their lack of performance.",
+                "C. Analyze the sprint data to identify the root causes of the missed goals and adjust the process accordingly.",
+                "D. Abandon the agile process and switch to a different methodology."
+            ],
+            "correct_answer": "C",
+            "topic": "Agile",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A critical system is down, and multiple teams are affected. As a senior engineer, how do you MOST effectively contribute to the resolution?",
+            "options": [
+                "A. Focus solely on your own tasks and ignore the outage.",
+                "B. Immediately start blaming other teams for the failure.",
+                "C. Assist in troubleshooting, communicate updates to stakeholders, and collaborate with other teams to restore service as quickly as possible.",
+                "D. Hide and avoid responsibility."
+            ],
+            "correct_answer": "C",
+            "topic": "Soft Skills",
+            "difficulty": "hard"
+        },
+        {
+            "question": "You are assigned a task with a tight deadline. You realize you lack the necessary skills. What should you do?",
+            "options": [
+                "A. Attempt the task without saying anything and hope for the best.",
+                "B. Immediately tell your manager you cannot complete the task.",
+                "C. Communicate the skill gap to your manager and propose a solution (e.g., training, assistance).",
+                "D. Delegate the task to a junior colleague."
+            ],
+            "correct_answer": "C",
+            "topic": "Soft Skills",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A team member takes credit for your work during a presentation. How should you address this situation?",
+            "options": [
+                "A. Publicly call them out during the presentation.",
+                "B. Ignore it to avoid conflict.",
+                "C. Privately discuss the situation with the team member, emphasizing the importance of acknowledging contributions.",
+                "D. Seek revenge by taking credit for their work in the future."
+            ],
+            "correct_answer": "C",
+            "topic": "Soft Skills",
+            "difficulty": "medium"
+        }
+    ],
+    "L4": [
+        {
+            "title": "Inventory Reorder Point",
+            "description": "You are a supply chain manager for a retail company. You need to determine the reorder point for a specific product to avoid stockouts. The reorder point is calculated as (Average Daily Demand * Lead Time) + Safety Stock.\n\nYou are given:\n\n*   `daily_demands`: An array of integers representing the daily demand for the product over a period of days.\n*   `lead_time`: An integer representing the lead time (in days) it takes for the supplier to deliver the product after placing an order.\n*   `service_level`: An integer representing the desired service level (percentage). The service level determines the desired probability of not running out of stock during the lead time. You need to calculate the Safety Stock based on this.\n\nSafety stock can be approximated using the following formula:\nSafety Stock = Z * Standard Deviation of Daily Demand * sqrt(Lead Time)\n\nWhere:\n*   Z is the Z-score corresponding to the given service level. You can assume the following Z-scores for common service levels:\n    *   90% Service Level: Z = 1.28\n    *   95% Service Level: Z = 1.64\n    *   99% Service Level: Z = 2.33\n*   Standard Deviation of Daily Demand is calculated using the provided `daily_demands` array.\n*   sqrt is the square root function.\n\nYour task is to write a function that calculates the reorder point for the product.\n\n**Round the Reorder Point and Safety Stock to the nearest whole number.**",
+            "input_format": "The input consists of:\n*   `daily_demands`: An array of integers, where each element represents the daily demand.\n*   `lead_time`: An integer representing the lead time in days.\n*   `service_level`: An integer representing the service level (90, 95, or 99).",
+            "output_format": "Return an integer representing the reorder point.",
+            "constraints": "*   `1 <= daily_demands.length <= 100`\n*   `0 <= daily_demands[i] <= 100`\n*   `1 <= lead_time <= 30`\n*   `service_level` is one of: 90, 95, or 99",
+            "sample_input": "[10, 12, 15, 13, 11, 14, 16, 12, 10, 13], 7, 95",
+            "sample_output": "106",
+            "difficulty": "easy"
+        }
+    ]
+}
