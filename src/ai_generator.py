@@ -4,7 +4,7 @@ from google import genai
 from google.genai.errors import APIError
 from dotenv import load_dotenv
 
-# Load GEMINI_API_KEY from .env file
+
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 AI_CLIENT = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
