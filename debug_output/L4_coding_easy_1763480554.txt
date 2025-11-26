@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Order Processing Efficiency",
+  "description": "A retail company is optimizing its order processing system. Each order contains a list of product IDs.  The system aims to identify the most frequently ordered product ID to help with inventory management.  You are given a list of order lists (i.e., a list of lists of product IDs).  Your task is to write a function that finds the product ID that appears most frequently across all orders. If there is a tie for the most frequent product ID, return the product ID with the smallest numerical value.",
+  "input_format": "The input is a list of lists of integers, where each inner list represents an order and each integer represents a product ID.",
+  "output_format": "The output is a single integer representing the product ID that appears most frequently across all orders.  If there is a tie, return the smallest product ID among the tied products.",
+  "constraints": "1 <= number of orders <= 100\n1 <= number of product IDs per order <= 100\n1 <= product ID <= 1000",
+  "sample_input": "[[1, 2, 3], [2, 3, 4], [1, 2, 2, 5]]",
+  "sample_output": "2",
+  "difficulty": "easy"
+}
+```

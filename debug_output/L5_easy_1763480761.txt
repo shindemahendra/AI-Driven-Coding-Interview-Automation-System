@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A junior colleague consistently misses deadlines. What is the FIRST step you should take?",
+    "options": ["A. Publicly reprimand them in a team meeting.", "B. Ignore the issue and hope it resolves itself.", "C. Privately discuss the issue with them to understand the reasons.", "D. Immediately report them to HR."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You are assigned a task you don't understand. What should you do?",
+    "options": ["A. Pretend you understand and hope you can figure it out later.", "B. Complain to your colleagues about the unclear instructions.", "C. Ask your manager or a senior colleague for clarification.", "D. Immediately start working on it without seeking help."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a team discussion, you disagree with a proposed solution. What's the best approach?",
+    "options": ["A. Silently disapprove and avoid participating.", "B. Immediately dismiss the solution as incorrect.", "C. Politely express your concerns and offer alternative solutions with reasoning.", "D. Publicly criticize the proposer's lack of knowledge."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A project deadline is approaching, and you realize you won't finish your part on time. What should you do?",
+    "options": ["A. Keep working silently and hope for a miracle.", "B. Blame other team members for the delay.", "C. Immediately inform your team lead and discuss potential solutions.", "D. Submit incomplete work without notifying anyone."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You notice a colleague taking credit for your work. What's the best course of action?",
+    "options": ["A. Publicly confront them in front of the team.", "B. Ignore it to avoid conflict.", "C. Privately discuss the situation with your colleague and clarify the contributions.", "D. Immediately report them to HR without any discussion."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You need to estimate the effort required for a new feature. What factors should you consider?",
+    "options": ["A. Only your own programming speed.", "B. The complexity of the code, potential dependencies, testing, and documentation.", "C. The deadline set by the project manager.", "D. The number of lines of code to be written."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a cross-team collaboration, communication breaks down, leading to misunderstandings. What's the MOST effective way to address this?",
+    "options": ["A. Blame the other team for their poor communication skills.", "B. Escalate the issue to senior management immediately.", "C. Schedule a joint meeting with both teams to clarify expectations and establish communication protocols.", "D. Avoid further communication with the other team."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are in a meeting and a colleague makes a statement that is factually incorrect, but related to a critical decision. What do you do?",
+    "options": ["A. Wait until after the meeting to tell them privately.", "B. Let it slide to avoid embarrassing them in front of others.", "C. Immediately and aggressively correct them in front of everyone.", "D. Politely and respectfully correct the information, providing evidence if possible."],
+    "correct_answer": "D",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is consistently negative and demoralizing. What is the MOST appropriate response?",
+    "options": ["A. Ignore the negativity and hope it goes away.", "B. Publicly shame them in team meetings.", "C. Privately address your concerns with the individual and offer support or resources.", "D. Exclude them from team activities."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You disagree with a technical decision made by your team lead. What's the best way to proceed?",
+    "options": ["A. Publicly undermine the decision to demonstrate its flaws.", "B. Privately express your concerns to your team lead, providing constructive feedback and alternative solutions.", "C. Ignore the decision and implement your own solution secretly.", "D. Complain to other team members about the poor decision-making."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A critical system is experiencing a major outage, and multiple teams are involved in troubleshooting. How do you ensure effective communication and coordination?",
+    "options": ["A. Allow each team to work independently without communication to avoid interference.", "B. Designate a single point of contact to collect and disseminate information, and establish a clear communication channel.", "C. Rely on email updates, which may be delayed.", "D. Blame the team responsible for the initial failure."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are leading a team with diverse skill sets and experience levels. How do you best foster innovation and collaboration?",
+    "options": ["A. Assign tasks based solely on seniority.", "B. Encourage open communication, knowledge sharing, and provide opportunities for mentorship and skill development.", "C. Focus only on individual performance metrics.", "D. Avoid delegating challenging tasks to less experienced team members."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A project is significantly behind schedule due to unforeseen technical challenges. What's the BEST approach to managing the situation?",
+    "options": ["A. Hide the delay from stakeholders to avoid panic.", "B. Re-allocate all resources to the project without considering other priorities.", "C. Communicate the situation transparently, revise the timeline with realistic estimates, and explore alternative solutions with stakeholders.", "D. Blame the development team for their incompetence."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are faced with a critical decision that has ethical implications. What factors should you consider before making a decision?",
+    "options": ["A. Only the potential impact on the company's profits.", "B. The potential impact on all stakeholders (employees, customers, community) and adherence to ethical principles and company values.", "C. The potential impact on your personal career advancement.", "D. The immediate short-term consequences only."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "As a senior engineer, you observe a junior colleague engaging in potentially unethical coding practices. What is your responsibility?",
+    "options": ["A. Ignore the behavior to avoid conflict.", "B. Report the behavior anonymously to HR without addressing the colleague directly.", "C. Directly address the colleague, explain the ethical implications, and report the behavior to management if it persists.", "D. Publicly shame the colleague in front of the team."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are facilitating a brainstorming session and notice one team member dominating the conversation, silencing others. How should you handle this?",
+    "options": ["A. Allow the dominant team member to continue, as their ideas might be the best.", "B. Interrupt the team member politely and encourage other members to share their thoughts.", "C. Publicly reprimand the dominant team member for their behavior.", "D. End the brainstorming session prematurely to avoid further imbalance."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are tasked with leading a project that requires adopting a new technology the team is unfamiliar with. What's the most effective approach?",
+    "options": ["A. Force the team to learn the technology independently without any guidance.", "B. Provide comprehensive training, mentorship, and resources to support the team's learning process.", "C. Outsource the project to an external team with expertise in the technology.", "D. Avoid adopting the new technology altogether and stick to familiar tools."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A long-standing team member is resistant to adopting new coding standards. How do you address this?",
+    "options": ["A. Ignore their resistance and enforce the new standards without explanation.", "B. Engage in a dialogue to understand their concerns, explain the benefits of the new standards, and address their reservations.", "C. Publicly criticize their resistance in front of the team.", "D. Exempt them from the new standards to avoid conflict."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are managing a project with conflicting priorities from different stakeholders. What's the BEST approach to resolve the conflict?",
+    "options": ["A. Prioritize the stakeholder with the highest title.", "B. Ignore the conflicting priorities and proceed based on your own judgment.", "C. Facilitate a discussion with all stakeholders to understand their needs, identify common ground, and negotiate a mutually acceptable solution.", "D. Escalate the conflict to senior management without attempting to find a compromise."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A team member consistently delivers high-quality work but struggles with communication and collaboration. How do you address this?",
+    "options": ["A. Ignore their lack of communication skills as long as their work is excellent.", "B. Provide constructive feedback on their communication and collaboration skills, and offer training or mentorship opportunities.", "C. Publicly criticize their lack of communication skills in front of the team.", "D. Remove them from team projects and assign them individual tasks."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  }
+]
+```

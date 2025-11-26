@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code snippet?```python\ndef process_list(data):\n    result = []\n    for i in range(len(data)):\n        if data[i] % 2 == 0:\n            result.append(data[i] * 2)\n    return result\n\ndata = [1, 2, 3, 4, 5]\nprint(process_list(data))```",
+    "options": ["[]", "[2, 4]", "[4, 8]", "[1, 2, 3, 4, 5]"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will the following code print?```python\ndef modify_list(lst):\n    lst.append(10)\n    lst = [1,2,3]\n\nmylist = [4, 5, 6]\nmodify_list(mylist)\nprint(mylist)```",
+    "options": ["[4, 5, 6]", "[4, 5, 6, 10]", "[1, 2, 3]", "[1, 2, 3, 10]"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code:```python\ndef func(x):\n    global y\n    y = x + 1\n    return y\n\ny = 5\nfunc(5)\nprint(y)``` What will be printed?",
+    "options": ["5", "6", "10", "Error"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is wrong with the following code snippet (intended to calculate the average of a list)?```python\ndef average(numbers):\n    sum = 0\n    for number in numbers:\n        sum += number\n    return sum / len(numbers) -1\n\nprint(average([1,2,3,4,5]))```",
+    "options": ["The loop is incorrect.", "The return statement subtracts 1.", "The len() function should not be used.", "The variable 'sum' shadows the built-in sum() function"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's the issue with this code that's meant to find the maximum value in a list?```python\ndef find_max(data):\n    max_val = 0\n    for num in data:\n        if num > max_val:\n            max_val = num\n    return max_val\n\nprint(find_max([-1, -5, -2]))```",
+    "options": ["The loop is unnecessary.", "The initial value of `max_val` is incorrect.", "The comparison operator should be '>='", "The return statement is in the wrong place."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code snippet?```python\ndef buggy_function(x):\n  if x > 5:\n    return True\n  elif x < 5:\n    return False\n  return None\n\nprint(buggy_function(5))```",
+    "options": ["True", "False", "None", "Error"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+    {
+    "question": "Which statement best identifies the error in the given code snippet? ```python\ndef calculate_sum(numbers):\n  total = 0\n  for i in range(1, len(numbers)):\n    total += numbers[i]\n  return total```",
+    "options": ["The `range` function is missing its start argument.", "The loop condition `i < len(numbers)` should be `i <= len(numbers)`", "The loop should start from index 0.", "The `total` variable has not been properly initialized."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this code intended to remove duplicates from a list, what is the bug?```python\ndef remove_duplicates(data):\n    for item in data:\n        if data.count(item) > 1:\n            data.remove(item)\n    return data```",
+    "options": ["It doesn't handle empty lists.", "It doesn't preserve the original order.", "It might skip elements due to modifying the list while iterating.", "It is inefficient due to the `count` method."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What will be the output of the following program?```python\ndef modify_string(s):\n    s = s.replace('a', 'b')\n\nmy_string = 'apple'\nmodify_string(my_string)\nprint(my_string)```",
+    "options": ["'apple'", "'bpple'", "'bble'", "Error"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The following code creates a generator. What is the result of calling `next()` on it twice?```python\ndef my_generator():\n    yield 1\n    yield 2\n    yield 3\n\ngen = my_generator()\nnext(gen)\nnext(gen)\nprint(next(gen))\nnext(gen)```",
+    "options": ["1", "2", "3", "Raises StopIteration"],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Identify the race condition in the following code (assume threading is used):```python\ncounter = 0\n\ndef increment():\n    global counter\n    counter += 1\n\n# Multiple threads call increment()```",
+    "options": ["The `global` keyword is not thread-safe.", "The `increment()` function is not atomic.", "Threads cannot access global variables.", "There is no race condition in this code."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the likely outcome when multiple threads execute this code without proper synchronization?```python\nmy_list = []\n\ndef append_to_list(item):\n    my_list.append(item)```",
+    "options": ["A deadlock.", "A crash due to memory corruption.", "Inconsistent list size and content.", "Correct list modification with potential performance issues."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Find the error in this code, which aims to merge two sorted lists.```python\ndef merge_sorted(list1, list2):\n    merged = []\n    i = 0\n    j = 0\n    while i < len(list1) or j < len(list2):\n        if list1[i] <= list2[j]:\n            merged.append(list1[i])\n            i += 1\n        else:\n            merged.append(list2[j])\n            j += 1\n    return merged```",
+    "options": ["It handles empty lists incorrectly.", "It doesn't handle duplicates properly.", "It raises an IndexError when one list is exhausted.", "It does not sort correctly if lists are not already sorted."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Identify the potential pitfall in the following generator function:```python\ndef generate_even_numbers(max_num):\n    n = 0\n    while n <= max_num:\n        yield n\n        n += 1```",
+    "options": ["It yields odd numbers.", "It creates an infinite loop if max_num is negative.", "It yields all even numbers up to max_num.", "It yields floats instead of integers."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What's the problem with this code, which tries to calculate factorials recursively?```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n)\n\nprint(factorial(5))```",
+    "options": ["The base case is incorrect.", "It results in infinite recursion.", "It only works for small values of n.", "The return value is incorrect."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What will the following code produce?```python\nnumbers = [1, 2, 3, 4, 5]\nfor i in range(len(numbers)):\n    if numbers[i] % 2 == 0:\n        numbers.pop(i)\n\nprint(numbers)```",
+    "options": ["[1, 2, 3, 4, 5]", "[1, 3, 5]", "[1, 3, 4]", "[1, 2, 3]"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following code, what will be the value of `x` after the execution?```python\nx = 5\n\ndef change_x():\n    x = 10\n    return x\n\nchange_x()\nprint(x)```",
+    "options": ["5", "10", "None", "Error"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's the likely issue with this Python code snippet designed to read from a file, when an exception occurs?```python\ndef read_file(filename):\n    file = open(filename, 'r')\n    data = file.read()\n    return data```",
+    "options": ["The file is not being opened in the correct mode.", "The file may not exist.", "The file is not being closed in case of exception.", "The function lacks error handling."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's wrong with the following code intended to create a deep copy of a list?```python\nimport copy\n\nlist1 = [1, 2, [3, 4]]\nlist2 = copy.copy(list1)\nlist2[2][0] = 5\nprint(list1)```",
+    "options": ["`copy.copy` creates a shallow copy, not a deep copy.", "There is a typo in the import statement.", "The code will raise an IndexError.", "The list is immutable."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What potential problem could arise from this code in a high-traffic web server (assume a new thread is spawned for each request)?```python\nimport os\n\ndef process_request(request_data):\n    # Perform some processing on request_data\n    with open('temp_file.txt', 'w') as f:\n        f.write(str(request_data))\n    os.remove('temp_file.txt')```",
+    "options": ["The file operation is not thread-safe.", "Creating and deleting temporary files is resource-intensive.", "The process_request function might become a bottleneck.", "The temporary file is susceptible to data loss."},
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  }
+]
+```

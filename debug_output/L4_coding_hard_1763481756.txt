@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Scheduling with Dependencies and Deadlines",
+  "description": "You are managing a project consisting of 'n' tasks. Each task 'i' has the following properties:\n\n*   `taskId[i]`: A unique integer ID for the task.\n*   `duration[i]`: The amount of time (in days) required to complete the task.\n*   `deadline[i]`: The latest day by which the task must be completed.\n*   `dependencies[i]`: A list of task IDs that must be completed *before* task 'i' can start.  If a task has an empty dependency list, it can start immediately.\n\nYour goal is to determine the optimal schedule to minimize the number of tasks that are completed *late*. A task is considered late if its completion day exceeds its deadline.\n\nAssumptions:\n\n*   You can only work on one task at a time.\n*   Once you start a task, you must complete it before starting another.\n*   You can start working on a task as soon as all its dependencies are met.\n\nWrite a function that returns the *minimum* number of late tasks possible by scheduling the tasks optimally. If it's impossible to complete all tasks by their deadlines, return -1.\n\n**Note:** If multiple schedules result in the same minimal number of late tasks, any one of them is considered optimal.",
+  "input_format": "The input will be provided as follows:\n\n*   `n`: An integer representing the number of tasks.\n*   `taskId`: An array of 'n' integers representing the unique IDs of the tasks.\n*   `duration`: An array of 'n' integers representing the duration of each task.\n*   `deadline`: An array of 'n' integers representing the deadline of each task.\n*   `dependencies`: A list of 'n' lists of integers, where `dependencies[i]` represents the list of task IDs that task 'i' depends on.",
+  "output_format": "Return an integer representing the minimum number of late tasks possible. Return -1 if it is impossible to complete all tasks on time.",
+  "constraints": "1 <= n <= 15\n1 <= taskId[i] <= 1000\n1 <= duration[i] <= 100\n1 <= deadline[i] <= 1000\nEach taskId[i] is unique.\nDependencies form a valid Directed Acyclic Graph (DAG). That is, there are no circular dependencies.",
+  "sample_input": "n = 4\ntaskId = [1, 2, 3, 4]\nduration = [2, 3, 2, 4]\ndeadline = [6, 8, 12, 10]\ndependencies = [[], [1], [2], [1]]",
+  "sample_output": "1",
+  "difficulty": "hard"
+}
+```

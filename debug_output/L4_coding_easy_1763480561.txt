@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Analyze Website Traffic",
+  "description": "Your team manages a popular website. You are given a log of website visits over a short period. Each log entry consists of a timestamp (in seconds since the start of the period) and the number of concurrent users on the website at that timestamp.\n\nThe log is provided as a list of tuples: `(timestamp, user_count)`.  You need to calculate the maximum number of concurrent users observed at any point during the logged period.\n\nFor example, if the log is `[(1, 10), (5, 15), (10, 5)]`, the maximum number of concurrent users is 15.",
+  "input_format": "A list of tuples. Each tuple contains two integers:\n  - `timestamp`: The timestamp of the log entry (in seconds).\n  - `user_count`: The number of concurrent users at that timestamp.\n\nExample:\n`[(1, 10), (5, 15), (10, 5)]`",
+  "output_format": "An integer representing the maximum number of concurrent users observed in the log.",
+  "constraints": "- The input list will contain at least one entry.\n- Timestamps will be non-negative integers.\n- User counts will be non-negative integers.\n- Timestamps in the log are not necessarily sorted.",
+  "sample_input": "[(1, 10), (5, 15), (10, 5), (3, 7)]",
+  "sample_output": "15",
+  "difficulty": "easy"
+}
+```

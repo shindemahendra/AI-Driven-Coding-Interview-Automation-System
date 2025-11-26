@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Inventory Reorder Point",
+  "description": "You are a supply chain manager for a retail company. You need to determine the reorder point for a specific product to avoid stockouts. The reorder point is calculated as (Average Daily Demand * Lead Time) + Safety Stock.\n\nYou are given:\n\n*   `daily_demands`: An array of integers representing the daily demand for the product over a period of days.\n*   `lead_time`: An integer representing the lead time (in days) it takes for the supplier to deliver the product after placing an order.\n*   `service_level`: An integer representing the desired service level (percentage). The service level determines the desired probability of not running out of stock during the lead time. You need to calculate the Safety Stock based on this.\n\nSafety stock can be approximated using the following formula:\nSafety Stock = Z * Standard Deviation of Daily Demand * sqrt(Lead Time)\n\nWhere:\n*   Z is the Z-score corresponding to the given service level. You can assume the following Z-scores for common service levels:\n    *   90% Service Level: Z = 1.28\n    *   95% Service Level: Z = 1.64\n    *   99% Service Level: Z = 2.33\n*   Standard Deviation of Daily Demand is calculated using the provided `daily_demands` array.\n*   sqrt is the square root function.\n\nYour task is to write a function that calculates the reorder point for the product.\n\n**Round the Reorder Point and Safety Stock to the nearest whole number.**",
+  "input_format": "The input consists of:\n*   `daily_demands`: An array of integers, where each element represents the daily demand.\n*   `lead_time`: An integer representing the lead time in days.\n*   `service_level`: An integer representing the service level (90, 95, or 99).",
+  "output_format": "Return an integer representing the reorder point.",
+  "constraints": "*   `1 <= daily_demands.length <= 100`\n*   `0 <= daily_demands[i] <= 100`\n*   `1 <= lead_time <= 30`\n*   `service_level` is one of: 90, 95, or 99",
+  "sample_input": "[10, 12, 15, 13, 11, 14, 16, 12, 10, 13], 7, 95",
+  "sample_output": "106",
+  "difficulty": "easy"
+}
+```

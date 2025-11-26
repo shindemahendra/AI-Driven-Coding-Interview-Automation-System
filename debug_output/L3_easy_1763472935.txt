@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code?\n\nnumbers = [1, 2, 3, 4, 5]\nfor i in range(len(numbers)):\n    if i % 2 == 0:\n        numbers[i+1] = numbers[i] #potential IndexError\n\nprint(numbers)",
+    "options": ["[1, 1, 3, 3, 5]", "[1, 1, 3, 4, 5]", "[1, 2, 3, 4, 5]", "IndexError"],
+    "correct_answer": "IndexError",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code snippet:\n\ndef modify_list(lst):\n    for i in range(len(lst)):\n        lst[i] = lst[i] * 2\n    return lst\n\nmy_list = [1, 2, 3]\nmodified_list = modify_list(my_list)\nprint(my_list, modified_list)\n\nWhat will be the output?",
+    "options": ["([1, 2, 3], [2, 4, 6])", "([2, 4, 6], [2, 4, 6])", "([1, 2, 3], [1, 2, 3])", "Error"],
+    "correct_answer": "([2, 4, 6], [2, 4, 6])",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the issue with this code that intends to remove duplicate items from a list?\n\nmy_list = [1, 2, 2, 3, 4, 4, 5]\nfor item in my_list:\n    if my_list.count(item) > 1:\n        my_list.remove(item)\n\nprint(my_list)",
+    "options": ["The code will correctly remove all duplicates.", "The code will raise a TypeError.", "The code will only remove the first occurrence of each duplicate.", "The code will skip some duplicate items due to shifting indices during removal."],
+    "correct_answer": "The code will skip some duplicate items due to shifting indices during removal.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code?\n\ndef foo(a=[]):\n  a.append(1)\n  return a\n\nprint(foo())\nprint(foo())",
+    "options": ["[1]", "[1, 1]", "[[], []]", "[[1], [1]]"],
+    "correct_answer": "[1, 1]",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Find the bug in the code below. The function is intended to return a list of the first n Fibonacci numbers. \n\ndef fibonacci(n):\n  result = [0, 1]\n  for i in range(2, n):\n    next_fib = result[i-1] + result[i-2]\n    result.append(next_fib)\n  return result",
+    "options": ["The function returns incorrect results for n < 2.", "The function returns n+1 Fibonacci numbers.", "The function calculates fib numbers incorrectly.", "The loop starts at the wrong index."],
+    "correct_answer": "The function returns n+1 Fibonacci numbers.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code snippet?\n\nx = 10\n\ndef outer():\n    x = 5\n    def inner():\n        nonlocal x\n        x = 2\n    inner()\n    print(x)\n\nouter()\nprint(x)",
+    "options": ["5 10", "2 10", "5 2", "2 2"],
+    "correct_answer": "2 10",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What will be printed by the following code?\n\ndef generator_func():\n    yield 1\n    yield 2\n    yield 3\n\nmy_generator = generator_func()\nfor i in range(5):\n    try:\n        print(next(my_generator))\n    except StopIteration:\n        print('Done')",
+    "options": ["1 2 3 Done Done", "1 2 3", "1 2 3 StopIteration StopIteration", "Error"],
+    "correct_answer": "1 2 3 Done Done",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the code below?\n\ndef func(a):\n  a += [5]\n\nl = [1, 2, 3]\nfunc(l)\nprint(l)",
+    "options": ["[1, 2, 3]", "[1, 2, 3, 5]", "[1, 2, 3, [5]]", "[5]"],
+    "correct_answer": "[1, 2, 3, 5]",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code?\n\nmy_list = [1, 2, 3]\n\ndef modify(my_list):\n    my_list = [4, 5, 6]\n\nmodify(my_list)\nprint(my_list)",
+    "options": ["[1, 2, 3]", "[4, 5, 6]", "[1, 2, 3, 4, 5, 6]", "Error"],
+    "correct_answer": "[1, 2, 3]",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider the following code:\n\nx = 5\n\ndef my_func():\n  x = 10\n  print(x)\n\nmy_func()\nprint(x)\n\nWhat is the output?",
+    "options": ["5, 5", "10, 5", "5, 10", "10, 10"],
+    "correct_answer": "10, 5",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the problem with the following code intending to sum the values in a dictionary?\n\nmy_dict = {'a': 10, 'b': 20, 'c': 30}\ntotal = 0\nfor key in my_dict:\n    total += key\n\nprint(total)",
+    "options": ["The code is correct and will output 60.", "The code will raise a TypeError because it's trying to add strings (keys) to an integer.", "The code will raise a KeyError.", "The loop variable should be 'value' not 'key'."],
+    "correct_answer": "The code will raise a TypeError because it's trying to add strings (keys) to an integer.",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of this code?\n\ndef calculate(x, y):\n  try:\n    result = x / y\n  except ZeroDivisionError:\n    result = 0\n  finally:\n    return result\n\nprint(calculate(10, 0))",
+    "options": ["ZeroDivisionError", "0", "None", "10"],
+    "correct_answer": "0",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the mistake in the following code:\n\ndef factorial(n):\n  if n == 0:\n    return 1\n  else:\n    return n * factorial(n+1)  # Recursive call error\n\nprint(factorial(5))",
+    "options": ["The base case is incorrect.", "The recursive call is incorrect, leading to infinite recursion.", "The function will raise a NameError.", "The function does not handle negative input."],
+    "correct_answer": "The recursive call is incorrect, leading to infinite recursion.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+    {
+    "question": "What's the output of this code?\n\nimport threading\nimport time\n\ncounter = 0\n\ndef increment():\n    global counter\n    for _ in range(100000):\n        counter += 1\n\nthreads = []\nfor _ in range(2):\n    t = threading.Thread(target=increment)\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()\n\nprint(counter)",
+    "options": ["200000", "A value close to 200000 but potentially less due to race conditions.", "0", "ValueError"],
+    "correct_answer": "A value close to 200000 but potentially less due to race conditions.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider the following code that uses a generator:\n\ndef generate_numbers():\n    i = 0\n    while True:\n        yield i\n        i += 1\n\nnumbers = generate_numbers()\nfor i in range(3):\n    print(next(numbers))\n\nnumbers = generate_numbers()\nprint(next(numbers))\n\nWhat will be the output?",
+    "options": ["0, 1, 2, 0", "0, 1, 2, 3", "0, 0, 0, 0", "0, 1, 2, 1"],
+    "correct_answer": "0, 1, 2, 0",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Analyze the code for potential bugs:\n\nimport threading\nimport time\n\nshared_data = []\nlock = threading.Lock()\n\ndef add_data(data):\n    lock.acquire()\n    try:\n        shared_data.append(data)\n        time.sleep(0.1)\n        shared_data.append(data * 2)\n    finally:\n        lock.release()\n\nthread1 = threading.Thread(target=add_data, args=(5,))\nthread2 = threading.Thread(target=add_data, args=(10,))\nthread1.start()\nthread2.start()\nthread1.join()\nthread2.join()\nprint(shared_data)",
+    "options": ["The code is thread-safe and will always produce consistent results.", "The code is prone to race conditions when accessing and modifying shared_data.", "The code will raise a TypeError due to incorrect arguments passed to the threads.", "The code will deadlock because the lock is not released properly."],
+    "correct_answer": "The code is prone to race conditions when accessing and modifying shared_data.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the problem in the following code with regards to memory management and performance?\n\ndef process_large_file(filename):\n    with open(filename, 'r') as f:\n        data = f.readlines()\n    for line in data:\n        # process each line\n        pass",
+    "options": ["The code is efficient and memory-friendly for large files.", "The code reads the entire file into memory, which can be inefficient for very large files.", "The code will raise a FileNotFoundError.", "The code uses the wrong file mode ('r')."],
+    "correct_answer": "The code reads the entire file into memory, which can be inefficient for very large files.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider this code and its intended behavior:\n\ndef divide(x, y):\n  try:\n    result = x // y\n  except ZeroDivisionError:\n    return 'Cannot divide by zero'\n  else:\n    return result\n  finally:\n    print('Division operation complete')\n\nprint(divide(10, '2'))",
+    "options": ["'Cannot divide by zero'", "'Division operation complete'", "TypeError: unsupported operand type(s) for //: 'int' and 'str'", "10"],
+    "correct_answer": "TypeError: unsupported operand type(s) for //: 'int' and 'str'",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Find the bug in the following code, which aims to create a deep copy of a nested list. from copy import copy\n\ndef deep_copy_list(lst):\n    new_list = copy(lst)\n    return new_list",
+    "options": ["The code correctly creates a deep copy.", "The code creates a shallow copy, not a deep copy.", "The code will raise a TypeError.", "The code creates a reference to the original list."],
+    "correct_answer": "The code creates a shallow copy, not a deep copy.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is wrong with this code designed to check if a string is a palindrome?\n\ndef is_palindrome(s):\n    s = s.lower()\n    return s == s[::-1]",
+    "options": ["The code doesn't handle strings with spaces correctly.", "The code works correctly for all strings.", "The code only works for odd length strings.", "The code will raise a TypeError if the input is not a string."],
+    "correct_answer": "The code doesn't handle strings with spaces correctly.",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  }
+]
+```

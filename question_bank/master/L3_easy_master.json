@@ -1,0 +1,1302 @@
+[
+    {
+        "question": "What is the output of the following code? The intention was to print \"Hello World\", but there's an error.",
+        "code": "print(\"Hello\" +  \" \" + \"World\")",
+        "options": [
+            "Hello World",
+            "HelloWorld",
+            "Error",
+            "None of the above"
+        ],
+        "correct_answer": "Hello World",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The following code is intended to calculate the sum of numbers from 1 to 5. What is the bug?",
+        "code": "sum = 0\nfor i in range(6):\n  sum = sum + i\nprint(sum)",
+        "options": [
+            "Incorrect loop range",
+            "sum is not initialized",
+            "Missing colon in for loop",
+            "print statement is indented"
+        ],
+        "correct_answer": "None of the above",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the following code? The intention was to get the length of the string.",
+        "code": "s = \"Python\"\nprint(len(s))",
+        "options": [
+            "5",
+            "6",
+            "Error",
+            "7"
+        ],
+        "correct_answer": "6",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the error in the following code? The intention was to convert the string to an integer.",
+        "code": "s = \"123\"\nnum = int(s)",
+        "options": [
+            "ValueError",
+            "TypeError",
+            "SyntaxError",
+            "NameError"
+        ],
+        "correct_answer": "None of the above",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the error in the following code? The intention was to access the first element of the list.",
+        "code": "my_list = [1, 2, 3]\nprint(my_list[0])",
+        "options": [
+            "IndexError",
+            "TypeError",
+            "SyntaxError",
+            "NameError"
+        ],
+        "correct_answer": "None of the above",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The following code intends to add an element to a list. What's wrong?",
+        "code": "my_list = [1, 2, 3]\nmy_list.append(4)",
+        "options": [
+            "Incorrect method name",
+            "Missing parenthesis",
+            "Cannot add to list",
+            "None of the above"
+        ],
+        "correct_answer": "None of the above",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will be printed by this code?",
+        "code": "def my_function(x):\n  return x * 2\nprint(my_function(5))",
+        "options": [
+            "5",
+            "10",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "10",
+        "topic": "L3",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of this code? The code attempts to divide by zero.",
+        "code": "try:\n  result = 10 / 0\nexcept ZeroDivisionError:\n  print(\"Division by zero!\")",
+        "options": [
+            "10",
+            "Error",
+            "Division by zero!",
+            "None"
+        ],
+        "correct_answer": "Division by zero!",
+        "topic": "L3",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the correct way to open a file in read mode?",
+        "code": "None",
+        "options": [
+            "open(\"file.txt\", \"w\")",
+            "open(\"file.txt\", \"r\")",
+            "open(\"file.txt\", \"a\")",
+            "open(\"file.txt\")"
+        ],
+        "correct_answer": "open(\"file.txt\", \"r\")",
+        "topic": "L3",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What's wrong with the following code intending to print the square of a number?",
+        "code": "def square(x):\n    return x**2\nprint(square(4))",
+        "options": [
+            "Missing return statement",
+            "Incorrect operator",
+            "Missing print statement",
+            "None of the above"
+        ],
+        "correct_answer": "None of the above",
+        "topic": "L3",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The following code is intended to print the numbers 1 to 5. What is wrong with the code?",
+        "code": "for i in range(1,6):\n print(i)",
+        "options": [
+            "Incorrect loop syntax",
+            "Missing colon",
+            "Incorrect indentation",
+            "None of the above"
+        ],
+        "correct_answer": "None of the above",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the following code? The intention was to check if a number is greater than 10.",
+        "code": "x = 15\nif x > 10:\n  print(\"Greater\")\nelse:\n  print(\"Smaller\")",
+        "options": [
+            "Greater",
+            "Smaller",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "Greater",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the following code? The intention was to create a tuple.",
+        "code": "my_tuple = (1, 2, 3)\nprint(my_tuple)",
+        "options": [
+            "(1, 2, 3)",
+            "[1, 2, 3]",
+            "{1, 2, 3}",
+            "Error"
+        ],
+        "correct_answer": "(1, 2, 3)",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The following code is intended to create a dictionary. What is missing in the code to get the intended outcome?",
+        "code": "my_dict = {\"name\": \"Alice\", \"age\": 30}\nprint(my_dict[\"name\"])",
+        "options": [
+            "Incorrect dictionary syntax",
+            "Missing key",
+            "Incorrect print statement",
+            "None of the above"
+        ],
+        "correct_answer": "None of the above",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the value of `result` after executing this code?",
+        "code": "a = 5\nb = 2\nresult = a // b",
+        "options": [
+            "2.5",
+            "2",
+            "3",
+            "Error"
+        ],
+        "correct_answer": "2",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will happen when the following code is executed? The goal is to raise an exception.",
+        "code": "raise ValueError(\"Invalid input\")",
+        "options": [
+            "The program will continue execution",
+            "A ValueError exception will be raised",
+            "A TypeError exception will be raised",
+            "The program will terminate without error"
+        ],
+        "correct_answer": "A ValueError exception will be raised",
+        "topic": "L3",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The following code intends to swap two variables. What is the error?",
+        "code": "a = 5\nb = 10\na, b = b, a",
+        "options": [
+            "Incorrect syntax for swapping",
+            "Cannot swap variables in Python",
+            "The values of a and b will remain unchanged",
+            "None of the above"
+        ],
+        "correct_answer": "None of the above",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the following code? The intention was to find the maximum of two numbers.",
+        "code": "a = 7\nb = 3\nprint(max(a, b))",
+        "options": [
+            "3",
+            "7",
+            "Error",
+            "10"
+        ],
+        "correct_answer": "7",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of this code?",
+        "code": "print(type([1,2]))",
+        "options": [
+            "list",
+            "tuple",
+            "set",
+            "dict"
+        ],
+        "correct_answer": "list",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the error in the following code? The goal is to concatenate two strings.",
+        "code": "str1 = \"Hello\"\nstr2 = \"World\"\nprint(str1 + str2)",
+        "options": [
+            "TypeError",
+            "ValueError",
+            "NameError",
+            "None of the above"
+        ],
+        "correct_answer": "None of the above",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the following code? A common mistake is forgetting the order of operations.",
+        "code": "print(2 + 3 * 4)",
+        "options": [
+            "20",
+            "14",
+            "12",
+            "24"
+        ],
+        "correct_answer": "B",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is wrong with this code snippet? The error prevents the code from running.",
+        "code": "print(\"Hello world\")",
+        "options": [
+            "Missing semicolon",
+            "Invalid syntax",
+            "Incorrect indentation",
+            "No errors"
+        ],
+        "correct_answer": "D",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the following code? An issue lies in understanding variable scope.",
+        "code": "x = 10\ndef my_function():\n  x = 5\n  print(x)\nmy_function()\nprint(x)",
+        "options": [
+            "5 10",
+            "10 5",
+            "5 5",
+            "10 10"
+        ],
+        "correct_answer": "A",
+        "topic": "L2",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code? The bug often stems from incorrect list indexing.",
+        "code": "my_list = [1, 2, 3]\nprint(my_list[3])",
+        "options": [
+            "3",
+            "Error",
+            "1",
+            "None"
+        ],
+        "correct_answer": "B",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of this code when it encounters a potential division by zero error?",
+        "code": "def divide(x, y):\n  try:\n    result = x / y\n    print(\"result is:\", result)\n  except ZeroDivisionError:\n    print(\"division by zero!\")\ndivide(3, 0)",
+        "options": [
+            "0",
+            "3",
+            "Error",
+            "division by zero!"
+        ],
+        "correct_answer": "D",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the error in the code snippet? There is a typo preventing the program from executing correctly.",
+        "code": "prnt(\"Hello\")",
+        "options": [
+            "Indentation Error",
+            "NameError",
+            "TypeError",
+            "SyntaxError"
+        ],
+        "correct_answer": "B",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the following function call? Pay attention to the type conversion.",
+        "code": "def my_function(x):\n  return int(x)\nprint(my_function(\"5.5\"))",
+        "options": [
+            "5",
+            "5.5",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "C",
+        "topic": "L2",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following loop? Many errors appear when the loop condition is incorrect.",
+        "code": "i = 0\nwhile i < 5:\n  print(i)\n  i += 1",
+        "options": [
+            "0 1 2 3 4 5",
+            "0 1 2 3 4",
+            "1 2 3 4 5",
+            "Error"
+        ],
+        "correct_answer": "B",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the code considering mutability?",
+        "code": "def modify_list(my_list):\n  my_list.append(4)\nmy_list = [1, 2, 3]\nmodify_list(my_list)\nprint(my_list)",
+        "options": [
+            "[1, 2, 3]",
+            "[1, 2, 3, 4]",
+            "[4]",
+            "Error"
+        ],
+        "correct_answer": "B",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will the output be? A common error relates to string concatenation.",
+        "code": "print(\"Hello\" + 5)",
+        "options": [
+            "Hello5",
+            "Error",
+            "5Hello",
+            "None"
+        ],
+        "correct_answer": "B",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of this conditional statement?",
+        "code": "x = 5\nif x > 10:\n  print(\"Greater than 10\")\nelif x > 5:\n  print(\"Greater than 5\")\nelse:\n  print(\"Less than or equal to 5\")",
+        "options": [
+            "Greater than 10",
+            "Greater than 5",
+            "Less than or equal to 5",
+            "Error"
+        ],
+        "correct_answer": "C",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will the dictionary contain after the following operations?",
+        "code": "my_dict = {\"a\": 1, \"b\": 2}\nmy_dict[\"c\"] = 3\nmy_dict[\"a\"] = 4\nprint(my_dict)",
+        "options": [
+            "{\"a\": 1, \"b\": 2, \"c\": 3}",
+            "{\"c\": 3, \"a\": 4}",
+            "{\"a\": 4, \"b\": 2, \"c\": 3}",
+            "Error"
+        ],
+        "correct_answer": "C",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code? Pay attention to tuple immutability.",
+        "code": "my_tuple = (1, 2, 3)\nmy_tuple[0] = 4\nprint(my_tuple)",
+        "options": [
+            "(4, 2, 3)",
+            "(1, 2, 3)",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "C",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following list comprehension?",
+        "code": "numbers = [1, 2, 3, 4, 5]\nsquares = [x**2 for x in numbers if x % 2 == 0]\nprint(squares)",
+        "options": [
+            "[1, 4, 9, 16, 25]",
+            "[4, 16]",
+            "[1, 9, 25]",
+            "Error"
+        ],
+        "correct_answer": "B",
+        "topic": "L3",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the following recursive function? Understanding base cases is key.",
+        "code": "def factorial(n):\n  if n == 0:\n    return 1\n  else:\n    return n * factorial(n-1)\nprint(factorial(5))",
+        "options": [
+            "120",
+            "15",
+            "5",
+            "Error"
+        ],
+        "correct_answer": "A",
+        "topic": "L3",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the following code? Focus on import errors.",
+        "code": "import math\nprint(math.PI)",
+        "options": [
+            "3.14159...",
+            "Error",
+            "3.14",
+            "None"
+        ],
+        "correct_answer": "B",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which error will occur?",
+        "code": "def my_function(a, b):\n  return a + b\nprint(my_function(1))",
+        "options": [
+            "TypeError",
+            "ValueError",
+            "NameError",
+            "SyntaxError"
+        ],
+        "correct_answer": "A",
+        "topic": "L2",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will be printed by the function?",
+        "code": "def my_func():\n  try:\n    print(\"Try Block\")\n  finally:\n    print(\"Finally Block\")\nmy_func()",
+        "options": [
+            "Only \"Try Block\"",
+            "Only \"Finally Block\"",
+            "\"Try Block\" then \"Finally Block\"",
+            "No output"
+        ],
+        "correct_answer": "C",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of these options correctly opens the file 'my_file.txt' in write mode?",
+        "code": "None",
+        "options": [
+            "open('my_file.txt', 'r')",
+            "open('my_file.txt', 'a')",
+            "open('my_file.txt', 'w')",
+            "open('my_file.txt')"
+        ],
+        "correct_answer": "C",
+        "topic": "L3",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the potential issue with the following code?",
+        "code": "def calculate_average(numbers):\n  total = sum(numbers)\n  average = total / len(numbers)\n  return average\n\nnumbers = []\nprint(calculate_average(numbers))",
+        "options": [
+            "ZeroDivisionError",
+            "TypeError",
+            "ValueError",
+            "IndexError"
+        ],
+        "correct_answer": "A",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code? \n  x = 5 \n  y = \"10\" \n  print(x + y)",
+        "code": "x = 5\ny = \"10\"\nprint(x + y)",
+        "options": [
+            "15",
+            "510",
+            "Error",
+            "None of the above"
+        ],
+        "correct_answer": "Error",
+        "topic": "Type Conversion",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which error will occur when trying to access an index out of range in a list?",
+        "code": null,
+        "options": [
+            "TypeError",
+            "IndexError",
+            "ValueError",
+            "KeyError"
+        ],
+        "correct_answer": "IndexError",
+        "topic": "Lists",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will be printed by this code?\n  def my_function():\n    return\n  print(my_function())",
+        "code": "def my_function():\n  return\nprint(my_function())",
+        "options": [
+            "0",
+            "Empty string",
+            "None",
+            "Error"
+        ],
+        "correct_answer": "None",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the error in the following code?\n  print(\"Hello\" + 5)",
+        "code": "print(\"Hello\" + 5)",
+        "options": [
+            "SyntaxError",
+            "TypeError",
+            "ValueError",
+            "NameError"
+        ],
+        "correct_answer": "TypeError",
+        "topic": "Type Conversion",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What happens if you try to open a file for reading that doesn't exist?",
+        "code": null,
+        "options": [
+            "Returns None",
+            "Creates an empty file",
+            "Raises a FileNotFoundError",
+            "Raises an IOError"
+        ],
+        "correct_answer": "Raises a FileNotFoundError",
+        "topic": "File Handling",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is wrong with the following loop?\n  i = 0\n  while i < 5:\n      print(i)",
+        "code": "i = 0\nwhile i < 5:\n    print(i)",
+        "options": [
+            "Missing colon",
+            "Infinite loop",
+            "Incorrect syntax for print",
+            "i is not defined"
+        ],
+        "correct_answer": "Infinite loop",
+        "topic": "Loops",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following is the correct way to catch an exception in Python?",
+        "code": null,
+        "options": [
+            "catch: Exception",
+            "except Exception:",
+            "try Exception:",
+            "with Exception:"
+        ],
+        "correct_answer": "except Exception:",
+        "topic": "Exception Handling",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the following code?\n  x = [1, 2, 3]\n  print(x[3])",
+        "code": "x = [1, 2, 3]\nprint(x[3])",
+        "options": [
+            "3",
+            "Error",
+            "None",
+            "4"
+        ],
+        "correct_answer": "Error",
+        "topic": "Lists",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will be the output of the following code?\n  def func(a, b=5, c=10):\n    print('a is', a, 'and b is', b, 'and c is', c)\n\n  func(12, c=24)",
+        "code": "def func(a, b=5, c=10):\n  print('a is', a, 'and b is', b, 'and c is', c)\n\nfunc(12, c=24)",
+        "options": [
+            "a is 12 and b is 5 and c is 10",
+            "a is 12 and b is 24 and c is 10",
+            "a is 12 and b is 5 and c is 24",
+            "Error"
+        ],
+        "correct_answer": "a is 12 and b is 5 and c is 24",
+        "topic": "Functions",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What's the problem with this code? \n  def add(x,y):\n    return x+y\n  add(2,'2')",
+        "code": "def add(x,y):\n  return x+y\nadd(2,'2')",
+        "options": [
+            "SyntaxError",
+            "TypeError",
+            "ValueError",
+            "NameError"
+        ],
+        "correct_answer": "TypeError",
+        "topic": "Type Conversion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n  x = 10\n  def my_function():\n    x = 5\n    print(x)\n  my_function()\n  print(x)",
+        "code": "x = 10\ndef my_function():\n  x = 5\n  print(x)\nmy_function()\nprint(x)",
+        "options": [
+            "5\\n10",
+            "10\\n5",
+            "5\\n5",
+            "10\\n10"
+        ],
+        "correct_answer": "5\\n10",
+        "topic": "Scope",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n  try:\n    print(10 / 0)\n  except Exception as e:\n    print(e)",
+        "code": "try:\n  print(10 / 0)\nexcept Exception as e:\n  print(e)",
+        "options": [
+            "division by zero",
+            "0",
+            "10",
+            "Error"
+        ],
+        "correct_answer": "division by zero",
+        "topic": "Exception Handling",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Find the bug in the following code (intended to sum list elements):\n  def sum_list(lst):\n    sum = 0\n    for i in range(1,len(lst)):\n      sum += lst[i]\n    return sum\n  print(sum_list([1,2,3]))",
+        "code": "def sum_list(lst):\n  sum = 0\n  for i in range(1,len(lst)):\n    sum += lst[i]\n  return sum\nprint(sum_list([1,2,3]))",
+        "options": [
+            "The variable 'sum' is not initialized.",
+            "The loop should start at index 0.",
+            "The function should not return a value.",
+            "The input should be a tuple instead of a list."
+        ],
+        "correct_answer": "The loop should start at index 0.",
+        "topic": "Loops",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the problem with the following code? \n  def factorial(n):\n      if n == 0:\n          return 1\n      else:\n          return n * factorial(n)\n\n  print(factorial(5))",
+        "code": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n)\n\nprint(factorial(5))",
+        "options": [
+            "Base case is wrong",
+            "Stack Overflow",
+            "RecursionError",
+            "SyntaxError"
+        ],
+        "correct_answer": "Stack Overflow",
+        "topic": "Recursion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the issue with this code? \n  def foo(a=[]):\n      a.append(5)\n      return a\n\n  print(foo())\n  print(foo())",
+        "code": "def foo(a=[]):\n    a.append(5)\n    return a\n\nprint(foo())\nprint(foo())",
+        "options": [
+            "Syntax error",
+            "Unexpected output due to mutable default argument",
+            "TypeError",
+            "NameError"
+        ],
+        "correct_answer": "Unexpected output due to mutable default argument",
+        "topic": "Functions",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will be the output of the following code?\n  def outer_function():\n      x = 10\n      def inner_function():\n          nonlocal x\n          x = 20\n      inner_function()\n      print(x)\n  outer_function()",
+        "code": "def outer_function():\n    x = 10\n    def inner_function():\n        nonlocal x\n        x = 20\n    inner_function()\n    print(x)\nouter_function()",
+        "options": [
+            "10",
+            "20",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "20",
+        "topic": "Scope",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is wrong with the following class definition?\n  class MyClass:\n      def __init__(self, value):\n          self.value = value\n\n      def get_value():\n          return self.value\n\n  obj = MyClass(10)\n  print(obj.get_value())",
+        "code": "class MyClass:\n    def __init__(self, value):\n        self.value = value\n\n    def get_value():\n        return self.value\n\nobj = MyClass(10)\nprint(obj.get_value())",
+        "options": [
+            "Missing self parameter in get_value method",
+            "Incorrect constructor",
+            "Incorrect object instantiation",
+            "No error"
+        ],
+        "correct_answer": "Missing self parameter in get_value method",
+        "topic": "Classes",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the potential issue with this code?\n  import threading\n  import time\n\n  def worker():\n      time.sleep(1)\n      print(\"Worker done\")\n\n  threads = []\n  for i in range(5):\n      t = threading.Thread(target=worker)\n      threads.append(t)\n      t.start()\n\n  print(\"All threads started\")",
+        "code": "import threading\nimport time\n\ndef worker():\n    time.sleep(1)\n    print(\"Worker done\")\n\nthreads = []\nfor i in range(5):\n    t = threading.Thread(target=worker)\n    threads.append(t)\n    t.start()\n\nprint(\"All threads started\")",
+        "options": [
+            "Threads are not properly joined",
+            "No issues with the code",
+            "Missing import statement",
+            "Threads are not daemon threads"
+        ],
+        "correct_answer": "Threads are not properly joined",
+        "topic": "Threading",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What's wrong with this code trying to create a decorator?\n  def my_decorator(func):\n    def wrapper(*args, **kwargs):\n      print(\"Before function call\")\n      func(*args, **kwargs)\n      print(\"After function call\")\n    return func\n\n  @my_decorator\n  def say_hello():\n    print(\"Hello!\")\n\nsay_hello()",
+        "code": "def my_decorator(func):\n  def wrapper(*args, **kwargs):\n    print(\"Before function call\")\n    func(*args, **kwargs)\n    print(\"After function call\")\n  return func\n\n@my_decorator\ndef say_hello():\n  print(\"Hello!\")\n\nsay_hello()",
+        "options": [
+            "Incorrect return statement in my_decorator",
+            "Incorrect decorator syntax",
+            "Missing arguments in wrapper function",
+            "No issues with the code"
+        ],
+        "correct_answer": "Incorrect return statement in my_decorator",
+        "topic": "Decorators",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Given this code:\n  def check_number(num):\n    assert num > 0, \"Number must be positive\"\n    return num * 2\n\n  print(check_number(-5)) , what will happen?",
+        "code": "def check_number(num):\n  assert num > 0, \"Number must be positive\"\n  return num * 2\n\nprint(check_number(-5))",
+        "options": [
+            "It will print -10",
+            "It will print 10",
+            "It will raise an AssertionError",
+            "It will raise a TypeError"
+        ],
+        "correct_answer": "It will raise an AssertionError",
+        "topic": "Assertions",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the error in this code: `print(\"Hello\" + 5)`?",
+        "code": "print(\"Hello\" + 5)",
+        "options": [
+            "TypeError: can only concatenate str (not \"int\") to str",
+            "SyntaxError: invalid syntax",
+            "ValueError: invalid literal for int() with base 10",
+            "NameError: name 'print' is not defined"
+        ],
+        "correct_answer": "TypeError: can only concatenate str (not \"int\") to str",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of the following code and its potential issue? `x = 10\nif x = 5:\n    print(\"x is 5\")`",
+        "code": "x = 10\nif x = 5:\n    print(\"x is 5\")",
+        "options": [
+            "Prints \"x is 5\"",
+            "SyntaxError: invalid syntax",
+            "Prints nothing",
+            "NameError: name 'x' is not defined"
+        ],
+        "correct_answer": "SyntaxError: invalid syntax",
+        "topic": "L1",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the error in this code: `def my_function()\n    print(\"Hello\")`",
+        "code": "def my_function()\n    print(\"Hello\")",
+        "options": [
+            "IndentationError: expected an indented block",
+            "SyntaxError: invalid syntax",
+            "TypeError: 'str' object is not callable",
+            "NameError: name 'my_function' is not defined"
+        ],
+        "correct_answer": "IndentationError: expected an indented block",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What's wrong with this code: `for i in range(1,5):\nprint(i)`",
+        "code": "for i in range(1,5):\nprint(i)",
+        "options": [
+            "IndentationError: expected an indented block",
+            "SyntaxError: invalid syntax",
+            "TypeError: 'str' object is not callable",
+            "NameError: name 'i' is not defined"
+        ],
+        "correct_answer": "IndentationError: expected an indented block",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will be the output of this code: `x = [1, 2, 3]\nprint(x[3])`?",
+        "code": "x = [1, 2, 3]\nprint(x[3])",
+        "options": [
+            "3",
+            "[1, 2, 3]",
+            "IndexError: list index out of range",
+            "2"
+        ],
+        "correct_answer": "IndexError: list index out of range",
+        "topic": "L3",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the problem with this code: `def add(x, y):\n  return x + y\n\nprint(add(1, \"2\"))`",
+        "code": "def add(x, y):\n  return x + y\n\nprint(add(1, \"2\"))",
+        "options": [
+            "NameError",
+            "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
+            "ValueError",
+            "SyntaxError"
+        ],
+        "correct_answer": "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
+        "topic": "L2",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following and its problem: `x = 5\ndef func():\n  x = 3\n  print(x)\nfunc()\nprint(x)`",
+        "code": "x = 5\ndef func():\n  x = 3\n  print(x)\nfunc()\nprint(x)",
+        "options": [
+            "3\\n3",
+            "5\\n5",
+            "3\\n5",
+            "5\\n3"
+        ],
+        "correct_answer": "3\\n5",
+        "topic": "L2",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the error in the following code: `my_dict = {1: 'a', 2: 'b'}\nprint(my_dict[3])`",
+        "code": "my_dict = {1: 'a', 2: 'b'}\nprint(my_dict[3])",
+        "options": [
+            "KeyError: 3",
+            "IndexError: list index out of range",
+            "ValueError: invalid literal for int() with base 10",
+            "NameError: name 'my_dict' is not defined"
+        ],
+        "correct_answer": "KeyError: 3",
+        "topic": "L3",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of this: `def divide(x, y):\n  return x / y\n\nprint(divide(10, 0))`",
+        "code": "def divide(x, y):\n  return x / y\n\nprint(divide(10, 0))",
+        "options": [
+            "0",
+            "1",
+            "ValueError: division by zero",
+            "ZeroDivisionError: division by zero"
+        ],
+        "correct_answer": "ZeroDivisionError: division by zero",
+        "topic": "L2",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the error in: `try:\n  x = 1 / 0\nexcept Exception as e:\n  pass\nprint(\"Finished\")`",
+        "code": "try:\n  x = 1 / 0\nexcept Exception as e:\n  pass\nprint(\"Finished\")",
+        "options": [
+            "Will never print \"Finished\"",
+            "No error",
+            "ValueError: invalid literal for int() with base 10",
+            "ZeroDivisionError: division by zero"
+        ],
+        "correct_answer": "No error",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Find the bug: `def greet(name):\n  print(\"Hello\")\n  return\n  print(name)`",
+        "code": "def greet(name):\n  print(\"Hello\")\n  return\n  print(name)",
+        "options": [
+            "SyntaxError: invalid syntax",
+            "NameError: name 'name' is not defined",
+            "The 'print(name)' line will never be executed.",
+            "TypeError: 'str' object is not callable"
+        ],
+        "correct_answer": "The 'print(name)' line will never be executed.",
+        "topic": "L2",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the issue with this code: `def process_list(my_list):\n  for i in range(len(my_list)):\n    my_list.pop(i)\n\nmy_list = [1, 2, 3, 4]\nprocess_list(my_list)\nprint(my_list)`",
+        "code": "def process_list(my_list):\n  for i in range(len(my_list)):\n    my_list.pop(i)\n\nmy_list = [1, 2, 3, 4]\nprocess_list(my_list)\nprint(my_list)",
+        "options": [
+            "IndexError: pop index out of range",
+            "TypeError: 'str' object is not callable",
+            "[ ]",
+            "[2, 4]"
+        ],
+        "correct_answer": "IndexError: pop index out of range",
+        "topic": "L3",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Debug: `def factorial(n):\n if n == 0:\n  return 0\n else:\n  return n * factorial(n-1)\nprint(factorial(5))`",
+        "code": "def factorial(n):\n if n == 0:\n  return 0\n else:\n  return n * factorial(n-1)\nprint(factorial(5))",
+        "options": [
+            "RecursionError: maximum recursion depth exceeded",
+            "Returns 0",
+            "Returns 120",
+            "TypeError: can only concatenate str (not \"int\") to str"
+        ],
+        "correct_answer": "Returns 0",
+        "topic": "L2",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the error here: `def func(a, b=[]):\n  b.append(a)\n  return b\n\nprint(func(1))\nprint(func(2))`",
+        "code": "def func(a, b=[]):\n  b.append(a)\n  return b\n\nprint(func(1))\nprint(func(2))",
+        "options": [
+            "Prints [1]\\n[2]",
+            "Prints [1]\\n[1, 2]",
+            "SyntaxError: invalid syntax",
+            "NameError: name 'b' is not defined"
+        ],
+        "correct_answer": "Prints [1]\\n[1, 2]",
+        "topic": "L2",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this code and potential problem: `x = {\"a\": 1, \"b\": 2}\ny = x\ny[\"a\"] = 5\nprint(x)`",
+        "code": "x = {\"a\": 1, \"b\": 2}\ny = x\ny[\"a\"] = 5\nprint(x)",
+        "options": [
+            "{\"a\": 1, \"b\": 2}",
+            "{\"a\": 5, \"b\": 2}",
+            "NameError: name 'x' is not defined",
+            "TypeError: 'str' object is not callable"
+        ],
+        "correct_answer": "{\"a\": 5, \"b\": 2}",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Find the bug: `def find_max(numbers):\n  max_num = 0\n  for num in numbers:\n    if num > max_num:\n      num = max_num\n  return max_num`",
+        "code": "def find_max(numbers):\n  max_num = 0\n  for num in numbers:\n    if num > max_num:\n      num = max_num\n  return max_num",
+        "options": [
+            "Will always return 0",
+            "Will raise a TypeError",
+            "The max_num variable is not being updated correctly",
+            "Will return the correct maximum"
+        ],
+        "correct_answer": "The max_num variable is not being updated correctly",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the potential issue in this code: `def calculate_average(numbers):\n  total = sum(numbers)\n  count = len(numbers)\n  average = total / count\n  return average\n\nprint(calculate_average([]))`",
+        "code": "def calculate_average(numbers):\n  total = sum(numbers)\n  count = len(numbers)\n  average = total / count\n  return average\n\nprint(calculate_average([]))",
+        "options": [
+            "Prints 0",
+            "Prints None",
+            "ZeroDivisionError: division by zero",
+            "TypeError: unsupported operand type(s) for /: 'int' and 'int'"
+        ],
+        "correct_answer": "ZeroDivisionError: division by zero",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What happens if you try to open a file that doesn't exist: `file = open(\"nonexistent_file.txt\", \"r\")`",
+        "code": "file = open(\"nonexistent_file.txt\", \"r\")",
+        "options": [
+            "Creates an empty file",
+            "Returns None",
+            "FileNotFoundError: [Errno 2] No such file or directory: 'nonexistent_file.txt'",
+            "Prints an error message to the console"
+        ],
+        "correct_answer": "FileNotFoundError: [Errno 2] No such file or directory: 'nonexistent_file.txt'",
+        "topic": "L3",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the error: `x = 5\ndef my_func():\n  x = x + 1\n  print(x)\nmy_func()`",
+        "code": "x = 5\ndef my_func():\n  x = x + 1\n  print(x)\nmy_func()",
+        "options": [
+            "NameError: free variable 'x' referenced before assignment in enclosing scope",
+            "Prints 6",
+            "No Error",
+            "SyntaxError: invalid syntax"
+        ],
+        "correct_answer": "NameError: free variable 'x' referenced before assignment in enclosing scope",
+        "topic": "L2",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Bug in: `def sum_list(lst):\n  total = 0\n  for i in range(len(lst)):\n   total += lst[i]\n  return total\nprint(sum_list([1,2,\"a\",4]))`",
+        "code": "def sum_list(lst):\n  total = 0\n  for i in range(len(lst)):\n   total += lst[i]\n  return total\nprint(sum_list([1,2,\"a\",4]))",
+        "options": [
+            "TypeError: unsupported operand type(s) for +=: 'int' and 'str'",
+            "ValueError",
+            "SyntaxError",
+            "It will work correctly."
+        ],
+        "correct_answer": "TypeError: unsupported operand type(s) for +=: 'int' and 'str'",
+        "topic": "L3",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code snippet? Bug: NameError",
+        "code": "print(x)",
+        "options": [
+            "0",
+            "Error",
+            "None",
+            "Undefined"
+        ],
+        "correct_answer": "Error",
+        "topic": "Debugging",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The following code throws a TypeError. What is the most likely cause? Bug: TypeError",
+        "code": "print(\"Hello\" + 5)",
+        "options": [
+            "Incorrect variable type",
+            "Invalid syntax",
+            "Division by zero",
+            "Missing library"
+        ],
+        "correct_answer": "Incorrect variable type",
+        "topic": "Type Errors",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following is NOT a valid debugging technique in Python? Bug: General Debugging",
+        "code": "None",
+        "options": [
+            "Using print statements",
+            "Using a debugger (pdb)",
+            "Code Reviews",
+            "Ignoring errors"
+        ],
+        "correct_answer": "Ignoring errors",
+        "topic": "Debugging Techniques",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is wrong with this code? Bug: IndexError",
+        "code": "my_list = [1, 2, 3]\nprint(my_list[3])",
+        "options": [
+            "List index out of range",
+            "Syntax error",
+            "TypeError",
+            "ValueError"
+        ],
+        "correct_answer": "List index out of range",
+        "topic": "IndexError",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the likely output of this code? Bug: Logical Error",
+        "code": "def is_even(n):\n  return n % 2 == 1\nprint(is_even(4))",
+        "options": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "False",
+        "topic": "Logical Errors",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How can you catch a specific exception in Python? Bug: Exception Handling",
+        "code": "None",
+        "options": [
+            "try...except...else",
+            "try...except...finally",
+            "try...except ExceptionType",
+            "try...catch"
+        ],
+        "correct_answer": "try...except ExceptionType",
+        "topic": "Exception Handling",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What type of error does this code produce? Bug: AttributeError",
+        "code": "my_string = \"hello\"\nprint(my_string.append(\" world\"))",
+        "options": [
+            "TypeError",
+            "ValueError",
+            "AttributeError",
+            "IndexError"
+        ],
+        "correct_answer": "AttributeError",
+        "topic": "AttributeError",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the issue with this loop? Bug: Infinite Loop",
+        "code": "i = 0\nwhile i < 10:\n  print(i)",
+        "options": [
+            "Missing increment",
+            "Incorrect syntax",
+            "List out of range",
+            "Type error"
+        ],
+        "correct_answer": "Missing increment",
+        "topic": "Looping Errors",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which keyword is used to explicitly raise an exception? Bug: Raising Exceptions",
+        "code": "None",
+        "options": [
+            "raise",
+            "except",
+            "throw",
+            "error"
+        ],
+        "correct_answer": "raise",
+        "topic": "Exception Handling",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is wrong with the following code? Bug: Syntax Error",
+        "code": "print(\"Hello)",
+        "options": [
+            "Missing closing quote",
+            "Incorrect variable type",
+            "Invalid function call",
+            "Undefined variable"
+        ],
+        "correct_answer": "Missing closing quote",
+        "topic": "Syntax Errors",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How can you prevent a program from crashing when an error occurs? Bug: Error prevention",
+        "code": "None",
+        "options": [
+            "Use try-except blocks",
+            "Ignore the error",
+            "Restart the program",
+            "Remove all code"
+        ],
+        "correct_answer": "Use try-except blocks",
+        "topic": "Exception Handling",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What type of error will occur if you try to divide by zero? Bug: ZeroDivisionError",
+        "code": "result = 10 / 0",
+        "options": [
+            "ValueError",
+            "TypeError",
+            "ZeroDivisionError",
+            "IndexError"
+        ],
+        "correct_answer": "ZeroDivisionError",
+        "topic": "ZeroDivisionError",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What's the problem in this function? Bug: Scope error",
+        "code": "def my_func():\n  x = 10\nprint(x)",
+        "options": [
+            "x is not defined in the global scope",
+            "Syntax Error",
+            "TypeError",
+            "ValueError"
+        ],
+        "correct_answer": "x is not defined in the global scope",
+        "topic": "Scope",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will the following code output? Bug: Type Conversion",
+        "code": "print(int(\"123.45\"))",
+        "options": [
+            "123",
+            "123.45",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "Error",
+        "topic": "Type Conversion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does pdb stand for? Bug: Debugging Tool",
+        "code": "None",
+        "options": [
+            "Python Debugger",
+            "Program Database",
+            "Process Debug",
+            "Print Debug"
+        ],
+        "correct_answer": "Python Debugger",
+        "topic": "Debugging Tools",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is wrong with this function call? Bug: ArgumentError",
+        "code": "def greet(name, greeting=\"Hello\"):\n  print(greeting + \", \" + name)\ngreet(\"Alice\", \"Good\", \"Morning\")",
+        "options": [
+            "Too many arguments passed",
+            "Incorrect variable type",
+            "Missing default value",
+            "Invalid function name"
+        ],
+        "correct_answer": "Too many arguments passed",
+        "topic": "Functions",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The following code aims to open and read a file, but it fails. What is the potential issue? Bug: FileNotFoundError",
+        "code": "f = open(\"missing_file.txt\", \"r\")\nprint(f.read())",
+        "options": [
+            "FileNotFoundError",
+            "TypeError",
+            "ValueError",
+            "PermissionError"
+        ],
+        "correct_answer": "FileNotFoundError",
+        "topic": "File Handling",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method helps you track variables and execution flow in pdb? Bug: PDB Function",
+        "code": "None",
+        "options": [
+            "next",
+            "continue",
+            "step",
+            "return"
+        ],
+        "correct_answer": "step",
+        "topic": "Debugging Tools",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the potential bug in the code? Bug: incorrect loop condition",
+        "code": "numbers = [1, 2, 3, 4, 5]\nfor i in range(1, len(numbers)):\n  print(numbers[i])",
+        "options": [
+            "It skips the first element",
+            "It causes an IndexError",
+            "It prints the index instead of the value",
+            "It iterates infinitely"
+        ],
+        "correct_answer": "It skips the first element",
+        "topic": "Looping Errors",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How to debug if a variable's value is changing unexpectedly? Bug: Variable tracking",
+        "code": "None",
+        "options": [
+            "Use print statements at key points",
+            "Use a code editor to find and replace the variable",
+            "Ignore the variable",
+            "Comment out the variable definition"
+        ],
+        "correct_answer": "Use print statements at key points",
+        "topic": "Debugging Techniques",
+        "difficulty": "easy"
+    }
+]

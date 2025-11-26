@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of: `print(type([1, 2, 3]))`?",
+    "options": ["A: <class 'tuple'>", "B: <class 'list'>", "C: <class 'set'>", "D: <class 'array'>"],
+    "correct_answer": "B",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is the correct way to open a file for reading in Python?",
+    "options": ["A: file = open('my_file.txt', 'w')", "B: file = open('my_file.txt', 'r')", "C: file = open('my_file.txt')", "D: file = open('my_file.txt', 'a')"],
+    "correct_answer": "B",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `print(2**3 + 5)`?",
+    "options": ["A: 11", "B: 13", "C: 16", "D: 10"],
+    "correct_answer": "B",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best for implementing a LIFO (Last-In, First-Out) behavior?",
+    "options": ["A: Queue", "B: Linked List", "C: Stack", "D: Dictionary"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of a `finally` block in a `try-except` statement?",
+    "options": ["A: To catch exceptions.", "B: To define the default behavior if no exception occurs.", "C: To execute code regardless of whether an exception occurred or not.", "D: To raise an exception."],
+    "correct_answer": "C",
+    "topic": "Exception Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary using its key?",
+    "options": ["A: O(n)", "B: O(log n)", "C: O(1)", "D: O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following best describes a Python decorator?",
+    "options": ["A: A design pattern for object creation", "B: A way to add new functionality to a function without modifying its structure", "C: A built-in function for string formatting", "D: A method for creating classes dynamically"],
+    "correct_answer": "B",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary difference between a list comprehension and a generator expression?",
+    "options": ["A: List comprehensions are faster.", "B: Generator expressions are more memory efficient.", "C: List comprehensions can only be used with loops.", "D: Generator expressions create lists."],
+    "correct_answer": "B",
+    "topic": "Comprehensions & Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print([x for x in range(5) if x % 2 == 0])`?",
+    "options": ["A: [0, 1, 2, 3, 4]", "B: [1, 3]", "C: [0, 2, 4]", "D: [2, 4]"],
+    "correct_answer": "C",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__init__` method in a Python class?",
+    "options": ["A: To define the class's destructor.", "B: To create a new instance of the class.", "C: To initialize the object's attributes.", "D: To define the class's methods."],
+    "correct_answer": "C",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the Global Interpreter Lock (GIL) in Python?",
+    "options": ["A: A mechanism for memory management.", "B: A lock that allows only one thread to hold control of the Python interpreter at any given time.", "C: A debugging tool for identifying deadlocks.", "D: A security feature that prevents unauthorized code execution."],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does Python's memory management handle circular references?",
+    "options": ["A: It uses garbage collection based on reference counting alone.", "B: It uses a cycle-detecting garbage collector to break cycles.", "C: Circular references are automatically resolved by the OS.", "D: Circular references always lead to memory leaks."],
+    "correct_answer": "B",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `asyncio.gather` and `asyncio.wait`?",
+    "options": ["A: `asyncio.gather` returns results in the order of completion, while `asyncio.wait` returns them in the order they were submitted.", "B: `asyncio.wait` raises exceptions, while `asyncio.gather` suppresses them.", "C: `asyncio.gather` returns results in the order they were submitted, while `asyncio.wait` returns them in the order of completion.", "D: There is no difference between them."],
+    "correct_answer": "C",
+    "topic": "Asyncio",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is the most efficient way to merge a large number of sorted lists in Python?",
+    "options": ["A: Using `heapq.merge`.", "B: Concatenating all lists and then sorting.", "C: Merging lists pairwise repeatedly.", "D: Using `sorted(list(itertools.chain(*lists)))`"],
+    "correct_answer": "A",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a metaclass in Python and what is its primary purpose?",
+    "options": ["A: A class that inherits from multiple classes.", "B: A class that defines the behavior of other classes.", "C: A class that is used for managing memory.", "D: A class that is used for exception handling."],
+    "correct_answer": "B",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between a shallow copy and a deep copy in Python, and how do they relate to mutable objects?",
+    "options": ["A: Shallow copies create new objects, while deep copies only create new references. Shallow copies are preferred for mutable objects.", "B: Deep copies create new objects and recursively copy the objects they contain, while shallow copies create new objects but only copy references to the objects they contain. Deep copies are needed when the original and copied object should be independent, especially for mutable objects.", "C: Shallow copies are faster than deep copies. Deep copies are preferred for immutable objects.", "D: There is no difference between shallow and deep copies in Python."],
+    "correct_answer": "B",
+    "topic": "Memory Model",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How can you implement a thread-safe queue in Python?",
+    "options": ["A: Using a regular list.", "B: Using the `queue.Queue` class from the `queue` module.", "C: Using a dictionary with thread locks.", "D: Thread safety is automatically provided by Python."],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What are Python's descriptor protocol methods and how are they used?",
+    "options": ["A: Methods used to create iterators.", "B: `__get__`, `__set__`, and `__delete__` methods that control attribute access.", "C: Methods for defining custom exception classes.", "D: Methods for overloading operators."],
+    "correct_answer": "B",
+    "topic": "Descriptors",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `__slots__` and a regular class in terms of memory usage and attribute access?",
+    "options": ["A: `__slots__` makes attribute access slower and reduces memory usage. It also prevents dynamic attribute creation.", "B: `__slots__` makes attribute access faster and increases memory usage. It also allows dynamic attribute creation.", "C: `__slots__` makes attribute access faster and reduces memory usage. It also prevents dynamic attribute creation.", "D: There is no difference between using `__slots__` and a regular class."],
+    "correct_answer": "C",
+    "topic": "Memory Optimization",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How would you implement a custom context manager in Python and what problem does it solve?",
+    "options": ["A: By defining a class with `__enter__` and `__exit__` methods. It solves the problem of resource management (e.g., file handling, database connections) by ensuring that resources are properly acquired and released.", "B: By using the `with` statement directly on a file object. It solves the problem of writing efficient code.", "C: By using decorators. It solves the problem of code duplication.", "D: Context managers are automatically handled by the interpreter."],
+    "correct_answer": "A",
+    "topic": "Context Managers",
+    "difficulty": "hard"
+  }
+]
+```

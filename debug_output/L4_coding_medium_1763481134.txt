@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Aggregation and Anomaly Detection",
+  "description": "You are building a log aggregation system for a large-scale distributed application. The system receives log entries from various services, each with a timestamp and a severity level (e.g., 'INFO', 'WARN', 'ERROR'). Your task is to process a stream of log entries and identify periods of elevated error rates, indicating potential anomalies. Specifically, you need to calculate the error rate for sliding windows of a fixed duration and report if the error rate exceeds a predefined threshold within any window.",
+  "input_format": "The input consists of two parts:\n\n1.  `window_size`: An integer representing the size of the sliding window in seconds.\n2.  `error_threshold`: A floating-point number representing the maximum acceptable error rate.\n3.  `log_entries`: An array of strings, where each string represents a log entry in the format \"timestamp,severity\". `timestamp` is an integer representing the Unix timestamp (seconds since epoch), and `severity` is one of 'INFO', 'WARN', or 'ERROR'.\n\nExample:\nwindow_size = 60\nerror_threshold = 0.5\nlog_entries = [\"1678886400,INFO\", \"1678886410,WARN\", \"1678886420,ERROR\", \"1678886450,ERROR\", \"1678886470,INFO\", \"1678886480,ERROR\"]\n",
+  "output_format": "Return `true` if the error rate exceeds the `error_threshold` within any sliding window of `window_size` seconds. Return `false` otherwise.",
+  "constraints": "1 <= `window_size` <= 3600\n0 <= `error_threshold` <= 1.0\n1 <= `log_entries.length` <= 10000\nEach timestamp is a non-negative integer.\nThe timestamps in `log_entries` are in non-decreasing order.\n",
+  "sample_input": "60\n0.5\n[\"1678886400,INFO\", \"1678886410,WARN\", \"1678886420,ERROR\", \"1678886450,ERROR\", \"1678886470,INFO\", \"1678886480,ERROR\"]",
+  "sample_output": "true",
+  "difficulty": "medium"
+}
+```

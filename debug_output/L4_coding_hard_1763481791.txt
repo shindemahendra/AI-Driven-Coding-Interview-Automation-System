@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Resource Allocation in a Distributed System",
+  "description": "You are managing a distributed computing system with `n` worker nodes. Each worker node `i` has a maximum capacity `capacity[i]` representing the number of tasks it can handle concurrently. You have `m` incoming tasks, each with a required processing power `power[j]`. Your goal is to allocate these tasks to worker nodes such that the total number of used worker nodes is minimized. A worker node is 'used' if it's assigned at least one task. If a task's `power[j]` exceeds any individual worker node's `capacity[i]`, the task cannot be processed by that node. A single task cannot be split across multiple worker nodes.",
+  "input_format": "The input consists of the following:\n\n*   `n`: An integer representing the number of worker nodes.\n*   `capacity`: An array of `n` integers representing the maximum capacity of each worker node.\n*   `m`: An integer representing the number of tasks.\n*   `power`: An array of `m` integers representing the processing power required by each task.",
+  "output_format": "Return an integer representing the minimum number of worker nodes required to process all tasks. If it is impossible to process all tasks, return -1.",
+  "constraints": "*   1 <= n <= 100\n*   1 <= m <= 1000\n*   1 <= capacity[i] <= 1000 for all 0 <= i < n\n*   1 <= power[j] <= 1000 for all 0 <= j < m",
+  "sample_input": "n = 3\ncapacity = [3, 4, 5]\nm = 5\npower = [1, 2, 3, 1, 4]",
+  "sample_output": "2",
+  "difficulty": "hard"
+}
+```

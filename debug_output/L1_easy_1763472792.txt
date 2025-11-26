@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Which of the following is NOT a logical operator in Python?",
+    "options": ["and", "or", "not", "is"],
+    "correct_answer": "is",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will be the output of the following code: `print([x for x in range(5) if x % 2 == 0])`?",
+    "options": ["[0, 1, 2, 3, 4]", "[0, 2, 4]", "[1, 3]", "[2, 4]"],
+    "correct_answer": "[0, 2, 4]",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the most basic data structure in Python?",
+    "options": ["Dictionary", "List", "Tuple", "Set"],
+    "correct_answer": "List",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is most appropriate for efficiently determining if an element exists?",
+    "options": ["List", "Tuple", "Set", "Dictionary"],
+    "correct_answer": "Set",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary using its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of a decorator in Python?",
+    "options": ["To declare variables", "To modify class attributes", "To add functionality to a function", "To define a new data type"],
+    "correct_answer": "To add functionality to a function",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a valid use case for Python generators?",
+    "options": ["Storing a large dataset in memory", "Creating a user interface", "Iterating over a large sequence without storing it all in memory", "Performing complex mathematical calculations"],
+    "correct_answer": "Iterating over a large sequence without storing it all in memory",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+    {
+    "question": "You are given the numbers 1 to 100. Remove all multiples of 3, then remove all multiples of 5. How many numbers are left?",
+    "options": ["26", "46", "53", "66"],
+    "correct_answer": "53",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What will be the output of the following code snippet if an IndexError occurs: `try: print(my_list[10]) except: print('Error') finally: print('Done')`?",
+    "options": ["Error", "Done", "Error\nDone", "None"],
+    "correct_answer": "Error\nDone",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What type of error will occur if you try to access a variable before it has been assigned a value?",
+    "options": ["TypeError", "ValueError", "NameError", "IndexError"],
+    "correct_answer": "NameError",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Given the sequence: 1, 4, 9, 16, 25, __. What is the next number?",
+    "options": ["30", "36", "49", "64"],
+    "correct_answer": "36",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all Bloops are Gloops, and some Gloops are Ploops, then which of the following must be true?",
+    "options": ["All Bloops are Ploops", "Some Bloops are Ploops", "Some Ploops are Bloops", "None of the above"],
+    "correct_answer": "None of the above",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bakery sells three types of cakes: chocolate, vanilla, and strawberry. You want to buy exactly 7 cakes. How many different combinations of cakes can you buy?",
+    "options": ["28", "36", "45", "56"],
+    "correct_answer": "36",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are working on a team project and a team member consistently misses deadlines and delivers subpar work. How should you address this situation?",
+    "options": ["Confront them publicly during a team meeting.", "Ignore the issue and hope it resolves itself.", "Privately discuss the issue with the team member, offering support and solutions.", "Report them to management without attempting to resolve the issue directly."],
+    "correct_answer": "Privately discuss the issue with the team member, offering support and solutions.",
+    "topic": "L5",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are assigned a task with an unclear set of requirements. What should you do?",
+    "options": ["Start coding based on your best guess.", "Inform your manager that the task is impossible.", "Procrastinate until the requirements become clearer.", "Clarify the requirements with the stakeholders."],
+    "correct_answer": "Clarify the requirements with the stakeholders.",
+    "topic": "L5",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You've discovered a critical bug in production code. What is the FIRST thing you should do?",
+    "options": ["Immediately start fixing the bug without informing anyone.", "Inform the team lead and follow established incident response procedures.", "Document the bug and add it to the backlog.", "Panic."],
+    "correct_answer": "Inform the team lead and follow established incident response procedures.",
+    "topic": "L5",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider a list comprehension `[i for i in range(10) if i%2 == 0 if i > 4]`. What is a potential drawback of using nested `if` conditions within a list comprehension, especially in more complex scenarios?",
+    "options": ["Increased memory usage", "Decreased performance due to unnecessary iterations", "Reduced readability and maintainability", "Incompatibility with certain data types"],
+    "correct_answer": "Reduced readability and maintainability",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "def outer_function(x):\n def inner_function(y):\n  return x + y\n return inner_function\n\nmy_closure = outer_function(5)\nresult = my_closure(3)\nprint(result)\n\nWhat concept does this code exemplify?",
+    "options": ["Inheritance", "Polymorphism", "Closure", "Recursion"],
+    "correct_answer": "Closure",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the most likely cause of a `TypeError: 'int' object is not iterable`?",
+    "options": ["Trying to iterate over a dictionary", "Trying to access an element outside the bounds of a list", "Trying to use an integer in a loop that requires an iterable", "A syntax error in the code"],
+    "correct_answer": "Trying to use an integer in a loop that requires an iterable",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider the following code snippet:\n\ndef modify_list(my_list):\n my_list.append(10)\n\nmy_list = [1, 2, 3]\nmodify_list(my_list)\nprint(my_list)\n\nWhy does the `modify_list` function affect the original `my_list`?",
+    "options": ["Because lists are immutable", "Because lists are passed by value", "Because lists are passed by reference", "The code will raise an error"],
+    "correct_answer": "Because lists are passed by reference",
+    "topic": "L3",
+    "difficulty": "medium"
+  }
+]
+```

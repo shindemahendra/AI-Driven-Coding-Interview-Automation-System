@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A farmer has 17 sheep. All but 9 die. How many sheep are left?",
+    "options": ["0", "8", "9", "17"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the next letter in the following sequence: O, T, T, F, F, S, S, E,...?",
+    "options": ["N", "T", "O", "F"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If you have a room with two light switches and a closed door, and you know that one of the switches controls the light inside the room, but you don't know which one. You can only open the door once. How can you determine which switch controls the light?",
+    "options": ["Turn one switch on, wait, then turn it off before opening the door.", "Turn both switches on and open the door.", "Turn one switch on and immediately open the door.", "Flip one switch, wait five minutes, flip it off, and then open the door."],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock strikes six times in 5 seconds. How long does it take to strike twelve times?",
+    "options": ["10 seconds", "11 seconds", "12 seconds", "13 seconds"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the sequence: 1, 2, 6, 24, 120, what is the next number?",
+    "options": ["360", "720", "480", "600"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What number should replace the question mark: 16, 25, 36, 49, ?",
+    "options": ["54", "60", "64", "81"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Three people are in a room. Two of them are fathers, and two of them are sons. How is this possible?",
+    "options": ["One person is lying.", "It's a metaphor.", "There is one father, son, and grandson.", "Two of the people are twins."],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You have two ropes. Each takes exactly one hour to burn completely, but they don't burn at a constant rate. How do you measure 45 minutes?",
+    "options": ["Cut one rope in half and burn both ends of the other.", "Burn both ends of one rope and one end of the other.", "Burn one end of each rope.", "Burn both ends of both ropes."],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bag contains red and blue marbles. If two marbles are removed at random, the probability that they are both red is 1/2. What is the smallest number of marbles that could be in the bag?",
+    "options": ["4", "5", "6", "7"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are given 12 balls, one of which is either heavier or lighter than the others. You have a balance scale. What is the minimum number of weighings needed to determine which ball is the different one and whether it is heavier or lighter?",
+    "options": ["2", "3", "4", "5"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the missing number: 8, 6, 7, 5, 6, 4, ?",
+    "options": ["3", "5", "8", "7"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What comes next: JFMAMJJASOND?",
+    "options": ["J", "N", "M", "E"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You have five bags of gold coins. One bag contains counterfeit coins, which weigh 1 gram less than genuine coins. You have a scale that can measure weight precisely. What is the minimum number of weighings needed to identify the bag with counterfeit coins?",
+    "options": ["1", "2", "3", "5"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have two hourglasses, one that measures 7 minutes and another that measures 11 minutes. How can you measure exactly 15 minutes using only these two hourglasses?",
+    "options": ["Start both. When 7 runs out, flip it. When 11 runs out, flip it. When 7 runs out again, 15 minutes have passed.", "Start both. When 7 runs out, flip it and start measuring. When 11 runs out, flip it. When 7 runs out again, add the remaining time in the 11 hourglass.", "Start both. When 7 runs out, flip it. When 11 runs out, flip the 7. When 7 runs out the second time, 4 minutes of the 11 minute hourglass are left. Start both. Once 7 runs out flip it. 4 minutes pass on 11 minute hourglass, flip it to get 4 more minutes. ", "Impossible to measure 15 minutes with these hourglasses."],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Alice, Bob, and Charlie are sitting in a circle. Alice always tells the truth, Bob always lies, and Charlie sometimes tells the truth and sometimes lies. You can ask only one question to one of them. What question do you ask to find out which person is Alice?",
+    "options": ["Ask any of them 'Are you Alice?'", "Ask any of them 'Who is Alice?'", "Ask any of them 'Is Bob Charlie?'", "Point to someone and ask anyone 'Is that person Alice?'"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Four people need to cross a rickety bridge at night. They have one torch and the bridge can only hold two people at a time. The people take 1, 2, 5, and 8 minutes to cross respectively. When two people cross together, they must travel at the slower person's pace. What is the shortest time it takes for all four to cross the bridge?",
+    "options": ["15 minutes", "16 minutes", "17 minutes", "18 minutes"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the next number in the sequence: 2, 3, 8, 63, ?",
+    "options": ["3000", "3968", "3969", "4000"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A man is looking at a photograph. Someone asks him, 'Who are you looking at?' He replies, 'Brothers and sisters, I have none. That man's father is my father's son.' Who is in the photograph?",
+    "options": ["His son", "His father", "His brother", "Himself"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have 100 coins laying flat on a table, each with a head side and a tail side. 10 of them are heads up, and 90 are tails up. You can’t feel, see or in any other way find out which side is up. Split the coins into two piles such that there is the same number of heads facing up in each pile. What is the solution?",
+    "options": ["5 heads in each pile", "Put 10 coins in one pile and the other 90 in the other pile.", "Separate the coins into two piles of 50 each.", "Take 10 coins and flip all of them over, then split."],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are given a 3-gallon jug and a 5-gallon jug. How can you measure exactly 4 gallons of water?",
+    "options": ["Fill the 5-gallon jug, pour into the 3-gallon jug. Empty the 3-gallon jug. Pour the remaining 2 gallons into the 3-gallon jug. Fill the 5-gallon jug and carefully pour from the 5 gallon jug until the 3 gallon jug is full.", "Fill the 3-gallon jug, pour it into the 5-gallon jug. Refill the 3-gallon jug, and carefully pour from it into the 5-gallon jug until the 5-gallon jug is full.", "Fill both jugs, and pour them into a bucket that can hold at least 8 gallons.", "Impossible to measure 4 gallons with these jugs."],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  }
+]
+```

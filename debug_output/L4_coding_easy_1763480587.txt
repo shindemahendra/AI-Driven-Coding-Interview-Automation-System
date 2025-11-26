@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Order Fulfillment Optimization",
+  "description": "A warehouse uses a robot to fulfill customer orders. The warehouse is represented as a linear array of bins, each bin containing a specific item type. You are given an array `inventory` representing the items in the warehouse, where `inventory[i]` is the item type in bin `i`. You are also given an array `orders`, where `orders[j]` is the item type a customer has ordered. The robot starts at bin 0.  The robot can only carry one item at a time.  Your task is to calculate the minimum total distance the robot needs to travel to fulfill all orders. The distance between two bins is the absolute difference of their indices.\n\nThe robot follows these steps for each order:\n1.  Find the closest bin containing the requested item.\n2.  Travel to that bin.\n3.  Pick up the item.\n4.  Travel back to bin 0 (the shipping station).\n\nThe warehouse can contain multiple items of the same type. If there are multiple bins containing the requested item at the same minimal distance from the robot's current position, the robot chooses the bin with the smallest index.",
+  "input_format": "The input consists of two arrays:\n\n*   `inventory`: An array of integers representing the items in the warehouse bins. (e.g., `[1, 2, 3, 1, 4, 2]`)\n*   `orders`: An array of integers representing the items customers have ordered. (e.g., `[2, 4, 1]`)\n",
+  "output_format": "Return an integer representing the minimum total distance the robot needs to travel to fulfill all orders.",
+  "constraints": "*   1 <= `inventory.length` <= 1000\n*   1 <= `orders.length` <= 500\n*   1 <= `inventory[i]` <= 1000\n*   1 <= `orders[j]` <= 1000",
+  "sample_input": "[1, 2, 3, 1, 4, 2]\n[2, 4, 1]",
+  "sample_output": "11",
+  "difficulty": "easy"
+}
+```

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the primary cause of an IndexError in Python?",
+    "options": ["Accessing a variable before assignment", "Dividing by zero", "Accessing a list element with an out-of-bounds index", "Using an incorrect data type"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following errors typically results from incorrect indentation?",
+    "options": ["TypeError", "SyntaxError", "ValueError", "NameError"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Given the code snippet: `x = 5; y = x + '2'`, what error will occur?",
+    "options": ["TypeError", "ValueError", "NameError", "SyntaxError"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider the code `for i in range(5): print(i)`, if 'print(i)' is indented incorrectly, what error is likely?",
+    "options": ["RuntimeError", "TypeError", "IndentationError", "ValueError"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's the most common cause of a 'KeyError' in a dictionary?",
+    "options": ["Accessing a non-existent key", "Assigning a wrong value", "Using the wrong data type as key", "Trying to delete from an empty dictionary"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Given the list `my_list = [1, 2, 3]`, what will `my_list[3]` cause?",
+    "options": ["It will return `None`", "It will return `3`", "It will cause an IndexError", "It will return a boolean"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In the code `def foo(a=[]): a.append(1); return a`, calling `foo()` multiple times leads to unexpected behavior due to:",
+    "options": ["Incorrect scoping", "Default argument mutation", "Garbage collection issues", "Name collision"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A function recursively calls itself without a base case. What's the likely error?",
+    "options": ["ValueError", "TypeError", "RecursionError", "OverflowError"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A multi-threaded program experiences inconsistent results. Which is a likely cause?",
+    "options": ["Unnecessary comments", "Lack of proper synchronization", "Incorrect data types", "Over-optimized code"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A program works fine with small inputs, but crashes with large inputs. What is a likely cause?",
+    "options": ["Stack overflow or memory leak", "Incorrect variable names", "Syntax errors", "Compiler bugs"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What type of error arises if you try to modify a tuple?",
+    "options": ["ValueError", "TypeError", "AttributeError", "IndexError"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A function uses a nonlocal variable, but the variable isn't defined in the enclosing scope. What error occurs?",
+    "options": ["NameError", "SyntaxError", "UnboundLocalError", "ValueError"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A critical section of code is protected by a lock, but the lock is never released. This can lead to:",
+    "options": ["Deadlock", "Starvation", "Race condition", "Segmentation fault"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A program uses multiple threads to process data. One thread modifies a shared data structure without proper synchronization, leading to unpredictable behavior. This is an example of:",
+    "options": ["Memory leak", "Data race", "Stack overflow", "Segmentation fault"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A complex system uses a generator function for data processing. A subtle bug causes the generator to yield incorrect values intermittently, leading to downstream errors. Identifying this requires:",
+    "options": ["Code review only", "Black box testing only", "Deep understanding of generator state and execution flow", "Performance profiling"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A program crashes with a segmentation fault. What's a likely cause in Python (assuming no C extensions are used)?",
+    "options": ["Integer overflow", "Stack overflow in recursive function", "Accessing deallocated memory via a dangling reference (likely in a C extension)", "Incorrect exception handling"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A server handles concurrent requests using asyncio. One coroutine blocks indefinitely, preventing other coroutines from executing. This is an example of:",
+    "options": ["A race condition", "Deadlock", "A blocking I/O operation within a coroutine", "Memory leak"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A memory leak in a long-running Python process is most effectively diagnosed using:",
+    "options": ["pdb debugger", "A code review", "Memory profiling tools", "Syntax highlighting"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A function's behavior changes depending on the order in which other modules are imported. This suggests a problem with:",
+    "options": ["Incompatible libraries", "Global state and side effects", "Incorrect type annotations", "Compiler optimization"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A program relies on external API calls, and intermittently fails with cryptic errors. This can be due to:",
+    "options": ["Internal server errors of API, rate limiting or data corruption.", "Typographical errors in the code", "Incorrect variable initializations", "Problems with the local operating system"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  }
+]
+```

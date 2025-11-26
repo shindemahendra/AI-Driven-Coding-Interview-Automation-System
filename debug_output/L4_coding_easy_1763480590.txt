@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log File Analyzer",
+  "description": "You are working on a log analysis tool for a web server. The log entries are simple strings, and you need to extract and count the occurrences of different HTTP status codes within the logs.\n\nGiven an array of log entry strings, your task is to count how many times each HTTP status code (e.g., '200', '404', '500') appears in the logs. Only count complete and valid status codes, meaning codes that consist of three digits. Ignore entries that don't contain a valid HTTP status code.\n\nReturn a dictionary (or map) where the keys are the HTTP status codes (as strings) and the values are their corresponding counts.",
+  "input_format": "An array of strings, where each string represents a log entry.",
+  "output_format": "A dictionary (or map) where the keys are the HTTP status codes (as strings) and the values are their counts (integers).",
+  "constraints": "1 <= log_entries.length <= 1000\n1 <= log_entry.length <= 100\nEach log entry will contain only printable ASCII characters.",
+  "sample_input": "[\"GET /api/users 200 OK\", \"POST /auth 404 Not Found\", \"GET /items 200 OK\", \"500 Internal Server Error\", \"Invalid log entry\", \"GET /admin 503 Service Unavailable\", \"200Success\"]",
+  "sample_output": "{\"200\": 2, \"404\": 1, \"503\": 1}",
+  "difficulty": "easy"
+}
+```

@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Resource Allocation for Distributed Tasks",
+  "description": "You are tasked with optimizing the allocation of computational resources to a set of independent tasks in a distributed computing environment. You have `N` tasks to complete, each with a specific resource requirement and a potential profit. You also have `M` available resource units. Each task `i` requires `resources[i]` resource units and yields a profit of `profit[i]` upon completion. However, due to task dependencies and network bandwidth limitations, you can only complete a maximum of `K` tasks.  Your goal is to determine the subset of tasks (no more than `K`) that maximizes the total profit without exceeding the total available resource units `M`.  If no tasks can be completed given `M` and `K`, return 0. If multiple combinations exist that yield the same maximum profit, return the maximum profit only.",
+  "input_format": "The input consists of the following:\n\n*   `N`: An integer representing the number of tasks.\n*   `M`: An integer representing the total available resource units.\n*   `K`: An integer representing the maximum number of tasks that can be completed.\n*   `resources`: An array of `N` integers, where `resources[i]` represents the resource requirement of task `i`.\n*   `profit`: An array of `N` integers, where `profit[i]` represents the profit gained by completing task `i`.",
+  "output_format": "Return a single integer representing the maximum possible profit achievable by selecting at most `K` tasks without exceeding the resource limit `M`.",
+  "constraints": "*   1 <= N <= 200\n*   1 <= M <= 200\n*   1 <= K <= N\n*   1 <= resources[i] <= M for all i\n*   1 <= profit[i] <= 1000 for all i",
+  "sample_input": "5\n10\n3\n[3, 4, 5, 2, 6]\n[4, 5, 6, 3, 7]",
+  "sample_output": "17",
+  "difficulty": "hard"
+}
+```

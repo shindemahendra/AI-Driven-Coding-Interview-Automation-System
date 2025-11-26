@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "If 'ABCD' is coded as 'BCDE', then how will 'XYZW' be coded?",
+    "options": ["YZXA", "YZAXY", "YZAB", "ZYXW"],
+    "correct_answer": "YZXA",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What number should come next in the series: 2, 6, 12, 20, ?",
+    "options": ["24", "30", "32", "36"],
+    "correct_answer": "30",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all Bloops are Floops, and all Floops are Gloops, then which of the following must be true?",
+    "options": ["All Gloops are Floops", "All Bloops are Gloops", "Some Gloops are Bloops", "No Gloops are Bloops"],
+    "correct_answer": "All Bloops are Gloops",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 'LISTEN' is coded as 'SILNET', then how will 'SILENT' be coded?",
+    "options": ["LISNET", "LISTEN", "LISENT", "NETSIL"],
+    "correct_answer": "LISNET",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A clock is showing 4:30. What is the angle between the hour and minute hands?",
+    "options": ["30 degrees", "45 degrees", "60 degrees", "75 degrees"],
+    "correct_answer": "45 degrees",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bag contains 5 red balls, 3 blue balls, and 2 green balls. What is the probability of drawing a red ball, then a blue ball without replacement?",
+    "options": ["1/6", "1/8", "1/10", "1/4"],
+    "correct_answer": "1/6",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the next letter in the sequence: O, T, T, F, F, S, S, E, ?",
+    "options": ["N", "T", "O", "E"],
+    "correct_answer": "N",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "John is taller than Mary. Peter is shorter than John. Which of the following statements is definitively true?",
+    "options": ["Peter is shorter than Mary", "Mary is taller than Peter", "Peter is taller than Mary", "None of the above"],
+    "correct_answer": "None of the above",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the missing number: 36, 34, 30, 28, 24, ?",
+    "options": ["20", "22", "23", "26"],
+    "correct_answer": "22",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have 8 balls. 7 of them are the same weight, and 1 is slightly heavier. Using a balance scale, what is the minimum number of weighings required to guarantee you find the heavier ball?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "2",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the constraints: A > B, C < D, B > D. Which is the smallest?",
+    "options": ["A", "B", "C", "D"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have two ropes that each take exactly one hour to burn completely, but they don't burn at a constant rate. How can you measure exactly 45 minutes?",
+    "options": ["Burn one rope at both ends and the other at one end simultaneously.", "Burn both ropes at both ends simultaneously.", "Burn one rope at one end, then the other at one end. ", "Burn one rope at both ends, and when it finishes, burn the other at one end."],
+    "correct_answer": "Burn one rope at both ends, and when it finishes, burn the other at one end.",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A farmer needs to transport a fox, a chicken, and a sack of grain across a river. His boat can only carry one item at a time. He cannot leave the fox and chicken alone together, or the chicken and grain alone together. How many trips does he need?",
+    "options": ["5", "6", "7", "8"],
+    "correct_answer": "7",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are in a room with three light switches. Each switch controls one of three light bulbs in another room. You may only enter the room with the light bulbs once. How can you determine which switch controls which bulb?",
+    "options": ["Turn on one switch, wait, turn it off, then turn on another.", "Flip two switches and observe", "Try each possible switch configuration", "No possible way"],
+    "correct_answer": "Turn on one switch, wait, turn it off, then turn on another.",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following correctly prints \"Hello, World!\"?",
+    "options": ["print('Hello, World!')", "Print(\"Hello, World!\")", "printf(\"Hello, World!\")", "System.out.println(\"Hello, World!\")"],
+    "correct_answer": "print('Hello, World!')",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `len([1, 2, [3, 4]])`?",
+    "options": ["2", "3", "4", "Error"],
+    "correct_answer": "3",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a LIFO (Last-In, First-Out) order?",
+    "options": ["Queue", "Stack", "List", "Dictionary"],
+    "correct_answer": "Stack",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the value of `x` after the following code executes: `x = 5; x += 2`?",
+    "options": ["5", "2", "7", "10"],
+    "correct_answer": "7",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["class", "def", "import", "return"],
+    "correct_answer": "def",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is mutable?",
+    "options": ["String", "Tuple", "Int", "List"],
+    "correct_answer": "List",
+    "topic": "L2",
+    "difficulty": "easy"
+  }
+]
+```

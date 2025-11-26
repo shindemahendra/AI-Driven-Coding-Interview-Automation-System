@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the next number in the sequence: 2, 6, 12, 20, 30, ?",
+    "options": ["36", "40", "42", "44"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all Bloops are Floops, and some Floops are Gloops, then which statement must be true?",
+    "options": ["All Bloops are Gloops", "Some Bloops are Gloops", "Some Gloops are Bloops", "Some Gloops are Floops"],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A farmer has 17 sheep. All but 9 died. How many are left?",
+    "options": ["0", "8", "9", "17"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A > B, and C < B, which of the following MUST be true?",
+    "options": ["A > C", "A < C", "A = C", "Cannot be determined"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the missing number in the series: 3, 8, 15, 24, ?, 48",
+    "options": ["33", "34", "35", "36"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "John is taller than Mary, and Mary is shorter than David. If Sarah is taller than David, who is the shortest?",
+    "options": ["John", "Mary", "David", "Sarah"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at noon, what time will it show when the correct time is 6 PM?",
+    "options": ["5:30 PM", "5:00 PM", "5:15 PM", "4:45 PM"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What number should fill the blank: 4, 9, 16, 25, __, 49?",
+    "options": ["34", "35", "36", "37"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Five people are standing in a line. A is in front of B, but behind C. D is in front of E, but behind B. What is the order of the line from front to back?",
+    "options": ["C, A, B, D, E", "C, B, A, D, E", "A, B, C, D, E", "E, D, B, A, C"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If a certain coding system defines APPLE as 20 and BANANA as 36, what would ORANGE be equal to, assuming each letter is assigned a unique number, and this number depends on position in the alphabet?",
+    "options": ["50", "60", "70", "80"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A, B, C, D, and E are sitting around a circular table. A is next to B. A is opposite C. D is not next to B. Which two people must be sitting next to each other?",
+    "options": ["B and C", "C and E", "D and E", "B and D"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have 8 balls. 7 of them weigh the same, and one is heavier. Using a balance scale, what is the minimum number of weighings needed to guarantee you find the heavier ball?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "There are 100 prisoners and a warden. The warden puts all the prisoners' names in a box. One by one, the prisoners are allowed to draw a name from the box and then return it. If any prisoner draws his/her own name, all prisoners are executed. If no prisoner draws his/her own name within 100 tries, they are freed. What is the probability that all prisoners are freed?",
+    "options": ["1/100", "1/e", "1/2", "Very close to 0"],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A fruit vendor has apples and oranges. The ratio of apples to oranges is 3:5. If he sells half of his apples and a quarter of his oranges, what is the new ratio of apples to oranges?",
+    "options": ["6:5", "5:6", "3:10", "3:5"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Three travelers are carrying food for a trip. The first traveler carries 5 loaves of bread, the second carries 3 loaves, and the third carries none but agrees to pay the other two for the food. At the end of the trip, the third traveler pays 8 coins. How should the coins be divided between the first and second travelers if they shared the bread equally?",
+    "options": ["5 coins to the first, 3 coins to the second", "7 coins to the first, 1 coin to the second", "6 coins to the first, 2 coins to the second", "4 coins each"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If it takes 6 machines 6 minutes to make 6 widgets, how long would it take 100 machines to make 100 widgets?",
+    "options": ["6 minutes", "1 minute", "100 minutes", "36 minutes"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In a race, if you pass the person in second place, what place are you in?",
+    "options": ["First place", "Second place", "Third place", "You remain in the same position"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You have two ropes. Each rope takes exactly one hour to burn completely. The ropes do not burn at a constant rate. How can you measure exactly 45 minutes using only the two ropes and a lighter?",
+    "options": ["Burn both ropes at the same time, then cut one in half when the other is done", "Light one rope at both ends and the other at one end. When the first rope is done, light the other end of the second rope", "Light one rope at one end for 45 minutes", "Impossible to determine"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A train leaves Chicago at 9:00 AM, traveling at 60 mph towards Denver. Another train leaves Denver at 10:00 AM, traveling at 80 mph towards Chicago. If the distance between Chicago and Denver is 1000 miles, at what time will the two trains meet?",
+    "options": ["3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the next letter in the following sequence: O, T, T, F, F, S, S, E, N, ?",
+    "options": ["T", "N", "E", "O"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  }
+]
+```

@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Analyzer",
+  "description": "You are tasked with analyzing log entries from a web server.  Each log entry consists of an IP address and a timestamp (Unix epoch time in seconds). You need to identify the IP address that has made the most requests within any given `window_size` second window. If multiple IPs have the same maximum request count within a window, return the IP address that appears earliest in the log.",
+  "input_format": "The input will be an array of strings, where each string represents a log entry in the format 'IP_ADDRESS,TIMESTAMP'.\nThe first line of input is an integer `window_size`, representing the size of the time window in seconds to consider.\nThe subsequent lines are log entries.",
+  "output_format": "The output should be a single string representing the IP address that made the most requests within any `window_size` second window.",
+  "constraints": "1 <= `window_size` <= 60\n1 <= number of log entries <= 1000\nIP addresses are valid IPv4 addresses.\nTimestamps are integers representing Unix epoch time in seconds and are sorted in ascending order.\nTimestamps are non-negative.",
+  "sample_input": "10\n192.168.1.1,1678886400\n192.168.1.2,1678886402\n192.168.1.1,1678886403\n192.168.1.1,1678886405\n192.168.1.2,1678886407\n192.168.1.3,1678886408\n192.168.1.1,1678886409\n192.168.1.4,1678886410\n192.168.1.1,1678886412\n192.168.1.2,1678886415\n192.168.1.5,1678886418",
+  "sample_output": "192.168.1.1",
+  "difficulty": "easy"
+}
+```

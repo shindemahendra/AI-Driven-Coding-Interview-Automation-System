@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "L1 - What comes next in the series: 2, 4, 6, 8, ?",
+    "options": ["9", "10", "11", "12"],
+    "correct_answer": "B",
+    "topic": "Logical Puzzles",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L1 - If all Bloops are Floops, and some Floops are Gloops, then:",
+    "options": ["All Bloops are Gloops", "Some Bloops are Gloops", "Some Gloops are Bloops", "None of the above"],
+    "correct_answer": "D",
+    "topic": "Logical Puzzles",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L1 - What is the missing number: 1, 4, 9, __, 25?",
+    "options": ["12", "16", "18", "20"],
+    "correct_answer": "B",
+    "topic": "Logical Puzzles",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L1 - Which word does NOT belong: Apple, Banana, Carrot, Orange?",
+    "options": ["Apple", "Banana", "Carrot", "Orange"],
+    "correct_answer": "C",
+    "topic": "Logical Puzzles",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L1 - A farmer has 17 sheep, all but 9 die. How many are left?",
+    "options": ["0", "8", "9", "17"],
+    "correct_answer": "C",
+    "topic": "Logical Puzzles",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L1 - Four people need to cross a bridge. They have one flashlight. The bridge can only hold two people at a time. People cross at speeds of 1, 2, 5, and 8 minutes respectively. What is the shortest time to get everyone across?",
+    "options": ["15 minutes", "16 minutes", "17 minutes", "20 minutes"],
+    "correct_answer": "A",
+    "topic": "Logical Puzzles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L1 - A bag contains red and blue marbles. 2/3 of the marbles are red. Of the remaining marbles, 1/4 are blue. If there are 36 marbles in total, how many blue marbles are there?",
+    "options": ["3", "6", "9", "12"],
+    "correct_answer": "A",
+    "topic": "Logical Puzzles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L1 - If John is taller than Mary, and Mary is taller than Peter, which statement MUST be true?",
+    "options": ["John is taller than Peter", "Peter is taller than John", "Mary is the tallest", "Peter is the shortest"],
+    "correct_answer": "A",
+    "topic": "Logical Puzzles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L1 - You have 12 balls. 11 are the same weight and one is different. You have a balance scale. What is the minimum number of weighings to guarantee you find the different ball?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "C",
+    "topic": "Logical Puzzles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L1 - A clock loses 5 minutes per hour. If the clock is set correctly at 9:00 AM, what time will it show at 9:00 PM?",
+    "options": ["8:00 PM", "8:10 PM", "8:30 PM", "8:50 PM"],
+    "correct_answer": "A",
+    "topic": "Logical Puzzles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L1 - You have three boxes, one containing only apples, one containing only oranges, and one containing both apples and oranges. The boxes have been incorrectly labeled such that no label identifies the actual contents of the box it describes. Opening just one box, and without looking in the box, you take out one piece of fruit. By looking at the fruit, how can you immediately label all of the boxes correctly?",
+    "options": ["Pick a box labeled 'Apples' and examine the fruit.", "Pick a box labeled 'Oranges' and examine the fruit.", "Pick a box labeled 'Apples and Oranges' and examine the fruit.", "This is not possible without looking into the boxes."],
+    "correct_answer": "C",
+    "topic": "Logical Puzzles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L1 - Five houses stand in a row, each painted a different color. Each house is inhabited by a person of a different nationality. These five owners drink a certain type of beverage, smoke a certain brand of cigars, and keep a certain pet. Given 15 clues, what type of fish does the German own? (This is a variant of Einstein's Riddle). (Assumes familiarity with the classic Einstein's Riddle setup).",
+    "options": ["Cat", "Dog", "Birds", "The German doesn't own fish"],
+    "correct_answer": "D",
+    "topic": "Logical Puzzles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L1 - You have two ropes. Each rope takes exactly one hour to burn completely, but they don't burn at a constant rate. How can you measure exactly 45 minutes using only these two ropes and a lighter?",
+    "options": ["Burn one rope at both ends and the other at one end.", "Burn both ropes at one end simultaneously, then burn the remaining piece of the first rope at both ends.", "Burn one rope at both ends. When it finishes, burn the second rope at both ends.", "Burn one rope at one end. When it finishes, burn the second rope at both ends."],
+    "correct_answer": "A",
+    "topic": "Logical Puzzles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L1 - A king has 1000 bottles of wine. One of the bottles is poisoned. He has 10 slaves he can use to determine which bottle is poisoned. What is the minimum number of slaves needed to determine which bottle is poisoned?",
+    "options": ["5", "10", "100", "500"],
+    "correct_answer": "B",
+    "topic": "Logical Puzzles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L1 - What is the maximum number of pieces you can cut a pizza into with 6 straight cuts?",
+    "options": ["16", "22", "24", "29"],
+    "correct_answer": "B",
+    "topic": "Logical Puzzles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L2 - What is the output of the following code snippet?\n```python\nx = [1, 2, 3]\ny = x\ny[0] = 4\nprint(x)```",
+    "options": ["[1, 2, 3]", "[4, 2, 3]", "[1, 4, 3]", "[4, 4, 4]"],
+    "correct_answer": "B",
+    "topic": "Syntax & Data Structures MCQs",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L2 - Which of the following is the correct way to create an empty dictionary in Python?",
+    "options": ["{}", "()", "[]", "set()"],
+    "correct_answer": "A",
+    "topic": "Syntax & Data Structures MCQs",
+    "difficulty": "easy"
+  },
+    {
+    "question": "L2 - What will be printed by `print(type([1,2]))`?",
+    "options": ["list", "tuple", "set", "array"],
+    "correct_answer": "A",
+    "topic": "Syntax & Data Structures MCQs",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L2 - What is the output of the following code?\n```python\ndef foo(a=[]):\n a.append(5)\n print(a)\n\nfoo()\nfoo()```",
+    "options": ["[5]\n[5]", "[5]\n[5, 5]", "[5, 5]\n[5, 5]", "[5]\nNone"],
+    "correct_answer": "B",
+    "topic": "Syntax & Data Structures MCQs",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L2 - Which of the following data structures uses LIFO (Last-In, First-Out) principle?",
+    "options": ["Queue", "Linked List", "Stack", "Tree"],
+    "correct_answer": "C",
+    "topic": "Syntax & Data Structures MCQs",
+    "difficulty": "easy"
+  }
+]
+```

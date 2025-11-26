@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Consider the following code: `def process_data(data):\n results = []\n for i in range(len(data)):\n if i % 2 == 0:\n results.append(data[i] * 2)\n else:\n results.append(data[i] / 2)\n return results\n\ndata = [1, 2, 3, 4, 5]\nmodified_data = process_data(data)\nprint(sum(modified_data))` What is the most likely cause of a `TypeError` if some elements in `data` were strings?",
+    "options": ["Integer division in the else block.", "String concatenation in the if block.", "Incompatible types during multiplication or division.", "Index out of range in the loop."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A multithreaded Python application occasionally produces incorrect results when multiple threads increment a shared counter. What is the primary cause of this issue, and what is the most appropriate solution using standard Python libraries?",
+    "options": ["GIL limitations; Use `threading.Lock`.", "Global scope pollution; Use `nonlocal` keyword.", "Memory corruption; Implement explicit memory management.", "Python's pass-by-reference semantics; Use `copy.deepcopy`."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider a function `def fetch_data(url):\n try:\n response = requests.get(url)\n response.raise_for_status()\n return response.json()\n except requests.exceptions.RequestException as e:\n print(f'Request failed: {e}')\n return None\n\nresults = fetch_data('https://api.example.com/data')\nprint(results['value'])`. If `results` is `None`, what will happen?",
+    "options": ["The program will crash with a KeyError.", "The program will print `None`.", "The program will crash with a TypeError.", "The program will crash with an AttributeError."],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You have a function using a generator: `def infinite_sequence():\n num = 0\n while True:\n yield num\n num += 1\n\nfor i in infinite_sequence():\n print(i)\n if i > 10: break`. If you remove the `if i > 10: break` condition, what is the most likely outcome?",
+    "options": ["The program will raise a StopIteration exception.", "The program will run indefinitely, consuming resources.", "The program will print only the first 10 numbers.", "The program will raise a MemoryError immediately."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A Python script uses a global list and multiple functions modify it. You observe unexpected behavior and suspect mutation issues. Which of the following is the MOST effective strategy to diagnose the source of the mutation?",
+    "options": ["Use `id()` to track the list's memory address across function calls.", "Use `copy.deepcopy()` before passing the list to any function.", "Print the list's contents after each function call.", "Use a global variable to track the number of modifications."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this code: `def my_function(x):\n if x > 0:\n my_function(x - 1)\n print(x)\nmy_function(3)`. What's printed to the console?",
+    "options": ["3 2 1 0", "0 1 2 3", "1 2 3", "3"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A function iterates through a large dataset and processes each item. It occasionally raises a `KeyError` that's not immediately obvious. How should you modify the code to best identify the problematic data points while minimizing performance impact?",
+    "options": ["Add a try-except block inside the loop, logging the faulty item and continuing.", "Inspect the entire dataset before processing to identify potential KeyError sources.", "Use `pdb` to step through each iteration of the loop.", "Replace dictionary lookups with `dict.get()` using a default value."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a potential issue with using `multiprocessing.Pool` with functions that heavily rely on global mutable state, and how can it be addressed?",
+    "options": ["Increased memory consumption; Use `threading` instead.", "Race conditions due to shared memory; Use `multiprocessing.Queue` for inter-process communication.", "Serialization errors when passing complex objects; Use simple data types.", "Deadlocks due to incorrect process synchronization; Avoid using locks."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are debugging a memory leak in a long-running Python process. Which of the following tools would be MOST effective in identifying the objects consuming the most memory?",
+    "options": ["`psutil`", "`memory_profiler`", "`timeit`", "`unittest`"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The code `def func(a, b=[]):\n b.append(a)\n return b\nprint(func(1))\nprint(func(2))` prints what?",
+    "options": ["[1]\n[2]", "[1]\n[1, 2]", "[1, 2]\n[2]", "[1]\n[2, 1]"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given a recursive function that reaches Python's recursion depth limit, how can you increase the limit?",
+    "options": ["Modify the operating system's kernel parameters.", "Set the `PYTHONRECURSIONLIMIT` environment variable.", "Use `sys.setrecursionlimit()`.", "Use `gc.set_threshold()`."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In Python, what is the most common cause of an `IndentationError`?",
+    "options": ["Mixing tabs and spaces for indentation.", "Incorrect use of semicolons.", "Using keywords as variable names.", "Dividing by zero."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A function using the `with` statement to manage a file throws an `OSError` within the `with` block. What happens to the file resource?",
+    "options": ["The file remains open until explicitly closed.", "The file is automatically closed by the `with` statement's context manager.", "The file is corrupted due to the error.", "The file is only closed if the error is handled within the block."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You observe that a Python function's execution time increases exponentially with the size of the input list. What data structure change might reduce the runtime complexity?",
+    "options": ["Replace the list with a set.", "Replace the list with a tuple.", "Replace the list with a deque.", "Replace the list with a heap."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider: `x = [1, 2, 3]\ny = x\ny[0] = 4\nprint(x)`. What will be printed?",
+    "options": ["[1, 2, 3]", "[4, 2, 3]", "[1, 4, 3]", "Error"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You are using `asyncio` to perform concurrent network requests. You notice that some requests are inexplicably taking much longer than expected, even though the server response times are consistently fast. What is a potential cause of this issue?",
+    "options": ["Insufficient CPU cores.", "Blocking synchronous code within the event loop.", "Network congestion on the client's machine.", "The server is throttling the requests."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A decorator is used to time function execution. The timed function returns a generator. After applying the decorator, the generator only yields the first value, then stops. What is the likely cause?",
+    "options": ["The decorator consumed the generator without yielding its values.", "The decorator changed the generator into a list.", "The decorator modified the generator's internal state.", "The generator is incompatible with decorators."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Code: `def buggy_function(n):\n result = 0\n for i in range(n):\n result += i\n return result\nprint(buggy_function(5))`. What is the correct sum?",
+    "options": ["10", "15", "5", "0"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're using a custom iterator in Python and encountering `StopIteration` unexpectedly. What's a common reason for this premature stopping?",
+    "options": ["The `__next__` method is not properly implemented to raise `StopIteration` at the end.", "The iterator is being used in a `while` loop instead of a `for` loop.", "The iterator is being garbage collected prematurely.", "The `__iter__` method is not implemented correctly."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your application uses a custom metaclass. Instances of classes created with this metaclass are exhibiting unexpected behavior related to attribute access. What's a likely cause related to the metaclass?",
+    "options": ["The metaclass is not inheriting from `type`.", "The metaclass's `__new__` or `__init__` methods are incorrectly modifying the class dictionary.", "The metaclass is not compatible with multiple inheritance.", "The metaclass is causing a circular dependency."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  }
+]
+```

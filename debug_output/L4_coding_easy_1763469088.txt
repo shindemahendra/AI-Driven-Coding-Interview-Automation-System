@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Count Vowels",
+  "description": "Given a string, count the number of vowels (a, e, i, o, u) it contains. The vowels are case-insensitive, meaning 'A' is also considered a vowel.",
+  "input_format": "A single line containing a string 's'.",
+  "output_format": "A single integer representing the number of vowels in the string 's'.",
+  "constraints": "1 <= length of 's' <= 1000\n's' will only contain letters (a-z, A-Z) and spaces.",
+  "sample_input": "Hello World",
+  "sample_output": "3",
+  "difficulty": "easy"
+}
+```

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the time complexity of accessing an element by key in a Python dictionary?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is the correct way to create a generator expression in Python?",
+    "options": ["(x for x in range(10))", "[x for x in range(10)]", "{x for x in range(10)}", "x for x in range(10)"],
+    "correct_answer": "(x for x in range(10))",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary purpose of using decorators in Python?",
+    "options": ["To enhance code readability", "To modify the behavior of a function or class", "To improve runtime performance", "To reduce memory consumption"],
+    "correct_answer": "To modify the behavior of a function or class",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In Python, which of the following data structures is mutable?",
+    "options": ["String", "Tuple", "FrozenSet", "List"],
+    "correct_answer": "List",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `[x**2 for x in range(5) if x % 2 == 0]`?",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[0, 2, 4]", "[0, 1, 2, 3, 4]"],
+    "correct_answer": "[0, 4, 16]",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of these statements about Python classes is FALSE?",
+    "options": ["A class can inherit from multiple classes.", "A class can have methods and attributes.", "All class attributes are public by default.", "A class cannot have methods without self as an argument."],
+    "correct_answer": "A class cannot have methods without self as an argument.",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the `__init__` method do in a Python class?",
+    "options": ["It deletes an instance of the class", "It initializes an instance of the class", "It defines static methods", "It creates a new class"],
+    "correct_answer": "It initializes an instance of the class",
+    "topic": "OOP",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of `super()` in Python?",
+    "options": ["To call a method in a parent class", "To define a static method", "To create a new class", "To delete an object"],
+    "correct_answer": "To call a method in a parent class",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print(1 == True)`?",
+    "options": ["True", "False", "Error", "None"],
+    "correct_answer": "True",
+    "topic": "Syntax",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between `==` and `is` in Python?",
+    "options": ["`==` checks for value equality, `is` checks for identity", "`==` checks for identity, `is` checks for value equality", "They are interchangeable", "`is` is used for numbers, `==` for strings"],
+    "correct_answer": "`==` checks for value equality, `is` checks for identity",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a valid way to open a file in Python?",
+    "options": ["open('file.txt', 'r')", "open('file.txt', 'w')", "open('file.txt', 'x')", "file('file.txt', 'r')"],
+    "correct_answer": "file('file.txt', 'r')",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will be the output of the following code snippet? `print(list(map(lambda x: x * 2, [1, 2, 3])))`",
+    "options": ["[1, 2, 3]", "[2, 4, 6]", "[2, 2, 2]", "[1, 4, 9]"],
+    "correct_answer": "[2, 4, 6]",
+    "topic": "Lambda Functions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What data structure is best suited for implementing a Last-In-First-Out (LIFO) behavior?",
+    "options": ["Queue", "Heap", "Stack", "Linked List"],
+    "correct_answer": "Stack",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following operations has a time complexity of O(1) on average for Python lists?",
+    "options": ["Inserting an element at the beginning", "Deleting an element from the middle", "Accessing an element by index", "Searching for an element"],
+    "correct_answer": "Accessing an element by index",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print('hello'.replace('l', 'p', 1))`?",
+    "options": ["heplo", "heppo", "hellp", "hepllo"],
+    "correct_answer": "heplo",
+    "topic": "String Manipulation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is the correct way to handle exceptions in Python?",
+    "options": ["try: ... catch: ...", "begin: ... rescue: ...", "if: ... else: ...", "try: ... except: ..."],
+    "correct_answer": "try: ... except: ...",
+    "topic": "Exception Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `finally` block in a `try-except` statement?",
+    "options": ["To handle exceptions", "To define the default case if no exception occurs", "To execute code regardless of whether an exception occurred or not", "To define alternative control flow."],
+    "correct_answer": "To execute code regardless of whether an exception occurred or not",
+    "topic": "Exception Handling",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print(type([1,2,3]))`?",
+    "options": ["<class 'tuple'>", "<class 'set'>", "<class 'list'>", "<class 'array'>"],
+    "correct_answer": "<class 'list'>",
+    "topic": "Syntax",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the role of the `self` parameter in a Python method?",
+    "options": ["It is a reference to the class itself.", "It is a reference to the parent class.", "It is a reference to the instance of the class.", "It is a keyword used for inheritance."],
+    "correct_answer": "It is a reference to the instance of the class.",
+    "topic": "OOP",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will be the output of `print(10 % 3)`?",
+    "options": ["3", "1", "3.33", "0"],
+    "correct_answer": "1",
+    "topic": "Syntax",
+    "difficulty": "easy"
+  }
+]
+```

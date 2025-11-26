@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log File Analyzer",
+  "description": "You are given a log file represented as a string. Each line in the log file represents a log entry.  Each log entry consists of a timestamp (in the format YYYY-MM-DD HH:MM:SS), a log level (ERROR, WARNING, INFO), and a message. The log level and message are separated by a colon and a space.  Your task is to write a function that parses the log file and returns a list of messages that match a specific log level filter.\n\nFor example:\n\n2023-10-26 10:00:00 ERROR: Network connection lost.\n2023-10-26 10:01:00 INFO: Application started successfully.\n2023-10-26 10:02:00 WARNING: Low disk space.\n2023-10-26 10:03:00 ERROR: File not found.\n2023-10-26 10:04:00 INFO: User logged in.\n\nIf the log level filter is \"ERROR\", the function should return:\n\n[\"Network connection lost.\", \"File not found.\"]",
+  "input_format": "A string representing the log file. The log file contains multiple lines, each representing a log entry. A string representing the log level to filter by (e.g., \"ERROR\", \"WARNING\", \"INFO\").",
+  "output_format": "A list of strings, where each string is a log message that matches the specified log level.",
+  "constraints": "The log file string will contain only valid log entries as described in the problem. The timestamp format will always be YYYY-MM-DD HH:MM:SS. The log level will always be one of ERROR, WARNING, or INFO (case-sensitive). The input log level filter will also be one of ERROR, WARNING, or INFO (case-sensitive). The log file may be empty (empty string). Each line ends with a newline character.",
+  "sample_input": "2023-10-26 10:00:00 ERROR: Network connection lost.\n2023-10-26 10:01:00 INFO: Application started successfully.\n2023-10-26 10:02:00 WARNING: Low disk space.\n2023-10-26 10:03:00 ERROR: File not found.\n2023-10-26 10:04:00 INFO: User logged in.\n",
+  "sample_output": "[\"Network connection lost.\", \"File not found.\"]",
+  "difficulty": "easy"
+}
+```

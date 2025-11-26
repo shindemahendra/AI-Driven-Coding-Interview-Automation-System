@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "question": "If all A are B and all B are C, which of the following is definitely true?",
+    "options": ["All C are A", "All A are C", "Some C are not B", "Some A are not B"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the next number in the sequence: 2, 6, 12, 20, ?",
+    "options": ["24", "28", "30", "36"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A gardener plants half his flowers plus one on Monday. He then plants half of the remaining flowers plus one on Tuesday. He has one flower left. How many flowers did he start with?",
+    "options": ["10", "8", "6", "4"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it's set correctly at 12:00 PM, what time will it show when the actual time is 6:00 PM?",
+    "options": ["5:30 PM", "5:00 PM", "6:30 PM", "5:55 PM"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "John is taller than Mary, but shorter than David. Susan is shorter than Mary. Which of the following is definitely true?",
+    "options": ["David is the tallest", "Susan is the shortest", "Mary is taller than Susan", "John is the shortest"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Four people need to cross a bridge at night. They have one flashlight, and the bridge can only hold two people at a time. The people take 1, 2, 5, and 8 minutes to cross, respectively. What's the minimum time to get everyone across?",
+    "options": ["15 minutes", "16 minutes", "20 minutes", "25 minutes"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have 12 coins, one of which is counterfeit and has a different weight (either heavier or lighter). You have a balance scale. What is the minimum number of weighings needed to guarantee finding the counterfeit coin and determining if it's heavier or lighter?",
+    "options": ["2", "3", "4", "5"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A room has two doors. One leads to freedom and the other to certain death. There are two guards, one standing by each door. One guard always tells the truth, and the other always lies. You can ask only one guard one question to determine which door leads to freedom. What question do you ask?",
+    "options": ["Which door would the other guard say leads to freedom?", "Is this the door to freedom?", "Is the other guard honest?", "Which door leads to death?"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output of the following Python code?\nprint(5 + '5')",
+    "options": ["10", "55", "Error", "None"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does `[x**2 for x in range(5) if x % 2 == 0]` evaluate to?",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[0, 2, 4]", "[0, 1, 2, 3, 4]"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["To define private variables", "To optimize memory usage by preventing dynamic attribute creation", "To specify the order of attributes", "To automatically generate getter and setter methods"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the potential issue with the following code snippet?\n```python\ndef append_to_list(val, my_list=[]):\n my_list.append(val)\n return my_list\n```",
+    "options": ["Syntax error", "Infinite recursion", "The list is modified in place, leading to unexpected behavior on subsequent calls", "It will only work for integers"],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+    {
+    "question": "Which of the following is MOST likely to cause a race condition in a multithreaded Python program?",
+    "options": ["Using local variables within a thread", "Acquiring a lock before accessing shared resources", "Unprotected access to a shared variable", "Using immutable data structures"],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+    {
+    "question": "A junior developer asks you how long a particular feature will take. You have a good idea but are not entirely certain. What is the BEST response?",
+    "options": ["Tell them the shortest possible time to encourage them.", "Give them a very rough estimate and state your uncertainty.", "Provide a time range, explaining the possible factors that might affect the timeline.", "Tell them it's difficult to say and avoid giving an estimate."],
+    "correct_answer": "C",
+    "topic": "L5",
+    "difficulty": "medium"
+  }
+]
+```

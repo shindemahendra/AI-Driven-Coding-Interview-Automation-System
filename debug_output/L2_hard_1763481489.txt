@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key in Python?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following data structures is immutable in Python?",
+    "options": ["List", "Dictionary", "Tuple", "Set"],
+    "correct_answer": "Tuple",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `print([x**2 for x in range(5) if x % 2 == 0])`?",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[0, 2, 4]", "[0, 1, 2, 3, 4]"],
+    "correct_answer": "[0, 4, 16]",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following statements about Python decorators is true?",
+    "options": ["They can only be used with functions.", "They modify the function they decorate in-place.", "They are a form of metaprogramming.", "They can only accept one argument."],
+    "correct_answer": "They are a form of metaprogramming.",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary benefit of using generators in Python?",
+    "options": ["Improved code readability", "Reduced memory consumption", "Faster execution speed", "Automatic garbage collection"],
+    "correct_answer": "Reduced memory consumption",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a valid way to inherit from a class in Python?",
+    "options": ["class Child(Parent):", "class Child(object, Parent):", "class Child(Parent, object):", "class Child = Parent()"],
+    "correct_answer": "class Child = Parent()",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the order of operations when evaluating `lambda x: x + 10 * 2`?",
+    "options": ["Addition then multiplication", "Multiplication then addition", "Left to right", "Right to left"],
+    "correct_answer": "Multiplication then addition",
+    "topic": "Syntax",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the correct way to open a file for reading in Python, ensuring it is properly closed even if errors occur?",
+    "options": ["file = open('myfile.txt', 'r'); file.close()", "try: file = open('myfile.txt', 'r'); finally: file.close()", "with open('myfile.txt', 'r') as file:", "file = open('myfile.txt', 'r')"],
+    "correct_answer": "with open('myfile.txt', 'r') as file:",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the `__slots__` attribute do in a Python class?",
+    "options": ["It restricts the attributes that can be dynamically added to instances.", "It automatically creates getter and setter methods for attributes.", "It hides attributes from direct access.", "It optimizes memory allocation by pre-allocating space for all possible attributes."],
+    "correct_answer": "It restricts the attributes that can be dynamically added to instances.",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": ["A class that inherits from multiple classes.", "A class that creates classes.", "A special type of decorator.", "A class used for handling exceptions."],
+    "correct_answer": "A class that creates classes.",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is the most efficient way to concatenate a large number of strings in Python?",
+    "options": ["Using the '+' operator repeatedly.", "Using the `join()` method on a list of strings.", "Using an f-string in a loop.", "Using the `concat()` function from the `string` module."],
+    "correct_answer": "Using the `join()` method on a list of strings.",
+    "topic": "String Manipulation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `async` and `await` keywords in Python?",
+    "options": ["To define and execute asynchronous functions.", "To create multithreaded applications.", "To optimize memory usage.", "To improve code readability."],
+    "correct_answer": "To define and execute asynchronous functions.",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the Global Interpreter Lock (GIL) in Python?",
+    "options": ["A mechanism for garbage collection.", "A lock that allows only one thread to hold control of the Python interpreter.", "A feature for optimizing CPU usage.", "A tool for debugging multithreaded applications."],
+    "correct_answer": "A lock that allows only one thread to hold control of the Python interpreter.",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does Python manage memory?",
+    "options": ["Manual memory allocation and deallocation.", "Automatic garbage collection using reference counting and a cycle-detecting garbage collector.", "Memory is allocated statically at compile time.", "Memory management is handled by the operating system."],
+    "correct_answer": "Automatic garbage collection using reference counting and a cycle-detecting garbage collector.",
+    "topic": "Memory Model",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a bloom filter and when would you use it?",
+    "options": ["A sorting algorithm for large datasets; when memory is limited.", "A probabilistic data structure for set membership testing; when false positives are acceptable.", "A caching mechanism for frequently accessed data; when latency is critical.", "A type of graph database; when relationships between data are complex."],
+    "correct_answer": "A probabilistic data structure for set membership testing; when false positives are acceptable.",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `==` and `is` in Python?",
+    "options": ["`==` compares values, `is` compares data types.", "`==` compares object identity, `is` compares values.", "`==` compares values, `is` compares object identity.", "`==` is used for strings, `is` is used for numbers."],
+    "correct_answer": "`==` compares values, `is` compares object identity.",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `super()` function in Python?",
+    "options": ["To call a method in the parent class.", "To create a new instance of the parent class.", "To delete an instance of the child class.", "To access private attributes of the parent class."],
+    "correct_answer": "To call a method in the parent class.",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How do you implement a thread-safe queue in Python?",
+    "options": ["Using a standard list.", "Using the `queue.Queue` class.", "Using a dictionary with locks.", "Using a tuple with atomic operations."],
+    "correct_answer": "Using the `queue.Queue` class.",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output of `print(1 < 2 < 3)`?",
+    "options": ["True", "False", "Error", "1"],
+    "correct_answer": "True",
+    "topic": "Syntax",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Describe a scenario where you might choose a deque over a list in Python.",
+    "options": ["When you need to perform frequent appends and pops from both ends of the sequence.", "When you need to store elements in sorted order.", "When you need to access elements by index very quickly.", "When you need to iterate through the sequence only once."],
+    "correct_answer": "When you need to perform frequent appends and pops from both ends of the sequence.",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  }
+]
+```

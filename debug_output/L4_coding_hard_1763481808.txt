@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Assignment with Dependencies",
+  "description": "A project consists of `n` tasks. Each task `i` takes `time[i]` units of time to complete. Some tasks have dependencies, meaning a task `j` cannot start until all its dependent tasks are completed. The dependencies are represented by a list of prerequisite pairs `prerequisites`, where `prerequisites[i] = [a, b]` indicates that task `a` must be completed before task `b` can start. You have `k` engineers available to work on these tasks concurrently. Each engineer can work on only one task at a time.  The goal is to minimize the overall time required to complete all tasks. Assume that once an engineer starts a task, they must finish it completely before starting another. You are allowed to assign any task to any available engineer once the task's prerequisites are met. Return the minimum time needed to complete all tasks.",
+  "input_format": "The input consists of the following:\n\n*   `n`: An integer representing the number of tasks.\n*   `time`: An array of integers of length `n`, where `time[i]` represents the time required to complete task `i`.\n*   `prerequisites`: A list of lists of integers, where each inner list `[a, b]` indicates that task `a` must be completed before task `b`. Tasks are numbered from `0` to `n-1`.\n*   `k`: An integer representing the number of available engineers.",
+  "output_format": "An integer representing the minimum time needed to complete all tasks.",
+  "constraints": "\n*   1 <= n <= 20\n*   1 <= time[i] <= 100\n*   0 <= prerequisites.length <= n * (n - 1) / 2\n*   0 <= prerequisites[i][0], prerequisites[i][1] < n\n*   prerequisites[i][0] != prerequisites[i][1]\n*   1 <= k <= n\n*   The graph represented by `prerequisites` is guaranteed to be a directed acyclic graph (DAG).\n",
+  "sample_input": "5\n[1,2,3,4,5]\n[[0,1],[0,2],[1,3],[2,3],[3,4]]\n2",
+  "sample_output": "11",
+  "difficulty": "hard"
+}
+```

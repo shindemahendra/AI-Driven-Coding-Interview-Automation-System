@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Aggregation and Anomaly Detection",
+  "description": "You are tasked with building a system to analyze server logs and detect potential anomalies based on event frequencies. The server logs are represented as a stream of event IDs. Your system needs to aggregate these events over a fixed-size sliding window and identify time windows where certain events occur more frequently than expected, suggesting a potential issue.\n\nSpecifically, you will receive a stream of log events as a list of integers. You are also given a window size `k` and a threshold `t`.  For each sliding window of size `k`, you must calculate the frequency of each distinct event ID. An event ID is considered an anomaly if its frequency within the window exceeds the threshold `t`.  Your function should return a list of all distinct event IDs that are flagged as anomalies at least once within the log stream.",
+  "input_format": "The input consists of:\n\n*   `log_stream`: A list of integers representing the sequence of log events.\n*   `k`: An integer representing the size of the sliding window.\n*   `t`: An integer representing the threshold for anomaly detection. An event is anomalous if its frequency in a window exceeds `t`.\n",
+  "output_format": "A list of integers representing the distinct event IDs that are flagged as anomalies at least once. The list should be sorted in ascending order.",
+  "constraints": "\n*   `1 <= len(log_stream) <= 10^5`\n*   `1 <= k <= len(log_stream)`\n*   `1 <= t <= k`\n*   `1 <= log_stream[i] <= 10^5` for all `i` in the range of `log_stream` length.",
+  "sample_input": "[1, 2, 1, 3, 1, 2, 4, 1, 2, 1], 4, 2",
+  "sample_output": "[1, 2]",
+  "difficulty": "medium"
+}
+```

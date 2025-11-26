@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Assignment",
+  "description": "You are the lead engineer for a project that requires completing several tasks. You have a team of engineers, and each engineer has a different skill level and can complete tasks at different speeds. Each task has a specific difficulty level.  Your goal is to assign tasks to engineers in a way that minimizes the overall time to complete all tasks.\n\nYou are given two arrays: `tasks` and `engineers`.  `tasks[i]` represents the difficulty of the i-th task. `engineers[j]` represents the speed of the j-th engineer (higher is faster).  Assume that assigning an engineer to a task means they will complete it at a rate of `engineerSpeed / taskDifficulty` units of work per time unit.\n\nYou want to assign each task to *exactly one* engineer. The total time to complete all tasks is the maximum completion time of any engineer assigned to one or more tasks.\n\nFind the minimum possible total time to complete all tasks.",
+  "input_format": "The first line contains an integer `n`, the number of tasks. The second line contains `n` space-separated integers representing the `tasks` array.\nThe third line contains an integer `m`, the number of engineers. The fourth line contains `m` space-separated integers representing the `engineers` array.",
+  "output_format": "Print the minimum total time to complete all tasks, rounded to 6 decimal places.",
+  "constraints": "1 <= n <= 1000\n1 <= m <= 1000\n1 <= tasks[i] <= 1000\n1 <= engineers[j] <= 1000",
+  "sample_input": "3\n1 2 3\n2\n2 3",
+  "sample_output": "2.000000",
+  "difficulty": "medium"
+}
+```

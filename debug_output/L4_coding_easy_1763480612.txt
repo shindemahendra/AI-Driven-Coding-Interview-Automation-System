@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Inventory Management System",
+  "description": "You are working on an inventory management system for a small retail store. The system needs to track the quantity of each item in the inventory. You are given a list of items and their initial quantities. You are also given a list of transactions, where each transaction represents either a purchase (decrease in quantity) or a restock (increase in quantity). Your task is to calculate the final quantity of each item after applying all transactions.\n\nEach transaction is represented as a string in the format \"ITEM_NAME OPERATION QUANTITY\", where:\n\n*   `ITEM_NAME` is the name of the item (string).\n*   `OPERATION` is either \"PURCHASE\" or \"RESTOCK\" (string).\n*   `QUANTITY` is the quantity of the item involved in the transaction (integer).\n\nIf the final quantity of an item is negative after applying all transactions, set its quantity to 0 (we can't have negative stock).\n",
+  "input_format": "The input consists of two parts:\n\n1.  A dictionary `inventory` where keys are item names (strings) and values are their initial quantities (integers).\n2.  A list of strings `transactions`, where each string represents a transaction in the format described above.",
+  "output_format": "A dictionary where keys are item names (strings) and values are their final quantities (integers) after applying all transactions. The output dictionary should contain all items present in the initial inventory, even if their final quantity is 0.",
+  "constraints": "*   1 <= Number of items in `inventory` <= 100\n*   1 <= Initial quantity of each item <= 1000\n*   1 <= Number of transactions <= 500\n*   1 <= Quantity in each transaction <= 500\n*   Item names are case-sensitive.\n*   All item names in transactions will exist in the initial inventory.",
+  "sample_input": "{\n  \"inventory\": {\n    \"apple\": 50,\n    \"banana\": 30,\n    \"orange\": 20\n  },\n  \"transactions\": [\n    \"apple PURCHASE 10\",\n    \"banana RESTOCK 20\",\n    \"orange PURCHASE 25\",\n    \"apple PURCHASE 45\",\n    \"banana PURCHASE 60\",\n    \"orange RESTOCK 100\"\n  ]\n}",
+  "sample_output": "{\n  \"apple\": 0,\n  \"banana\": 0,\n  \"orange\": 95\n}",
+  "difficulty": "easy"
+}
+```

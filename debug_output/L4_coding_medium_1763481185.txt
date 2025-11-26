@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Aggregation and Anomaly Detection",
+  "description": "You are tasked with building a system to analyze server logs and detect potential anomalies.  Given a stream of log entries, each with a timestamp and a severity level, identify time windows where the number of high-severity logs exceeds a predefined threshold. Log entries are provided in chronological order.\n\nSpecifically, you need to implement a function that takes a list of log entries and a time window duration (in seconds) as input.  A log entry is considered 'high-severity' if its severity level is 3 or higher (severity levels range from 1 to 5 inclusive). The function should return a list of start times of all time windows where the count of high-severity logs exceeds the given threshold.  Overlapping time windows should be considered separately.  A time window is defined as the period starting at a log entry's timestamp and lasting for the specified duration. For clarity, the start time of a detected window should be the start time of the *first* log entry that triggered exceeding the threshold within that window.",
+  "input_format": "The input is a list of log entries and a time window duration.\n\nThe list of log entries is represented as a list of lists, where each inner list contains two integers: `[timestamp, severity]`. `timestamp` represents the log entry's timestamp in seconds (non-negative), and `severity` represents its severity level (an integer between 1 and 5 inclusive).\n\nThe time window duration is an integer representing the window duration in seconds.\n\nThreshold: An integer representing the minimum number of high-severity logs required within a time window to trigger a detection.",
+  "output_format": "The output is a list of integers, representing the start times (timestamps) of all detected time windows in ascending order. If no anomalies are detected, return an empty list.",
+  "constraints": "\n*   1 <= Number of log entries <= 100000\n*   0 <= timestamp <= 1000000000 (1 billion)\n*   1 <= severity <= 5\n*   1 <= time window duration <= 600\n*   1 <= Threshold <= 1000\n*   Log entries are provided in strictly ascending order of timestamp.",
+  "sample_input": "[[1678886400, 3], [1678886402, 2], [1678886403, 4], [1678886405, 5], [1678886408, 1], [1678886410, 3], [1678886411, 4], [1678886412, 5]], 5, 2",
+  "sample_output": "[1678886400, 1678886403, 1678886410]",
+  "difficulty": "medium"
+}
+```

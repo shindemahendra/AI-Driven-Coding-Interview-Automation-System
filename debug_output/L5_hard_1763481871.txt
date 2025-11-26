@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A critical production issue arises, requiring immediate attention from multiple teams. The root cause is unclear. As a senior engineer, which action should you prioritize first?",
+    "options": ["A. Immediately assign blame to the team you suspect is responsible.", "B. Convene a joint triage session with representatives from all relevant teams to gather information and coordinate a response.", "C. Independently investigate the issue and propose a solution to your manager.", "D. Focus solely on your team's potential contribution to the problem, ignoring other teams' involvement."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "During sprint planning, a junior engineer estimates a task at 5 story points. Based on your experience, it’s more likely to take 13. How should you approach the situation?",
+    "options": ["A. Override the junior engineer's estimate and assign 13 points without discussion.", "B. Explain your reasoning and facilitate a discussion to reach a consensus on the appropriate estimate.", "C. Publicly challenge the junior engineer's estimate during the sprint planning meeting to demonstrate your expertise.", "D. Privately complain to the sprint master about the junior engineer's lack of experience."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member consistently misses deadlines and delivers subpar work. You've provided feedback previously, but the performance hasn't improved. What's the most appropriate next step?",
+    "options": ["A. Publicly reprimand the team member in front of the rest of the team.", "B. Ignore the performance issues to avoid conflict.", "C. Escalate the issue to HR and request immediate termination.", "D. Schedule a private, formal performance review with clear expectations and a plan for improvement, including consequences for continued underperformance."],
+    "correct_answer": "D",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are leading a project with a tight deadline and limited resources. The project scope starts to creep. How do you best handle this situation?",
+    "options": ["A. Accept all new requests without question to ensure stakeholder satisfaction.", "B. Implement all changes without proper testing and documentation.", "C. Collaborate with stakeholders to prioritize the new requests and negotiate a revised timeline or reduced scope, ensuring alignment with business goals.", "D. Ignore the scope creep and hope the project completes on time."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are asked to give constructive criticism to a colleague about their presentation skills. What approach is most effective?",
+    "options": ["A. Focus solely on the negative aspects of the presentation to ensure they understand the areas for improvement.", "B. Start by highlighting their strengths, then offer specific, actionable suggestions for improvement, focusing on the impact their delivery has on the audience.", "C. Avoid giving any negative feedback to avoid hurting their feelings.", "D. Compare their performance to other colleagues to provide context."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a code review, you notice a potential security vulnerability in a colleague's code. How should you address this?",
+    "options": ["A. Approve the code without mentioning the vulnerability to avoid conflict.", "B. Privately message your manager about the vulnerability.", "C. Directly, but respectfully, explain the vulnerability to your colleague during the code review and suggest a solution.", "D. Publicly shame your colleague during the code review for introducing the vulnerability."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A junior team member is struggling with a complex task. They haven’t asked for help, but you can see they're becoming increasingly frustrated. What's the best approach?",
+    "options": ["A. Ignore the situation and let them learn on their own.", "B. Publicly offer unsolicited advice in front of the team.", "C. Privately approach them, offering assistance and guidance without judgment, and explaining your own similar experiences.", "D. Report their lack of progress to your manager immediately."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's project is falling behind schedule due to unforeseen technical challenges. Stakeholders are becoming anxious. How should you handle the communication?",
+    "options": ["A. Avoid communicating the delays to avoid causing panic.", "B. Provide regular, transparent updates to stakeholders, explaining the challenges, mitigation strategies, and revised timelines.", "C. Blame the technical challenges on a specific team member to deflect responsibility.", "D. Overpromise on unrealistic deadlines to appease stakeholders."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You disagree with a major architectural decision proposed by the lead architect. How do you proceed?",
+    "options": ["A. Publicly criticize the decision during a team meeting.", "B. Silently implement the decision without voicing your concerns.", "C. Schedule a private meeting with the lead architect to respectfully discuss your concerns, presenting alternative solutions and data to support your position.", "D. Sabotage the implementation of the proposed architecture."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is experiencing a period of high stress and long hours. Morale is low. As a senior engineer, what can you do to improve the situation?",
+    "options": ["A. Encourage everyone to work harder and longer hours to meet deadlines.", "B. Ignore the morale issues and focus solely on task completion.", "C. Acknowledge the stress, offer support, facilitate open communication, and advocate for realistic deadlines and resource allocation with management.", "D. Complain to other team members about the workload."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+    {
+    "question": "A junior team member asks for your mentorship. You have a very busy schedule. How do you respond?",
+    "options": ["A. Tell them you are too busy and dismiss their request.", "B. Agree to mentor them but consistently reschedule or cancel meetings.", "C. Explain your current workload constraints but offer to connect them with another suitable mentor within the organization and provide occasional guidance when possible.", "D. Agree to mentor them but only focus on their immediate tasks, ignoring their long-term career goals."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a team meeting, a colleague interrupts you repeatedly. How do you handle this situation?",
+    "options": ["A. Stop talking and let them dominate the conversation.", "B. Interrupt them back to assert your dominance.", "C. Politely but firmly assert your right to finish your thought, and ask that others be allowed to speak uninterrupted.", "D. Publicly shame them for their rude behavior."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You made a mistake that caused a minor outage. How do you address the situation?",
+    "options": ["A. Hide the mistake and hope no one notices.", "B. Blame the mistake on someone else.", "C. Take ownership of the mistake, apologize to the team, and explain the steps you're taking to prevent it from happening again.", "D. Downplay the severity of the outage."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You receive conflicting instructions from two different managers. What do you do?",
+    "options": ["A. Follow the instructions of the manager you like more.", "B. Ignore both sets of instructions and do whatever you think is best.", "C. Communicate with both managers to clarify the priorities and reconcile the conflicting instructions.", "D. Complain about the situation to your colleagues."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is resistant to adopting a new technology that you believe is beneficial. How do you approach this?",
+    "options": ["A. Force them to use the new technology without explanation.", "B. Ignore their concerns and proceed with the implementation regardless.", "C. Understand their concerns, explain the benefits of the new technology, and provide training and support to facilitate adoption.", "D. Publicly ridicule their resistance to change."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "During a project retrospective, the team identifies a recurring problem that negatively impacts productivity. What's the most effective way to address this?",
+    "options": ["A. Ignore the problem since it's been happening for a while.", "B. Blame individuals for causing the problem.", "C. Facilitate a discussion to identify the root cause of the problem and collaboratively develop actionable solutions and track their implementation.", "D. Complain about the problem without proposing any solutions."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A client is unhappy with a feature your team delivered. They are being very demanding and aggressive. How do you handle this situation?",
+    "options": ["A. Argue with the client to defend your team's work.", "B. Ignore the client's complaints.", "C. Remain calm and professional, actively listen to their concerns, acknowledge their frustration, and work towards a mutually agreeable solution.", "D. Blame the client for not understanding the feature."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are working on a project with a remote team. Communication is challenging due to time zone differences and cultural barriers. How do you improve collaboration?",
+    "options": ["A. Avoid communicating with the remote team as much as possible.", "B. Rely solely on email for communication.", "C. Establish clear communication channels and protocols, be mindful of cultural differences, use asynchronous communication tools effectively, and schedule regular video calls to build rapport.", "D. Assume that the remote team is less competent than the local team."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is tasked with developing a new feature with vague requirements. How do you proceed?",
+    "options": ["A. Start coding immediately and figure out the details later.", "B. Guess at the requirements and hope you're right.", "C. Proactively engage with stakeholders to clarify the requirements, ask clarifying questions, and create detailed specifications before starting development.", "D. Ignore the vagueness and complain about the lack of clarity."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are asked to estimate the time required to complete a complex task. You are unsure how long it will take. How do you provide an estimate?",
+    "options": ["A. Provide a wildly optimistic estimate to impress your manager.", "B. Refuse to provide an estimate at all.", "C. Break down the task into smaller, more manageable subtasks, estimate the time required for each subtask, and sum the estimates, adding a buffer for uncertainty.", "D. Provide a random guess."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  }
+]
+```

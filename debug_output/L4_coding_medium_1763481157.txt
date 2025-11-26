@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Aggregation and Anomaly Detection",
+  "description": "You are building a system for aggregating and analyzing server logs. Each log entry contains a timestamp, a server ID, and a message. The goal is to efficiently aggregate log entries by server and detect anomalies. An anomaly is defined as a server exceeding a specific message frequency threshold within a defined time window. Specifically, given a list of log entries, group them by server ID, then for each server calculate the number of messages within a sliding time window of 'W' seconds. If the count of messages within any window 'W' exceeds a threshold 'T', flag the server as anomalous. The time windows are continuous and sliding - each second counts as a new window (e.g., if W = 5 and we have logs at 1,2,3,4,5,6,7, window will be 1-5,2-6,3-7 etc.) Return a list of unique server IDs that have been flagged as anomalous.",
+  "input_format": "The input consists of:\n\n1.  An integer 'W' representing the time window size in seconds.\n2.  An integer 'T' representing the message frequency threshold.\n3.  A list of log entries, where each log entry is a tuple of the form (timestamp, server_id, message). The timestamp is an integer representing seconds since the epoch. The server_id is a string, and the message is a string.\n\nExample:\n{\n  \"W\": 5,\n  \"T\": 3,\n  \"logs\": [\n    [1, \"serverA\", \"message1\"],\n    [2, \"serverA\", \"message2\"],\n    [3, \"serverA\", \"message3\"],\n    [4, \"serverA\", \"message4\"],\n    [5, \"serverA\", \"message5\"],\n    [6, \"serverA\", \"message6\"],\n    [7, \"serverA\", \"message7\"],\n    [1, \"serverB\", \"message8\"],\n    [2, \"serverB\", \"message9\"],\n    [3, \"serverB\", \"message10\"]\n  ]\n}",
+  "output_format": "A list of unique server IDs that have been flagged as anomalous, sorted lexicographically.",
+  "constraints": "1 <= W <= 60\n1 <= T <= 100\n0 <= timestamp <= 1000\n1 <= number of log entries <= 1000\nServer IDs are non-empty strings containing only alphanumeric characters and underscores.\nTimestamps in the log entries are not necessarily sorted.",
+  "sample_input": "{\n  \"W\": 3,\n  \"T\": 2,\n  \"logs\": [\n    [1, \"serverA\", \"message1\"],\n    [2, \"serverA\", \"message2\"],\n    [3, \"serverA\", \"message3\"],\n    [4, \"serverA\", \"message4\"],\n    [5, \"serverB\", \"message5\"],\n    [6, \"serverB\", \"message6\"],\n    [7, \"serverB\", \"message7\"],\n    [8, \"serverB\", \"message8\"]\n  ]\n}",
+  "sample_output": "[\"serverB\"]",
+  "difficulty": "medium"
+}
+```

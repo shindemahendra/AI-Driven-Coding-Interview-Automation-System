@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of: `print(type([1, 2, 3]))`?",
+    "options": ["A: tuple", "B: list", "C: set", "D: array"],
+    "correct_answer": "B",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a mutable data type in Python?",
+    "options": ["A: string", "B: tuple", "C: integer", "D: list"],
+    "correct_answer": "D",
+    "topic": "Mutability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `len()` function?",
+    "options": ["A: Sort a list", "B: Find the maximum value", "C: Return the length of a sequence", "D: Check if a sequence is empty"],
+    "correct_answer": "C",
+    "topic": "Built-in Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the `//` operator do in Python?",
+    "options": ["A: Normal division", "B: Exponentiation", "C: Floor division", "D: Modulo"],
+    "correct_answer": "C",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these methods adds an element to the end of a list?",
+    "options": ["A: insert()", "B: add()", "C: append()", "D: extend()"],
+    "correct_answer": "C",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `with` statement in Python?",
+    "options": ["A: To create a new thread", "B: To define a class", "C: To ensure resources are properly managed", "D: To raise an exception"],
+    "correct_answer": "C",
+    "topic": "Context Managers",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["A: O(n)", "B: O(log n)", "C: O(1)", "D: O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Dictionaries & Complexity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How can you prevent a function from modifying a list passed to it as an argument?",
+    "options": ["A: Pass the list by reference", "B: Pass a copy of the list", "C: Declare the list as immutable inside the function", "D: It's not possible to prevent modification"],
+    "correct_answer": "B",
+    "topic": "Pass by Value vs. Reference",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of: `[i for i in range(5) if i % 2 == 0]`?",
+    "options": ["A: [1, 3]", "B: [0, 2, 4]", "C: [0, 1, 2, 3, 4]", "D: [2, 4]"],
+    "correct_answer": "B",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a decorator in Python?",
+    "options": ["A: A way to add type hints", "B: A function that takes another function as argument and extends its behavior", "C: A keyword used for loops", "D: A built-in data type"],
+    "correct_answer": "B",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is true regarding Python's GIL (Global Interpreter Lock)?",
+    "options": ["A: It allows multiple native threads to execute Python bytecode in parallel.", "B: It prevents race conditions by allowing only one thread to hold control of the Python interpreter at any one time.", "C: It significantly improves the performance of CPU-bound multithreaded applications.", "D: It is not present in CPython implementations."],
+    "correct_answer": "B",
+    "topic": "Concurrency & GIL",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `__new__` and `__init__` in Python classes?",
+    "options": ["A: `__new__` is used for object destruction, `__init__` for initialization.", "B: `__new__` is called after `__init__`.", "C: `__new__` is a static method responsible for creating an instance of the class, `__init__` initializes the instance.", "D: They are interchangeable and can be used for the same purpose."],
+    "correct_answer": "C",
+    "topic": "OOP Internals",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": ["A: A subclass of a class.", "B: A class that defines the behavior of other classes.", "C: A class used for creating objects.", "D: A special type of function used for creating decorators."],
+    "correct_answer": "B",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does Python manage memory internally?",
+    "options": ["A: Manual memory management with `malloc` and `free`.", "B: Automatic garbage collection using reference counting and a cycle-detecting garbage collector.", "C: Memory is allocated statically at compile time.", "D: Memory is never deallocated, leading to memory leaks."],
+    "correct_answer": "B",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `async` and `await` keywords in Python?",
+    "options": ["A: To define and use threads.", "B: To define and use processes.", "C: To define and use coroutines for asynchronous programming.", "D: To create generators."],
+    "correct_answer": "C",
+    "topic": "Asynchronous Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between a generator and an iterator?",
+    "options": ["A: They are the same thing.", "B: An iterator is created from a class, while a generator is created using a function with `yield`.", "C: A generator consumes more memory than an iterator.", "D: Iterators can only be used once, while generators can be reused."],
+    "correct_answer": "B",
+    "topic": "Generators vs. Iterators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How does the `is` operator differ from the `==` operator in Python?",
+    "options": ["A: They are interchangeable.", "B: `is` checks for value equality, `==` checks for object identity.", "C: `is` checks for object identity, `==` checks for value equality.", "D: `is` is used for strings, `==` is used for numbers."],
+    "correct_answer": "C",
+    "topic": "Object Identity vs. Equality",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["A: To define the inheritance hierarchy.", "B: To optimize memory usage by preventing the creation of `__dict__` for each instance.", "C: To specify the default values for instance attributes.", "D: To define static methods."],
+    "correct_answer": "B",
+    "topic": "Memory Optimization",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which data structure would be most suitable for implementing a priority queue?",
+    "options": ["A: List", "B: Dictionary", "C: Heap", "D: Set"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print(1 == True)`?",
+    "options": ["A: True", "B: False", "C: 1", "D: Error"],
+    "correct_answer": "A",
+    "topic": "Boolean Values",
+    "difficulty": "easy"
+  }
+]
+```

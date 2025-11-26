@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Consider the following code snippet:\n\n```python\ndef process_data(data):\n    results = []\n    for item in data:\n        try:\n            value = int(item)\n            results.append(value * 2)\n        except ValueError:\n            results.append(0)\n    return results\n\ndata = ['1', '2', 'a', '4', 'b']\nprocessed_data = process_data(data)\nprint(processed_data)\n```\n\nA change is made to use multiprocessing. The `process_data` function is now called in parallel using a `multiprocessing.Pool`. What potential issue needs to be addressed to ensure correct execution?",
+    "options": ["Global Interpreter Lock (GIL) limitations for CPU-bound tasks.", "Ensuring data is picklable for inter-process communication.", "Handling exceptions within the parallelized function to prevent process termination.", "All of the above."],
+    "correct_answer": "D",
+    "topic": "Multiprocessing",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given the following code:\n```python\ndef modify_list(data):\n    for i in range(len(data)):\n        if data[i] % 2 == 0:\n            data.insert(i + 1, data[i] // 2)\n    return data\n\nmy_list = [2, 3, 4, 5]\nresult = modify_list(my_list)\nprint(result)\n```\nWhat is the most likely outcome or issue resulting from executing this code?",
+    "options": ["The code will run correctly and produce the expected result.", "The code will result in an `IndexError`.", "The code will enter an infinite loop.", "The code will return the original list unchanged."],
+    "correct_answer": "C",
+    "topic": "List Mutation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following Python code:\n```python\nx = 10\n\ndef outer():\n    x = 5\n    def inner():\n        nonlocal x\n        x = 7\n        print(\"inner:\", x)\n    inner()\n    print(\"outer:\", x)\n\nouter()\nprint(\"global:\", x)\n```\nWhat will be the output of this code?",
+    "options": ["inner: 7\nouter: 7\nglobal: 10", "inner: 7\nouter: 5\nglobal: 10", "inner: 7\nouter: 7\nglobal: 7", "inner: 7\nouter: 5\nglobal: 5"],
+    "correct_answer": "A",
+    "topic": "Scoping",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary danger of using mutable default arguments in Python function definitions?",
+    "options": ["It can lead to unexpected behavior when the default argument is modified across multiple function calls.", "It can cause memory leaks due to the default argument never being garbage collected.", "It can introduce security vulnerabilities if the default argument is exposed to untrusted input.", "It can make the function definition overly complex and difficult to understand."],
+    "correct_answer": "A",
+    "topic": "Mutable Defaults",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given this code:\n```python\ndef generator_function():\n    i = 0\n    while True:\n        yield i\n        i += 1\n\nmy_generator = generator_function()\nfor _ in range(3):\n    next(my_generator)\nprint(next(my_generator))\n```\nWhat value will be printed?",
+    "options": ["0", "1", "2", "3"],
+    "correct_answer": "D",
+    "topic": "Generators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this code:\n```python\nimport threading\nimport time\n\nx = 0\nlock = threading.Lock()\n\ndef increment():\n    global x\n    for _ in range(100000):\n        with lock:\n            x += 1\n\nt1 = threading.Thread(target=increment)\nt2 = threading.Thread(target=increment)\nt1.start()\nt2.start()\nt1.join()\nt2.join()\nprint(x)\n```\nWhat is the purpose of using `threading.Lock()` in this context?",
+    "options": ["To prevent race conditions when multiple threads access and modify the shared variable `x`.", "To improve the performance of the code by allowing threads to run in parallel.", "To ensure that the threads are executed in a specific order.", "To handle exceptions that may occur during thread execution."],
+    "correct_answer": "A",
+    "topic": "Concurrency",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a potential issue when using `asyncio.gather` with a large number of coroutines?",
+    "options": ["It can lead to excessive memory consumption if the coroutines produce large amounts of data.", "It can cause the event loop to become overloaded, leading to decreased performance.", "It can result in a `TimeoutError` if any of the coroutines take too long to complete.", "All of the above."],
+    "correct_answer": "D",
+    "topic": "Asyncio",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a common pitfall when using list comprehensions in Python?",
+    "options": ["List comprehensions are generally less efficient than traditional for loops.", "List comprehensions can only be used to create lists of numbers.", "Overly complex list comprehensions can be difficult to read and understand.", "List comprehensions cannot be used with conditional statements."],
+    "correct_answer": "C",
+    "topic": "List Comprehension",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Given the following snippet:\n```python\ndef func(a, b=[]):\n  b.append(a)\n  return b\n\nprint(func(1))\nprint(func(2))\n```\nWhat is the output?",
+    "options": ["`[1]\n[2]`", "`[1]\n[1, 2]`", "`[1, 2]\n[1, 2]`", "`[1]\n[]`"],
+    "correct_answer": "B",
+    "topic": "Mutable Defaults",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the code snippet:\n```python\ndef process_data(data):\n    results = []\n    for item in data:\n        try:\n            result = 10 / item\n            results.append(result)\n        except Exception as e:\n            print(f'Error processing {item}: {e}')\n            results.append(None)\n    return results\n\ndata = [2, 0, 5, 'a']\n\nprocessed_data = process_data(data)\nprint(processed_data)\n```\nWhat is a potential improvement to exception handling in this code?",
+    "options": ["Remove the `try-except` block entirely as it's unnecessary.", "Catch only specific exception types instead of a generic `Exception`.", "Re-raise the exception after logging it.", "Use `finally` to ensure cleanup operations are performed."],
+    "correct_answer": "B",
+    "topic": "Exception Handling",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following data structures is best suited for implementing a Least Recently Used (LRU) cache?",
+    "options": ["List", "Dictionary", "Heap", "OrderedDict"],
+    "correct_answer": "D",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the potential risk of using `eval()` on untrusted input?",
+    "options": ["It can lead to code injection vulnerabilities.", "It can cause memory leaks.", "It can corrupt the system's file system.", "It can bypass security firewalls."],
+    "correct_answer": "A",
+    "topic": "Security",
+    "difficulty": "easy"
+  },
+    {
+    "question": "Consider this code:\n```python\ndef func(a):\n  def inner(b):\n    return a + b\n  a = 10\n  return inner\n\nmy_func = func(5)\nprint(my_func(3))\n```\nWhat will be the output?",
+    "options": ["8", "13", "5", "Error"],
+    "correct_answer": "A",
+    "topic": "Closures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the code:\n```python\nimport sys\n\ndef recursive_function(n):\n    if n <= 0:\n        return 0\n    return n + recursive_function(n - 1)\n\ntry:\n    result = recursive_function(1000)\n    print(result)\nexcept RecursionError:\n    print(\"RecursionError occurred\")\n```\nHow would you modify this code to handle a potentially very large `n` without encountering a `RecursionError`?",
+    "options": ["Increase the recursion limit using `sys.setrecursionlimit()`.", "Rewrite the function iteratively instead of recursively.", "Use memoization to cache intermediate results.", "All of the above."],
+    "correct_answer": "B",
+    "topic": "Recursion",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the code:\n```python\nclass MyDescriptor:\n    def __get__(self, instance, owner):\n        return instance._my_attribute\n\n    def __set__(self, instance, value):\n        instance._my_attribute = value\n\nclass MyClass:\n    my_attribute = MyDescriptor()\n\n    def __init__(self, value):\n        self._my_attribute = value\n\nobj = MyClass(10)\nprint(obj.my_attribute)\nobj.my_attribute = 20\nprint(obj.my_attribute)\n```\nWhat is the purpose of `MyDescriptor` in this code?",
+    "options": ["To enforce type checking on `my_attribute`.", "To control access to `my_attribute` using custom logic.", "To create a singleton instance of `MyClass`.", "To automatically generate getter and setter methods for `my_attribute`."],
+    "correct_answer": "B",
+    "topic": "Descriptors",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What are the potential downsides of using monkey patching?",
+    "options": ["It can make code harder to understand and debug.", "It can introduce compatibility issues with other libraries or frameworks.", "It can violate the principle of least astonishment.", "All of the above."],
+    "correct_answer": "D",
+    "topic": "Monkey Patching",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In Python, what is the main difference between `__slots__` and using a regular class definition?",
+    "options": ["`__slots__` prevents dynamic attribute creation, saving memory but sacrificing flexibility.", "`__slots__` allows dynamic attribute creation but consumes more memory.", "`__slots__` improves method lookup performance but increases object size.", "`__slots__` is primarily for documentation and has no functional impact."],
+    "correct_answer": "A",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider the following code which attempts to implement a retry mechanism:\n```python\nimport time\n\ndef retry(func, attempts=3):\n    for i in range(attempts):\n        try:\n            return func()\n        except Exception as e:\n            print(f\"Attempt {i+1} failed: {e}\")\n            time.sleep(1)\n    print(\"Max attempts reached\")\n\ndef my_function():\n    # Simulate a function that might fail\n    import random\n    if random.random() < 0.5:\n        raise ValueError(\"Simulated failure\")\n    return \"Success!\"\n\nresult = retry(my_function)\nprint(result)\n```\nWhat critical aspect is missing from this retry mechanism that can cause issues in real-world applications?",
+    "options": ["The function doesn't log the error message correctly.", "The function doesn't handle specific exception types.", "The function doesn't implement exponential backoff.", "The function always retries even after a successful attempt."],
+    "correct_answer": "C",
+    "topic": "Error Handling",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have a large dataset that needs to be processed in parallel. Which approach would be most suitable to leverage all available CPU cores in Python, while minimizing overhead related to data serialization/deserialization?",
+    "options": ["Using `multiprocessing.Pool` and passing the data as arguments.", "Using `threading.Thread` to create multiple threads.", "Using `asyncio` to create multiple coroutines.", "Using `concurrent.futures.ProcessPoolExecutor` with `shared_memory` to share the data."],
+    "correct_answer": "D",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a potential drawback of using decorators extensively in a Python codebase?",
+    "options": ["Decorators can make code harder to understand and debug if overused.", "Decorators can significantly slow down code execution.", "Decorators can only be applied to functions, not classes.", "Decorators can interfere with type hinting and static analysis."],
+    "correct_answer": "A",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  }
+]
+```

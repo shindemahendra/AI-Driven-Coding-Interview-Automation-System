@@ -1,0 +1,12 @@
+```json
+{
+  "title": "License Key Formatting",
+  "description": "You are given a license key represented as a string `s` which consists of only alphanumeric characters and dashes. The string is split into `n + 1` groups by `n` dashes.\n\nYou are also given an integer `k`.  We want to reformat the string such that each group contains exactly `k` characters, except for the first group, which could be shorter than `k`, but still must contain at least one character.  Furthermore, there must be a dash inserted between two groups, and all lowercase letters should be converted to uppercase.\n\nGiven the string `s` and the integer `k`, return the reformatted license key string.",
+  "input_format": "The input consists of two lines:\n1. A string `s` representing the license key.\n2. An integer `k` representing the desired length of each group (except potentially the first).",
+  "output_format": "A string representing the reformatted license key.",
+  "constraints": "1 <= `s.length` <= 10^5\n`s` consists of uppercase letters, lowercase letters, digits, and dashes ('-').\n1 <= `k` <= 10^5",
+  "sample_input": "5F3Z-2e-9-w\n4",
+  "sample_output": "5F3Z-2E9W",
+  "difficulty": "easy"
+}
+```

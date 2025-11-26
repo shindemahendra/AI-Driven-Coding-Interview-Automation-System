@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code? `print([x**2 for x in range(3)])`",
+    "options": ["Error", "[0, 1, 4]", "[1, 4, 9]", "[0, 1, 2]"],
+    "correct_answer": "B",
+    "topic": "List Comprehension",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a LIFO (Last-In, First-Out) behavior?",
+    "options": ["Queue", "List", "Stack", "Dictionary"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary purpose of a dictionary in Python?",
+    "options": ["Storing ordered sequences of elements", "Storing key-value pairs", "Storing numerical data only", "Storing boolean values only"],
+    "correct_answer": "B",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code? `def add(x, y=5): return x + y; print(add(2))`",
+    "options": ["2", "5", "7", "Error"],
+    "correct_answer": "C",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["class", "def", "function", "define"],
+    "correct_answer": "B",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the time complexity of accessing an element by index in a Python list?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Complexity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code snippet? `def my_decorator(func): def wrapper(): print('Before'); func(); print('After'); return wrapper; @my_decorator def say_hello(): print('Hello!'); say_hello()`",
+    "options": ["Hello!", "Before\nHello!\nAfter", "Before\nAfter", "Error"],
+    "correct_answer": "B",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary benefit of using generators in Python?",
+    "options": ["Improved code readability", "Reduced memory consumption", "Faster execution speed", "Automatic error handling"],
+    "correct_answer": "B",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a valid way to create a shallow copy of a list in Python?",
+    "options": ["list(my_list)", "my_list[:]", "my_list.copy()", "copy.deepcopy(my_list)"],
+    "correct_answer": "D",
+    "topic": "Copying",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `super()` function in Python's object-oriented programming?",
+    "options": ["To define a global variable", "To access the parent class's methods", "To create a new instance of a class", "To delete an object"],
+    "correct_answer": "B",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the Global Interpreter Lock (GIL) in CPython primarily prevent?",
+    "options": ["Memory leaks", "Deadlocks in multithreaded programs", "True parallelism for CPU-bound tasks", "Incorrect garbage collection"],
+    "correct_answer": "C",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following best describes the concept of 'metaclasses' in Python?",
+    "options": ["Classes that inherit from multiple classes", "Classes that create other classes", "Classes that define static methods only", "Classes that are immutable"],
+    "correct_answer": "B",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["To define the data types of attributes", "To prevent the creation of new attributes after class definition", "To improve performance by reducing memory usage", "To control attribute access"],
+    "correct_answer": "C",
+    "topic": "Memory Model",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which data structure is most suitable for implementing a priority queue?",
+    "options": ["Linked List", "Binary Search Tree", "Heap", "Hash Table"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the primary difference between `asyncio.gather` and `asyncio.wait` in Python's asynchronous programming?",
+    "options": ["`gather` returns results in the order of task submission, while `wait` returns results as they complete.", "`gather` is used for I/O bound tasks, while `wait` is used for CPU-bound tasks.", "`gather` cancels pending tasks when one fails, while `wait` continues until all tasks are complete or cancelled.", "There is no difference between them."],
+    "correct_answer": "A",
+    "topic": "Async",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What does the `LRU` cache decorator primarily optimize for?",
+    "options": ["CPU usage", "Memory usage", "Disk I/O", "Network latency"],
+    "correct_answer": "B",
+    "topic": "Caching",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider a scenario where you need to perform multiple asynchronous operations on a large dataset. What is the most efficient approach?",
+    "options": ["Using a single thread with blocking I/O operations", "Using multiple threads with shared memory", "Using the `asyncio` library with an event loop", "Using multiprocessing with inter-process communication"],
+    "correct_answer": "C",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+    {
+    "question": "What is a benefit of using a NamedTuple in Python over a regular tuple?",
+    "options": ["It is mutable.", "It allows access to elements by name, improving readability.", "It supports inheritance.", "It has a smaller memory footprint."],
+    "correct_answer": "B",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of these is not a valid way to handle exceptions in Python?",
+    "options": ["try...except", "try...catch", "try...finally", "try...except...finally"],
+    "correct_answer": "B",
+    "topic": "Exception Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of pickling in Python?",
+    "options": ["Data compression", "Object serialization", "Error handling", "Code obfuscation"],
+    "correct_answer": "B",
+    "topic": "Serialization",
+    "difficulty": "medium"
+  }
+]
+```

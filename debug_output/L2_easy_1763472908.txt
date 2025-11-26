@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of: `print(type([1, 'a', 3.14]))`?",
+    "options": ["<class 'tuple'>", "<class 'list'>", "<class 'set'>", "<class 'array'>"],
+    "correct_answer": "B",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is the correct way to open a file in Python for reading?",
+    "options": ["file = open('my_file.txt', 'w')", "file = open('my_file.txt', 'r')", "file = open('my_file.txt', 'a')", "file = open('my_file.txt')"],
+    "correct_answer": "B",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of: `print(2 ** 3 + 5)`?",
+    "options": ["11", "13", "16", "21"],
+    "correct_answer": "B",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a LIFO (Last-In, First-Out) structure?",
+    "options": ["Queue", "List", "Stack", "Dictionary"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `try...except` block in Python?",
+    "options": ["To define a function", "To handle errors and exceptions", "To create a loop", "To import modules"],
+    "correct_answer": "B",
+    "topic": "Exception Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of: `[x for x in range(5) if x % 2 == 0]`?",
+    "options": ["[0, 1, 2, 3, 4]", "[1, 3]", "[0, 2, 4]", "[0, 2]"],
+    "correct_answer": "C",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a valid use case for a Python decorator?",
+    "options": ["To declare global variables", "To modify the behavior of a function", "To define a new class", "To import modules"],
+    "correct_answer": "B",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a characteristic of Python generators?",
+    "options": ["They use the `yield` keyword", "They produce all values at once", "They are memory efficient", "They can be iterated over"],
+    "correct_answer": "B",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__init__` method in a Python class?",
+    "options": ["To destroy an object", "To define a static method", "To initialize the object's attributes", "To declare a class variable"],
+    "correct_answer": "C",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the main difference between processes and threads in Python?",
+    "options": ["Threads have separate memory spaces, processes share the same memory space.", "Processes have separate memory spaces, threads share the same memory space.", "Processes are lighter than threads.", "Threads are only used for I/O operations."],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the Global Interpreter Lock (GIL) in Python?",
+    "options": ["To prevent memory leaks", "To allow multiple native threads to execute Python bytecodes in parallel", "To allow only one thread to execute Python bytecode at a time", "To optimize garbage collection"],
+    "correct_answer": "C",
+    "topic": "Python Internals",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is the MOST efficient way to concatenate a large number of strings in Python?",
+    "options": ["Using the `+` operator in a loop", "Using the `join()` method with a list of strings", "Using the `%` operator for string formatting", "Using f-strings"],
+    "correct_answer": "B",
+    "topic": "String Manipulation",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a potential issue when using mutable default arguments in Python functions?",
+    "options": ["The function will raise an error.", "The default argument is re-initialized every time the function is called.", "The default argument is shared between function calls, leading to unexpected behavior.", "Mutable default arguments are automatically converted to immutable types."],
+    "correct_answer": "C",
+    "topic": "Function Arguments",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does Python's memory management handle circular references between objects?",
+    "options": ["It ignores them, leading to memory leaks.", "It uses reference counting only.", "It uses a garbage collector that can detect and break cycles.", "It prevents circular references from being created."],
+    "correct_answer": "C",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `==` and `is` in Python?",
+    "options": ["`==` compares object identities, `is` compares object values.", "`==` compares object values, `is` compares object identities.", "They are interchangeable.", "`is` is used for comparing numbers, `==` for strings."],
+    "correct_answer": "B",
+    "topic": "Operators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code snippet?\n```python\ndef func():\n    x = 10\n    def inner():\n        nonlocal x\n        x = 20\n    inner()\n    return x\n\nprint(func())```",
+    "options": ["10", "20", "Error", "None"],
+    "correct_answer": "B",
+    "topic": "Scope",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following correctly describes the `async` and `await` keywords in Python?",
+    "options": ["`async` defines a synchronous function, `await` waits for a regular function to complete.", "`async` defines a coroutine function, `await` waits for a coroutine to complete without blocking the event loop.", "`async` creates a new thread, `await` joins the thread.", "`async` defines a generator, `await` consumes the generator."],
+    "correct_answer": "B",
+    "topic": "Asynchronous Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What data structure would be most appropriate for efficiently checking if an element exists within a large dataset?",
+    "options": ["List", "Tuple", "Dictionary", "Set"],
+    "correct_answer": "D",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of memoization in Python?",
+    "options": ["To encrypt data", "To cache the results of expensive function calls and return the cached result when the same inputs occur again", "To compress data", "To prevent race conditions"],
+    "correct_answer": "B",
+    "topic": "Optimization",
+    "difficulty": "hard"
+  }
+]
+```

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the time complexity of accessing an element by key in a Python dictionary?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following statements about Python decorators is true?",
+    "options": ["They can only be used with functions.", "They modify the original function's code directly.", "They provide a way to add functionality to a function without modifying its structure.", "They are only useful for debugging."],
+    "correct_answer": "They provide a way to add functionality to a function without modifying its structure.",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary difference between a list comprehension and a generator expression in Python?",
+    "options": ["List comprehensions are faster than generator expressions.", "List comprehensions create a list in memory, while generator expressions produce values on demand.", "Generator expressions can only be used with loops.", "List comprehensions can only contain simple expressions."],
+    "correct_answer": "List comprehensions create a list in memory, while generator expressions produce values on demand.",
+    "topic": "Comprehensions & Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a valid method for inheritance in Python?",
+    "options": ["Single inheritance", "Multiple inheritance", "Hierarchical inheritance", "Diamond inheritance"],
+    "correct_answer": "Diamond inheritance",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code snippet: `print([x**2 for x in range(5) if x % 2 == 0])`?",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[0, 2, 4]", "[0, 4]"],
+    "correct_answer": "[0, 4, 16]",
+    "topic": "Comprehensions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a Last-In, First-Out (LIFO) behavior?",
+    "options": ["Queue", "Stack", "Linked List", "Heap"],
+    "correct_answer": "Stack",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the `super()` function do in Python?",
+    "options": ["Calls the garbage collector.", "Calls the parent class's method.", "Creates a new instance of the class.", "Deletes an object from memory."],
+    "correct_answer": "Calls the parent class's method.",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following statements about Python's `__init__` method is correct?",
+    "options": ["It is the first method called when an object is created.", "It is used to destroy an object.", "It is optional and not required for every class.", "It must always return a value."],
+    "correct_answer": "It is the first method called when an object is created.",
+    "topic": "OOP",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `__str__` method in Python classes?",
+    "options": ["To convert the object to an integer.", "To provide a string representation of the object.", "To compare two objects for equality.", "To create a new object."],
+    "correct_answer": "To provide a string representation of the object.",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a mutable data type in Python?",
+    "options": ["String", "Tuple", "Integer", "List"],
+    "correct_answer": "List",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `try...except` block in Python?",
+    "options": ["To define a loop.", "To handle exceptions.", "To declare a variable.", "To define a function."],
+    "correct_answer": "To handle exceptions.",
+    "topic": "Error Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between `==` and `is` in Python?",
+    "options": ["`==` compares object identity, `is` compares values.", "`==` compares values, `is` compares object identity.", "They are interchangeable.", "They both compare memory addresses."],
+    "correct_answer": "`==` compares values, `is` compares object identity.",
+    "topic": "Operators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print(type((1,)))`?",
+    "options": ["<class 'int'>", "<class 'tuple'>", "<class 'list'>", "<class 'set'>"],
+    "correct_answer": "<class 'tuple'>",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print(1 or 0 and 0)`?",
+    "options": ["0", "1", "False", "Error"],
+    "correct_answer": "1",
+    "topic": "Operators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of these is NOT a valid way to open a file in Python?",
+    "options": ["open('file.txt', 'r')", "open('file.txt', 'w')", "open('file.txt', 'x')", "open('file.txt', 'a+')"],
+    "correct_answer": "open('file.txt', 'a+')",
+    "topic": "File Handling",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a built-in function that can be used to apply a function to each item in an iterable?",
+    "options": ["reduce()", "filter()", "map()", "zip()"],
+    "correct_answer": "map()",
+    "topic": "Built-in Functions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code: `def func(a, b=1, *args, **kwargs): return a + b; print(func(2, 3, 4, 5, c=6, d=7))`",
+    "options": ["5", "2", "3", "Error"],
+    "correct_answer": "5",
+    "topic": "Functions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following correctly describes the difference between `*args` and `**kwargs` in Python?",
+    "options": ["`*args` is for keyword arguments, `**kwargs` is for positional arguments.", "`*args` is for positional arguments, `**kwargs` is for keyword arguments.", "They are interchangeable.", "Neither can be used in function definitions."],
+    "correct_answer": "`*args` is for positional arguments, `**kwargs` is for keyword arguments.",
+    "topic": "Functions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is pickling and unpickling in Python?",
+    "options": ["Converting code to binary and back.", "Serializing and de-serializing an object structure.", "A way to sort data.", "A method for encrypting data."],
+    "correct_answer": "Serializing and de-serializing an object structure.",
+    "topic": "Serialization",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `with` statement in Python?",
+    "options": ["To define a class.", "To handle exceptions.", "To manage resources (like files) and ensure proper cleanup.", "To create a loop."],
+    "correct_answer": "To manage resources (like files) and ensure proper cleanup.",
+    "topic": "Context Managers",
+    "difficulty": "medium"
+  }
+]
+```

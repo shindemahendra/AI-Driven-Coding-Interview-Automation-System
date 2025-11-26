@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Service Dependencies Analysis",
+  "description": "You are part of a platform engineering team responsible for managing a large number of microservices.  To improve service reliability and optimize resource allocation, you need to analyze service dependencies. You are given a list of service dependencies represented as a dictionary (or hash map). Each key in the dictionary represents a service, and the value associated with each key is a list of services that the key service depends on.  For example, `{\"A\": [\"B\", \"C\"], \"B\": [\"D\"], \"C\": [], \"D\": []}` means service A depends on B and C, service B depends on D, and services C and D have no dependencies.  \n\nYour task is to write a function that, given a service name and the dependency dictionary, returns a list of all services (including the input service itself) that are transitively dependent on the input service. The returned list must be topologically sorted, meaning that a service appears in the list before any service that depends on it.  If a circular dependency exists involving the starting service, return an empty list.  Duplicate services should not be in the final result.",
+  "input_format": "The input consists of two parts:\n\n1.  `service`: A string representing the name of the starting service.\n2.  `dependencies`: A dictionary (or hash map) where keys are service names (strings) and values are lists of service names (strings) that the key service depends on.",
+  "output_format": "A list of strings representing the topologically sorted list of all services transitively dependent on the input service (including the input service itself). If a circular dependency exists, return an empty list. The services in the list must be unique.",
+  "constraints": "\n*   1 <= Number of services in the dependency dictionary <= 100\n*   1 <= Length of a service name <= 10\n*   Service names consist of uppercase letters only (A-Z).\n*   The input `service` is guaranteed to be a valid key in the `dependencies` dictionary.\n*   Dependencies lists may be empty.\n",
+  "sample_input": "{\"service\": \"A\", \"dependencies\": {\"A\": [\"B\", \"C\"], \"B\": [\"D\"], \"C\": [], \"D\": []}}",
+  "sample_output": "[\"D\", \"B\", \"C\", \"A\"]",
+  "difficulty": "medium"
+}
+```

@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Aggregation and Range Queries",
+  "description": "You are building a log aggregation service.  Your service collects timestamped log entries from various sources. Each log entry has a timestamp (in milliseconds since epoch) and an associated numerical severity level.  You need to efficiently answer queries asking for the total severity within a specified time range.\n\nGiven a list of log entries, where each entry is a tuple `(timestamp, severity)`, and a list of query ranges, where each range is a tuple `(start_time, end_time)`, your task is to calculate the sum of severities for each query range.  A log entry is considered within a range if `start_time <= timestamp <= end_time`.\n\nFor optimal performance, pre-processing the log entries is allowed and encouraged.",
+  "input_format": "The input consists of two parts:\n\n1.  `logs`: A list of tuples, where each tuple represents a log entry in the format `(timestamp, severity)`. `timestamp` is an integer representing milliseconds since epoch, and `severity` is an integer representing the severity level.\n2.  `queries`: A list of tuples, where each tuple represents a query range in the format `(start_time, end_time)`. `start_time` and `end_time` are integers representing milliseconds since epoch.",
+  "output_format": "A list of integers, where each integer represents the sum of severities for the corresponding query range in the `queries` list.",
+  "constraints": "1 <= number of logs <= 10^5\n1 <= number of queries <= 10^5\n1 <= timestamp <= 10^9\n1 <= severity <= 10^3\n1 <= start_time <= end_time <= 10^9",
+  "sample_input": "logs = [(1000, 5), (2000, 10), (3000, 15), (4000, 20), (5000, 25)]\nqueries = [(1500, 3500), (4000, 6000), (500, 1200)]",
+  "sample_output": "[25, 45, 5]",
+  "difficulty": "medium"
+}
+```

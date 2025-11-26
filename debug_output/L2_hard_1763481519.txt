@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the time complexity of accessing an element in a Python dictionary?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is NOT a valid data type in Python?",
+    "options": ["int", "float", "string", "character"],
+    "correct_answer": "character",
+    "topic": "Syntax",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will be the output of the following code snippet? `print([x**2 for x in range(5) if x % 2 == 0])`",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[0, 2, 4]", "[0, 1, 2, 3, 4]"],
+    "correct_answer": "[0, 4, 16]",
+    "topic": "Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary purpose of a decorator in Python?",
+    "options": ["To define a class", "To add functionality to a function or method without modifying its structure", "To import modules", "To create loops"],
+    "correct_answer": "To add functionality to a function or method without modifying its structure",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a correct way to define a generator in Python?",
+    "options": ["Using the `class` keyword", "Using the `yield` keyword within a function", "Using the `import` statement", "Using the `def` keyword with a return statement"],
+    "correct_answer": "Using the `yield` keyword within a function",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the difference between `==` and `is` operators in Python?",
+    "options": ["They are interchangeable", "`==` compares values, `is` compares identity", "`is` compares values, `==` compares identity", "`is` can only be used with integers"],
+    "correct_answer": "`==` compares values, `is` compares identity",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which data structure is most suitable for implementing a FIFO (First-In, First-Out) queue?",
+    "options": ["Stack", "List", "Dictionary", "Deque"],
+    "correct_answer": "Deque",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__init__` method in a Python class?",
+    "options": ["To define the class name", "To initialize the object's attributes", "To call the parent class", "To define the class methods"],
+    "correct_answer": "To initialize the object's attributes",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the Global Interpreter Lock (GIL) in Python primarily prevent?",
+    "options": ["Multiple threads from accessing the same memory", "True parallelism for CPU-bound tasks in CPython", "Memory leaks", "Deadlocks in I/O bound tasks"],
+    "correct_answer": "True parallelism for CPU-bound tasks in CPython",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is the most efficient way to concatenate a large number of strings in Python?",
+    "options": ["Using the `+` operator in a loop", "Using the `join()` method", "Using f-strings in a loop", "Using the `concat()` function from the `string` module"],
+    "correct_answer": "Using the `join()` method",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How does Python's memory management handle circular references?",
+    "options": ["It ignores them, leading to memory leaks", "It uses garbage collection to detect and break them", "It prevents circular references from being created", "It uses manual memory management for circular references"],
+    "correct_answer": "It uses garbage collection to detect and break them",
+    "topic": "Memory Model",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `async` and `await` keywords in Python?",
+    "options": ["To define classes", "To perform asynchronous programming", "To create loops", "To define functions"],
+    "correct_answer": "To perform asynchronous programming",
+    "topic": "Async",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which data structure is most efficient for checking membership of an element?",
+    "options": ["List", "Tuple", "Set", "Dictionary (values)"],
+    "correct_answer": "Set",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of `__slots__` in a Python class?",
+    "options": ["To define a new method", "To specify a fixed set of attributes and reduce memory usage", "To inherit from another class", "To create a static method"],
+    "correct_answer": "To specify a fixed set of attributes and reduce memory usage",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the main difference between a process and a thread in Python?",
+    "options": ["They are the same thing", "Processes share memory, threads do not", "Threads share memory, processes do not", "Processes are faster than threads"],
+    "correct_answer": "Threads share memory, processes do not",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What does the term 'metaclass' refer to in Python?",
+    "options": ["A class that inherits from all other classes", "A class that creates other classes", "A class that cannot be instantiated", "A class that only contains static methods"],
+    "correct_answer": "A class that creates other classes",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the significance of the `__dict__` attribute of a Python object?",
+    "options": ["It stores the object's methods", "It stores the object's attributes", "It stores the object's class", "It stores the object's memory address"],
+    "correct_answer": "It stores the object's attributes",
+    "topic": "Memory Model",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider a scenario where you need to implement a thread-safe counter. Which of the following approaches is most appropriate?",
+    "options": ["Using a global variable", "Using a local variable within each thread", "Using the `threading.Lock` object to protect access to a shared variable", "Using a standard Python dictionary"],
+    "correct_answer": "Using the `threading.Lock` object to protect access to a shared variable",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of `functools.lru_cache`?",
+    "options": ["To implement a lock", "To implement a decorator that caches the results of a function", "To implement a loop", "To implement a class"],
+    "correct_answer": "To implement a decorator that caches the results of a function",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following libraries is best suited for numerical computation in Python?",
+    "options": ["requests", "BeautifulSoup", "NumPy", "Flask"],
+    "correct_answer": "NumPy",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  }
+]
+```

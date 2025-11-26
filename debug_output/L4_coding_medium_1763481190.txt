@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Service Dependency Graph Analyzer",
+  "description": "You are responsible for maintaining a microservice architecture.  Each microservice can depend on other microservices to function. These dependencies form a directed graph. You are given a list of service dependencies, where each dependency is represented as a pair of service IDs (dependent_service, dependency).  For example, `(A, B)` means service `A` depends on service `B`.  You need to write a function that determines the maximum depth of the dependency graph. The depth is the length of the longest path from any service to a service with no dependencies (a leaf node). If there is a cycle in the dependency graph, return -1.",
+  "input_format": "The input consists of two parts:\n\n1.  `n`: An integer representing the number of services.\n2.  `dependencies`: A list of tuples, where each tuple `(dependent_service, dependency)` represents a dependency between two services. Services are identified by strings.  For instance `[('A', 'B'), ('C', 'A')]` means that service 'A' depends on service 'B' and service 'C' depends on service 'A'.",
+  "output_format": "An integer representing the maximum dependency depth.  Return -1 if a cycle exists.",
+  "constraints": "1 <= n <= 100\nEach service ID is a non-empty string containing only uppercase letters (A-Z) with a length of at most 5.\nThe dependency graph does not contain self-loops (e.g., (A, A)).\nThe input will be valid; i.e., no duplicate dependencies will be present in the list. The same service ID will not appear more than once in a tuple.",
+  "sample_input": "4\n[('A', 'B'), ('B', 'C'), ('C', 'D')]",
+  "sample_output": "3",
+  "difficulty": "medium"
+}
+```

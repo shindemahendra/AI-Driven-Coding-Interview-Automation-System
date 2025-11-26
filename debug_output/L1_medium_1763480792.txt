@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A train leaves station A at 8:00 AM, traveling at 60 mph towards station B. Another train leaves station B at 9:00 AM, traveling at 80 mph towards station A. If the distance between A and B is 500 miles, at what time will they meet?",
+    "options": ["11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM"],
+    "correct_answer": "11:30 AM",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the next number in the sequence: 2, 6, 12, 20, 30, ?",
+    "options": ["40", "42", "44", "46"],
+    "correct_answer": "42",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all Bloops are Floops, and some Floops are Gloops, which of the following statements must be true?",
+    "options": ["All Bloops are Gloops", "Some Bloops are Gloops", "Some Gloops are Bloops", "None of the above"],
+    "correct_answer": "None of the above",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A farmer has 17 sheep. All but nine die. How many sheep does the farmer have left?",
+    "options": ["8", "9", "10", "17"],
+    "correct_answer": "9",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the missing number in the following series: 3, 8, 15, 24, ?, 48",
+    "options": ["33", "34", "35", "36"],
+    "correct_answer": "35",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If you rearrange the letters 'SOODR', you get the name of:",
+    "options": ["A country", "A city", "An ocean", "A river"],
+    "correct_answer": "A river",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Alice is taller than Bob, and Carol is shorter than Bob. David is taller than Alice. Which of the following is definitely true?",
+    "options": ["Carol is the shortest", "Bob is the shortest", "David is the tallest", "Alice is the shortest"],
+    "correct_answer": "Carol is the shortest",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the missing letter: A, C, F, J, O, ?",
+    "options": ["U", "V", "T", "W"],
+    "correct_answer": "U",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 5 machines can produce 5 widgets in 5 minutes, how many minutes would it take 100 machines to produce 100 widgets?",
+    "options": ["5", "10", "100", "25"],
+    "correct_answer": "5",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bag contains 3 red balls, 4 blue balls, and 5 green balls. What is the minimum number of balls you must pick to ensure you have at least one of each color?",
+    "options": ["3", "8", "11", "12"],
+    "correct_answer": "12",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What number logically completes this series: 1, 8, 27, ?, 125",
+    "options": ["36", "48", "64", "81"],
+    "correct_answer": "64",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following doesn't belong: Apple, Orange, Banana, Carrot",
+    "options": ["Apple", "Orange", "Banana", "Carrot"],
+    "correct_answer": "Carrot",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If two typists can type two pages in two minutes, how many typists are needed to type 18 pages in six minutes?",
+    "options": ["2", "3", "4", "6"],
+    "correct_answer": "6",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at noon, what time will it show when the actual time is 6 PM?",
+    "options": ["5:30 PM", "5:00 PM", "6:30 PM", "6:00 PM"],
+    "correct_answer": "5:30 PM",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete the analogy: Cup is to Coffee as Bowl is to ?",
+    "options": ["Spoon", "Soup", "Cereal", "Dish"],
+    "correct_answer": "Soup",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Mary is 24 years old. Mary is twice as old as Anna was when Mary was as old as Anna is now. How old is Anna now?",
+    "options": ["12", "16", "18", "20"],
+    "correct_answer": "18",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A drawer contains 10 black socks and 10 white socks. You randomly pick socks from the drawer. What is the minimum number of socks you must pick to ensure you have a matching pair?",
+    "options": ["2", "3", "11", "20"],
+    "correct_answer": "3",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A group of friends went to a restaurant. They decided to split the bill equally. However, four friends forgot their wallets, so each of the remaining friends had to pay an extra $10. If the total bill was $400, how many friends were in the group?",
+    "options": ["8", "10", "12", "16"],
+    "correct_answer": "10",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the next figure in the series: square, triangle, circle, square, triangle, ?",
+    "options": ["Circle", "Square", "Pentagon", "Triangle"],
+    "correct_answer": "Circle",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Given the statements: All A are B. No B are C. Which conclusion is valid?",
+    "options": ["All A are C", "No A are C", "Some A are C", "Some A are not C"],
+    "correct_answer": "No A are C",
+    "topic": "L1",
+    "difficulty": "medium"
+  }
+]
+```

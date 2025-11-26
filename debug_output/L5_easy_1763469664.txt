@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "question": "A junior developer reports they are blocked on a task because they don't understand the API documentation. What is the BEST immediate action you should take?",
+    "options": ["Tell them to keep reading the documentation until they understand.", "Pair with them to review the documentation and help them understand it.", "Ask a more senior developer to explain it to them.", "Tell them to search for the answer online."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You disagree with a proposed solution during a code review. What is the MOST constructive way to express your concerns?",
+    "options": ["Reject the code review outright and demand a different approach.", "Privately complain to other team members about the solution.", "Clearly and respectfully explain your reasoning and suggest alternative solutions.", "Accept the code review to avoid conflict."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You discover a critical security vulnerability in a production system. Which action should you prioritize FIRST?",
+    "options": ["Immediately deploy a fix to production.", "Document the vulnerability in detail.", "Notify the security team and relevant stakeholders.", "Investigate the root cause of the vulnerability."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A team member consistently misses deadlines. As a senior engineer, what is the most effective approach?",
+    "options": ["Publicly reprimand them in a team meeting.", "Privately discuss the issue, understand the reasons, and collaboratively find solutions.", "Ignore the issue and hope it resolves itself.", "Report them to management without further discussion."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A new team member is hesitant to ask questions. How do you encourage them to seek help when needed?",
+    "options": ["Tell them it's their responsibility to learn on their own.", "Create a safe and supportive environment where questions are encouraged and valued.", "Assume they are already comfortable and leave them alone.", "Publicly praise those who ask questions, regardless of their relevance."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "During a project retrospective, a team member blames another for a recent failure. How should you respond as the team lead?",
+    "options": ["Let them continue and document their feedback.", "Redirect the conversation to focus on processes and lessons learned, not individual blame.", "Publicly defend the person being blamed.", "Ignore the comment and move on to the next topic."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You're assigned a task that is outside your area of expertise. What's the MOST appropriate course of action?",
+    "options": ["Decline the task immediately.", "Attempt the task without seeking help and hope for the best.", "Research the task, identify knowledge gaps, and ask for guidance from experienced team members.", "Estimate a very long time and hope someone else picks it up."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You receive conflicting requirements from two different stakeholders. What's the BEST approach to resolve this conflict?",
+    "options": ["Implement the requirements from the stakeholder with higher authority.", "Implement both sets of requirements and deal with the consequences later.", "Facilitate a discussion between the stakeholders to understand the conflicting needs and find a mutually agreeable solution.", "Arbitrarily choose one set of requirements and ignore the other."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A junior developer is struggling to understand a specific coding concept. What is the MOST effective way to provide guidance?",
+    "options": ["Direct them to online documentation and leave them to figure it out.", "Explain the concept clearly, provide examples, and answer their questions.", "Tell them it's a difficult concept and they will understand it eventually.", "Criticize their lack of understanding and move on."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "During a team meeting, a team member consistently interrupts others. How should you address this behavior?",
+    "options": ["Ignore the interruptions to avoid conflict.", "Publicly call them out during the meeting.", "Speak to them privately and explain the impact of their behavior on team dynamics.", "Start interrupting them back to show them how it feels."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a project that is falling behind schedule. What is the MOST important step to take?",
+    "options": ["Work longer hours to catch up.", "Blame the team members for not working hard enough.", "Re-evaluate the project scope, identify critical tasks, and communicate the revised timeline to stakeholders.", "Cancel the project to avoid further losses."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A teammate consistently produces low-quality code. What is the BEST way to address this?",
+    "options": ["Avoid reviewing their code to avoid conflict.", "Publicly criticize their code during code reviews.", "Offer constructive feedback, mentorship, and resources to help them improve their coding skills.", "Report them to management without providing any support."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You notice a potential security risk in a coworker's code. What is the BEST course of action?",
+    "options": ["Ignore it, as it's not your responsibility.", "Secretly report it to your manager.", "Privately discuss the risk with your coworker and suggest potential solutions.", "Publicly shame them in a team meeting."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your team is consistently missing sprint goals. As a senior engineer, how do you address this issue?",
+    "options": ["Increase the pressure on the team to perform better.", "Blame the product owner for unrealistic sprint goals.", "Analyze the root causes of the missed goals, such as unclear requirements, technical debt, or insufficient resources, and work with the team to address them.", "Ignore the issue and hope it resolves itself in the next sprint."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are asked to estimate the effort for a new feature. What is the BEST approach?",
+    "options": ["Provide a random guess to avoid delaying the process.", "Pad the estimate significantly to account for unforeseen issues.", "Break down the feature into smaller tasks, estimate each task individually, and add them up, considering potential risks and dependencies.", "Base your estimate on what you think management wants to hear."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  }
+]
+```
