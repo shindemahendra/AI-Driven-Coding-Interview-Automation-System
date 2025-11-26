@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Aggregation and Thresholding",
+  "description": "You are tasked with building a system to monitor the health of a distributed application.  The application logs contain timestamped events from various services.  Your job is to process these logs, aggregate events for each service within a specified time window, and identify services exceeding a predefined event threshold.  Each log entry has the following format: `timestamp,service_name,event_type`. The timestamp is a Unix epoch timestamp (seconds since 1970-01-01 00:00:00 UTC).  The service_name is a string.  The event_type is a string (e.g., 'ERROR', 'INFO', 'WARN').\n\nGiven a list of log entries, a time window duration (in seconds), and an event threshold, return a list of service names that have generated more events than the threshold within any time window. The output list should be sorted alphabetically and contain only unique service names. If no service exceeds the threshold, return an empty list.",
+  "input_format": "The input consists of:\n1.  `logs`: A list of strings, where each string is a log entry in the format \"timestamp,service_name,event_type\".\n2.  `window_duration`: An integer representing the time window duration in seconds.\n3.  `event_threshold`: An integer representing the event threshold.\n\nExample:\nlogs = [\"1678886400,serviceA,ERROR\", \"1678886401,serviceB,INFO\", \"1678886402,serviceA,WARN\", \"1678886403,serviceA,ERROR\", \"1678886404,serviceC,INFO\", \"1678886405,serviceA,ERROR\", \"1678886406,serviceB,ERROR\"]\nwindow_duration = 3\nevent_threshold = 2",
+  "output_format": "A list of strings, where each string is a service name that exceeds the event threshold. The list should be sorted alphabetically and contain only unique service names. If no service exceeds the threshold, return an empty list.",
+  "constraints": "1 <= len(logs) <= 1000\n1 <= window_duration <= 60\n1 <= event_threshold <= 100\nTimestamps are non-decreasing within the logs.\n0 <= timestamp <= 2^31 - 1\nService names and event types contain only alphanumeric characters.",
+  "sample_input": "[\"1678886400,serviceA,ERROR\", \"1678886401,serviceB,INFO\", \"1678886402,serviceA,WARN\", \"1678886403,serviceA,ERROR\", \"1678886404,serviceC,INFO\", \"1678886405,serviceA,ERROR\", \"1678886406,serviceB,ERROR\"], 3, 2",
+  "sample_output": "['serviceA']",
+  "difficulty": "medium"
+}
+```

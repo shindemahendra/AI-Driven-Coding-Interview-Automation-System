@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "question": "What is the output of the following code snippet? \n\n```python\ndef func(a, b=[]):\n  b.append(a)\n  return b\n\nprint(func(1))\nprint(func(2))\n```",
+    "options": ["A. [1]\\n[2]", "B. [1]\\n[1, 2]", "C. [1, 2]\\n[1, 2]", "D. [1]\\nNone"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The following code aims to calculate the sum of even numbers in a list. Identify the bug:\n```python\ndef sum_even(nums):\n  total = 0\n  for i in range(len(nums)):\n    if nums[i] % 2 == 0:\n      total += i\n  return total\n\nprint(sum_even([1, 2, 3, 4, 5, 6]))\n```",
+    "options": ["A. The loop should iterate through the values, not the indices.", "B. The modulo operator is incorrect.", "C. The initial value of 'total' should be 1.", "D. The function should return 'None' if the list is empty."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the error in the following code snippet that attempts to remove duplicate characters from a string:\n```python\ndef remove_duplicates(s):\n  seen = set()\n  result = ''\n  for char in s:\n    if char not in result:\n      result += char\n      seen.add(char)\n  return result\n\nprint(remove_duplicates('aabbccddeeff'))\n```",
+    "options": ["A. The set 'seen' is not necessary and should be removed.", "B. The condition `char not in result` should be `char not in seen`.", "C. The variable 'result' should be initialized as a list instead of a string.", "D. The loop should iterate in reverse order."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Identify the bug in the following code that calculates the factorial of a number recursively:\n```python\ndef factorial(n):\n  if n == 0:\n    return 0\n  else:\n    return n * factorial(n - 1)\n\nprint(factorial(5))\n```",
+    "options": ["A. The base case should return 1 instead of 0.", "B. The recursive call should be factorial(n + 1).", "C. The else statement is unnecessary.", "D. The function should raise an exception for negative input."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The code below intends to implement a basic thread-safe counter. What's the potential issue?\n\n```python\nimport threading\n\nclass Counter:\n    def __init__(self):\n        self.value = 0\n\n    def increment(self):\n        self.value += 1\n\ncounter = Counter()\nthreads = []\n\nfor _ in range(1000):\n    t = threading.Thread(target=counter.increment)\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()\n\nprint(counter.value)\n```",
+    "options": ["A. The `increment` method is not thread-safe, leading to potential race conditions.", "B. The code is correct and will always produce the value 1000.", "C. The `Counter` class should inherit from `threading.Thread`.", "D. The threads are not properly joined, leading to incomplete execution."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What's wrong with the following Python code snippet that attempts to update a dictionary's value based on a condition?\n\n```python\ndata = {'a': 1, 'b': 2, 'c': 3}\nfor k, v in data.items():\n  if v > 1:\n    data[k] = v * 2\n\nprint(data)\n```",
+    "options": ["A. The code will raise a `RuntimeError` due to modifying the dictionary during iteration.", "B. The code will not update the dictionary correctly.", "C. The code is perfectly valid and will execute without errors.", "D. The condition `v > 1` should be `k > 1`."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+    {
+    "question": "Identify the concurrency issue in the following code:\n\n```python\nimport threading\n\nresource = 0\nlock = threading.Lock()\n\ndef increment():\n    global resource\n    for _ in range(100000):\n        with lock:\n            resource += 1\n\nthreads = []\nfor _ in range(2):\n    t = threading.Thread(target=increment)\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()\n\nprint(resource)\n```",
+    "options": ["A. The code is thread-safe and will always produce the correct result (200000).", "B. There is a race condition because the lock is not acquired properly.", "C. The GIL prevents true concurrency, making the lock unnecessary.", "D. The code may be slow due to lock contention, but the result will still be correct."],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What potential problem does the following code have regarding variable scope?\n\n```python\nx = 10\n\ndef my_function():\n    x = x + 5\n    print(x)\n\nmy_function()\n```",
+    "options": ["A. The code will execute without any errors and print 15.", "B. The code will raise a `NameError` because `x` is referenced before assignment within the function.", "C. The code will modify the global variable `x` to 15.", "D. The code will print 10 because the local variable `x` shadows the global variable."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The code below aims to print all even numbers from a list.  Find the issue:\n\n```python\ndef print_even(numbers):\n    for i in range(len(numbers)):\n        if numbers[i] % 2 == 1:\n            continue\n        print(i)\n\nprint_even([1, 2, 3, 4, 5, 6])\n```",
+    "options": ["A. It prints the index of even numbers, not the numbers themselves.", "B. The modulo operator is incorrect; it should be `== 0`.", "C. It prints odd numbers instead of even numbers.", "D. The `continue` statement is unnecessary."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider the following generator-based approach. What is the primary risk associated with the following code?\n\n```python\ndef process_data(data):\n    for item in data:\n        yield item.upper()\n\nlarge_data = ['a' * 1000000, 'b' * 1000000, 'c' * 1000000]\n\nfor processed_item in process_data(large_data):\n    print(processed_item[:10])\n```",
+    "options": ["A. Memory exhaustion if the data is too large to fit in memory at any point, even with generators.", "B. The `upper()` method is inefficient for large strings.", "C. Generators are not suitable for processing string data.", "D. The code will raise a `TypeError` because generators cannot work with lists."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The following code aims to find the maximum element in a list recursively. Identify the issue:\n```python\ndef find_max(nums):\n  if len(nums) == 1:\n    return nums[0]\n  else:\n    mid = len(nums) // 2\n    left_max = find_max(nums[:mid])\n    right_max = find_max(nums[mid:])\n    return max(left_max, right_max)\n\nprint(find_max([]))\n```",
+    "options": ["A. The code will raise an IndexError when the input list is empty.", "B. The base case is incorrect, it should return -infinity.", "C. The code will always return the first element of the list.", "D. The code will enter an infinite recursion for any non-empty list."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which line in the following code snippet will cause an error?\n```python\ndef modify_list(my_list):\n    my_list[0] = 10\n    new_list = my_list.append(20)\n    return new_list\n\noriginal_list = [1, 2, 3]\nresult = modify_list(original_list)\nprint(result)\n```",
+    "options": ["A. `my_list[0] = 10`", "B. `new_list = my_list.append(20)`", "C. `return new_list`", "D. `print(result)`"],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What potential race condition exists in this Python code if executed concurrently by multiple threads?\n\n```python\nimport time\n\ncounter = 0\n\ndef increment_counter():\n  global counter\n  local_counter = counter  # Read\n  time.sleep(0.001)  # Simulate some work\n  local_counter += 1\n  counter = local_counter  # Write\n\n# In a concurrent environment, multiple threads call increment_counter()\n```",
+    "options": ["A. The code is thread-safe because the operations are atomic.", "B. The 'Read-Modify-Write' sequence on `counter` is not atomic, potentially leading to lost updates.", "C. The `time.sleep()` call ensures proper synchronization.", "D. There are no shared resources, so there is no possibility of a race condition."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output of the following code snippet? Identify the hidden mutation bug.\n\n```python\ndef modify_dict(data, key, value):\n  data[key] = value\n\nmy_dict = {'a': 1}\nkeys = ['a', 'b', 'c']\nfor key in keys:\n  modify_dict(my_dict, key, 0)\n\nprint(my_dict)\n```",
+    "options": ["A. {'a': 0}", "B. {'a': 0, 'b': 0, 'c': 0}", "C. {'a': 1, 'b': 0, 'c': 0}", "D. {'a': 0, 'b': 0, 'c': 0, 'key': 0}"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The following code intends to sort a list, but contains an error.  Identify the bug:\n\n```python\ndef sort_list(data):\n    for i in range(len(data)):\n        for j in range(len(data)):\n            if data[i] < data[j]:\n                temp = data[i]\n                data[i] = data[j]\n                data[j] = temp\n    return data\n\ndata = [5, 2, 8, 1, 9]\nsorted_data = sort_list(data)\nprint(sorted_data)\n```",
+    "options": ["A. The outer loop should start at index 1.", "B. The comparison operator should be `>` instead of `<`.", "C. The inner loop should iterate from `i + 1` to `len(data)`.", "D. The code is already correct and will sort the list properly."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  }
+]
+```

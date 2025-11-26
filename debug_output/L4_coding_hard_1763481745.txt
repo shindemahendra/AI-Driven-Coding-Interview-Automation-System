@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Scheduling with Dependencies and Deadlines",
+  "description": "You are managing a project consisting of N tasks. Each task `i` has a duration `duration[i]`, a deadline `deadline[i]`, and a list of dependencies `dependencies[i]`. A task cannot be started until all of its dependencies are completed. Your goal is to schedule the tasks to minimize the number of late tasks (tasks completed after their deadlines). You are given the `duration`, `deadline`, and `dependencies` arrays. Find the minimum number of late tasks possible. You must execute all tasks. The tasks execute sequentially, not in parallel. Assume you begin execution at time 0.",
+  "input_format": "The input consists of three arrays:\n\n*   `duration`: An array of integers representing the duration of each task.\n*   `deadline`: An array of integers representing the deadline of each task.\n*   `dependencies`: An array of arrays of integers representing the dependencies for each task.  `dependencies[i]` contains a list of indices representing the tasks that must be completed before task `i` can start. Task indices are 0-based.\n\nFor example, if `duration = [2, 3, 2]`, `deadline = [5, 7, 6]`, and `dependencies = [[], [0], [0]]`, then:\n\n*   Task 0 has duration 2 and deadline 5, and has no dependencies.\n*   Task 1 has duration 3 and deadline 7, and depends on task 0.\n*   Task 2 has duration 2 and deadline 6, and depends on task 0.",
+  "output_format": "Return an integer representing the minimum number of late tasks possible.",
+  "constraints": "\n*   1 <= N <= 20\n*   1 <= duration[i] <= 100\n*   1 <= deadline[i] <= 1000\n*   0 <= dependencies[i].length < N\n*   No circular dependencies exist. (The directed graph representing dependencies is a DAG)\n*   All task indices in `dependencies` are valid.",
+  "sample_input": "duration = [2, 3, 2]\ndeadline = [5, 7, 6]\ndependencies = [[], [0], [0]]",
+  "sample_output": "0",
+  "difficulty": "hard"
+}
+```

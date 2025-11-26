@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Assignment with Dependencies and Deadlines",
+  "description": "A project manager has a set of tasks to assign to engineers. Each task has a specific duration, a deadline, and a set of dependencies (other tasks that must be completed before it can start). The goal is to find an assignment of tasks to engineers such that the overall project completion time (the latest time any task is completed) is minimized. Each engineer can work on only one task at a time. Assume an unlimited number of engineers are available. A task can begin on the day immediately after all of its dependencies are complete. If a task cannot be completed by its deadline no matter the schedule, return -1. You should also return -1 if no valid schedule can be made which respects the dependencies.",
+  "input_format": "The input consists of the following:\n\n*   `n`: An integer representing the number of tasks.\n*   `durations`: An array of `n` integers, where `durations[i]` is the duration of the i-th task.\n*   `deadlines`: An array of `n` integers, where `deadlines[i]` is the deadline of the i-th task.\n*   `dependencies`: An array of `n` arrays of integers. `dependencies[i]` is a list of task indices that must be completed before task `i` can start (0-indexed). An empty list signifies no dependencies.\n\nExample:\nn = 3\ndurations = [2, 3, 2]\ndeadlines = [5, 10, 6]\ndependencies = [[], [0], [0]]",
+  "output_format": "Return the minimum possible completion time of the project. If the project cannot be completed by the specified deadlines and dependencies, return -1.",
+  "constraints": "*   1 <= n <= 1000\n*   1 <= durations[i] <= 100\n*   1 <= deadlines[i] <= 10000\n*   0 <= dependencies[i].length <= n\n*   All dependency values are valid task indices (0 to n-1)\n*   Dependencies do not contain cycles",
+  "sample_input": "3\n[2, 3, 2]\n[5, 10, 6]\n[[], [0], [0]]",
+  "sample_output": "7",
+  "difficulty": "hard"
+}
+```

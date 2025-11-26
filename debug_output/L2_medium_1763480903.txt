@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the time complexity of accessing an element by key in a Python dictionary?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is the correct way to define a generator function in Python?",
+    "options": ["def my_func(): return [x for x in range(10)]", "def my_func(): print(range(10))", "def my_func(): yield from range(10)", "def my_func(): return range(10)"],
+    "correct_answer": "def my_func(): yield from range(10)",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `*args` parameter in a Python function?",
+    "options": ["To pass a single argument as a list.", "To pass a variable number of keyword arguments.", "To pass a variable number of positional arguments.", "To specify default argument values."],
+    "correct_answer": "To pass a variable number of positional arguments.",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code? `print([x**2 for x in range(5) if x % 2 == 0])`",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[1, 9, 25]", "[0, 2, 4]"],
+    "correct_answer": "[0, 4, 16]",
+    "topic": "Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a decorator in Python?",
+    "options": ["A design pattern for managing dependencies.", "A way to add functionality to an object without modifying its structure.", "A function that takes another function as an argument and returns a new function that modifies the original function's behavior.", "A method for improving code readability."],
+    "correct_answer": "A function that takes another function as an argument and returns a new function that modifies the original function's behavior.",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a valid method for creating a copy of a list in Python?",
+    "options": ["list(original_list)", "original_list.copy()", "original_list[:]", "original_list.append()"],
+    "correct_answer": "original_list.append()",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the difference between `==` and `is` in Python?",
+    "options": ["`==` checks for value equality, `is` checks for object identity.", "`==` checks for object identity, `is` checks for value equality.", "They are interchangeable.", "`==` is used for integers, `is` is used for strings."],
+    "correct_answer": "`==` checks for value equality, `is` checks for object identity.",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `super()` function in Python?",
+    "options": ["To call a method in the current class.", "To call a method in the parent class.", "To create a new instance of a class.", "To delete an object."],
+    "correct_answer": "To call a method in the parent class.",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following data structures is NOT mutable in Python?",
+    "options": ["List", "Dictionary", "Tuple", "Set"],
+    "correct_answer": "Tuple",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print(type(lambda x: x+1))`?",
+    "options": ["<class 'function'>", "<class 'int'>", "<class 'lambda'>", "<class 'method'>"],
+    "correct_answer": "<class 'function'>",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary advantage of using a `set` over a `list` for membership testing?",
+    "options": ["Sets are more memory efficient.", "Sets guarantee element order.", "Sets provide faster average-case membership testing.", "Lists can only contain unique elements."],
+    "correct_answer": "Sets provide faster average-case membership testing.",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is an example of a higher-order function in Python?",
+    "options": ["print()", "len()", "map()", "str()"],
+    "correct_answer": "map()",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+    {
+    "question": "What is the Big O notation for inserting an element at the beginning of a Python list?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "correct_answer": "O(n)",
+    "topic": "Complexity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__init__` method in a Python class?",
+    "options": ["To create a new class.", "To delete an object.", "To initialize the attributes of an object when it is created.", "To call a method in the parent class."],
+    "correct_answer": "To initialize the attributes of an object when it is created.",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How can you catch multiple exceptions in a single `except` block in Python?",
+    "options": ["except Exception1 or Exception2:", "except (Exception1, Exception2):", "except Exception1, Exception2:", "except Exception1 & Exception2:"],
+    "correct_answer": "except (Exception1, Exception2):",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a correct way to use list comprehension to create a list of the squares of odd numbers from 0 to 9?",
+    "options": ["[x**2 for x in range(10) if x % 2]", "[x**2 if x % 2 for x in range(10)]", "[x**2 for x in range(10)] if x % 2", "[x % 2 for x in range(10) if x**2]"],
+    "correct_answer": "[x**2 for x in range(10) if x % 2]",
+    "topic": "Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the `nonlocal` keyword do in Python?",
+    "options": ["Declares a global variable.", "Declares a variable that is not local nor global.", "Declares a variable in the nearest enclosing scope that is not global.", "It is used to import from other modules."],
+    "correct_answer": "Declares a variable in the nearest enclosing scope that is not global.",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following best describes the concept of 'duck typing' in Python?",
+    "options": ["Type checking is performed explicitly before runtime.", "The type of an object is not as important as whether it has the required methods and attributes.", "Python strictly enforces type contracts.", "Objects are always type-checked during runtime."],
+    "correct_answer": "The type of an object is not as important as whether it has the required methods and attributes.",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What will be the output of the following code? `def outer_function(x):\n def inner_function(y):\n return x + y\n return inner_function\nclosure = outer_function(10)\nprint(closure(5))`",
+    "options": ["5", "10", "15", "Error"],
+    "correct_answer": "15",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In Python, what is the primary purpose of using the `with` statement?",
+    "options": ["To handle exceptions.", "To iterate through a sequence.", "To automatically manage resources like files and sockets.", "To define a new class."],
+    "correct_answer": "To automatically manage resources like files and sockets.",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  }
+]
+```

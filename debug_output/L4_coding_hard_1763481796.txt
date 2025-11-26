@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Resource Allocation with Dependencies",
+  "description": "A cloud computing platform allows users to deploy tasks. Each task requires specific resources (CPU and Memory). The platform needs to allocate resources to maximize the number of completed tasks, given the resource constraints of the overall system. However, some tasks have dependencies: a task can only be executed if all its dependencies have been executed. \n\nYou are given a list of tasks, each with its CPU and Memory requirements, and a list of dependencies. Your goal is to determine the maximum number of tasks that can be completed, given the total CPU and Memory available.\n",
+  "input_format": "The input consists of the following:\n\n1.  `cpu`: An integer representing the total CPU units available.\n2.  `memory`: An integer representing the total Memory units available.\n3.  `tasks`: A list of lists, where each inner list represents a task and contains two integers: `[cpu_requirement, memory_requirement]`.  For example, `[[1, 2], [2, 3], [3, 1]]` represents three tasks. The first task requires 1 CPU and 2 Memory units, the second requires 2 CPU and 3 Memory units, and so on.\n4.  `dependencies`: A list of lists, where each inner list represents a dependency relationship: `[task_id, depends_on_task_id]`. `task_id` and `depends_on_task_id` are zero-based indices into the `tasks` list. This means that task `task_id` depends on task `depends_on_task_id` being completed first. For example, `[[1, 0], [2, 1]]` means task 1 depends on task 0, and task 2 depends on task 1.\n",
+  "output_format": "An integer representing the maximum number of tasks that can be completed, given the resource constraints and dependencies.",
+  "constraints": "\n*   1 <= cpu <= 100\n*   1 <= memory <= 100\n*   1 <= number of tasks <= 20\n*   0 <= cpu_requirement <= cpu\n*   0 <= memory_requirement <= memory\n*   0 <= task_id, depends_on_task_id < number of tasks\n*   There will be no cyclic dependencies.\n",
+  "sample_input": "5\n5\n[[1, 2], [2, 3], [3, 1]]\n[[1, 0], [2, 1]]\n",
+  "sample_output": "3",
+  "difficulty": "hard"
+}
+```

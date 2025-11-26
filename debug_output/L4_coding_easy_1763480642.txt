@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Inventory Management System: Low Stock Alerts",
+  "description": "You are developing an inventory management system for a small electronics store.  The store wants to be alerted when the quantity of an item falls below a certain threshold (reorder point). You are given a list of items with their current quantities and reorder points. Your task is to identify and return the names of the items that need to be reordered (i.e., those with quantities below their reorder points).",
+  "input_format": "The input consists of two lists:\n1.  `item_names`: A list of strings representing the names of the items in the inventory.\n2.  `item_quantities`: A list of integers representing the current quantities of the corresponding items.\n3.  `reorder_points`: A list of integers representing the reorder points for the corresponding items.",
+  "output_format": "A list of strings representing the names of the items that need to be reordered. The order of the items in the output list should match the order they appear in the input lists.",
+  "constraints": "1 <= length of `item_names`, `item_quantities`, `reorder_points` <= 100\nEach list will have the same length.\n0 <= `item_quantities[i]` <= 1000\n0 <= `reorder_points[i]` <= 1000\nItem names will be non-empty strings containing only alphanumeric characters and spaces.",
+  "sample_input": "item_names = [\"Laptop\", \"Keyboard\", \"Mouse\", \"Monitor\"]\nitem_quantities = [5, 12, 3, 8]\nreorder_points = [10, 5, 5, 3]",
+  "sample_output": "[\"Laptop\", \"Mouse\"]",
+  "difficulty": "easy"
+}
+```

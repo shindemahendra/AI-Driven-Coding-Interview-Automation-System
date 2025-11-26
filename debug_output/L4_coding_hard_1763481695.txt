@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Assignment with Dependencies and Time Windows",
+  "description": "You are managing a team of engineers. You have a set of `n` tasks to complete. Each task `i` has the following properties:\n\n*   `time[i]`: The time (in hours) required to complete the task.\n*   `dependencies[i]`: A list of task indices that must be completed before task `i` can start. Dependencies are represented by their index. (e.g., `dependencies[i] = [2, 5]` means task `i` can only start after tasks 2 and 5 are finished.)\n*   `start_window[i]`: The earliest time (in hours since the project started) that task `i` can start.\n*   `end_window[i]`: The latest time (in hours since the project started) that task `i` can start. If task `i` does not start before `end_window[i]`, the task cannot be completed.\n\nYou have an infinite number of engineers, so tasks can be performed in parallel as long as dependencies and time windows are respected.  Determine the minimum time (in hours) required to complete all `n` tasks. If it is impossible to complete all tasks due to the dependencies or time windows, return -1.",
+  "input_format": "The input will be given as a single JSON object containing the following fields:\n\n*   `time`: An array of integers representing the time required for each task. `time[i]` is the time for task `i`.\n*   `dependencies`: An array of arrays of integers. `dependencies[i]` is the list of task indices that task `i` depends on.\n*   `start_window`: An array of integers representing the earliest start time for each task. `start_window[i]` is the earliest start time for task `i`.\n*   `end_window`: An array of integers representing the latest start time for each task. `end_window[i]` is the latest start time for task `i`.",
+  "output_format": "An integer representing the minimum time required to complete all tasks. Return -1 if it is impossible to complete all tasks.",
+  "constraints": "\n*   1 <= n <= 100 (number of tasks)\n*   1 <= time[i] <= 100\n*   0 <= start_window[i] <= 1000\n*   start_window[i] < end_window[i] <= 1000\n*   0 <= dependencies[i].length <= n\n*   0 <= dependencies[i][j] < n for all valid j\n*   The dependency graph is acyclic (no circular dependencies).\n*   No duplicate dependencies for a task (e.g., `dependencies[i]` will not contain the same element twice.)",
+  "sample_input": "{\n  \"time\": [5, 3, 2, 4],\n  \"dependencies\": [[], [0], [0, 1], [2]],\n  \"start_window\": [0, 2, 5, 9],\n  \"end_window\": [10, 8, 12, 15]\n}",
+  "sample_output": "15",
+  "difficulty": "hard"
+}
+```

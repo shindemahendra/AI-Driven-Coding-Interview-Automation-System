@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code snippet?```python\ndef foo(a=[]):\n a.append(len(a))\n return a\nprint(foo())\nprint(foo())```",
+    "options": ["[]\n[]", "[0]\n[0]", "[0]\n[0, 1]", "[0]\n[0, 0]"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code snippet:```python\ndef process_data(data):\n total = 0\n for i in range(len(data)):\n total += data[i]\n if total > 100:\n return total\n return None\ndata = [20, 30, 40, 15, 5]\nresult = process_data(data)\nprint(result)```What is the output?",
+    "options": ["110", "None", "100", "TypeError"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the error in the following code snippet?```python\nimport threading\n\ncounter = 0\n\ndef increment():\n global counter\n for _ in range(100000):\n counter += 1\n\nthreads = []\nfor i in range(2):\n t = threading.Thread(target=increment)\n threads.append(t)\n t.start()\n\nfor t in threads:\n t.join()\n\nprint(counter)```",
+    "options": ["MemoryError", "Deadlock", "Race Condition", "SyntaxError"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the potential issue with this code?```python\ndef calculate_average(numbers):\n total = sum(numbers)\n average = total / len(numbers)\n return average\n\nnumbers = []\naverage = calculate_average(numbers)\nprint(average)```",
+    "options": ["ZeroDivisionError", "TypeError", "ValueError", "OverflowError"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Identify the bug in this code snippet:```python\ndef search(list, target):\n for i in range(1, len(list)):\n if list[i] == target:\n return i\n return -1\n\nmy_list = [1, 2, 3, 4, 5]\nprint(search(my_list, 1))```",
+    "options": ["Incorrect return value", "IndexError", "Infinite loop", "Off-by-one error"],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the issue with the following code?```python\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nkeys = my_dict.keys()\nfor key in keys:\n if my_dict[key] > 1:\n del my_dict[key]\nprint(my_dict)```",
+    "options": ["KeyError", "ValueError", "RuntimeError", "TypeError"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Find the bug:```python\ndef is_palindrome(s):\n s = s.lower()\n return s == s[::-1]\n\nstring = 'Racecar '\nprint(is_palindrome(string))```",
+    "options": ["Incorrect boolean result", "TypeError", "IndexError", "ValueError"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is wrong with this code regarding generators?```python\ndef number_generator(n):\n for i in range(n):\n yield i\n\nmy_generator = number_generator(5)\n\nfor num in my_generator:\n print(num)\n\nprint(list(my_generator))```",
+    "options": ["Syntax Error", "Incorrect output", "Generator exhausted", "MemoryError"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Identify the race condition:```python\nimport threading\nimport time\n\nvalue = 0\nlock = threading.Lock()\n\ndef increment():\n global value\n with lock:\n temp = value\n time.sleep(0.1)\n value = temp + 1\n\nthreads = [threading.Thread(target=increment) for _ in range(2)]\nfor t in threads:\n t.start()\nfor t in threads:\n t.join()\nprint(value)```",
+    "options": ["The `time.sleep()` call introduces a deadlock.", "The `with lock:` statement doesn't protect shared resources.", "The `temp` variable is unnecessary.", "The increment operation is not atomic without proper synchronization, even with the lock."],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What's the issue here:```python\ndef modify_list(lst):\n for i in range(len(lst)):\n if lst[i] % 2 == 0:\n lst.pop(i)\n return lst\n\nmy_list = [1, 2, 3, 4, 5, 6]\nprint(modify_list(my_list))```",
+    "options": ["IndexError", "ValueError", "TypeError", "Infinite Loop"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What will happen if you run this code?```python\ndef foo():\n try:\n return 1 / 0\n finally:\n return 2\n\nprint(foo())```",
+    "options": ["Prints 0.0", "Prints 0", "Prints 2", "Raises ZeroDivisionError"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of this buggy code?```python\ndef outer_function():\n x = 10\n def inner_function():\n x = 20\n print(\"Inner:\", x)\n inner_function()\n print(\"Outer:\", x)\n\nouter_function()```",
+    "options": ["Inner: 20\nOuter: 20", "Inner: 20\nOuter: 10", "Inner: 10\nOuter: 20", "Inner: 10\nOuter: 10"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Spot the bug:```python\ndef factorial(n):\n if n == 0:\n return 1\n else:\n return n * factorial(n + 1)\n\nprint(factorial(5))```",
+    "options": ["Stack Overflow Error", "ValueError", "TypeError", "ZeroDivisionError"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the key issue with this multithreaded code?```python\nimport threading\n\nx = 0\n\ndef increment():\n global x\n x += 1\n\nthreads = []\nfor i in range(1000):\n t = threading.Thread(target=increment)\n threads.append(t)\n t.start()\n\nfor t in threads:\n t.join()\n\nprint(x)```",
+    "options": ["Deadlock", "Memory Leak", "Race Condition", "Starvation"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following. What could go wrong?```python\nimport os\n\nfilename = input(\"Enter filename: \")\nwith open(filename, 'r') as f:\n contents = f.read()\n print(contents)```",
+    "options": ["SyntaxError", "TypeError", "FileNotFoundError", "ValueError"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's the error in this code?```python\ndef process_list(data):\n results = []\n for item in data:\n try:\n result = 10 / item\n results.append(result)\n except:\n pass\n return results\n\nmy_list = [5, 0, 2, 'a']\nprint(process_list(my_list))```",
+    "options": ["ZeroDivisionError will terminate the program.", "TypeError during division.", "The `pass` statement hides potential issues.", "The `try...except` block is unnecessary."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Analyze this code for errors:```python\nimport asyncio\n\nasync def fetch_data():\n await asyncio.sleep(1)\n return \"Data\"\n\nasync def main():\n task = fetch_data()\n result = task.result()\n print(result)\n\nasyncio.run(main())```",
+    "options": ["`task.result()` is the correct way to get results.", "`asyncio.run()` cannot be called directly.", "Calling `.result()` on a coroutine is invalid.", "Missing `await` keyword."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Where is the bug:```python\ndef update_dict(data, key, value):\n if key not in data:\n data[key] = value\n return data\n\nmy_dict = {1: 'a', 2: 'b'}\nkeys = [1, 3, 2, 4]\nfor key in keys:\n update_dict(my_dict, key, key * 10)\nprint(my_dict)```",
+    "options": ["Incorrect update logic.", "Potential memory leak.", "The code is correct and functions as intended.", "Unintended side effects due to mutation."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's problematic with this closure?```python\ndef create_functions():\n functions = []\n for i in range(5):\n def func():\n return i\n functions.append(func)\n return functions\n\nfuncs = create_functions()\nfor func in funcs:\n print(func())```",
+    "options": ["The closures will capture the value of `i` correctly for each function.", "Memory issues due to excessive function creation.", "Incorrect value captured by the closure.", "The code will cause a `NameError`."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the major flaw in the code?```python\nimport threading\nimport time\n\nclass BankAccount:\n def __init__(self, balance):\n self.balance = balance\n\n def withdraw(self, amount):\n if self.balance >= amount:\n time.sleep(0.1)\n self.balance -= amount\n return True\n else:\n return False\n\naccount = BankAccount(100)\n\ndef transaction(amount):\n account.withdraw(amount)\n print(f\"Balance after withdrawal: {account.balance}\")\n\nthreads = []\nfor i in range(2):\n t = threading.Thread(target=transaction, args=(50,))\n threads.append(t)\n t.start()\n\nfor t in threads:\n t.join()```",
+    "options": ["There is no flaw; the code works correctly.", "The `time.sleep()` introduces a deadlock.", "Insufficient error handling for negative balances.", "The `withdraw` method is not thread-safe."],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  }
+]
+```

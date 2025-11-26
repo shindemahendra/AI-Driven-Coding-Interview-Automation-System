@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Resource Allocation for Task Execution",
+  "description": "You are managing a distributed computing system with multiple machines. You have `N` independent tasks to execute. Each task `i` has a required processing time `processing_time[i]` and a required memory `memory[i]`. You have `M` machines available. Each machine `j` has a total processing capacity `capacity[j]` and a total memory capacity `memory_capacity[j]`. A task `i` can be executed on a machine `j` if and only if `processing_time[i] <= capacity[j]` and `memory[i] <= memory_capacity[j]`. A machine can execute multiple tasks sequentially, as long as its remaining processing capacity and memory capacity are sufficient.  Your goal is to minimize the total execution time across all machines. The total execution time is the maximum completion time of any machine.  Return the minimum possible total execution time.  It is guaranteed that all processing times and memories are positive integers.",
+  "input_format": "The input consists of the following:\n\n*   `N`: An integer representing the number of tasks.\n*   `processing_time`: An array of `N` integers representing the processing time required for each task.\n*   `memory`: An array of `N` integers representing the memory required for each task.\n*   `M`: An integer representing the number of machines.\n*   `capacity`: An array of `M` integers representing the processing capacity of each machine.\n*   `memory_capacity`: An array of `M` integers representing the memory capacity of each machine.",
+  "output_format": "An integer representing the minimum possible total execution time.",
+  "constraints": "*   1 <= N <= 15\n*   1 <= M <= 15\n*   1 <= processing_time[i] <= 100 for all 0 <= i < N\n*   1 <= memory[i] <= 100 for all 0 <= i < N\n*   1 <= capacity[j] <= 1000 for all 0 <= j < M\n*   1 <= memory_capacity[j] <= 1000 for all 0 <= j < M",
+  "sample_input": "N = 3\nprocessing_time = [10, 20, 30]\nmemory = [10, 10, 10]\nM = 2\ncapacity = [50, 50]\nmemory_capacity = [50, 50]",
+  "sample_output": "30",
+  "difficulty": "hard"
+}
+```

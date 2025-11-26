@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Consider the following Python code snippet:\n\n```python\ndef modify_list(lst):\n lst.append(10)\n lst = [1, 2, 3]\n return lst\n\nmy_list = [4, 5, 6]\nnew_list = modify_list(my_list)\nprint(my_list, new_list)\n```\nWhat is the output of the code?",
+    "options": ["[4, 5, 6] [1, 2, 3]", "[4, 5, 6, 10] [1, 2, 3]", "[4, 5, 6, 10] [4, 5, 6, 10]", "[1, 2, 3] [1, 2, 3]"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following Python code snippet when run in a multithreaded environment?\n\n```python\nimport threading\n\ncounter = 0\nlock = threading.Lock()\n\ndef increment():\n global counter\n for _ in range(100000):\n with lock:\n counter += 1\n\nthreads = []\nfor _ in range(2):\n thread = threading.Thread(target=increment)\n threads.append(thread)\n thread.start()\n\nfor thread in threads:\n thread.join()\n\nprint(counter)\n```",
+    "options": ["200000", "A value close to 200000, but not always exactly 200000", "A value significantly lower than 200000", "Always 0"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given the following Python code with an error, identify the root cause of the issue:\n\n```python\ndef process_data(data):\n for i in range(len(data)):\n if data[i] > 10:\n del data[i]\n return data\n\ndata = [5, 12, 8, 15, 3]\nresult = process_data(data)\nprint(result)\n```",
+    "options": ["IndexError due to modification of the list during iteration", "TypeError due to incorrect data type in the list", "ValueError because the list is empty", "The code will run without errors and produce the correct result."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code snippet using a generator:\n\n```python\ndef number_generator():\n yield 1\n yield 2\n yield 3\n\nmy_generator = number_generator()\nfor i in my_generator:\n print(i)\n my_generator = number_generator()\n```\nWhat will be the output of this code?",
+    "options": ["1\\n2\\n3", "1\\n2\\n3\\n1\\n2\\n3\\n...", "1", "Nothing will be printed"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Analyze the following code snippet and determine its output:\n\n```python\nx = 10\ndef outer():\n x = 5\n def inner():\n nonlocal x\n x = 20\n print(\"inner:\", x)\n inner()\n print(\"outer:\", x)\n\nouter()\nprint(\"global:\", x)\n```",
+    "options": ["inner: 20\\nouter: 20\\nglobal: 10", "inner: 20\\nouter: 5\\nglobal: 10", "inner: 20\\nouter: 20\\nglobal: 20", "inner: 5\\nouter: 5\\nglobal: 10"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the likely outcome of the following Python code snippet, considering potential race conditions in a multithreaded environment?\n\n```python\nimport threading\nimport time\n\nshared_resource = 0\n\ndef increment_resource():\n global shared_resource\n for _ in range(1000):\n temp = shared_resource\n time.sleep(0.001) # Simulate some work\n shared_resource = temp + 1\n\nthread1 = threading.Thread(target=increment_resource)\nthread2 = threading.Thread(target=increment_resource)\n\nthread1.start()\nthread2.start()\n\nthread1.join()\nthread2.join()\n\nprint(shared_resource)\n```",
+    "options": ["The value of shared_resource will always be 2000.", "The value of shared_resource will always be 1.", "The value of shared_resource will be close to 2000 but likely less due to race conditions.", "The value of shared_resource will be unpredictable and could be any number between 0 and 2000."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug in the following code snippet:\n\n```python\ndef factorial(n):\n if n == 0:\n return 1\n else:\n return n * factorial(n+1)\n\nprint(factorial(5))\n```",
+    "options": ["The code causes a stack overflow due to infinite recursion.", "The code returns the wrong factorial result.", "The code has a syntax error.", "The code works correctly."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider the following code snippet:\n\n```python\ndef modify_string(s):\n s = s.replace('a', 'b')\n\nmy_string = 'apple'\nmodify_string(my_string)\nprint(my_string)\n```\nWhat is the output of the code?",
+    "options": ["bpple", "apple", "bpplb", "None"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code snippet?\n\n```python\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n```",
+    "options": ["[1, 2, 3]", "[1, 2, 3, 4]", "[1, 2]", "[4]"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Examine the code below. What will happen when `my_list[5]` is accessed?\n```python\nmy_list = [1, 2, 3, 4]\nprint(my_list[5])\n```",
+    "options": ["The code will print 5.", "The code will raise an IndexError.", "The code will return None.", "The code will print a random value."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's wrong with the following attempt to create a deep copy of a nested list?\n```python\noriginal_list = [[1, 2], [3, 4]]\nshallow_copy = list(original_list)\nshallow_copy[0][0] = 5\nprint(original_list)\n```",
+    "options": ["The `list()` constructor always creates a deep copy.", "Modifying `shallow_copy` won't affect `original_list`.", "The code uses a shallow copy, so changes to nested lists in `shallow_copy` will affect `original_list`.", "The code will raise an error because you can't modify the copied list."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Identify the primary issue in the following multithreaded code snippet:\n\n```python\nimport threading\nimport time\n\nresource = 0\n\ndef increment():\n global resource\n for _ in range(10000):\n resource += 1\n\nthreads = []\nfor _ in range(2):\n t = threading.Thread(target=increment)\n threads.append(t)\n t.start()\n\nfor t in threads:\n t.join()\n\nprint(resource)\n```",
+    "options": ["The code doesn't use a lock to protect the shared resource.", "The code doesn't start the threads correctly.", "The code doesn't join the threads correctly.", "The code uses too many threads."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What potential issue might arise from the following code involving a generator?\n\n```python\ndef my_generator():\n i = 0\n while True:\n yield i\n i += 1\n\ngenerator = my_generator()\nfor _ in range(5):\n print(next(generator))\n```",
+    "options": ["The generator will stop after the first iteration.", "The generator will raise a StopIteration exception.", "The generator will produce an infinite sequence of numbers.", "The generator will produce a finite sequence of numbers from 0 to 4."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code with a potential closure issue:\n\n```python\ndef create_functions():\n functions = []\n for i in range(5):\n def func():\n return i\n functions.append(func)\n return functions\n\nfunctions = create_functions()\nfor func in functions:\n print(func())\n```\nWhat will be printed to the console?",
+    "options": ["0\\n1\\n2\\n3\\n4", "5\\n5\\n5\\n5\\n5", "0\\n0\\n0\\n0\\n0", "A different unpredictable set of numbers."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Analyze the following Python code and identify the potential performance bottleneck:\n\n```python\ndef process_large_data(data):\n result = []\n for item in data:\n result += [item * 2]\n return result\n\nlarge_data = list(range(1000000))\nprocessed_data = process_large_data(large_data)\n```",
+    "options": ["The use of a for loop is inefficient.", "The `+=` operator with lists creates new lists in each iteration, causing performance issues.", "The code is perfectly efficient and doesn't have any performance bottlenecks.", "The code should use a while loop instead of a for loop."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "In the following code, what might happen when attempting to modify the dictionary during iteration?\n```python\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nfor key, value in my_dict.items():\n if value > 1:\n del my_dict[key]\nprint(my_dict)\n```",
+    "options": ["The code will execute without errors and produce the correct result.", "The code will raise a RuntimeError due to changing the dictionary's size during iteration.", "The code will create a new dictionary and continue iterating without issues.", "Only the first matching key-value pair will be deleted."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following piece of code:\n```python\ndef some_function(a, b=[]):\n b.append(a)\n return b\n\nprint(some_function(1))\nprint(some_function(2))\n```\nWhat is the output?",
+    "options": ["[1]\\n[2]", "[1]\\n[1, 2]", "[1, 2]\\n[1, 2]", "[1]\\n[]"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code snippet?\n\n```python\ndef func():\n try:\n return 1\n finally:\n return 2\n\nprint(func())\n```",
+    "options": ["1", "2", "It will raise an exception.", "None"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Identify the error in the following code snippet:\n```python\ndef calculate_average(numbers):\n sum = 0\n for number in numbers:\n sum =+ number\n return sum / len(numbers)\n\nprint(calculate_average([1, 2, 3, 4, 5]))\n```",
+    "options": ["The code will raise a TypeError.", "The code will raise a ZeroDivisionError.", "The code calculates the average incorrectly due to the assignment operator (=+).", "The code will run correctly and produce the correct average."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In the given code, what's the primary cause of the issue that prevents proper synchronization between threads?\n\n```python\nimport threading\nimport time\n\ncounter = 0\n\ndef increment_counter():\n global counter\n for _ in range(100000):\n counter += 1\n time.sleep(0.0001)\n\nthread1 = threading.Thread(target=increment_counter)\nthread2 = threading.Thread(target=increment_counter)\n\nthread1.start()\nthread2.start()\n\nthread1.join()\nthread2.join()\n\nprint(f\"Final counter value: {counter}\")\n```",
+    "options": ["The `time.sleep()` function prevents accurate synchronization.", "The absence of a lock mechanism allows for race conditions.", "The use of global variables is inherently thread-unsafe.", "The threading library is not suitable for concurrent increment operations."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  }
+]
+```

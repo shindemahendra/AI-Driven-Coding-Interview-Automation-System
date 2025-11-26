@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Service Dependency Resolution",
+  "description": "You are managing a microservices architecture where services depend on each other.  Given a list of service dependencies and a target service, determine the minimum number of levels of dependencies required to start the target service. A service cannot start until all of its dependencies have started. If a circular dependency exists, return -1.  If the target service has no dependencies, return 0.  If the target service does not exist in the dependency graph, return -2.",
+  "input_format": "The input will be a list of dependency pairs and the target service.\n\nThe first line contains an integer 'n' representing the number of dependency pairs.\nThe next 'n' lines each contain two space-separated strings representing a dependency relationship: 'serviceA serviceB', meaning serviceA depends on serviceB (serviceB must be started before serviceA).\nThe last line contains a string representing the target service.",
+  "output_format": "Return an integer representing the minimum number of dependency levels required to start the target service. Return -1 if a circular dependency exists. Return -2 if the target service does not exist in the dependency graph. Return 0 if the target service has no dependencies.",
+  "constraints": "1 <= n <= 1000\nService names are non-empty strings consisting of alphanumeric characters.\nService names are case-sensitive.\nNo duplicate dependency pairs will be present in the input.",
+  "sample_input": "3\nA B\nB C\nC D\nA",
+  "sample_output": "3",
+  "difficulty": "medium"
+}
+```

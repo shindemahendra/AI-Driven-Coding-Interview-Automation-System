@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A junior developer consistently misses deadlines. They claim tasks take longer than estimated. What's the BEST first step you should take?",
+    "options": ["A. Publicly criticize their performance to motivate improvement.", "B. Immediately reassign their tasks to more experienced developers.", "C. Schedule a private meeting to understand their estimation process and identify potential roadblocks.", "D. Ignore the problem, hoping they'll improve on their own."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a code review, you notice a senior engineer implemented a complex, undocumented solution. You believe a simpler, well-documented approach would be better. How do you proceed?",
+    "options": ["A. Approve the code, assuming the senior engineer knows best.", "B. Reject the code immediately and demand they rewrite it using your preferred method.", "C. Privately discuss your concerns with the senior engineer, explaining your rationale and suggesting the alternative approach.", "D. Publicly criticize the code in the code review tool to ensure everyone understands the issue."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A critical bug is discovered in production just before the weekend. The responsible developer is unreachable. What action should you prioritize?",
+    "options": ["A. Immediately escalate to the CEO to demand immediate action.", "B. Wait until Monday for the original developer to address the issue.", "C. Assemble a team to analyze the bug, develop a fix or workaround, and deploy it as quickly as possible.", "D. Blame the original developer to ensure accountability."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is facing a disagreement on the architectural direction of a new feature. Which approach is MOST likely to lead to a productive resolution?",
+    "options": ["A. The project manager makes a unilateral decision to avoid further delays.", "B. Each member rigidly defends their position until someone gives in.", "C. Facilitate a structured discussion, focusing on the pros and cons of each approach, referencing relevant data, and seeking a consensus-based solution.", "D. Vote on the options and implement the winning design without further discussion."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are a team lead and notice a junior developer is hesitant to ask for help, even when struggling. How should you address this?",
+    "options": ["A. Publicly point out their mistakes to encourage them to seek assistance.", "B. Ignore the issue and assume they will eventually learn to ask for help.", "C. Create a safe and supportive environment where asking questions is encouraged and viewed as a sign of learning and growth.", "D. Reassign them to easier tasks to reduce their need for help."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A product manager insists on adding a feature to a release that you believe is technically infeasible within the given timeframe. What's the BEST approach?",
+    "options": ["A. Immediately reject the request and refuse to implement it.", "B. Agree to the request to avoid conflict, knowing you won't be able to deliver.", "C. Schedule a meeting to discuss the technical challenges, potential solutions, and alternative approaches with the product manager and other stakeholders.", "D. Implement the feature to the best of your ability, even if it results in a rushed and buggy product."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a sprint retrospective, a team member consistently complains about external dependencies hindering their progress, but offers no solutions. How do you facilitate a productive discussion?",
+    "options": ["A. Ignore the complaints to avoid wasting time on external issues.", "B. Publicly reprimand the team member for being negative.", "C. Acknowledge the problem, then guide the team towards brainstorming potential workarounds, mitigation strategies, or process improvements to address the dependency issues.", "D. Blame the team responsible for the external dependencies."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You've identified a major security vulnerability in a widely used open-source library your company relies on. What's the MOST responsible course of action?",
+    "options": ["A. Keep the vulnerability secret to prevent potential attacks against your company.", "B. Report the vulnerability privately to the library maintainers, providing them with sufficient information to address the issue.", "C. Publicly disclose the vulnerability immediately to alert the entire community.", "D. Ignore the vulnerability, hoping someone else will find and fix it."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are asked to estimate the effort required for a new feature. You have limited information. What's the BEST approach?",
+    "options": ["A. Provide a very optimistic estimate to impress your manager.", "B. Provide a pessimistic estimate to ensure you have enough time.", "C. Clearly communicate the uncertainties and provide a range of estimates based on different assumptions, outlining the key dependencies and risks.", "D. Refuse to provide an estimate until you have all the information."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A coworker is consistently taking credit for your ideas during team meetings. What is the most professional way to address this?",
+    "options": ["A. Publicly call them out during the next team meeting.", "B. Ignore it and let it continue to happen.", "C. Privately speak to your coworker about your concerns, explaining how their actions affect you and the team's collaborative environment.", "D. Report them to HR immediately."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "As a senior engineer, a junior developer asks you for help understanding a complex design pattern. What is the BEST way to assist them?",
+    "options": ["A. Give them the direct answer and move on.", "B. Tell them to Google it.", "C. Explain the underlying problem the pattern solves, guide them through examples, and encourage them to experiment with the code.", "D. Rewrite the code for them."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+    {
+    "question": "You disagree with a technical decision made by your manager. What is the MOST effective way to voice your concerns?",
+    "options": ["A. Publicly criticize the decision in front of the team.", "B. Silently disapprove and implement the decision without question.", "C. Schedule a private meeting with your manager to respectfully explain your reasoning and offer alternative solutions, focusing on data and technical justification.", "D. Go directly to your manager's boss to complain about the decision."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+    {
+    "question": "A project is falling behind schedule. The team is stressed and morale is low. As a team lead, what's your MOST important responsibility?",
+    "options": ["A. Demand longer working hours from the team to catch up.", "B. Blame the team for not working hard enough.", "C. Re-evaluate the project scope, prioritize critical features, and facilitate open communication to address concerns and identify potential solutions.", "D. Ignore the issue and hope it resolves itself."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team's velocity has consistently decreased over the past few sprints. What's the MOST proactive step to take?",
+    "options": ["A. Ignore the decrease, assuming it's just a temporary fluctuation.", "B. Blame individual team members for not working hard enough.", "C. Conduct a retrospective to identify potential bottlenecks, process inefficiencies, or external factors impacting the team's performance, and brainstorm solutions collaboratively.", "D. Implement stricter deadlines and micro-manage the team's work."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are leading a remote team and notice a team member is becoming withdrawn and less communicative. What action should you take first?",
+    "options": ["A. Assume they are simply busy and leave them alone.", "B. Publicly ask them in a team meeting if everything is okay.", "C. Schedule a private one-on-one conversation to check in, express your concern, and offer support.", "D. Report their lack of communication to HR."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+    {
+    "question": "You receive negative feedback on your code from a peer during a code review. How should you respond?",
+    "options": ["A. Ignore the feedback and merge the code anyway.", "B. Become defensive and argue against the feedback.", "C. Thank the reviewer for their time, carefully consider the feedback, and ask clarifying questions to ensure you understand their concerns before making any changes.", "D. Complain to your manager about the unfair feedback."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is using an outdated technology. You propose migrating to a newer, more efficient solution, but some team members are resistant to change. How do you address this resistance?",
+    "options": ["A. Force the team to adopt the new technology immediately.", "B. Ignore the team's concerns and proceed with the migration without their input.", "C. Present a clear business case for the migration, highlighting the benefits and addressing potential concerns, and provide training and support to help the team adapt to the new technology.", "D. Abandon the migration proposal to avoid conflict."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A crucial database server fails during peak hours. The on-call engineer is unavailable. What is the MOST important first step?",
+    "options": ["A. Wait for the on-call engineer to become available.", "B. Blame the previous engineer for not maintaining the server properly.", "C. Follow pre-defined escalation procedures and engage the next available engineer or relevant support team to begin diagnosing and resolving the issue.", "D. Assume the problem will resolve itself."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are leading a project with a tight deadline. A new requirement is introduced late in the development cycle. What is the BEST approach?",
+    "options": ["A. Accept the new requirement without question and work overtime to meet the deadline.", "B. Reject the new requirement outright to avoid delays.", "C. Assess the impact of the new requirement on the timeline, scope, and resources, and communicate these impacts clearly to the product owner to facilitate a decision on whether to include, defer, or modify the requirement.", "D. Implement the requirement without telling anyone to avoid causing alarm."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A senior engineer is consistently late to meetings and unprepared. This negatively impacts the team's efficiency. What's the MOST effective way to address this situation?",
+    "options": ["A. Publicly shame the engineer during a team meeting.", "B. Ignore the issue to avoid conflict.", "C. Privately speak to the engineer about the impact of their behavior on the team and discuss potential solutions or support they might need.", "D. Report the engineer to HR without discussing the issue with them first."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  }
+]
+```

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of `print(type([1, 2, 3]))`?",
+    "options": ["A: list", "B: tuple", "C: set", "D: array"],
+    "correct_answer": "A: list",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is the correct way to open a file for reading in Python?",
+    "options": ["A: file = open('my_file.txt', 'w')", "B: file = open('my_file.txt', 'r')", "C: file = open('my_file.txt', 'a')", "D: file = open('my_file.txt')"],
+    "correct_answer": "B: file = open('my_file.txt', 'r')",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `print(2 + 2 * 2)`?",
+    "options": ["A: 4", "B: 6", "C: 8", "D: 12"],
+    "correct_answer": "B: 6",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure follows the LIFO (Last-In, First-Out) principle?",
+    "options": ["A: Queue", "B: Linked List", "C: Stack", "D: Tree"],
+    "correct_answer": "C: Stack",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of `__init__` method in a Python class?",
+    "options": ["A: To define the class", "B: To initialize the object's attributes", "C: To destroy the object", "D: To call other methods"],
+    "correct_answer": "B: To initialize the object's attributes",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["A: O(n)", "B: O(log n)", "C: O(1)", "D: O(n log n)"],
+    "correct_answer": "C: O(1)",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following best describes a Python generator?",
+    "options": ["A: A function that always returns a list", "B: A function that allows you to define custom exceptions", "C: A function that returns an iterator that produces a sequence of values", "D: A decorator that modifies the behavior of a function"],
+    "correct_answer": "C: A function that returns an iterator that produces a sequence of values",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of a decorator in Python?",
+    "options": ["A: To define global variables", "B: To modify the behavior of a function or method", "C: To create new classes", "D: To handle exceptions"],
+    "correct_answer": "B: To modify the behavior of a function or method",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following statements about Python's garbage collection is true?",
+    "options": ["A: Python does not have garbage collection.", "B: Python uses manual memory management.", "C: Python uses automatic garbage collection.", "D: Garbage collection is only used for strings."],
+    "correct_answer": "C: Python uses automatic garbage collection.",
+    "topic": "Memory Management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `[x**2 for x in range(5) if x % 2 == 0]`?",
+    "options": ["A: [0, 1, 4, 9, 16]", "B: [0, 4, 16]", "C: [1, 9]", "D: [0, 2, 4]"],
+    "correct_answer": "B: [0, 4, 16]",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the GIL (Global Interpreter Lock) in Python?",
+    "options": ["A: A mechanism to manage global variables.", "B: A lock that allows only one thread to hold control of the Python interpreter.", "C: A data structure for inter-process communication.", "D: A tool for debugging Python code."],
+    "correct_answer": "B: A lock that allows only one thread to hold control of the Python interpreter.",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is the most efficient way to perform a large number of numerical computations in Python?",
+    "options": ["A: Using standard Python loops", "B: Using list comprehensions", "C: Using the NumPy library", "D: Using the `map` function"],
+    "correct_answer": "C: Using the NumPy library",
+    "topic": "Performance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": ["A: A subclass of all classes.", "B: A class that defines how other classes are created.", "C: A function that decorates classes.", "D: A class used for exception handling."],
+    "correct_answer": "B: A class that defines how other classes are created.",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Explain the difference between `asyncio.gather` and `asyncio.wait`.",
+    "options": ["A: `asyncio.gather` cancels tasks on the first exception, while `asyncio.wait` does not.", "B: `asyncio.wait` cancels tasks on the first exception, while `asyncio.gather` does not.", "C: They both do the same thing.", "D: `asyncio.gather` returns tasks as they complete, while `asyncio.wait` returns a single aggregate result."],
+    "correct_answer": "A: `asyncio.gather` cancels tasks on the first exception, while `asyncio.wait` does not.",
+    "topic": "Asynchronous Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["A: To define special methods.", "B: To limit the attributes that an object can have.", "C: To define static attributes.", "D: To create private attributes."],
+    "correct_answer": "B: To limit the attributes that an object can have.",
+    "topic": "Memory Optimization",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following data structures is best suited for implementing a priority queue?",
+    "options": ["A: List", "B: Stack", "C: Heap", "D: Dictionary"],
+    "correct_answer": "C: Heap",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the difference between shallow copy and deep copy in Python?",
+    "options": ["A: Shallow copy creates a new object but references the original elements, deep copy creates a completely independent copy.", "B: Deep copy creates a new object but references the original elements, shallow copy creates a completely independent copy.", "C: They are the same thing.", "D: Shallow copy only works for lists, deep copy works for all objects."],
+    "correct_answer": "A: Shallow copy creates a new object but references the original elements, deep copy creates a completely independent copy.",
+    "topic": "Memory Management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following libraries is commonly used for creating web APIs in Python?",
+    "options": ["A: NumPy", "B: Pandas", "C: Flask", "D: Matplotlib"],
+    "correct_answer": "C: Flask",
+    "topic": "Web Development",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary benefit of using virtual environments in Python?",
+    "options": ["A: To improve code execution speed.", "B: To isolate project dependencies.", "C: To reduce memory usage.", "D: To simplify debugging."],
+    "correct_answer": "B: To isolate project dependencies.",
+    "topic": "Environment Management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In Python, what does it mean for an object to be 'hashable'?",
+    "options": ["A: It can be easily compressed.", "B: Its value can change during runtime.", "C: It has a hash value that remains constant throughout its lifetime, allowing it to be used as a dictionary key.", "D: It can be converted to a string easily."],
+    "correct_answer": "C: It has a hash value that remains constant throughout its lifetime, allowing it to be used as a dictionary key.",
+    "topic": "Hashing",
+    "difficulty": "hard"
+  }
+]
+```

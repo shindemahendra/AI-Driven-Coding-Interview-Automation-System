@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "question": "What is the output of the following code snippet?\n\nmy_list = [1, 2, 3, 4, 5]\nprint(my_list[1:3])",
+    "options": ["A. [1, 2]", "B. [2, 3]", "C. [1, 2, 3]", "D. [2, 3, 4]"],
+    "correct_answer": "B",
+    "topic": "Lists and Slicing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following data structures is NOT a mutable type in Python?",
+    "options": ["A. List", "B. Dictionary", "C. Tuple", "D. Set"],
+    "correct_answer": "C",
+    "topic": "Data Structures and Mutability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `__init__` method in a Python class?",
+    "options": ["A. To define the class's destructor", "B. To define the class's constructor and initialize its attributes", "C. To define the class's main method", "D. To define the class's static methods"],
+    "correct_answer": "B",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code snippet?\n\ndef my_decorator(func):\n    def wrapper():\n        print(\"Before function call\")\n        func()\n        print(\"After function call\")\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print(\"Hello!\")\n\nsay_hello()",
+    "options": ["A. Hello!", "B. Before function call\nHello!\nAfter function call", "C. Before function call\nAfter function call", "D. Error"],
+    "correct_answer": "B",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is the correct way to create a generator expression that yields even numbers from 0 to 10?",
+    "options": ["A. (x for x in range(11) if x % 2 == 0)", "B. [x for x in range(11) if x % 2 == 0]", "C. {x for x in range(11) if x % 2 == 0}", "D. x for x in range(11) if x % 2 == 0"],
+    "correct_answer": "A",
+    "topic": "Generators and Comprehensions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element by its key in a dictionary?",
+    "options": ["A. O(n)", "B. O(log n)", "C. O(1)", "D. O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Data Structures and Complexity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["A. To define the class's inheritance hierarchy", "B. To restrict the attributes that can be assigned to instances of the class", "C. To define the class's static methods", "D. To define the class's metaclass"],
+    "correct_answer": "B",
+    "topic": "Object-Oriented Programming and Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is the best way to implement thread-safe access to a shared resource in Python?",
+    "options": ["A. Using a global variable", "B. Using a simple lock", "C. Using a `threading.Lock` object", "D. Using a `multiprocessing.Lock` object"],
+    "correct_answer": "C",
+    "topic": "Concurrency and Threading",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `asyncio.gather` and `asyncio.wait` in Python?",
+    "options": ["A. `asyncio.gather` cancels all tasks if one fails, while `asyncio.wait` does not.", "B. `asyncio.wait` returns results in order of completion, while `asyncio.gather` maintains the order of submission.", "C. `asyncio.gather` returns a list of results, while `asyncio.wait` returns a set of tasks.", "D. There is no significant difference between them."],
+    "correct_answer": "C",
+    "topic": "Asynchronous Programming",
+    "difficulty": "hard"
+  },
+    {
+    "question": "What is the primary advantage of using a set over a list when checking for membership?",
+    "options": ["A. Sets consume less memory.", "B. Sets maintain insertion order.", "C. Membership checking in sets has an average time complexity of O(1).", "D. Sets are mutable, unlike lists."],
+    "correct_answer": "C",
+    "topic": "Data Structures and Performance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the acronym GIL stand for in Python?",
+    "options": ["A. Global Input Lock", "B. Global Interpreter Lock", "C. General Index List", "D. Generic Interprocess Layer"],
+    "correct_answer": "B",
+    "topic": "Python Internals",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following built-in functions can be used to create an iterator object?",
+    "options": ["A. map()", "B. filter()", "C. zip()", "D. All of the above"],
+    "correct_answer": "D",
+    "topic": "Iterators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `functools.lru_cache` decorator?",
+    "options": ["A. To log function calls", "B. To memoize function results for faster execution", "C. To enforce type hints", "D. To profile function performance"],
+    "correct_answer": "B",
+    "topic": "Functional Programming",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which data structure would be most suitable for implementing a priority queue?",
+    "options": ["A. List", "B. Dictionary", "C. Heap", "D. Set"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In Python, what does it mean for a function to be 'idempotent'?",
+    "options": ["A. The function must always return the same value.", "B. The function only works with integers.", "C. The function must have no side effects.", "D. The function produces the same result if called multiple times with the same arguments and no side effects.", "E. "],
+    "correct_answer": "D",
+    "topic": "Functional Programming",
+    "difficulty": "hard"
+  }
+]
+```

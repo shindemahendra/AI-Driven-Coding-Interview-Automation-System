@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
+    "options": ["9", "10", "11", "12"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all A are B, and all B are C, then all A are necessarily:",
+    "options": ["Not C", "Possibly C", "C", "Sometimes C"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which number logically completes the series: 1, 4, 9, 16, ?",
+    "options": ["20", "24", "25", "30"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What comes next: A, C, E, G, ?",
+    "options": ["H", "I", "J", "K"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Four friends are sitting in a circle. A is to the left of B, and C is to the right of B. Who is sitting to the left of C?",
+    "options": ["A", "B", "D", "Cannot be determined"],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at 12:00 noon, what time will it show after 6 hours?",
+    "options": ["5:30 PM", "6:00 PM", "5:00 PM", "5:45 PM"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If 'MASTER' is coded as '612739' and 'REQUEST' is coded as '952457', then how is 'REMAST' coded?",
+    "options": ["951276", "951627", "952176", "952167"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have 8 balls. One is heavier than the rest. You have a balance scale. What is the minimum number of weighings needed to guarantee you find the heavier ball?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "There are 100 lockers in a hallway, numbered 1 to 100. Initially, all lockers are closed. A person walks down the hallway and opens every locker. Then, a second person walks down the hallway and closes every second locker (2, 4, 6, ...). The third person changes every third locker (if open, closes it; if closed, opens it). The fourth person changes every fourth locker, and so on. After 100 people have walked down the hallway, which lockers are open?",
+    "options": ["Lockers with prime numbers", "Lockers with even numbers", "Lockers with perfect squares", "All lockers will be closed"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A, B, C, and D are suspects in a bank robbery. The following facts are known: 1) If A is guilty, then B is also guilty. 2) If C is innocent, then D is guilty. 3) If D is innocent, then A is also innocent. Assuming only one person is guilty, who is it?",
+    "options": ["A", "B", "C", "D"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have two hourglasses, one that measures 4 minutes and another that measures 7 minutes. You need to measure exactly 9 minutes. How can you do it?",
+    "options": ["Start both simultaneously. When the 4-minute hourglass runs out, immediately flip it. When the 7-minute hourglass runs out, flip it. When the 4-minute runs out the second time, 9 minutes have passed.", "Start both simultaneously. When the 4-minute hourglass runs out, immediately flip it. When the 7-minute hourglass runs out, flip the 4-minute hourglass. When the 4-minute hourglass runs out for the second time, the 7-minute hourglass has 2 minutes remaining. Run the 7-minute hourglass for those remaining 2 minutes and combine that with the initial 7 minutes.", "Start both simultaneously. When the 4-minute hourglass runs out, flip it. When the 7-minute hourglass runs out, flip it and the 4 minute one together. When the 4-minute hourglass runs out again, the 7-minute hourglass has been running for 4 minutes, so flip the 7 minute one to measure the remaining time.", "It is impossible to measure 9 minutes with these hourglasses."],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A group of people are standing in a circle. Each person knows the names of all the other people except their own. Suddenly, an announcement is made: 'At least one of you has blue eyes.' Everyone with blue eyes must leave the circle by midnight. Assume everyone is perfectly logical. If there are exactly three people with blue eyes, how many nights will it take for them to leave?",
+    "options": ["1 night", "2 nights", "3 nights", "They will never leave"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the next letter in the pattern: O, T, T, F, F, S, S, E, ?",
+    "options": ["N", "T", "F", "S"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the image that completes the pattern (Assume 4 images are given where 3 are shown and the last one is missing). The pattern shows incremental rotations of a square clockwise",
+    "options": ["Image A (Square rotated 90 degrees clockwise)", "Image B (Square rotated 180 degrees clockwise)", "Image C (Square rotated 270 degrees clockwise)", "Image D (Original square)"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+   {
+    "question": "Complete the following analogy: Tree is to Forest as Flower is to:",
+    "options": ["Soil", "Garden", "Plant", "Vase"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If two typists can type two pages in two minutes, how many typists are needed to type eighteen pages in six minutes?",
+    "options": ["Three", "Six", "Nine", "Twelve"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of these is the odd one out?",
+    "options": ["Dog", "Cat", "Fish", "Bird"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+   {
+    "question": "If A > B and B > C, which of the following is not necessarily true?",
+    "options": ["A > C", "C < A", "B < A", "C > B"],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the angle between the hour and minute hands on a clock at 3:30?",
+    "options": ["75 degrees", "90 degrees", "105 degrees", "120 degrees"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have three boxes. One contains only apples, one contains only oranges, and one contains both apples and oranges. The boxes have been incorrectly labeled such that no label identifies the actual contents of the box it describes. By opening just one box, and without looking into the box, you take out one piece of fruit. By looking at the fruit, how can you immediately label all of the boxes correctly?",
+    "options": ["Open the box labelled 'apples'.", "Open the box labelled 'oranges'.", "Open the box labelled 'apples and oranges'.", "It is impossible to label all boxes correctly with just one piece of fruit."],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  }
+]
+```

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
+    "options": ["9", "10", "11", "12"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all Bloops are Gloops, and all Gloops are Droops, then all Bloops are definitely:",
+    "options": ["Not Droops", "Sometimes Droops", "Always Droops", "None of the above"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which word does NOT belong: apple, banana, carrot, orange?",
+    "options": ["apple", "banana", "carrot", "orange"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete the analogy: Dog is to bark as Cat is to: ?",
+    "options": ["Meow", "Growl", "Hiss", "Purr"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A farmer has 17 sheep, all but 9 die. How many sheep does the farmer have left?",
+    "options": ["0", "8", "9", "17"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at noon, what time will it show after 6 hours?",
+    "options": ["5:30 PM", "6:30 PM", "5:00 PM", "6:00 PM"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If 'TRACE' is coded as 'UGBDF', how is 'PLANT' coded?",
+    "options": ["QMBOV", "QMBOU", "ROMBU", "QMBOU"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "There are 5 houses in a row. A is to the right of B, C is to the left of A, E is to the left of B, and A is to the left of D. Which house is in the middle?",
+    "options": ["A", "B", "C", "D"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the maximum number of pieces you can cut a pizza into with 4 straight cuts?",
+    "options": ["8", "10", "11", "12"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bag contains 3 red balls, 4 blue balls, and 5 green balls. What is the minimum number of balls you must draw to guarantee you have at least one ball of each color?",
+    "options": ["3", "8", "10", "12"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have 8 balls. 7 of them weigh the same, but one is slightly heavier. Using a balance scale, what is the minimum number of weighings needed to guarantee you find the heavier ball?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A, B, C, and D are suspects in a crime. Only one is guilty. A says, 'B is guilty.' B says, 'C is guilty.' C says, 'B is lying.' D says, 'A is guilty.' If only one person is telling the truth, who is guilty?",
+    "options": ["A", "B", "C", "D"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have two ropes that each take 1 hour to burn completely. However, they don't burn at a constant rate. How can you measure 45 minutes using only these two ropes and a lighter?",
+    "options": ["Burn one rope from both ends and the other from one end.", "Burn both ropes from one end simultaneously.", "Burn one rope from both ends and the other from one end after 15 minutes.", "Burn one rope from one end, and the other from both ends. When the second rope finishes, burn the remaining first rope from the other end as well."],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A king has 1000 bottles of wine. One is poisoned. He has 10 prisoners to test the wine. He uses binary representation to determine which bottle is poisoned. How does he do it?",
+    "options": ["He gives each prisoner a bottle and sees who dies.", "He mixes all the wine together and gives it to all prisoners.", "He labels each bottle with a binary number, gives prisoners the corresponding wine, and observes the deaths.", "He gives each prisoner a random selection of wine bottles."],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are in a room with three light switches. Each switch controls one of three light bulbs in another room. You can't see into the other room, but you can manipulate the switches as much as you want. You can only enter the other room once. How can you determine which switch controls which bulb?",
+    "options": ["Flip one switch, wait, then flip it back and flip another.", "Flip all switches and observe the bulbs.", "Flip two switches simultaneously.", "There is not enough information to determine which switch controls which bulb."],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the value of x in the equation: 2x + 5 = 11?",
+    "options": ["2", "3", "4", "5"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a train travels at a speed of 60 miles per hour, how far will it travel in 2 hours?",
+    "options": ["30 miles", "60 miles", "120 miles", "180 miles"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What comes next in the series: J, F, M, A, M, ?",
+    "options": ["J", "J", "A", "S"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Arrange the words given below in a meaningful sequence: 1. Poverty 2. Population 3. Death 4. Unemployment 5. Disease",
+    "options": ["2, 4, 1, 5, 3", "3, 2, 1, 5, 4", "2, 3, 4, 5, 1", "1, 2, 3, 4, 5"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have two hourglasses, one measures 7 minutes, the other measures 11 minutes. How can you measure exactly 15 minutes?",
+    "options": ["Start both hourglasses. When the 7-minute hourglass runs out, immediately flip it. When the 11-minute hourglass runs out, flip the 7-minute hourglass again to measure another 4 minutes.", "Start both hourglasses. When the 7-minute hourglass runs out, immediately flip it. When the 11-minute hourglass runs out, there are 4 minutes left in the 7-minute hourglass. Flip it when it runs out again (7 more minutes) to get 11 minutes.", "Start both hourglasses simultaneously. When the 7-minute hourglass finishes, immediately flip it over. After the 11-minute hourglass runs out, there are 4 minutes remaining in the flipped 7-minute hourglass. Flip the 7-minute hourglass again when it runs out (7 mins). Finally, immediately flip the 7-minute hourglass when the 7 minutes run out.", "Start both hourglasses simultaneously. When the 7-minute hourglass finishes, immediately flip it over. After the 11-minute hourglass runs out, there are 4 minutes remaining in the flipped 7-minute hourglass. Let it run and flip it immediately (4 minutes), then when it finishes flip the 11-minute hourglass and when 4 minutes run out there are 7 minutes left which totals 15"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  }
+]
+```

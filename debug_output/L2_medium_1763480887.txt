@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following data structures uses the LIFO (Last-In, First-Out) principle?",
+    "options": ["Queue", "Stack", "Linked List", "Heap"],
+    "correct_answer": "Stack",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which method is used to add an element to the end of a list in Python?",
+    "options": ["insert()", "append()", "add()", "extend()"],
+    "correct_answer": "append()",
+    "topic": "Syntax",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `print(type((1,)))`?",
+    "options": ["<class 'list'>", "<class 'tuple'>", "<class 'set'>", "<class 'int'>"],
+    "correct_answer": "<class 'tuple'>",
+    "topic": "Syntax",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary use case for decorators in Python?",
+    "options": ["Code optimization", "Adding functionality to functions or classes", "Memory management", "Exception handling"],
+    "correct_answer": "Adding functionality to functions or classes",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is true about Python generators?",
+    "options": ["They store all values in memory at once.", "They are iterators.", "They are faster than lists for all operations.", "They cannot be used in for loops."],
+    "correct_answer": "They are iterators.",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `[x**2 for x in range(5) if x % 2 == 0]`?",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[1, 9, 25]", "[2, 4, 6, 8, 10]"],
+    "correct_answer": "[0, 4, 16]",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the difference between `==` and `is` in Python?",
+    "options": ["`==` checks for value equality, `is` checks for object identity.", "`==` checks for object identity, `is` checks for value equality.", "They are interchangeable.", "`is` is used for numbers, `==` is used for strings."],
+    "correct_answer": "`==` checks for value equality, `is` checks for object identity.",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__init__` method in a Python class?",
+    "options": ["To destroy the object", "To define class methods", "To initialize the object's attributes", "To inherit from another class"],
+    "correct_answer": "To initialize the object's attributes",
+    "topic": "OOP",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the relationship between inheritance and polymorphism in OOP?",
+    "options": ["They are unrelated concepts.", "Inheritance is a type of polymorphism.", "Polymorphism is a type of inheritance.", "They are mutually exclusive."],
+    "correct_answer": "Polymorphism is a type of inheritance.",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `super()` function in Python?",
+    "options": ["To call a method from a parent class.", "To create a new instance of the class.", "To delete an attribute from the object.", "To check if a class is a subclass of another class."],
+    "correct_answer": "To call a method from a parent class.",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In Python, what is a metaclass?",
+    "options": ["A class that inherits from all other classes.", "A class that creates other classes.", "An instance of a class.", "A module that contains only class definitions."],
+    "correct_answer": "A class that creates other classes.",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is NOT a valid way to implement concurrency in Python?",
+    "options": ["Threading", "Multiprocessing", "Asynchronous programming (asyncio)", "Bitwise operations"],
+    "correct_answer": "Bitwise operations",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the Global Interpreter Lock (GIL) in Python and how does it affect multithreading?",
+    "options": ["It allows multiple native threads to execute Python bytecode in parallel without any restrictions.", "It prevents multiple native threads from executing Python bytecode concurrently, limiting true parallelism.", "It's a debugging tool for multithreaded applications.", "It's a memory management technique that prevents memory leaks in multithreaded applications."],
+    "correct_answer": "It prevents multiple native threads from executing Python bytecode concurrently, limiting true parallelism.",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the primary advantage of using `asyncio` over traditional threading in Python for I/O-bound operations?",
+    "options": ["`asyncio` uses true parallelism, while threading is limited by the GIL.", "`asyncio` is simpler to debug than threading.", "`asyncio` allows for cooperative multitasking, reducing context switching overhead.", "`asyncio` is compatible with all Python libraries, while threading has compatibility issues."],
+    "correct_answer": "`asyncio` allows for cooperative multitasking, reducing context switching overhead.",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["To define the allowed attributes of a class instance, potentially reducing memory usage.", "To specify the order in which attributes are inherited from parent classes.", "To make attributes read-only.", "To encrypt the attribute values."],
+    "correct_answer": "To define the allowed attributes of a class instance, potentially reducing memory usage.",
+    "topic": "Syntax",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does Python's garbage collection handle circular references?",
+    "options": ["It doesn't; circular references always leak memory.", "It uses reference counting to detect and collect them immediately.", "It uses a generational garbage collector to detect and break circular references.", "It requires manual memory management to avoid them."],
+    "correct_answer": "It uses a generational garbage collector to detect and break circular references.",
+    "topic": "Memory Model",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between a list and a deque in Python's `collections` module?",
+    "options": ["A deque is immutable, while a list is mutable.", "A deque provides O(1) time complexity for appending and popping from both ends, while a list has O(n) for popping from the beginning.", "A list is thread-safe, while a deque is not.", "A deque can only store primitive data types, while a list can store any type of object."],
+    "correct_answer": "A deque provides O(1) time complexity for appending and popping from both ends, while a list has O(n) for popping from the beginning.",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following data structures is most suitable for implementing a priority queue?",
+    "options": ["List", "Dictionary", "Heap", "Set"],
+    "correct_answer": "Heap",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of the `sorted()` function in Python?",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(n^2)"],
+    "correct_answer": "O(n log n)",
+    "topic": "Syntax",
+    "difficulty": "medium"
+  }
+]
+```

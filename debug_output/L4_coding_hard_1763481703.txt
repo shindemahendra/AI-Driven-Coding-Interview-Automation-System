@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Resource Allocation in a Distributed System",
+  "description": "You are managing a distributed computing system with `n` nodes. Each node `i` has a limited capacity `capacity[i]` representing the maximum workload it can handle. You have `m` tasks to execute, each with a workload requirement `workload[i]`. The goal is to allocate the tasks to the nodes in a way that minimizes the maximum utilization of any single node in the system. The utilization of a node is defined as the total workload assigned to it divided by its capacity. A task can only be assigned to one node. Find the minimum possible maximum utilization across all nodes. It's possible some tasks may not be assigned if it's impossible to assign them all while respecting node capacities.\n\nFor example, if node `A` has capacity 10 and is assigned workload 7, its utilization is 7/10 = 0.7. You want to minimize the *maximum* utilization across all nodes after assigning tasks.",
+  "input_format": "The first line contains two integers, `n` (number of nodes) and `m` (number of tasks).\nThe second line contains `n` integers, `capacity[0] capacity[1] ... capacity[n-1]`, representing the capacity of each node.\nThe third line contains `m` integers, `workload[0] workload[1] ... workload[m-1]`, representing the workload of each task.",
+  "output_format": "A floating-point number representing the minimum possible maximum utilization, rounded to 6 decimal places. If no tasks can be assigned, return 0. If all tasks can be assigned, return the minimum possible maximum utilization. If it is possible to assign some tasks, but not all of them due to capacity issues, return the minimum maximum utilization of the assigned tasks.",
+  "constraints": "1 <= n <= 20\n1 <= m <= 20\n1 <= capacity[i] <= 1000 for all i\n1 <= workload[i] <= 1000 for all i",
+  "sample_input": "2 3\n10 15\n5 7 8",
+  "sample_output": "0.800000",
+  "difficulty": "hard"
+}
+```

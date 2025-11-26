@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Consider the following code snippet. A function aims to compute the dot product of two vectors, but the inner loop consistently throws an IndexError. What is the most likely cause?",
+    "options": ["Incorrect initialization of the result variable.", "The vectors have different data types.", "The lengths of the vectors are not equal.", "The inner loop counter exceeds the vector bounds."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A function uses recursion to calculate the nth Fibonacci number. When called with a large n, it throws a RecursionError. What is the most effective strategy to resolve this?",
+    "options": ["Increase the recursion limit using sys.setrecursionlimit().", "Implement memoization to store and reuse calculated Fibonacci numbers.", "Rewrite the function using an iterative approach.", "Reduce the input value of n."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A multithreaded application uses a shared counter. Despite employing a Lock to protect the counter, the final count is consistently lower than expected. What is the likely cause?",
+    "options": ["The lock is not re-entrant.", "The threads are not properly synchronized.", "The lock is being acquired but not released in some code paths.", "The counter variable is immutable."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A program parsing JSON data occasionally fails, raising a KeyError despite the key existing in the JSON. Which is the most probable reason?",
+    "options": ["The JSON is not well-formed.", "The key is being accessed with the wrong data type.", "The JSON library is outdated.", "The JSON structure is inconsistent across different inputs."],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The following snippet fails to produce the expected result. The goal is to append the squares of numbers to 'results', but it's always empty. What's wrong?",
+    "options": ["The 'yield' statement should be replaced with 'return'.", "The generator is never consumed.", "The 'range' function needs a step argument.", "The loop variable is not being used correctly."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A decorator is intended to log function calls, but unexpectedly logs the function only once, regardless of how many times the wrapped function is called. What is the likely reason?",
+    "options": ["The decorator is not correctly implemented.", "The decorated function is being cached.", "The logger is not properly configured.", "The decorator is not being applied correctly."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A Python script that uses multiprocessing encounters a deadlock. Which of the following is most likely the root cause?",
+    "options": ["Incorrect Python version.", "Shared memory corruption.", "Circular dependency in imported modules.", "Processes are waiting for resources held by each other."],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A function modifies a list passed as an argument. The caller observes that the list is modified even though the function was intended to only create a copy. What explains this behavior?",
+    "options": ["The function is using deepcopy.", "The function is modifying the list in place.", "The list is immutable.", "The garbage collector is prematurely releasing the original list."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A web application using Flask throws an error that a variable referenced within a Jinja2 template is undefined. What is a likely cause?",
+    "options": ["The template engine is not correctly configured.", "The variable is not being passed to the template in the Flask route.", "The variable name contains invalid characters.", "The Jinja2 version is incompatible with Flask."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A program using a try-except block does not catch a specific exception type, leading to program termination. What is the most plausible explanation?",
+    "options": ["The exception is being raised outside the try block.", "The except block is handling a different exception type.", "The exception is being re-raised within the except block.", "The exception is a built-in exception that cannot be caught."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A script using the `os.walk()` function to traverse a directory tree unexpectedly skips some directories. Which of the following is most likely the reason?",
+    "options": ["The skipped directories are empty.", "The script lacks the necessary permissions to access those directories.", "The `os.walk()` function has a bug.", "The skipped directories are symbolic links."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+    {
+    "question": "A data processing pipeline uses Pandas DataFrames. A seemingly correct aggregation query returns NaN values instead of the expected sums. What is a likely cause?",
+    "options": ["The Pandas version is outdated.", "The aggregation function is not supported.", "The DataFrame contains missing or invalid data that propagates during aggregation.", "The data types are incompatible for aggregation."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A function designed to remove duplicate elements from a list does not work correctly. It sometimes leaves duplicates behind. What is the most likely issue?",
+    "options": ["The function is using an inefficient algorithm.", "The function is not correctly handling edge cases (e.g., empty list).", "The comparison logic for detecting duplicates is flawed.", "The function modifies the list while iterating over it."],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A CI/CD pipeline fails due to intermittent test failures. The tests pass locally but fail randomly on the CI server. What is the most likely reason?",
+    "options": ["The CI server has insufficient resources.", "The tests have non-deterministic behavior (e.g., rely on external services with rate limits).", "The test environment is not properly isolated.", "The CI/CD pipeline configuration is incorrect."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A class's `__del__` method raises an exception during object destruction. What is the most critical consequence?",
+    "options": ["The garbage collector will not be able to reclaim the object's memory.", "The program will terminate immediately.", "The exception will be ignored, and program execution will continue.", "Other objects waiting for finalization may be prevented from being finalized."],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A Python program using the `subprocess` module to execute an external command hangs indefinitely. Which is the most probable reason?",
+    "options": ["The external command is not installed on the system.", "The program lacks the necessary permissions to execute the command.", "The external command is producing output that is filling the pipe buffer, leading to a deadlock.", "The `subprocess` module has a bug."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A Django application intermittently throws a `SuspiciousOperation` exception. What does this typically indicate?",
+    "options": ["A database connection error.", "An attempt to access a forbidden resource.", "A bug in the Django framework.", "An improperly configured middleware."],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A function using Python's `logging` module produces no output to the configured log file. What's a common cause?",
+    "options": ["The log level is set too high, filtering out the messages.", "The log file path is incorrect.", "The `logging` module is not imported correctly.", "The logging handler is not properly configured."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You observe that changes made to a global variable inside a function do not persist outside the function. Why?",
+    "options": ["The global keyword was not used inside the function before assigning to the variable.", "Global variables are immutable.", "The variable is being shadowed by a local variable with the same name.", "The function is running in a separate thread or process."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "An async function in Python using `asyncio` never seems to execute. What is most likely missing?",
+    "options": ["The event loop is not running.", "The function is not marked as a coroutine.", "The `await` keyword is missing.", "The function is not called using `await`."],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  }
+]
+```

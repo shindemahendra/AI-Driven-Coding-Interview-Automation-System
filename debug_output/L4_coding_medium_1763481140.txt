@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Server Capacity Optimization",
+  "description": "You are managing a distributed system that processes incoming requests. You have `n` servers, each with a different processing capacity. You are given an array `capacity` where `capacity[i]` represents the maximum number of requests that the i-th server can handle per second.  You are also given an array `requests`, where `requests[i]` represents the number of requests that need to be processed at second `i`.  Each server can process requests independently and concurrently. You need to determine the minimum number of additional servers required to handle all the incoming requests without exceeding the capacity of any individual server.  If all requests can be handled with the existing servers, return 0. You can assume that fractional servers are not possible; you need whole, additional servers.",
+  "input_format": "The first line contains an integer `n`, the number of existing servers.\nThe second line contains `n` space-separated integers representing the `capacity` of each server.\nThe third line contains an integer `m`, the number of seconds for which requests need to be handled.\nThe fourth line contains `m` space-separated integers representing the `requests` at each second.",
+  "output_format": "Return an integer representing the minimum number of additional servers required.",
+  "constraints": "1 <= n <= 10^5\n1 <= capacity[i] <= 10^5\n1 <= m <= 10^5\n0 <= requests[i] <= 10^9",
+  "sample_input": "3\n10 20 30\n5\n50 20 70 10 5",
+  "sample_output": "1",
+  "difficulty": "medium"
+}
+```

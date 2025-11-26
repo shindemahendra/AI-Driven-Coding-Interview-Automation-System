@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A critical production issue arises impacting a key client. You are the tech lead. The team is unsure of the root cause. What's the FIRST thing you should do?",
+    "options": ["A. Immediately begin debugging the code on the production server.", "B. Gather the team to define the problem scope and potential areas of impact.", "C. Escalate the issue to upper management for guidance.", "D. Blame the most recent code deployment.", ],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are tasked with estimating the effort for a new feature. You've broken it down into sub-tasks. What's the BEST way to present your estimate to stakeholders?",
+    "options": ["A. Provide a single point estimate (e.g., 2 weeks).", "B. Provide a range estimate (e.g., 2-3 weeks) with explanations of potential risks and dependencies.", "C. Give the estimate you personally believe to be the most accurate, regardless of risks.", "D. Pad the estimate significantly to ensure you meet the deadline.", ],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is consistently missing deadlines and delivering subpar work. How should you, as a senior engineer, address this?",
+    "options": ["A. Publicly criticize the team member's performance in a team meeting.", "B. Ignore the issue and hope it resolves itself.", "C. Have a private, constructive conversation with the team member to understand the challenges and offer support.", "D. Report the team member directly to management without providing any feedback.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You disagree with a technical decision made by your team lead. What is the MOST effective way to voice your concern?",
+    "options": ["A. Immediately and publicly challenge the team lead's decision during a meeting.", "B. Privately discuss your concerns with the team lead, presenting your reasoning and alternative solutions.", "C. Complain about the decision to other team members.", "D. Ignore the decision and implement your own solution.", ],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a code review, you find several issues in a colleague's code. What is the BEST approach to provide feedback?",
+    "options": ["A. Make direct edits to the code without notifying the author.", "B. Focus solely on pointing out errors without offering suggestions for improvement.", "C. Provide specific, actionable feedback with examples and suggestions in a respectful and constructive manner.", "D. Reject the code review without providing any comments.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is facing a major blocker due to a dependency on another team. The other team is unresponsive. What is the MOST effective approach to resolve this?",
+    "options": ["A. Escalate the issue directly to your manager without attempting to communicate with the other team first.", "B. Publicly shame the other team in a company-wide email.", "C. Reach out to the other team's lead or a mutual contact to understand the reason for the delay and explore collaborative solutions.", "D. Give up on the dependency and try to find a workaround, even if it's less efficient.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A junior developer asks you for help on a task you find simple. What should be your approach?",
+    "options": ["A. Do the task for them to save time.", "B. Tell them to figure it out themselves.", "C. Guide them through the process, explaining the concepts and helping them understand the solution.", "D. Give them a vague hint and tell them to come back later.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You made a mistake that caused a minor outage. How should you handle the situation?",
+    "options": ["A. Deny any responsibility and blame it on someone else.", "B. Immediately admit your mistake, take responsibility, and work to rectify the issue.", "C. Try to hide the mistake and hope nobody notices.", "D. Downplay the severity of the outage.", ],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your project is behind schedule. What's the FIRST thing you should do?",
+    "options": ["A. Start working overtime immediately.", "B. Blame the previous estimates.", "C. Communicate the delay to stakeholders, explain the reasons, and propose a revised timeline.", "D. Keep the delay a secret and try to catch up without informing anyone.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You disagree with the approach taken by another team member. What's the BEST way to proceed?",
+    "options": ["A. Publicly criticize their approach in a meeting.", "B. Avoid working with them in the future.", "C. Privately discuss your concerns with them, providing constructive feedback and suggesting alternative solutions.", "D. Ignore their approach and implement your own solution in parallel.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a team and notice that one team member is consistently quiet during meetings and rarely shares their opinions. What can you do to encourage them to participate more?",
+    "options": ["A. Call them out directly in front of the team and ask them why they are so quiet.", "B. Ignore their lack of participation and focus on the more vocal team members.", "C. Create a safe and inclusive environment where everyone feels comfortable sharing their ideas, and actively solicit their input during meetings.", "D. Assume they have nothing valuable to contribute and don't bother asking for their opinion.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You receive negative feedback from a client about a feature your team developed. How should you respond?",
+    "options": ["A. Argue with the client and defend your team's work.", "B. Ignore the feedback and hope the client forgets about it.", "C. Acknowledge the feedback, express empathy, and investigate the issue to understand the client's concerns and identify potential solutions.", "D. Blame another team for the issue.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A new technology is being considered for a project. You are skeptical about its benefits. How should you express your concerns?",
+    "options": ["A. Dismiss the technology outright without any evaluation.", "B. Publicly ridicule the technology in team meetings.", "C. Research the technology, identify potential risks and benefits, and present your findings in a constructive and objective manner.", "D. Sabotage the implementation of the technology to prove your point.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are responsible for mentoring a junior engineer. What is the most important thing to focus on?",
+    "options": ["A. Telling them exactly what to do for every task.", "B. Focusing solely on correcting their mistakes.", "C. Providing guidance, support, and opportunities for growth, while encouraging them to think critically and solve problems independently.", "D. Delegating all the boring tasks to them.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are in a meeting where a colleague is presenting an idea you strongly disagree with. How should you handle the situation?",
+    "options": ["A. Interrupt them and immediately explain why their idea is wrong.", "B. Wait until they are finished presenting and then politely express your concerns, providing data or reasoning to support your viewpoint.", "C. Roll your eyes and make sarcastic comments throughout their presentation.", "D. Ignore their idea and continue working on something else.", ],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A project you're working on is facing a critical blocker outside of your control. After escalating and attempting to resolve it directly, what is the BEST next step?",
+    "options": ["A. Give up on the project and focus on other tasks.", "B. Continue escalating to higher levels of management without exploring alternative solutions.", "C. Proactively identify and evaluate potential workaround solutions, even if they are not ideal, and communicate these options to stakeholders.", "D. Blame the team responsible for the blocker and refuse to collaborate with them.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a team meeting, a heated debate arises between two team members regarding the best approach to solve a problem. As a senior engineer, what is your role in resolving the conflict?",
+    "options": ["A. Take sides and support the team member whose approach you agree with.", "B. Let them argue until they reach a consensus on their own.", "C. Mediate the discussion, encourage both team members to express their viewpoints respectfully, and facilitate a collaborative problem-solving process to reach a mutually agreeable solution.", "D. Ignore the conflict and continue with the meeting agenda.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is consistently underestimating the time required to complete tasks. What steps should you take to improve estimation accuracy?",
+    "options": ["A. Blame the team members for being slow.", "B. Pad all future estimates significantly to account for the underestimation.", "C. Analyze past projects to identify the root causes of estimation errors and implement strategies to improve accuracy, such as breaking down tasks into smaller units, involving the team in the estimation process, and tracking actual vs. estimated time.", "D. Stop providing estimates altogether and just work until the tasks are completed.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are asked to present a complex technical concept to a non-technical audience. What is the MOST important consideration?",
+    "options": ["A. Using technical jargon to impress the audience.", "B. Providing a detailed explanation of the underlying code.", "C. Explaining the concept in a clear, concise, and accessible manner, using analogies and visuals to illustrate key points.", "D. Reading directly from the technical documentation.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You notice that a team member is struggling with a new technology that the rest of the team has adopted easily. What is the best way to help them?",
+    "options": ["A. Publicly criticize their lack of understanding in a team meeting.", "B. Ignore their struggles and let them figure it out on their own.", "C. Offer to provide one-on-one coaching and mentorship, tailoring your approach to their learning style and providing them with relevant resources and examples.", "D. Remove them from the project and assign them to something simpler.", ],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  }
+]
+```

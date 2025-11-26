@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A critical service outage occurs due to a newly deployed feature. You are the tech lead. Initial analysis suggests a potential deadlock. Simultaneously, stakeholders are demanding immediate updates. How do you prioritize your response?",
+    "options": ["A. Immediately revert the feature to the previous stable version while investigating the deadlock in a separate environment.", "B. Attempt to debug the deadlock in the production environment while keeping stakeholders informed of the progress.", "C. Delegate the debugging task to a junior engineer while you manage stakeholder expectations and communication.", "D. Focus solely on fixing the deadlock in production, assuming it is the root cause, and defer stakeholder communication until the service is restored."],
+    "correct_answer": "A",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "During a sprint retrospective, a team member consistently blames others for missed deadlines. How should you, as the team lead, address this behavior to foster a more constructive environment?",
+    "options": ["A. Publicly confront the team member about their negative attitude during the retrospective.", "B. Privately address the team member's behavior, focusing on the impact on team morale and collaboration, and suggest alternative communication strategies.", "C. Ignore the behavior, hoping it will resolve itself naturally.", "D. Implement a new rule prohibiting any criticism of other team members during retrospectives."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is tasked with developing a new feature that requires significant input from another team, but that team is consistently unresponsive to your requests. How do you effectively navigate this inter-team dependency?",
+    "options": ["A. Escalate the issue directly to your manager and request their intervention.", "B. Continue sending emails to the other team, hoping they will eventually respond.", "C. Schedule a joint meeting with both teams to discuss the dependencies and establish clear communication channels and timelines, involving relevant stakeholders if necessary.", "D. Bypass the other team and attempt to develop the feature independently, accepting potential integration challenges later."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You discover a significant security vulnerability in a core component that you and your team maintain. Releasing a patch will require halting all new feature development for the next sprint. How do you present this information to your product manager and stakeholders?",
+    "options": ["A. Downplay the severity of the vulnerability to avoid alarming stakeholders and delay the patching process.", "B. Present the vulnerability with clear, concise language, emphasizing the potential impact on the business and the importance of prioritizing the patch release, while providing a revised timeline for future features.", "C. Release the patch silently without informing stakeholders to avoid potential panic.", "D. Suggest delaying the patch release until the next major feature release to minimize disruption."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are leading a team of engineers with varying levels of experience. One junior engineer consistently underestimates the time required for tasks, leading to missed deadlines. How do you address this issue?",
+    "options": ["A. Assign the junior engineer only simple tasks to avoid further delays.", "B. Provide the junior engineer with mentorship and guidance on estimation techniques, historical data, and risk assessment, while also monitoring their progress and providing constructive feedback.", "C. Publicly reprimand the junior engineer for their inaccurate estimates.", "D. Remove the junior engineer from the project to avoid further complications."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A senior engineer on your team is resistant to adopting new technologies and methodologies, preferring to stick with familiar, older approaches. This is hindering the team's ability to modernize its codebase. How do you address this resistance?",
+    "options": ["A. Force the senior engineer to use the new technologies, regardless of their comfort level.", "B. Engage the senior engineer in discussions about the benefits of the new technologies, provide training opportunities, and highlight how their expertise can contribute to a successful transition, emphasizing the long-term impact on the team and the project.", "C. Ignore the senior engineer's resistance and proceed with the modernization efforts without their input.", "D. Replace the senior engineer with someone more open to new technologies."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is facing a tight deadline for a critical project. To meet the deadline, some team members are suggesting cutting corners on code quality and testing. How do you respond?",
+    "options": ["A. Agree to cut corners on code quality and testing to meet the deadline, as long as it's a temporary measure.", "B. Explain the long-term risks of sacrificing code quality and testing, propose alternative solutions such as scope reduction or deadline extension, and emphasize the importance of maintaining a sustainable pace and high standards.", "C. Ignore the suggestions and continue with the original plan, even if it means missing the deadline.", "D. Blame the project manager for setting unrealistic expectations."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are in a meeting with stakeholders who have differing opinions on the direction of a project. The discussion is becoming heated and unproductive. How do you effectively facilitate the discussion?",
+    "options": ["A. Allow the stakeholders to continue arguing until a consensus is reached naturally.", "B. Intervene by actively listening to each stakeholder's perspective, summarizing key points, identifying common ground, and guiding the discussion towards a mutually acceptable solution.", "C. Take sides with the stakeholder whose opinion you agree with.", "D. End the meeting abruptly to avoid further conflict."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your manager asks you to take on a new project that is outside of your area of expertise and will require a significant time commitment. You are already feeling overwhelmed with your current workload. How do you respond?",
+    "options": ["A. Agree to take on the project without expressing any concerns.", "B. Politely explain your current workload and lack of expertise in the new project, suggest alternative team members who might be better suited, and offer to assist in a supporting role if needed.", "C. Refuse to take on the project without providing any explanation.", "D. Complain to your colleagues about the unfair workload."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are reviewing a pull request from a junior engineer that contains several errors and inefficiencies. How do you provide feedback in a way that is constructive and encourages learning?",
+    "options": ["A. Simply reject the pull request with a brief comment stating that it needs significant improvements.", "B. Provide detailed, specific feedback on each error and inefficiency, explaining the reasoning behind the suggested changes and offering resources for further learning, while also acknowledging any positive aspects of the code.", "C. Publicly criticize the junior engineer's code in front of the team.", "D. Rewrite the code yourself without providing any feedback to the junior engineer."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A junior developer consistently delivers features late and with many bugs. Direct coaching hasn't improved performance. You suspect underlying personal issues are affecting work. How do you proceed?",
+    "options": ["A. Initiate formal disciplinary action immediately.", "B. Privately express concern, offer support (e.g., employee assistance programs), and clearly set performance expectations, while documenting the conversation.", "C. Ignore the situation, hoping it will resolve itself.", "D. Publicly reprimand the developer to motivate improvement."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During sprint planning, stakeholders demand an unrealistic amount of features be completed. You know this will lead to burnout and technical debt. How do you handle this situation?",
+    "options": ["A. Agree to everything to avoid conflict.", "B. Clearly and calmly present data-driven estimations, explain the potential negative consequences of overcommitting, and propose prioritizing key features while deferring less critical ones, fostering collaborative decision-making.", "C. Tell stakeholders they are wrong without providing alternative solutions.", "D. Blame the development team for being too slow."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're in a meeting where a senior architect proposes a complex, expensive solution. You believe there's a simpler, more cost-effective alternative, but you are a junior engineer. How do you voice your opinion?",
+    "options": ["A. Remain silent to avoid disagreeing with a senior figure.", "B. Respectfully present your alternative, clearly articulating its benefits, cost savings, and potential drawbacks, and inviting constructive feedback.", "C. Publicly criticize the senior architect's proposal.", "D. Immediately implement your solution without discussing it."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're part of a remote team, and communication is often unclear. One team member consistently misunderstands instructions. What strategies do you employ to improve clarity?",
+    "options": ["A. Blame the team member for not paying attention.", "B. Advocate for more frequent video calls, detailed written documentation, and active listening techniques during meetings, emphasizing clear and concise communication.", "C. Ignore the problem and hope it resolves itself.", "D. Communicate only through short, cryptic messages."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team discovers a critical bug in production just before a major holiday. The bug affects a small percentage of users but has the potential to cause significant financial loss if left unaddressed. How do you proceed?",
+    "options": ["A. Ignore the bug until after the holiday to avoid disrupting team members' plans.", "B. Assemble a small, dedicated team to investigate and fix the bug, ensuring proper communication with stakeholders and providing support to the team members working during the holiday.", "C. Publicly blame the team member who introduced the bug.", "D. Implement a quick, untested fix to resolve the issue immediately, regardless of potential side effects."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "As a team lead, you notice a pattern of negative online reviews mentioning slow performance of a specific feature. Internal metrics show acceptable performance. How do you investigate this discrepancy?",
+    "options": ["A. Dismiss the online reviews as inaccurate and unreliable.", "B. Combine internal metrics with external performance monitoring tools (e.g., real user monitoring), analyze user feedback, and investigate potential network latency or regional performance issues to identify the root cause of the discrepancy.", "C. Blame the users for having slow internet connections.", "D. Ignore the issue and hope it resolves itself."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your company is undergoing a major restructuring, and your team's responsibilities are significantly changing. Team morale is low, and uncertainty is high. How do you lead your team through this transition?",
+    "options": ["A. Avoid discussing the restructuring to prevent further anxiety.", "B. Communicate transparently about the changes, address concerns openly, provide clarity on new roles and responsibilities, and emphasize the team's value and future opportunities within the new structure.", "C. Publicly criticize the company's leadership for the restructuring.", "D. Ignore the team's concerns and focus solely on completing existing tasks."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are leading a project that is significantly behind schedule and over budget. Stakeholders are losing confidence, and the team is feeling discouraged. How do you regain control of the project?",
+    "options": ["A. Ignore the project's problems and hope they resolve themselves.", "B. Conduct a thorough assessment of the project's current status, identify the root causes of the delays and overspending, develop a revised plan with realistic goals and timelines, and communicate transparently with stakeholders about the challenges and the proposed solutions.", "C. Publicly blame the team members for the project's failures.", "D. Cancel the project to avoid further losses."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A critical server goes down during a major product launch due to an unforeseen bug. Multiple teams are affected, and the incident requires immediate coordination. As the on-call engineer, how do you respond effectively?",
+    "options": ["A. Ignore the incident and go back to sleep, hoping someone else will fix it.", "B. Immediately initiate the incident response process, gather relevant stakeholders, establish clear communication channels, delegate tasks based on expertise, and continuously monitor progress until the issue is resolved, while providing regular updates to stakeholders.", "C. Panic and blame the team member who deployed the faulty code.", "D. Attempt to fix the issue yourself without involving other teams."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A key team member suddenly announces their resignation, leaving a critical project without a lead engineer. How do you mitigate the impact of this departure?",
+    "options": ["A. Immediately cancel the project due to the lack of a lead engineer.", "B. Quickly identify the critical tasks, redistribute responsibilities among existing team members based on their skills and experience, seek temporary support from other teams or external contractors, and prioritize knowledge transfer to ensure continuity.", "C. Publicly criticize the departing team member for leaving the project in a difficult situation.", "D. Ignore the situation and hope someone will volunteer to take over the project."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  }
+]
+```

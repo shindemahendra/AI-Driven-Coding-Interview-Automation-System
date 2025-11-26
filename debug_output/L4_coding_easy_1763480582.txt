@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Validate API Key",
+  "description": "Your company is deploying a new API, and you need to implement a simple key validation mechanism.  You are given a valid API key format and a list of potential API keys to validate. Determine which of the provided keys are valid according to the format. The valid key format consists of a prefix, a separator, and a unique identifier.\n\n**Key Format:**\n`prefix-identifier`\n\n*   **prefix:** A fixed string representing the service name.\n*   **separator:** A single hyphen character (`-`).\n*   **identifier:** A string of alphanumeric characters (a-z, A-Z, 0-9) of a specific length.  Leading zeros are allowed.\n\nGiven the prefix, the expected identifier length, and a list of API keys, return a list of booleans indicating whether each API key is valid.",
+  "input_format": "The input consists of the following:\n\n*   `prefix`: A string representing the API key prefix.\n*   `identifier_length`: An integer representing the expected length of the identifier.\n*   `api_keys`: An array of strings representing the potential API keys to validate.",
+  "output_format": "An array of booleans, where each boolean corresponds to an API key in the input array.  `true` indicates that the API key is valid, and `false` indicates it is invalid.",
+  "constraints": "*   1 <= length(prefix) <= 20\n*   1 <= identifier_length <= 10\n*   1 <= length(api_keys) <= 100\n*   1 <= length(api_key) <= 50 for each api_key in api_keys\n*   The prefix contains only lowercase letters (a-z).\n*   Each api_key in api_keys consists of alphanumeric characters (a-z, A-Z, 0-9) and hyphens (-).",
+  "sample_input": "prefix: \"service1\"\nidentifier_length: 8\napi_keys: [\"service1-a1b2c3d4\", \"service1-efgh5\", \"service2-12345678\", \"service1-ABCDEF01\", \"service1--1234567\", \"service1-123456789\"]",
+  "sample_output": "[true, false, false, true, false, false]",
+  "difficulty": "easy"
+}
+```

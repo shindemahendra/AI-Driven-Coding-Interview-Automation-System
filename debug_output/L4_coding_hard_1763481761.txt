@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Resource Allocation in a Microservice Architecture",
+  "description": "You are managing a suite of microservices responsible for processing incoming data. Each microservice `i` has a processing capacity `capacity[i]` (number of units of data it can handle per unit of time) and incurs a cost `cost[i]` per unit of processing capacity allocated to it.  You have a total budget `B` to allocate processing capacity to the microservices.  Additionally, you have a set of dependencies between the microservices. If microservice `A` depends on microservice `B`, it means that microservice `A` cannot be allocated any capacity unless microservice `B` is allocated at least some capacity. Formally, if `dependencies[A] = {B, C}`, then the capacity of `A` (denoted as `x_A`) must be 0 if the capacity of `B` (denoted as `x_B`) is 0 OR the capacity of `C` (denoted as `x_C`) is 0.  Your goal is to maximize the total processing capacity of all microservices, subject to the budget constraint, the dependencies, and the individual capacity limits. The capacity allocated to a microservice must be a non-negative integer.\n\nReturn the maximum achievable total processing capacity.",
+  "input_format": "The input consists of the following:\n\n*   `n`: The number of microservices (integer).\n*   `capacity`: An array of integers of length `n`, where `capacity[i]` represents the maximum processing capacity of the i-th microservice.\n*   `cost`: An array of integers of length `n`, where `cost[i]` represents the cost per unit of processing capacity for the i-th microservice.\n*   `B`: The total budget available (integer).\n*   `dependencies`: A list of lists of integers. `dependencies[i]` is a list of microservice indices that the i-th microservice depends on. If a microservice has no dependencies, `dependencies[i]` will be an empty list.  Microservice indices are 0-based.",
+  "output_format": "An integer representing the maximum total processing capacity that can be achieved.",
+  "constraints": "*   1 <= n <= 15\n*   1 <= capacity[i] <= 100 for all i\n*   1 <= cost[i] <= 100 for all i\n*   0 <= B <= 1000\n*   0 <= dependencies[i].length <= n - 1 for all i\n*   Dependencies are acyclic (no circular dependencies).\n*   `dependencies[i]` contains distinct elements for each `i`.\n*   All dependencies listed are valid microservice indices (0 to n-1).",
+  "sample_input": "5\n[10, 5, 7, 4, 8]\n[2, 3, 4, 1, 5]\n15\n[[], [0], [1, 3], [], [2]]",
+  "sample_output": "22",
+  "difficulty": "hard"
+}
+```

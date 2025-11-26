@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Invoice Amount Due",
+  "description": "A small business uses a simple system to track invoices. You are given a string representing a list of invoices, where each invoice is separated by a semicolon ';'.  Each invoice consists of two parts separated by a comma ',': the invoice amount (a positive floating-point number) and its status ('PAID' or 'UNPAID'). Your task is to calculate the total amount due from all unpaid invoices.  Return the total amount as a floating-point number, rounded to two decimal places.",
+  "input_format": "A string containing a list of invoices separated by semicolons. Each invoice has the format 'amount,status', where 'amount' is a positive floating-point number and 'status' is either 'PAID' or 'UNPAID'.",
+  "output_format": "A floating-point number representing the total amount due from all unpaid invoices, rounded to two decimal places.",
+  "constraints": "1 <= Number of invoices <= 100\n0.01 <= Invoice amount <= 10000.00\nStatus is either 'PAID' or 'UNPAID' (case-sensitive).\nThe input string will be well-formatted, with no leading/trailing spaces and exactly one comma and one semicolon between invoices.",
+  "sample_input": "120.50,PAID;50.00,UNPAID;85.25,UNPAID;25.75,PAID",
+  "sample_output": "135.25",
+  "difficulty": "easy"
+}
+```

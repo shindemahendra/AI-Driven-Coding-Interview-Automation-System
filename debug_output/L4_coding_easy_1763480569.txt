@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Inventory Management: Low Stock Alerts",
+  "description": "You are working on an inventory management system for a retail store. Your task is to identify items that are running low on stock and generate alerts for them. You are given a list of items with their names and current stock levels. An item is considered low on stock if its quantity is less than or equal to a specified threshold. Write a function to return a list of item names that need to be reordered (i.e., are below the threshold).",
+  "input_format": "The input will consist of the following:\n\n1.  `threshold`: An integer representing the low stock threshold.\n2.  `inventory`: A list of dictionaries, where each dictionary represents an item and has the following keys:\n    *   `name`: A string representing the name of the item.\n    *   `quantity`: An integer representing the current quantity of the item in stock.",
+  "output_format": "Return a list of strings, where each string is the name of an item that needs to be reordered (i.e., its quantity is less than or equal to the `threshold`). The order of the item names in the output list should match the order in which they appear in the input `inventory` list.",
+  "constraints": "1 <= threshold <= 100\n1 <= len(inventory) <= 100\n0 <= inventory[i]['quantity'] <= 200\n1 <= len(inventory[i]['name']) <= 50\nThe item names are unique.",
+  "sample_input": "{\n  \"threshold\": 20,\n  \"inventory\": [\n    {\n      \"name\": \"T-Shirt\",\n      \"quantity\": 15\n    },\n    {\n      \"name\": \"Jeans\",\n      \"quantity\": 30\n    },\n    {\n      \"name\": \"Socks\",\n      \"quantity\": 10\n    },\n    {\n      \"name\": \"Hat\",\n      \"quantity\": 20\n    }\n  ]\n}",
+  "sample_output": "[\"T-Shirt\", \"Socks\", \"Hat\"]",
+  "difficulty": "easy"
+}
+```

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code? \n\n```python\ndef outer():\n    x = 1\n    def inner():\n        nonlocal x\n        x = 2\n    inner()\n    return x\n\nprint(outer())```",
+    "options": ["1", "2", "NameError", "TypeError"],
+    "correct_answer": "2",
+    "topic": "Scope and Closures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following data structures offers the fastest average time complexity for searching an element if the data is unsorted?",
+    "options": ["Hash Table", "Binary Search Tree", "Sorted List", "Unsorted List"],
+    "correct_answer": "Hash Table",
+    "topic": "Data Structures and Time Complexity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary benefit of using a generator expression over a list comprehension when dealing with a large dataset?",
+    "options": ["Improved Readability", "Faster Execution Time", "Reduced Memory Consumption", "Automatic Parallelization"],
+    "correct_answer": "Reduced Memory Consumption",
+    "topic": "Generators vs List Comprehensions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following code:\n\n```python\nclass A:\n    def method(self):\n        return 'A'\n\nclass B(A):\n    def method(self):\n        return 'B'\n\nclass C(A):\n    pass\n\nobj = C()\nprint(obj.method())```\n\nWhat will be printed?",
+    "options": ["A", "B", "C", "Error"],
+    "correct_answer": "A",
+    "topic": "Inheritance and Method Resolution Order",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is the correct way to define a decorator that takes arguments?",
+    "options": ["@decorator(arg1, arg2)", "decorator(arg1, arg2)(func)", "def decorator(func, arg1, arg2):", "def decorator(*args, **kwargs):"],
+    "correct_answer": "decorator(arg1, arg2)(func)",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following code? \n\n```python\ndef func(a, b=[]):\n    b.append(a)\n    return b\n\nprint(func(1))\nprint(func(2))```",
+    "options": ["[1]", "[2]", "[1, 2]", "[2, 1]"],
+    "correct_answer": "[1, 2]",
+    "topic": "Default Mutable Arguments",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which built-in function can be used to create an iterator from a sequence?",
+    "options": ["next()", "iter()", "enumerate()", "zip()"],
+    "correct_answer": "iter()",
+    "topic": "Iterators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the order of elements in a `set` data structure?",
+    "options": ["Insertion Order", "Sorted Order", "Random Order", "Defined by Hash Function"],
+    "correct_answer": "Random Order",
+    "topic": "Sets",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following data structure uses LIFO (Last In First Out) principle?",
+    "options": ["Queue", "Linked List", "Stack", "Tree"],
+    "correct_answer": "Stack",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code snippet? \n\n```python\ndata = [1, 2, 3]\nresult = [x**2 for x in data if x > 1]\nprint(result)```",
+    "options": ["[1, 4, 9]", "[4, 9]", "[1, 2, 3]", "[2, 3]"],
+    "correct_answer": "[4, 9]",
+    "topic": "List Comprehension",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["To define the default values for instance attributes.", "To prevent the creation of new attributes after the class is defined.", "To improve the memory efficiency by pre-allocating space for attributes.", "To enforce type checking for instance attributes."],
+    "correct_answer": "To improve the memory efficiency by pre-allocating space for attributes.",
+    "topic": "Memory Optimization",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": ["A class that inherits from all other classes.", "A class that defines the behavior of other classes.", "A class that is used to create instances of other classes.", "A special type of class that can only be used for inheritance."],
+    "correct_answer": "A class that defines the behavior of other classes.",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider a scenario where you are working with a computationally intensive task. Which of the following would be the MOST appropriate to improve performance?",
+    "options": ["Using a more readable code style.", "Using a single thread to avoid race conditions.", "Using the `multiprocessing` module.", "Using `threading` module with Global Interpreter Lock (GIL)."],
+    "correct_answer": "Using the `multiprocessing` module.",
+    "topic": "Concurrency and Parallelism",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `__getattr__` and `__getattribute__` methods in Python classes?",
+    "options": ["`__getattr__` is called for all attribute accesses, while `__getattribute__` is only called when the attribute is not found.", "`__getattribute__` is called for all attribute accesses, while `__getattr__` is only called when the attribute is not found.", "They both do the same thing.", "They are deprecated and should not be used."],
+    "correct_answer": "`__getattribute__` is called for all attribute accesses, while `__getattr__` is only called when the attribute is not found.",
+    "topic": "Attribute Access Control",
+    "difficulty": "hard"
+  },
+    {
+    "question": "What is the result of the following list comprehension? `[x for x in range(5) if x % 2 == 0]`",
+    "options": ["`[0, 1, 2, 3, 4]`", "`[1, 3]`", "`[0, 2, 4]`", "`[2, 4]`"],
+    "correct_answer": "`[0, 2, 4]`",
+    "topic": "List Comprehension",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Given `my_dict = {'a': 1, 'b': 2, 'c': 3}`, how can you correctly remove the key 'b'?",
+    "options": ["`del my_dict['b']`", "`my_dict.remove('b')`", "`my_dict.pop('b')`", "`my_dict.delete('b')`"],
+    "correct_answer": "`del my_dict['b']`",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following methods is used to sort a list in place (i.e., modify the original list)?",
+    "options": ["`sorted(my_list)`", "`my_list.sort()`", "`my_list = sorted(my_list)`", "`my_list.sorted()`"],
+    "correct_answer": "`my_list.sort()`",
+    "topic": "Sorting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `yield` keyword in Python?",
+    "options": ["To define a regular function", "To raise an exception", "To return a value and exit the function", "To create a generator"],
+    "correct_answer": "To create a generator",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following represents the correct way to open a file named 'data.txt' in read mode, ensuring it's automatically closed afterward?",
+    "options": ["`file = open('data.txt', 'r')`", "`with open('data.txt', 'r') as file:`", "`try: file = open('data.txt', 'r') finally: file.close()`", "All of the above"],
+    "correct_answer": "`with open('data.txt', 'r') as file:`",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code snippet? \n\n```python\nlst = [1, 2, 3, 4, 5]\nnew_lst = list(map(lambda x: x * 2, lst))\nprint(new_lst)```",
+    "options": ["[1, 2, 3, 4, 5]", "[2, 4, 6, 8, 10]", "[1, 4, 9, 16, 25]", "[None, None, None, None, None]"],
+    "correct_answer": "[2, 4, 6, 8, 10]",
+    "topic": "Lambda Functions and Map",
+    "difficulty": "medium"
+  }
+]
+```

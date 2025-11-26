@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "If A > B and B > C, then which of the following is always true?",
+    "options": ["A > C", "A < C", "A = C", "Cannot be determined"],
+    "correct_answer": "A > C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the next number in the series: 2, 6, 12, 20, ?",
+    "options": ["30", "28", "24", "32"],
+    "correct_answer": "30",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following code snippets will result in printing 'Hello'?",
+    "options": ["if True: print('Hello')", "if False: print('Hello')", "if None: print('Hello')", "if 0: print('Hello')"],
+    "correct_answer": "if True: print('Hello')",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of: print(type([1, 2, 3]))?",
+    "options": ["list", "array", "tuple", "int"],
+    "correct_answer": "list",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following snippets throws an error?",
+    "options": ["print('Hello')", "x = 10", "x = '10' + 10", "x = 10/2"],
+    "correct_answer": "x = '10' + 10",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What happens when trying to access an index outside the bounds of a list?",
+    "options": ["IndexError", "ValueError", "TypeError", "It returns None"],
+    "correct_answer": "IndexError",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your manager assigns you a task with a tight deadline. You are unsure if you can complete it on time. What do you do?",
+    "options": ["Work overtime without saying anything.", "Immediately tell your manager it's impossible.", "Assess the task, estimate the time needed, and communicate your concerns to your manager with potential solutions.", "Ignore the deadline and work at your own pace."],
+    "correct_answer": "Assess the task, estimate the time needed, and communicate your concerns to your manager with potential solutions.",
+    "topic": "L5",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A colleague asks for your help with a task you have experience with, but you are already busy. What do you do?",
+    "options": ["Refuse to help, stating you are too busy.", "Ignore the request.", "Help if you can, explaining your time constraints and potentially offering alternative resources or a later time to assist.", "Tell them to ask someone else."],
+    "correct_answer": "Help if you can, explaining your time constraints and potentially offering alternative resources or a later time to assist.",
+    "topic": "L5",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A farmer has chickens and rabbits. There are 30 heads and 100 feet. How many rabbits are there?",
+    "options": ["20", "10", "15", "25"],
+    "correct_answer": "20",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have 12 balls, one of which is of a different weight (either heavier or lighter). Using a balance scale, what is the minimum number of weighings needed to determine the odd ball?",
+    "options": ["2", "3", "4", "5"],
+    "correct_answer": "3",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following statements about Python decorators is true?",
+    "options": ["Decorators can only be used on functions.", "Decorators are used to modify the behavior of a function or class.", "Decorators are a replacement for inheritance.", "Decorators are a feature exclusive to object-oriented programming."],
+    "correct_answer": "Decorators are used to modify the behavior of a function or class.",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this code: `def func(a=[]): a.append(1); return a`. What is the output of `func()` followed by `func()`?",
+    "options": ["[1], [1]", "[1], [1, 1]", "[1], [1, 1, 1]", "[1, 1], [1, 1]"],
+    "correct_answer": "[1], [1, 1]",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the issue with the following code? `for i in range(len(my_list)): my_list.pop(i)`",
+    "options": ["It will raise an IndexError.", "It will modify the list correctly.", "It will only remove elements at even indices.", "It will create an infinite loop."],
+    "correct_answer": "It will raise an IndexError.",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You disagree with a proposed solution during a team meeting. What is the most effective way to voice your disagreement?",
+    "options": ["Immediately interrupt the speaker and state your disagreement forcefully.", "Remain silent and avoid conflict.", "Wait for an appropriate pause, acknowledge the speaker's idea, and respectfully present your alternative with clear reasoning.", "Publicly criticize the speaker's idea after the meeting."],
+    "correct_answer": "Wait for an appropriate pause, acknowledge the speaker's idea, and respectfully present your alternative with clear reasoning.",
+    "topic": "L5",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A critical production bug is identified. Multiple teams are potentially involved. What is the first step you should take?",
+    "options": ["Immediately start debugging the code you wrote.", "Blame the other teams for the bug.", "Escalate the issue to your manager without investigating.", "Gather relevant information, assess the impact, and initiate a collaborative troubleshooting effort with the involved teams."],
+    "correct_answer": "Gather relevant information, assess the impact, and initiate a collaborative troubleshooting effort with the involved teams.",
+    "topic": "L5",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have three boxes. One contains only apples, one contains only oranges, and one contains both apples and oranges. The boxes have been incorrectly labeled such that no label identifies the actual contents of the box it describes. By opening just one box, and without looking into the box, you take out one piece of fruit. By looking at the fruit, how can you immediately label all of the boxes correctly?",
+    "options": ["Randomly guess the labels.", "Open all boxes before labeling.", "Open the box labeled 'apples' and then label all boxes based on what is inside.", "Open the box labeled 'apples and oranges' and then label all boxes based on what is inside."],
+    "correct_answer": "Open the box labeled 'apples and oranges' and then label all boxes based on what is inside.",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given a sequence of numbers where each number can appear multiple times, design an algorithm to find the largest gap between two consecutive occurrences of the same number. What data structure would optimize the algorithm?",
+    "options": ["Array", "Linked List", "Hash Map", "Binary Tree"],
+    "correct_answer": "Hash Map",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class, and what are its limitations?",
+    "options": ["It prevents object instantiation and is used for abstract classes.", "It optimizes memory usage by pre-declaring instance attributes, but prevents dynamic attribute creation.", "It enhances security by hiding object attributes.", "It enables multiple inheritance in Python."],
+    "correct_answer": "It optimizes memory usage by pre-declaring instance attributes, but prevents dynamic attribute creation.",
+    "topic": "L2",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Explain the implications of the Global Interpreter Lock (GIL) on multi-threaded Python programs, and describe a strategy to circumvent its limitations for CPU-bound tasks.",
+    "options": ["The GIL allows true parallelism, allowing all threads to run concurrently.", "The GIL serializes thread execution, limiting CPU-bound multi-threaded programs to single-core performance; using multiprocessing can bypass this limitation.", "The GIL only affects I/O-bound tasks.", "The GIL automatically distributes threads across multiple cores."],
+    "correct_answer": "The GIL serializes thread execution, limiting CPU-bound multi-threaded programs to single-core performance; using multiprocessing can bypass this limitation.",
+    "topic": "L2",
+    "difficulty": "hard"
+  }
+]
+```

@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Valid Password",
+  "description": "Your team is building a user authentication system. You need to implement a function to validate user-provided passwords based on the following criteria:\n\n1.  **Minimum Length:** The password must be at least 8 characters long.\n2.  **Uppercase Letter:** The password must contain at least one uppercase letter (A-Z).\n3.  **Lowercase Letter:** The password must contain at least one lowercase letter (a-z).\n4.  **Digit:** The password must contain at least one digit (0-9).\n5.  **Special Character:** The password must contain at least one special character from the set: `!@#$%^&*()-+`\n\nYour function should return `true` if the password is valid according to all the criteria, and `false` otherwise.",
+  "input_format": "A single string representing the password to validate.",
+  "output_format": "A boolean value: `true` if the password is valid, `false` otherwise.",
+  "constraints": "The password string will contain only ASCII characters.\nThe length of the password string will be between 0 and 1000 characters (inclusive).",
+  "sample_input": "P@sswOrd123",
+  "sample_output": "true",
+  "difficulty": "easy"
+}
+```

@@ -1,3 +1,4 @@
+requests
 # Google & AI APIs
 google-api-python-client
 google-auth-oauthlib

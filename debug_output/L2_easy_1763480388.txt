@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of `print(type([1, 2, 3]))`?",
+    "options": ["A: list", "B: tuple", "C: array", "D: set"],
+    "correct_answer": "A",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["A: define", "B: function", "C: def", "D: fun"],
+    "correct_answer": "C",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will `print('hello'.upper())` output?",
+    "options": ["A: Hello", "B: hello", "C: HELLO", "D: hELLo"],
+    "correct_answer": "C",
+    "topic": "String Methods",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by key?",
+    "options": ["A: O(n)", "B: O(log n)", "C: O(1)", "D: O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a correct way to use a list comprehension to square numbers from 1 to 5?",
+    "options": ["A: [x*x for x in range(1,6)]", "B: {x*x for x in range(1,6)}", "C: (x*x for x in range(1,6))", "D: x*x for x in range(1,6)"],
+    "correct_answer": "A",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__init__` method in a Python class?",
+    "options": ["A: To define the class name", "B: To initialize the class attributes", "C: To destroy the class object", "D: To import modules"],
+    "correct_answer": "B",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print([i for i in range(5) if i % 2 == 0])`?",
+    "options": ["A: [0, 1, 2, 3, 4]", "B: [1, 3]", "C: [0, 2, 4]", "D: [2, 4]"],
+    "correct_answer": "C",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the `yield` keyword do in Python?",
+    "options": ["A: Returns a value and terminates the function", "B: Returns a value and suspends function execution", "C: Defines a class method", "D: Catches exceptions"],
+    "correct_answer": "B",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which decorator is used to define a static method in a class?",
+    "options": ["A: @classmethod", "B: @staticmethod", "C: @property", "D: @abstractmethod"],
+    "correct_answer": "B",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the potential issue with mutable default arguments in Python functions?",
+    "options": ["A: They cause syntax errors", "B: They are re-initialized on each function call", "C: They retain their value between function calls", "D: They are automatically converted to immutable types"],
+    "correct_answer": "C",
+    "topic": "Functions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary advantage of using asynchronous programming?",
+    "options": ["A: Increased code readability", "B: Simplified debugging", "C: Improved CPU utilization", "D: Enhanced I/O concurrency"],
+    "correct_answer": "D",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following data structures is most suitable for implementing a priority queue?",
+    "options": ["A: List", "B: Dictionary", "C: Heap", "D: Set"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a GIL (Global Interpreter Lock) in Python?",
+    "options": ["A: A mechanism for garbage collection", "B: A lock that allows only one thread to hold control of the Python interpreter", "C: A tool for debugging memory leaks", "D: A way to optimize CPU-bound tasks"],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How can you create a context manager in Python?",
+    "options": ["A: Using the `with` statement only", "B: Using the `try...finally` block only", "C: By defining `__enter__` and `__exit__` methods in a class", "D: By importing the `contextlib` module and using the `contextmanager` decorator"],
+    "correct_answer": "C",
+    "topic": "Context Managers",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["A: To define the maximum number of instances of a class", "B: To prevent attribute creation dynamically, saving memory", "C: To define default attribute values", "D: To specify the order in which attributes are inherited"],
+    "correct_answer": "B",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `multiprocessing` and `threading` in Python?",
+    "options": ["A: `multiprocessing` is for I/O-bound tasks and `threading` for CPU-bound tasks", "B: `multiprocessing` uses multiple cores, bypassing the GIL, while `threading` is limited by the GIL.", "C: `threading` is faster than `multiprocessing`", "D: There is no difference, they are interchangeable."],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `asyncio.gather` function?",
+    "options": ["A: To create a new event loop.", "B: To run asynchronous functions sequentially.", "C: To run multiple asynchronous functions concurrently and collect their results.", "D: To cancel all running asynchronous tasks."],
+    "correct_answer": "C",
+    "topic": "Asyncio",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is true about the copy module in Python?",
+    "options": ["A: `copy.copy()` creates a deep copy", "B: `copy.deepcopy()` creates a shallow copy", "C: `copy.copy()` creates a shallow copy, while `copy.deepcopy()` creates a deep copy.", "D: The copy module only works with primitive data types."],
+    "correct_answer": "C",
+    "topic": "Memory Management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How would you implement memoization in Python using decorators?",
+    "options": ["A: By using the `@cache` decorator from the `functools` module.", "B: By manually creating a dictionary to store function call results and a decorator to check and retrieve those results.", "C: Both A and B", "D: Memoization cannot be implemented using decorators."],
+    "correct_answer": "C",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the space complexity of a binary search tree in the worst case (unbalanced tree)?",
+    "options": ["A: O(1)", "B: O(log n)", "C: O(n)", "D: O(n^2)"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  }
+]
+```

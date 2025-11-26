@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log File Anomaly Detection",
+  "description": "You are working on a system that monitors application log files for anomalies. Each log entry consists of a timestamp (in seconds since epoch) and a severity level (ERROR, WARN, INFO, DEBUG).  Your task is to detect periods of unusually high ERROR log activity. Specifically, you need to identify all 'error spikes' within the log data. An 'error spike' is defined as a period of K consecutive seconds where the number of ERROR logs exceeds a given threshold, T.  If multiple error spikes overlap, they should be merged into a single, larger spike.  Return the start and end times (in seconds) of each merged error spike.",
+  "input_format": "The input will consist of two lines.\n\nThe first line will contain two integers: K (the spike duration in seconds) and T (the error threshold).\n\nThe second line will contain a list of log entries, space-separated. Each log entry is represented as a string in the format 'timestamp:severity'.  For example, '1678886400:ERROR'.",
+  "output_format": "The output should be a list of tuples, where each tuple represents a merged error spike.  Each tuple contains the start and end timestamps (inclusive) of the spike. The list should be sorted by the start timestamp of each spike.\n\nIf no error spikes are found, return an empty list.",
+  "constraints": "1 <= K <= 60\n1 <= T <= 100\n0 <= timestamp <= 2147483647 (maximum 32-bit signed integer)\nSeverity level will be one of: ERROR, WARN, INFO, DEBUG\nThe log entries are not guaranteed to be sorted by timestamp.\nThe number of log entries will not exceed 1000.",
+  "sample_input": "5 3\n1678886400:ERROR 1678886401:ERROR 1678886402:ERROR 1678886403:INFO 1678886404:ERROR 1678886405:ERROR 1678886406:ERROR 1678886407:ERROR 1678886408:WARN 1678886409:DEBUG 1678886410:ERROR 1678886411:ERROR 1678886412:ERROR 1678886413:INFO",
+  "sample_output": "[[1678886400, 1678886407], [1678886410, 1678886412]]",
+  "difficulty": "medium"
+}
+```

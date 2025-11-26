@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Assignment with Dependencies and Resource Constraints",
+  "description": "You are managing a project with 'n' tasks. Each task 'i' has a duration 'duration[i]' and requires a specific amount of resource 'resource_needed[i]'. The project also has a limited resource pool 'total_resource'. Some tasks have dependencies, represented by 'dependencies', where dependencies[i] = [task_x, task_y] means task 'task_y' cannot start until task 'task_x' is completed. The goal is to find the minimum time to complete all tasks, respecting dependencies and the total resource constraint. Only tasks that do not have any unfulfilled dependencies can be active at any given time.  Multiple tasks can be active simultaneously as long as their combined resource needs do not exceed 'total_resource'.",
+  "input_format": "The input will be provided as follows:\n\n*   `n`: An integer representing the number of tasks.\n*   `duration`: An array of integers where `duration[i]` is the duration of task 'i'. Tasks are numbered from 0 to n-1.\n*   `resource_needed`: An array of integers where `resource_needed[i]` is the resource required for task 'i'.\n*   `total_resource`: An integer representing the total available resource.\n*   `dependencies`: A 2D array of integers representing task dependencies. Each row represents a dependency: `dependencies[i] = [task_x, task_y]` where task 'task_y' depends on task 'task_x'.\n",
+  "output_format": "Return an integer representing the minimum time required to complete all tasks. If it is impossible to complete all tasks due to resource constraints or cyclic dependencies, return -1.",
+  "constraints": "*   1 <= n <= 20\n*   1 <= duration[i] <= 100\n*   1 <= resource_needed[i] <= 50\n*   1 <= total_resource <= 100\n*   0 <= number of dependencies <= n*(n-1)/2\n*   Dependencies are valid (task numbers are within the valid range).",
+  "sample_input": "n = 4\nduration = [3, 2, 5, 4]\nresource_needed = [2, 3, 1, 2]\ntotal_resource = 5\ndependencies = [[0, 1], [0, 2], [1, 3]]",
+  "sample_output": "10",
+  "difficulty": "hard"
+}
+```

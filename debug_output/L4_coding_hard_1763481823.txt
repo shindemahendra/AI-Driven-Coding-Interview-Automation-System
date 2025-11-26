@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Resource Allocation with Dependencies",
+  "description": "A data center has `n` virtual machines (VMs) and `m` tasks to execute. Each VM `i` has a CPU capacity `cpu[i]` and memory capacity `mem[i]`. Each task `j` requires `cpu_req[j]` CPU and `mem_req[j]` memory to execute.  A task can only be executed on a VM if the VM has sufficient CPU and memory.  Furthermore, tasks have dependencies.  A task `j` can only be executed if all tasks in its `dependencies[j]` list have already been executed. You can execute multiple tasks in parallel as long as their dependencies are met and they are assigned to VMs that can support them.  \n\nYour goal is to minimize the total time taken to execute all `m` tasks. You can assign a task to any VM that can support it. Assume executing a task takes 1 unit of time, and VMs can execute multiple tasks in parallel.\n\nReturn the minimum time required to execute all tasks, assuming you allocate tasks optimally.  If it is impossible to execute all tasks, return -1.",
+  "input_format": "The input consists of the following:\n\n*   `n`: The number of VMs.\n*   `m`: The number of tasks.\n*   `cpu`: An array of length `n`, where `cpu[i]` represents the CPU capacity of VM `i`.\n*   `mem`: An array of length `n`, where `mem[i]` represents the memory capacity of VM `i`.\n*   `cpu_req`: An array of length `m`, where `cpu_req[j]` represents the CPU requirement of task `j`.\n*   `mem_req`: An array of length `m`, where `mem_req[j]` represents the memory requirement of task `j`.\n*   `dependencies`: A 2D array of length `m`. `dependencies[j]` is a list of tasks that must be completed before task `j` can start. Tasks are 0-indexed.",
+  "output_format": "An integer representing the minimum time required to execute all tasks. Return -1 if it's impossible to execute all tasks.",
+  "constraints": "1 <= n <= 10\n1 <= m <= 100\n1 <= cpu[i], mem[i] <= 100\n1 <= cpu_req[j], mem_req[j] <= 100\n0 <= len(dependencies[j]) <= m\nDependencies can form cycles (which will result in an impossible scenario).",
+  "sample_input": "4\n5\n[50, 60, 70, 80]\n[50, 60, 70, 80]\n[20, 30, 40, 20, 10]\n[20, 30, 40, 20, 10]\n[[], [0], [1], [0, 1], [2]]",
+  "sample_output": "3",
+  "difficulty": "hard"
+}
+```

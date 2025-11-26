@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Analysis and Anomaly Detection",
+  "description": "You are a DevOps engineer responsible for monitoring a distributed system. You are given a log file containing timestamped events from various services. Your task is to identify potential anomalies based on the frequency of specific error codes within a sliding time window.\n\nThe log file consists of lines, each representing a log entry. Each log entry has the following format: `timestamp service_name error_code message`. \n\nFor example:\n`1678886400 serviceA ERROR_500 Server encountered an unexpected error.`\n`1678886401 serviceB INFO_200 Request processed successfully.`\n`1678886460 serviceA ERROR_500 Server encountered an unexpected error.`\n\nGiven a log file, a time window size `T` (in seconds), and a threshold `K`, your goal is to determine the number of unique services that have experienced more than `K` occurrences of any error code starting with `ERROR_` within any time window of size `T`.",
+  "input_format": "The input consists of:\n\n1.  The number of log entries `N` (an integer).\n2.  `N` lines, each representing a log entry in the format: `timestamp service_name error_code message` (space-separated strings). `timestamp` is a Unix timestamp (integer). `service_name` is a string. `error_code` is a string. `message` is a string.\n3.  The time window size `T` (an integer, in seconds).\n4.  The error count threshold `K` (an integer).",
+  "output_format": "An integer representing the number of unique services that have violated the error threshold condition.",
+  "constraints": "1 <= N <= 100,000\n1 <= T <= 600\n1 <= K <= 100\nTimestamps are non-decreasing.\n1678886400 <= timestamp <= 1678887000 (timestamps within a reasonable range)\nThe length of service_name, error_code, and message is at most 50 characters.\nError codes always start with either 'ERROR_' or 'INFO_'.",
+  "sample_input": "5\n1678886400 serviceA ERROR_500 Server encountered an unexpected error.\n1678886401 serviceB INFO_200 Request processed successfully.\n1678886460 serviceA ERROR_500 Server encountered an unexpected error.\n1678886480 serviceA ERROR_503 Database connection failed.\n1678886500 serviceC ERROR_404 Resource not found.\n60\n1",
+  "sample_output": "1",
+  "difficulty": "medium"
+}
+```

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Which of the following is the next letter in the sequence: A, C, F, J, O, ?",
+    "options": ["U", "V", "T", "W"],
+    "correct_answer": "U",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all Bloops are Floops, and some Floops are Gloops, then which of the following must be true?",
+    "options": ["All Bloops are Gloops", "Some Bloops are Gloops", "Some Gloops are Bloops", "None of the above"],
+    "correct_answer": "None of the above",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the missing number in the sequence: 2, 6, 12, 20, 30, ?",
+    "options": ["40", "42", "44", "46"],
+    "correct_answer": "42",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete the analogy: Dog is to Bark as Cat is to ?",
+    "options": ["Purr", "Meow", "Hiss", "Growl"],
+    "correct_answer": "Meow",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A farmer has 17 sheep, all but nine died. How many sheep does the farmer have left?",
+    "options": ["8", "9", "10", "17"],
+    "correct_answer": "9",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Four friends are sitting around a table. A is to the left of B, C is to the right of B. Who is sitting opposite B?",
+    "options": ["A", "B", "C", "Cannot be determined"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at noon, what time will it show when the actual time is 6 PM?",
+    "options": ["5:00 PM", "5:30 PM", "6:00 PM", "4:30 PM"],
+    "correct_answer": "5:30 PM",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If 'APPLE' is coded as 'BRRQMF', then how is 'ORANGE' coded?",
+    "options": ["PSBOHF", "PSBOFH", "QTCPIG", "QTCPHF"],
+    "correct_answer": "PSBOHF",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What number should replace the question mark: 16, 25, 36, 49, ?",
+    "options": ["56", "60", "64", "81"],
+    "correct_answer": "64",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "There are 5 boxes, each containing 5 balls. Each ball weighs 10 grams, except for the balls in one box, which weigh 9 grams each. You have a digital scale. What is the minimum number of weighings needed to determine which box contains the lighter balls?",
+    "options": ["1", "2", "3", "5"],
+    "correct_answer": "1",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have 8 balls, and one of them is heavier than the others. Using a balance scale, what is the minimum number of weighings required to find the heavier ball?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "2",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A logic puzzle: A, B, C, and D each made a statement, only one of which is true:\nA: 'B is the culprit'\nB: 'C is the culprit'\nC: 'B is lying'\nD: 'I am not the culprit'\nWho is the culprit?",
+    "options": ["A", "B", "C", "D"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "There are 100 prisoners and a warden. The warden makes a deal: the prisoners will stand in a line, and a hat will be placed on each of their heads. The hat will be either black or white, and they cannot see their own hat. Starting from the back of the line, each prisoner must guess the color of their hat. If they guess correctly, they are freed. If they guess incorrectly, they are executed. They can hear the guesses of the prisoners behind them, but nothing else. They have one night to come up with a strategy. What is the maximum number of prisoners that can be guaranteed to be saved?",
+    "options": ["50", "99", "100", "0"],
+    "correct_answer": "99",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have two ropes. Each rope takes exactly one hour to burn completely, but they don't burn at a uniform rate. How can you measure exactly 45 minutes using only these two ropes and a lighter?",
+    "options": ["Burn one rope from both ends, and the other from one end.", "Burn one rope from both ends, and the other from both ends.", "Burn both ropes from one end.", "Burn one rope from one end, and the other from both ends. When the first rope burns out, light the other end of the second rope."],
+    "correct_answer": "Burn one rope from one end, and the other from both ends. When the first rope burns out, light the other end of the second rope.",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given the sequence: 1, 11, 21, 1211, 111221, what is the next number?",
+    "options": ["312211", "211213", "132211", "222131"],
+    "correct_answer": "312211",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the missing letter in the following series? B, D, G, K, ?",
+    "options": ["N", "P", "Q", "R"],
+    "correct_answer": "P",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If a hen and a half lay an egg and a half in a day and a half, how many eggs will half a dozen hens lay in half a dozen days?",
+    "options": ["24", "12", "36", "48"],
+    "correct_answer": "24",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are given 9 coins, one of which is counterfeit and lighter than the rest. You have a balance scale. What is the minimum number of weighings needed to guarantee you find the counterfeit coin?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "2",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A man is looking at a photograph. Someone asks him, 'Whose picture are you looking at?' He replies, 'Brothers and sisters, I have none. But that man's father is my father's son.' Who is in the photograph?",
+    "options": ["His son", "Himself", "His father", "His brother"],
+    "correct_answer": "His son",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the next number in the series: 1, 4, 9, 16, 25, ?",
+    "options": ["35", "36", "48", "49"],
+    "correct_answer": "36",
+    "topic": "L1",
+    "difficulty": "easy"
+  }
+]
+```

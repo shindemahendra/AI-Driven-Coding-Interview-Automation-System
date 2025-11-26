@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code snippet?\n\n```python\nx = [1, 2, 3]\ny = x\ny[0] = 5\nprint(x)```",
+    "options": ["[1, 2, 3]", "[5, 2, 3]", "[1, 5, 3]", "Error"],
+    "correct_answer": "[5, 2, 3]",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following operations on a dictionary will raise a KeyError if the key doesn't exist?",
+    "options": ["dict.get(key)", "dict.setdefault(key, value)", "dict[key]", "dict.pop(key, None)"],
+    "correct_answer": "dict[key]",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Given the code: `def func(a, b=[]): b.append(a); return b`, what will `func(1)` followed by `func(2)` return?",
+    "options": ["[1]", "[2]", "[1, 2]", "[2, 2]"],
+    "correct_answer": "[1, 2]",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code:\n```python\nnumbers = [1, 2, 3, 4, 5]\nfor i in range(len(numbers)):\n if numbers[i] % 2 == 0:\n numbers.pop(i)\nprint(numbers)```\nWhat is the output?",
+    "options": ["[1, 3, 5]", "[1, 3]", "[1, 2, 3, 4, 5]", "IndexError"],
+    "correct_answer": "[1, 3, 5]",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the potential issue with the following code, intended to perform an atomic increment?\n```python\nimport threading\nvalue = 0\nlock = threading.Lock()\ndef increment():\n global value\n with lock:\n value += 1```",
+    "options": ["The code is thread-safe and has no issues.", "Race condition due to the `value += 1` operation not being truly atomic.", "Deadlock possibility if another thread tries to acquire the same lock.", "Memory corruption due to concurrent access to `value`."],
+    "correct_answer": "Race condition due to the `value += 1` operation not being truly atomic.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider this generator:\n```python\ndef my_generator():\n yield 1\n yield 2\n return\n yield 3\n\nfor i in my_generator():\n print(i)```\nWhat will be printed?",
+    "options": ["1 2 3", "1 2", "1 2 None", "Error"],
+    "correct_answer": "1 2",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of this code?\n```python\ndef outer_function():\n x = 10\n def inner_function():\n global x\n x = 20\n inner_function()\n print(x)\n\nx = 5\nouter_function()\nprint(x)```",
+    "options": ["10 5", "10 20", "20 5", "10 10"],
+    "correct_answer": "10 20",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug in the following code, which aims to calculate the sum of squares:\n```python\ndef sum_of_squares(numbers):\n total = 0\n for number in numbers:\n total = number ** 2\n return total```",
+    "options": ["The code doesn't handle negative numbers.", "The code only returns the square of the last number.", "The code uses the wrong operator for squaring.", "The code doesn't initialize `total` correctly."],
+    "correct_answer": "The code only returns the square of the last number.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "easy"
+  },
+    {
+    "question": "What's wrong with the following implementation of a binary search?\n```python\ndef binary_search(arr, target):\n left, right = 0, len(arr)\n while left < right:\n mid = (left + right) // 2\n if arr[mid] == target:\n return mid\n elif arr[mid] < target:\n left = mid\n else:\n right = mid\n return -1```",
+    "options": ["The code misses edge cases for empty arrays.", "The code doesn't handle duplicate values correctly.", "The code has an integer overflow issue.", "The `left` and `right` pointers are not updated correctly when the target is not found."],
+    "correct_answer": "The `left` and `right` pointers are not updated correctly when the target is not found.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which potential error exists in the following code, where `process_data` is assumed to perform some I/O operation?\n```python\nimport time\n\ndef process_items(items):\n for item in items:\n process_data(item)\n time.sleep(0.1)\n\nprocess_items(['data1', 'data2', 'data3'])```",
+    "options": ["The code is inefficient due to unnecessary looping.", "The `time.sleep` call is redundant.", "The code processes items sequentially and doesn't utilize parallelism for I/O bound operations.", "The code is prone to memory leaks due to large data items."],
+    "correct_answer": "The code processes items sequentially and doesn't utilize parallelism for I/O bound operations.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will be the output of the following code?\n```python\ndef foo(x):\n x = x + 1\n return x\n\nx = 5\nfoo(x)\nprint(x)```",
+    "options": ["5", "6", "Error", "None"],
+    "correct_answer": "5",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's the issue with this try-except block?\n```python\ntry:\n x = 1 / 0\nexcept Exception:\n pass```",
+    "options": ["It will not catch the ZeroDivisionError.", "It's generally bad practice to catch all exceptions.", "It's missing a finally block.", "It will cause the program to crash."],
+    "correct_answer": "It's generally bad practice to catch all exceptions.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What could be wrong with this attempt to create a thread-safe counter?\n```python\nimport threading\n\nclass Counter:\n def __init__(self):\n self.value = 0\n\n def increment(self):\n self.value += 1```",
+    "options": ["It doesn't need a class.", "It will always give the correct count.", "Multiple threads can still increment `self.value` simultaneously causing a race condition.", "It needs a `__str__` method."],
+    "correct_answer": "Multiple threads can still increment `self.value` simultaneously causing a race condition.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Why is this code for finding the maximum element inefficient?\n```python\ndef find_max(data):\n for i in range(len(data)):\n is_max = True\n for j in range(len(data)):\n if data[j] > data[i]:\n is_max = False\n break\n if is_max:\n return data[i]```",
+    "options": ["It doesn't handle negative numbers.", "It has O(n^2) time complexity.", "It modifies the input data.", "It uses too much memory."],
+    "correct_answer": "It has O(n^2) time complexity.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's wrong with the following attempt to implement a caching decorator?\n```python\ndef cache(func):\n cached_results = {}\n def wrapper(*args):\n if args in cached_results:\n return cached_results[args]\n else:\n result = func(*args)\n cached_results[args] = result\n return result\n return wrapper```",
+    "options": ["It won't work with keyword arguments.", "It will cause infinite recursion.", "It will not cache anything.", "It requires the decorated function to have a specific signature."],
+    "correct_answer": "It won't work with keyword arguments.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the primary vulnerability in the following code snippet. Assume `user_input` is retrieved directly from a web request.\n```python\nimport subprocess\n\ncommand = 'ls -l ' + user_input\nsubprocess.call(command, shell=True)```",
+    "options": ["Buffer overflow.", "Cross-site scripting (XSS).", "SQL injection.", "Command injection."],
+    "correct_answer": "Command injection.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the problem with the following code which intends to read and print a file?\n```python\nfilename = 'my_file.txt'\nfile = open(filename)\ncontent = file.read()\nprint(content)```",
+    "options": ["The file is opened but not closed.", "The code lacks error handling if the file doesn't exist.", "The file is opened in the wrong mode.", "Both A and B."],
+    "correct_answer": "Both A and B.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this code with a shared resource:\n```python\nimport threading\n\nshared_data = 0\nlock = threading.Lock()\n\ndef modify_data():\n global shared_data\n for _ in range(100000):\n with lock:\n shared_data += 1\n shared_data -= 1```\nWhy might `shared_data` not be zero after multiple threads run `modify_data`?",
+    "options": ["The lock is not re-entrant.", "Integer overflow occurs.", "The `with lock:` block doesn't guarantee atomicity for compound operations like += and -=.", "The garbage collector is interfering."],
+    "correct_answer": "The `with lock:` block doesn't guarantee atomicity for compound operations like += and -=.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What potential issue exists with this logging configuration?\n```python\nimport logging\n\nlogging.basicConfig(level=logging.INFO, filename='app.log')\nlogger = logging.getLogger(__name__)\n\nlogger.info('This is an informational message.')```",
+    "options": ["The logging level is too low.", "The logger name is incorrect.", "Subsequent calls to `logging.basicConfig` will have no effect, potentially overriding configurations in other modules.", "The log file might not be created if the user doesn't have write permissions."],
+    "correct_answer": "Subsequent calls to `logging.basicConfig` will have no effect, potentially overriding configurations in other modules.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary reason this async function may not work as expected?\n```python\nimport asyncio\n\nasync def my_function():\n print('Starting...')\n\n asyncio.run(my_function())```",
+    "options": ["Missing `await` keyword to pause execution within the function.", "The function is not decorated properly.", "The function requires a specific event loop.", "The `asyncio.run` function is deprecated."],
+    "correct_answer": "Missing `await` keyword to pause execution within the function.",
+    "topic": "Debugging (Buggy Code MCQs)",
+    "difficulty": "medium"
+  }
+]
+```

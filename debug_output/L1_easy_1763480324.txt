@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "If all Bloops are Gloops, and some Gloops are Floops, which statement MUST be true?",
+    "options": ["Some Bloops are Floops", "Some Floops are Bloops", "Some Gloops are Bloops", "All Floops are Gloops"],
+    "correct_answer": "Some Gloops are Bloops",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What number comes next in the sequence: 2, 6, 12, 20, ?",
+    "options": ["28", "30", "24", "32"],
+    "correct_answer": "30",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a train travels at 100 mph for 30 minutes, how far does it travel?",
+    "options": ["50 miles", "30 miles", "100 miles", "150 miles"],
+    "correct_answer": "50 miles",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an anagram of 'LISTEN'?",
+    "options": ["SILENT", "SNILTE", "LITENS", "LINSTE"],
+    "correct_answer": "SILENT",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A farmer has 17 sheep. All but 9 die. How many does he have left?",
+    "options": ["0", "8", "9", "17"],
+    "correct_answer": "9",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Four people need to cross a bridge at night. They have one flashlight. Two people can cross at a time. The flashlight must be used for each crossing. Person A takes 1 minute, B takes 2 minutes, C takes 5 minutes, and D takes 8 minutes. What is the shortest time it takes for all of them to cross?",
+    "options": ["15 minutes", "22 minutes", "25 minutes", "14 minutes"],
+    "correct_answer": "15 minutes",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have 12 balls, and one is of a different weight (either heavier or lighter). You have a balance scale. What is the minimum number of weighings needed to find the different ball and determine if it's heavier or lighter?",
+    "options": ["2", "3", "4", "5"],
+    "correct_answer": "3",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at 6:00 AM, what time will it show when the actual time is 4:00 PM?",
+    "options": ["3:10 PM", "3:30 PM", "3:50 PM", "4:00 PM"],
+    "correct_answer": "3:30 PM",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "There are 100 lockers in a hallway, numbered 1 to 100. Initially, all lockers are closed. A person walks down the hallway and opens every locker. Then, another person walks down the hallway and closes every second locker. A third person changes the state (opens if closed, closes if open) of every third locker. This continues until the 100th person changes the state of the 100th locker. How many lockers are open at the end?",
+    "options": ["10", "100", "50", "8"],
+    "correct_answer": "10",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have two light bulbs in a room, and two switches outside the room. You can flip the switches as many times as you want. You need to determine which switch controls which light bulb. You can only enter the room once. How do you do it?",
+    "options": ["Turn one switch on for a while, then off, then the other on, and enter the room.", "Turn both switches on and enter the room.", "Turn one switch on, wait, then turn it off and enter the room.", "It's impossible to determine which switch controls which light bulb."],
+    "correct_answer": "Turn one switch on for a while, then off, then the other on, and enter the room.",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have three boxes. One contains only apples, one contains only oranges, and one contains both apples and oranges. The boxes have been incorrectly labeled such that no label identifies the actual contents of the box it describes. Opening just one box, and without looking in the box, you take out one piece of fruit. By looking at the fruit, how can you immediately label all of the boxes correctly?",
+    "options": ["Pick from the box labeled 'oranges'.", "Pick from the box labeled 'apples'.", "Pick from the box labeled 'apples and oranges'.", "It's impossible to correctly label the boxes."],
+    "correct_answer": "Pick from the box labeled 'apples and oranges'.",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A king has 1000 bottles of wine. One of the bottles has been poisoned. A single drop of poison will kill someone in exactly 30 days. The king has 10 prisoners he can use to test the wine. What is the minimum number of days it will take to determine which bottle of wine is poisoned?",
+    "options": ["300 days", "30 days", "3000 days", "Impossible to determine in a fixed number of days."],
+    "correct_answer": "30 days",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have two hourglasses, one that measures 7 minutes and another that measures 11 minutes. You need to measure exactly 15 minutes. How can you do it?",
+    "options": ["Start both hourglasses. When the 7-minute hourglass runs out, flip it. When the 11-minute hourglass runs out, flip it. When the 7-minute hourglass runs out the second time, 15 minutes will have passed.", "Start both hourglasses. When the 7-minute hourglass runs out, flip it and start measuring. When the 11-minute hourglass runs out, the 7-minute will have run for 4 minutes. Flip the 11 minute one and measure until the 7 minute one runs out (after 4 minutes). At this point flip the 7 minute one and measure for another 7 minutes, resulting in a total of 15 minutes (4 + 4 + 7).", "Start both hourglasses. When the 7-minute hourglass runs out, immediately flip it. When the 11-minute hourglass runs out, flip it immediately. When the 7-minute hourglass runs out the second time, flip it. When the 11-minute hourglass runs out the second time, flip the 7 minute once more. This results in 15 minutes.", "Start both hourglasses simultaneously. When the 7-minute hourglass runs out, flip it immediately. When the 11-minute hourglass runs out, flip it immediately. When the 7-minute hourglass runs out for the second time (after 14 minutes total), 1 minute remains in the 11-minute hourglass. Immediately flip the 7-minute hourglass and let the 11-minute hourglass run out. This will measure exactly 1 minute. Add it to the 14 minutes that already passed. Total time = 15"],
+    "correct_answer": "Start both hourglasses. When the 7-minute hourglass runs out, immediately flip it. When the 11-minute hourglass runs out, flip it immediately. When the 7-minute hourglass runs out for the second time (after 14 minutes total), 1 minute remains in the 11-minute hourglass. Immediately flip the 7-minute hourglass and let the 11-minute hourglass run out. This will measure exactly 1 minute. Add it to the 14 minutes that already passed. Total time = 15",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are in a room with three light switches. Outside the room, there are three light bulbs. You can manipulate the switches as much as you want, but you can only open the door once. How can you determine which switch controls which bulb?",
+    "options": ["Turn all the switches on, then open the door.", "Turn one switch on, wait, then turn it off and turn another on. Then open the door.", "Turn two switches on, wait, then turn one off and open the door.", "It's impossible to determine which switch controls which light bulb."],
+    "correct_answer": "Turn one switch on, wait, then turn it off and turn another on. Then open the door.",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A man is looking at a photograph. Someone asks him, \"Who are you looking at?\" He replies, \"Brothers and sisters, I have none, but that man's father is my father's son.\" Who is the man in the photograph?",
+    "options": ["His son", "His father", "His brother", "Himself"],
+    "correct_answer": "His son",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+    {
+    "question": "Arrange the following words so they make a sensible sentence. 'Always', 'Returns', 'Borrower', 'Lender', 'The'.",
+    "options": ["Lender Borrower Returns Always The", "The Borrower Always Returns Lender", "The Borrower Always Returns", "The Lender Always Returns Borrower"],
+    "correct_answer": "The Borrower Always Returns",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Continue the following sequence: January, March, May, July, ...?",
+    "options": ["August", "September", "December", "October"],
+    "correct_answer": "August",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the missing number: 4, 9, 16, 25, ?",
+    "options": ["36", "40", "30", "49"],
+    "correct_answer": "36",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+   {
+    "question": "Which direction is opposite of Northeast?",
+    "options": ["Southwest", "Northwest", "Southeast", "West"],
+    "correct_answer": "Southwest",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+    {
+    "question": "If 'apple' is coded as 'bqqdm', what is 'orange' coded as?",
+    "options": ["psbohf", "psbgoh", "qtfbohf", "qtfbgoh"],
+    "correct_answer": "psbohf",
+    "topic": "L1",
+    "difficulty": "medium"
+  }
+]
+```

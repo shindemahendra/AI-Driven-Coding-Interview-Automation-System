@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log File Analyzer",
+  "description": "You are a system administrator tasked with analyzing log files to identify potential errors.  You are given a log file represented as a string, where each line represents a log entry. Each log entry follows the format: `[TIMESTAMP] LEVEL: MESSAGE`. \n\nThe `TIMESTAMP` is in the format `YYYY-MM-DD HH:MM:SS`.\nThe `LEVEL` can be one of: `INFO`, `WARNING`, `ERROR`, `CRITICAL`.\nThe `MESSAGE` is a string containing the log event details.\n\nYour task is to write a function that parses the log file and returns the number of `ERROR` and `CRITICAL` log entries.",
+  "input_format": "A single string containing the entire log file content.  Log entries are separated by newline characters (`\\n`).",
+  "output_format": "An array of two integers: `[error_count, critical_count]`. The first element is the number of `ERROR` log entries, and the second element is the number of `CRITICAL` log entries.",
+  "constraints": "1 <= Length of log file <= 10,000\nEach log entry line will be no longer than 200 characters.\nTimestamps will always be in the specified format.\nLog levels will only be one of: `INFO`, `WARNING`, `ERROR`, `CRITICAL`.",
+  "sample_input": "[2023-10-26 10:00:00] INFO: System started\n[2023-10-26 10:05:00] WARNING: Low disk space\n[2023-10-26 10:10:00] ERROR: Failed to connect to database\n[2023-10-26 10:15:00] INFO: User logged in\n[2023-10-26 10:20:00] CRITICAL: System crash due to memory error\n[2023-10-26 10:25:00] ERROR: Invalid user input\n[2023-10-26 10:30:00] INFO: System shutdown",
+  "sample_output": "[2, 1]",
+  "difficulty": "easy"
+}
+```

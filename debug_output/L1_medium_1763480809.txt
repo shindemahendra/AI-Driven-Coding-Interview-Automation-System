@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "L1 - A farmer has chickens and cows. He counts 30 heads and 84 legs. How many cows does he have?",
+    "options": ["12", "18", "24", "6"],
+    "correct_answer": "12",
+    "topic": "Logical Puzzles",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L1 - What is the next number in the sequence: 2, 6, 12, 20, 30, ?",
+    "options": ["36", "40", "42", "44"],
+    "correct_answer": "42",
+    "topic": "Logical Puzzles",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L1 - If all Bloops are Floops, and some Floops are Gloops, then which of the following must be true?",
+    "options": ["All Bloops are Gloops", "Some Bloops are Gloops", "Some Gloops are Bloops", "Some Gloops are Floops"],
+    "correct_answer": "Some Gloops are Floops",
+    "topic": "Logical Puzzles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L1 - A train travels 200 miles at 50 mph and then 300 miles at 60 mph. What is the average speed of the train for the entire journey?",
+    "options": ["54 mph", "55 mph", "54.55 mph", "56 mph"],
+    "correct_answer": "54.55 mph",
+    "topic": "Logical Puzzles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L1 - Five friends (Alice, Bob, Carol, David, and Emily) are sitting around a circular table. Alice is sitting to the left of Bob. Carol is not sitting next to Bob. David is sitting next to Emily. Emily is not sitting next to Alice. Who is sitting to the right of Carol?",
+    "options": ["Alice", "Bob", "David", "Emily"],
+    "correct_answer": "David",
+    "topic": "Logical Puzzles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L1 - You have 12 balls, 11 of which are of identical weight, and one which is of different weight (either lighter or heavier). Using a balance scale, what is the minimum number of weighings required to determine the odd ball and whether it is heavier or lighter?",
+    "options": ["2", "3", "4", "5"],
+    "correct_answer": "3",
+    "topic": "Logical Puzzles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L2 - What is the output of `print([x**2 for x in range(5) if x % 2 == 0])`?",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[0, 1, 2, 3, 4]", "[0, 2, 4]"],
+    "correct_answer": "[0, 4, 16]",
+    "topic": "Syntax & Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L2 - What is the purpose of the `__init__` method in a Python class?",
+    "options": ["To define the class's methods", "To initialize the class attributes", "To destroy the class instance", "To inherit from another class"],
+    "correct_answer": "To initialize the class attributes",
+    "topic": "Syntax & Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L2 - What is the time complexity of accessing an element in a Python dictionary by its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "Syntax & Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L2 - What is the primary benefit of using a generator in Python?",
+    "options": ["Improved code readability", "Reduced memory consumption", "Faster execution speed", "Automatic error handling"],
+    "correct_answer": "Reduced memory consumption",
+    "topic": "Syntax & Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L2 - Which of the following statements about Python's Global Interpreter Lock (GIL) is true?",
+    "options": ["It allows true parallel execution of Python bytecode on multiple cores.", "It prevents race conditions in multithreaded Python programs.", "It allows only one thread to hold control of the Python interpreter at any one time.", "It improves the performance of CPU-bound multithreaded programs."],
+    "correct_answer": "It allows only one thread to hold control of the Python interpreter at any one time.",
+    "topic": "Syntax & Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L2 - What is the main difference between asyncio.gather and asyncio.wait in Python?",
+    "options": ["asyncio.gather returns results in a specified order, while asyncio.wait returns results as soon as they are available.", "asyncio.wait is more efficient for large numbers of tasks than asyncio.gather.", "asyncio.gather allows for cancellation of individual tasks, while asyncio.wait does not.", "asyncio.wait automatically handles exceptions, while asyncio.gather requires explicit exception handling."],
+    "correct_answer": "asyncio.gather returns results in a specified order, while asyncio.wait returns results as soon as they are available.",
+    "topic": "Syntax & Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L3 - Consider the following code snippet: `x = 5; def func(): x = 10; print(x); func(); print(x)` What is the output?",
+    "options": ["5\n5", "10\n10", "10\n5", "5\n10"],
+    "correct_answer": "10\n5",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L3 - Which of the following is most likely to cause an IndexError?",
+    "options": ["Trying to open a file that doesn't exist.", "Accessing a list element using a negative index.", "Accessing a dictionary key that doesn't exist.", "Accessing a list element using an index that is out of range."],
+    "correct_answer": "Accessing a list element using an index that is out of range.",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L3 - A function modifies a list passed as an argument. Unexpectedly, the list also changes outside the function. What is the most likely cause?",
+    "options": ["The list was passed by value.", "The list was passed by reference.", "The function contains a syntax error.", "The function uses a global variable."],
+    "correct_answer": "The list was passed by reference.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L3 - A program using multiple threads occasionally crashes. What is the most likely cause if no exceptions are explicitly raised?",
+    "options": ["Deadlock", "Syntax error", "Memory leak", "Incorrect file permissions"],
+    "correct_answer": "Deadlock",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "L3 - A Python program using asyncio and multiple coroutines occasionally produces incorrect results, even though individual coroutines appear to be correct in isolation. What is the most likely cause?",
+    "options": ["The GIL is not being released correctly", "There is a race condition due to shared mutable state", "The event loop is not properly configured", "The garbage collector is running too frequently"],
+    "correct_answer": "There is a race condition due to shared mutable state",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L3 - A large-scale Python application is experiencing unexplained memory leaks. You've ruled out circular references and inefficient data structures. What is the most likely next area to investigate?",
+    "options": ["Garbage collection settings", "File descriptor leaks", "C extension memory management", "Database connection pooling"],
+    "correct_answer": "C extension memory management",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "L5 - A junior team member asks you for help understanding a complex piece of code you wrote. What is the best approach to take?",
+    "options": ["Rewrite the code in a simpler way for them.", "Point them to the relevant documentation and tell them to figure it out themselves.", "Walk them through the code step-by-step, explaining the logic and design choices.", "Tell them it's too complex for them to understand and assign them a different task."],
+    "correct_answer": "Walk them through the code step-by-step, explaining the logic and design choices.",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "L5 - You disagree with a proposed solution during a team meeting. What is the most effective way to express your disagreement?",
+    "options": ["State your disagreement directly and forcefully.", "Remain silent to avoid conflict.", "Present your alternative solution with clear reasoning and data.", "Support the proposed solution regardless of your concerns."],
+    "correct_answer": "Present your alternative solution with clear reasoning and data.",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  }
+]
+```

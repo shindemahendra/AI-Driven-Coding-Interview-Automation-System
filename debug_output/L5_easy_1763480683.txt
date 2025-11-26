@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A junior developer reports being stuck on a task. What is the BEST initial course of action?",
+    "options": ["A. Immediately provide the solution.", "B. Ask them what they have tried so far.", "C. Escalate the issue to the team lead.", "D. Ignore the situation, hoping they will figure it out."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "During a team meeting, a colleague is constantly interrupting. What is the MOST professional way to handle this?",
+    "options": ["A. Interrupt them back to assert dominance.", "B. Publicly shame them for their behavior.", "C. Privately address the behavior with them after the meeting.", "D. Ignore the interruptions and continue speaking."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You disagree with a proposed technical solution. What should you do FIRST?",
+    "options": ["A. Immediately dismiss the solution as incorrect.", "B. Explain your reasoning and offer an alternative.", "C. Publicly criticize the person who proposed the solution.", "D. Remain silent to avoid conflict."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You receive conflicting information from two different stakeholders regarding project requirements. What is the BEST course of action?",
+    "options": ["A. Proceed with the information from the senior stakeholder.", "B. Ignore both and proceed based on your understanding.", "C. Facilitate a discussion between the stakeholders to clarify the requirements.", "D. Delay the project until the stakeholders resolve the conflict themselves."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are tasked with estimating the time required for a complex feature. Which approach is MOST effective?",
+    "options": ["A. Provide a single-point estimate based on your gut feeling.", "B. Consult with senior engineers, break down the feature into smaller tasks, and use historical data.", "C. Pad the estimate significantly to account for unforeseen issues.", "D. Provide the smallest possible estimate to appear efficient."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is consistently underperforming and negatively impacting team morale. What is the MOST appropriate initial step to address this?",
+    "options": ["A. Publicly criticize their performance during a team meeting.", "B. Document specific instances of underperformance and discuss them privately with the individual.", "C. Ignore the issue and hope it resolves itself over time.", "D. Request their immediate termination without providing feedback."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You realize that a major component of your assigned project is likely to be delayed due to unforeseen technical challenges. What is the MOST proactive response?",
+    "options": ["A. Keep working on other parts of the project and address the delay later.", "B. Ignore the issue and hope that it resolves itself.", "C. Immediately inform your project manager, explain the issue, and propose alternative solutions or adjustments to the timeline.", "D. Blame another team for the delay."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a critical project, and a key engineer unexpectedly resigns. What's the MOST important immediate step?",
+    "options": ["A. Immediately hire a replacement, regardless of qualifications.", "B. Re-evaluate the project timeline and resource allocation, communicate changes transparently, and redistribute tasks based on skills.", "C. Ignore the resignation and hope the engineer changes their mind.", "D. Cancel the project due to lack of resources."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A product launch fails due to a critical bug that was missed during testing. As the engineering lead, how do you respond to stakeholders and the development team?",
+    "options": ["A. Blame the QA team for not catching the bug.", "B. Take responsibility for the failure, initiate a root cause analysis, and implement process improvements to prevent future occurrences.", "C. Minimize the impact of the failure and avoid discussing it.", "D. Publicly apologize for the team's incompetence."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is divided on the architectural approach for a new system. Some favor a microservices architecture, while others prefer a monolith. How do you facilitate the decision-making process?",
+    "options": ["A. Impose your preferred architecture on the team.", "B. Allow the team to continue arguing until a consensus emerges naturally.", "C. Facilitate a structured discussion comparing the pros and cons of each approach, considering factors like scalability, maintainability, and deployment complexity, and then guide the team towards a data-driven decision.", "D. Flip a coin to decide the architecture."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+    {
+    "question": "You observe a colleague engaging in unethical behavior. What is the MOST appropriate action?",
+    "options": ["A. Ignore the situation to avoid conflict.", "B. Confront the colleague publicly.", "C. Report the behavior to the appropriate channels within the organization (e.g., HR, ethics hotline).", "D. Participate in the unethical behavior to fit in."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a code review, you identify a potential security vulnerability in a colleague's code. What is the BEST approach?",
+    "options": ["A. Approve the code without comment to avoid embarrassing the colleague.", "B. Publicly ridicule the colleague for the vulnerability.", "C. Privately explain the vulnerability to the colleague, suggest solutions, and collaborate on fixing the issue.", "D. Report the vulnerability to management without informing the colleague."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is consistently missing deadlines. What is the FIRST step you should take to address this?",
+    "options": ["A. Blame the individual team members for their lack of productivity.", "B. Implement stricter tracking and monitoring of individual performance.", "C. Analyze the root causes of the missed deadlines (e.g., unclear requirements, unrealistic estimates, insufficient resources).", "D. Ignore the issue and hope that the deadlines will be met eventually."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are in a meeting with a difficult client who is expressing unreasonable demands. How do you BEST handle the situation?",
+    "options": ["A. Agree to all of their demands to avoid further conflict.", "B. Become defensive and argue with the client.", "C. Remain calm, actively listen to their concerns, and explain the limitations of the project.", "D. Terminate the meeting immediately."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A critical system is down, and multiple teams are affected. As a senior engineer, how do you MOST effectively contribute to the resolution?",
+    "options": ["A. Focus solely on your own tasks and ignore the outage.", "B. Immediately start blaming other teams for the failure.", "C. Assist in troubleshooting, communicate updates to stakeholders, and collaborate with other teams to restore service as quickly as possible.", "D. Hide and avoid responsibility."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are leading a team that is transitioning to a new technology. Some team members are resistant to the change. How do you BEST manage this resistance?",
+    "options": ["A. Force everyone to use the new technology immediately without providing training or support.", "B. Ignore the resistance and hope that it will go away on its own.", "C. Acknowledge the concerns, provide training and support, and highlight the benefits of the new technology.", "D. Replace the resistant team members with new hires who are already familiar with the technology."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your manager asks you to complete a task that you believe is unethical. What is the BEST course of action?",
+    "options": ["A. Complete the task without question to avoid conflict.", "B. Refuse to complete the task and resign immediately.", "C. Explain your ethical concerns to your manager and explore alternative solutions.", "D. Publicly expose your manager's unethical request."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are asked to provide feedback to a colleague on their presentation skills. What is the MOST effective approach?",
+    "options": ["A. Focus solely on the negative aspects of their presentation.", "B. Avoid providing any feedback to avoid hurting their feelings.", "C. Provide specific and constructive feedback, focusing on both their strengths and areas for improvement.", "D. Compare their presentation skills to those of other colleagues."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How should you handle a situation where a colleague takes credit for your work in a meeting?",
+    "options": ["A. Ignore it to avoid conflict.", "B. Publicly confront the colleague and accuse them of plagiarism.", "C. Privately discuss the situation with the colleague, explaining the impact of their actions, and politely but firmly asserting your contribution.", "D. Report the colleague to HR without further communication."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are in charge of making the decision on which framework to use for a project, and the team is divided on React vs. Angular. What is the MOST effective way to approach the decision?",
+    "options": ["A. Choose the framework that you, as the lead, prefer.", "B. Choose the framework favored by the loudest team member.", "C. Research and compare both frameworks based on the project's specific needs, considering factors such as team experience, performance requirements, and long-term maintainability, and make an informed decision with team input.", "D. Flip a coin to determine the framework."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  }
+]
+```

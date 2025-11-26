@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Scheduling with Dependencies and Deadlines",
+  "description": "You are given a set of tasks to schedule on a single processor. Each task has a duration, a deadline, and a list of dependencies.  A task can only be started if all its dependencies have been completed. Completing a task after its deadline incurs a penalty. The goal is to find a schedule that minimizes the total penalty for all late tasks.\n\nSpecifically, you are given:\n\n*   `tasks`: A list of tasks, where each task `i` is represented as a tuple `(duration_i, deadline_i, dependencies_i)`. `duration_i` is the time required to complete the task. `deadline_i` is the time by which the task should be completed. `dependencies_i` is a list of task indices that must be completed before task `i` can start (indices are 0-based).\n\nEach task that finishes after its deadline incurs a penalty equal to the amount of time it is late. If a task finishes on or before its deadline, there is no penalty for that task. The total penalty is the sum of the penalties for all tasks. Find the minimal total penalty attainable through a valid scheduling of all tasks.\n\nIt's guaranteed that the dependency graph is a Directed Acyclic Graph (DAG).",
+  "input_format": "The input consists of:\n\n*   An integer `n`, the number of tasks.\n*   A list of `n` lines, where each line represents a task.  Each task is described by three space-separated values: an integer `duration`, an integer `deadline`, and a space-separated list of integers representing the indices of its dependencies.  The list of dependencies can be empty.",
+  "output_format": "An integer representing the minimum total penalty attainable.",
+  "constraints": "*   1 <= n <= 20\n*   1 <= duration_i <= 100\n*   1 <= deadline_i <= 1000\n*   0 <= len(dependencies_i) < n\n*   0 <= dependency_index < n\n*   The dependency graph is a DAG.",
+  "sample_input": "3\n5 10 0\n3 8 0\n6 12 1 0",
+  "sample_output": "1",
+  "difficulty": "hard"
+}
+```

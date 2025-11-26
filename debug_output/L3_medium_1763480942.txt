@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Consider the following code snippet: `def process_data(data):\n  result = []\n  for i in range(len(data)):\n    result.append(data.pop(0))\n  return result`\nIf `data = [1, 2, 3, 4]`, what will be the value of `data` after calling `process_data(data)`?",
+    "options": ["[]", "[1, 2, 3, 4]", "[4, 3, 2, 1]", "None"],
+    "correct_answer": "[]",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following code: `def modify_list(lst):\n    for x in lst:\n        x = x * 2\n    return lst`\nWhat is the output of `lst = [1, 2, 3]; modify_list(lst); print(lst)`?",
+    "options": ["[1, 2, 3]", "[2, 4, 6]", "[1, 2, 3, 2, 4, 6]", "None"],
+    "correct_answer": "[1, 2, 3]",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the code: `def add_to_dict(d, key, value):\n    if key not in d:\n        d[key] = []\n    d[key].append(value)`\nIf `my_dict = {'a': [1, 2]}`; `add_to_dict(my_dict, 'b', 3)`; `add_to_dict(my_dict, 'a', 4)`; what is `my_dict`?",
+    "options": ["{'a': [4], 'b': [3]}", "{'a': [1, 2], 'b': [3]}", "{'a': [1, 2, 4], 'b': [3]}", "{'a': [4, 1, 2], 'b': [3]}"],
+    "correct_answer": "{'a': [1, 2, 4], 'b': [3]}",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is wrong with this code snippet: `def calculate_average(numbers):\n sum = 0\n for number in numbers:\n  sum += number\n return sum / len(numbers)` if `numbers` is empty?",
+    "options": ["The code will raise a TypeError.", "The code will raise a ZeroDivisionError.", "The code will return 0.", "The code will return None."],
+    "correct_answer": "The code will raise a ZeroDivisionError.",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this code: `def print_values(data):\n  for i in range(len(data)):\n   print(data[i])\n data = [1, 2, 3]\n print_values(data)`\nWhat is the output?",
+    "options": ["No output due to an error.", "1\\n2\\n3", "[]", "[1, 2, 3]"],
+    "correct_answer": "1\\n2\\n3",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The following code intends to sum even numbers in a list: `def sum_even(numbers):\n    total = 0\n    for n in numbers:\n        if n % 2 == 1:\n            total += n\n    return total`\nWhat is the bug?",
+    "options": ["The modulo operator is incorrect.", "The wrong condition is used.", "The initialization of 'total' is incorrect.", "The loop iteration is incorrect."],
+    "correct_answer": "The wrong condition is used.",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this code: `def modify_string(s):\n    s = s + ' world'\n    return s\nmy_string = 'hello'\nmodify_string(my_string)\nprint(my_string)`\nWhat is printed?",
+    "options": ["'hello world'", "'hello'", "None", "Error"],
+    "correct_answer": "'hello'",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's the issue with this code: `def factorial(n):\n if n == 0:\n  return 1\n else:\n  return n * factorial(n)`",
+    "options": ["It will result in a stack overflow error.", "It will return incorrect result for n > 1.", "It will return 1 for all values.", "It has no issues."],
+    "correct_answer": "It will result in a stack overflow error.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The following function intends to remove duplicate elements from a list: `def remove_duplicates(lst):\n    new_lst = lst\n    for item in lst:\n        if lst.count(item) > 1:\n            lst.remove(item)\n    return new_lst`\nWhat potential bug exists?",
+    "options": ["The function does not return a new list.", "The function modifies the list being iterated over.", "The function only removes adjacent duplicates.", "The function does not handle empty lists correctly."],
+    "correct_answer": "The function modifies the list being iterated over.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this multi-threaded python snippet:\n```python\nimport threading\n\ncounter = 0\nlock = threading.Lock()\n\ndef increment():\n    global counter\n    with lock:\n        temp = counter\n        counter = temp + 1\n\nthreads = []\nfor _ in range(1000):\n    t = threading.Thread(target=increment)\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()\n\nprint(counter)\n```\nWhat is the most likely value printed for 'counter'?",
+    "options": ["1000", "A number consistently less than 1000", "A number consistently greater than 1000", "Unpredictable due to race conditions, but very close to 1000"],
+    "correct_answer": "1000",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given the code: `def process_items(items):\n  results = []\n  for item in items:\n    try:\n      result = int(item) * 2\n      results.append(result)\n    except:\n      pass\n  return results`\nIf `items = ['1', 'a', '2', 'b']`, what will `process_items(items)` return?",
+    "options": ["[2, 4]", "['2', 'a', '4', 'b']", "[2, 'a', 4, 'b']", "[2]"],
+    "correct_answer": "[2, 4]",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider the following code snippet: `def check_value(value, default=None):\n if not value:\n  value = default\n return value`\nIf we call `check_value('')`, what will be returned?",
+    "options": ["''", "None", "Error", "False"],
+    "correct_answer": "None",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The following code attempts to implement a stack with a fixed size: `class Stack:\n    def __init__(self, capacity):\n        self.capacity = capacity\n        self.items = []\n\n    def push(self, item):\n        self.items.append(item)\n\n    def pop(self):\n        return self.items.pop()`\nWhat's missing to ensure the stack respects the `capacity`?",
+    "options": ["A check for underflow in the `pop` method.", "A check for overflow in the `push` method.", "An explicit `size` attribute.", "A check for empty stack in `__init__`."],
+    "correct_answer": "A check for overflow in the `push` method.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the potential issue with the following code snippet: `def process_data(data):\n    for i in range(len(data)):\n        data[i] = i`\nIf `data` is a large NumPy array?",
+    "options": ["It will be very memory inefficient.", "It will modify the original array in-place.", "It won't work with NumPy arrays.", "It will create a new NumPy array."],
+    "correct_answer": "It will modify the original array in-place.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the code:\n```python\ndef calculate_sum(data):\n  total = 0\n  for item in data:\n    try:\n      total += int(item)\n    except ValueError:\n      continue\n  return total\n```\nWhat potential vulnerability exists?",
+    "options": ["SQL injection", "Cross-site scripting (XSS)", "Denial of Service (DoS)", "Integer overflow"],
+    "correct_answer": "Denial of Service (DoS)",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given the code snippet:\n```python\ndef lazy_range(n):\n    i = 0\n    while i < n:\n        yield i\n        i += 1\n\nfor i in lazy_range(5):\n    print(i)\n```\nIf we introduce `import gc; gc.collect()` after line 4, what will the effect be?",
+    "options": ["The program will run faster.", "The program will consume less memory.", "There will be no noticeable effect.", "The garbage collector will prevent the loop from executing."],
+    "correct_answer": "There will be no noticeable effect.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider the code: `def process_list(lst):\n    result = []\n    for i in range(len(lst)):\n        result.append(lst.pop())\n    return result`\nIf `lst = [1, 2, 3, 4, 5]`, what is returned, and what is the side effect?",
+    "options": ["Returns [1, 2, 3, 4, 5], lst is unchanged", "Returns [5, 4, 3, 2, 1], lst is unchanged", "Returns [5, 4, 3, 2, 1], lst becomes []", "Returns [1, 2, 3, 4, 5], lst becomes []"],
+    "correct_answer": "Returns [5, 4, 3, 2, 1], lst becomes []",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following Python code using multiprocessing:\n```python\nimport multiprocessing\n\ndef worker(item):\n    return item * 2\n\nif __name__ == '__main__':\n    pool = multiprocessing.Pool(processes=4)\n    items = [1, 2, 3, 4, 5]\n    results = pool.map(worker, items)\n    pool.close()\n    pool.join()\n    print(results)\n```\nWhat happens if the `worker` function accesses a global variable that is modified by another process?",
+    "options": ["It will cause a deadlock.", "It will raise a NameError.", "The results will be inconsistent due to race conditions.", "The code will run without any issues, leveraging shared memory."],
+    "correct_answer": "The results will be inconsistent due to race conditions.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider the following code using a defaultdict:\n```python\nfrom collections import defaultdict\n\ndef process_data(data):\n    counts = defaultdict(int)\n    for item in data:\n        counts[item] += 1\n    return counts\n\ndata = [1, 2, 2, 3, 3, 3]\nresult = process_data(data)\n\n# Attempt to access a missing key\nmissing_value = result['missing']\nprint(missing_value)\n```\nWhat is the value of `missing_value` and how does defaultdict handle this?",
+    "options": ["KeyError is raised, as the key is missing.", "missing_value is set to None, defaultdict silently handles missing keys.", "missing_value is set to 0 because of the int defaultdict.", "RuntimeWarning is raised."],
+    "correct_answer": "missing_value is set to 0 because of the int defaultdict.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this scenario: You are debugging a Django application and notice that a cached query is not invalidating when the underlying data changes. What could be the potential cause?",
+    "options": ["The cache timeout is too long.", "The cache key is not specific enough.", "The signal handlers for invalidating the cache are not properly connected.", "All of the above."],
+    "correct_answer": "All of the above.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  }
+]
+```

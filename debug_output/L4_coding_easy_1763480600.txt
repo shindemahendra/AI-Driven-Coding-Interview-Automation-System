@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Password Strength Validator",
+  "description": "A security team needs a function to validate user-created passwords against a set of criteria. Your task is to implement a function that checks if a given password meets the following requirements:\n\n1.  The password must be at least 8 characters long.\n2.  The password must contain at least one uppercase letter (A-Z).\n3.  The password must contain at least one lowercase letter (a-z).\n4.  The password must contain at least one digit (0-9).\n5.  The password must contain at least one special character (e.g., !, @, #, $, %, ^, &, *).\n\nYour function should return `true` if the password is valid according to these criteria, and `false` otherwise.",
+  "input_format": "A string representing the password to validate.",
+  "output_format": "A boolean value: `true` if the password is valid, `false` otherwise.",
+  "constraints": "The password string can contain any ASCII character.\nThe password string length will not exceed 100 characters.",
+  "sample_input": "P@sswOrd123",
+  "sample_output": "true",
+  "difficulty": "easy"
+}
+```

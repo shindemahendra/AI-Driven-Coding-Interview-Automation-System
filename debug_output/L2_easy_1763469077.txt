@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "question": "What is 2 + 2?",
+    "options": ["3", "4", "5", "6"],
+    "correct_answer": "B",
+    "topic": "Addition",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What color is the sky on a sunny day?",
+    "options": ["Green", "Red", "Blue", "Yellow"],
+    "correct_answer": "C",
+    "topic": "Colors",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which animal says 'Meow'?",
+    "options": ["Dog", "Cow", "Cat", "Pig"],
+    "correct_answer": "C",
+    "topic": "Animals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What shape is a ball?",
+    "options": ["Square", "Triangle", "Cube", "Circle"],
+    "correct_answer": "D",
+    "topic": "Shapes",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many fingers do you have on one hand?",
+    "options": ["Four", "Five", "Six", "Seven"],
+    "correct_answer": "B",
+    "topic": "Body Parts",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which fruit is yellow and long?",
+    "options": ["Apple", "Banana", "Orange", "Grapes"],
+    "correct_answer": "B",
+    "topic": "Fruits",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do you use to write?",
+    "options": ["Fork", "Spoon", "Pencil", "Knife"],
+    "correct_answer": "C",
+    "topic": "Tools",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the opposite of hot?",
+    "options": ["Big", "Cold", "Fast", "Happy"],
+    "correct_answer": "B",
+    "topic": "Opposites",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which vehicle travels on rails?",
+    "options": ["Car", "Bus", "Train", "Truck"],
+    "correct_answer": "C",
+    "topic": "Transportation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do bees make?",
+    "options": ["Milk", "Eggs", "Honey", "Wool"],
+    "correct_answer": "C",
+    "topic": "Insects",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which season comes after summer?",
+    "options": ["Winter", "Spring", "Autumn", "Rainy"],
+    "correct_answer": "C",
+    "topic": "Seasons",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is one more than 5?",
+    "options": ["3", "4", "6", "7"],
+    "correct_answer": "C",
+    "topic": "Counting",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is a common pet?",
+    "options": ["Lion", "Tiger", "Elephant", "Dog"],
+    "correct_answer": "D",
+    "topic": "Animals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do we use to tell the time?",
+    "options": ["Calendar", "Ruler", "Clock", "Scale"],
+    "correct_answer": "C",
+    "topic": "Time",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do you wear on your feet?",
+    "options": ["Hat", "Shirt", "Shoes", "Gloves"],
+    "correct_answer": "C",
+    "topic": "Clothing",
+    "difficulty": "easy"
+  }
+]
+```

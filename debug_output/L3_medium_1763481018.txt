@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Given the code snippet `def modify_list(lst):\n for i in range(len(lst)):\n lst[i] *= 2\n return lst\n\nmy_list = [1, 2, 3]\nnew_list = modify_list(my_list)\nprint(my_list, new_list)`. What is the output?",
+    "options": ["[1, 2, 3] [1, 2, 3]", "[1, 2, 3] [2, 4, 6]", "[2, 4, 6] [2, 4, 6]", "[2, 4, 6] [1, 2, 3]"],
+    "correct_answer": "C",
+    "topic": "Mutation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code:\n`def process_data(data):\n result = 0\n for i in range(len(data)):\n if data[i] > 5:\n result += data[i]\n elif i > 2:\n result += 1\n return result\n\ndata = [1, 2, 6, 3, 8]\nprint(process_data(data))`.\nWhat is the output?",
+    "options": ["15", "16", "14", "17"],
+    "correct_answer": "B",
+    "topic": "Off-by-one error",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's wrong with the following code that aims to calculate the average of a list of numbers?:\n`def average(numbers):\n total = 0\n for number in numbers:\n total += number\n return total / len(numbers) - 1`",
+    "options": ["Missing error handling for empty list", "Incorrect calculation of the total", "Subtracting 1 from the result is incorrect", "The code is correct"],
+    "correct_answer": "C",
+    "topic": "Logical error",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Given the code:\n`def modify_dict(data):\n for key, value in data.items():\n if value > 5:\n data[key] = value * 2\n return data\n\nmy_dict = {'a': 3, 'b': 7, 'c': 2}\nnew_dict = modify_dict(my_dict)\nprint(my_dict, new_dict)`\nWhat is the likely output?",
+    "options": ["{'a': 3, 'b': 7, 'c': 2} {'a': 3, 'b': 7, 'c': 2}", "{'a': 3, 'b': 14, 'c': 2} {'a': 3, 'b': 14, 'c': 2}", "{'a': 3, 'b': 7, 'c': 2} {'a': 3, 'b': 14, 'c': 2}", "Error during execution"],
+    "correct_answer": "B",
+    "topic": "Dictionary Mutation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the issue with the following code?\n`def find_index(my_list, target):\n for i in range(len(my_list) + 1):\n if my_list[i] == target:\n return i\n return -1`",
+    "options": ["The loop iterates one element too far.", "The return -1 is unreachable.", "The function only works for lists of integers.", "The function will always return -1."],
+    "correct_answer": "A",
+    "topic": "IndexError, Off-by-one",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this code:\n`def process_data(data):\n results = []\n for x in data:\n if x % 2 == 0:\n results.append(x)\n else:\n results.append(x*x)\n results.sort()\n return results\n\ndata = [3, 1, 4, 2]\nprint(process_data(data))` What is the likely issue?",
+    "options": ["Incorrect sorting algorithm used", "Unexpected behavior due to modifying a list while iterating", "The code will raise a TypeError", "The code produces the correct output."],
+    "correct_answer": "B",
+    "topic": "List Modification during Iteration",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Code Snippet:\n`def foo(x):\n results = []\n for i in range(x):\n if i % 3 == 0:\n results.append(i)\n return results\n\nx = 10\nprint(foo(x))`\nWhat is the complexity of this function?",
+    "options": ["O(1)", "O(x)", "O(n)", "O(log x)"],
+    "correct_answer": "B",
+    "topic": "Complexity analysis",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's wrong with this code meant to remove duplicate items from a list while preserving order?\n`def remove_duplicates(data):\n seen = set()\n result = []\n for item in data:\n if item not in result:\n seen.add(item)\n result.append(item)\n return result`",
+    "options": ["It modifies the list in-place.", "It doesn't handle different data types.", "It checks 'if item not in result' inefficiently.", "It doesn't preserve the original order."],
+    "correct_answer": "C",
+    "topic": "Inefficient Set Usage",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given:\n`def process_data(data):\n result = 0\n for item in data:\n try:\n result += int(item)\n except ValueError:\n pass\n return result\n\ndata = ['1', '2', 'a', '4']\nprint(process_data(data))` What is the output?",
+    "options": ["7", "6", "3", "TypeError"],
+    "correct_answer": "A",
+    "topic": "Exception Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this code:\n`def update_dict(my_dict):\n my_dict['count'] += 1\n\nmy_dict = {'count': 0}\nupdate_dict(my_dict)\nprint(my_dict)`\nWhat is the value of `my_dict['count']`?",
+    "options": ["0", "1", "None", "Error"],
+    "correct_answer": "B",
+    "topic": "Dictionary Updates",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's the potential issue in this snippet (intended to find the maximum element in a list):\n`def find_max(data):\n max_val = 0\n for x in data:\n if x > max_val:\n max_val = x\n return max_val`",
+    "options": ["It only works for positive numbers.", "It will raise an exception if the list is empty.", "It doesn't handle duplicate values correctly.", "It's unnecessarily complex."],
+    "correct_answer": "A",
+    "topic": "Edge Cases",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Analyze this code for potential issues:\n`def read_file(filename):\n with open(filename, 'r') as f:\n content = f.readline()\n return content`\nWhat is the major issue with this code?",
+    "options": ["It doesn't handle potential file not found errors.", "It reads the entire file into memory.", "It only reads the first line of the file.", "It doesn't close the file properly."],
+    "correct_answer": "C",
+    "topic": "File Handling",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Code: `def check_prime(n):\n for i in range(2, n):\n if n % i == 0:\n return False\n return True`.\nWhat is the time complexity issue in this function?",
+    "options": ["It has a linear time complexity when it should be constant.", "It can be optimized to check only up to the square root of n.", "It uses recursion unnecessarily.", "There is no significant time complexity issue."],
+    "correct_answer": "B",
+    "topic": "Time Complexity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the code:\n`def buggy_function(x, y):\n z = x + 10\n if y > 5:\n z = x * 2\n return z\nprint(buggy_function(2, 3))`\nWhat is the output?",
+    "options": ["4", "12", "24", "None"],
+    "correct_answer": "B",
+    "topic": "Logical Errors",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following describes a common bug in concurrent programming related to shared resources?",
+    "options": ["Stack Overflow", "Memory Leak", "Deadlock", "Syntax Error"],
+    "correct_answer": "C",
+    "topic": "Concurrency Bugs",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output of the following code snippet? `def foo():\n yield 1\n yield 2\n yield 3\n\nbar = foo()\nprint(next(bar))\nprint(next(bar))`",
+    "options": ["1\\n2", "1\\n1", "Error", "2\\n3"],
+    "correct_answer": "A",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider:\n`def modify_list(lst):\n for i in range(len(lst)):\n lst.insert(i, lst[i] * 2)\n return lst\n\nmylist = [1, 2, 3]\nprint(modify_list(mylist))`\nWhat is the main problem?",
+    "options": ["Infinite loop", "IndexError", "Incorrect output", "TypeError"],
+    "correct_answer": "A",
+    "topic": "List Mutation, Infinite Loop",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What's the most efficient way to check if a large number of strings are present in a given dataset?",
+    "options": ["Using a linear search through the dataset for each string.", "Using a binary search on a sorted dataset.", "Creating a hash set of the dataset and checking for presence in the set.", "Using recursion to search the dataset."],
+    "correct_answer": "C",
+    "topic": "Data Structure Choice",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a common vulnerability related to string formatting using user-supplied input?",
+    "options": ["Buffer Overflow", "SQL Injection", "Cross-Site Scripting (XSS)", "Format String Bug"],
+    "correct_answer": "D",
+    "topic": "Security Vulnerabilities",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Code: `def factorial(n):\n if n == 0:\n return 1\n else:\n return n * factorial(n - 1.0)` What's wrong with this recursive function?",
+    "options": ["It will cause a StackOverflowError.", "It will not terminate due to non-integer decrement.", "It returns the wrong result for negative numbers.", "It is missing a base case."],
+    "correct_answer": "B",
+    "topic": "Recursion, Type Errors",
+    "difficulty": "medium"
+  }
+]
+```

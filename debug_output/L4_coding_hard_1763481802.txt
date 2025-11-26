@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Scheduling with Dependencies and Time Windows",
+  "description": "You are managing a project with `n` tasks. Each task `i` has a duration `dur[i]` and a time window within which it must be completed: `start[i]` (earliest start time) and `end[i]` (latest finish time). Additionally, some tasks have dependencies. A task `i` depends on task `j` if task `j` must be completed before task `i` can start. The goal is to schedule the tasks such that all dependencies are met, all tasks are completed within their time windows, and the overall project completion time (the finish time of the last task) is minimized. If it's not possible to schedule all tasks, return -1. Assume only one processor is available (tasks cannot be executed in parallel).",
+  "input_format": "The input consists of the following:\n\n*   `n`: An integer representing the number of tasks.\n*   `dur`: An array of integers of length `n`, where `dur[i]` represents the duration of task `i`.\n*   `start`: An array of integers of length `n`, where `start[i]` represents the earliest start time of task `i`.\n*   `end`: An array of integers of length `n`, where `end[i]` represents the latest finish time of task `i`.\n*   `dependencies`: A list of lists, where `dependencies[i]` is a list of task indices that task `i` depends on.  (e.g., `dependencies[i] = [j, k]` means task `i` depends on tasks `j` and `k`).  Indices are 0-based.",
+  "output_format": "Return an integer representing the minimum possible project completion time. If it's not possible to schedule all tasks satisfying the constraints, return -1.",
+  "constraints": "*   1 <= n <= 20\n*   1 <= dur[i] <= 100\n*   0 <= start[i] <= 1000\n*   start[i] < end[i] <= 1100\n*   0 <= dependencies[i].length < n\n*   Task indices in `dependencies[i]` are valid (0 <= j < n, j != i).\n*   There are no cyclic dependencies (the graph is a DAG).",
+  "sample_input": "5\n[5, 3, 2, 4, 1]\n[0, 2, 5, 1, 7]\n[10, 8, 7, 6, 9]\n[[], [0], [1], [0, 1], [2]]",
+  "sample_output": "12",
+  "difficulty": "hard"
+}
+```

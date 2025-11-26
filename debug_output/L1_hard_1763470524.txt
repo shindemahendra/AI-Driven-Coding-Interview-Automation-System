@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "question": "A farmer has 17 sheep. All but nine died. How many sheep does the farmer have left?",
+    "options": ["17", "8", "9", "0"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which number logically follows: 2, 6, 12, 20, 30, ?",
+    "options": ["36", "40", "42", "44"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all Bloops are Razzies and some Razzies are Lazzies, then:",
+    "options": ["All Bloops are Lazzies", "Some Bloops are Lazzies", "Some Lazzies are Bloops", "No Bloops are Lazzies"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bag contains red and blue marbles. You know that if you pick two marbles randomly, the probability they are both red is 1/2. What is the smallest number of marbles that could be in the bag?",
+    "options": ["4", "5", "6", "8"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Four people need to cross a rickety bridge at night. They have one torch, and the bridge can only hold two people at a time. Person A takes 1 minute to cross, B takes 2 minutes, C takes 5 minutes, and D takes 8 minutes. When two people cross, they travel at the slower person's pace. What is the minimum time it takes for all four to cross?",
+    "options": ["15 minutes", "19 minutes", "22 minutes", "25 minutes"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have 12 balls, and one is a different weight (either heavier or lighter). You have a balance scale. What is the minimum number of weighings required to determine which ball is different and whether it is heavier or lighter?",
+    "options": ["2", "3", "4", "5"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will be printed by: `print([x**2 for x in range(5) if x%2 == 0])`?",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[1, 9]", "[0, 2, 4]"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `print(type([1,2]))`?",
+    "options": ["list", "<class 'list'>", "tuple", "<class 'tuple'>"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary using its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `yield` keyword in Python?",
+    "options": ["To define a class", "To define a function", "To return a value and terminate a function", "To create a generator"],
+    "correct_answer": "D",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is true regarding Python's Global Interpreter Lock (GIL)?",
+    "options": ["It allows true parallel execution of threads.", "It allows multiple threads to hold control of the Python interpreter at once.", "It prevents multiple native threads from executing Python bytecodes in parallel.", "It improves performance for CPU-bound tasks."],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What happens when you try to assign to a variable captured from an outer scope inside a nested function without declaring it as `nonlocal`?",
+    "options": ["It modifies the variable in the outer scope.", "It raises a NameError.", "It creates a new local variable with the same name.", "It raises a SyntaxError."],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is wrong with the following code? `for i in range(10): if i == 5: continue else: print(i)`",
+    "options": ["Syntax error", "Nothing", "Prints infinite loop", "Prints only 5"],
+    "correct_answer": "B",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the error in the following code snippet? `def func(a, b=[]): b.append(a); return b; print(func(1)); print(func(2))`",
+    "options": ["SyntaxError", "TypeError", "The second call returns [2]", "The second call returns [1, 2]"],
+    "correct_answer": "D",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following code snippet executed by two threads concurrently: `x = 0; def increment(): global x; temp = x; x = temp + 1`. What are the possible final values of `x`?",
+    "options": ["Always 2", "Always 1", "Either 1 or 2", "Either 0 or 1"],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "hard"
+  }
+]
+```

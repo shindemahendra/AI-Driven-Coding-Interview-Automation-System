@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A critical production bug is traced back to a recent deployment. The team is under pressure to fix it ASAP. What's the FIRST action you should take?",
+    "options": ["A. Immediately start debugging the code and implementing a fix.", "B. Alert your manager and wait for instructions.", "C. Initiate a rollback to the previous stable version.", "D. Blame the developer who committed the faulty code.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You estimated a task to take 8 hours, but after 6 hours, you realize it will take at least another 8. What is the BEST course of action?",
+    "options": ["A. Work extra hours without saying anything, hoping to finish it in time.", "B. Inform your manager immediately and explain the situation, including the revised estimate.", "C. Continue working and update the estimate just before the original deadline.", "D. Ask a colleague to help without informing your manager.",],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You disagree with a technical decision made by your team lead. How should you BEST express your concerns?",
+    "options": ["A. Publicly criticize the decision in front of the team to highlight its flaws.", "B. Privately discuss your concerns with the team lead, presenting your reasoning and alternative solutions.", "C. Ignore the decision and implement your own solution.", "D. Complain to other team members about the decision.",],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A colleague consistently misses deadlines, impacting the team's progress. What's the most appropriate initial response?",
+    "options": ["A. Complain to your manager about the colleague's performance.", "B. Offer to help the colleague and understand the reasons behind the missed deadlines.", "C. Ignore the issue, assuming the colleague will eventually improve.", "D. Publicly shame the colleague in a team meeting.",],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a code review, you find a significant security vulnerability in a colleague's code. What should you do FIRST?",
+    "options": ["A. Report the vulnerability directly to the security team without informing the colleague.", "B. Immediately fix the vulnerability yourself without notifying the colleague.", "C. Privately discuss the vulnerability with the colleague and collaborate on a solution.", "D. Ignore the vulnerability if it doesn't directly affect your work.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are assigned to a project with a technology you are unfamiliar with. What is the MOST effective way to approach this?",
+    "options": ["A. Decline the assignment because you lack experience.", "B. Start coding immediately, learning on the fly and hoping for the best.", "C. Proactively research the technology, seek guidance from colleagues, and allocate time for learning.", "D. Only focus on the parts of the project that you are already familiar with.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A project is falling behind schedule due to unforeseen complexities. How should the team BEST handle this situation?",
+    "options": ["A. Blame the project manager for poor planning.", "B. Work longer hours without communicating the issue.", "C. Re-evaluate the project scope, prioritize tasks, and communicate the updated timeline to stakeholders.", "D. Give up and accept that the project will fail.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+    {
+    "question": "A junior developer asks you for help with a problem they've been struggling with for hours. How do you respond?",
+    "options": ["A. Tell them to figure it out themselves; it's part of learning.", "B. Immediately give them the solution to save time.", "C. Guide them through the debugging process, helping them understand the problem and find the solution themselves.", "D. Ignore their request, as you are busy with your own tasks.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is using a new library that introduces unexpected performance issues. What's the BEST course of action?",
+    "options": ["A. Continue using the library, hoping the performance issues will resolve themselves.", "B. Immediately remove the library without analyzing the root cause of the performance issues.", "C. Investigate the performance issues, profile the code, and consider alternative libraries or solutions.", "D. Blame the library developers for the performance issues.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You notice a recurring pattern of errors in the codebase. How should you address this?",
+    "options": ["A. Ignore the errors if they don't directly impact your work.", "B. Fix the errors individually each time they occur.", "C. Identify the root cause of the pattern and implement a long-term solution or refactoring.", "D. Blame the developers who introduced the errors.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are in a meeting with stakeholders who have different opinions on the direction of a project. What's the BEST way to facilitate the discussion?",
+    "options": ["A. Dominate the conversation and push your own ideas.", "B. Remain silent and avoid getting involved in the conflict.", "C. Actively listen to all viewpoints, facilitate a structured discussion, and help the group reach a consensus.", "D. Interrupt and dismiss the opinions of stakeholders you disagree with.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is asked to deliver a feature in an unrealistically short timeframe. What's the BEST way to respond?",
+    "options": ["A. Agree to the timeframe without raising concerns.", "B. Publicly complain about the unrealistic deadline.", "C. Analyze the requirements, identify potential risks, and negotiate a more realistic timeline or reduced scope with stakeholders.", "D. Work extra hours and cut corners to meet the deadline.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a technical presentation, and a participant interrupts you with a confrontational question. How do you handle it?",
+    "options": ["A. Ignore the interruption and continue with your presentation.", "B. Respond defensively and dismiss the participant's question.", "C. Acknowledge the question, address it respectfully, and redirect the conversation back to the presentation.", "D. Publicly criticize the participant for interrupting.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A new team member is struggling to adapt to the team's coding standards. What's the BEST way to help them?",
+    "options": ["A. Ignore their code until they figure it out themselves.", "B. Publicly criticize their code in code reviews.", "C. Provide constructive feedback, offer mentoring, and explain the reasoning behind the coding standards.", "D. Report them to your manager for not following the standards.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You receive negative feedback on your performance. What's the MOST professional way to respond?",
+    "options": ["A. Become defensive and dismiss the feedback.", "B. Blame others for your shortcomings.", "C. Actively listen to the feedback, ask clarifying questions, and develop a plan for improvement.", "D. Ignore the feedback and continue as before.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You witness a colleague making a serious ethical lapse. What is your responsibility?",
+    "options": ["A. Ignore the situation to avoid getting involved.", "B. Gossip about the situation with other colleagues.", "C. Report the ethical lapse to the appropriate authorities or channels within the organization.", "D. Confront the colleague in public.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are assigned to a project with unclear requirements. What's the BEST approach?",
+    "options": ["A. Start coding immediately and hope for the best.", "B. Complain to your manager about the unclear requirements.", "C. Proactively seek clarification from stakeholders, document assumptions, and iterate on the requirements.", "D. Ignore the ambiguous parts and only focus on what you understand.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is consistently contributing high-quality code but is reluctant to participate in team meetings or share knowledge. How should you address this?",
+    "options": ["A. Ignore their lack of participation as long as they produce good code.", "B. Publicly pressure them to participate more.", "C. Privately encourage them to share their knowledge and explain the benefits of team collaboration.", "D. Report them to your manager for being uncooperative.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your company is undergoing a significant restructuring, leading to uncertainty and anxiety among employees. How can you BEST support your team during this time?",
+    "options": ["A. Avoid discussing the restructuring to prevent further anxiety.", "B. Spread rumors and speculation to keep everyone informed.", "C. Communicate openly and honestly, provide reassurance, and focus on maintaining team morale and productivity.", "D. Focus solely on your own work and ignore the concerns of your team members.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You receive a request from a different team for assistance with a task that is outside your area of expertise and you are already at capacity. What is the BEST way to respond?",
+    "options": ["A. Ignore the request hoping they will find someone else.", "B. Accept the request and hope you can figure it out.", "C. Politely decline the request, explain your current workload and lack of expertise, and suggest alternative resources or individuals.", "D. Blame your manager for overworking you.",],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  }
+]
+```

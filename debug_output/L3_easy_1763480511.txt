@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code snippet? `x = [1, 2, 3]; y = x; y[0] = 4; print(x)`",
+    "options": ["[1, 2, 3]", "[4, 2, 3]", "[1, 2, 4]", "[4, 2, 4]"],
+    "correct_answer": "[4, 2, 3]",
+    "topic": "Mutation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is wrong with this code snippet designed to remove duplicates? `def remove_duplicates(lst): for i in lst: if lst.count(i) > 1: lst.remove(i); return lst`",
+    "options": ["It does not remove duplicates.", "It modifies the list while iterating.", "It has a syntax error.", "It's inefficient but correct."],
+    "correct_answer": "It modifies the list while iterating.",
+    "topic": "Iteration Bug",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the likely cause of an 'IndexError: list index out of range' in a loop?",
+    "options": ["Incorrect variable type.", "Incorrect loop condition.", "Memory overflow.", "Syntax error in list creation."],
+    "correct_answer": "Incorrect loop condition.",
+    "topic": "IndexError",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these can lead to a 'TypeError: unsupported operand type(s)'?",
+    "options": ["Using incorrect indentation.", "Adding a string to an integer.", "Accessing a non-existent key in a dictionary.", "Dividing by zero."],
+    "correct_answer": "Adding a string to an integer.",
+    "topic": "TypeError",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the likely bug in this code: `def factorial(n): if n == 0: return 1; else: return n * factorial(n+1)`",
+    "options": ["Base case error.", "Infinite recursion.", "Incorrect multiplication.", "Syntax Error."],
+    "correct_answer": "Infinite recursion.",
+    "topic": "Recursion",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider the following code with a potential for a race condition: `counter = 0; def increment(): global counter; counter += 1; import threading; threads = [threading.Thread(target=increment) for _ in range(1000)]; [t.start() for t in threads]; [t.join() for t in threads]; print(counter)`. What's the most likely outcome?",
+    "options": ["The counter will always be 1000.", "The counter will be a value less than 1000.", "The program will crash.", "The counter will be a value greater than 1000."],
+    "correct_answer": "The counter will be a value less than 1000.",
+    "topic": "Race Condition",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is wrong with the following function that's intended to reverse a list in place? `def reverse_list(lst): for i in range(len(lst)): lst[i] = lst[len(lst) - 1 - i]; return lst`",
+    "options": ["It throws an IndexError.", "It only reverses the first half of the list and then undoes it.", "It creates a new list.", "It reverses the list correctly."],
+    "correct_answer": "It only reverses the first half of the list and then undoes it.",
+    "topic": "In-place Modification",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the potential issue with this generator: `def my_generator(): for i in range(5): yield i; yield from my_generator()`",
+    "options": ["It will raise a StopIteration exception immediately.", "It will produce an infinite sequence.", "It will only yield the first 5 numbers.", "It has a syntax error."],
+    "correct_answer": "It will produce an infinite sequence.",
+    "topic": "Generator Misuse",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What potential problem can arise from using mutable default arguments in a function definition?",
+    "options": ["The function will not execute.", "The default argument is only initialized once.", "The function will always return None.", "The function will raise a TypeError."],
+    "correct_answer": "The default argument is only initialized once.",
+    "topic": "Mutable Defaults",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The following code attempts to find the maximum value in a list, but fails. What is the likely error? `def find_max(data): max_val = 0; for x in data: if x > max_val: max_val = x; return max_val`",
+    "options": ["The list is empty.", "The list contains only negative numbers.", "The list contains strings.", "The list is not sorted."],
+    "correct_answer": "The list contains only negative numbers.",
+    "topic": "Initialization Error",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of this code: `x = 5; def func(): x = 10; print(x); func(); print(x)`",
+    "options": ["10, 5", "5, 10", "10, 10", "5, 5"],
+    "correct_answer": "10, 5",
+    "topic": "Scoping",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's a common problem when using list comprehensions with complex logic?",
+    "options": ["Increased readability.", "Reduced memory usage.", "Increased complexity and potential for bugs.", "Faster execution speed."],
+    "correct_answer": "Increased complexity and potential for bugs.",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given a file 'data.txt' doesn't exist, what error will this code raise? `with open('data.txt', 'r') as f: print(f.read())`",
+    "options": ["ValueError", "TypeError", "FileNotFoundError", "IOError"],
+    "correct_answer": "FileNotFoundError",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What's the most likely consequence of not releasing a lock in a multi-threaded environment?",
+    "options": ["Memory leak.", "Deadlock.", "Segmentation fault.", "Increased CPU usage."],
+    "correct_answer": "Deadlock.",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Why can shadowing variables lead to unexpected behavior?",
+    "options": ["It improves code readability.", "It prevents naming conflicts.", "It can obscure the value of a variable in a different scope.", "It always causes a syntax error."],
+    "correct_answer": "It can obscure the value of a variable in a different scope.",
+    "topic": "Shadowing",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the likely issue with the following code that aims to calculate the average of a list? `def average(numbers): total = 0; for number in numbers: total += 1; return total / len(numbers)`",
+    "options": ["It calculates the sum incorrectly.", "It divides by zero.", "It iterates incorrectly.", "It initializes the total incorrectly."],
+    "correct_answer": "It calculates the sum incorrectly.",
+    "topic": "Arithmetic Error",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this code: `def process_data(data): results = []; for item in data: result = expensive_calculation(item); results.append(result); return results`.  How can this be optimized for large datasets using generators?",
+    "options": ["Using list comprehensions.", "Using map() function.", "Using a generator expression to avoid storing all results in memory at once.", "Using recursion."],
+    "correct_answer": "Using a generator expression to avoid storing all results in memory at once.",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What happens if you try to modify a tuple after it's created?",
+    "options": ["It raises a TypeError.", "It modifies the tuple in place.", "It creates a new tuple.", "It raises a ValueError."],
+    "correct_answer": "It raises a TypeError.",
+    "topic": "Tuples",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the issue with this decorator? `@my_decorator def my_function(): pass` if `my_decorator` is defined as `def my_decorator(func): pass`",
+    "options": ["It will cause a RecursionError.", "It will not affect `my_function` at all.", "It will raise a TypeError because it needs to return a function.", "It will result in a SyntaxError."],
+    "correct_answer": "It will raise a TypeError because it needs to return a function.",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Why should you be cautious about using `eval()` in your code?",
+    "options": ["It's inefficient.", "It can lead to security vulnerabilities.", "It only works with simple expressions.", "It's deprecated in Python 3."],
+    "correct_answer": "It can lead to security vulnerabilities.",
+    "topic": "Security",
+    "difficulty": "medium"
+  }
+]
+```

@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Aggregation and Time-Based Filtering",
+  "description": "Your team is responsible for managing a high-volume logging system for a distributed application. Logs are received as unsorted streams of events, each with a timestamp and a log level (e.g., INFO, WARN, ERROR).  The application requires the ability to efficiently query and aggregate log entries within specific time windows and filtered by minimum log level.\n\nYou are given a list of log entries, where each entry is represented as a string in the format `\"timestamp,log_level,message\"`. The `timestamp` is an integer representing seconds since epoch. The `log_level` is one of `\"INFO\", \"WARN\", \"ERROR\"`. You are also given a query consisting of a start timestamp, an end timestamp, and a minimum log level. Your task is to return a list of log messages, sorted chronologically by timestamp, that fall within the specified time window (inclusive) and have a log level at or above the specified minimum level. The order of log levels is `INFO < WARN < ERROR`.\n\nFor example, if the minimum log level is `WARN`, you should return messages with log levels `WARN` and `ERROR`.\n",
+  "input_format": "The input consists of:\n\n1.  `logs`: A list of strings, where each string represents a log entry in the format `\"timestamp,log_level,message\"`.\n2.  `start_time`: An integer representing the start timestamp of the query.\n3.  `end_time`: An integer representing the end timestamp of the query.\n4.  `min_log_level`: A string representing the minimum log level for the query (one of `\"INFO\", \"WARN\", \"ERROR\"`).",
+  "output_format": "Return a list of strings, where each string is a log message that satisfies the query criteria, sorted chronologically by timestamp.",
+  "constraints": "\n*   1 <= `logs.length` <= 10000\n*   0 <= `timestamp` <= 10^9\n*   `start_time` <= `end_time` <= 10^9\n*   Log messages can contain any characters.\n",
+  "sample_input": "logs = [\"1678886400,INFO,Application started\", \"1678886405,WARN,Low disk space\", \"1678886410,ERROR,Database connection failed\", \"1678886415,INFO,User login successful\", \"1678886420,WARN,Service restart initiated\"]\nstart_time = 1678886403\nend_time = 1678886417\nmin_log_level = \"WARN\"",
+  "sample_output": "[\"Low disk space\", \"Database connection failed\"]",
+  "difficulty": "medium"
+}
+```

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code?\n\nnumbers = [1, 2, 3, 4]\nfor i in range(len(numbers)):\n  numbers[i] = numbers[i] * 2\nprint(numbers[4])",
+    "options": ["[2, 4, 6, 8]", "IndexError", "8", "None"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code snippet?\n\nx = 5\ndef change_x():\n  x = 10\nchange_x()\nprint(x)",
+    "options": ["5", "10", "Error", "None"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code snippet?\n\nmy_list = [1, 2, 3]\nmy_list.append(4)\nprint(my_list.pop(1))",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code?\n\ndef foo(a=[]):\n    a.append(1)\n    print(a)\n\nfoo()\nfoo()",
+    "options": ["[1]\n[1]", "[1]\n[1, 1]", "[1, 1]\n[1, 1]", "[1]\n[2]"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code. What's the issue?\n\ndef process_data(data):\n    results = []\n    for item in data:\n        result = some_complex_function(item)\n        results.append(result)\n    return results\n\ndata = [1, 2, 3, 4, 5]\nprocess_data(data) # some_complex_function is assumed to be defined.",
+    "options": ["Inefficient use of memory", "Missing error handling", "Potential for race conditions", "Lack of input validation"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the problem with this code?\n\nvalues = [1, 2, 3, 4, 5]\nfor i in range(len(values)):\n    del values[i]",
+    "options": ["IndexError will occur", "The list will be emptied correctly", "The list will remain unchanged", "The code will cause a TypeError"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this code, aiming for thread-safe counter increments:\n\nimport threading\ncounter = 0\nlock = threading.Lock()\n\ndef increment():\n    global counter\n    with lock:\n        counter += 1\n\nthreads = []\nfor _ in range(100):\n    t = threading.Thread(target=increment)\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()\n\nprint(counter)\n\nWhat could cause unexpected output?",
+    "options": ["The global keyword is missing", "Missing thread.join() calls", "The increment operation is not atomic", "Race condition during thread creation"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What potential race condition exists in this code?\n\nimport threading\n\nclass Resource:\n    def __init__(self):\n        self.value = 0\n\n    def update(self, delta):\n        self.value += delta\n\nresource = Resource()\n\ndef worker():\n    for _ in range(10000):\n        resource.update(1)\n\nthreads = []\nfor _ in range(2):\n    t = threading.Thread(target=worker)\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()\n\nprint(resource.value)",
+    "options": ["The Resource object is not thread-safe", "The global keyword is missing", "The worker function lacks a return value", "Incorrect use of threading.Thread"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given the following code snippet involving generators:\n\ndef my_generator():\n    i = 0\n    while True:\n        yield i\n        i += 1\n\ngen = my_generator()\nfor i in range(3):\n    print(next(gen))\n\nWhat potential issue might arise if the generator `gen` is used extensively in a multi-threaded environment?",
+    "options": ["The generator will exhaust its values", "The generator object is inherently thread-safe", "Race conditions might occur due to the generator's state being shared", "Memory leaks might occur due to the generator's persistent state"],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+    {
+    "question": "What is the likely output of this code snippet, considering Python's scoping rules?\n\nx = 10\n\ndef outer():\n    x = 5\n    def inner():\n        nonlocal x\n        x = 20\n    inner()\n    print(x)\n\nouter()\nprint(x)",
+    "options": ["5\n10", "20\n10", "20\n20", "5\n20"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+    {
+    "question": "What is the potential bug in the following code that attempts to remove duplicates from a list in-place?\n\ndef remove_duplicates(data):\n    for i in range(len(data)):\n        for j in range(i + 1, len(data)):\n            if data[i] == data[j]:\n                del data[j]\n    return data",
+    "options": ["The code correctly removes duplicates.", "The code will raise an IndexError.", "The code will not remove all duplicates.", "The code will modify the original list, leading to unexpected behavior."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's the problem with this code that attempts to sum the numbers in a list using recursion?\n\ndef recursive_sum(numbers):\n    if not numbers:\n        return 0\n    return numbers[0] + recursive_sum(numbers)",
+    "options": ["The base case is incorrect", "The function calls itself with the same list, leading to infinite recursion", "The function should use a `for` loop instead", "The list should be sorted before summing"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following code, what is the potential issue with using global variables inside a function?\n\nglobal_var = 10\n\ndef modify_global():\n    global_var += 5\n\nmodify_global()\nprint(global_var)",
+    "options": ["The code will raise a NameError", "The code is perfectly valid and has no issues.", "It makes debugging harder and can lead to unexpected side effects.", "Global variables are always the best practice."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider the following code with nested functions and closures. What is the potential memory leak?\n\ndef outer_function(data):\n    large_list = [i for i in range(1000000)]  # Simulate large memory usage\n    def inner_function():\n        print(data) #inner_function references `data` from outer_function scope \n        return large_list \n    return inner_function",
+    "options": ["No memory leak occurs.", "The `inner_function` doesn't release resources properly.", "The reference to `large_list` inside `inner_function` prevents it from being garbage collected if outer_function's return value is stored.", "The memory leak is caused by the `print` statement."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "In the code below, what could cause a subtle concurrency issue with the caching mechanism?\n\nimport threading\nimport time\n\ncache = {}\ncache_lock = threading.Lock()\n\ndef expensive_operation(key):\n    with cache_lock:\n        if key not in cache:\n            time.sleep(1)  # Simulate long operation\n            cache[key] = \"Result for \" + str(key)\n        return cache[key]\n\ndef worker(key):\n    print(expensive_operation(key))\n\nthreads = []\nfor i in range(3):\n    t = threading.Thread(target=worker, args=(i,))\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()",
+    "options": ["The cache_lock prevents all concurrency issues.", "The time.sleep() call causes deadlocks.", "Multiple threads might enter the `if key not in cache:` block simultaneously before the first one completes, leading to repeated expensive operations.", "The return cache[key] statement can cause a race condition."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider the following buggy code:\n\nnumbers = [1, 2, 3, 4, 5]\n\nfor i in range(len(numbers)):\n    if numbers[i] % 2 == 0:\n        numbers.remove(numbers[i])\n\nprint(numbers)",
+    "options": ["[1, 3, 5]", "[1, 2, 3, 4, 5]", "[1, 3]", "[1, 2, 3]"],
+    "correct_answer": "A",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What potential problem lies within the following code snippet?\n\nnumbers = [1, 2, 3, 4, 5]\n\nfor num in numbers:\n  numbers.append(num * 2)",
+    "options": ["IndexError", "ValueError", "MemoryError", "Infinite Loop"],
+    "correct_answer": "D",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following code, identify the scoping issue:\n\ndef outer():\n    x = 10\n    def inner():\n        x += 5\n        print(x)\n    inner()\n\nouter()",
+    "options": ["NameError: name 'x' is not defined", "UnboundLocalError: local variable 'x' referenced before assignment", "TypeError: unsupported operand type(s) for +=: 'int' and 'NoneType'", "The code will run without error and print 15"],
+    "correct_answer": "B",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What potential issue exists in the following code concerning Python generators?\n\ndef generate_numbers(n):\n    for i in range(n):\n        yield i\n\nmy_generator = generate_numbers(5)\n\nfor num in my_generator:\n    print(num)\n    if num > 2:\n        my_generator = generate_numbers(5)\n        break",
+    "options": ["The code will result in a TypeError.", "The generator will not yield any values.", "The code can lead to unexpected behavior because you are reassigning the generator mid-iteration.", "The code is completely valid and has no issues."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What potential concurrency issue could arise from the following attempt to implement a lock-free counter increment?\n\nimport threading\nimport atomic\n\ncounter = atomic.AtomicLong(0)\n\ndef increment():\n    for _ in range(10000):\n        counter.increment()\n\nthreads = []\nfor _ in range(2):\n    t = threading.Thread(target=increment)\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()\n\nprint(counter.value)",
+    "options": ["The `atomic` library guarantees correctness; no issues exist.", "The lock-free approach is always faster than using locks.", "While `atomic.AtomicLong` provides atomic operations, the increment function itself might still require careful consideration to ensure complete isolation and ordering depending on the specific usage and architecture.", "The code is thread-safe only on single-core systems."],
+    "correct_answer": "C",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  }
+]
+```

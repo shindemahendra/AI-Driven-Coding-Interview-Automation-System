@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Data Validation - Phone Number Format",
+  "description": "Your team is building a data pipeline that ingests contact information from various sources.  A common data quality issue is inconsistent phone number formatting. You need to write a function that validates if a phone number string conforms to a specific format and cleans it if possible.\n\nSpecifically, a valid phone number:\n\n1.  Must consist only of digits, spaces, parentheses, and hyphens.\n2.  After removing all non-digit characters, must have exactly 10 digits (representing a US phone number).\n3.  Must follow either of these general formats (where 'X' is a digit): 'XXX-XXX-XXXX', '(XXX) XXX-XXXX', 'XXXXXXXXXX', or 'XXX XXX XXXX'.\n\nIf a phone number is valid, return it in the format 'XXX-XXX-XXXX'. If it's invalid, return 'INVALID'.",
+  "input_format": "A string representing a phone number.",
+  "output_format": "A string representing the validated and formatted phone number, or 'INVALID' if the input is invalid.",
+  "constraints": "The input string will have a length between 1 and 50 characters (inclusive).\nThe input string may contain leading or trailing whitespace.",
+  "sample_input": "(123) 456-7890",
+  "sample_output": "123-456-7890",
+  "difficulty": "easy"
+}
+```

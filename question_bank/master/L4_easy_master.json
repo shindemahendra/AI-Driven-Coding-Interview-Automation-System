@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Sum of Two Numbers",
+        "description": "Given two integers, find their sum.",
+        "input_format": "Two space-separated integers, a and b.",
+        "output_format": "The sum of a and b.",
+        "constraints": "-1000 <= a, b <= 1000",
+        "sample_input": "5 3",
+        "sample_output": "8"
+    },
+    {
+        "title": "Reverse a String",
+        "description": "Reverse a given string.",
+        "input_format": "A string, s.",
+        "output_format": "The reversed string.",
+        "constraints": "1 <= length(s) <= 100",
+        "sample_input": "hello",
+        "sample_output": "olleh"
+    },
+    {
+        "title": "Factorial of a Number",
+        "description": "Calculate the factorial of a given non-negative integer.",
+        "input_format": "A non-negative integer, n.",
+        "output_format": "The factorial of n.",
+        "constraints": "0 <= n <= 12",
+        "sample_input": "5",
+        "sample_output": "120"
+    },
+    {
+        "title": "Check if Palindrome",
+        "description": "Determine if a given string is a palindrome (reads the same forwards and backward).",
+        "input_format": "A string, s.",
+        "output_format": "True if s is a palindrome, False otherwise.",
+        "constraints": "1 <= length(s) <= 100. String consists only of lowercase letters.",
+        "sample_input": "madam",
+        "sample_output": "True"
+    },
+    {
+        "title": "Find the Largest Element in an Array",
+        "description": "Find the largest element in a given array of integers.",
+        "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers.",
+        "output_format": "The largest element in the array.",
+        "constraints": "1 <= n <= 100\n-1000 <= each element <= 1000",
+        "sample_input": "5\n1 5 2 8 3",
+        "sample_output": "8"
+    },
+    {
+        "title": "Count Vowels",
+        "description": "Count the number of vowels (a, e, i, o, u) in a given string.",
+        "input_format": "A string, s.",
+        "output_format": "The number of vowels in s.",
+        "constraints": "1 <= length(s) <= 100. String consists only of lowercase letters.",
+        "sample_input": "hello",
+        "sample_output": "2"
+    },
+    {
+        "title": "Fibonacci Sequence",
+        "description": "Generate the nth Fibonacci number.",
+        "input_format": "A non-negative integer, n.",
+        "output_format": "The nth Fibonacci number.",
+        "constraints": "0 <= n <= 30",
+        "sample_input": "10",
+        "sample_output": "55"
+    },
+    {
+        "title": "Prime Number Check",
+        "description": "Determine if a given integer is a prime number.",
+        "input_format": "An integer, n.",
+        "output_format": "True if n is prime, False otherwise.",
+        "constraints": "2 <= n <= 100",
+        "sample_input": "7",
+        "sample_output": "True"
+    },
+    {
+        "title": "Calculate Average",
+        "description": "Calculate the average of a given array of integers.",
+        "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers.",
+        "output_format": "The average of the array elements, rounded to two decimal places.",
+        "constraints": "1 <= n <= 100\n-1000 <= each element <= 1000",
+        "sample_input": "3\n1 2 3",
+        "sample_output": "2.00"
+    },
+    {
+        "title": "Remove Duplicates from Array",
+        "description": "Remove duplicate elements from a sorted array of integers.",
+        "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers (sorted in ascending order).",
+        "output_format": "A single line containing the elements of the array after removing duplicates, separated by spaces.",
+        "constraints": "1 <= n <= 100\n-1000 <= each element <= 1000",
+        "sample_input": "5\n1 2 2 3 3",
+        "sample_output": "1 2 3"
+    },
+    {
+        "title": "Word Count",
+        "description": "Count the number of words in a given string.",
+        "input_format": "A string, s.",
+        "output_format": "The number of words in s.",
+        "constraints": "1 <= length(s) <= 1000. Words are separated by spaces.",
+        "sample_input": "This is a test string",
+        "sample_output": "5"
+    },
+    {
+        "title": "Reverse Words in a String",
+        "description": "Reverse the order of words in a given string.",
+        "input_format": "A string, s.",
+        "output_format": "The string with words reversed.",
+        "constraints": "1 <= length(s) <= 1000. Words are separated by spaces.",
+        "sample_input": "This is a test string",
+        "sample_output": "string test a is This"
+    },
+    {
+        "title": "Leap Year Check",
+        "description": "Determine if a given year is a leap year.",
+        "input_format": "An integer representing the year, y.",
+        "output_format": "True if y is a leap year, False otherwise.",
+        "constraints": "1 <= y <= 3000",
+        "sample_input": "2024",
+        "sample_output": "True"
+    },
+    {
+        "title": "Sum of Digits",
+        "description": "Calculate the sum of the digits of a given integer.",
+        "input_format": "An integer, n.",
+        "output_format": "The sum of the digits of n.",
+        "constraints": "0 <= n <= 100000",
+        "sample_input": "12345",
+        "sample_output": "15"
+    },
+    {
+        "title": "Find Missing Number",
+        "description": "Find the missing number in an array of consecutive integers from 1 to n.",
+        "input_format": "First line: The number of elements in the array, n-1.\nSecond line: n-1 space-separated integers.",
+        "output_format": "The missing number.",
+        "constraints": "2 <= n <= 100\nThe array contains distinct integers from 1 to n (inclusive) with one missing.",
+        "sample_input": "4\n1 2 4",
+        "sample_output": "3"
+    },
+    {
+        "title": "Second Largest Element",
+        "description": "Find the second largest element in an array of integers.",
+        "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers.",
+        "output_format": "The second largest element in the array.",
+        "constraints": "2 <= n <= 100\n-1000 <= each element <= 1000\nThe array contains at least two distinct elements.",
+        "sample_input": "5\n1 5 2 8 3",
+        "sample_output": "5"
+    },
+    {
+        "title": "Most Frequent Character",
+        "description": "Find the most frequent character in a given string.",
+        "input_format": "A string, s.",
+        "output_format": "The most frequent character in s.",
+        "constraints": "1 <= length(s) <= 100. String consists only of lowercase letters.",
+        "sample_input": "hello",
+        "sample_output": "l"
+    },
+    {
+        "title": "Anagram Check",
+        "description": "Determine if two given strings are anagrams of each other (contain the same characters with the same frequencies).",
+        "input_format": "First line: String s1.\nSecond line: String s2.",
+        "output_format": "True if s1 and s2 are anagrams, False otherwise.",
+        "constraints": "1 <= length(s1), length(s2) <= 100. Strings consist only of lowercase letters.",
+        "sample_input": "listen\nsilent",
+        "sample_output": "True"
+    },
+    {
+        "title": "Two Sum",
+        "description": "Given an array of integers and a target value, find two numbers in the array that add up to the target. Return the indices of the two numbers.",
+        "input_format": "First line: The number of elements in the array, n, and the target value, target, separated by a space.\nSecond line: n space-separated integers.",
+        "output_format": "Two space-separated integers representing the indices of the two numbers that add up to the target (0-indexed). If no such pair exists, return -1 -1.",
+        "constraints": "2 <= n <= 100\n-1000 <= each element <= 1000\n-2000 <= target <= 2000\nThere is exactly one solution.",
+        "sample_input": "4 9\n2 7 11 15",
+        "sample_output": "0 1"
+    },
+    {
+        "title": "Implement strStr()",
+        "description": "Implement strStr(). Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
+        "input_format": "First line: The haystack string.\nSecond line: The needle string.",
+        "output_format": "The index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
+        "constraints": "0 <= length(haystack), length(needle) <= 100",
+        "sample_input": "hello\nllo",
+        "sample_output": "2"
+    }
+]

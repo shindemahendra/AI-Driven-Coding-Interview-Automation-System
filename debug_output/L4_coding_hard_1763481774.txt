@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Load Balancing",
+  "description": "A distributed system consists of `n` worker nodes. Each node `i` has a processing capacity `capacity[i]` (number of tasks it can handle concurrently). We have `m` tasks to execute. Each task `j` has a resource requirement `resource[j]` (amount of resources it consumes if processed by any node). The goal is to distribute the tasks among the worker nodes such that the maximum utilization across all nodes is minimized.  The utilization of a node is defined as the ratio of the sum of the resources of the tasks assigned to it and its capacity.  You need to assign each task to exactly one node. If a task cannot be assigned to any node without exceeding that node's capacity, the tasks cannot be processed, and the function should return -1. Otherwise, find and return the minimum possible maximum utilization across all nodes.",
+  "input_format": "The first line contains two integers, `n` and `m`, representing the number of worker nodes and the number of tasks, respectively.\nThe second line contains `n` integers, `capacity[0], capacity[1], ..., capacity[n-1]`, representing the processing capacities of the worker nodes.\nThe third line contains `m` integers, `resource[0], resource[1], ..., resource[m-1]`, representing the resource requirements of the tasks.",
+  "output_format": "Return a single floating-point number representing the minimum possible maximum utilization. If it's not possible to assign all tasks, return -1. The returned value must be within 10^-5 of the correct answer.",
+  "constraints": "1 <= n <= 10\n1 <= m <= 20\n1 <= capacity[i] <= 1000 for all i\n1 <= resource[j] <= 50 for all j",
+  "sample_input": "3 5\n10 10 10\n3 3 3 3 3",
+  "sample_output": "1.5",
+  "difficulty": "hard"
+}
+```

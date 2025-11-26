@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Inventory Reorder Point",
+  "description": "You are managing inventory for an e-commerce company. You need to calculate the reorder point for a specific product. The reorder point is the inventory level at which you should place a new order to replenish stock before running out.  Given the average daily sales and the lead time (the time it takes for a new order to arrive), calculate the reorder point. To account for potential fluctuations in demand, add a safety stock. Safety stock is calculated as the average daily sales multiplied by a safety factor.\n\nCalculate the reorder point using the following formula:\n\nReorder Point = (Average Daily Sales * Lead Time) + (Average Daily Sales * Safety Factor)",
+  "input_format": "The input consists of three integers on a single line, separated by spaces:\n\n*   `average_daily_sales`: The average number of units sold per day.\n*   `lead_time`: The number of days it takes for a new order to arrive.\n*   `safety_factor`: A factor used to calculate the safety stock.",
+  "output_format": "Print a single integer representing the reorder point. The reorder point should be rounded *up* to the nearest whole number.",
+  "constraints": "*   1 <= average_daily_sales <= 100\n*   1 <= lead_time <= 30\n*   0 <= safety_factor <= 5\n*   The result (before rounding) will not exceed 10000.",
+  "sample_input": "10 7 2",
+  "sample_output": "90",
+  "difficulty": "easy"
+}
+```

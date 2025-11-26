@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Resource Allocation for Distributed Training",
+  "description": "You are tasked with optimizing the allocation of computational resources for distributed machine learning training. You have a cluster of `n` worker nodes. Each worker node `i` has a computational capacity `capacity[i]` (measured in arbitrary units). You need to train `m` different machine learning models concurrently. Each model `j` requires a minimum computational resource allocation `requirement[j]` to be trained effectively. Training a model faster yields a higher reward. Let `allocation[j]` be the amount of resources allocated to model `j`. The reward for training model `j` is given by a non-linear function `reward[j] = a[j] * sqrt(allocation[j])`, where `a[j]` is a model-specific constant. \n\nThe total allocated resources must be less than or equal to the total available capacity of the cluster. The goal is to maximize the total reward obtained from training all models, subject to the resource constraints and minimum requirement constraints. Note that a worker node can contribute its resources to multiple models and a model can receive resources from multiple worker nodes.\n\nWrite a function that takes the capacity of each worker node, the resource requirement of each model, the reward constant for each model, and returns the maximum possible total reward.",
+  "input_format": "The input consists of the following:\n\n*   `n`: An integer representing the number of worker nodes.\n*   `capacity`: An array of integers of length `n`, where `capacity[i]` represents the computational capacity of the i-th worker node.\n*   `m`: An integer representing the number of models.\n*   `requirement`: An array of integers of length `m`, where `requirement[j]` represents the minimum resource requirement of the j-th model.\n*   `a`: An array of floats of length `m`, where `a[j]` represents the reward constant for the j-th model.\n\nConstraints:\n*   1 <= n <= 100\n*   1 <= m <= 10\n*   1 <= capacity[i] <= 1000\n*   1 <= requirement[j] <= 500\n*   1.0 <= a[j] <= 100.0",
+  "output_format": "The function should return a float representing the maximum possible total reward, rounded to 6 decimal places.",
+  "constraints": "1 <= n <= 100\n1 <= m <= 10\n1 <= capacity[i] <= 1000\n1 <= requirement[j] <= 500\n1.0 <= a[j] <= 100.0",
+  "sample_input": "2\n[500, 500]\n2\n[100, 100]\n[10.0, 20.0]",
+  "sample_output": "447.213595",
+  "difficulty": "hard"
+}
+```

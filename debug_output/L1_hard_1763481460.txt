@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "If only one of the following statements is true, and the sum of the digits of house number X is 10, what is X?",
+    "options": ["X is even", "X is prime", "X > 100", "X < 50"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A bag contains 5 red balls and 3 blue balls. Two balls are drawn at random without replacement. What is the probability that both balls are red?",
+    "options": ["5/14", "25/64", "1/4", "10/14"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the next number in the sequence: 1, 1, 2, 3, 5, 8, ...?",
+    "options": ["10", "13", "15", "16"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is NOT a mutable data type in Python?",
+    "options": ["List", "Dictionary", "Tuple", "Set"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of: `[x**2 for x in range(5) if x % 2 == 0]`?",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[1, 9]", "[0, 2, 4]"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following code snippet:\n```python\ndef outer(x):\n def inner(y):\n return x + y\n return inner\n\nfunc = outer(10)\nprint(func(5))\n```\nWhat is the output?",
+    "options": ["5", "10", "15", "Error"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `yield` keyword in Python?",
+    "options": ["To define a class", "To create a decorator", "To define a generator", "To create a loop"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following correctly demonstrates the use of a decorator in Python?",
+    "options": ["@my_decorator\ndef my_function():\n pass", "def my_function() @my_decorator:\n pass", "my_decorator(my_function)", "my_function.decorate(my_decorator)"],
+    "correct_answer": "A",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider the code:\n```python\nx = 5\ndef func():\n x = 10\n print(x)\nfunc()\nprint(x)```\nWhat will be printed?",
+    "options": ["5, 5", "10, 5", "5, 10", "10, 10"],
+    "correct_answer": "B",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the most likely issue with the following code? \n```python\nfor i in range(len(my_list)):\n my_list.pop(i)\n```",
+    "options": ["IndexError", "TypeError", "ValueError", "SyntaxError"],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the error in this snippet? \n```python\ndef factorial(n):\n if n == 0:\n return 1\n else:\n return n * factorial(n-1)```",
+    "options": ["Missing base case", "Incorrect recursive call", "Infinite loop", "No error"],
+    "correct_answer": "D",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You observe unexpected behavior in a multithreaded Python application. What debugging technique would be LEAST effective?",
+    "options": ["Print statements", "Using a debugger with breakpoints", "Analyzing memory usage", "Disabling threading"],
+    "correct_answer": "D",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following scenarios is most likely to lead to a race condition?",
+    "options": ["Reading a file", "Writing to a global variable from multiple threads", "Calculating the square root of a number", "Creating a new object"],
+    "correct_answer": "B",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is consistently missing deadlines. What is the FIRST step you should take?",
+    "options": ["Implement stricter monitoring", "Re-estimate all tasks", "Identify the root cause of delays", "Fire the underperforming team members"],
+    "correct_answer": "C",
+    "topic": "L5",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A coworker is consistently late to meetings and unprepared. How should you address this?",
+    "options": ["Ignore it; it's not your problem", "Publicly criticize them in the next meeting", "Speak to them privately and offer support", "Report them to your manager immediately"],
+    "correct_answer": "C",
+    "topic": "L5",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You disagree with a technical decision made by your team lead. What's the most constructive approach?",
+    "options": ["Openly criticize the decision in front of the team", "Silently implement the decision without voicing concerns", "Privately discuss your concerns with the team lead, providing rationale", "Sabotage the implementation to prove your point"],
+    "correct_answer": "C",
+    "topic": "L5",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A critical production system is experiencing an outage, and the team is under immense pressure. As the senior engineer, what's your priority?",
+    "options": ["Immediately start blaming individuals for the error", "Focus solely on finding a quick fix, regardless of long-term consequences", "Establish a clear communication channel and delegate tasks effectively", "Attempt to resolve the issue single-handedly to prove your expertise"],
+    "correct_answer": "C",
+    "topic": "L5",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your project is facing a significant blocker due to a dependency on another team. The other team is unresponsive. What should you do?",
+    "options": ["Escalate to your manager immediately.", "Give up on the project, since it can't proceed without the dependency.", "Attempt to find a workaround or alternative solution while also escalating through appropriate channels.", "Publicly shame the other team for their lack of responsiveness."],
+    "correct_answer": "C",
+    "topic": "L5",
+    "difficulty": "hard"
+  },
+  {
+    "question": "During a code review, you identify a potential security vulnerability. What's your immediate course of action?",
+    "options": ["Ignore it, as it's not your responsibility.", "Secretly fix it without informing the developer, to avoid embarrassing them.", "Immediately notify the developer and explain the vulnerability, suggesting remediation strategies.", "Publicly shame the developer in the code review comments."],
+    "correct_answer": "C",
+    "topic": "L5",
+    "difficulty": "medium"
+  }
+]
+```
