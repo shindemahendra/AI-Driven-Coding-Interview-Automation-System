@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Validate API Rate Limit",
+  "description": "A popular web service uses rate limiting to protect its API. You are tasked with implementing a function that determines whether a given API request should be allowed based on the configured rate limit. The rate limit is defined as the maximum number of requests allowed within a specified time window (in seconds). The input is a list of timestamps representing recent API requests from the same user, the current timestamp, the rate limit, and the time window.",
+  "input_format": "The input consists of the following:\n\n*   `recent_requests`: A list of integers representing the timestamps (in seconds since epoch) of recent API requests for a given user. The list is sorted in ascending order.\n*   `current_request_timestamp`: An integer representing the timestamp (in seconds since epoch) of the current API request.\n*   `rate_limit`: An integer representing the maximum number of requests allowed within the time window.\n*   `time_window`: An integer representing the time window (in seconds).",
+  "output_format": "Return `true` if the current API request should be allowed (i.e., the rate limit is not exceeded). Return `false` otherwise.",
+  "constraints": "*   `1 <= len(recent_requests) <= 1000`\n*   `1 <= current_request_timestamp <= 10^9`\n*   `1 <= rate_limit <= 100`\n*   `1 <= time_window <= 60`\n*   All timestamps in `recent_requests` are positive integers and sorted in ascending order.\n*   `current_request_timestamp` is always greater than or equal to the last timestamp in `recent_requests` (if the list is not empty).",
+  "sample_input": "[1678886400, 1678886401, 1678886402], 1678886403, 3, 5",
+  "sample_output": "true",
+  "difficulty": "easy"
+}
+```

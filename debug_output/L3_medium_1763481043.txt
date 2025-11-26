@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Consider the following Python code snippet:\n\n```python\ndef process_list(data):\n  results = []\n  for i in range(len(data)):\n    if data[i] > 5:\n      results.append(i * 2)\n  return results\n\nmy_list = [1, 7, 3, 9, 5, 2, 8]\nprint(process_list(my_list))\n```\n\nWhat is the output of the code?  Assume the indentation is correct in the actual program.",
+    "options": ["[]", "[2, 6, 10]", "[2, 6, 12]", "[2, 6, 0]"],
+    "correct_answer": "[2, 6, 12]",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary issue in the following code, which aims to remove all even numbers from a list?\n\n```python\ndef remove_evens(nums):\n  for num in nums:\n    if num % 2 == 0:\n      nums.remove(num)\n  return nums\n\nnumbers = [1, 2, 3, 4, 5, 6]\nprint(remove_evens(numbers))\n```",
+    "options": ["Incorrect modulo operator usage.", "Incorrect list comprehension syntax.", "Modifying a list while iterating over it.", "The function does not return the modified list."],
+    "correct_answer": "Modifying a list while iterating over it.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following Python code with an intended infinite loop:\n```python\nx = 5\nwhile x > 0:\n    x += 1\n    print(x)\n```\nWhy does the following code snippet not result in an infinite loop?",
+    "options": ["x += 1 is causing an overflow", "The loop is actually running but too fast to see", "The while condition should be x >= 0", "The condition x > 0 will eventually become false when x exceeds the maximum representable integer in python, causing the loop to terminate"],
+    "correct_answer": "The condition x > 0 will eventually become false when x exceeds the maximum representable integer in python, causing the loop to terminate",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the error in the following code that attempts to reverse a string:\n\n```python\ndef reverse_string(s):\n  reversed_s = ''\n  for i in range(len(s)):\n    reversed_s += s[len(s) - i]\n  return reversed_s\n\nprint(reverse_string('hello'))\n```",
+    "options": ["The loop should iterate backwards.", "The range should be len(s) + 1.", "IndexError: string index out of range.", "The `reversed_s` variable is not initialized correctly."],
+    "correct_answer": "IndexError: string index out of range.",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this Python code:\n```python\ndef calculate_average(numbers):\n    total = 0\n    for number in numbers:\n        total += number\n    return total / len(numbers)\n\ndata = []\nprint(calculate_average(data))\n```\nWhat error will occur?",
+    "options": ["TypeError", "ValueError", "ZeroDivisionError", "IndexError"],
+    "correct_answer": "ZeroDivisionError",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the bug in this code that's supposed to check if a string is a palindrome (ignoring case):\n\n```python\ndef is_palindrome(s):\n    s = s.lower()\n    return s == s[::-1]\n\nprint(is_palindrome('Racecar '))\n```",
+    "options": ["The .lower() method is incorrect.", "The code is case sensitive.", "The code doesn't handle spaces properly.", "The slicing notation [::-1] doesn't reverse the string correctly."],
+    "correct_answer": "The code doesn't handle spaces properly.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following code, what will be printed?\n\n```python\ndef outer_function():\n    x = 10\n    def inner_function():\n        nonlocal x\n        x = 20\n    inner_function()\n    print(x)\n\nouter_function()\n```",
+    "options": ["10", "20", "Error", "None"],
+    "correct_answer": "20",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The following code is meant to implement a basic memoized Fibonacci sequence:\n\n```python\ncache = {}\ndef fibonacci(n):\n  if n in cache:\n    return cache[n]\n  if n <= 1:\n    return n\n  result = fibonacci(n-1) + fibonacci(n-2)\n  cache = {n: result}\n  return result\n\nprint(fibonacci(5))\n```\nWhat is the primary issue preventing this from correctly memoizing?",
+    "options": ["The base cases are incorrect.", "The cache is being overwritten instead of updated.", "There's a stack overflow error.", "The recursive calls are not efficient."],
+    "correct_answer": "The cache is being overwritten instead of updated.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following python code:\n\n```python\ndef modify_list(lst):\n lst.append(4)\n lst = [1,2,3]\n lst.append(5)\n\nmy_list = [10, 20, 30]\nmodify_list(my_list)\nprint(my_list)\n```\n\nWhat will be the printed value of `my_list` after the code runs?",
+    "options": ["[1, 2, 3, 5]", "[10, 20, 30]", "[10, 20, 30, 4]", "[1, 2, 3]"],
+    "correct_answer": "[10, 20, 30, 4]",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Find the bug in this code:\n```python\ndef factorial(n):\n  if n == 0:\n    return 1\n  else:\n    return n * factorial(n+1)\n```",
+    "options": ["Base case is incorrect.", "Recursive call should be to `factorial(n-1)`.", "Missing `return` statement.", "The function will cause a stack overflow."],
+    "correct_answer": "Recursive call should be to `factorial(n-1)`.",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Analyze the following code for potential errors:\n\n```python\nimport threading\nimport time\n\ncounter = 0\n\ndef increment_counter():\n    global counter\n    for _ in range(100000):\n        counter += 1\n\nthread1 = threading.Thread(target=increment_counter)\nthread2 = threading.Thread(target=increment_counter)\n\nthread1.start()\nthread2.start()\n\nthread1.join()\nthread2.join()\n\nprint(f\"Final counter value: {counter}\")\n```\n\nWhat is the likely issue with the code?",
+    "options": ["There is no issue; the code will always print 200000.", "Race condition due to lack of thread synchronization.", "Incorrect use of global variable.", "The threads are not properly joined."],
+    "correct_answer": "Race condition due to lack of thread synchronization.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+    {
+    "question": "What is the output of the following code snippet that uses a generator expression?\n\n```python\ndef generate_numbers():\n    for i in range(5):\n        yield i\n\nnumbers = generate_numbers()\nprint(sum(numbers))\nprint(sum(numbers))\n```",
+    "options": ["10\\n10", "10\\n0", "0\\n0", "Error"],
+    "correct_answer": "10\\n0",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this code aiming to calculate the sum of squares of numbers in a list:\n\n```python\ndef sum_of_squares(numbers):\n    result = 0\n    for num in numbers:\n        result += num ** 2\n    return result\n\nprint(sum_of_squares((1, 2, 'a', 4)))\n```\n\nWhat exception will be raised?",
+    "options": ["TypeError", "ValueError", "IndexError", "KeyError"],
+    "correct_answer": "TypeError",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following describes a potential issue in the following code snippet if `large_file.txt` is significantly larger than the available memory?\n\n```python\nwith open('large_file.txt', 'r') as f:\n    data = f.readlines()\n\nfor line in data:\n    print(line)\n```",
+    "options": ["FileNotFoundError", "MemoryError", "IOError", "ValueError"],
+    "correct_answer": "MemoryError",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the likely reason for the unexpected behavior in the following code snippet?\n\n```python\ndef modify_dict(data, key, value):\n  data[key] = value\n\ndict1 = {'a': 1, 'b': 2}\ndict2 = dict1\nmodify_dict(dict2, 'a', 5)\nprint(dict1)\n```",
+    "options": ["Scope issue with `modify_dict`.", "Incorrect dictionary syntax.", "`dict2` is a shallow copy of `dict1`.", "`dict2` is a deep copy of `dict1`."],
+    "correct_answer": "`dict2` is a shallow copy of `dict1`.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Analyze the following code snippet that involves a thread and a shared variable:\n\n```python\nimport threading\nimport time\n\nshared_resource = 0\n\ndef increment():\n    global shared_resource\n    for _ in range(100000):\n        shared_resource += 1\n\nthread = threading.Thread(target=increment)\nthread.start()\nthread.join()\n\nprint(shared_resource)\n```\n\nWhile the code intends to increment `shared_resource` to 100000, it may not always produce the correct result. Why?",
+    "options": ["The thread doesn't have enough time to complete its task.", "`shared_resource` is not properly initialized.", "The global keyword is used incorrectly.", "A race condition exists due to lack of synchronization mechanisms."],
+    "correct_answer": "A race condition exists due to lack of synchronization mechanisms.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider the following code, designed to filter even numbers from a list:\n```python\ndef filter_evens(data):\n    for x in data:\n        if x % 2 != 0:\n            data.remove(x)\n    return data\n\nmy_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nprint(filter_evens(my_list))\n```\nWhat is the most likely problem with this code, and why?",
+    "options": ["The modulo operator is used incorrectly.", "The code modifies the list while iterating over it, potentially skipping elements.", "List comprehension is required for filtering.", "The code only filters odd numbers, not even numbers."],
+    "correct_answer": "The code modifies the list while iterating over it, potentially skipping elements.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the potential issue with the following code, intended to calculate the average of a list of numbers read from a file?\n\n```python\ndef calculate_average(filename):\n    with open(filename, 'r') as f:\n        numbers = [int(line.strip()) for line in f]\n    return sum(numbers) / len(numbers)\n\nprint(calculate_average('numbers.txt'))\n```",
+    "options": ["FileNotFoundError if 'numbers.txt' doesn't exist.", "ValueError if the file contains non-numeric data.", "ZeroDivisionError if the file is empty.", "All of the above."],
+    "correct_answer": "All of the above.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Analyze the following python code for potential scoping issues:\n```python\nx = 10\n\ndef my_function():\n    global x\n    x = 5\n    y = x + 5\n    return y\n\ndef another_function():\n    x = 20\n    return x\n\nprint(my_function(), another_function(), x)\n```",
+    "options": ["10 20 5", "10 20 10", "10 5 5", "10 20 20"],
+    "correct_answer": "10 20 5",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code snippet that attempts to use a lock to protect a shared resource in a multithreaded environment:\n\n```python\nimport threading\nimport time\n\nlock = threading.Lock()\nshared_resource = 0\n\ndef increment():\n    global shared_resource\n    for _ in range(100000):\n        with lock:\n            shared_resource += 1\n\nthreads = []\nfor _ in range(2):\n    thread = threading.Thread(target=increment)\n    threads.append(thread)\n    thread.start()\n\nfor thread in threads:\n    thread.join()\n\nprint(f\"Final counter value: {shared_resource}\")\n```\nWhat is a potential problem if the 'increment' function becomes significantly more complex (e.g., involves network I/O) and a thread holding the lock encounters an unexpected error (like network timeout)?",
+    "options": ["Deadlock.", "Starvation.", "Race Condition.", "Memory Leak."],
+    "correct_answer": "Deadlock.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  }
+]
+```

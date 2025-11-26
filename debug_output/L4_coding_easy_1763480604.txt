@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Analyze Log Data",
+  "description": "You are given a log file as a string, where each line represents a log entry. Each log entry consists of an application ID, a timestamp, and a status code, separated by spaces. The log entries are unsorted.\n\nThe format of each log entry is:\n`application_id timestamp status_code`\n\nYour task is to write a function that parses the log file and returns a dictionary where the keys are application IDs, and the values are the number of times each application ID appears with a status code of '200' (meaning success).",
+  "input_format": "A single string representing the log file. Each line in the log file represents a single log entry.  The lines are separated by newline characters ('\\n').",
+  "output_format": "A dictionary where the keys are application IDs (strings) and the values are the counts of '200' status codes for that application ID (integers). If an application ID doesn't have any '200' status codes, it should still appear in the dictionary with a value of 0.",
+  "constraints": "* The log file string can be empty or contain only newline characters.\n* Application IDs are strings consisting of alphanumeric characters.\n* Timestamps are integers.\n* Status codes are integers.\n* The number of log entries can be up to 1000.",
+  "sample_input": "app1 1678886400 200\napp2 1678886401 404\napp1 1678886402 500\napp3 1678886403 200\napp1 1678886404 200\napp2 1678886405 200",
+  "sample_output": "{\"app1\": 2, \"app2\": 1, \"app3\": 1}",
+  "difficulty": "easy"
+}
+```

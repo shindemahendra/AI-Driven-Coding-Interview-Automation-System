@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "question": "What is 2 + 2?",
+    "options": ["A. 4", "B. 5", "C. 6", "D. 3"],
+    "correct_answer": "A",
+    "topic": "Arithmetic",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is a primary color?",
+    "options": ["A. Red", "B. Green", "C. Purple", "D. Orange"],
+    "correct_answer": "A",
+    "topic": "Color Theory",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the first letter of the alphabet?",
+    "options": ["A. A", "B. B", "C. C", "D. D"],
+    "correct_answer": "A",
+    "topic": "Literacy",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What shape has three sides?",
+    "options": ["A. Triangle", "B. Square", "C. Circle", "D. Rectangle"],
+    "correct_answer": "A",
+    "topic": "Geometry",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What animal barks?",
+    "options": ["A. Dog", "B. Cat", "C. Bird", "D. Cow"],
+    "correct_answer": "A",
+    "topic": "Animals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is a fruit?",
+    "options": ["A. Apple", "B. Carrot", "C. Broccoli", "D. Potato"],
+    "correct_answer": "A",
+    "topic": "Food",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What number comes after 1?",
+    "options": ["A. 2", "B. 3", "C. 0", "D. 4"],
+    "correct_answer": "A",
+    "topic": "Number Sequence",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which day comes after Monday?",
+    "options": ["A. Tuesday", "B. Wednesday", "C. Sunday", "D. Friday"],
+    "correct_answer": "A",
+    "topic": "Days of the Week",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do bees make?",
+    "options": ["A. Honey", "B. Milk", "C. Eggs", "D. Wool"],
+    "correct_answer": "A",
+    "topic": "Nature",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is a form of transportation?",
+    "options": ["A. Car", "B. Tree", "C. Cloud", "D. Rock"],
+    "correct_answer": "A",
+    "topic": "Transportation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do you use to write?",
+    "options": ["A. Pencil", "B. Spoon", "C. Fork", "D. Hammer"],
+    "correct_answer": "A",
+    "topic": "Tools",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the color of the sky on a sunny day?",
+    "options": ["A. Blue", "B. Green", "C. Red", "D. Yellow"],
+    "correct_answer": "A",
+    "topic": "General Knowledge",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a body part?",
+    "options": ["A. Hand", "B. Table", "C. Chair", "D. Window"],
+    "correct_answer": "A",
+    "topic": "Human Body",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do you wear on your feet?",
+    "options": ["A. Shoes", "B. Hat", "C. Gloves", "D. Scarf"],
+    "correct_answer": "A",
+    "topic": "Clothing",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What sound does a cow make?",
+    "options": ["A. Moo", "B. Meow", "C. Woof", "D. Oink"],
+    "correct_answer": "A",
+    "topic": "Animal Sounds",
+    "difficulty": "easy"
+  }
+]
+```

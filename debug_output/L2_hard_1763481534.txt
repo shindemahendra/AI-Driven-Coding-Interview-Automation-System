@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code snippet? `def outer(): x = 1; def inner(): nonlocal x; x = 2; print(x); inner(); print(x); outer()`",
+    "options": ["1 1", "2 1", "2 2", "1 2"],
+    "correct_answer": "C",
+    "topic": "Scope and Closures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which data structure offers the fastest average time complexity for searching?",
+    "options": ["Linked List", "Sorted Array", "Hash Table", "Binary Search Tree"],
+    "correct_answer": "C",
+    "topic": "Data Structures and Complexity",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["To define abstract methods.", "To optimize memory usage by preventing dynamic attribute creation.", "To enforce type hints.", "To prevent inheritance."],
+    "correct_answer": "B",
+    "topic": "Object-Oriented Programming",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a valid way to create a list in Python?",
+    "options": ["list()", "[ ]", "( )", "[x for x in range(5)]"],
+    "correct_answer": "C",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `[x for x in range(5) if x % 2 == 0]`?",
+    "options": ["[0, 1, 2, 3, 4]", "[0, 2, 4]", "[1, 3]", "[0, 2]"],
+    "correct_answer": "B",
+    "topic": "List Comprehension",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the `yield` keyword do in Python?",
+    "options": ["Raises an exception.", "Returns a value and terminates the function.", "Defines a coroutine.", "Creates a generator function."],
+    "correct_answer": "D",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is the correct way to create a decorator in Python?",
+    "options": ["@my_decorator def my_function(): pass", "def @my_decorator my_function(): pass", "my_decorator@ def my_function(): pass", "def my_function() @my_decorator: pass"],
+    "correct_answer": "A",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary difference between a list and a tuple in Python?",
+    "options": ["Lists are immutable, tuples are mutable.", "Lists are mutable, tuples are immutable.", "Lists can only contain integers, tuples can contain any data type.", "Lists use less memory than tuples."],
+    "correct_answer": "B",
+    "topic": "Lists and Tuples",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of `*args` in a function definition?",
+    "options": ["To specify default argument values.", "To pass a variable number of keyword arguments.", "To pass a variable number of non-keyword arguments.", "To enforce type hinting."],
+    "correct_answer": "C",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Dictionaries and Complexity",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider a scenario using asyncio: Multiple tasks are spawned using `asyncio.create_task`. How can you ensure all tasks complete before proceeding?",
+    "options": ["Using `time.sleep()` with a large delay.", "Using `asyncio.gather()`.", "Using a global lock.", "Tasks automatically run sequentially."],
+    "correct_answer": "B",
+    "topic": "Concurrency and Asyncio",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a metaclass in Python, and what is its primary purpose?",
+    "options": ["A class that defines the structure of all other classes; to control class creation.", "A class used for asynchronous programming.", "A class that represents a single instance of another class.", "A class for handling exceptions."],
+    "correct_answer": "A",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which garbage collection strategy is primarily used in CPython?",
+    "options": ["Mark and Sweep", "Reference Counting", "Generational Garbage Collection", "All of the above"],
+    "correct_answer": "D",
+    "topic": "Memory Management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the potential issue of using mutable default arguments in Python functions?",
+    "options": ["It can lead to unexpected side effects when the function is called multiple times.", "It causes a TypeError.", "It is not allowed in Python.", "It is more efficient than using immutable defaults."],
+    "correct_answer": "A",
+    "topic": "Functions and Mutable Defaults",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given the following code: `x = [1, 2, 3]; y = x; y[0] = 5; print(x)`. What will be printed?",
+    "options": ["[1, 2, 3]", "[5, 2, 3]", "[1, 5, 3]", "[5, 5, 3]"],
+    "correct_answer": "B",
+    "topic": "Mutability and References",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'GIL' stand for in Python and what is its impact?",
+    "options": ["Global Interface Layer; improves performance.", "Garbage In, Last Out; memory management issue.", "Global Interpreter Lock; limits true parallelism.", "General Input Library; standard input/output."],
+    "correct_answer": "C",
+    "topic": "Concurrency and the GIL",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does using a `deque` (double-ended queue) differ from using a `list` for queue operations (enqueue/dequeue)?",
+    "options": ["`deque` is more memory efficient for very large queues.", "`deque` offers O(1) time complexity for both enqueue and dequeue, while `list` has O(n) for dequeue.", "`list` is inherently thread-safe, while `deque` is not.", "There is no significant difference."],
+    "correct_answer": "B",
+    "topic": "Data Structures: Deque vs List",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a 'context manager' in Python, and how is it typically used?",
+    "options": ["A special type of dictionary for storing global variables.", "An object that defines the runtime environment for a program.", "An object that defines setup and teardown operations within a `with` statement.", "A function that handles exceptions."],
+    "correct_answer": "C",
+    "topic": "Context Managers",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In Python, what does the `__mro__` attribute of a class represent?",
+    "options": ["The memory address of the class object.", "The method resolution order (inheritance hierarchy).", "The list of methods defined directly in the class.", "The number of attributes in the class."],
+    "correct_answer": "B",
+    "topic": "Object-Oriented Programming and Inheritance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the difference between `threading` and `multiprocessing` modules in Python and when would you prefer one over the other?",
+    "options": ["`threading` uses multiple processes, `multiprocessing` uses multiple threads; `multiprocessing` is always preferred.", "`threading` is for I/O-bound tasks, `multiprocessing` is for CPU-bound tasks; choose based on task type.", "`threading` is faster; `multiprocessing` is more memory efficient; choose based on resources.", "They are interchangeable; the choice is purely stylistic."],
+    "correct_answer": "B",
+    "topic": "Concurrency: Threading vs Multiprocessing",
+    "difficulty": "hard"
+  }
+]
+```

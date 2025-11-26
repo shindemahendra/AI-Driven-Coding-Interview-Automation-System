@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Data Shard Rebalancing",
+  "description": "Your team manages a distributed database system. Data is sharded across `N` nodes, where each node has a limited capacity. Due to data growth and usage patterns, the shards are unevenly distributed, leading to performance bottlenecks.  Your task is to determine the minimum number of shard movements required to rebalance the data such that the load on each node is as balanced as possible.\n\nSpecifically:\n\n*   You are given an array `shards` of length `N`, where `shards[i]` represents the number of shards currently stored on node `i`.\n*   You are given a maximum capacity `capacity` representing the maximum number of shards that each node can hold.\n*   Ideally, the average number of shards per node should be `totalShards / N`, where `totalShards` is the sum of all elements in the `shards` array.  However, since `totalShards / N` may not be an integer, we aim to balance the shards such that each node has either `floor(totalShards / N)` or `ceil(totalShards / N)` shards.\n*   A shard movement involves transferring a single shard from one node to another.\n*   A node cannot have more shards than the `capacity` after any movement.\n\nReturn the minimum number of shard movements required to achieve this balanced state. If it is impossible to balance the shards given the `capacity` constraint, return -1.",
+  "input_format": "The input consists of two lines:\n\n*   The first line contains two integers, `N` and `capacity`, separated by a space.\n*   The second line contains `N` integers, `shards[0]`, `shards[1]`, ..., `shards[N-1]`, separated by spaces.",
+  "output_format": "Output a single integer representing the minimum number of shard movements. If it's impossible to balance, output -1.",
+  "constraints": "*   1 <= N <= 100\n*   1 <= capacity <= 1000\n*   0 <= shards[i] <= 1000\n*   The sum of `shards[i]` for all `i` will not exceed `N * capacity`.",
+  "sample_input": "3 10\n5 8 2",
+  "sample_output": "2",
+  "difficulty": "hard"
+}
+```

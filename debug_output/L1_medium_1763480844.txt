@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A train travels 60 km in the first hour, 120 km in the second hour, and 180 km in the third hour. If this pattern continues, how far will the train have traveled in total after 5 hours?",
+    "options": ["600 km", "750 km", "900 km", "1050 km"],
+    "correct_answer": "750 km",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the next letter in the sequence: A, C, F, J, O, ...?",
+    "options": ["U", "V", "T", "W"],
+    "correct_answer": "U",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all Bloops are Floops and some Floops are Gloops, which statement MUST be true?",
+    "options": ["All Bloops are Gloops", "Some Bloops are Gloops", "Some Gloops are Bloops", "None of the above"],
+    "correct_answer": "None of the above",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Four friends are sitting around a square table. John is to the left of Mary. Susan is to the right of Peter. Mary is facing Peter. Who is sitting to the right of John?",
+    "options": ["Mary", "Susan", "Peter", "It cannot be determined"],
+    "correct_answer": "Susan",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A farmer has 17 sheep. All but nine die. How many are left?",
+    "options": ["0", "8", "9", "17"],
+    "correct_answer": "9",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete the series: 3, 8, 15, 24, ... ?",
+    "options": ["37", "35", "36", "34"],
+    "correct_answer": "35",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a clock shows 4:30, what is the angle between the hour and minute hands?",
+    "options": ["45 degrees", "60 degrees", "30 degrees", "90 degrees"],
+    "correct_answer": "45 degrees",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bag contains 5 red balls and 3 blue balls. You draw two balls without replacement. What is the probability that both balls are red?",
+    "options": ["5/14", "25/64", "5/8", "1/4"],
+    "correct_answer": "5/14",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the missing number: 2, 6, 12, 20, 30, ?",
+    "options": ["40", "42", "44", "46"],
+    "correct_answer": "42",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which number logically completes the sequence: 8, 6, 7, 5, 6, ?",
+    "options": ["4", "5", "7", "8"],
+    "correct_answer": "4",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "I am a word. If you pronounce me incorrectly, you will break me. What am I?",
+    "options": ["Silence", "Word", "Pronunciation", "Secret"],
+    "correct_answer": "Silence",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Three people, Alice, Bob, and Carol, each have a hat. The hats are either red or blue. Alice can see Bob and Carol's hats, Bob can see Carol's hat, and Carol can see none. They know that at least one hat is red. In silence, Alice says she cannot determine the color of her hat. Then Bob says he cannot determine the color of his hat. Carol then says she knows the color of her hat. What color is Carol's hat?",
+    "options": ["Red", "Blue", "Cannot be determined", "Green"],
+    "correct_answer": "Red",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have 8 balls. One is heavier than the others. Using a balance scale, what is the minimum number of weighings to find the heavier ball?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "2",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If you rearrange the letters 'OOLPC', you would have the name of a:",
+    "options": ["Country", "Ocean", "City", "Animal"],
+    "correct_answer": "City",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What number should come next in the following sequence? 1, 1, 2, 3, 5, 8, __",
+    "options": ["12", "13", "14", "15"],
+    "correct_answer": "13",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You have two ropes. Each rope takes exactly one hour to burn completely. The ropes are not identical and burn at different rates along their length. How can you measure exactly 45 minutes using only these two ropes and a lighter?",
+    "options": ["Burn one rope at both ends, and the other rope at one end simultaneously.", "Burn both ropes at one end simultaneously.", "Cut one rope in half and burn one piece at both ends. Burn the other rope at one end.", "Burn one rope at both ends and the other at one end; when the first rope finishes, immediately light the second rope at the other end."],
+    "correct_answer": "Burn one rope at both ends and the other at one end; when the first rope finishes, immediately light the second rope at the other end.",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the next logical number in the series: 1, 4, 9, 16, 25, ?",
+    "options": ["34", "35", "36", "37"],
+    "correct_answer": "36",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A man is looking at a photograph. Someone asks, 'Who are you looking at?' He replies, 'Brothers and sisters, I have none. But that man's father is my father's son.' Who is in the photograph?",
+    "options": ["His father", "His son", "Himself", "His brother"],
+    "correct_answer": "His son",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A king has 1000 bottles of wine. A terrorist adds poison to one of the bottles. You have 10 test strips which can detect the poison. A drop of wine from a poisoned bottle will cause the test strip to turn red after 24 hours. How many days are required to find the poisoned bottle?",
+    "options": ["1", "2", "10", "24"],
+    "correct_answer": "1",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following doesn't belong: Apple, Banana, Carrot, Orange?",
+    "options": ["Apple", "Banana", "Carrot", "Orange"],
+    "correct_answer": "Carrot",
+    "topic": "L1",
+    "difficulty": "easy"
+  }
+]
+```

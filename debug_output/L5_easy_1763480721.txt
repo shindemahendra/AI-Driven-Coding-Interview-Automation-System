@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "You are asked to estimate the effort for a new feature. What is the MOST important first step?",
+    "options": ["A. Immediately provide a time estimate based on gut feeling.", "B. Break down the feature into smaller, well-defined tasks.", "C. Consult with the project manager about the deadline.", "D. Start coding a prototype to understand the complexity."],
+    "correct_answer": "B",
+    "topic": "Estimation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A critical bug is found in production affecting a core feature. Your team lead is unavailable. What's the BEST immediate course of action?",
+    "options": ["A. Wait for the team lead to become available before taking any action.", "B. Attempt to fix the bug yourself without informing anyone to avoid panic.", "C. Immediately inform the on-call engineer and follow established incident response procedures.", "D. Roll back the last deployment without investigating the root cause."],
+    "correct_answer": "C",
+    "topic": "Crisis Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A junior colleague asks for your help understanding a complex code section. What's the MOST effective way to help them?",
+    "options": ["A. Rewrite the code section for them to make it simpler.", "B. Explain the code line by line without context.", "C. Guide them through the code, explaining the overall purpose and the reasoning behind key decisions.", "D. Tell them to read the documentation and figure it out themselves."],
+    "correct_answer": "C",
+    "topic": "Mentoring",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You disagree with a design decision proposed by a senior engineer. How should you BEST voice your concerns?",
+    "options": ["A. Publicly criticize the design in front of the entire team.", "B. Privately approach the senior engineer with specific, well-reasoned arguments and alternative suggestions.", "C. Silently implement the design as proposed, even if you believe it's flawed.", "D. Complain to other team members about the design without discussing it with the senior engineer."],
+    "correct_answer": "B",
+    "topic": "Conflict Resolution",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a sprint retrospective, a team member consistently blames others for failures. How do you BEST address this behavior?",
+    "options": ["A. Ignore the behavior to avoid creating further conflict.", "B. Publicly call out the team member for their behavior.", "C. Privately address the team member, emphasizing the importance of focusing on solutions and shared responsibility.", "D. Exclude the team member from future retrospective meetings."],
+    "correct_answer": "C",
+    "topic": "Team Dynamics",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You receive a vague requirement for a new feature. What is the FIRST thing you should do?",
+    "options": ["A. Start coding based on your assumptions.", "B. Ask clarifying questions to the product owner or stakeholders.", "C. Ignore the requirement and work on something else.", "D. Complain to your manager about the lack of clarity."],
+    "correct_answer": "B",
+    "topic": "Requirements Gathering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A project is falling behind schedule. What is the BEST approach to get it back on track?",
+    "options": ["A. Ask team members to work overtime without addressing the underlying issues.", "B. Reduce the scope of the project by removing non-essential features.", "C. Ignore the delay and hope it resolves itself.", "D. Blame the project manager for poor planning."],
+    "correct_answer": "B",
+    "topic": "Project Management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are asked to provide feedback on a colleague's code. What is the MOST important thing to keep in mind?",
+    "options": ["A. Focus only on finding errors and criticizing their approach.", "B. Be constructive and focus on helping them improve their code quality.", "C. Avoid providing any feedback to avoid hurting their feelings.", "D. Ignore the request and hope someone else will provide feedback."],
+    "correct_answer": "B",
+    "topic": "Code Review",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You notice a security vulnerability in the codebase. What should you do?",
+    "options": ["A. Ignore it if it doesn't seem critical.", "B. Exploit the vulnerability to demonstrate its impact.", "C. Immediately report it to the appropriate security team or designated contact.", "D. Publicly disclose the vulnerability to raise awareness."],
+    "correct_answer": "C",
+    "topic": "Security",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a team, and one of your members is consistently underperforming. What's the BEST first step?",
+    "options": ["A. Publicly reprimand them in front of the team.", "B. Ignore the issue and hope they improve on their own.", "C. Meet with them privately to understand the reasons for their underperformance and offer support.", "D. Immediately fire them without providing any feedback or support."],
+    "correct_answer": "C",
+    "topic": "Leadership",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are in a meeting with stakeholders who have conflicting priorities. How do you BEST facilitate a productive discussion?",
+    "options": ["A. Take sides with the stakeholder you agree with most.", "B. Dominate the conversation and push your own agenda.", "C. Actively listen to all perspectives, identify common ground, and facilitate a collaborative solution.", "D. Avoid addressing the conflict and hope it resolves itself."],
+    "correct_answer": "C",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's the MOST important thing to consider when writing documentation?",
+    "options": ["A. Making it look aesthetically pleasing.", "B. Ensuring it is accurate, clear, and easy to understand for the intended audience.", "C. Using technical jargon to impress other developers.", "D. Focusing on documenting every single line of code."],
+    "correct_answer": "B",
+    "topic": "Documentation",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You are asked to work on a task outside of your area of expertise. What is the BEST approach?",
+    "options": ["A. Decline the task to avoid making mistakes.", "B. Accept the task and try to figure it out on your own without seeking help.", "C. Accept the task and seek guidance from colleagues or online resources.", "D. Complain to your manager about being assigned an inappropriate task."],
+    "correct_answer": "C",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A major dependency your project relies on is being deprecated. What's the BEST course of action?",
+    "options": ["A. Ignore the deprecation notice until the last possible moment.", "B. Immediately replace the dependency with the newest version without testing.", "C. Evaluate alternative dependencies or migration strategies and plan a phased upgrade.", "D. Blame the dependency maintainers for causing inconvenience."],
+    "correct_answer": "C",
+    "topic": "Technical Debt",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You witness a colleague engaging in unethical behavior. What should you do?",
+    "options": ["A. Ignore it to avoid getting involved.", "B. Confront the colleague directly, potentially escalating the situation.", "C. Report the behavior to the appropriate authority, such as HR or a supervisor.", "D. Publicly shame the colleague to deter future misconduct."],
+    "correct_answer": "C",
+    "topic": "Ethics",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is consistently missing sprint goals. What is the MOST important step to take?",
+    "options": ["A. Increase the pressure on team members to work harder.", "B. Blame individual team members for their lack of performance.", "C. Analyze the sprint data to identify the root causes of the missed goals and adjust the process accordingly.", "D. Abandon the agile process and switch to a different methodology."],
+    "correct_answer": "C",
+    "topic": "Agile",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is consistently late to meetings and deadlines. How should you address this?",
+    "options": ["A. Publicly reprimand them for their lack of punctuality.", "B. Ignore the behavior to avoid confrontation.", "C. Privately discuss the issue with them to understand the reasons and find a solution.", "D. Assign them less important tasks to minimize the impact of their tardiness."],
+    "correct_answer": "C",
+    "topic": "Performance Management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are presenting a technical proposal to a non-technical audience. What is the MOST important consideration?",
+    "options": ["A. Using highly technical jargon to demonstrate your expertise.", "B. Focusing on the technical details of the solution.", "C. Explaining the proposal in a clear, concise, and accessible manner, focusing on the business value.", "D. Avoiding any visuals or diagrams to keep the presentation simple."],
+    "correct_answer": "C",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "During a brainstorming session, a team member proposes an idea that you believe is unrealistic. How do you respond?",
+    "options": ["A. Immediately dismiss the idea as impractical.", "B. Publicly ridicule the idea to discourage similar suggestions.", "C. Acknowledge the idea and constructively discuss its feasibility and potential challenges.", "D. Ignore the idea and continue with the brainstorming session as if it wasn't mentioned."],
+    "correct_answer": "C",
+    "topic": "Collaboration",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a project with a tight deadline and limited resources. Several unexpected roadblocks arise. What is the BEST approach to navigate this situation?",
+    "options": ["A. Panic and blame the initial project estimates.", "B. Focus solely on the original plan, regardless of the roadblocks.", "C. Re-evaluate the project scope, prioritize critical features, and communicate proactively with stakeholders about potential delays.", "D. Attempt to work through all the roadblocks without informing stakeholders about the challenges."],
+    "correct_answer": "C",
+    "topic": "Project Management",
+    "difficulty": "hard"
+  }
+]
+```

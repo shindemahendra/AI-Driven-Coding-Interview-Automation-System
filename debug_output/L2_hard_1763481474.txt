@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the time complexity of accessing an element in a Python dictionary using its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "O(1)",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a LIFO (Last-In, First-Out) behavior?",
+    "options": ["Queue", "Linked List", "Stack", "Hash Table"],
+    "correct_answer": "Stack",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will be the output of the following code?\n`print([x for x in range(5) if x % 2 == 0])`",
+    "options": ["[0, 1, 2, 3, 4]", "[0, 2, 4]", "[1, 3]", "[0, 1]"],
+    "correct_answer": "[0, 2, 4]",
+    "topic": "List Comprehension",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of a Python decorator?",
+    "options": ["To define constants", "To modify class attributes", "To add functionality to a function or class", "To import external libraries"],
+    "correct_answer": "To add functionality to a function or class",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is a mutable data type in Python?",
+    "options": ["Tuple", "String", "Integer", "List"],
+    "correct_answer": "List",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the `yield` keyword do in Python?",
+    "options": ["Returns a value and exits the function", "Raises an exception", "Defines a class", "Creates a generator object"],
+    "correct_answer": "Creates a generator object",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of `__init__` method in a Python class?",
+    "options": ["To delete an object", "To initialize an object", "To define a static method", "To inherit from another class"],
+    "correct_answer": "To initialize an object",
+    "topic": "OOP",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between `==` and `is` operators in Python?",
+    "options": ["`==` compares values, `is` compares memory locations", "`==` compares memory locations, `is` compares values", "They are the same", "`==` is for integers, `is` is for strings"],
+    "correct_answer": "`==` compares values, `is` compares memory locations",
+    "topic": "Operators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a valid access modifier in Python?",
+    "options": ["public", "private", "protected", "internal"],
+    "correct_answer": "internal",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": ["A class that inherits from multiple classes", "A class that defines the behavior of other classes", "A built-in exception class", "A decorator for classes"],
+    "correct_answer": "A class that defines the behavior of other classes",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How can you achieve concurrency in Python using threads, while mitigating the Global Interpreter Lock (GIL)?",
+    "options": ["Using multiple processes instead of threads", "Releasing the GIL manually", "Using asynchronous programming", "All of the above, but using multiple processes is the most effective"],
+    "correct_answer": "All of the above, but using multiple processes is the most effective",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `async` and `await` keywords in Python?",
+    "options": ["To define a multi-threaded function", "To handle exceptions", "To perform asynchronous operations", "To create a generator"],
+    "correct_answer": "To perform asynchronous operations",
+    "topic": "Asynchronous Programming",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Explain the difference between shallow copy and deep copy in Python.",
+    "options": ["Shallow copy creates a new object but references the same objects as the original, deep copy creates a new object and recursively copies all objects.", "Deep copy creates a new object but references the same objects as the original, shallow copy creates a new object and recursively copies all objects.", "They are the same", "Shallow copy only works for lists, deep copy works for all data types."],
+    "correct_answer": "Shallow copy creates a new object but references the same objects as the original, deep copy creates a new object and recursively copies all objects.",
+    "topic": "Memory Management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What are the benefits of using a generator expression over a list comprehension in Python, especially when dealing with large datasets?",
+    "options": ["Generator expressions are faster", "Generator expressions consume less memory", "List comprehensions are easier to read", "There is no benefit"],
+    "correct_answer": "Generator expressions consume less memory",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the significance of the `__slots__` attribute in a Python class?",
+    "options": ["It defines the order of attributes in a class", "It prevents dynamic attribute creation, saving memory", "It is used for inheritance", "It makes attributes immutable"],
+    "correct_answer": "It prevents dynamic attribute creation, saving memory",
+    "topic": "Memory Optimization",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does Python's garbage collection work, and what are some potential issues related to circular references?",
+    "options": ["Python uses manual garbage collection. Circular references are never a problem.", "Python uses reference counting, which automatically handles circular references.", "Python uses automatic garbage collection with cycle detection, but circular references can still lead to memory leaks if finalizers are involved.", "Python doesn't have garbage collection."],
+    "correct_answer": "Python uses automatic garbage collection with cycle detection, but circular references can still lead to memory leaks if finalizers are involved.",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider a scenario where you need to process a large stream of data in real-time. Which data structure would be most suitable for buffering incoming data and why?",
+    "options": ["List, for its simplicity", "Deque (double-ended queue), for efficient append and pop operations from both ends", "Set, for its uniqueness property", "Dictionary, for its key-value storage"],
+    "correct_answer": "Deque (double-ended queue), for efficient append and pop operations from both ends",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `weakref` module in Python?",
+    "options": ["To create strong references", "To create weak references that do not prevent garbage collection", "To manage memory allocation", "To define constants"],
+    "correct_answer": "To create weak references that do not prevent garbage collection",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How can you implement a thread-safe counter in Python?",
+    "options": ["Using a global variable", "Using a local variable", "Using the `threading.Lock` object to synchronize access to the counter", "Using a simple increment operation"],
+    "correct_answer": "Using the `threading.Lock` object to synchronize access to the counter",
+    "topic": "Concurrency",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Explain the concept of 'memoization' and how you can implement it efficiently in Python. How does it relate to dynamic programming?",
+    "options": ["Memoization is a technique to store the results of expensive function calls and reuse them for subsequent calls with the same inputs. It can be implemented using dictionaries or decorators. It is a key concept in dynamic programming.", "Memoization is a technique for obfuscating code.", "Memoization is only used for caching HTTP requests.", "Memoization is not related to dynamic programming."],
+    "correct_answer": "Memoization is a technique to store the results of expensive function calls and reuse them for subsequent calls with the same inputs. It can be implemented using dictionaries or decorators. It is a key concept in dynamic programming.",
+    "topic": "Optimization",
+    "difficulty": "hard"
+  }
+]
+```

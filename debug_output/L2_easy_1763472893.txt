@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code: `print(type([1, 2, 3]))`?",
+    "options": ["A) list", "B) <class 'list'>", "C) array", "D) <type 'list'>"],
+    "correct_answer": "B",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is the correct way to open a file named 'my_file.txt' in read mode?",
+    "options": ["A) file = open('my_file.txt', 'w')", "B) file = open('my_file.txt', 'r')", "C) file = open('my_file.txt')", "D) file = open('my_file.txt', 'read')"],
+    "correct_answer": "B",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `[x*2 for x in range(5) if x % 2 == 0]`?",
+    "options": ["A) [0, 2, 4, 6, 8]", "B) [0, 4, 8]", "C) [0, 1, 2, 3, 4]", "D) [0, 2, 4]"],
+    "correct_answer": "B",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `__init__` method in a Python class?",
+    "options": ["A) It is used to destroy an object.", "B) It is used to create a new class.", "C) It is a constructor and initializes the object's attributes.", "D) It is used to define static methods."],
+    "correct_answer": "C",
+    "topic": "OOP",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a Last-In-First-Out (LIFO) behavior?",
+    "options": ["A) Queue", "B) List", "C) Stack", "D) Dictionary"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["A) O(n)", "B) O(log n)", "C) O(1)", "D) O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print(1 == True)`?",
+    "options": ["A) True", "B) False", "C) 1", "D) Error"],
+    "correct_answer": "A",
+    "topic": "Boolean Operations",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the `yield` keyword do in Python?",
+    "options": ["A) It raises an exception.", "B) It defines a decorator.", "C) It returns a value from a function and terminates the function.", "D) It returns a generator object."],
+    "correct_answer": "D",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of a decorator in Python?",
+    "options": ["A) To define a new data type.", "B) To modify the behavior of a function or class.", "C) To import external libraries.", "D) To handle exceptions."],
+    "correct_answer": "B",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is an example of a mutable data type in Python?",
+    "options": ["A) String", "B) Tuple", "C) Integer", "D) List"],
+    "correct_answer": "D",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following libraries is commonly used for numerical computation in Python?",
+    "options": ["A) Django", "B) Flask", "C) NumPy", "D) requests"],
+    "correct_answer": "C",
+    "topic": "Libraries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the `finally` block in a `try-except` statement?",
+    "options": ["A) It handles specific exceptions.", "B) It always executes, regardless of whether an exception occurred.", "C) It defines the main code to be executed.", "D) It defines alternative code to be executed if an exception does not occur."],
+    "correct_answer": "B",
+    "topic": "Exception Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code snippet: `print('hello'.replace('l', 'p', 1))`?",
+    "options": ["A) heppo", "B) heplo", "C) hellp", "D) hello"],
+    "correct_answer": "B",
+    "topic": "String Manipulation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `*args` parameter in a Python function?",
+    "options": ["A) It allows the function to accept a variable number of keyword arguments.", "B) It allows the function to accept only positional arguments.", "C) It allows the function to accept a variable number of positional arguments.", "D) It defines the return type of the function."],
+    "correct_answer": "C",
+    "topic": "Functions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the difference between a list and a tuple in Python?",
+    "options": ["A) Lists are immutable, while tuples are mutable.", "B) Lists are ordered, while tuples are unordered.", "C) Lists are mutable, while tuples are immutable.", "D) Lists can only contain integers, while tuples can contain any data type."],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these methods is used to add an element to the end of a list?",
+    "options": ["A) insert()", "B) add()", "C) append()", "D) extend()"],
+    "correct_answer": "C",
+    "topic": "List Methods",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `print({1, 2, 2, 3})`?",
+    "options": ["A) {1, 2, 2, 3}", "B) [1, 2, 2, 3]", "C) {1, 2, 3}", "D) [1, 2, 3]"],
+    "correct_answer": "C",
+    "topic": "Sets",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a built-in function in Python used to iterate over multiple iterables in parallel?",
+    "options": ["A) map()", "B) reduce()", "C) zip()", "D) filter()"],
+    "correct_answer": "C",
+    "topic": "Built-in Functions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How do you create a shallow copy of a list in Python?",
+    "options": ["A) new_list = list(original_list)", "B) new_list = original_list.copy()", "C) new_list = original_list[:]", "D) All of the above"],
+    "correct_answer": "D",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of `**kwargs` in a function definition?",
+    "options": ["A) Pass a variable number of positional arguments", "B) Pass a variable number of keyword arguments", "C) Specify the return type of the function", "D) Create a new thread"],
+    "correct_answer": "B",
+    "topic": "Functions",
+    "difficulty": "medium"
+  }
+]
+```

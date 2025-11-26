@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A critical component owned by another team is experiencing intermittent failures, directly impacting your team's deliverables. You've alerted the owning team, but progress is slow. What's the MOST effective next step?",
+    "options": ["A. Escalate to your manager immediately.", "B. Repeatedly ping the owning team's engineers until the issue is resolved.", "C. Offer to help the owning team troubleshoot the issue, providing your team's expertise.", "D. Start working on a workaround, even if it means duplicating some functionality."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is consistently missing sprint goals. After reviewing the situation, you realize the team is consistently underestimating the effort required for tasks. What's the BEST approach to address this?",
+    "options": ["A. Implement mandatory overtime to catch up on missed deadlines.", "B. Blame individual team members for poor performance.", "C. Introduce a more rigorous task estimation process, involving the whole team, and track estimates vs. actuals.", "D. Reduce the scope of each sprint drastically."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're presenting a technical proposal to stakeholders with varying levels of technical expertise. How do you ensure effective communication?",
+    "options": ["A. Use highly technical jargon to demonstrate your expertise.", "B. Focus solely on the high-level benefits and avoid any technical details.", "C. Tailor your language and level of detail to the audience, providing context and explanations where necessary.", "D. Read directly from your technical documentation."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A junior engineer on your team is struggling with a task and hesitates to ask for help. What's the BEST way to address this situation?",
+    "options": ["A. Publicly criticize the engineer's lack of progress during the daily stand-up.", "B. Ignore the situation and assume the engineer will eventually figure it out.", "C. Proactively offer your assistance and create a safe space for them to ask questions.", "D. Assign the task to a more experienced engineer without discussing it with the junior engineer."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a code review, you identify a potential security vulnerability in a colleague's code. What's the MOST appropriate course of action?",
+    "options": ["A. Approve the code without mentioning the vulnerability to avoid conflict.", "B. Report the vulnerability directly to your manager without discussing it with the colleague first.", "C. Privately discuss the vulnerability with your colleague and collaboratively find a solution.", "D. Publicly shame the colleague for introducing the vulnerability."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You disagree with a technical decision made by your team lead. What's the most constructive way to express your disagreement?",
+    "options": ["A. Publicly criticize the decision in front of the team.", "B. Silently disagree and implement the decision without question.", "C. Privately discuss your concerns with the team lead, presenting your rationale and alternative solutions.", "D. Sabotage the implementation to prove your point."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A major project is nearing completion, but a critical bug is discovered that will significantly delay the release. The project manager is visibly stressed. What is the MOST helpful approach?",
+    "options": ["A. Focus solely on blaming the individual who introduced the bug.", "B. Offer to help troubleshoot and fix the bug, focusing on solutions and collaboration.", "C. Ignore the situation and continue working on other tasks.", "D. Publicly criticize the project manager's leadership."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is asked to take on a new project with an unrealistic deadline. What's the MOST appropriate response?",
+    "options": ["A. Accept the deadline without question and work excessive hours to meet it.", "B. Immediately refuse to take on the project.", "C. Communicate the concerns about the deadline to stakeholders, providing data and reasoning to support your concerns, and suggest alternative timelines or scope adjustments.", "D. Publicly complain about the unrealistic expectations."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You receive negative feedback on your performance during a review. What's the BEST way to respond?",
+    "options": ["A. Become defensive and argue against the feedback.", "B. Dismiss the feedback as invalid.", "C. Actively listen to the feedback, ask clarifying questions, and create a plan for improvement.", "D. Ignore the feedback and continue working as before."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a small team of engineers, and one member is consistently late to meetings and misses deadlines. How should you address this?",
+    "options": ["A. Publicly shame the team member in front of the group.", "B. Ignore the behavior in the hopes it will resolve itself.", "C. Privately discuss the issue with the team member, understand the reasons behind the behavior, and work together to find solutions.", "D. Immediately escalate the issue to HR without speaking to the team member first."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is developing a new feature. During the design phase, two engineers have conflicting ideas about the best approach. How do you facilitate a productive discussion?",
+    "options": ["A. Let the senior engineer automatically decide the approach.", "B. Avoid the conflict and implement both approaches in parallel.", "C. Encourage both engineers to present their ideas, discuss the pros and cons of each, and facilitate a collaborative decision-making process.", "D. Immediately shut down the discussion and assign a single approach."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A new technology is being introduced to your team that requires significant learning. Several team members are resistant to adopting it. What's the best way to address this resistance?",
+    "options": ["A. Force all team members to use the technology immediately.", "B. Ignore the resistance and proceed with the implementation.", "C. Understand the concerns of the team members, provide training and support, and highlight the benefits of the new technology.", "D. Replace the resistant team members with individuals who are more willing to adapt."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are responsible for reviewing a pull request with substantial changes. How do you approach the review process effectively?",
+    "options": ["A. Approve the pull request without reviewing it to save time.", "B. Focus only on the formatting and style of the code.", "C. Understand the purpose of the changes, carefully review the code for functionality, security, and maintainability, and provide constructive feedback.", "D. Reject the pull request without providing any feedback."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A senior engineer from another team is consistently dismissive of your team's ideas during cross-functional meetings. How do you handle this situation?",
+    "options": ["A. Ignore the engineer's behavior and avoid participating in future meetings.", "B. Publicly confront the engineer during a meeting.", "C. Privately discuss the issue with the engineer, highlighting the impact of their behavior and seeking a more collaborative approach.", "D. Escalate the issue to your manager and demand the engineer be removed from the meetings."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are asked to estimate the effort required for a complex feature that you have limited experience with. What's the BEST approach to provide an accurate estimate?",
+    "options": ["A. Provide a rough estimate based on your general intuition.", "B. Pad the estimate significantly to ensure you don't underestimate the effort.", "C. Break down the feature into smaller tasks, research the technology involved, consult with experienced colleagues, and provide a detailed estimate with assumptions and potential risks.", "D. Refuse to provide an estimate due to your lack of experience."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your project is using a new technology stack, and you encounter an unexpected error that you cannot resolve on your own. What's the MOST effective way to troubleshoot?",
+    "options": ["A. Give up and tell your manager that the technology is too difficult to use.", "B. Continue trying random solutions without consulting any resources.", "C. Consult the official documentation, search online forums, ask for help from colleagues, and document your troubleshooting steps.", "D. Revert to using the old technology stack without informing your team."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A teammate comes to you with a bug that they've been struggling with for hours. They are clearly frustrated. What's the MOST helpful response?",
+    "options": ["A. Tell them to keep trying and they'll eventually figure it out.", "B. Ignore them and continue working on your own tasks.", "C. Offer to help them troubleshoot the bug, providing guidance and support without taking over.", "D. Publicly criticize their inability to solve the problem."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are asked to work on a task that is outside your area of expertise. What is the best approach?",
+    "options": ["A. Refuse to work on the task and insist on being assigned something more familiar.", "B. Attempt the task without any preparation or research.", "C. Accept the task, research the required skills and knowledge, and seek guidance from experienced colleagues.", "D. Procrastinate on the task and hope someone else will take it over."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is undergoing a significant organizational change, resulting in uncertainty and anxiety among team members. How can you best support your team during this transition?",
+    "options": ["A. Ignore the concerns of the team members and focus solely on completing your own tasks.", "B. Downplay the significance of the changes and assure everyone that everything will be fine.", "C. Acknowledge the uncertainty, communicate openly about the changes, provide opportunities for team members to voice their concerns, and offer support and resources.", "D. Complain about the changes to your manager and encourage other team members to do the same."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a post-mortem meeting after a major outage, tensions are high, and blame is being assigned. What's the most productive way to steer the conversation?",
+    "options": ["A. Join in the blame game and identify the individuals responsible for the outage.", "B. Shut down the meeting to avoid further conflict.", "C. Focus on identifying the root causes of the outage, proposing preventative measures, and creating a culture of learning from mistakes.", "D. Ignore the outage and move on to the next project."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  }
+]
+```

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code: `print(type([1, 'a', 2.5]))`?",
+    "options": ["A. <class 'tuple'>", "B. <class 'list'>", "C. <class 'array'>", "D. <class 'dict'>"],
+    "correct_answer": "B",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["A. define", "B. function", "C. def", "D. func"],
+    "correct_answer": "C",
+    "topic": "Syntax",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `print(10 // 3)`?",
+    "options": ["A. 3.333", "B. 3", "C. 3.0", "D. 4"],
+    "correct_answer": "B",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the primary purpose of a decorator in Python?",
+    "options": ["A. To add visual styling to output", "B. To modify the underlying operating system", "C. To add functionality to a function without modifying its code", "D. To compress code for faster execution"],
+    "correct_answer": "C",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["A. O(n)", "B. O(log n)", "C. O(1)", "D. O(n^2)"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the difference between `==` and `is` operators in Python?",
+    "options": ["A. `==` compares values, `is` compares types", "B. `==` compares identity, `is` compares values", "C. `==` compares values, `is` compares memory addresses", "D. They are interchangeable"],
+    "correct_answer": "C",
+    "topic": "Operators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `yield` keyword in Python?",
+    "options": ["A. To terminate a program", "B. To define a coroutine", "C. To return a value from a function and end its execution", "D. To create a generator"],
+    "correct_answer": "D",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a valid way to create a copy of a list?",
+    "options": ["A. `new_list = old_list[:]`", "B. `new_list = list(old_list)`", "C. `new_list = old_list.copy()`", "D. `new_list = old_list`"],
+    "correct_answer": "D",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": ["A. A class that inherits from all other classes", "B. A class that is used to create other classes", "C. A class that automatically manages memory", "D. A class that can only be used within other classes"],
+    "correct_answer": "B",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is true about the Global Interpreter Lock (GIL) in Python?",
+    "options": ["A. It allows multiple native threads to execute Python bytecode concurrently.", "B. It prevents race conditions by allowing only one thread to hold control of the Python interpreter at any one time.", "C. It significantly improves performance for CPU-bound multi-threaded applications.", "D. It is a feature that ensures all Python code is thread-safe by default."],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["A. To define a list of methods that can be called on an instance of the class.", "B. To prevent the creation of new attributes on instances of the class after initialization, saving memory.", "C. To define a list of default values for attributes of the class.", "D. To specify the order in which attributes are initialized."],
+    "correct_answer": "B",
+    "topic": "Memory Model",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is an advantage of using asynchronous programming in Python?",
+    "options": ["A. It eliminates the need for threading.", "B. It allows for improved performance in I/O-bound operations.", "C. It makes code easier to debug.", "D. It automatically handles memory management."],
+    "correct_answer": "B",
+    "topic": "Async",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does Python's memory management handle circular references?",
+    "options": ["A. It relies solely on garbage collection.", "B. It uses a reference counting mechanism that can break cycles.", "C. It uses a combination of reference counting and a generational garbage collector to detect and break cycles.", "D. It avoids circular references altogether."],
+    "correct_answer": "C",
+    "topic": "Memory Model",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which data structure is most suitable for implementing a priority queue?",
+    "options": ["A. List", "B. Stack", "C. Heap", "D. Queue"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `[x**2 for x in range(5) if x % 2 == 0]`?",
+    "options": ["A. [0, 1, 4, 9, 16]", "B. [0, 4, 16]", "C. [1, 9]", "D. [0, 2, 4]"],
+    "correct_answer": "B",
+    "topic": "Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the `super()` function do in Python?",
+    "options": ["A. It creates a new instance of a class.", "B. It calls the constructor of the parent class.", "C. It deletes an object from memory.", "D. It checks if an object is an instance of a class."],
+    "correct_answer": "B",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which statement about Python's `asyncio` library is FALSE?",
+    "options": ["A. It's used for concurrent programming", "B. It uses coroutines to achieve concurrency", "C. It's ideal for CPU-bound tasks", "D. It relies on an event loop"],
+    "correct_answer": "C",
+    "topic": "Async",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `multiprocessing` and `threading` in Python?",
+    "options": ["A. `multiprocessing` uses threads, while `threading` uses processes", "B. `multiprocessing` bypasses the GIL, while `threading` is limited by it", "C. They are interchangeable and offer the same functionality", "D. `threading` is faster than `multiprocessing`"],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does the `lru_cache` decorator in `functools` improve performance?",
+    "options": ["A. By compressing the code.", "B. By caching the results of function calls.", "C. By optimizing memory usage.", "D. By parallelizing the execution of the function."],
+    "correct_answer": "B",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print({1, 2, 2, 3, 3, 3})`?",
+    "options": ["A. {1, 2, 2, 3, 3, 3}", "B. {1, 2, 3}", "C. [1, 2, 3]", "D. Error"],
+    "correct_answer": "B",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  }
+]
+```

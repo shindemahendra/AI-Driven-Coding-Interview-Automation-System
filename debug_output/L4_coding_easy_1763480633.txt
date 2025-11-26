@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Inventory Management: Low Stock Alert",
+  "description": "You are working on an inventory management system for a retail store. The system needs to identify items that are running low on stock so that restocking orders can be placed. You are given a list of item names and their corresponding stock quantities. Your task is to identify and return a list of item names that have stock levels below a given threshold.",
+  "input_format": "The input consists of two parts:\n1.  `stock_levels`: A dictionary where keys are item names (strings) and values are their stock quantities (integers).\n2.  `threshold`: An integer representing the minimum stock level. Items with stock below this threshold should be flagged.",
+  "output_format": "A list of strings, where each string is the name of an item with a stock level below the given threshold. The order of items in the output list should match the order they appear in the input `stock_levels` dictionary.",
+  "constraints": "- The number of items in `stock_levels` will be between 1 and 100.\n- Stock quantities will be non-negative integers (0 or greater).\n- The threshold will be a non-negative integer.\n- Item names will be non-empty strings consisting of alphanumeric characters and spaces.",
+  "sample_input": "{\n \"stock_levels\": {\n \"T-Shirt\": 25,\n \"Jeans\": 10,\n \"Shoes\": 5,\n \"Hat\": 15\n },\n \"threshold\": 10\n}",
+  "sample_output": "[\"Shoes\"]",
+  "difficulty": "easy"
+}
+```

@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Inventory Management System - Low Stock Alert",
+  "description": "You are developing an inventory management system for a retail store.  The system needs to identify items that are running low in stock and generate alerts. Given a list of item names and their current stock levels, and a reorder threshold, your task is to return a list of item names that have stock levels below the threshold.",
+  "input_format": "The input consists of three parts:\n\n1.  `inventory`: A list of strings, where each string represents an item name (e.g., `[\"Shirt\", \"Pants\", \"Shoes\"]`)\n2.  `stock_levels`: A list of integers, where each integer corresponds to the stock level of the item at the same index in the `inventory` list (e.g., `[15, 5, 12]`)\n3.  `reorder_threshold`: An integer representing the minimum stock level before a reorder is needed.",
+  "output_format": "Return a list of strings, where each string is the name of an item that has a stock level strictly less than the `reorder_threshold`. The order of the items in the output list should match the order in which they appear in the input `inventory` list.",
+  "constraints": "\n*   `1 <= len(inventory) <= 100`\n*   `len(inventory) == len(stock_levels)`\n*   `0 <= stock_levels[i] <= 1000`\n*   `0 <= reorder_threshold <= 1000`\n*   Item names are non-empty strings consisting of alphanumeric characters and spaces.\n*   Item names are unique (no duplicates in the `inventory` list).",
+  "sample_input": "[\"Shirt\", \"Pants\", \"Shoes\", \"Socks\"]\n[15, 5, 12, 2]\n10",
+  "sample_output": "[\"Pants\", \"Socks\"]",
+  "difficulty": "easy"
+}
+```

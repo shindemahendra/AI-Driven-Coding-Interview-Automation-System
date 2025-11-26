@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the next number in the sequence: 2, 4, 6, 8, ?",
+    "options": ["9", "10", "11", "12"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all A are B, and all B are C, then which of the following is definitely true?",
+    "options": ["All C are A", "All A are C", "Some C are B", "No A are C"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the odd one out: Apple, Banana, Carrot, Orange",
+    "options": ["Apple", "Banana", "Carrot", "Orange"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What comes next in the pattern: AB, CD, EF, ?",
+    "options": ["GH", "IJ", "IK", "MN"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A farmer has 17 sheep and all but 9 die. How many sheep does he have left?",
+    "options": ["0", "8", "9", "17"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Three people can paint a house in 6 days. How many days will it take six people to paint the same house, assuming they work at the same rate?",
+    "options": ["3", "6", "9", "12"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If John is faster than Peter, and Peter is slower than Sarah, then which of the following statements MUST be true?",
+    "options": ["John is faster than Sarah", "Sarah is faster than John", "Sarah and John are equally fast", "It's impossible to determine who is faster between John and Sarah"],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at 6:00 AM, what time will it show when the actual time is 4:00 PM?",
+    "options": ["3:10 PM", "3:20 PM", "4:30 PM", "2:30 PM"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What number should replace the question mark: 1, 4, 9, 16, ?",
+    "options": ["20", "24", "25", "30"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bag contains 3 red balls and 2 blue balls. You pick two balls at random without replacement. What is the probability that both balls are red?",
+    "options": ["3/5", "9/25", "3/10", "6/25"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have 12 coins, and one of them is counterfeit and has a different weight (either heavier or lighter) than the other 11. You have a balance scale. What is the minimum number of weighings needed to guarantee that you can identify the counterfeit coin and determine whether it is heavier or lighter?",
+    "options": ["2", "3", "4", "5"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A logic gate has three inputs: A, B, and C. The output is true if and only if exactly two of the inputs are true. Which of the following boolean expressions represents this gate?",
+    "options": ["(A AND B) OR (B AND C) OR (A AND C)", "(A AND B AND NOT C) OR (A AND C AND NOT B) OR (B AND C AND NOT A)", "(A OR B) AND (B OR C) AND (A OR C)", "(A XOR B) AND (B XOR C) AND (A XOR C)"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "There are 100 lockers in a hallway, numbered 1 to 100. Initially, all lockers are closed. A person walks down the hallway and opens every locker. A second person walks down the hallway and closes every second locker (lockers 2, 4, 6, ...). A third person walks down the hallway and toggles every third locker (if it's open, they close it; if it's closed, they open it). This continues until the 100th person toggles the 100th locker. At the end, how many lockers are open?",
+    "options": ["5", "10", "12", "25"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have two ropes. Each rope takes exactly one hour to burn completely, but they don't burn at a constant rate. How can you measure exactly 45 minutes using only these two ropes and a lighter?",
+    "options": ["Burn one rope completely and half the other.", "Light both ends of one rope and one end of the other; when the first rope burns out, light the other end of the second rope.", "Cut one rope in half and burn them sequentially.", "This is not possible."],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have a 5-gallon jug and a 3-gallon jug. How can you measure out exactly 4 gallons of water?",
+    "options": ["Fill the 5-gallon jug and pour it into the 3-gallon jug.", "Fill the 3-gallon jug and pour it into the 5-gallon jug.", "Fill the 5-gallon jug, pour into the 3-gallon until full, empty the 3-gallon, pour the remaining 2 gallons into the 3-gallon, fill the 5-gallon again, and pour into the 3-gallon until full.", "Fill the 3-gallon jug, pour into the 5-gallon until full, empty the 5-gallon, and repeat."],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output of the following Python code snippet?\n\n```python\ndef mystery(n):\n  if n <= 1:\n    return 1\n  else:\n    return n + mystery(n - 1)\n\nprint(mystery(4))\n```",
+    "options": ["4", "10", "24", "Error"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a Last-In-First-Out (LIFO) behavior?",
+    "options": ["Queue", "List", "Stack", "Dictionary"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `yield` keyword in Python?",
+    "options": ["To define a variable.", "To raise an exception.", "To create a generator function.", "To import a module."],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of the following Python code?\n\n```python\ndef outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nprint(closure(5))\n```",
+    "options": ["5", "10", "15", "Error"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "medium"
+  }
+]
+```

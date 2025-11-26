@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A critical production system experiences a major outage during a planned maintenance window. The rollback plan fails. How should you prioritize your immediate actions?",
+    "options": ["A. Immediately escalate to senior management for a strategic decision.", "B. Focus solely on debugging the rollback process to identify and fix the issue.", "C. Initiate a focused incident response, prioritizing system recovery and data integrity, while communicating transparently with stakeholders.", "D. Blame the team responsible for the failed rollback plan and reassign responsibilities."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You disagree with a senior architect's proposed solution for a scalable database design. You believe your alternative is more efficient and maintainable long-term. How do you proceed?",
+    "options": ["A. Implement your solution independently, demonstrating its superiority.", "B. Directly challenge the architect's proposal in a public forum to gain support.", "C. Privately document your concerns and evidence-based alternative, then schedule a focused discussion to present your case and collaboratively evaluate both options.", "D. Defer to the senior architect's decision without further discussion to maintain team harmony."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A junior team member consistently misses deadlines and delivers low-quality work. You are their mentor. What is the MOST effective initial approach?",
+    "options": ["A. Publicly criticize their performance during team meetings to motivate improvement.", "B. Report their performance directly to their manager without prior discussion.", "C. Schedule a private, constructive conversation to understand the challenges, identify skill gaps, and collaboratively create a performance improvement plan.", "D. Ignore the issue, hoping they will improve over time."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is consistently asked to deliver features with unrealistic deadlines. This leads to burnout and technical debt. How should you address this situation effectively?",
+    "options": ["A. Accept the deadlines and work overtime to meet the expectations.", "B. Complain to other team members and avoid raising the issue with management.", "C. Proactively gather data on the impact of tight deadlines (burnout, technical debt) and present a well-reasoned case for more realistic timelines, emphasizing long-term sustainability and quality.", "D. Immediately refuse to work on any projects with tight deadlines."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You discover a critical security vulnerability in a widely used internal library. What is the MOST responsible course of action?",
+    "options": ["A. Fix the vulnerability in your own project and keep it secret to prevent widespread exploitation.", "B. Ignore the vulnerability if it doesn't directly impact your current project.", "C. Immediately report the vulnerability to the appropriate security team or responsible party, providing detailed information and proposed solutions while adhering to established security protocols.", "D. Publicly disclose the vulnerability to force a quick fix."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are leading a team implementing a new microservice architecture. Two team members have strongly opposing views on the technology stack. How do you facilitate the decision-making process?",
+    "options": ["A. Make the decision yourself to avoid prolonged conflict.", "B. Let the team members with the strongest personalities decide the technology stack.", "C. Facilitate a structured discussion, focusing on the pros and cons of each technology based on objective criteria (performance, scalability, maintainability), and guide the team to a consensus-based decision with clear justification.", "D. Implement both technologies and let the team decide which one to use in the future."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "During a crucial project demo, a critical component unexpectedly fails. You are the lead engineer. What is your immediate priority?",
+    "options": ["A. Panic and blame the team responsible for the failing component.", "B. Immediately end the demo and reschedule it for a later date.", "C. Stay calm, acknowledge the failure, provide a brief explanation, and seamlessly transition to a backup plan or alternative demonstration, maintaining a professional demeanor.", "D. Pretend the failure didn't happen and continue with the demo as if nothing went wrong."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You're assigned to a project with incomplete and unclear requirements. What is the MOST effective initial step?",
+    "options": ["A. Start coding based on your assumptions and clarify the requirements later.", "B. Complain about the unclear requirements to your manager.", "C. Proactively schedule a meeting with the stakeholders and product owner to clarify the ambiguities, document the assumptions, and establish a clear understanding of the project goals.", "D. Ignore the unclear requirements and focus on the parts that are well-defined."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A team member is consistently resistant to adopting new technologies and processes. How should you approach this situation?",
+    "options": ["A. Force the team member to adopt the new technologies and processes without explanation.", "B. Ignore the team member's resistance and proceed with the implementation.", "C. Engage in a one-on-one conversation to understand the reasons for the resistance, address any concerns, and provide training and support to facilitate the adoption of the new technologies and processes.", "D. Publicly shame the team member for their resistance."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is using an agile methodology, but the product owner is constantly changing priorities mid-sprint. This disrupts the team's workflow and reduces productivity. What is the most effective way to address this?",
+    "options": ["A. Complain to the other team members about the product owner's behavior.", "B. Directly confront the product owner in a public forum.", "C. Schedule a meeting with the product owner, the scrum master (if applicable), and relevant stakeholders to discuss the impact of changing priorities on the team's velocity and explore ways to improve sprint planning and commitment.", "D. Ignore the changing priorities and continue working on the original plan."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You need to estimate the effort required for a complex feature. You have limited information. Which approach is MOST effective?",
+    "options": ["A. Provide a rough estimate based on your gut feeling to meet deadlines.", "B. Pad the estimate significantly to account for unknowns.", "C. Break down the feature into smaller, more manageable tasks, research similar past projects, consult with experienced team members, and provide a range-based estimate with clear assumptions and dependencies.", "D. Refuse to provide an estimate until all information is available."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are in a meeting with stakeholders from different departments. They have conflicting priorities for a new feature. How do you best facilitate a productive discussion?",
+    "options": ["A. Let the loudest stakeholder dominate the discussion.", "B. Force a vote and implement the feature with the most votes.", "C. Actively listen to each stakeholder's perspective, identify common goals and dependencies, and guide the conversation toward a consensus-based solution that balances competing priorities and aligns with the overall product strategy.", "D. Defer the decision to senior management."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A colleague consistently takes credit for your ideas during team meetings. How do you address this situation?",
+    "options": ["A. Publicly call out your colleague during the meeting to reclaim credit for your ideas.", "B. Ignore the situation to avoid conflict.", "C. Privately address your concerns with your colleague in a professional manner, clearly expressing the impact of their actions and seeking a more collaborative approach to sharing ideas.", "D. Retaliate by taking credit for their ideas in future meetings."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are tasked with giving constructive feedback to a teammate whose code quality is consistently below par. What is the MOST effective approach?",
+    "options": ["A. Publicly criticize their code during code reviews to shame them into improving.", "B. Avoid giving any feedback to avoid hurting their feelings.", "C. Provide specific, actionable feedback focusing on code style, maintainability, and best practices, offering examples and resources for improvement while emphasizing the positive impact of higher code quality on the team and project.", "D. Rewrite their code yourself without providing any feedback."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a retrospective, the team identifies a recurring issue related to communication breakdowns. How should you facilitate addressing this problem?",
+    "options": ["A. Ignore the issue, hoping it will resolve itself.", "B. Blame specific individuals for the communication breakdowns.", "C. Facilitate a brainstorming session to identify the root causes of the communication breakdowns, propose concrete solutions, and assign owners to implement and track the progress of the agreed-upon improvements.", "D. Implement a mandatory communication training program without understanding the specific issues."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A junior developer asks you for help with a problem you've solved many times before. What's the best way to respond?",
+    "options": ["A. Tell them to figure it out themselves; they need to learn to be independent.", "B. Give them the exact solution immediately so they can get back to work.", "C. Guide them through the problem-solving process by asking clarifying questions, suggesting relevant resources, and providing hints rather than directly giving the solution, fostering their understanding and problem-solving skills.", "D. Ignore their request; you're too busy with your own work."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your manager asks you to complete a task with a very tight deadline that you believe is unrealistic. What should you do?",
+    "options": ["A. Accept the deadline without question and work as hard as possible to meet it.", "B. Tell your manager it's impossible and refuse to do it.", "C. Discuss the task and the deadline with your manager, explain your concerns, and propose alternative solutions or a revised timeline based on a realistic assessment of the effort required.", "D. Complain to your colleagues about the unrealistic deadline but say nothing to your manager."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You notice a colleague making a mistake that could potentially cause a problem in production. What is the MOST appropriate action?",
+    "options": ["A. Ignore it; it's not your responsibility.", "B. Publicly point out their mistake to everyone in the team.", "C. Privately and respectfully inform your colleague about the potential issue, offering assistance and suggesting possible solutions to prevent the problem from escalating.", "D. Immediately report the colleague to your manager."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You receive an email with instructions that are unclear. What is the best course of action?",
+    "options": ["A. Guess what the instructions mean and proceed accordingly.", "B. Ignore the email and hope someone else clarifies it.", "C. Reply to the email asking for clarification on the specific points that are unclear, ensuring you understand the instructions completely before proceeding.", "D. Forward the email to another colleague and ask them to figure it out."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're working on a team project and realize you're falling behind schedule. What's the first thing you should do?",
+    "options": ["A. Keep working silently and hope to catch up without alerting anyone.", "B. Immediately panic and blame other team members.", "C. Communicate the issue to your team lead or manager as soon as possible, explaining the reasons for the delay and proposing a revised plan or seeking assistance to get back on track.", "D. Ignore the issue and hope it resolves itself."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  }
+]
+```

@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log File Analyzer",
+  "description": "You are working on a system that processes log files. Each line in the log file represents an event. Your task is to write a function that analyzes a log file and identifies lines that contain a specific error code.  Your function should return a list of line numbers (1-indexed) where the error code is found.",
+  "input_format": "The input is a string representing the content of the log file. The log file content is a multi-line string, where each line represents a log entry. The error code to search for is also provided as a string.",
+  "output_format": "The output is a list of integers, representing the line numbers (1-indexed) where the error code is found. The list should be sorted in ascending order.",
+  "constraints": "1 <= Number of lines in the log file <= 1000\n1 <= Length of each line <= 200\n1 <= Length of the error code <= 20\nThe log file contains only printable ASCII characters.\nThe error code will not contain newline characters.",
+  "sample_input": "log_file = '''2023-10-26 10:00:00 INFO: System started\n2023-10-26 10:00:05 ERROR: File not found (Error Code: 404)\n2023-10-26 10:00:10 WARNING: Low disk space\n2023-10-26 10:00:15 ERROR: Connection timed out (Error Code: 500)\n2023-10-26 10:00:20 INFO: System shutting down\n2023-10-26 10:00:25 ERROR: File not found (Error Code: 404)'''\nerror_code = \"404\"",
+  "sample_output": "[2, 6]",
+  "difficulty": "easy"
+}
+```

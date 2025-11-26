@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A junior team member consistently misses deadlines. How should you initially address this?",
+    "options": ["A. Publicly reprimand them during a team meeting.", "B. Ignore it and hope they improve.", "C. Schedule a private conversation to understand the challenges and offer support.", "D. Immediately escalate the issue to management."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You disagree with a senior team member's proposed solution. What's the best approach?",
+    "options": ["A. Implement your solution without discussion.", "B. Publicly criticize their solution during a meeting.", "C. Privately and respectfully explain your concerns, providing alternative suggestions with supporting rationale.", "D. Silently agree to avoid conflict."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A critical system is down, and the root cause is unknown. The pressure is high. What is the MOST important immediate step?",
+    "options": ["A. Blame the last person who touched the code.", "B. Immediately start making random changes to the system.", "C. Gather the relevant team members to systematically investigate and restore service, communicating updates clearly.", "D. Ignore the problem and hope someone else fixes it."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You receive conflicting requirements from two stakeholders. What should you do first?",
+    "options": ["A. Implement the requirements from the stakeholder with higher seniority.", "B. Ignore the conflict and implement the requirements as you see fit.", "C. Facilitate a discussion between the stakeholders to clarify and prioritize the requirements.", "D. Escalate the issue to your manager without attempting to resolve it yourself."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is consistently contributing less than others. How do you approach this situation?",
+    "options": ["A. Publicly shame them in front of the team.", "B. Ignore their underperformance and focus on high performers.", "C. Have a private conversation to understand potential roadblocks and offer support and mentorship.", "D. Document their underperformance and immediately initiate disciplinary action."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are asked to estimate the time required for a complex task. What's the BEST approach?",
+    "options": ["A. Provide a single optimistic estimate to impress your manager.", "B. Provide a range of estimates (best-case, worst-case, most-likely) based on available information and potential risks.", "C. Provide a wild guess to avoid looking uncertain.", "D. Refuse to provide an estimate because you are unsure."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A client is upset about a bug in production. How should you respond?",
+    "options": ["A. Blame another team or department.", "B. Get defensive and argue with the client.", "C. Acknowledge the issue, apologize, and assure them that you are working to resolve it quickly, providing regular updates.", "D. Ignore the client and hope they forget about it."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A new team member is struggling to understand the codebase. What's the most effective way to help them?",
+    "options": ["A. Tell them to read the documentation and figure it out themselves.", "B. Assign them a small, well-defined task and pair them with an experienced team member to provide guidance and support.", "C. Ignore their struggles and assume they will eventually learn.", "D. Criticize their lack of understanding in front of the team."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "During a project retrospective, a team member is overly critical and negative. How should you handle this?",
+    "options": ["A. Let them continue without intervention to ensure everyone's voice is heard.", "B. Immediately shut down their negativity and prevent them from speaking further.", "C. Acknowledge their concerns, but gently guide the conversation towards constructive solutions and positive outcomes.", "D. Publicly reprimand them for being negative."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a project that is behind schedule. What should you do?",
+    "options": ["A. Hide the delay from stakeholders until you can catch up.", "B. Blame external factors for the delay.", "C. Communicate the delay transparently to stakeholders, explain the reasons, and propose a revised plan with realistic timelines.", "D. Work longer hours without informing anyone."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You observe a colleague exhibiting unprofessional behavior towards another team member. What is the appropriate course of action?",
+    "options": ["A. Ignore it, as it's not your business.", "B. Publicly confront the colleague in front of others.", "C. Privately address the colleague's behavior and, if necessary, report the incident to HR.", "D. Spread rumors about the colleague's behavior."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are in a meeting and don't understand a technical term being used. What should you do?",
+    "options": ["A. Pretend you understand to avoid looking uninformed.", "B. Ask the speaker to clarify the term in a simple and respectful manner.", "C. Immediately interrupt the meeting to demand a full explanation.", "D. Look up the term on your phone without acknowledging the speaker."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A team member suggests an innovative, but risky, approach to solving a problem. How do you evaluate this suggestion?",
+    "options": ["A. Reject it outright because it's too risky.", "B. Immediately implement it without further consideration.", "C. Analyze the potential benefits and risks, considering the impact on the project and the team's resources, and make a data-driven decision.", "D. Defer the decision to someone else."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your manager asks you to do something you believe is unethical. What do you do?",
+    "options": ["A. Do it without question to please your manager.", "B. Refuse outright and risk losing your job.", "C. Discreetly document the request and consult with HR or another trusted authority for guidance.", "D. Publicly denounce your manager's request."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are leading a team and a major technical blocker arises. How do you best manage this?",
+    "options": ["A. Ignore the blocker and hope it resolves itself.", "B. Blame the team members who are affected by the blocker.", "C. Communicate the blocker to relevant stakeholders, clearly define the problem, and collaborate with the team to find solutions, actively removing impediments.", "D. Micromanage the team, demanding immediate solutions without providing support."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A team member takes credit for your work during a presentation. How should you address this situation?",
+    "options": ["A. Publicly call them out during the presentation.", "B. Ignore it to avoid conflict.", "C. Privately discuss the situation with the team member, emphasizing the importance of acknowledging contributions.", "D. Seek revenge by taking credit for their work in the future."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You receive negative feedback from a peer review. What is the MOST constructive response?",
+    "options": ["A. Dismiss the feedback as invalid.", "B. Argue with the reviewer to defend your work.", "C. Actively listen to the feedback, ask clarifying questions, and identify areas for improvement.", "D. Ignore the feedback completely."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You are tasked with training new engineers. What is the most effective way to do this?",
+    "options": ["A. Give them a large manual to read.", "B. Throw them into complex tasks immediately.", "C. Start with fundamentals, provide hands-on exercises, offer mentorship, and gradually increase the complexity of their assignments.", "D. Ignore them and let them learn on their own."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "As a technical lead, how do you balance innovation with the need for stability and maintainability in a legacy system?",
+    "options": ["A. Only focus on stability and avoid all new features.", "B. Only focus on innovation and disregard existing code.", "C. Carefully evaluate the risks and benefits of new features, prioritize incremental improvements, and ensure thorough testing and documentation to minimize disruption.", "D. Replace the entire legacy system with a completely new one without a transition plan."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is experiencing low morale. What is an effective strategy to address this?",
+    "options": ["A. Ignore the low morale and hope it improves on its own.", "B. Blame the team members for their negativity.", "C. Actively solicit feedback from the team, identify the root causes of the low morale, and implement changes to address those issues, while fostering open communication and recognition.", "D. Impose stricter rules and deadlines to improve productivity."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  }
+]
+```

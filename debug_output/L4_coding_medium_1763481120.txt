@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Aggregator",
+  "description": "You are building a log aggregation service. Your task is to process a stream of log entries and efficiently count the occurrences of distinct log messages within a specified time window. Each log entry contains a timestamp (in seconds since epoch) and a log message (a string). \n\nGiven a list of log entries and a time window size, determine the count of *distinct* log messages that occurred within the sliding time window for each log entry. Specifically, for each log entry at index `i`, calculate the number of unique log messages between `logs[i].timestamp - window_size` (inclusive) and `logs[i].timestamp` (inclusive).",
+  "input_format": "The input consists of:\n\n1.  An integer `window_size` representing the size of the time window in seconds.\n2.  A list of log entries, `logs`, where each log entry is a dictionary with two keys:\n    *   `timestamp`: An integer representing the timestamp of the log entry (seconds since epoch).\n    *   `message`: A string representing the log message.\n\nExample:\n\n```json\n{\n  \"window_size\": 5,\n  \"logs\": [\n    {\"timestamp\": 1, \"message\": \"A\"},\n    {\"timestamp\": 3, \"message\": \"B\"},\n    {\"timestamp\": 5, \"message\": \"A\"},\n    {\"timestamp\": 7, \"message\": \"C\"},\n    {\"timestamp\": 9, \"message\": \"B\"},\n    {\"timestamp\": 10, \"message\": \"D\"}\n  ]\n}\n```",
+  "output_format": "A list of integers, where each integer at index `i` represents the count of distinct log messages within the time window ending at `logs[i].timestamp`.",
+  "constraints": "\n*   `1 <= window_size <= 1000`\n*   `1 <= number of log entries <= 10000`\n*   `1 <= timestamp <= 10000`\n*   Log messages are non-empty strings containing only alphanumeric characters and spaces.\n*   Timestamp is non-decreasing (logs are provided in order of timestamp).\n",
+  "sample_input": "{\n  \"window_size\": 5,\n  \"logs\": [\n    {\"timestamp\": 1, \"message\": \"A\"},\n    {\"timestamp\": 3, \"message\": \"B\"},\n    {\"timestamp\": 5, \"message\": \"A\"},\n    {\"timestamp\": 7, \"message\": \"C\"},\n    {\"timestamp\": 9, \"message\": \"B\"},\n    {\"timestamp\": 10, \"message\": \"D\"}\n  ]\n}",
+  "sample_output": "[1, 2, 2, 2, 2, 2]",
+  "difficulty": "medium"
+}
+```

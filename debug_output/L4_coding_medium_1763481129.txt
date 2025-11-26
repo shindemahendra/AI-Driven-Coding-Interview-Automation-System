@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimize Data Center Power Distribution",
+  "description": "You are designing the power distribution system for a new data center. The data center has 'n' servers, each with a known power consumption. You have 'm' power distribution units (PDUs), each with a maximum power capacity. Your goal is to assign servers to PDUs in a way that minimizes the number of PDUs used, while respecting the capacity of each PDU. Each server can be connected to only one PDU. Return the minimum number of PDUs needed to power all servers.",
+  "input_format": "The input consists of two lines:\n\n1. The first line contains two space-separated integers, 'n' (number of servers) and 'm' (number of PDUs).\n2. The second line contains 'n' space-separated integers, representing the power consumption of each server. \n3. The third line contains 'm' space-separated integers, representing the maximum power capacity of each PDU.",
+  "output_format": "An integer representing the minimum number of PDUs needed to power all servers.",
+  "constraints": "1 <= n <= 1000\n1 <= m <= 1000\n1 <= power_consumption[i] <= 100\n1 <= pdu_capacity[i] <= 1000\nAll input values are integers.",
+  "sample_input": "5 3\n80 70 60 50 40\n150 100 80",
+  "sample_output": "3",
+  "difficulty": "medium"
+}
+```

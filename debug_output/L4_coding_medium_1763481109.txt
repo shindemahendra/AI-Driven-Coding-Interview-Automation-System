@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Log Aggregation and Filtering",
+  "description": "You are working on a system that aggregates logs from various microservices. Each log entry has a timestamp, a service name, and a log message. Your task is to process a stream of log entries and filter them based on a given time range and a set of service names. Specifically, you need to return all log messages from the specified services that fall within the given start and end timestamps (inclusive).",
+  "input_format": "The input will be a list of log entries and the filtering parameters.\n\nLog entries will be represented as a list of dictionaries, where each dictionary has the following keys:\n  * `timestamp`: An integer representing the Unix timestamp of the log entry.\n  * `service`: A string representing the name of the service that generated the log entry.\n  * `message`: A string representing the log message.\n\nThe filtering parameters will be provided as three separate variables:\n  * `start_time`: An integer representing the start timestamp (inclusive).\n  * `end_time`: An integer representing the end timestamp (inclusive).\n  * `services`: A list of strings representing the service names to filter by.",
+  "output_format": "The output should be a list of log messages (strings) that satisfy the filtering criteria. The order of the messages in the output list should be the same as their order in the input log entries.",
+  "constraints": "* 1 <= Number of log entries <= 10,000\n* 1 <= `timestamp` <= 1,000,000,000\n* 1 <= Length of `service` name <= 20\n* 1 <= Length of `message` <= 100\n* `start_time` <= `end_time`\n* `start_time` and `end_time` are valid Unix timestamps.\n* Service names and log messages contain only alphanumeric characters and spaces.",
+  "sample_input": "[{\"timestamp\": 1678886400, \"service\": \"auth-service\", \"message\": \"User logged in successfully\"}, {\"timestamp\": 1678886460, \"service\": \"order-service\", \"message\": \"Order placed successfully\"}, {\"timestamp\": 1678886520, \"service\": \"auth-service\", \"message\": \"Authentication failed\"}, {\"timestamp\": 1678886580, \"service\": \"payment-service\", \"message\": \"Payment processed successfully\"}, {\"timestamp\": 1678886640, \"service\": \"order-service\", \"message\": \"Order shipped\"}]\n\n1678886450\n\n1678886600\n\n[\"order-service\", \"payment-service\"]",
+  "sample_output": "[\"Order placed successfully\", \"Payment processed successfully\"]",
+  "difficulty": "medium"
+}
+```

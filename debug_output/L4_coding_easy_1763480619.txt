@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Inventory Check",
+  "description": "A retail company needs to quickly check if they have enough stock to fulfill a customer order. Given an inventory represented as a dictionary (or hash map) where keys are item names and values are the number of units in stock, and an order represented similarly, determine if the company has enough stock to fulfill the entire order.\n\nFor each item in the order, if the requested quantity is less than or equal to the available quantity in the inventory, the company can fulfill that part of the order. If, for any item, the requested quantity exceeds the available quantity, the company cannot fulfill the entire order.\n\nReturn `true` if the company can fulfill the entire order, and `false` otherwise.",
+  "input_format": "Two dictionaries:\n1.  `inventory`: A dictionary representing the current inventory. Keys are item names (strings), and values are the number of units in stock (integers).\n2.  `order`: A dictionary representing the customer order. Keys are item names (strings), and values are the number of units requested (integers).",
+  "output_format": "A boolean: `true` if the order can be fulfilled, `false` otherwise.",
+  "constraints": "- 1 <= number of items in inventory <= 100\n- 1 <= number of items in order <= 100\n- Item names are non-empty strings consisting of alphanumeric characters.\n- The number of units in stock and the number of units requested are non-negative integers (>= 0).",
+  "sample_input": "{\n  \"inventory\": {\n    \"apple\": 10,\n    \"banana\": 5,\n    \"orange\": 7\n  },\n  \"order\": {\n    \"apple\": 3,\n    \"banana\": 2,\n    \"orange\": 7\n  }\n}",
+  "sample_output": "true",
+  "difficulty": "easy"
+}
+```

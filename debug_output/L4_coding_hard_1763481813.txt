@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Resource Allocation in a Distributed System",
+  "description": "You are managing a distributed computing system with `n` nodes. Each node `i` has a computational capacity `capacity[i]` and a memory capacity `memory[i]`. You need to schedule `m` tasks onto these nodes. Each task `j` requires `compute_need[j]` computation and `memory_need[j]` memory.  A node can execute multiple tasks, but the total computation and memory requirements of all tasks assigned to a node must not exceed its capacity.  The goal is to maximize the number of successfully scheduled tasks.  You are given the ability to preempt tasks; if a task cannot be fully executed due to insufficient resources, it can be partially executed (e.g., if a task requires 10 compute and a node only has 5 compute available, 5 compute of the task is completed). However, a partially executed task contributes nothing to the count of 'successfully scheduled tasks'. A task is only considered successful if it's *fully* executed. Determine the maximum number of tasks that can be fully scheduled.",
+  "input_format": "The first line contains two integers, `n` and `m`, representing the number of nodes and tasks, respectively.\nThe second line contains `n` integers representing the computational capacities of the nodes: `capacity[0] capacity[1] ... capacity[n-1]`.\nThe third line contains `n` integers representing the memory capacities of the nodes: `memory[0] memory[1] ... memory[n-1]`.\nThe fourth line contains `m` integers representing the computational needs of the tasks: `compute_need[0] compute_need[1] ... compute_need[m-1]`.\nThe fifth line contains `m` integers representing the memory needs of the tasks: `memory_need[0] memory_need[1] ... memory_need[m-1]`.",
+  "output_format": "An integer representing the maximum number of fully scheduled tasks.",
+  "constraints": "1 <= n <= 30\n1 <= m <= 30\n1 <= capacity[i] <= 1000 for all 0 <= i < n\n1 <= memory[i] <= 1000 for all 0 <= i < n\n1 <= compute_need[j] <= 1000 for all 0 <= j < m\n1 <= memory_need[j] <= 1000 for all 0 <= j < m",
+  "sample_input": "2 3\n5 5\n5 5\n3 2 4\n2 3 1",
+  "sample_output": "2",
+  "difficulty": "hard"
+}
+```

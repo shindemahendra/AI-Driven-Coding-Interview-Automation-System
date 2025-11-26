@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code snippet? `x = [1, 2, 3]; y = x; y[0] = 5; print(x)`",
+    "options": ["[1, 2, 3]", "[5, 2, 3]", "[1, 5, 3]", "Error"],
+    "correct_answer": "B",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The following code is intended to find the maximum element in a list, but it has a bug. What is it? `def find_max(lst):\n  max_val = 0\n  for i in range(len(lst)):\n    if lst[i] > max_val:\n      max_val = lst[i]\n  return max_val`",
+    "options": ["The initial value of `max_val` is incorrect.", "The loop condition is wrong.", "The comparison operator should be `<`", "The function doesn't handle empty lists."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Identify the bug in this code: `def factorial(n):\n  if n == 0:\n    return 1\n  else:\n    return n * factorial(n)`",
+    "options": ["RecursionError due to infinite recursion.", "Incorrect base case.", "The return type is wrong.", "Missing import statement."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The following code aims to remove duplicate elements from a list. Where is the bug? `def remove_duplicates(lst):\n res = []\n for x in lst:\n if x not in res:\n res.append(x)\n lst = res\n return lst`",
+    "options": ["It modifies the input list in-place.", "The loop doesn't iterate through all elements.", "The final assignment `lst = res` doesn't affect the original list outside the function.", "The code does not handle different data types correctly."],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code: `def process_list(data):\n  result = []\n  for i in range(len(data)):\n    result.append(data.pop(i))\n  return result` What is the primary issue with this code?",
+    "options": ["IndexError due to list mutation during iteration.", "MemoryError due to large list sizes.", "TypeError because pop returns None.", "It does not handle negative numbers."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What potential issue arises in the following code snippet using a default mutable argument? `def append_to_list(val, lst=[]):\n  lst.append(val)\n  return lst`",
+    "options": ["TypeError if val is not appendable.", "The function will always return an empty list.", "Subsequent calls to the function without providing 'lst' will modify the same list object.", "The function will raise a ValueError if val is None."],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+    {
+    "question": "The following code intends to calculate the average of a list of numbers, but it produces an incorrect result. What is the bug? `def calculate_average(numbers):\n  total = 0\n  count = 0\n  for num in numbers:\n    total += num\n  average = total / count\n  return average`",
+    "options": ["ZeroDivisionError if the list is empty.", "TypeError if the list contains non-numeric values.", "The total is not initialized correctly.", "The function doesn't handle negative numbers."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Identify the race condition in the following multithreaded code (pseudocode): `Thread 1: balance = balance + 10; Thread 2: balance = balance - 5`",
+    "options": ["Thread 1 might start before Thread 2.", "Thread 2 might not execute.", "The final value of 'balance' might be inconsistent due to interleaved execution.", "The threads will always deadlock."],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The following code uses a generator but has a potential issue. What is it? `def my_generator():\n  for i in range(3):\n    yield i\n\nfor val in my_generator():\n  print(val)\n  break\n\nfor val in my_generator():\n  print(val)`",
+    "options": ["The generator will not yield any values.", "The generator will raise a StopIteration error.", "The generator will only yield values on the first iteration.", "The second loop will produce the same output as the first loop."],
+    "correct_answer": "D",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "In the given snippet, a class variable is unintentionally modified. What's the problem? `class MyClass:\n  shared_list = []\n\n  def __init__(self, value):\n    self.shared_list.append(value)\n\na = MyClass(1)\nb = MyClass(2)\nprint(a.shared_list)`",
+    "options": ["`shared_list` should be an instance variable.", "The `append` method is not thread-safe.", "The `__init__` method is not correctly implemented.", "The class is missing a `__str__` method."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+    {
+    "question": "What happens when an exception is raised within a generator expression? For example: `(1/x for x in [2, 1, 0, 3])`",
+    "options": ["The generator yields None for the problematic value.", "The generator skips the problematic value and continues.", "The generator immediately terminates and raises the exception when the problematic value is reached.", "The exception is caught and handled internally, preventing program termination."],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the potential issue related to variable scope in the following code: `x = 10\ndef my_func():\n  x += 5\n  print(x)\nmy_func()`",
+    "options": ["NameError because 'x' is not defined within the function's scope.", "The global variable 'x' will be modified.", "The function will print 10.", "The function will execute without errors."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the potential deadlock scenario in the following (simplified) code? `Thread A: lock1.acquire(); lock2.acquire(); Thread B: lock2.acquire(); lock1.acquire()`",
+    "options": ["Thread A will always proceed before Thread B.", "Thread B will always proceed before Thread A.", "Neither thread can proceed because each is waiting for the other to release a lock.", "The code will execute successfully without issues."],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "In this code, what's the issue? `def process_data(data):\n  processed = [x.upper() for x in data if len(x) > 5]\n  return processed` Assume 'data' is a list, but some elements might not be strings.",
+    "options": ["TypeError if 'data' contains non-string elements.", "IndexError if any string has length 5.", "ValueError if a string contains special characters.", "The code will always execute without errors."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The following code is intended to sort a list of dictionaries based on a specific key, but it's not working correctly. What could be the issue? `def sort_dicts(list_of_dicts, key):\n  return sorted(list_of_dicts)`",
+    "options": ["The `sorted()` function requires a lambda expression for specifying the key.", "The dictionaries must have comparable keys.", "The function modifies the original list in-place.", "The function will raise an error if the list is empty."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this flawed implementation of binary search. What's wrong? `def binary_search(arr, target):\n low = 0\n high = len(arr)\n while low <= high:\n mid = (low + high) // 2\n if arr[mid] == target:\n return mid\n elif arr[mid] < target:\n low = mid + 1\n else:\n high = mid - 1\n return -1`",
+    "options": ["The initial value of 'high' is incorrect.", "The comparison operator in the while loop is wrong.", "Integer overflow might occur when calculating 'mid'.", "The code doesn't handle duplicate values correctly."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the potential issue with using `time.sleep()` in a concurrent program?",
+    "options": ["It always causes a deadlock.", "It releases the GIL (Global Interpreter Lock).", "It can lead to inefficient CPU utilization.", "It prevents other threads from executing."],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The following code aims to implement memoization but contains a bug. What is it? `def memoize(func):\n cache = {}\n def wrapper(*args):\n if args in cache:\n return cache[args]\n result = func(*args)\n return result\n return wrapper`",
+    "options": ["The cache is not being updated with the result.", "The function doesn't handle keyword arguments.", "The wrapper function is not returning the result.", "The memoization logic is not efficient."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug in this code snippet that's supposed to implement a basic rate limiter: `def rate_limit(func):\n  calls = []\n  def wrapper(*args, **kwargs):\n    now = time.time()\n    calls.append(now)\n    if len(calls) > 10 and now - calls[0] < 1:\n      return 'Rate limited'\n    return func(*args, **kwargs)\n  return wrapper`",
+    "options": ["The `calls` list is not cleared, leading to incorrect rate limiting over time.", "The rate limit applies to all functions decorated with `@rate_limit`.", "The function does not handle exceptions correctly.", "The sleep function is missing to enforce rate limiting."],
+    "correct_answer": "A",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What's the likely source of error if a Python program using multiprocessing intermittently crashes with a segmentation fault?",
+    "options": ["Incorrect exception handling in the main process.", "Race conditions in the inter-process communication.", "Memory corruption due to shared memory misuse.", "The GIL is not being released correctly."],
+    "correct_answer": "C",
+    "topic": "L3",
+    "difficulty": "hard"
+  }
+]
+```

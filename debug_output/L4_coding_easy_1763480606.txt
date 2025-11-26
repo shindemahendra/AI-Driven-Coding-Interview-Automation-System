@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Analyze Website Traffic",
+  "description": "You are analyzing website traffic data to identify high-traffic periods. You are given a list of website visit timestamps. Each timestamp represents the number of visits at a particular minute. Your task is to find the minute with the highest number of visits within a sliding window of 'k' minutes.",
+  "input_format": "The input consists of two lines:\n\n- The first line contains two integers, 'n' (the number of timestamps) and 'k' (the size of the sliding window), separated by a space.\n- The second line contains 'n' space-separated integers representing the website visit counts for each minute.",
+  "output_format": "Print a single integer representing the index (0-based) of the minute that marks the beginning of the sliding window with the highest sum of visit counts. If multiple windows have the same maximum sum, return the index of the first occurrence.",
+  "constraints": "1 <= n <= 10^5\n1 <= k <= n\n0 <= visit_count <= 10^4",
+  "sample_input": "5 2\n1 5 2 4 1",
+  "sample_output": "1",
+  "difficulty": "easy"
+}
+```

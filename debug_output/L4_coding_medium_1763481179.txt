@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimizing Network Bandwidth Allocation",
+  "description": "A telecommunications company is managing a network with multiple servers. Each server needs a specific bandwidth allocation to operate efficiently. However, the total available bandwidth across the network is limited. Given a list of server bandwidth requirements and the total available bandwidth, determine the maximum number of servers that can be allocated their requested bandwidth. The goal is to prioritize servers with lower bandwidth requirements to maximize the number of operational servers. If the total bandwidth required is less than the available bandwidth, allocate bandwidth to all servers.",
+  "input_format": "The input consists of two lines.\n\nThe first line contains two integers, `n` and `b`, separated by a space, where:\n  - `n` represents the number of servers.\n  - `b` represents the total available bandwidth.\n\nThe second line contains `n` integers, separated by spaces, representing the bandwidth requirements of each server. These are denoted as `bandwidths[i]` for `i` from 0 to n-1.",
+  "output_format": "Output a single integer representing the maximum number of servers that can be allocated their requested bandwidth.",
+  "constraints": "1 <= n <= 10^5\n1 <= b <= 10^9\n1 <= bandwidths[i] <= 10^9 for all 0 <= i < n",
+  "sample_input": "5 10\n3 1 4 6 2",
+  "sample_output": "4",
+  "difficulty": "medium"
+}
+```

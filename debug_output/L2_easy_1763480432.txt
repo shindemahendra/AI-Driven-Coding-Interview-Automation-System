@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of `print(type([1, 2, 3]))`?",
+    "options": ["A) tuple", "B) list", "C) set", "D) dict"],
+    "correct_answer": "B",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["A) class", "B) def", "C) function", "D) define"],
+    "correct_answer": "B",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will `print(10 // 3)` output?",
+    "options": ["A) 3.333", "B) 3", "C) 3.0", "D) 4"],
+    "correct_answer": "B",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the correct way to open a file for reading in Python?",
+    "options": ["A) file = open('file.txt', 'w')", "B) file = open('file.txt', 'r')", "C) file = open('file.txt', 'a')", "D) file = open('file.txt')"],
+    "correct_answer": "B",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of `__init__` method in a Python class?",
+    "options": ["A) To define the class", "B) To initialize the object's attributes", "C) To create a new class", "D) To delete an object"],
+    "correct_answer": "B",
+    "topic": "OOP",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `[x**2 for x in range(5) if x % 2 == 0]`?",
+    "options": ["A) [0, 1, 4, 9, 16]", "B) [0, 4, 16]", "C) [1, 9]", "D) [0, 2, 4]"],
+    "correct_answer": "B",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is NOT a valid use case for decorators?",
+    "options": ["A) Logging function calls", "B) Enforcing type checking", "C) Replacing global variables", "D) Measuring execution time"],
+    "correct_answer": "C",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary by key?",
+    "options": ["A) O(n)", "B) O(log n)", "C) O(1)", "D) O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the `yield` keyword do in a Python function?",
+    "options": ["A) Returns a value and terminates the function", "B) Returns a value and pauses the function, allowing it to resume later", "C) Raises an exception", "D) Declares a variable"],
+    "correct_answer": "B",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is the correct way to implement inheritance in Python?",
+    "options": ["A) class Child = Parent:", "B) class Child inherits Parent:", "C) class Child(Parent):", "D) class Child extends Parent:"],
+    "correct_answer": "C",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is the primary advantage of using multiprocessing over multithreading in Python for CPU-bound tasks?",
+    "options": ["A) Reduced memory consumption", "B) Overcoming the Global Interpreter Lock (GIL)", "C) Simplified synchronization", "D) Automatic scalability"],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": ["A) A class that inherits from multiple classes", "B) A class that creates other classes", "C) A class that defines abstract methods", "D) A class that is automatically garbage collected"],
+    "correct_answer": "B",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How can you prevent race conditions when multiple threads access a shared resource in Python?",
+    "options": ["A) Using global variables", "B) Using locks or semaphores", "C) Using recursion", "D) Using the `pass` statement"],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `async` and `await` keywords in Python?",
+    "options": ["A) To create multi-threaded applications", "B) To define asynchronous functions and wait for their results", "C) To optimize memory usage", "D) To perform parallel processing"],
+    "correct_answer": "B",
+    "topic": "Asynchronous Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following data structures is most suitable for implementing a Least Recently Used (LRU) cache?",
+    "options": ["A) Stack", "B) Queue", "C) Hash Table and Doubly Linked List", "D) Binary Search Tree"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the benefit of using `__slots__` in a Python class?",
+    "options": ["A) It prevents inheritance.", "B) It reduces memory usage by pre-allocating space for attributes.", "C) It speeds up method calls.", "D) It automatically generates documentation."],
+    "correct_answer": "B",
+    "topic": "Memory Management",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a closure in Python?",
+    "options": ["A) A function with no arguments.", "B) A function that can be called only once.", "C) A function that remembers the values from the enclosing scope even after the outer function has finished execution.", "D) A function defined inside a class."],
+    "correct_answer": "C",
+    "topic": "Closures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which library is commonly used for numerical computation in Python?",
+    "options": ["A) Pandas", "B) NumPy", "C) Matplotlib", "D) Scikit-learn"],
+    "correct_answer": "B",
+    "topic": "Libraries",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is an example of a mutable data type in Python?",
+    "options": ["A) String", "B) Tuple", "C) Integer", "D) List"],
+    "correct_answer": "D",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of try-except blocks in Python?",
+    "options": ["A) To define functions", "B) To handle exceptions", "C) To import modules", "D) To create loops"],
+    "correct_answer": "B",
+    "topic": "Exception Handling",
+    "difficulty": "easy"
+  }
+]
+```

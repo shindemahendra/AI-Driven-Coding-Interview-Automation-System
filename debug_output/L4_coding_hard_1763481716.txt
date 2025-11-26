@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Task Scheduling with Dependencies and Time Windows",
+  "description": "You are designing a task scheduling system for a distributed computing platform. You have a set of tasks, each with a time window within which it must be executed. Tasks may also have dependencies, meaning some tasks must complete before others can start. Your goal is to find the maximum number of tasks that can be completed, while respecting both the time windows and the dependencies.\n\nEach task *i* is defined by:\n*   `startTime[i]`: The earliest time the task can start.\n*   `endTime[i]`: The latest time the task can end.\n*   `dependencies[i]`: A list of task indices that must be completed before task *i* can start.\n\nYou have unlimited computing resources, meaning you can run any number of tasks concurrently, as long as their time windows don't overlap and dependencies are met.\n\nGiven the `startTime`, `endTime`, and `dependencies` arrays, return the maximum number of tasks that can be completed.",
+  "input_format": "The input consists of three arrays:\n*   `startTime`: An array of integers representing the start times of the tasks.\n*   `endTime`: An array of integers representing the end times of the tasks.\n*   `dependencies`: An array of lists of integers, where `dependencies[i]` is a list of indices representing the tasks that must be completed before task *i* can start.  Task indices are 0-based.\n\nAll arrays will have the same length 'n', representing the number of tasks.",
+  "output_format": "Return an integer representing the maximum number of tasks that can be completed.",
+  "constraints": "*   1 <= n <= 1000\n*   0 <= startTime[i] < endTime[i] <= 10^9\n*   0 <= len(dependencies[i]) <= n\n*   Dependencies are acyclic (no circular dependencies).\n*   All task indices in `dependencies[i]` are valid (0 <= index < n).",
+  "sample_input": "startTime = [1, 2, 3, 3]\nendTime = [3, 4, 5, 6]\ndependencies = [[], [0], [0, 1], [0]]",
+  "sample_output": "4",
+  "difficulty": "hard"
+}
+```

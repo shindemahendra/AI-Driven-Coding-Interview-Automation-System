@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Your colleague is struggling with a coding task. What's the FIRST thing you should do?",
+    "options": ["A. Immediately take over and fix the code.", "B. Offer to help them understand the problem and potential solutions.", "C. Report their lack of progress to the manager.", "D. Ignore it and focus on your own work."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You receive an email with unclear instructions for a new task. What is the MOST appropriate response?",
+    "options": ["A. Ignore the email and hope someone else clarifies.", "B. Proceed with your best guess to avoid looking incompetent.", "C. Reply to the sender requesting clarification on specific points.", "D. Forward the email to your manager and ask them to handle it."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You are assigned a task with a tight deadline. You realize you lack the necessary skills. What should you do?",
+    "options": ["A. Attempt the task without saying anything and hope for the best.", "B. Immediately tell your manager you cannot complete the task.", "C. Communicate the skill gap to your manager and propose a solution (e.g., training, assistance).", "D. Delegate the task to a junior colleague."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a code review, you find a potential performance bottleneck. How should you address it with the author?",
+    "options": ["A. Aggressively criticize the author's coding skills.", "B. Ignore the issue to avoid conflict.", "C. Provide specific, constructive feedback on the area of concern, suggesting alternative approaches.", "D. Immediately escalate the issue to your manager."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A cross-functional team is consistently missing deadlines. What's the BEST approach to understand the problem?",
+    "options": ["A. Blame the other team for their incompetence.", "B. Schedule a blame-free retrospective to identify root causes and improve collaboration.", "C. Ignore the issue since it's not your direct responsibility.", "D. Publicly shame the other team in a meeting."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You disagree with a design decision proposed by a senior architect. How should you proceed?",
+    "options": ["A. Publicly criticize the architect's decision in a meeting.", "B. Silently implement the design, even if you believe it's flawed.", "C. Respectfully present your concerns and alternative solutions to the architect, backed by data or reasoning.", "D. Go directly to the architect's manager to complain."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a team and a critical team member resigns unexpectedly. What is the FIRST thing you should do?",
+    "options": ["A. Immediately start the replacement hiring process.", "B. Panic and cancel all ongoing projects.", "C. Assess the impact of the resignation on current projects and redistribute responsibilities.", "D. Blame the departing employee for leaving the team in a difficult situation."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is consistently overestimating task completion times. What is the MOST effective way to address this issue?",
+    "options": ["A. Punish the team for inaccurate estimates.", "B. Ignore the issue as long as tasks are eventually completed.", "C. Implement a structured estimation process, track actual vs. estimated times, and analyze discrepancies.", "D. Force the team to provide shorter estimates, regardless of their accuracy."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A major production outage occurs. Your team is responsible for the affected service. What is the MOST important action?",
+    "options": ["A. Immediately assign blame to individual team members.", "B. Focus solely on restoring the service as quickly as possible, deferring root cause analysis.", "C. Assemble the team to restore the service, communicate transparently with stakeholders, and initiate root cause analysis after restoration.", "D. Deny responsibility and blame another team."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A junior engineer on your team makes a significant error that causes a minor production issue. How should you handle the situation?",
+    "options": ["A. Publicly reprimand the engineer in front of the team.", "B. Immediately fire the engineer.", "C. Use the situation as a learning opportunity, providing constructive feedback and support to prevent future errors.", "D. Ignore the issue and hope it doesn't happen again."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the best way to provide feedback to a coworker?",
+    "options": ["A. Publicly criticize their work to motivate them.", "B. Save all feedback for annual performance reviews.", "C. Provide specific, timely, and actionable feedback in private.", "D. Only give positive feedback to avoid hurting their feelings."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You are in a meeting where a coworker is consistently interrupted and their ideas are dismissed. What should you do?",
+    "options": ["A. Ignore the situation as it is not your problem.", "B. Interrupt the interrupters and support your coworker's ideas.", "C. Wait until the meeting is over and privately tell your coworker that you noticed.", "D. Join in on dismissing their ideas."],
+    "correct_answer": "B",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You observe a colleague taking credit for your work. What's the BEST course of action?",
+    "options": ["A. Publicly confront them and accuse them of plagiarism.", "B. Ignore it to avoid conflict.", "C. Calmly and professionally discuss the situation with the colleague in private.", "D. Sabotage their future work."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You are leading a project, and a critical dependency from another team is delayed. This will impact your timeline. What is the BEST approach?",
+    "options": ["A. Blame the other team publicly for the delay.", "B. Ignore the delay and hope it resolves itself.", "C. Communicate the impact of the delay to all stakeholders, explore alternative solutions, and collaborate with the other team to mitigate the impact.", "D. Immediately escalate the issue to upper management without attempting to find a solution."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A team member is consistently underperforming. You've provided feedback, but there's no improvement. What's the next step?",
+    "options": ["A. Ignore the underperformance and hope it resolves itself.", "B. Publicly shame the team member in a meeting.", "C. Document the performance issues, develop a performance improvement plan, and provide ongoing support and monitoring.", "D. Immediately fire the team member."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You're asked to estimate the time required for a complex task you've never done before. How do you approach this?",
+    "options": ["A. Give a very optimistic estimate to impress your manager.", "B. Give a random estimate without any thought.", "C. Break down the task into smaller sub-tasks, research each sub-task, and add a buffer for unknowns.", "D. Refuse to provide an estimate because you don't know how to do it."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+    {
+    "question": "You are the technical lead, and the team is debating different approaches to solve a problem. Two strong opinions are clashing. What do you do?",
+    "options": ["A. Side with the most senior member’s opinion.", "B. End the discussion immediately and make a unilateral decision.", "C. Facilitate a structured discussion, ensuring each viewpoint is heard, and guide the team towards a data-driven decision or compromise.", "D. Ignore the conflict and let them sort it out themselves."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are asked to work on a task that is outside your area of expertise and you are very busy with your other projects. What is the MOST appropriate response?",
+    "options": ["A. Decline the task without explanation.", "B. Accept the task and hope you can figure it out.", "C. Explain your current workload and lack of expertise, but offer to help find someone who is a better fit, or suggest alternatives.", "D. Complain to your colleagues about the unfair task assignment."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You missed a critical deadline and now the project is delayed. How do you handle the situation?",
+    "options": ["A. Blame external factors or other team members.", "B. Hide the delay and hope no one notices.", "C. Take ownership of the mistake, communicate transparently with stakeholders, and propose a plan to mitigate the impact and prevent future delays.", "D. Resign immediately."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Your team is adopting a new technology, and some team members are resistant to change. How can you encourage adoption?",
+    "options": ["A. Force everyone to use the new technology without providing training or support.", "B. Ignore their concerns and proceed with the rollout.", "C. Acknowledge their concerns, provide comprehensive training and support, highlight the benefits of the new technology, and encourage experimentation and feedback.", "D. Threaten to fire anyone who doesn't embrace the new technology."],
+    "correct_answer": "C",
+    "topic": "Soft Skills",
+    "difficulty": "hard"
+  }
+]
+```

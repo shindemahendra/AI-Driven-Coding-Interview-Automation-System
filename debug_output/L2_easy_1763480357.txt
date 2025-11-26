@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code: `print(type([1, 2, 'a']))`?",
+    "options": ["<class 'tuple'>", "<class 'list'>", "<class 'set'>", "<class 'array'>"],
+    "correct_answer": "B",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is NOT a valid Python data type?",
+    "options": ["int", "float", "string", "character"],
+    "correct_answer": "D",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the correct way to open a file named 'data.txt' in read mode?",
+    "options": ["file = open('data.txt', 'w')", "file = open('data.txt', 'r')", "file = open('data.txt', 'a')", "file = open('data.txt')"],
+    "correct_answer": "B",
+    "topic": "File Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of `[x**2 for x in range(5) if x % 2 == 0]`?",
+    "options": ["[0, 1, 4, 9, 16]", "[0, 4, 16]", "[0, 1, 2, 3, 4]", "[1, 9, 25]"],
+    "correct_answer": "B",
+    "topic": "List Comprehension",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following statements about Python decorators is true?",
+    "options": ["Decorators can only modify functions, not classes.", "Decorators are applied using the `@` symbol.", "Decorators must always return a value.", "Decorators cannot accept arguments."],
+    "correct_answer": "B",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a Python dictionary by its key?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Dictionaries & Complexity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the output of `print(list(map(lambda x: x*2, [1, 2, 3])))`?",
+    "options": ["[1, 2, 3]", "[2, 4, 6]", "[11, 22, 33]", "[1.0, 2.0, 3.0]"],
+    "correct_answer": "B",
+    "topic": "Lambda & Map",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which data structure is most suitable for implementing a Last-In-First-Out (LIFO) behavior?",
+    "options": ["Queue", "Linked List", "Stack", "Heap"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the primary purpose of the `__init__` method in a Python class?",
+    "options": ["To destroy an object.", "To define class-level attributes.", "To initialize the object's attributes.", "To call the parent class constructor."],
+    "correct_answer": "C",
+    "topic": "OOP",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the difference between `is` and `==` in Python?",
+    "options": ["`is` compares values, `==` compares memory locations.", "`is` compares memory locations, `==` compares values.", "They are interchangeable.", "`is` is used for numbers, `==` is used for strings."],
+    "correct_answer": "B",
+    "topic": "Object Identity",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `yield` keyword in Python?",
+    "options": ["To define a class.", "To raise an exception.", "To create a generator function.", "To import a module."],
+    "correct_answer": "C",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is the most efficient way to concatenate a large number of strings in Python?",
+    "options": ["Using the `+` operator in a loop.", "Using the `join()` method with a list.", "Using the `%` operator with a template.", "Using the `format()` method in a loop."],
+    "correct_answer": "B",
+    "topic": "String Manipulation",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": ["A class that inherits from multiple classes.", "A class that is used to create other classes.", "A class with only static methods.", "A class that cannot be instantiated."],
+    "correct_answer": "B",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following best describes the Global Interpreter Lock (GIL) in Python?",
+    "options": ["A lock that prevents multiple threads from accessing the same variable.", "A lock that allows multiple native threads to execute Python bytecode concurrently.", "A lock that allows only one thread to hold control of the Python interpreter.", "A lock that prevents memory leaks."],
+    "correct_answer": "C",
+    "topic": "Concurrency & GIL",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between `asyncio.gather` and `asyncio.wait`?",
+    "options": ["`asyncio.gather` returns results in completion order, `asyncio.wait` returns results in submission order.", "`asyncio.wait` returns results in completion order, `asyncio.gather` returns results in submission order.", "`asyncio.gather` cancels remaining tasks upon the first exception, `asyncio.wait` does not.", "`asyncio.wait` cancels remaining tasks upon the first exception, `asyncio.gather` does not."],
+    "correct_answer": "C",
+    "topic": "AsyncIO",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is the most accurate description of Python's memory management?",
+    "options": ["Manual memory management using `malloc` and `free`.", "Automatic garbage collection with reference counting and a cycle detector.", "Memory is allocated at compile time.", "Memory is managed by the operating system."],
+    "correct_answer": "B",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["To define class-level variables.", "To prevent attribute assignment.", "To reduce memory usage by pre-declaring instance attributes.", "To enable multiple inheritance."],
+    "correct_answer": "C",
+    "topic": "Memory Optimization",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a Bloom filter and what is its primary use case?",
+    "options": ["A data structure used for sorting large datasets; its primary use case is quicksort implementation.", "A probabilistic data structure used for set membership testing; its primary use case is caching and avoiding unnecessary lookups.", "A data structure used for storing key-value pairs; its primary use case is database indexing.", "A cryptographic algorithm used for secure communication; its primary use case is data encryption."],
+    "correct_answer": "B",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a potential drawback of using multiprocessing in Python compared to multithreading, considering memory usage?",
+    "options": ["Multiprocessing requires less memory because processes share the same memory space.", "Multiprocessing requires more memory because each process has its own memory space.", "Multiprocessing and multithreading have the same memory overhead.", "Multiprocessing only uses memory when communicating between processes."],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+    {
+    "question": "What is the purpose of Weak References in Python?",
+    "options": ["To create strong references that prevent garbage collection.", "To create references that are automatically garbage collected.", "To create references that do not prevent the target object from being garbage collected if no other strong references exist.", "To create circular references between objects."],
+    "correct_answer": "C",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  }
+]
+```

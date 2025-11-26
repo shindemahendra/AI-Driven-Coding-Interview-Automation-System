@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Service Health Analyzer",
+  "description": "You are part of a team maintaining a microservices architecture. Your task is to analyze service health logs to identify critical failures and calculate the maximum consecutive time a service was unavailable. You're given a list of log entries. Each log entry represents a service's status at a specific timestamp. Your goal is to find the service that experienced the longest consecutive downtime and the duration of that downtime.",
+  "input_format": "The input will be a list of strings, where each string represents a log entry.  Each log entry is formatted as:\n\n`\"<service_name>,<timestamp>,<status>\"`\n\nWhere:\n* `<service_name>` is the name of the service (string).\n* `<timestamp>` is a Unix timestamp (integer, representing seconds since epoch).\n* `<status>` is either \"UP\" or \"DOWN\" (string).\n\nThe list of log entries will be sorted in ascending order of timestamp.  Timestamps are not necessarily contiguous.",
+  "output_format": "Return a string in the format:\n\n`\"<service_name>,<downtime>\"`\n\nWhere:\n* `<service_name>` is the name of the service that had the longest consecutive downtime.\n* `<downtime>` is the duration of the longest consecutive downtime in seconds (integer).  If no service experienced any downtime, return \"OK\". If multiple services have the same maximum downtime, return the service name that appears earliest in the input log.\n",
+  "constraints": "* 1 <= Number of log entries <= 1000\n* 0 <= Timestamp <= 10^9\n* Service names can contain alphanumeric characters and underscores.\n* All timestamps will be unique.\n* Each log entry will be in the correct format.\n* No service will have consecutive 'DOWN' statuses at the same timestamp (i.e., no duplicates within a timestamp).\n* If all statuses are \"UP\", return \"OK\".",
+  "sample_input": "[\"auth_service,1678886400,UP\", \"auth_service,1678886700,DOWN\", \"auth_service,1678887000,DOWN\", \"auth_service,1678887300,UP\", \"payment_service,1678886500,UP\", \"payment_service,1678886800,DOWN\", \"payment_service,1678887100,DOWN\", \"payment_service,1678887400,DOWN\", \"payment_service,1678887700,UP\"]",
+  "sample_output": "payment_service,900",
+  "difficulty": "medium"
+}
+```

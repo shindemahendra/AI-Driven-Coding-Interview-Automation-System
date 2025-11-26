@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Optimal Server Allocation",
+  "description": "A cloud service provider needs to allocate virtual servers to different application environments (e.g., development, staging, production). Each environment has a resource requirement defined by the number of CPU cores and amount of RAM (in GB) needed.  Available servers come in various configurations, each offering a specific number of CPU cores and RAM. \n\nThe goal is to find the *minimum* number of servers needed to satisfy the resource requirements of all environments.  A single server can host multiple environments as long as its resources are not exceeded.  You are given an array of environment resource requests and an array of server configurations.  For simplicity, assume that server and environment resources are expressed as integers (whole numbers).\n\nNote: You cannot split an environment's resource requirements across multiple servers.",
+  "input_format": "The input consists of two arrays:\n\n1. `environments`: A 2D array of integers. Each inner array represents an environment's resource requirement: `[cpu_cores, ram_gb]`. For example, `[[2, 4], [4, 8], [1, 2]]` represents three environments requiring (2 CPU, 4 GB RAM), (4 CPU, 8 GB RAM), and (1 CPU, 2 GB RAM) respectively.\n\n2. `servers`: A 2D array of integers. Each inner array represents a server configuration: `[cpu_cores, ram_gb]`. For example, `[[4, 8], [8, 16], [2, 4]]` represents three servers with (4 CPU, 8 GB RAM), (8 CPU, 16 GB RAM), and (2 CPU, 4 GB RAM) respectively.",
+  "output_format": "Return the minimum number of servers required to host all environments. If it's not possible to host all environments with the given servers, return -1.",
+  "constraints": "1 <= number of environments <= 15\n1 <= number of servers <= 10\n1 <= cpu_cores <= 32 for both environments and servers\n1 <= ram_gb <= 64 for both environments and servers",
+  "sample_input": "environments = [[2, 4], [4, 8], [1, 2]]\nservers = [[4, 8], [8, 16], [2, 4]]",
+  "sample_output": "2",
+  "difficulty": "medium"
+}
+```

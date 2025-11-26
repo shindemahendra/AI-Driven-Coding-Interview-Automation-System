@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Service Health Checker",
+  "description": "You are tasked with building a service health checker that analyzes log entries to determine the health of different microservices.  Each log entry contains a timestamp, a service name, and a status code. Your program should analyze a batch of log entries and identify services that have experienced a significantly higher rate of errors (status codes >= 500) compared to their overall request volume within a given time window.",
+  "input_format": "The input will be provided as a list of strings, where each string represents a log entry. Each log entry is formatted as follows:\n\n\"timestamp,service_name,status_code\"\n\n*   `timestamp`: An integer representing the timestamp of the log entry (in seconds since epoch).\n*   `service_name`: A string representing the name of the microservice.\n*   `status_code`: An integer representing the HTTP status code returned by the service.\n\nAdditionally, two integers `time_window` and `error_threshold` will be provided.\n\n*   `time_window`:  An integer representing the time window (in seconds) within which to analyze the log entries.\n*   `error_threshold`: A float representing the minimum error rate (as a percentage, e.g., 0.05 for 5%) that triggers an alert. A service's error rate is calculated as `(number of errors / total number of requests)`. If the error rate is greater than or equal to `error_threshold`, the service is flagged as unhealthy.",
+  "output_format": "Return a list of strings representing the names of the services that are considered unhealthy within the specified time window. The list should be sorted alphabetically and contain only unique service names.",
+  "constraints": "*   1 <= number of log entries <= 100000\n*   0 <= timestamp <= 1000000000\n*   1 <= length of service_name <= 50\n*   200 <= status_code <= 599\n*   1 <= time_window <= 600\n*   0.0 <= error_threshold <= 1.0\n*   All timestamps in the log entries are sorted in ascending order.\n*   It is guaranteed that service names only contain lowercase alphabetic characters (a-z).",
+  "sample_input": "[\"1678886400,auth-service,200\", \"1678886401,auth-service,500\", \"1678886402,payment-service,200\", \"1678886403,auth-service,200\", \"1678886404,payment-service,500\", \"1678886405,auth-service,500\", \"1678886406,payment-service,200\", \"1678886407,auth-service,200\", \"1678886408,payment-service,500\", \"1678886409,auth-service,200\"], 5, 0.5",
+  "sample_output": "[\"auth-service\", \"payment-service\"]",
+  "difficulty": "medium"
+}
+```

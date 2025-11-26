@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "A train leaves Chicago at 7:00 AM traveling at 60 mph towards New York. Another train leaves New York at 8:00 AM traveling at 80 mph towards Chicago. Assuming a distance of 780 miles between the two cities, at what time will the trains meet?",
+    "options": ["12:00 PM", "1:00 PM", "1:30 PM", "2:00 PM"],
+    "correct_answer": "1:00 PM",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What comes next in the sequence: 1, 4, 9, 16, 25, 36, ?",
+    "options": ["48", "49", "64", "50"],
+    "correct_answer": "49",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If all Bloops are Gloops and some Gloops are Droops, then which of the following statements must be true?",
+    "options": ["All Bloops are Droops", "Some Bloops are Droops", "Some Droops are Bloops", "None of the above"],
+    "correct_answer": "None of the above",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A farmer has chickens and cows. If there are a total of 30 heads and 80 legs, how many chickens does the farmer have?",
+    "options": ["10", "20", "30", "40"],
+    "correct_answer": "20",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the missing number in the series: 3, 8, 15, 24, ?, 48",
+    "options": ["35", "36", "37", "38"],
+    "correct_answer": "35",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at 10:00 AM, what time will it show at 6:00 PM?",
+    "options": ["5:20 PM", "5:30 PM", "5:40 PM", "5:50 PM"],
+    "correct_answer": "5:20 PM",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If A is taller than B, B is taller than C, and C is taller than D, which of the following statements must be true?",
+    "options": ["A is taller than C", "B is taller than A", "D is taller than A", "C is taller than A"],
+    "correct_answer": "A is taller than C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the next letter in the series: O, T, T, F, F, S, S, E, ?",
+    "options": ["N", "T", "O", "S"],
+    "correct_answer": "N",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A man is looking at a photograph. Someone asks him, 'Who's picture are you looking at?' He replies, 'Brothers and sisters, I have none. That man's father is my father's son.' Who is in the photograph?",
+    "options": ["His son", "His father", "His brother", "Himself"],
+    "correct_answer": "His son",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If it takes 6 machines 6 minutes to make 6 widgets, how long would it take 100 machines to make 100 widgets?",
+    "options": ["6 minutes", "100 minutes", "600 minutes", "36 minutes"],
+    "correct_answer": "6 minutes",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which word does NOT belong in the following list: Apple, Banana, Orange, Grape, Carrot?",
+    "options": ["Apple", "Banana", "Orange", "Carrot"],
+    "correct_answer": "Carrot",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A box contains 5 red balls, 3 blue balls, and 2 green balls. What is the probability of drawing a red ball, then a blue ball, without replacement?",
+    "options": ["1/10", "1/6", "1/8", "1/2"],
+    "correct_answer": "1/6",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What number should come next in the series: 2, 6, 12, 20, 30, ?",
+    "options": ["40", "42", "44", "46"],
+    "correct_answer": "42",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Assume the following: All flibs are glibs. Some glibs are snibs. Which of the following MUST be true?",
+    "options": ["All flibs are snibs", "Some flibs are snibs", "Some snibs are flibs", "None of the above"],
+    "correct_answer": "None of the above",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If 'WXYZ' is coded as 'VWYX', how would you code 'ABCD'?",
+    "options": ["BCDA", "ACDB", "BACD", "ABCD"],
+    "correct_answer": "BACD",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You have 8 balls. One is slightly heavier than the others. You have a balance scale. What is the minimum number of weighings needed to find the heavier ball?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "2",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bartender receives the following order: 'I want something that is not too sweet, not too bitter, not too strong, and not too weak.' Which drink satisfies all conditions?",
+    "options": ["Pure Water", "Neat Whiskey", "Sugar Syrup", "Light Beer"],
+    "correct_answer": "Light Beer",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are given the following clues to decode a 4-digit PIN: 682 - one digit is correct and well placed; 614 - one digit is correct but wrongly placed; 206 - two digits are correct but wrongly placed; 738 - nothing is correct; 780 - one digit is correct but wrongly placed. What is the correct PIN?",
+    "options": ["0426", "0462", "4206", "0246"],
+    "correct_answer": "0426",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Two people are playing a game. They start with N coins on a table. Each person can take 1, 2 or 3 coins on their turn. The person who takes the last coin wins. If N = 15, what is the winning strategy?",
+    "options": ["Go first and take 1 coin", "Go first and take 2 coins", "Go first and take 3 coins", "It depends on the opponent's moves"],
+    "correct_answer": "Go first and take 3 coins",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have two hourglasses, one measures 7 minutes, and the other measures 11 minutes. How can you measure exactly 15 minutes?",
+    "options": ["Start both simultaneously. When the 7-minute hourglass runs out, flip it and the 11-minute one. When the 11-minute one runs out, there is 4 minutes remaining in the 7-minute one. Flip the 11-minute hourglass and run it from that 4 min point for 4 mins.", "Start both simultaneously. When the 7-minute hourglass runs out, flip it and the 11-minute one. When the 11-minute one runs out, immediately flip the 7-minute one to measure the remaining time.", "Start the 11-minute hourglass. Once done start 7-minute hourglass simultaneously . Once 7-minute hourglass completes flip the 11-minute hourglass again to measure a total time of 15 mins", "Start both simultaneously. When the 11-minute hourglass runs out, immediately flip it. When the 7-minute hourglass runs out, stop the 11-minute hourglass. The 11-minute hourglass has run for 4 minutes, after being flipped, so add that time back to the original time for a total of 15 mins."],
+    "correct_answer": "Start both simultaneously. When the 7-minute hourglass runs out, flip it and the 11-minute one. When the 11-minute one runs out, there is 4 minutes remaining in the 7-minute one. Flip the 11-minute hourglass and run it from that 4 min point for 4 mins.",
+    "topic": "L1",
+    "difficulty": "hard"
+  }
+]
+```

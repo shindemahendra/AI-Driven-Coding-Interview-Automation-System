@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "If all Bloops are Gloops, and some Gloops are Floops, which statement MUST be true?",
+    "options": ["Some Bloops are Floops", "Some Floops are Gloops", "All Bloops are Floops", "No Bloops are Floops"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the next number in the sequence: 2, 6, 12, 20, ?",
+    "options": ["24", "28", "30", "32"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A farmer has 17 sheep. All but 9 die. How many are left?",
+    "options": ["0", "8", "9", "17"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A > B, B > C, and C = D, which of the following is definitely true?",
+    "options": ["A > D", "A < D", "A = D", "B < D"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the missing number: 4, 9, 16, 25, ?",
+    "options": ["34", "35", "36", "37"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which number should come next in the sequence: 1, 1, 2, 3, 5, 8, ?",
+    "options": ["9", "12", "13", "15"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a train leaves Chicago at 8:00 AM traveling at 60 mph and another train leaves New York at 9:00 AM traveling at 80 mph, which train is closer to Chicago when they meet? (Assume a direct route)",
+    "options": ["Chicago Train", "New York Train", "They are the same distance", "Cannot be determined"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Given: ALL cats like fish. SOME cats like milk. Which statement is most logical?",
+    "options": ["All cats like both fish and milk", "Some cats like fish and milk", "All cats like either fish or milk", "No cats like milk"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at noon, what time will it show after 6 hours?",
+    "options": ["5:30 PM", "2:30 PM", "3:00 PM", "2:00 PM"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A farmer needs to cross a river with a wolf, a goat, and a cabbage. He can only take one item at a time. If left unattended, the wolf will eat the goat, or the goat will eat the cabbage. How many trips minimum are needed?",
+    "options": ["5", "6", "7", "8"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bag contains 10 red marbles and 10 blue marbles. What is the minimum number of marbles you must draw to ensure you have at least 3 marbles of the same color?",
+    "options": ["5", "6", "7", "8"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following deductions: (1) No B are C. (2) All A are B. Therefore:",
+    "options": ["Some A are C", "No A are C", "All C are B", "Some C are A"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+    {
+    "question": "You have 8 identical looking balls, but one is slightly heavier. Using a balance scale, what is the minimum number of weighings needed to guarantee finding the heavier ball?",
+    "options": ["1", "2", "3", "4"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Three people are standing in a line, each wearing a hat. The person in the back can see the hats of the two people in front of them, the person in the middle can see the hat of the person in front of them, and the person in the front cannot see any hats. They are told that there are 3 red hats and 2 blue hats. Without any communication, the person in the back says, 'I cannot deduce the color of my hat.' Then, the person in the middle says, 'I also cannot deduce the color of my hat.' Finally, the person in the front says, 'I know the color of my hat.' What color is the front person's hat?",
+    "options": ["Red", "Blue", "Cannot be determined", "Green"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A king has 1000 bottles of wine. A spy poisons one of the bottles. He has 10 prisoners to test the wine. The poison takes effect in exactly 30 days. What is the minimum number of days needed to determine the poisoned bottle?",
+    "options": ["10", "30", "30000", "Cannot be determined"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have two ropes, each of which takes exactly one hour to burn completely. However, the ropes are not uniform and may burn at different rates along their length. How can you measure exactly 45 minutes using only these two ropes and a lighter?",
+    "options": ["Burn one rope at both ends and the other at one end simultaneously.", "Burn one rope at both ends and the other at one end, starting the second rope when the first is halfway done.", "Light one rope at one end and the other at both ends simultaneously. When the second rope is completely burned, light the other end of the first rope.", "Burn both ropes at one end simultaneously until one is completely burned."],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given that the statement 'All brave warriors drink coffee' is true, which of the following must also be true?",
+    "options": ["If someone drinks coffee, they are a brave warrior", "If someone is not a brave warrior, they do not drink coffee", "If someone does not drink coffee, they are not a brave warrior", "All coffee drinkers are brave warriors"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A group of adventurers found a chest containing gold coins. When they tried to divide the coins equally, they found that there were 3 coins left over. They decided to give the extra coins to the cook. However, when the cook tried to divide the coins equally among the adventurers and himself, he found that there were 2 coins left over. If there are between 10 and 30 adventurers, how many adventurers are there?",
+    "options": ["11", "13", "17", "23"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are on an island where everyone either always tells the truth or always lies. You encounter two inhabitants, A and B. A says, 'Both of us are liars.' What can you conclude?",
+    "options": ["A is a liar, and B is a truth-teller.", "A is a truth-teller, and B is a liar.", "Both A and B are truth-tellers.", "Both A and B are liars."],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "There are 100 light bulbs in a row, all initially off. You make 100 passes down the row. On the first pass, you toggle every bulb. On the second pass, you toggle every second bulb (2, 4, 6, ...). On the third pass, you toggle every third bulb (3, 6, 9, ...), and so on. After 100 passes, how many bulbs are on?",
+    "options": ["1", "10", "50", "100"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  }
+]
+```

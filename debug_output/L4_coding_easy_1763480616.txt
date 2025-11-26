@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Inventory Management System - Threshold Check",
+  "description": "You are developing an inventory management system for a warehouse. Each item in the inventory has a unique ID and a quantity. Your task is to write a function that checks if any item in the inventory has a quantity below a given threshold. The function should return a list of item IDs that are below the threshold. The order of the item IDs in the output list does not matter.",
+  "input_format": "The input consists of two parts:\n1.  `inventory`: A list of dictionaries, where each dictionary represents an item in the inventory. Each dictionary has two keys: `item_id` (an integer representing the unique ID of the item) and `quantity` (an integer representing the quantity of the item).\n2.  `threshold`: An integer representing the minimum acceptable quantity. Items with quantities strictly less than the threshold should be flagged.\n",
+  "output_format": "A list of integers, where each integer is the `item_id` of an item with a quantity below the given `threshold`. If no items are below the threshold, return an empty list.",
+  "constraints": "1 <= number of items in inventory <= 100\n1 <= item_id <= 1000\n0 <= quantity <= 1000\n0 <= threshold <= 1000\nAll `item_id` values are unique.",
+  "sample_input": "[{\"item_id\": 101, \"quantity\": 50}, {\"item_id\": 102, \"quantity\": 10}, {\"item_id\": 103, \"quantity\": 5}, {\"item_id\": 104, \"quantity\": 20}]\n15",
+  "sample_output": "[102, 103]",
+  "difficulty": "easy"
+}
+```

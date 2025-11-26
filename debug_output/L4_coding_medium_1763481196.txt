@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Service Request Prioritization",
+  "description": "A large cloud service provider receives numerous service requests daily. Each request has a priority score, a submission timestamp, and an estimated processing time. Due to limited resources, the system needs a smart prioritization strategy. The goal is to maximize the overall 'happiness' by processing requests in an order that considers both priority and waiting time.  Specifically, the 'happiness' gained from processing a request is calculated as `priority_score - waiting_time`, where `waiting_time` is the time elapsed between submission and completion. The objective is to find the maximum possible sum of 'happiness' by optimally scheduling the service requests.\n\nGiven a list of service requests, each with a `priority_score`, `submission_timestamp`, and `processing_time`, determine the maximum total happiness achievable.  You can only process one request at a time, and you must process each request to completion once it's started.  You must start a request at the submission time or later. Assume all timestamps and times are integers.",
+  "input_format": "The input is a list of tuples, where each tuple represents a service request with the format: `(priority_score, submission_timestamp, processing_time)`.\n",
+  "output_format": "An integer representing the maximum total happiness achievable.",
+  "constraints": "1 <= Number of service requests <= 1000\n1 <= priority_score <= 1000\n0 <= submission_timestamp <= 10000\n1 <= processing_time <= 1000\nSubmission timestamps are not necessarily unique or sorted.",
+  "sample_input": "[(5, 0, 2), (3, 1, 1), (4, 2, 2)]",
+  "sample_output": "7",
+  "difficulty": "medium"
+}
+```

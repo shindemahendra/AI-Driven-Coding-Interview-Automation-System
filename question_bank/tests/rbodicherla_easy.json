@@ -1,0 +1,732 @@
+{
+    "candidate": {
+        "name": "Ravi Kumar Bodicherla",
+        "email": "test1@gmail.com",
+        "uid": "rbodicherla",
+        "difficulty": "easy"
+    },
+    "L1": [
+        {
+            "question": "Which number is the odd one out: 3, 5, 7, 8, 11?",
+            "options": [
+                "3",
+                "5",
+                "7",
+                "8"
+            ],
+            "correct_answer": "8"
+        },
+        {
+            "question": "What is the missing number: 22, 25, 28, __ , 34?",
+            "options": [
+                "29",
+                "30",
+                "31",
+                "32"
+            ],
+            "correct_answer": "31"
+        },
+        {
+            "question": "If all roses are flowers and some flowers are red, then:",
+            "options": [
+                "All roses are red",
+                "Some roses are red",
+                "No roses are red",
+                "Some red things are roses"
+            ],
+            "correct_answer": "Some roses are red"
+        },
+        {
+            "question": "If black + white = gray, and gray + black = darker gray, then black + white + black = ?",
+            "options": [
+                "white",
+                "black",
+                "gray",
+                "darker gray"
+            ],
+            "correct_answer": "darker gray"
+        },
+        {
+            "question": "What is the next letter in the sequence: A, C, E, G, ?",
+            "options": [
+                "H",
+                "I",
+                "J",
+                "K"
+            ],
+            "correct_answer": "I"
+        },
+        {
+            "question": "What is the missing number: 1, 3, __, 7, 9?",
+            "options": [
+                "4",
+                "5",
+                "6",
+                "8"
+            ],
+            "correct_answer": "5"
+        },
+        {
+            "question": "If J = 10, K = 11, L = 12, then what does O equal?",
+            "options": [
+                "13",
+                "14",
+                "15",
+                "16"
+            ],
+            "correct_answer": "15"
+        },
+        {
+            "question": "If every P is a Q, and some Q are R, then some P are necessarily:",
+            "options": [
+                "R",
+                "not R",
+                "Q",
+                "unknown"
+            ],
+            "correct_answer": "unknown"
+        },
+        {
+            "question": "What is the missing number: 3, 6, 9, __ , 15?",
+            "options": [
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "correct_answer": "12"
+        },
+        {
+            "question": "What is the next letter in the sequence: C, E, G, I, ?",
+            "options": [
+                "J",
+                "K",
+                "L",
+                "M"
+            ],
+            "correct_answer": "K"
+        },
+        {
+            "question": "If M is heavier than N, and N is heavier than O, then M is ______ than O.",
+            "options": [
+                "lighter",
+                "the same weight",
+                "heavier",
+                "impossible to tell"
+            ],
+            "correct_answer": "heavier"
+        },
+        {
+            "question": "What is the next letter in the sequence: D, F, H, J, ?",
+            "options": [
+                "K",
+                "L",
+                "M",
+                "N"
+            ],
+            "correct_answer": "L"
+        },
+        {
+            "question": "If all birds are animals, and some animals can fly, then:",
+            "options": [
+                "All birds can fly",
+                "Some birds can fly",
+                "No birds can fly",
+                "Some flying animals are birds"
+            ],
+            "correct_answer": "Some birds can fly"
+        },
+        {
+            "question": "If every A is a B, and some B are C, then some A are necessarily:",
+            "options": [
+                "C",
+                "not C",
+                "B",
+                "unknown"
+            ],
+            "correct_answer": "unknown"
+        },
+        {
+            "question": "Which shape comes next: circle, square, circle, square, ?",
+            "options": [
+                "circle",
+                "triangle",
+                "pentagon",
+                "square"
+            ],
+            "correct_answer": "circle"
+        }
+    ],
+    "L2": [
+        {
+            "question": "Which operator is used for assignment in Python?",
+            "options": [
+                "=",
+                "==",
+                "+=",
+                "->"
+            ],
+            "correct_answer": "=",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the correct way to import the `math` module?",
+            "options": [
+                "import math",
+                "include math",
+                "from math import all",
+                "using math"
+            ],
+            "correct_answer": "import math",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which keyword is used to exit a loop prematurely?",
+            "options": [
+                "stop",
+                "exit",
+                "break",
+                "continue"
+            ],
+            "correct_answer": "break",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you access the first element of a list called `my_list`?",
+            "options": [
+                "my_list[1]",
+                "my_list.first()",
+                "my_list[0]",
+                "my_list.get(0)"
+            ],
+            "correct_answer": "my_list[0]",
+            "topic": "Data Structures",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does the `//` operator do in Python?",
+            "options": [
+                "Division",
+                "Floor Division",
+                "Modulo",
+                "Exponentiation"
+            ],
+            "correct_answer": "Floor Division",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which data type is used to store a sequence of characters?",
+            "options": [
+                "Integer",
+                "Float",
+                "String",
+                "Boolean"
+            ],
+            "correct_answer": "String",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does the `+` operator do when used with strings?",
+            "options": [
+                "Multiplies the strings",
+                "Concatenates the strings",
+                "Compares the strings",
+                "Subtracts the strings"
+            ],
+            "correct_answer": "Concatenates the strings",
+            "topic": "Operators",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is a boolean data type?",
+            "options": [
+                "A number with decimal point",
+                "A sequence of characters",
+                "True or False",
+                "A collection of items"
+            ],
+            "correct_answer": "True or False",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print(3 > 1)`?",
+            "options": [
+                "True",
+                "False",
+                "Error",
+                "1"
+            ],
+            "correct_answer": "True",
+            "topic": "Boolean Logic",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of the `len()` function?",
+            "options": [
+                "To check the length of an object",
+                "To calculate the square root",
+                "To convert a number to a string",
+                "To print output to the console"
+            ],
+            "correct_answer": "To check the length of an object",
+            "topic": "Built-in Functions",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the correct file extension for Python files?",
+            "options": [
+                ".py",
+                ".pt",
+                ".p",
+                ".pyt"
+            ],
+            "correct_answer": ".py",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does the `+` operator do when used with strings?",
+            "options": [
+                "Addition",
+                "Subtraction",
+                "Concatenation",
+                "Multiplication"
+            ],
+            "correct_answer": "Concatenation",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the correct way to write an `if` statement?",
+            "options": [
+                "if x > y then:",
+                "if x > y:",
+                "if (x > y)",
+                "if x > y"
+            ],
+            "correct_answer": "if x > y:",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of the `print()` function?",
+            "options": [
+                "To take input from the user",
+                "To display output to the console",
+                "To define a function",
+                "To import a module"
+            ],
+            "correct_answer": "To display output to the console",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is used for importing modules in Python?",
+            "options": [
+                "use",
+                "include",
+                "import",
+                "get"
+            ],
+            "correct_answer": "import",
+            "topic": "Python",
+            "difficulty": "easy"
+        }
+    ],
+    "L3": [
+        {
+            "question": "What will be printed by the function?",
+            "code": "def my_func():\n  try:\n    print(\"Try Block\")\n  finally:\n    print(\"Finally Block\")\nmy_func()",
+            "options": [
+                "Only \"Try Block\"",
+                "Only \"Finally Block\"",
+                "\"Try Block\" then \"Finally Block\"",
+                "No output"
+            ],
+            "correct_answer": "C",
+            "topic": "L3",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the error in the following code: `my_dict = {1: 'a', 2: 'b'}\nprint(my_dict[3])`",
+            "code": "my_dict = {1: 'a', 2: 'b'}\nprint(my_dict[3])",
+            "options": [
+                "KeyError: 3",
+                "IndexError: list index out of range",
+                "ValueError: invalid literal for int() with base 10",
+                "NameError: name 'my_dict' is not defined"
+            ],
+            "correct_answer": "KeyError: 3",
+            "topic": "L3",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following recursive function? Understanding base cases is key.",
+            "code": "def factorial(n):\n  if n == 0:\n    return 1\n  else:\n    return n * factorial(n-1)\nprint(factorial(5))",
+            "options": [
+                "120",
+                "15",
+                "5",
+                "Error"
+            ],
+            "correct_answer": "A",
+            "topic": "L3",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is the error in the following code? The intention was to convert the string to an integer.",
+            "code": "s = \"123\"\nnum = int(s)",
+            "options": [
+                "ValueError",
+                "TypeError",
+                "SyntaxError",
+                "NameError"
+            ],
+            "correct_answer": "None of the above",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of these options correctly opens the file 'my_file.txt' in write mode?",
+            "code": "None",
+            "options": [
+                "open('my_file.txt', 'r')",
+                "open('my_file.txt', 'a')",
+                "open('my_file.txt', 'w')",
+                "open('my_file.txt')"
+            ],
+            "correct_answer": "C",
+            "topic": "L3",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is the correct way to catch an exception in Python?",
+            "code": null,
+            "options": [
+                "catch: Exception",
+                "except Exception:",
+                "try Exception:",
+                "with Exception:"
+            ],
+            "correct_answer": "except Exception:",
+            "topic": "Exception Handling",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the problem with the following code? \n  def factorial(n):\n      if n == 0:\n          return 1\n      else:\n          return n * factorial(n)\n\n  print(factorial(5))",
+            "code": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n)\n\nprint(factorial(5))",
+            "options": [
+                "Base case is wrong",
+                "Stack Overflow",
+                "RecursionError",
+                "SyntaxError"
+            ],
+            "correct_answer": "Stack Overflow",
+            "topic": "Recursion",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the output of the following code? The intention was to create a tuple.",
+            "code": "my_tuple = (1, 2, 3)\nprint(my_tuple)",
+            "options": [
+                "(1, 2, 3)",
+                "[1, 2, 3]",
+                "{1, 2, 3}",
+                "Error"
+            ],
+            "correct_answer": "(1, 2, 3)",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How to debug if a variable's value is changing unexpectedly? Bug: Variable tracking",
+            "code": "None",
+            "options": [
+                "Use print statements at key points",
+                "Use a code editor to find and replace the variable",
+                "Ignore the variable",
+                "Comment out the variable definition"
+            ],
+            "correct_answer": "Use print statements at key points",
+            "topic": "Debugging Techniques",
+            "difficulty": "easy"
+        },
+        {
+            "question": "The following code intends to swap two variables. What is the error?",
+            "code": "a = 5\nb = 10\na, b = b, a",
+            "options": [
+                "Incorrect syntax for swapping",
+                "Cannot swap variables in Python",
+                "The values of a and b will remain unchanged",
+                "None of the above"
+            ],
+            "correct_answer": "None of the above",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following code? The intention was to print \"Hello World\", but there's an error.",
+            "code": "print(\"Hello\" +  \" \" + \"World\")",
+            "options": [
+                "Hello World",
+                "HelloWorld",
+                "Error",
+                "None of the above"
+            ],
+            "correct_answer": "Hello World",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the result of this conditional statement?",
+            "code": "x = 5\nif x > 10:\n  print(\"Greater than 10\")\nelif x > 5:\n  print(\"Greater than 5\")\nelse:\n  print(\"Less than or equal to 5\")",
+            "options": [
+                "Greater than 10",
+                "Greater than 5",
+                "Less than or equal to 5",
+                "Error"
+            ],
+            "correct_answer": "C",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following code and its potential issue? `x = 10\nif x = 5:\n    print(\"x is 5\")`",
+            "code": "x = 10\nif x = 5:\n    print(\"x is 5\")",
+            "options": [
+                "Prints \"x is 5\"",
+                "SyntaxError: invalid syntax",
+                "Prints nothing",
+                "NameError: name 'x' is not defined"
+            ],
+            "correct_answer": "SyntaxError: invalid syntax",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following code? Focus on import errors.",
+            "code": "import math\nprint(math.PI)",
+            "options": [
+                "3.14159...",
+                "Error",
+                "3.14",
+                "None"
+            ],
+            "correct_answer": "B",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following code?\n  try:\n    print(10 / 0)\n  except Exception as e:\n    print(e)",
+            "code": "try:\n  print(10 / 0)\nexcept Exception as e:\n  print(e)",
+            "options": [
+                "division by zero",
+                "0",
+                "10",
+                "Error"
+            ],
+            "correct_answer": "division by zero",
+            "topic": "Exception Handling",
+            "difficulty": "medium"
+        }
+    ],
+    "L5": [
+        {
+            "question": "How do you handle stressful situations?",
+            "options": [
+                "Avoid them completely",
+                "Become easily frustrated",
+                "Remain calm and focused",
+                "Blame others"
+            ],
+            "correct_answer": "Remain calm and focused",
+            "topic": "Stress Management",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle setbacks?",
+            "options": [
+                "Give up immediately",
+                "Blame external factors",
+                "Learn from the experience",
+                "Ignore the setback"
+            ],
+            "correct_answer": "Learn from the experience",
+            "topic": "Resilience",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you prioritize tasks when facing multiple deadlines?",
+            "options": [
+                "Randomly choose tasks",
+                "Focus on easiest tasks",
+                "Prioritize by importance",
+                "Ignore deadlines"
+            ],
+            "correct_answer": "Prioritize by importance",
+            "topic": "Time Management",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Your role in a team meeting is usually...",
+            "options": [
+                "Silent observer",
+                "Dominate the talking",
+                "Active participant",
+                "Plan my escape"
+            ],
+            "correct_answer": "Active participant",
+            "topic": "Teamwork",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle a disagreement with your manager?",
+            "options": [
+                "Become insubordinate",
+                "Avoid communication",
+                "Discuss respectfully",
+                "Publicly complain"
+            ],
+            "correct_answer": "Discuss respectfully",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you deal with conflict within a team?",
+            "options": [
+                "Avoid it at all costs",
+                "Escalate it immediately",
+                "Mediate and find solutions",
+                "Take sides"
+            ],
+            "correct_answer": "Mediate and find solutions",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What does 'going the extra mile' mean to you?",
+            "options": [
+                "Avoid extra work",
+                "Minimum effort only",
+                "Exceed expectations",
+                "Not my problem"
+            ],
+            "correct_answer": "Exceed expectations",
+            "topic": "Work Ethic",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What motivates you the most at work?",
+            "options": [
+                "Money only",
+                "Recognition only",
+                "Challenging projects and growth",
+                "Avoiding work"
+            ],
+            "correct_answer": "Challenging projects and growth",
+            "topic": "Motivation",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Do you prefer independent or collaborative work?",
+            "options": [
+                "Always independent",
+                "Always collaborative",
+                "No preference really",
+                "Depends on project"
+            ],
+            "correct_answer": "Depends on project",
+            "topic": "Teamwork",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you ensure you understand instructions correctly?",
+            "options": [
+                "Assume understanding",
+                "Never ask questions",
+                "Ask clarifying questions",
+                "Guess the instructions"
+            ],
+            "correct_answer": "Ask clarifying questions",
+            "topic": "Communication",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you make decisions?",
+            "options": [
+                "Impulsively",
+                "Logically",
+                "Emotionally",
+                "Randomly"
+            ],
+            "correct_answer": "Logically",
+            "topic": "Decision Making",
+            "difficulty": "medium"
+        },
+        {
+            "question": "When learning a new software skill...",
+            "options": [
+                "Give up easily",
+                "Procrastinate always",
+                "Actively learn",
+                "Hope someone else will"
+            ],
+            "correct_answer": "Actively learn",
+            "topic": "Learning Agility",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle conflict with a colleague?",
+            "options": [
+                "Avoid them entirely",
+                "Become confrontational",
+                "Seek a mutually agreeable solution",
+                "Report them immediately"
+            ],
+            "correct_answer": "Seek a mutually agreeable solution",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle conflict with a coworker?",
+            "options": [
+                "Avoid them completely",
+                "Gossip about them",
+                "Address it directly and respectfully",
+                "Escalate immediately"
+            ],
+            "correct_answer": "Address it directly and respectfully",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you provide feedback?",
+            "options": [
+                "Bluntly",
+                "Vaguely",
+                "Constructively",
+                "Negatively"
+            ],
+            "correct_answer": "Constructively",
+            "topic": "Communication",
+            "difficulty": "medium"
+        }
+    ],
+    "L4": [
+        {
+            "title": "Two Sum",
+            "description": "Given an array of integers and a target value, find two numbers in the array that add up to the target. Return the indices of the two numbers.",
+            "input_format": "First line: The number of elements in the array, n, and the target value, target, separated by a space.\nSecond line: n space-separated integers.",
+            "output_format": "Two space-separated integers representing the indices of the two numbers that add up to the target (0-indexed). If no such pair exists, return -1 -1.",
+            "constraints": "2 <= n <= 100\n-1000 <= each element <= 1000\n-2000 <= target <= 2000\nThere is exactly one solution.",
+            "sample_input": "4 9\n2 7 11 15",
+            "sample_output": "0 1"
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "If A > B and B > C, then which of the following is always true?",
+    "options": ["A < C", "A = C", "A > C", "A <= C"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What number comes next in the sequence: 2, 4, 6, 8, _?",
+    "options": ["9", "10", "11", "12"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following words is the odd one out?",
+    "options": ["Apple", "Banana", "Orange", "Carrot"],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 'CAT' is coded as 'DAC', then how will 'DOG' be coded?",
+    "options": ["EPH", "EOG", "FOG", "GPE"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A clock loses 5 minutes per hour. If it is set correctly at 12:00 PM, what time will it show at 6:00 PM?",
+    "options": ["5:30 PM", "5:00 PM", "5:40 PM", "6:00 PM"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A bag contains 5 red balls, 3 blue balls, and 2 green balls. What is the minimum number of balls you must pick to ensure you have at least one of each color?",
+    "options": ["3", "6", "8", "9"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Four people need to cross a bridge at night. They have one flashlight. Two people can cross at a time. The flashlight must be taken back and forth. The people take 1, 2, 5, and 8 minutes to cross respectively. What is the shortest time for all of them to cross?",
+    "options": ["15 minutes", "16 minutes", "20 minutes", "17 minutes"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What comes next in the following sequence: 1, 1, 2, 3, 5, 8, ...?",
+    "options": ["10", "11", "12", "13"],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You have 12 coins, one of which is counterfeit and has a different weight than the others. You have a balance scale. What is the minimum number of weighings required to guarantee finding the counterfeit coin and determining if it's heavier or lighter?",
+    "options": ["2", "3", "4", "5"],
+    "correct_answer": "B",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A detective is investigating a murder. He knows that the murderer must be one of five suspects: A, B, C, D, or E. Each suspect makes a statement: A says 'B did it', B says 'E did it', C says 'A did it', D says 'I didn't do it', and E says 'B is lying'. Only one person is telling the truth. Who committed the murder?",
+    "options": ["A", "B", "C", "D"],
+    "correct_answer": "D",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have two ropes, each of which takes exactly one hour to burn completely. However, the ropes do not burn at a uniform rate. How can you measure exactly 45 minutes using only these two ropes and a lighter?",
+    "options": ["Burn one rope from both ends and the other from one end", "Burn both ropes from one end", "Burn one rope from one end for 45 minutes", "Burn one rope from both ends"],
+    "correct_answer": "A",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You have 100 prisoners and 100 boxes. Each box contains the name of one prisoner. The prisoners must open their own box to find their name. If more than one prisoner fails to find their name, all are executed. The prisoners can strategize beforehand, but once the game starts they cannot communicate. Each prisoner can open at most 50 boxes. What is the optimal strategy to maximize their survival chance?",
+    "options": ["Randomly open 50 boxes", "Open boxes sequentially", "Follow a chain strategy based on the boxes contents", "Divide the boxes equally among prisoners"],
+    "correct_answer": "C",
+    "topic": "L1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output of the following Python code? `print(2 + 2 * 2)`",
+    "options": ["4", "6", "8", "10"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a stack?",
+    "options": ["Queue", "Linked List", "Dictionary", "Set"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the time complexity of searching for an element in a sorted array using binary search?",
+    "options": ["O(n)", "O(1)", "O(log n)", "O(n^2)"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `yield` keyword in Python?",
+    "options": ["To define a class", "To create a decorator", "To define a generator", "To handle exceptions"],
+    "correct_answer": "C",
+    "topic": "L2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following best describes the Global Interpreter Lock (GIL) in Python?",
+    "options": ["A mechanism for memory management", "A lock that allows only one thread to hold control of the Python interpreter", "A debugging tool", "A feature for optimizing CPU usage"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between a thread and a process?",
+    "options": ["Threads have separate memory spaces, processes share memory", "Processes have separate memory spaces, threads share memory", "Threads are heavier than processes", "There is no difference"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is NOT a valid access modifier in object-oriented programming?",
+    "options": ["Public", "Private", "Protected", "Internal"],
+    "correct_answer": "D",
+    "topic": "L2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of `__init__` method in a Python class?",
+    "options": ["To create a new class", "To initialize the class attributes", "To define a static method", "To destroy an object"],
+    "correct_answer": "B",
+    "topic": "L2",
+    "difficulty": "easy"
+  }
+]
+```

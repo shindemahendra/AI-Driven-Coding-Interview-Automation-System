@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "Consider the following code snippet:\n\n```python\ndef modify_list(lst):\n    for i in range(len(lst)):\n        lst[i] = lst[i] * 2\n    return lst\n\nmy_list = [1, 2, 3]\nmodified_list = modify_list(my_list)\n\nWhat is the value of `my_list` after this code executes?",
+    "options": ["[1, 2, 3]", "[2, 4, 6]", "[1, 2, 3, 2, 4, 6]", "An error will occur"],
+    "correct_answer": "[2, 4, 6]",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Given the following code with a potential infinite loop, identify the condition that will prevent the loop from terminating.\n\n```python\nx = 10\nwhile x > 0:\n    if x % 2 == 0:\n        x -= 1\n    # Missing code here\n```",
+    "options": ["`x += 1`", "`x = 0`", "`break`", "`pass`"],
+    "correct_answer": "`pass`",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider the following code which attempts to calculate the average of a list of numbers. Identify the bug.\n\n```python\ndef average(numbers):\n    total = 0\n    for num in numbers:\n        total += 1\n    return total / len(numbers)\n```",
+    "options": ["The total is not initialized", "The total is incremented incorrectly", "The division is performed before the loop", "The length of the list is not checked"],
+    "correct_answer": "The total is incremented incorrectly",
+    "topic": "Debugging",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Identify the potential bug in the following code snippet, which aims to remove duplicate elements from a list:\n\n```python\ndef remove_duplicates(lst):\n    for element in lst:\n        if lst.count(element) > 1:\n            lst.remove(element)\n    return lst\n```",
+    "options": ["The code will not remove all duplicates", "The code will raise an error due to modifying a list while iterating", "The code is inefficient for large lists", "The code only works for lists of integers"],
+    "correct_answer": "The code will not remove all duplicates",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The following code attempts to implement a thread-safe counter using a lock. Identify the potential issue.\n\n```python\nimport threading\n\nclass Counter:\n    def __init__(self):\n        self.value = 0\n        self.lock = threading.Lock()\n\n    def increment(self):\n        with self.lock:\n            self.value += 1\n\n    def get_value(self):\n        return self.value\n```",
+    "options": ["The lock is not properly acquired and released", "The `get_value` method is not thread-safe", "The `increment` method does not handle exceptions", "There is no issue with the code"],
+    "correct_answer": "The `get_value` method is not thread-safe",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Analyze the following code snippet and identify a potential race condition:\n\n```python\nimport threading\n\nshared_resource = 0\n\ndef increment():\n    global shared_resource\n    for _ in range(100000):\n        shared_resource += 1\n\nthread1 = threading.Thread(target=increment)\nthread2 = threading.Thread(target=increment)\nthread1.start()\nthread2.start()\nthread1.join()\nthread2.join()\nprint(shared_resource)\n```",
+    "options": ["The `shared_resource` variable is not thread-safe", "The threads are not properly synchronized", "The `increment` function is not atomic", "All of the above"],
+    "correct_answer": "All of the above",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following generator function and identify a potential issue with its usage:\n\n```python\ndef fibonacci_generator():\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b\n\n# Using the generator\nfib_gen = fibonacci_generator()\nfor i in range(10):\n    print(next(fib_gen))\n\n#Later in the program:\nfor num in fib_gen:\n    print(num)\n    if num > 100:\n        break\n```",
+    "options": ["The generator will not produce any more values in the second loop", "The generator will raise a `StopIteration` exception", "The generator will restart from the beginning in the second loop", "The generator is not efficient for generating large Fibonacci numbers"],
+    "correct_answer": "The generator will not produce any more values in the second loop",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Examine the following code that uses a custom metaclass. Identify a potential pitfall.\n\n```python\nclass Singleton(type):\n    _instances = {}\n    def __call__(cls, *args, **kwargs):\n        if cls not in cls._instances:\n            cls._instances[cls] = super().__call__(*args, **kwargs)\n        return cls._instances[cls]\n\nclass MyClass(metaclass=Singleton):\n    def __init__(self, value):\n        self.value = value\n```",
+    "options": ["It prevents subclassing of `MyClass`", "It will raise an error if `MyClass` is instantiated with different arguments", "The `Singleton` metaclass is not thread-safe", "The `__init__` method is not correctly overridden"],
+    "correct_answer": "It will raise an error if `MyClass` is instantiated with different arguments",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Analyze the following asynchronous code using `asyncio`. Pinpoint the most critical bug that could lead to unexpected behavior or deadlock.\n\n```python\nimport asyncio\n\nasync def task1(event):\n    print(\"Task 1 waiting for event\")\n    await event.wait()\n    print(\"Task 1 received event\")\n\nasync def task2(event):\n    print(\"Task 2 setting event\")\n    event.set()\n\nasync def main():\n    event = asyncio.Event()\n    asyncio.create_task(task1(event))\n    asyncio.create_task(task2(event))\n    await asyncio.sleep(0.1)\n\nasyncio.run(main())\n```",
+    "options": ["`asyncio.sleep` is used which may be unreliable.", "The event is set before Task 1 has a chance to start waiting for it.", "There are no exception handlers.", "The code lacks proper error handling"],
+    "correct_answer": "The event is set before Task 1 has a chance to start waiting for it.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the vulnerability in the following code snippet, which aims to sanitize user input before using it in a SQL query.\n\n```python\ndef sanitize_input(input_str):\n    return input_str.replace(\"'\",""\"").replace(\"--\", \"\")\n\ndef execute_query(user_input):\n    sanitized_input = sanitize_input(user_input)\n    query = f\"SELECT * FROM users WHERE username = '{sanitized_input}'\"\n    # Execute the query (not shown for brevity)\n    return query\n```",
+    "options": ["The `replace` method is inefficient for large strings", "The sanitization method is vulnerable to SQL injection", "The code does not handle Unicode characters", "The code is missing error handling for database operations"],
+    "correct_answer": "The sanitization method is vulnerable to SQL injection",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+    {
+    "question": "Consider the following code which attempts to implement a simple cache. Identify the potential issue.\n\n```python\ncache = {}\n\ndef get_data(key):\n    if key in cache:\n        return cache[key]\n    else:\n        data = fetch_data_from_source(key) # Assume this function exists\n        cache[key] = data\n        return data\n```",
+    "options": ["The cache will grow indefinitely, leading to memory issues", "The cache is not thread-safe", "The cache does not handle key collisions", "All of the above"],
+    "correct_answer": "All of the above",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code using `functools.lru_cache`. What is a major consideration regarding memory usage?",
+    "options": ["`lru_cache` has no memory limitations.", "The cache size should be carefully tuned to avoid excessive memory consumption.", "Using `lru_cache` automatically optimizes memory usage.", "`lru_cache` only stores primitive data types to conserve memory."],
+    "correct_answer": "The cache size should be carefully tuned to avoid excessive memory consumption.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+   {
+    "question": "Analyze the following code snippet and identify a potential issue related to memory management in Python:\n\n```python\ndef create_circular_reference():\n    obj1 = {}\n    obj2 = {}\n    obj1['self'] = obj2\n    obj2['self'] = obj1\n    return obj1, obj2\n\nobj1, obj2 = create_circular_reference()\n#Code continues\n```",
+    "options": ["The code will raise a `RecursionError`", "The code creates a memory leak due to the circular reference", "The code is perfectly valid and has no memory issues", "The garbage collector will immediately collect the objects"],
+    "correct_answer": "The code creates a memory leak due to the circular reference",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given the following code that uses `multiprocessing`, identify a potential issue related to shared state:\n\n```python\nimport multiprocessing\n\ncounter = 0\n\ndef increment():\n    global counter\n    for _ in range(100000):\n        counter += 1\n\nif __name__ == '__main__':\n    p1 = multiprocessing.Process(target=increment)\n    p2 = multiprocessing.Process(target=increment)\n    p1.start()\n    p2.start()\n    p1.join()\n    p2.join()\n    print(counter)\n```",
+    "options": ["The `counter` variable is not properly shared between processes", "The `increment` function is not thread-safe", "The code will raise a `NameError`", "There is no issue with the code"],
+    "correct_answer": "The `counter` variable is not properly shared between processes",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider the following code snippet with a nested function and identify a potential issue related to variable scope:\n\n```python\ndef outer_function():\n    x = 10\n    def inner_function():\n        x += 5  # This line might cause an issue\n        print(x)\n    inner_function()\n\nouter_function()\n```",
+    "options": ["The code will print 15", "The code will raise an `UnboundLocalError`", "The code will modify the global variable `x`", "The code will raise a `NameError`"],
+    "correct_answer": "The code will raise an `UnboundLocalError`",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+    {
+    "question": "Analyze the code and spot the potential issue causing unexpected results:\n\n```python\nnumbers = [1, 2, 3, 4, 5]\nresults = []\n\nfor i in range(len(numbers)):\n    if numbers[i] % 2 == 0:\n        results.append(numbers.pop(i))\n\nprint(results)\n```",
+    "options": ["IndexError due to `i` exceeding the list length.", "The code correctly filters even numbers and appends them to `results`.", "The `pop` operation modifies the list during iteration, leading to skipped elements.", "The code is syntactically incorrect."],
+    "correct_answer": "The `pop` operation modifies the list during iteration, leading to skipped elements.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The following code aims to implement a decorator that measures the execution time of a function. Identify a potential issue with its implementation.\n\n```python\nimport time\n\ndef timer(func):\n    def wrapper(*args, **kwargs):\n        start_time = time.time()\n        result = func(*args, **kwargs)\n        end_time = time.time()\n        print(f'Execution time: {end_time - start_time}')\n        return result\n    return wrapper\n\n@timer\ndef my_function(x, y):\n    time.sleep(1)\n    return x + y\n```",
+    "options": ["The decorator does not preserve the original function's metadata (e.g., docstring, name)", "The decorator is not compatible with asynchronous functions", "The decorator does not handle exceptions properly", "The decorator is inefficient for frequently called functions"],
+    "correct_answer": "The decorator does not preserve the original function's metadata (e.g., docstring, name)",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the most significant risk with using mutable default arguments in Python functions?\n\n```python\ndef append_to_list(element, my_list=[]):\n    my_list.append(element)\n    return my_list\n\nprint(append_to_list(1))\nprint(append_to_list(2))\n```",
+    "options": ["It causes a TypeError when the function is called without arguments.", "The default argument is re-evaluated on each function call.", "The function becomes impure and can lead to unexpected side effects due to persistent state between calls.", "It only affects the first call to the function."],
+    "correct_answer": "The function becomes impure and can lead to unexpected side effects due to persistent state between calls.",
+    "topic": "Debugging",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this code using a global variable and threading. Find the most likely cause of inconsistent data:\n\n```python\nimport threading\nimport time\n\ncounter = 0\n\ndef increment():\n  global counter\n  for _ in range(100000):\n    counter += 1\n\nthreads = []\nfor _ in range(2):\n  t = threading.Thread(target=increment)\n  threads.append(t)\n  t.start()\n\nfor t in threads:\n  t.join()\n\nprint(f'Counter value: {counter}')\n```",
+    "options": ["Global variables are inherently thread-safe in Python.", "The Global Interpreter Lock (GIL) guarantees thread safety for increment operations.", "The absence of explicit locking mechanisms leads to race conditions during the increment operation.", "The `time.sleep()` function is missing within the `increment()` function."],
+    "correct_answer": "The absence of explicit locking mechanisms leads to race conditions during the increment operation.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  },
+  {
+    "question": "You are profiling a Python application and notice excessive memory usage. Which of the following scenarios is MOST likely contributing to the problem when dealing with large datasets?\n",
+    "options": ["Using generators instead of lists for iterative processing.", "String interning for frequently used strings.", "Storing intermediate results of transformations on large datasets in memory without garbage collection.", "Using built-in functions instead of custom implementations."],
+    "correct_answer": "Storing intermediate results of transformations on large datasets in memory without garbage collection.",
+    "topic": "Debugging",
+    "difficulty": "hard"
+  }
+]
+```

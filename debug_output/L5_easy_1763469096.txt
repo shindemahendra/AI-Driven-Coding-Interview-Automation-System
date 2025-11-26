@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "question": "Which of these is a type of data?",
+    "options": ["A. Number", "B. Idea", "C. Feeling", "D. Smell"],
+    "correct_answer": "A",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a computer program?",
+    "options": ["A. A type of food", "B. Instructions for a computer", "C. A musical instrument", "D. A kind of plant"],
+    "correct_answer": "B",
+    "topic": "Programming Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is an input device?",
+    "options": ["A. Monitor", "B. Printer", "C. Keyboard", "D. Speaker"],
+    "correct_answer": "C",
+    "topic": "Computer Hardware",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'www' stand for in a website address?",
+    "options": ["A. World Wide Web", "B. Wild Wild West", "C. Wonderful Widget World", "D. Water Works Website"],
+    "correct_answer": "A",
+    "topic": "Internet Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is a storage device?",
+    "options": ["A. Mouse", "B. Hard Drive", "C. Microphone", "D. Webcam"],
+    "correct_answer": "B",
+    "topic": "Computer Hardware",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an algorithm?",
+    "options": ["A. A type of vegetable", "B. A set of instructions", "C. A popular song", "D. A famous painting"],
+    "correct_answer": "B",
+    "topic": "Algorithms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a web browser?",
+    "options": ["A. Word", "B. Excel", "C. Chrome", "D. PowerPoint"],
+    "correct_answer": "C",
+    "topic": "Internet Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a variable in programming?",
+    "options": ["A. A constant value", "B. A container for data", "C. A type of animal", "D. A cooking recipe"],
+    "correct_answer": "B",
+    "topic": "Programming Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which symbol is commonly used to represent multiplication in programming?",
+    "options": ["A. +", "B. -", "C. *", "D. /"],
+    "correct_answer": "C",
+    "topic": "Programming Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of a search engine?",
+    "options": ["A. To play music", "B. To find information on the internet", "C. To send emails", "D. To create documents"],
+    "correct_answer": "B",
+    "topic": "Internet Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is used to write code?",
+    "options": ["A. Calculator", "B. Text Editor", "C. Television", "D. Refrigerator"],
+    "correct_answer": "B",
+    "topic": "Programming Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a file extension?",
+    "options": ["A. The beginning of a file name", "B. The end of a file name indicating its type", "C. The size of a file", "D. The date a file was created"],
+    "correct_answer": "B",
+    "topic": "File Management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'CPU' stand for?",
+    "options": ["A. Central Processing Unit", "B. Computer Processing Unit", "C. Common Power Unit", "D. Control Panel Utility"],
+    "correct_answer": "A",
+    "topic": "Computer Hardware",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a loop in programming?",
+    "options": ["A. A straight line", "B. A repeated sequence of instructions", "C. A type of cloud", "D. A brand of shoes"],
+    "correct_answer": "B",
+    "topic": "Programming Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the meaning of 'copy-pasting'?",
+    "options": ["A. To move files", "B. To duplicate files or text", "C. To delete files", "D. To rename files"],
+    "correct_answer": "B",
+    "topic": "Basic Computer Skills",
+    "difficulty": "easy"
+  }
+]
+```

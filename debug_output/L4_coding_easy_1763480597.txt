@@ -1,0 +1,12 @@
+```json
+{
+  "title": "Traffic Light Simulation",
+  "description": "You are building a simple traffic light simulation. You are given an array of strings, `signals`, representing the sequence of traffic light states at a particular intersection over a period of time. Each string in the array represents a single traffic light state and can be one of the following:\n\n*   \"green\"\n*   \"yellow\"\n*   \"red\"\n\nYour task is to write a function that determines the minimum number of times a driver approaching the intersection would have to stop (i.e., encountered a \"red\" signal) based on the given sequence of traffic light states. Assume the driver approaches the intersection at the *beginning* of the sequence, and observes each subsequent state.\n\nFor example, if `signals = [\"green\", \"yellow\", \"red\", \"green\", \"red\"]`, the driver would encounter a red light twice, so the function should return `2`.",
+  "input_format": "The input is an array of strings, `signals`, where each string represents a traffic light state. Each string will be one of the following: \"green\", \"yellow\", or \"red\".",
+  "output_format": "The output is an integer representing the number of times the driver encounters a red light (the number of \"red\" states in the `signals` array).",
+  "constraints": "*   1 <= `signals.length` <= 100\n*   Each string in `signals` will be either \"green\", \"yellow\", or \"red\".",
+  "sample_input": "[\"green\", \"yellow\", \"red\", \"green\", \"red\"]",
+  "sample_output": "2",
+  "difficulty": "easy"
+}
+```

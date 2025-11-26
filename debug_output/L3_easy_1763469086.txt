@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "question": "What is the primary function of the CPU?",
+    "options": ["A. Executing instructions", "B. Storing data", "C. Displaying graphics", "D. Connecting to the internet"],
+    "correct_answer": "A",
+    "topic": "Computer Architecture",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a type of computer memory?",
+    "options": ["A. Mouse", "B. Keyboard", "C. RAM", "D. Printer"],
+    "correct_answer": "C",
+    "topic": "Computer Hardware",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'www' stand for in a website address?",
+    "options": ["A. World Wide Web", "B. Wide Web World", "C. Web World Wide", "D. Web Wide World"],
+    "correct_answer": "A",
+    "topic": "Networking Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is an input device?",
+    "options": ["A. Monitor", "B. Speaker", "C. Keyboard", "D. Printer"],
+    "correct_answer": "C",
+    "topic": "Input/Output Devices",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an operating system?",
+    "options": ["A. A type of computer game", "B. A software that manages computer hardware and software resources", "C. A device for printing documents", "D. A website for buying things"],
+    "correct_answer": "B",
+    "topic": "Operating Systems",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a file extension for a text document?",
+    "options": ["A. .exe", "B. .jpg", "C. .txt", "D. .mp3"],
+    "correct_answer": "C",
+    "topic": "File Management",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'URL' stand for?",
+    "options": ["A. Uniform Resource Locator", "B. Universal Resource Locator", "C. Unique Resource Locator", "D. United Resource Locator"],
+    "correct_answer": "A",
+    "topic": "Internet Concepts",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these is a popular web browser?",
+    "options": ["A. Word", "B. Excel", "C. Chrome", "D. PowerPoint"],
+    "correct_answer": "C",
+    "topic": "Software Applications",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a computer virus?",
+    "options": ["A. A healthy computer", "B. A type of hardware", "C. A malicious software program", "D. A protective software"],
+    "correct_answer": "C",
+    "topic": "Computer Security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of an antivirus software?",
+    "options": ["A. To create documents", "B. To protect against viruses", "C. To play music", "D. To browse the internet"],
+    "correct_answer": "B",
+    "topic": "Computer Security",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'IT' stand for?",
+    "options": ["A. Internet Technology", "B. Information Technology", "C. Intelligent Technology", "D. Integrated Technology"],
+    "correct_answer": "B",
+    "topic": "General IT Knowledge",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is used to connect to the internet wirelessly?",
+    "options": ["A. Ethernet Cable", "B. USB Cable", "C. Wi-Fi", "D. Power Cable"],
+    "correct_answer": "C",
+    "topic": "Networking Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an algorithm?",
+    "options": ["A. A computer screen", "B. A step-by-step procedure for solving a problem", "C. A type of music", "D. A food recipe"],
+    "correct_answer": "B",
+    "topic": "Programming Fundamentals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which symbol represents 'greater than' in mathematics?",
+    "options": ["A. <", "B. >", "C. =", "D. !="],
+    "correct_answer": "B",
+    "topic": "Basic Mathematics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the name of the cloud storage service by Google?",
+    "options": ["A. OneDrive", "B. Dropbox", "C. Google Drive", "D. iCloud"],
+    "correct_answer": "C",
+    "topic": "Cloud Computing",
+    "difficulty": "easy"
+  }
+]
+```

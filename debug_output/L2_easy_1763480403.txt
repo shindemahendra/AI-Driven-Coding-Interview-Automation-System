@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of `print(type([1, 2, 3]))`?",
+    "options": ["A) list", "B) tuple", "C) <class 'list'>", "D) <class 'tuple'>"],
+    "correct_answer": "C",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a stack?",
+    "options": ["A) Dictionary", "B) Set", "C) Queue", "D) List"],
+    "correct_answer": "D",
+    "topic": "Data Structures",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will `[1, 2, 3] + [4, 5]` result in?",
+    "options": ["A) [5, 7, 3]", "B) [1, 2, 3, 4, 5]", "C) Error", "D) [4, 5, 1, 2, 3]"],
+    "correct_answer": "B",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the `len()` function do?",
+    "options": ["A) Sorts a list", "B) Returns the length of a sequence", "C) Deletes an item", "D) Reverses a string"],
+    "correct_answer": "B",
+    "topic": "Built-in Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a mutable data type?",
+    "options": ["A) Tuple", "B) String", "C) Integer", "D) List"],
+    "correct_answer": "D",
+    "topic": "Data Types",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a dictionary using its key?",
+    "options": ["A) O(n)", "B) O(log n)", "C) O(1)", "D) O(n log n)"],
+    "correct_answer": "C",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is the correct way to define a generator function?",
+    "options": ["A) def my_func(): return [i for i in range(10)]", "B) def my_func(): yield i for i in range(10)", "C) def my_func(): return i for i in range(10)", "D) def my_func(): yield from range(10)"],
+    "correct_answer": "D",
+    "topic": "Generators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the purpose of the `*args` parameter in a function definition?",
+    "options": ["A) To pass a variable number of keyword arguments", "B) To specify default argument values", "C) To pass a variable number of positional arguments", "D) To define a constant value"],
+    "correct_answer": "C",
+    "topic": "Functions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of these is NOT a benefit of using decorators?",
+    "options": ["A) Code reusability", "B) Adding functionality to existing functions", "C) Modifying the decorated function's source code", "D) Improved readability"],
+    "correct_answer": "C",
+    "topic": "Decorators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the difference between `==` and `is` in Python?",
+    "options": ["A) `==` compares values, `is` compares data types", "B) `==` compares object identity, `is` compares values", "C) `==` compares values, `is` compares object identity", "D) They are interchangeable"],
+    "correct_answer": "C",
+    "topic": "Operators",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following best describes the Global Interpreter Lock (GIL) in Python?",
+    "options": ["A) A lock that prevents multiple threads from writing to the same memory location.", "B) A mechanism that allows only one thread to hold control of the Python interpreter at any one time.", "C) A lock that prevents deadlocks in multithreaded programs.", "D) A tool for debugging multithreaded Python code."],
+    "correct_answer": "B",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+    "options": ["A) To define the default values for instance attributes.", "B) To create static attributes shared by all instances of the class.", "C) To limit the attributes an instance can have, saving memory.", "D) To specify the order in which attributes are accessed."],
+    "correct_answer": "C",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which of the following is the correct way to implement an asynchronous task using `asyncio`?",
+    "options": ["A) def my_task(): await asyncio.sleep(1)", "B) async def my_task(): time.sleep(1)", "C) async def my_task(): await asyncio.sleep(1)", "D) def my_task(): asyncio.sleep(1)"],
+    "correct_answer": "C",
+    "topic": "Asynchronous Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": ["A) A class that inherits from multiple classes.", "B) A class that is used to create other classes.", "C) A class with no methods.", "D) A class that can only be instantiated once."],
+    "correct_answer": "B",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of the `memoryview` object in Python?",
+    "options": ["A) To provide a high-level interface for memory management.", "B) To allow direct access to the internal data of an object without copying.", "C) To monitor memory usage of a Python program.", "D) To compress data in memory."],
+    "correct_answer": "B",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does Python's garbage collection work?",
+    "options": ["A) Manual memory management using `free()`", "B) Reference counting and cycle detection", "C) Automatic memory management based on object size", "D) Memory allocation only at program startup"],
+    "correct_answer": "B",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which data structure provides the fastest average lookup time?",
+    "options": ["A) List", "B) Tuple", "C) Set", "D) Dictionary"],
+    "correct_answer": "D",
+    "topic": "Data Structures",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a closure in Python?",
+    "options": ["A) A function without a name", "B) A function that returns another function", "C) A function that remembers values from its enclosing lexical scope even when that scope is no longer active", "D) A class with only private methods"],
+    "correct_answer": "C",
+    "topic": "Functions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the correct way to handle exceptions in Python?",
+    "options": ["A) try...catch", "B) try...except", "C) if...else", "D) throw...catch"],
+    "correct_answer": "B",
+    "topic": "Exception Handling",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of these represents the correct way to slice a list to get elements from index 2 to 5 (inclusive)?",
+    "options": ["A) list[2:5]", "B) list[2:6]", "C) list[3:6]", "D) list[3:5]",],
+    "correct_answer": "B",
+    "topic": "Lists",
+    "difficulty": "medium"
+  }
+]
+```

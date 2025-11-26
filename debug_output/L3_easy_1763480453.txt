@@ -1,0 +1,144 @@
+```json
+[
+  {
+    "question": "What is the output of the following code snippet?\n\n```python\ndef foo(x):\n    x.append(1)\n\ny = []\nfoo(y)\nprint(y)\n```",
+    "options": ["[]", "[1]", "None", "Error"],
+    "correct_answer": "[1]",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this code: `def process_data(data):\n    for i in range(len(data)):\n        data[i] = data[i] + 1\n\ndata = [1, 2, 3]\nprocess_data(data)\nprint(data)`\n\nWhat's the value of `data` after execution?",
+    "options": ["[1, 2, 3]", "[2, 3, 4]", "[1, 2, 3, 1]", "Error"],
+    "correct_answer": "[2, 3, 4]",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code snippet?\n\n```python\ndef func(x):\n    x = 10\n\nz = 5\nfunc(z)\nprint(z)\n```",
+    "options": ["5", "10", "None", "Error"],
+    "correct_answer": "5",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the output of the following code? \n```python\ndef add(a, b):\n    return a + b\n\nresult = add('1', 2)\nprint(result)\n```",
+    "options": ["3", "'12'", "Error", "None"],
+    "correct_answer": "Error",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What will be printed when running this code snippet?\n```python\ndef modify_list(my_list):\n    my_list = [1, 2, 3]\n    \nnumbers = [4, 5, 6]\nmodify_list(numbers)\nprint(numbers)\n```",
+    "options": ["[1, 2, 3]", "[4, 5, 6]", "None", "Error"],
+    "correct_answer": "[4, 5, 6]",
+    "topic": "L3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Consider this code. What is the potential bug?\n```python\ndef calculate_average(numbers):\n    total = 0\n    for number in numbers:\n        total += number\n    return total / len(numbers)\n\nprint(calculate_average([]))\n```",
+    "options": ["ZeroDivisionError", "TypeError", "IndexError", "ValueError"],
+    "correct_answer": "ZeroDivisionError",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's the potential issue in the following snippet?\n```python\ndef process_items(items):\n    for i in range(len(items)):\n        if items[i] % 2 == 0:\n            del items[i]\n\nmy_list = [1, 2, 3, 4, 5]\nprocess_items(my_list)\nprint(my_list)\n```",
+    "options": ["IndexError", "TypeError", "ValueError", "Infinite loop"],
+    "correct_answer": "IndexError",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's the bug in this code?\n```python\ndef update_dictionary(data, key, value):\n    data[key].append(value)\n\nmy_dict = {'a': [1, 2], 'b': [3, 4]}\nupdate_dictionary(my_dict, 'c', 5)\nprint(my_dict)\n```",
+    "options": ["KeyError", "TypeError", "IndexError", "ValueError"],
+    "correct_answer": "KeyError",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Consider this code using global variables. What is printed?\n```python\nx = 5\n\ndef modify_x():\n    x += 1\n\nmodify_x()\nprint(x)\n```",
+    "options": ["5", "6", "Error", "None"],
+    "correct_answer": "Error",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Find the error in the following:\n```python\ndef remove_duplicates(data):\n    unique_data = []\n    for item in data:\n        if item not in unique_data:\n            unique_data.append(item)\n    return data\n\ndata = [1, 2, 2, 3, 4, 4, 5]\nresult = remove_duplicates(data)\nprint(result)\n```",
+    "options": ["Doesn't remove duplicates", "Incorrect comparison", "Memory leak", "Causes infinite loop"],
+    "correct_answer": "Doesn't remove duplicates",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the issue in this multi-threaded python code?\n```python\nimport threading\n\ncount = 0\n\ndef increment():\n    global count\n    for _ in range(100000):\n        count += 1\n\nthreads = []\nfor _ in range(2):\n    t = threading.Thread(target=increment)\n    threads.append(t)\n    t.start()\n\nfor t in threads:\n    t.join()\n\nprint(count)\n```",
+    "options": ["Race condition", "Deadlock", "MemoryError", "TypeError"],
+    "correct_answer": "Race condition",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Consider the code: `def my_generator():\n    i = 0\n    while True:\n        yield i\n        i += 1\n\ngen = my_generator()\n\nfor _ in range(5):\n    next(gen)\n\nprint(gen[2])` What's the primary error?",
+    "options": ["TypeError", "IndexError", "StopIteration", "Generator cannot be indexed"],
+    "correct_answer": "Generator cannot be indexed",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the memory leak issue in the following code:\n```python\nimport weakref\n\nclass MyObject:\n    pass\n\nobj = MyObject()\ncache = {}\ncache['object'] = obj\ndel obj\nprint(cache)\n```",
+    "options": ["No memory leak", "Circular reference not resolved", "Weak reference not used", "Global scope problem"],
+    "correct_answer": "No memory leak",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which threading issue can cause a program to freeze indefinitely?\n```python\nimport threading\nimport time\n\nlock_a = threading.Lock()\nlock_b = threading.Lock()\n\ndef thread_1():\n    lock_a.acquire()\n    time.sleep(0.1)\n    lock_b.acquire()\n    print('Thread 1')\n    lock_b.release()\n    lock_a.release()\n\ndef thread_2():\n    lock_b.acquire()\n    time.sleep(0.1)\n    lock_a.acquire()\n    print('Thread 2')\n    lock_a.release()\n    lock_b.release()\n\nt1 = threading.Thread(target=thread_1)\nt2 = threading.Thread(target=thread_2)\nt1.start()\nt2.start()\n```",
+    "options": ["Race condition", "Starvation", "Deadlock", "Priority inversion"],
+    "correct_answer": "Deadlock",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Given the following code, what is the issue?\n```python\nimport asyncio\n\nasync def my_coroutine():\n    print('Coroutine started')\n    await asyncio.sleep(1)\n    print('Coroutine finished')\n\nasync def main():\n    my_coroutine()\n\nasyncio.run(main())\n```",
+    "options": ["Coroutine not awaited", "asyncio.run() missing", "Invalid syntax", "Missing event loop"],
+    "correct_answer": "Coroutine not awaited",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the issue in the following Python code?\n\n```python\ndef outer_function():\n    x = 10\n\n    def inner_function():\n        print(x)\n        x = 20\n\n    inner_function()\n\nouter_function()\n```",
+    "options": ["UnboundLocalError", "NameError", "TypeError", "SyntaxError"],
+    "correct_answer": "UnboundLocalError",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What potential problem exists in this code that uses a cache?\n\n```python\ncache = {}\n\ndef expensive_function(arg):\n    if arg in cache:\n        return cache[arg]\n    else:\n        result = compute_expensive_result(arg)\n        cache[arg] = result\n        return result\n```",
+    "options": ["Cache invalidation", "Race condition", "Memory leak", "Type mismatch"],
+    "correct_answer": "Memory leak",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Identify the potential bug in this code:\n\n```python\ndef process_data(data):\n    for i in range(len(data)):\n        if data[i] > 5:\n            data.pop(i)\n\ndata = [1, 6, 2, 7, 3]\nprocess_data(data)\nprint(data)\n```",
+    "options": ["IndexError", "ValueError", "TypeError", "ZeroDivisionError"],
+    "correct_answer": "IndexError",
+    "topic": "L3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which potential issue exists in the following producer-consumer code (simplified):\n```python\nimport queue\nimport threading\n\nq = queue.Queue()\n\ndef producer():\n    for i in range(10):\n        q.put(i)\n\ndef consumer():\n    while True:\n        item = q.get()\n        print(item)\n        q.task_done()\n\nproducer_thread = threading.Thread(target=producer)\nconsumer_thread = threading.Thread(target=consumer)\nproducer_thread.start()\nconsumer_thread.start()\n```",
+    "options": ["Deadlock", "Starvation", "Missing q.join()", "Race Condition"],
+    "correct_answer": "Missing q.join()",
+    "topic": "L3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What's wrong with the following code?\n\n```python\nimport copy\n\ndef modify_list(original_list):\n    modified_list = original_list\n    modified_list.append(4)\n    return modified_list\n\nmy_list = [1, 2, 3]\nnew_list = modify_list(my_list)\n\nprint(my_list)\n```",
+    "options": ["Doesn't modify original list", "Returns None", "Creates shallow copy", "Memory leak"],
+    "correct_answer": "Creates shallow copy",
+    "topic": "L3",
+    "difficulty": "medium"
+  }
+]
+```
