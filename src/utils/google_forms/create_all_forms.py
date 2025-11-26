@@ -1,26 +1,11 @@
 import json
-from src.utils.google_forms.form_templates import TEMPLATE_FORM_IDS
-from src.utils.google_forms.form_api import get_drive_service
-from src.utils.google_forms.update_form_questions import (
-    update_form_with_mcqs,
-    update_form_with_coding,
-)
-from src.utils.question_generator.uid_helper import generate_uid
-
-
-def duplicate_form(template_id, new_title):
-    drive = get_drive_service()
-
-    copied = drive.files().copy(
-        fileId=template_id,
-        body={"name": new_title}
-    ).execute()
-
-    return copied["id"]
+from src.utils.google_forms.create_form_mcq import create_mcq_form
+from src.utils.google_forms.create_form_coding import create_coding_form
 
 
 def create_all_google_forms(json_path):
-    # Load candidate data
+
+    # Load candidate test JSON
     with open(json_path, "r") as f:
         data = json.load(f)
 
@@ -31,44 +16,54 @@ def create_all_google_forms(json_path):
     print(f" Creating Google Forms for {candidate_uid}")
     print("===============================\n")
 
+    # Store generated form IDs and URLs
     form_ids = {}
 
-    # ------------------------------------------------------
-    # DUPLICATE TEMPLATES FOR EACH ROUND
-    # ------------------------------------------------------
-    for level in ["L1", "L2", "L3", "L5", "L4"]:
-        print(f"📄 Duplicating {level} Template...")
+    # ------------------------------
+    # L1 → MCQ
+    # ------------------------------
+    print("🔵 Creating L1 Form...")
+    form_ids["L1"] = create_mcq_form("L1", candidate_uid, data["L1"])
 
-        new_title = f"{candidate_uid}_{level}"
-        form_ids[level] = duplicate_form(TEMPLATE_FORM_IDS[level], new_title)
+    # ------------------------------
+    # L2 → MCQ
+    # ------------------------------
+    print("🔵 Creating L2 Form...")
+    form_ids["L2"] = create_mcq_form("L2", candidate_uid, data["L2"])
 
-        print(f"✔ Duplicated {level} → {form_ids[level]}")
+    # ------------------------------
+    # L3 → MCQ
+    # ------------------------------
+    print("🔵 Creating L3 Form...")
+    form_ids["L3"] = create_mcq_form("L3", candidate_uid, data["L3"])
 
-    print("\n✔ All templates duplicated successfully\n")
+    # ------------------------------
+    # L5 → MCQ
+    # ------------------------------
+    print("🔵 Creating L5 Form...")
+    form_ids["L5"] = create_mcq_form("L5", candidate_uid, data["L5"])
 
-    # ------------------------------------------------------
-    # INSERT QUESTIONS INTO NEWLY CREATED FORMS
-    # ------------------------------------------------------
-    print("✏ Updating L1 Questions...")
-    update_form_with_mcqs(form_ids["L1"], data["L1"])
+    # ------------------------------
+    # OPTIONAL L4 CODING FORM
+    # ------------------------------
+    if "L4" in data and len(data["L4"]) > 0:
+        print("🟣 Creating L4 Coding Form...")
+        try:
+            form_ids["L4"] = create_coding_form(candidate_uid, data["L4"][0])
+        except Exception as e:
+            print(f"⚠ L4 skipped: {e}")
 
-    print("✏ Updating L2 Questions...")
-    update_form_with_mcqs(form_ids["L2"], data["L2"])
+    # --------------------------------------------------------
+    # FINISHED — ONLY FORMS GENERATED
+    # --------------------------------------------------------
+    print("\n🎉 ALL GOOGLE FORMS CREATED SUCCESSFULLY!")
+    print("Generated Form IDs:")
+    print(json.dumps({"forms": form_ids}, indent=4))
 
-    print("✏ Updating L3 Questions...")
-    update_form_with_mcqs(form_ids["L3"], data["L3"])
+    print("\n🔗 FORM LINKS:")
 
-    print("✏ Updating L5 Questions...")
-    update_form_with_mcqs(form_ids["L5"], data["L5"])
-
-    print("🟣 Skipping L4 (Coding) — JSON structure mismatch")
-
-    # ------------------------------------------------------
-    # PRINT RESULTS
-    # ------------------------------------------------------
-    print("\n🎉 ALL DONE!\nGenerated Forms:\n")
-    for level, fid in form_ids.items():
-        print(f"{level}: https://docs.google.com/forms/d/{fid}/edit")
+    for level, form_id in form_ids.items():
+        print(f"{level}: https://docs.google.com/forms/d/{form_id}/edit")
 
     return form_ids
 
