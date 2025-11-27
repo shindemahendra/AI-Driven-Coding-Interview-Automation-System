@@ -101,12 +101,19 @@ def create_candidate_folder(candidate_name, parent_folder_id):
         raise Exception(f"Drive API Folder Creation Error: {e.content.decode()}")
 
 
-def create_interview_form(level_name, batch_name, candidate_folder_id):
-    """Creates a Form, Sheet, moves them, and initializes sheet headers inside the candidate folder."""
+def create_interview_form(interview_level, candidate_name, candidate_folder_id):
+    """
+    Creates a Form and Sheet, moves them, and initializes sheet headers inside
+    the candidate folder. Uses candidate_name for file identification.
+
+    NOTE: 'interview_level' is now expected to be the difficulty (e.g., 'Easy', 'Medium', 'Hard')
+    or the original level (e.g., 'L4'), depending on how src/app.py is configured.
+    """
     if not FORMS or not SHEETS or not DRIVE:
         raise Exception("API services are not initialized.")
 
-    form_title = f"{level_name}_{batch_name}"
+    # Use the new interview_level for the unique form title
+    form_title = f"{interview_level}_{candidate_name}"
 
     try:
         # 1. Create a new Google Sheet (Response Target)

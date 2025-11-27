@@ -1,123 +1,119 @@
 import streamlit as st
 import pandas as pd
-import json
+import re
 import os
-from form_generator import create_interview_form, populate_form_with_questions, create_candidate_folder
+import sys
+from pathlib import Path
 
-# Note: The 'ai_generator' module is assumed to exist for the AI Generation mode
-# from ai_generator import generate_questions_for_level
+# --- START FIX for ModuleNotFoundError: No module named 'src' ---
+# This block ensures that the project root (the directory containing the 'src' folder)
+# is added to the Python path, allowing imports like 'from src.utils...' to work.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+# --- END FIX ---
+
+# Import the core logic function from your new file
+from src.utils.google_forms.create_all_forms import create_all_google_forms
 
 # --- Configuration ---
-# 1. HARDCODED MAIN INTERVIEW FOLDER ID
-# IMPORTANT: REPLACE "YOUR_HARDCODED_MAIN_INTERVIEW_FOLDER_ID" with your actual Google Drive Folder ID.
+# 1. HARDCODED MAIN INTERVIEW FOLDER ID (No longer strictly used by create_all_google_forms,
+# but kept as a reminder of project setup if needed elsewhere.)
 DEFAULT_FOLDER_ID = "10wVzl8MZKUX3ZzuqYphZ2MmmvOzT3vNL"
 
-LEVELS_CONFIG = {
-    'L1': 'Logical Puzzles',
-    'L2': 'MCQs & Syntax',
-    'L3': 'System Design Fundamentals',
-    'L4': 'Coding Problems',
-    'L5': 'Soft-skill Situational Questions'
-}
+# Define the base directory where your pre-generated JSON tests are stored
+# NOTE: This path is relative to the project root, which is now correctly in sys.path.
+TEST_JSON_BASE_DIR = "question_bank/tests"
 
 
-def generate_questions_for_level(level, q_type):
+# Removed create_candidate_username as we now use an explicit UID
+
+
+def get_json_path(candidate_uid: str, difficulty: str) -> str:
+    """Constructs the expected path to the candidate's pre-generated test JSON using the UID."""
+    # Example path: question_bank/tests/rbodicherla_easy.json
+    return os.path.join(TEST_JSON_BASE_DIR, f"{candidate_uid.lower()}_{difficulty.lower()}.json")
+
+
+def run_form_generation_workflow(candidate_name: str, candidate_email: str, candidate_uid: str, difficulty_level: str):
     """
-    STUB FUNCTION: Replace with actual Gemini API call logic in ai_generator.py.
-    For now, this returns a placeholder list if needed, or an error if the real
-    module isn't available.
+    Orchestrates the workflow: finds the JSON path and calls the form creation logic.
     """
-    st.warning(f"Stub used: AI generation for {level} is not fully implemented.")
-    # Return placeholder for L4/L5 if needed for testing, otherwise an empty list
-    if level == 'L4':
-        return [{'question': 'STUB: Write a sorting algorithm (L4)', 'options': []}]
-    elif level == 'L5':
-        return [{'question': 'STUB: Describe a conflict (L5)', 'options': []}]
-    else:
-        # Placeholder for L1-L3
-        return [{'question': f'STUB: What is 1+1? ({level})', 'options': ['2', '3']}]
 
+    json_path = get_json_path(candidate_uid, difficulty_level)
 
-def run_form_generation(batch_name, candidate_name, main_folder_id):
-    """Executes the full Form Creation and Question Population workflow, always using AI Generation (stubbed)."""
-    st.info(f"Initiating new batch: **{batch_name}** for **{candidate_name}** using **AI Generation**...")
-    master_tracker = []
+    st.info(f"Looking for pre-generated test JSON at path: `{json_path}`")
 
-    if main_folder_id == "YOUR_HARDCODED_MAIN_INTERVIEW_FOLDER_ID":
-        st.error(
-            "🛑 Please hardcode the 'DEFAULT_FOLDER_ID' variable in src/app.py to a real Google Drive Folder ID before running.")
-        return pd.DataFrame()
+    # We must check existence relative to the project root, or wherever the script is run from.
+    if not os.path.exists(json_path):
+        st.error(f"❌ Error: Test JSON file not found for candidate '{candidate_uid}' at the expected path.")
+        st.error(f"Please ensure the file `{json_path}` exists and contains the question data.")
+        # Print the current working directory for debugging path issues
+        st.info(f"Current working directory (Streamlit): {os.getcwd()}")
+        return
 
     try:
-        # P1: Create the Candidate Folder first
-        candidate_folder_id = create_candidate_folder(candidate_name, main_folder_id)
-        st.success(f"✅ Created candidate folder: Interview - {candidate_name}")
-    except Exception as e:
-        st.error(f"❌ Failed to create candidate folder for {candidate_name}: {e}")
-        return pd.DataFrame()  # Stop if folder creation fails
+        # Trigger the creation of all forms using the JSON file
+        form_ids = create_all_google_forms(json_path)
 
-    for level, q_type in LEVELS_CONFIG.items():
-        st.markdown(f"**-> Creating {level} ({q_type}) in candidate folder...**")
+        st.success("🎉 All Google Forms Created Successfully!")
 
-        # --- Question Source Logic: Always use AI Generation (Stubbed) ---
-        questions_data = generate_questions_for_level(level, q_type)
-        # -----------------------------
+        # Display results in a table
+        master_tracker = []
+        for level, form_id in form_ids.items():
+            form_url = f"https://docs.google.com/forms/d/{form_id}/edit"
+            master_tracker.append({
+                'Candidate Name': candidate_name,
+                'Candidate Email': candidate_email,
+                'Level': level,
+                'Form_URL': form_url
+            })
 
-        try:
-            # P2: Create Form, Sheet, Move, and Initialize Headers
-            # Pass the candidate_folder_id instead of the main_folder_id
-            form_id, form_url, sheet_id, sheet_url = create_interview_form(level, batch_name, candidate_folder_id)
-
-            # P3: Populate Questions (Uses stub implementation in form_generator.py)
-            if questions_data:
-                populate_form_with_questions(form_id, questions_data)
-
-            st.success(f"✅ {level} Form Created: [View Form]({form_url}) | [View Sheet]({sheet_url})")
-
-            master_tracker.append({'Level': level, 'Form_URL': form_url, 'Sheet_URL': sheet_url})
-
-        except Exception as e:
-            st.error(f"❌ Failed to create {level}: {e}")
-
-    if master_tracker:
         results_df = pd.DataFrame(master_tracker)
-        st.subheader("🎉 Batch Creation Complete!")
-        st.dataframe(results_df)
-        return results_df
-    return pd.DataFrame()
+        st.dataframe(results_df, use_container_width=True)
+
+    except Exception as e:
+        st.error(f"❌ Failed to create forms using JSON file: {e}")
 
 
 # --- Streamlit UI ---
 
-st.set_page_config(page_title="AI Interview Automation System", layout="wide")
+st.set_page_config(page_title="Interview Automation System", layout="wide")
 st.title("🤖 AI-Driven Coding Interview Automation System")
 st.divider()
 
-# --- 1. Create New Interview Batch ---
+# --- 1. Create New Interview Form ---
 with st.container():
-    st.header("1. Create New Interview Batch")
+    st.header("1. Create New Interview Form")
 
-    col1, col2 = st.columns([1, 1])
+    # Using 4 columns for a cleaner layout to fit all necessary inputs
+    col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
 
-    # Input for Candidate Full Name
-    candidate_name = col1.text_input("Candidate Full Name", value="Jane Doe")
-    batch_name = col2.text_input("Batch Name (e.g., Dec_2025)", value="Dec_2025_Test")
+    # Input for Candidate Full Name (Display only)
+    candidate_name = col1.text_input("Candidate Full Name", value="Ravi Bodicherla")
+
+    # Input for Candidate Email
+    candidate_email = col2.text_input("Candidate Email", value="rbodicherla@example.com")
+
+    # Input for Candidate UID (Used for file lookup)
+    candidate_uid = col3.text_input("Candidate UID (File Lookup Key)", value="rbodicherla")
+
+    # Select box for Interview Level
+    difficulty_options = ['easy', 'medium', 'hard']
+    interview_level = col4.selectbox(
+        "Interview Track (Selects the pre-generated JSON test)",
+        options=difficulty_options,
+        index=0,  # Default to easy, matching the provided JSON: rbodicherla_easy.json
+    )
 
     st.markdown("---")
 
-    # Simplified UI: Mode selection and JSON loading are removed.
-    st.subheader("Question Source: AI Generation")
+    st.subheader("Question Source: Pre-Generated JSON File")
+    st.info("Forms will be created using a JSON file found at: `question_bank/tests/{candidate_uid}_{difficulty}.json`")
 
-    # AI Question Refresh checkbox - now mandatory and simplified
-    auto_questions = st.checkbox(
-        "Generate fresh AI questions for all levels",
-        value=True,
-        help="The AI will generate questions for all five levels before form creation."
-    )
-
-    if st.button("🚀 Create New Interview Batch", type="primary"):
-        # run_form_generation now only takes batch_name, candidate_name, and main_folder_id
-        run_form_generation(batch_name, candidate_name, DEFAULT_FOLDER_ID)
+    if st.button("🚀 Create Interview Forms (All Levels)", type="primary"):
+        # The button click triggers the new workflow, passing the UID
+        run_form_generation_workflow(candidate_name, candidate_email, candidate_uid, interview_level)
 
 st.divider()
 
