@@ -1,7 +1,7 @@
 # src/utils/google_forms/evaluate_round.py
 
 import json
-from typing import Dict, Tuple
+from typing import Dict, Tuple, List, Any
 
 from src.utils.google_forms.form_api import get_forms_service
 from src.utils.google_forms.save_results_to_sheet import save_round_result
@@ -46,7 +46,7 @@ def build_question_index(candidate_data: dict) -> Dict[str, Tuple[str, str]]:
     Build map: question_title_clean -> (correct_answer, level)
     Levels: L1, L2, L3, L5 (skip candidate + L4).
     """
-    index = {}
+    index: Dict[str, Tuple[str, str]] = {}
     for level, questions in candidate_data.items():
         if level in ("candidate", "L4"):
             continue
@@ -63,7 +63,17 @@ def build_question_index(candidate_data: dict) -> Dict[str, Tuple[str, str]]:
     return index
 
 
-def evaluate_round(form_id: str, json_path: str):
+def evaluate_round_core(form_id: str, json_path: str) -> Dict[str, Any]:
+    """
+    Core evaluation logic usable from both:
+      - CLI (terminal)
+      - Streamlit UI
+
+    Returns a dict with:
+      uid, candidate_name, email, round_name,
+      total_questions, correct_count, score_percent,
+      status, spreadsheet_id, details[]
+    """
     # -------------------------
     # Load candidate JSON
     # -------------------------
@@ -84,7 +94,19 @@ def evaluate_round(form_id: str, json_path: str):
     print("\n📩 Fetching form responses...")
     user_answers_by_qid = fetch_latest_answers(form_id)
     if not user_answers_by_qid:
-        return
+        # No responses yet
+        return {
+            "uid": uid,
+            "candidate_name": candidate_name,
+            "email": email,
+            "round_name": "UNKNOWN",
+            "total_questions": 0,
+            "correct_count": 0,
+            "score_percent": 0.0,
+            "status": "NO_RESPONSES",
+            "spreadsheet_id": None,
+            "details": [],
+        }
 
     # -------------------------
     # Fetch form structure (to map questionId → question title)
@@ -102,6 +124,7 @@ def evaluate_round(form_id: str, json_path: str):
     total_questions = 0
     correct_count = 0
     level_counts: Dict[str, int] = {}
+    details: List[Dict[str, Any]] = []
 
     for item in items:
         q_item = item.get("questionItem")
@@ -117,7 +140,8 @@ def evaluate_round(form_id: str, json_path: str):
 
         user_answer = clean(user_answers_by_qid.get(qid, ""))
         if not user_answer:
-            continue  # user skipped
+            # user skipped this question
+            continue
 
         total_questions += 1
 
@@ -128,16 +152,41 @@ def evaluate_round(form_id: str, json_path: str):
             correct_answer, level = question_index[title]
             level_counts[level] = level_counts.get(level, 0) + 1
 
+        is_correct = bool(
+            correct_answer is not None and user_answer == clean(correct_answer)
+        )
+
         print(f"Q: {title}")
         print(f"🟣 User Answer: {user_answer}")
         print(f"🟢 Correct: {correct_answer}\n")
 
-        if correct_answer is not None and user_answer == clean(correct_answer):
+        if is_correct:
             correct_count += 1
+
+        details.append(
+            {
+                "title": title,
+                "user_answer": user_answer,
+                "correct_answer": correct_answer,
+                "is_correct": is_correct,
+                "level": level,
+            }
+        )
 
     if total_questions == 0:
         print("❌ No evaluatable questions found (maybe no matching titles).")
-        return
+        return {
+            "uid": uid,
+            "candidate_name": candidate_name,
+            "email": email,
+            "round_name": "UNKNOWN",
+            "total_questions": 0,
+            "correct_count": 0,
+            "score_percent": 0.0,
+            "status": "NO_EVALUATABLE_QUESTIONS",
+            "spreadsheet_id": None,
+            "details": [],
+        }
 
     score_percent = round((correct_count / total_questions) * 100, 2)
     status = "PASS" if score_percent >= 75.0 else "FAIL"
@@ -158,7 +207,6 @@ def evaluate_round(form_id: str, json_path: str):
     # -------------------------
     # Save to Google Sheet
     # -------------------------
-    print("📊 Saving result to Google Sheet...")
     spreadsheet_id = save_round_result(
         uid=uid,
         candidate_name=candidate_name,
@@ -170,7 +218,31 @@ def evaluate_round(form_id: str, json_path: str):
         status=status,
     )
 
-    print(f"✔ Result stored in spreadsheet: {spreadsheet_id}\n")
+    print(f"📊 Result stored in spreadsheet: {spreadsheet_id}\n")
+
+    return {
+        "uid": uid,
+        "candidate_name": candidate_name,
+        "email": email,
+        "round_name": round_name,
+        "total_questions": total_questions,
+        "correct_count": correct_count,
+        "score_percent": score_percent,
+        "status": status,
+        "spreadsheet_id": spreadsheet_id,
+        "details": details,
+    }
+
+
+def evaluate_round(form_id: str, json_path: str):
+    """
+    CLI-friendly wrapper (kept for terminal usage).
+    """
+    result = evaluate_round_core(form_id, json_path)
+    if result["status"] in ("NO_RESPONSES", "NO_EVALUATABLE_QUESTIONS"):
+        print(f"⚠ Status: {result['status']}")
+    else:
+        print("✅ Evaluation finished.")
 
 
 if __name__ == "__main__":
