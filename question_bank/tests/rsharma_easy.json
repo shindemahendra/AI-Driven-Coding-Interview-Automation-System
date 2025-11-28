@@ -1,0 +1,732 @@
+{
+    "candidate": {
+        "name": "rohit sharma",
+        "email": "rohithsharma@gmail.com",
+        "uid": "rsharma",
+        "difficulty": "easy"
+    },
+    "L1": [
+        {
+            "question": "If J = 10, K = 11, L = 12, then what does O equal?",
+            "options": [
+                "13",
+                "14",
+                "15",
+                "16"
+            ],
+            "correct_answer": "15"
+        },
+        {
+            "question": "If x = y and y = z, then x = ?",
+            "options": [
+                "x",
+                "y",
+                "z",
+                "w"
+            ],
+            "correct_answer": "z"
+        },
+        {
+            "question": "If every A is a B, and some B are C, then some A are necessarily:",
+            "options": [
+                "C",
+                "not C",
+                "B",
+                "unknown"
+            ],
+            "correct_answer": "unknown"
+        },
+        {
+            "question": "If all dogs are mammals and some mammals are brown, then:",
+            "options": [
+                "All dogs are brown",
+                "Some dogs are brown",
+                "No dogs are brown",
+                "Some brown things are dogs"
+            ],
+            "correct_answer": "Some dogs are brown"
+        },
+        {
+            "question": "What is the next number in the sequence: 1, 2, 4, 8, ?",
+            "options": [
+                "12",
+                "14",
+                "16",
+                "20"
+            ],
+            "correct_answer": "16"
+        },
+        {
+            "question": "If all cats are animals, and some animals are black, then:",
+            "options": [
+                "All cats are black",
+                "Some cats are black",
+                "No cats are black",
+                "Some black animals are cats"
+            ],
+            "correct_answer": "Some cats are black"
+        },
+        {
+            "question": "What is the next letter in the sequence: C, E, G, I, ?",
+            "options": [
+                "J",
+                "K",
+                "L",
+                "M"
+            ],
+            "correct_answer": "K"
+        },
+        {
+            "question": "What comes next in the pattern:  one, two, three, one, two, ?",
+            "options": [
+                "one",
+                "two",
+                "three",
+                "four"
+            ],
+            "correct_answer": "three"
+        },
+        {
+            "question": "If P is smaller than Q, and Q is smaller than R, then P is ______ than R.",
+            "options": [
+                "larger",
+                "the same size",
+                "smaller",
+                "impossible to tell"
+            ],
+            "correct_answer": "smaller"
+        },
+        {
+            "question": "What is the next letter in the sequence: A, C, E, G, ?",
+            "options": [
+                "H",
+                "I",
+                "J",
+                "K"
+            ],
+            "correct_answer": "I"
+        },
+        {
+            "question": "Which number is the odd one out: 3, 5, 7, 8, 11?",
+            "options": [
+                "3",
+                "5",
+                "7",
+                "8"
+            ],
+            "correct_answer": "8"
+        },
+        {
+            "question": "What is the next number in the sequence: 1, 3, 6, 10, ?",
+            "options": [
+                "12",
+                "13",
+                "14",
+                "15"
+            ],
+            "correct_answer": "15"
+        },
+        {
+            "question": "If G = 7, H = 8, I = 9, then what does L equal?",
+            "options": [
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "correct_answer": "12"
+        },
+        {
+            "question": "If R is faster than S, and S is faster than T, then R is ______ than T.",
+            "options": [
+                "slower",
+                "the same speed",
+                "faster",
+                "impossible to tell"
+            ],
+            "correct_answer": "faster"
+        },
+        {
+            "question": "Complete the series: 2, 4, 8, 16, ?",
+            "options": [
+                "24",
+                "30",
+                "32",
+                "40"
+            ],
+            "correct_answer": "32"
+        }
+    ],
+    "L2": [
+        {
+            "question": "What is the correct way to comment a single line in Python?",
+            "options": [
+                "// This is a comment",
+                "# This is a comment",
+                "/* This is a comment */",
+                "-- This is a comment"
+            ],
+            "correct_answer": "# This is a comment",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which keyword is used to exit a loop?",
+            "options": [
+                "stop",
+                "end",
+                "break",
+                "exit"
+            ],
+            "correct_answer": "break",
+            "topic": "Control Flow",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print(3 > 1)`?",
+            "options": [
+                "True",
+                "False",
+                "Error",
+                "1"
+            ],
+            "correct_answer": "True",
+            "topic": "Boolean Logic",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What keyword is used to define a function in Python?",
+            "options": [
+                "def",
+                "function",
+                "define",
+                "func"
+            ],
+            "correct_answer": "def",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print(3 > 2)`?",
+            "options": [
+                "True",
+                "False",
+                "Error",
+                "1"
+            ],
+            "correct_answer": "A",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is a tuple in Python?",
+            "options": [
+                "An ordered, mutable sequence of items",
+                "An ordered, immutable sequence of items",
+                "A set of unique elements",
+                "A dictionary with key-value pairs"
+            ],
+            "correct_answer": "An ordered, immutable sequence of items",
+            "topic": "Data Structures",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the correct way to write an `if` statement?",
+            "options": [
+                "if x > y then:",
+                "if x > y:",
+                "if (x > y)",
+                "if x > y"
+            ],
+            "correct_answer": "if x > y:",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print(2 + 2)`?",
+            "options": [
+                "22",
+                "4",
+                "Error",
+                "None"
+            ],
+            "correct_answer": "4",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of the `print()` function?",
+            "options": [
+                "To read input from the user",
+                "To display output to the console",
+                "To define a function",
+                "To perform mathematical calculations"
+            ],
+            "correct_answer": "To display output to the console",
+            "topic": "Input/Output",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is a boolean value?",
+            "options": [
+                "True",
+                "1",
+                "\"True\"",
+                "true"
+            ],
+            "correct_answer": "True",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you access the first element of a list called `my_list`?",
+            "options": [
+                "my_list[1]",
+                "my_list.first()",
+                "my_list[0]",
+                "my_list.get(1)"
+            ],
+            "correct_answer": "C",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of the `input()` function in Python?",
+            "options": [
+                "To print output to the console",
+                "To read input from the user",
+                "To import a module",
+                "To define a function"
+            ],
+            "correct_answer": "To read input from the user",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is a list in Python?",
+            "options": [
+                "A data type that stores single value",
+                "A data type that stores ordered collection of items",
+                "A keyword",
+                "A function"
+            ],
+            "correct_answer": "B",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the value of `x` after `x = 5; x += 2`?",
+            "options": [
+                "5",
+                "2",
+                "7",
+                "3"
+            ],
+            "correct_answer": "7",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is a mutable data type in Python?",
+            "options": [
+                "Tuple",
+                "String",
+                "Integer",
+                "List"
+            ],
+            "correct_answer": "List",
+            "topic": "Python",
+            "difficulty": "easy"
+        }
+    ],
+    "L3": [
+        {
+            "question": "What happens if you try to open a file for reading that doesn't exist?",
+            "code": null,
+            "options": [
+                "Returns None",
+                "Creates an empty file",
+                "Raises a FileNotFoundError",
+                "Raises an IOError"
+            ],
+            "correct_answer": "Raises a FileNotFoundError",
+            "topic": "File Handling",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following loop? Many errors appear when the loop condition is incorrect.",
+            "code": "i = 0\nwhile i < 5:\n  print(i)\n  i += 1",
+            "options": [
+                "0 1 2 3 4 5",
+                "0 1 2 3 4",
+                "1 2 3 4 5",
+                "Error"
+            ],
+            "correct_answer": "B",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of these options correctly opens the file 'my_file.txt' in write mode?",
+            "code": "None",
+            "options": [
+                "open('my_file.txt', 'r')",
+                "open('my_file.txt', 'a')",
+                "open('my_file.txt', 'w')",
+                "open('my_file.txt')"
+            ],
+            "correct_answer": "C",
+            "topic": "L3",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the error: `x = 5\ndef my_func():\n  x = x + 1\n  print(x)\nmy_func()`",
+            "code": "x = 5\ndef my_func():\n  x = x + 1\n  print(x)\nmy_func()",
+            "options": [
+                "NameError: free variable 'x' referenced before assignment in enclosing scope",
+                "Prints 6",
+                "No Error",
+                "SyntaxError: invalid syntax"
+            ],
+            "correct_answer": "NameError: free variable 'x' referenced before assignment in enclosing scope",
+            "topic": "L2",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The following code throws a TypeError. What is the most likely cause? Bug: TypeError",
+            "code": "print(\"Hello\" + 5)",
+            "options": [
+                "Incorrect variable type",
+                "Invalid syntax",
+                "Division by zero",
+                "Missing library"
+            ],
+            "correct_answer": "Incorrect variable type",
+            "topic": "Type Errors",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How can you prevent a program from crashing when an error occurs? Bug: Error prevention",
+            "code": "None",
+            "options": [
+                "Use try-except blocks",
+                "Ignore the error",
+                "Restart the program",
+                "Remove all code"
+            ],
+            "correct_answer": "Use try-except blocks",
+            "topic": "Exception Handling",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the error in this code: `print(\"Hello\" + 5)`?",
+            "code": "print(\"Hello\" + 5)",
+            "options": [
+                "TypeError: can only concatenate str (not \"int\") to str",
+                "SyntaxError: invalid syntax",
+                "ValueError: invalid literal for int() with base 10",
+                "NameError: name 'print' is not defined"
+            ],
+            "correct_answer": "TypeError: can only concatenate str (not \"int\") to str",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "The following code is intended to create a dictionary. What is missing in the code to get the intended outcome?",
+            "code": "my_dict = {\"name\": \"Alice\", \"age\": 30}\nprint(my_dict[\"name\"])",
+            "options": [
+                "Incorrect dictionary syntax",
+                "Missing key",
+                "Incorrect print statement",
+                "None of the above"
+            ],
+            "correct_answer": "None of the above",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following code?\n  x = 10\n  def my_function():\n    x = 5\n    print(x)\n  my_function()\n  print(x)",
+            "code": "x = 10\ndef my_function():\n  x = 5\n  print(x)\nmy_function()\nprint(x)",
+            "options": [
+                "5\\n10",
+                "10\\n5",
+                "5\\n5",
+                "10\\n10"
+            ],
+            "correct_answer": "5\\n10",
+            "topic": "Scope",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following is the correct way to catch an exception in Python?",
+            "code": null,
+            "options": [
+                "catch: Exception",
+                "except Exception:",
+                "try Exception:",
+                "with Exception:"
+            ],
+            "correct_answer": "except Exception:",
+            "topic": "Exception Handling",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the issue with this loop? Bug: Infinite Loop",
+            "code": "i = 0\nwhile i < 10:\n  print(i)",
+            "options": [
+                "Missing increment",
+                "Incorrect syntax",
+                "List out of range",
+                "Type error"
+            ],
+            "correct_answer": "Missing increment",
+            "topic": "Looping Errors",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the output of the following code? The intention was to create a tuple.",
+            "code": "my_tuple = (1, 2, 3)\nprint(my_tuple)",
+            "options": [
+                "(1, 2, 3)",
+                "[1, 2, 3]",
+                "{1, 2, 3}",
+                "Error"
+            ],
+            "correct_answer": "(1, 2, 3)",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What's the problem in this function? Bug: Scope error",
+            "code": "def my_func():\n  x = 10\nprint(x)",
+            "options": [
+                "x is not defined in the global scope",
+                "Syntax Error",
+                "TypeError",
+                "ValueError"
+            ],
+            "correct_answer": "x is not defined in the global scope",
+            "topic": "Scope",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the result of this conditional statement?",
+            "code": "x = 5\nif x > 10:\n  print(\"Greater than 10\")\nelif x > 5:\n  print(\"Greater than 5\")\nelse:\n  print(\"Less than or equal to 5\")",
+            "options": [
+                "Greater than 10",
+                "Greater than 5",
+                "Less than or equal to 5",
+                "Error"
+            ],
+            "correct_answer": "C",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What type of error will occur if you try to divide by zero? Bug: ZeroDivisionError",
+            "code": "result = 10 / 0",
+            "options": [
+                "ValueError",
+                "TypeError",
+                "ZeroDivisionError",
+                "IndexError"
+            ],
+            "correct_answer": "ZeroDivisionError",
+            "topic": "ZeroDivisionError",
+            "difficulty": "easy"
+        }
+    ],
+    "L5": [
+        {
+            "question": "What's most important: speed or accuracy?",
+            "options": [
+                "Speed regardless",
+                "Neither is important",
+                "Accuracy first",
+                "Depends on the task"
+            ],
+            "correct_answer": "Depends on the task",
+            "topic": "Decision Making",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is your greatest weakness?",
+            "options": [
+                "Perfectionism",
+                "Laziness",
+                "Dishonesty",
+                "Lack of skills"
+            ],
+            "correct_answer": "Perfectionism",
+            "topic": "Self-Awareness",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is your approach to learning new skills?",
+            "options": [
+                "Avoid learning",
+                "Only learn when forced",
+                "Actively seek opportunities to learn",
+                "Believe you already know everything"
+            ],
+            "correct_answer": "Actively seek opportunities to learn",
+            "topic": "Learning Agility",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle repetitive tasks?",
+            "options": [
+                "Complain",
+                "Delegate",
+                "Find efficiency",
+                "Avoid"
+            ],
+            "correct_answer": "Find efficiency",
+            "topic": "Work Ethic",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is your ideal work environment?",
+            "options": [
+                "Strictly structured",
+                "Highly independent",
+                "Collaborative and supportive",
+                "Competitive and aggressive"
+            ],
+            "correct_answer": "Collaborative and supportive",
+            "topic": "Teamwork",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you stay organized?",
+            "options": [
+                "Chaos",
+                "Lists",
+                "Forgetfulness",
+                "Disarray"
+            ],
+            "correct_answer": "Lists",
+            "topic": "Organization",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Your role in a team meeting is usually...",
+            "options": [
+                "Silent observer",
+                "Dominate the talking",
+                "Active participant",
+                "Plan my escape"
+            ],
+            "correct_answer": "Active participant",
+            "topic": "Teamwork",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle conflict with a coworker?",
+            "options": [
+                "Avoid them completely",
+                "Gossip about them",
+                "Address it directly and respectfully",
+                "Escalate immediately"
+            ],
+            "correct_answer": "Address it directly and respectfully",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you maintain professional ethics?",
+            "options": [
+                "By cutting corners",
+                "By compromising values",
+                "By upholding integrity and honesty",
+                "By bending the rules"
+            ],
+            "correct_answer": "By upholding integrity and honesty",
+            "topic": "Ethics",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you ensure you understand instructions correctly?",
+            "options": [
+                "Assume understanding",
+                "Never ask questions",
+                "Ask clarifying questions",
+                "Guess the instructions"
+            ],
+            "correct_answer": "Ask clarifying questions",
+            "topic": "Communication",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is your preferred team role?",
+            "options": [
+                "Dominating leader",
+                "Passive follower",
+                "Collaborative contributor",
+                "Lone wolf"
+            ],
+            "correct_answer": "Collaborative contributor",
+            "topic": "Teamwork",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you show empathy?",
+            "options": [
+                "Ignore",
+                "Listen actively",
+                "Judge",
+                "Interrupt"
+            ],
+            "correct_answer": "Listen actively",
+            "topic": "Empathy",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does accountability mean to you?",
+            "options": [
+                "Avoiding blame",
+                "Delegating responsibility",
+                "Taking ownership of results",
+                "Ignoring mistakes"
+            ],
+            "correct_answer": "Taking ownership of results",
+            "topic": "Accountability",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you adapt to change?",
+            "options": [
+                "Resist change",
+                "Embrace change",
+                "Ignore change",
+                "Fear change"
+            ],
+            "correct_answer": "Embrace change",
+            "topic": "Adaptability",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you communicate bad news?",
+            "options": [
+                "Abruptly",
+                "Indirectly",
+                "Honestly and kindly",
+                "Avoid communicating"
+            ],
+            "correct_answer": "Honestly and kindly",
+            "topic": "Communication",
+            "difficulty": "medium"
+        }
+    ],
+    "L4": [
+        {
+            "title": "Find the Largest Element in an Array",
+            "description": "Find the largest element in a given array of integers.",
+            "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers.",
+            "output_format": "The largest element in the array.",
+            "constraints": "1 <= n <= 100\n-1000 <= each element <= 1000",
+            "sample_input": "5\n1 5 2 8 3",
+            "sample_output": "8"
+        }
+    ]
+}
