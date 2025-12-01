@@ -1,0 +1,732 @@
+{
+    "candidate": {
+        "name": "Hemanth Patel",
+        "email": "hemanth@gmail.com",
+        "uid": "hpatel",
+        "difficulty": "easy"
+    },
+    "L1": [
+        {
+            "question": "What is the next number in the sequence: 5, 10, 20, 40, ?",
+            "options": [
+                "50",
+                "60",
+                "70",
+                "80"
+            ],
+            "correct_answer": "80"
+        },
+        {
+            "question": "What is the missing number: 32, 35, 38, __ , 44?",
+            "options": [
+                "39",
+                "40",
+                "41",
+                "42"
+            ],
+            "correct_answer": "41"
+        },
+        {
+            "question": "What is the next letter in the sequence: B, D, F, H, ?",
+            "options": [
+                "I",
+                "J",
+                "K",
+                "L"
+            ],
+            "correct_answer": "J"
+        },
+        {
+            "question": "What is the next number in the sequence: 1, 2, 4, 8, ?",
+            "options": [
+                "12",
+                "14",
+                "16",
+                "20"
+            ],
+            "correct_answer": "16"
+        },
+        {
+            "question": "If every X is a Y, and some Y are Z, then some X are necessarily:",
+            "options": [
+                "Z",
+                "not Z",
+                "Y",
+                "unknown"
+            ],
+            "correct_answer": "unknown"
+        },
+        {
+            "question": "Complete the series: 1, 4, 9, 16, ?",
+            "options": [
+                "20",
+                "25",
+                "30",
+                "36"
+            ],
+            "correct_answer": "25"
+        },
+        {
+            "question": "What is the missing number: 4, 6, __, 10, 12?",
+            "options": [
+                "5",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct_answer": "8"
+        },
+        {
+            "question": "If x = y and y = z, then x = ?",
+            "options": [
+                "x",
+                "y",
+                "z",
+                "w"
+            ],
+            "correct_answer": "z"
+        },
+        {
+            "question": "If all birds are animals and some animals eat seeds, then:",
+            "options": [
+                "All birds eat seeds",
+                "Some birds eat seeds",
+                "No birds eat seeds",
+                "Some seed-eaters are birds"
+            ],
+            "correct_answer": "Some birds eat seeds"
+        },
+        {
+            "question": "If all dogs are mammals and some mammals are brown, then:",
+            "options": [
+                "All dogs are brown",
+                "Some dogs are brown",
+                "No dogs are brown",
+                "Some brown things are dogs"
+            ],
+            "correct_answer": "Some dogs are brown"
+        },
+        {
+            "question": "What number should come next in the sequence: 2, 4, 6, 8, ?",
+            "options": [
+                "9",
+                "10",
+                "11",
+                "12"
+            ],
+            "correct_answer": "10"
+        },
+        {
+            "question": "If P is smaller than Q, and Q is smaller than R, then P is ______ than R.",
+            "options": [
+                "larger",
+                "the same size",
+                "smaller",
+                "impossible to tell"
+            ],
+            "correct_answer": "smaller"
+        },
+        {
+            "question": "If earth + water = mud, and mud + fire = clay, then earth + water + fire = ?",
+            "options": [
+                "dirt",
+                "dust",
+                "mud",
+                "clay"
+            ],
+            "correct_answer": "clay"
+        },
+        {
+            "question": "If all cats are animals, and some animals are black, then:",
+            "options": [
+                "All cats are black",
+                "Some cats are black",
+                "No cats are black",
+                "Some black animals are cats"
+            ],
+            "correct_answer": "Some cats are black"
+        },
+        {
+            "question": "What is the next number in the sequence: 1, 3, 6, 10, ?",
+            "options": [
+                "12",
+                "13",
+                "14",
+                "15"
+            ],
+            "correct_answer": "15"
+        }
+    ],
+    "L2": [
+        {
+            "question": "What is the correct file extension for Python files?",
+            "options": [
+                ".py",
+                ".pt",
+                ".p",
+                ".pyt"
+            ],
+            "correct_answer": ".py",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does `if` statement do?",
+            "options": [
+                "Repeats a block of code",
+                "Executes a block of code only if a condition is true",
+                "Defines a function",
+                "Prints a message"
+            ],
+            "correct_answer": "B",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print(type(5.0))`?",
+            "options": [
+                "<class 'int'>",
+                "<class 'float'>",
+                "<class 'str'>",
+                "<class 'bool'>"
+            ],
+            "correct_answer": "<class 'float'>",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does the `+` operator do when used with strings?",
+            "options": [
+                "Multiplies the strings",
+                "Concatenates the strings",
+                "Compares the strings",
+                "Subtracts the strings"
+            ],
+            "correct_answer": "Concatenates the strings",
+            "topic": "Operators",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is a mutable data type in Python?",
+            "options": [
+                "Tuple",
+                "String",
+                "Integer",
+                "List"
+            ],
+            "correct_answer": "List",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the index of the first element in a list?",
+            "options": [
+                "1",
+                "0",
+                "-1",
+                "None"
+            ],
+            "correct_answer": "0",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print(2 + 2)`?",
+            "options": [
+                "22",
+                "4",
+                "Error",
+                "0"
+            ],
+            "correct_answer": "4",
+            "topic": "Basic Operations",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What will be the output of `print(2 + 2)`?",
+            "options": [
+                "22",
+                "4",
+                "Error",
+                "2+2"
+            ],
+            "correct_answer": "4",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print(type(5.0))`?",
+            "options": [
+                "<class 'int'>",
+                "<class 'float'>",
+                "<class 'str'>",
+                "<class 'bool'>"
+            ],
+            "correct_answer": "<class 'float'>",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print(2 + 2)`?",
+            "options": [
+                "22",
+                "4",
+                "2+2",
+                "Error"
+            ],
+            "correct_answer": "B",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of a `for` loop in Python?",
+            "options": [
+                "To define a function.",
+                "To iterate over a sequence (like a list or string).",
+                "To handle errors.",
+                "To perform mathematical calculations."
+            ],
+            "correct_answer": "To iterate over a sequence (like a list or string).",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does the `if` statement do in Python?",
+            "options": [
+                "Defines a loop",
+                "Defines a function",
+                "Executes code based on a condition",
+                "Prints output to the console"
+            ],
+            "correct_answer": "Executes code based on a condition",
+            "topic": "Control Flow",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which operator is used for assignment in Python?",
+            "options": [
+                "=",
+                "==",
+                "+=",
+                "->"
+            ],
+            "correct_answer": "=",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of the `len()` function?",
+            "options": [
+                "To find the length of a string, list, or tuple",
+                "To calculate the square root of a number",
+                "To convert a string to lowercase",
+                "To print output to the console"
+            ],
+            "correct_answer": "To find the length of a string, list, or tuple",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does `print(type(5.0))` output?",
+            "options": [
+                "<class 'int'>",
+                "<class 'str'>",
+                "<class 'float'>",
+                "<class 'bool'>"
+            ],
+            "correct_answer": "C",
+            "topic": "Python",
+            "difficulty": "easy"
+        }
+    ],
+    "L3": [
+        {
+            "question": "What is the output of the following code? The intention was to create a tuple.",
+            "code": "my_tuple = (1, 2, 3)\nprint(my_tuple)",
+            "options": [
+                "(1, 2, 3)",
+                "[1, 2, 3]",
+                "{1, 2, 3}",
+                "Error"
+            ],
+            "correct_answer": "(1, 2, 3)",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following code? The intention was to check if a number is greater than 10.",
+            "code": "x = 15\nif x > 10:\n  print(\"Greater\")\nelse:\n  print(\"Smaller\")",
+            "options": [
+                "Greater",
+                "Smaller",
+                "Error",
+                "None"
+            ],
+            "correct_answer": "Greater",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What happens if you try to open a file for reading that doesn't exist?",
+            "code": null,
+            "options": [
+                "Returns None",
+                "Creates an empty file",
+                "Raises a FileNotFoundError",
+                "Raises an IOError"
+            ],
+            "correct_answer": "Raises a FileNotFoundError",
+            "topic": "File Handling",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following code? A common mistake is forgetting the order of operations.",
+            "code": "print(2 + 3 * 4)",
+            "options": [
+                "20",
+                "14",
+                "12",
+                "24"
+            ],
+            "correct_answer": "B",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following list comprehension?",
+            "code": "numbers = [1, 2, 3, 4, 5]\nsquares = [x**2 for x in numbers if x % 2 == 0]\nprint(squares)",
+            "options": [
+                "[1, 4, 9, 16, 25]",
+                "[4, 16]",
+                "[1, 9, 25]",
+                "Error"
+            ],
+            "correct_answer": "B",
+            "topic": "L3",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is the output of this code when it encounters a potential division by zero error?",
+            "code": "def divide(x, y):\n  try:\n    result = x / y\n    print(\"result is:\", result)\n  except ZeroDivisionError:\n    print(\"division by zero!\")\ndivide(3, 0)",
+            "options": [
+                "0",
+                "3",
+                "Error",
+                "division by zero!"
+            ],
+            "correct_answer": "D",
+            "topic": "L3",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the error in this code: `def my_function()\n    print(\"Hello\")`",
+            "code": "def my_function()\n    print(\"Hello\")",
+            "options": [
+                "IndentationError: expected an indented block",
+                "SyntaxError: invalid syntax",
+                "TypeError: 'str' object is not callable",
+                "NameError: name 'my_function' is not defined"
+            ],
+            "correct_answer": "IndentationError: expected an indented block",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the error: `x = 5\ndef my_func():\n  x = x + 1\n  print(x)\nmy_func()`",
+            "code": "x = 5\ndef my_func():\n  x = x + 1\n  print(x)\nmy_func()",
+            "options": [
+                "NameError: free variable 'x' referenced before assignment in enclosing scope",
+                "Prints 6",
+                "No Error",
+                "SyntaxError: invalid syntax"
+            ],
+            "correct_answer": "NameError: free variable 'x' referenced before assignment in enclosing scope",
+            "topic": "L2",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What will be the output of the following code?\n  def outer_function():\n      x = 10\n      def inner_function():\n          nonlocal x\n          x = 20\n      inner_function()\n      print(x)\n  outer_function()",
+            "code": "def outer_function():\n    x = 10\n    def inner_function():\n        nonlocal x\n        x = 20\n    inner_function()\n    print(x)\nouter_function()",
+            "options": [
+                "10",
+                "20",
+                "Error",
+                "None"
+            ],
+            "correct_answer": "20",
+            "topic": "Scope",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is the correct way to open a file in read mode?",
+            "code": "None",
+            "options": [
+                "open(\"file.txt\", \"w\")",
+                "open(\"file.txt\", \"r\")",
+                "open(\"file.txt\", \"a\")",
+                "open(\"file.txt\")"
+            ],
+            "correct_answer": "open(\"file.txt\", \"r\")",
+            "topic": "L3",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What will happen when the following code is executed? The goal is to raise an exception.",
+            "code": "raise ValueError(\"Invalid input\")",
+            "options": [
+                "The program will continue execution",
+                "A ValueError exception will be raised",
+                "A TypeError exception will be raised",
+                "The program will terminate without error"
+            ],
+            "correct_answer": "A ValueError exception will be raised",
+            "topic": "L3",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following code? Pay attention to tuple immutability.",
+            "code": "my_tuple = (1, 2, 3)\nmy_tuple[0] = 4\nprint(my_tuple)",
+            "options": [
+                "(4, 2, 3)",
+                "(1, 2, 3)",
+                "Error",
+                "None"
+            ],
+            "correct_answer": "C",
+            "topic": "L3",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the output of the following loop? Many errors appear when the loop condition is incorrect.",
+            "code": "i = 0\nwhile i < 5:\n  print(i)\n  i += 1",
+            "options": [
+                "0 1 2 3 4 5",
+                "0 1 2 3 4",
+                "1 2 3 4 5",
+                "Error"
+            ],
+            "correct_answer": "B",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the error in the following code? The goal is to concatenate two strings.",
+            "code": "str1 = \"Hello\"\nstr2 = \"World\"\nprint(str1 + str2)",
+            "options": [
+                "TypeError",
+                "ValueError",
+                "NameError",
+                "None of the above"
+            ],
+            "correct_answer": "None of the above",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does pdb stand for? Bug: Debugging Tool",
+            "code": "None",
+            "options": [
+                "Python Debugger",
+                "Program Database",
+                "Process Debug",
+                "Print Debug"
+            ],
+            "correct_answer": "Python Debugger",
+            "topic": "Debugging Tools",
+            "difficulty": "easy"
+        }
+    ],
+    "L5": [
+        {
+            "question": "Are you comfortable taking risks?",
+            "options": [
+                "Never",
+                "Sometimes",
+                "Often",
+                "Always"
+            ],
+            "correct_answer": "Sometimes",
+            "topic": "Decision Making",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is your approach to problem-solving?",
+            "options": [
+                "Avoid problems",
+                "Blame others",
+                "Analyze and find solutions",
+                "Ignore the problem"
+            ],
+            "correct_answer": "Analyze and find solutions",
+            "topic": "Problem Solving",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle conflict with a coworker?",
+            "options": [
+                "Avoid them completely",
+                "Gossip about them",
+                "Address it directly and respectfully",
+                "Escalate immediately"
+            ],
+            "correct_answer": "Address it directly and respectfully",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle conflict with a colleague?",
+            "options": [
+                "Avoid them entirely",
+                "Become confrontational",
+                "Seek a mutually agreeable solution",
+                "Report them immediately"
+            ],
+            "correct_answer": "Seek a mutually agreeable solution",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What does accountability mean to you?",
+            "options": [
+                "Avoiding blame",
+                "Delegating responsibility",
+                "Taking ownership of results",
+                "Ignoring mistakes"
+            ],
+            "correct_answer": "Taking ownership of results",
+            "topic": "Accountability",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you approach teamwork?",
+            "options": [
+                "Independently",
+                "Collaboratively",
+                "Dominantly",
+                "Passively"
+            ],
+            "correct_answer": "Collaboratively",
+            "topic": "Teamwork",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle tight deadlines?",
+            "options": [
+                "Panic",
+                "Procrastinate",
+                "Stay focused",
+                "Give up"
+            ],
+            "correct_answer": "Stay focused",
+            "topic": "Time Management",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is your typical approach to problem-solving?",
+            "options": [
+                "Avoid problems",
+                "Blame others for problems",
+                "Analyze and find solutions",
+                "Ignore problems"
+            ],
+            "correct_answer": "Analyze and find solutions",
+            "topic": "Problem Solving",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is your approach to teamwork?",
+            "options": [
+                "Prefer to work alone",
+                "Only contribute when asked",
+                "Actively collaborate and support",
+                "Dominate the discussion"
+            ],
+            "correct_answer": "Actively collaborate and support",
+            "topic": "Teamwork",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What's your approach to problem solving?",
+            "options": [
+                "Avoidance",
+                "Reactive",
+                "Proactive",
+                "Ignoring"
+            ],
+            "correct_answer": "Proactive",
+            "topic": "Problem Solving",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle setbacks?",
+            "options": [
+                "Give up immediately",
+                "Blame external factors",
+                "Learn from the experience",
+                "Ignore the setback"
+            ],
+            "correct_answer": "Learn from the experience",
+            "topic": "Resilience",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you adapt to changes in project requirements?",
+            "options": [
+                "Resist the changes",
+                "Complain about the changes",
+                "Embrace and adapt",
+                "Ignore the changes"
+            ],
+            "correct_answer": "Embrace and adapt",
+            "topic": "Adaptability",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you stay organized at work?",
+            "options": [
+                "Disorganized chaos",
+                "Use effective systems",
+                "Rely on memory",
+                "Avoid organization"
+            ],
+            "correct_answer": "Use effective systems",
+            "topic": "Organization",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you show empathy?",
+            "options": [
+                "Ignore",
+                "Listen actively",
+                "Judge",
+                "Interrupt"
+            ],
+            "correct_answer": "Listen actively",
+            "topic": "Empathy",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle making a mistake at work?",
+            "options": [
+                "Hide the mistake",
+                "Blame someone else",
+                "Take responsibility",
+                "Ignore the mistake"
+            ],
+            "correct_answer": "Take responsibility",
+            "topic": "Accountability",
+            "difficulty": "medium"
+        }
+    ],
+    "L4": [
+        {
+            "title": "Reverse Words in a String",
+            "description": "Reverse the order of words in a given string.",
+            "input_format": "A string, s.",
+            "output_format": "The string with words reversed.",
+            "constraints": "1 <= length(s) <= 1000. Words are separated by spaces.",
+            "sample_input": "This is a test string",
+            "sample_output": "string test a is This"
+        }
+    ]
+}
