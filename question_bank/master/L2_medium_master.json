@@ -1,0 +1,1202 @@
+[
+    {
+        "question": "What is the output of the following code snippet?\n\n```python\ndef foo(x):\n    x[0] = ['def']\n    x = ['abc']\n    x[0] = ['ghi']\n    return id(x)\n\nq = ['abc']\nr = foo(q)\nprint(q,r)\n```",
+        "options": [
+            "['abc'] <some id>",
+            "['def'] <some id>",
+            "['def'] <different id>",
+            "Error"
+        ],
+        "correct_answer": "['def'] <some id>",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is NOT a valid way to create a dictionary in Python?",
+        "options": [
+            "dict([(1, 'a'), (2, 'b')])",
+            "{1: 'a', 2: 'b'}",
+            "dict(1='a', 2='b')",
+            "{(1, 'a'), (2, 'b')} "
+        ],
+        "correct_answer": "{(1, 'a'), (2, 'b')} ",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between `is` and `==` in Python?",
+        "options": [
+            "`is` compares values, `==` compares identities",
+            "`is` compares identities, `==` compares values",
+            "`is` is used for numbers, `==` is used for strings",
+            "They are the same"
+        ],
+        "correct_answer": "`is` compares identities, `==` compares values",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nlist1 = [1, 2, 3, 4]\nlist2 = list1\nlist2[0] = 5\nprint(list1)\n```",
+        "options": [
+            "[1, 2, 3, 4]",
+            "[5, 2, 3, 4]",
+            "[1, 2, 3, 5]",
+            "[5, 5, 5, 5]"
+        ],
+        "correct_answer": "[5, 2, 3, 4]",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following statements about Python decorators is FALSE?",
+        "options": [
+            "Decorators can modify the behavior of a function.",
+            "Decorators are applied using the `@` symbol.",
+            "Decorators are functions that take another function as an argument.",
+            "Decorators can only be used with functions, not methods."
+        ],
+        "correct_answer": "Decorators can only be used with functions, not methods.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will be the output of the following code?\n```python\nprint(type(1/2))\n```",
+        "options": [
+            "<class 'int'>",
+            "<class 'float'>",
+            "<class 'Fraction'>",
+            "<class 'complex'>"
+        ],
+        "correct_answer": "<class 'float'>",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `__init__` method in a Python class?",
+        "options": [
+            "To destroy an object.",
+            "To define the class variables.",
+            "To initialize the object's attributes.",
+            "To call the parent class's constructor."
+        ],
+        "correct_answer": "To initialize the object's attributes.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is a generator in Python?",
+        "options": [
+            "A function that generates random numbers.",
+            "A function that returns a list.",
+            "A function that returns an iterator that produces a sequence of values.",
+            "A class that generates objects."
+        ],
+        "correct_answer": "A function that returns an iterator that produces a sequence of values.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\ndef func(a, b=5, c=10):\n    print('a is', a, 'and b is', b, 'and c is', c)\n\nfunc(12, c=24)\n```",
+        "options": [
+            "a is 12 and b is 5 and c is 10",
+            "a is 12 and b is 5 and c is 24",
+            "a is 12 and b is 24 and c is 10",
+            "a is 12 and b is None and c is 24"
+        ],
+        "correct_answer": "a is 12 and b is 5 and c is 24",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following modules is used for regular expressions in Python?",
+        "options": [
+            "regex",
+            "re",
+            "regexp",
+            "pyregex"
+        ],
+        "correct_answer": "re",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of `try...except` block in Python?",
+        "options": [
+            "To define a loop.",
+            "To define a function.",
+            "To handle exceptions.",
+            "To declare variables."
+        ],
+        "correct_answer": "To handle exceptions.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\ndef my_function():\n    try:\n        return 'try'\n    finally:\n        return 'finally'\n\nprint(my_function())\n```",
+        "options": [
+            "try",
+            "finally",
+            "tryfinally",
+            "None"
+        ],
+        "correct_answer": "finally",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following data structures is mutable in Python?",
+        "options": [
+            "Tuple",
+            "String",
+            "Integer",
+            "List"
+        ],
+        "correct_answer": "List",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nprint(2 ** 3 ** 2)\n```",
+        "options": [
+            "64",
+            "512",
+            "256",
+            "None of the above"
+        ],
+        "correct_answer": "512",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `*args` parameter do in a Python function?",
+        "options": [
+            "It accepts only keyword arguments.",
+            "It accepts a variable number of positional arguments.",
+            "It accepts a variable number of keyword arguments.",
+            "It defines a default value for an argument."
+        ],
+        "correct_answer": "It accepts a variable number of positional arguments.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is pickling and unpickling in Python?",
+        "options": [
+            "Converting Python code to C code and vice versa.",
+            "Converting Python objects to a string representation and vice versa.",
+            "Converting Python objects to a byte stream and vice versa.",
+            "Converting Python code to bytecode and vice versa."
+        ],
+        "correct_answer": "Converting Python objects to a byte stream and vice versa.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nx = [i for i in range(5) if i % 2 == 0]\nprint(x)\n```",
+        "options": [
+            "[0, 1, 2, 3, 4]",
+            "[0, 2, 4]",
+            "[1, 3]",
+            "[0, 1, 4]"
+        ],
+        "correct_answer": "[0, 2, 4]",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `__name__ == '__main__'` condition in a Python script?",
+        "options": [
+            "To define the main function of the script.",
+            "To prevent the script from being imported.",
+            "To execute code only when the script is run directly, not when it's imported as a module.",
+            "To define the script's name."
+        ],
+        "correct_answer": "To execute code only when the script is run directly, not when it's imported as a module.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\ndef outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nprint(closure(5))\n```",
+        "options": [
+            "5",
+            "10",
+            "15",
+            "Error"
+        ],
+        "correct_answer": "15",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will be the output of the following code?\n\n```python\nvalues = [1, 2, 3, 4]\nnumbers = set(values)\n\ndef check_nums(arg):\n    if arg in numbers:\n        return True\n    else:\n        return False\n\nprint(check_nums(10))\n```",
+        "options": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "False",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will be the output of the following code snippet?\n```python\ndef outer_function(x):\n def inner_function(y):\n return x + y\n return inner_function\n\nadd_five = outer_function(5)\nresult = add_five(3)\nprint(result)\n```",
+        "options": [
+            "3",
+            "5",
+            "8",
+            "Error"
+        ],
+        "correct_answer": "8",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following statements about Python decorators is correct?",
+        "options": [
+            "Decorators can only be used with functions, not classes.",
+            "Decorators modify the function or class definition at compile time.",
+            "Decorators provide a way to modify the behavior of a function or class without permanently modifying it.",
+            "Decorators are a type of comment used for code documentation."
+        ],
+        "correct_answer": "Decorators provide a way to modify the behavior of a function or class without permanently modifying it.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between `==` and `is` in Python?",
+        "options": [
+            "`==` compares the values of two objects, while `is` compares their identities.",
+            "`==` compares the identities of two objects, while `is` compares their values.",
+            "`==` is used for numerical comparisons, while `is` is used for string comparisons.",
+            "There is no difference between the two."
+        ],
+        "correct_answer": "`==` compares the values of two objects, while `is` compares their identities.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will be the output of the following code?\n```python\nlist1 = [1, 2, 3]\nlist2 = list1\nlist2[0] = 4\nprint(list1)\n```",
+        "options": [
+            "[1, 2, 3]",
+            "[4, 2, 3]",
+            "[1, 2, 4]",
+            "[4, 2, 4]"
+        ],
+        "correct_answer": "[4, 2, 3]",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `__init__` method in a Python class?",
+        "options": [
+            "It is the destructor method, called when an object is deleted.",
+            "It is the constructor method, called when an object is created.",
+            "It is used to define the class name.",
+            "It is used to import external libraries."
+        ],
+        "correct_answer": "It is the constructor method, called when an object is created.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which data structure is used to implement dictionaries in Python?",
+        "options": [
+            "Linked List",
+            "Array",
+            "Hash Table",
+            "Tree"
+        ],
+        "correct_answer": "Hash Table",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `with` statement in Python?",
+        "options": [
+            "To iterate over a sequence.",
+            "To handle exceptions.",
+            "To manage resources, ensuring they are properly released.",
+            "To define a conditional block."
+        ],
+        "correct_answer": "To manage resources, ensuring they are properly released.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will be the output of the following code?\n```python\ndef func(a, b=[]):\n b.append(a)\n return b\n\nprint(func(1))\nprint(func(2))\n```",
+        "options": [
+            "[1]",
+            "[2]",
+            "[1, 2]",
+            "Error"
+        ],
+        "correct_answer": "[1, 2]",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `super()` function in Python?",
+        "options": [
+            "To call a function in the parent class.",
+            "To create a new instance of a class.",
+            "To delete an object.",
+            "To check the type of an object."
+        ],
+        "correct_answer": "To call a function in the parent class.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is a mutable data type in Python?",
+        "options": [
+            "String",
+            "Tuple",
+            "Integer",
+            "List"
+        ],
+        "correct_answer": "List",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between `.py` and `.pyc` files?",
+        "options": [
+            ".pyc files contain Python source code, while .py files contain compiled bytecode.",
+            ".py files contain Python source code, while .pyc files contain compiled bytecode.",
+            ".py files are used for documentation, while .pyc files are used for execution.",
+            "There is no difference between them."
+        ],
+        "correct_answer": ".py files contain Python source code, while .pyc files contain compiled bytecode.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is a generator in Python?",
+        "options": [
+            "A function that returns a list.",
+            "A function that yields values one at a time, allowing iteration over a potentially large sequence without storing it in memory.",
+            "A class that is used for creating objects.",
+            "A built-in function for generating random numbers."
+        ],
+        "correct_answer": "A function that yields values one at a time, allowing iteration over a potentially large sequence without storing it in memory.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `*args` syntax do in a Python function?",
+        "options": [
+            "It specifies the return type of the function.",
+            "It allows the function to accept a variable number of positional arguments.",
+            "It defines a default value for an argument.",
+            "It is used for importing modules."
+        ],
+        "correct_answer": "It allows the function to accept a variable number of positional arguments.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will be the output of the following code?\n```python\nprint(1 or 0 and 0)\n```",
+        "options": [
+            "0",
+            "1",
+            "True",
+            "False"
+        ],
+        "correct_answer": "1",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `try...except` block in Python?",
+        "options": [
+            "To define a loop.",
+            "To handle exceptions and prevent the program from crashing.",
+            "To define a function.",
+            "To declare variables."
+        ],
+        "correct_answer": "To handle exceptions and prevent the program from crashing.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between a list and a tuple in Python?",
+        "options": [
+            "Lists are immutable, while tuples are mutable.",
+            "Lists are enclosed in parentheses, while tuples are enclosed in square brackets.",
+            "Lists are mutable, while tuples are immutable.",
+            "There is no difference."
+        ],
+        "correct_answer": "Lists are mutable, while tuples are immutable.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is pickling and unpickling in Python?",
+        "options": [
+            "Converting a Python object into a string representation, and vice versa.",
+            "Saving a Python object to a file, and loading it back from the file.",
+            "Compressing and decompressing files.",
+            "Encrypting and decrypting data."
+        ],
+        "correct_answer": "Saving a Python object to a file, and loading it back from the file.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following libraries is commonly used for numerical computation in Python?",
+        "options": [
+            "Flask",
+            "Django",
+            "NumPy",
+            "Beautiful Soup"
+        ],
+        "correct_answer": "NumPy",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `//` operator do in Python?",
+        "options": [
+            "Floor division (integer division).",
+            "Exponentiation.",
+            "Modulo operation.",
+            "Bitwise AND."
+        ],
+        "correct_answer": "Floor division (integer division).",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is a metaclass in Python?",
+        "options": [
+            "A class that defines the behavior of other classes.",
+            "A class that is used for creating objects.",
+            "A subclass of all classes.",
+            "A built-in function for creating classes."
+        ],
+        "correct_answer": "A class that defines the behavior of other classes.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\ndef outer_function(x):\n  def inner_function(y):\n    return x + y\n  return inner_function\n\nclosure = outer_function(10)\nprint(closure(5))```",
+        "options": [
+            "5",
+            "10",
+            "15",
+            "Error"
+        ],
+        "correct_answer": "C",
+        "topic": "Closures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following data structures is mutable?",
+        "options": [
+            "Tuple",
+            "String",
+            "Set",
+            "FrozenSet"
+        ],
+        "correct_answer": "C",
+        "topic": "Data Structures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `__init__` method in a Python class?",
+        "options": [
+            "To define a static method",
+            "To initialize an object",
+            "To define a class method",
+            "To destroy an object"
+        ],
+        "correct_answer": "B",
+        "topic": "Object-Oriented Programming",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nlst = [1, 2, 3]\ndel lst[1]\nprint(lst)```",
+        "options": [
+            "[1, 2, 3]",
+            "[1, 3]",
+            "[2, 3]",
+            "Error"
+        ],
+        "correct_answer": "B",
+        "topic": "Lists",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is NOT a valid way to open a file in Python?",
+        "options": [
+            "open('file.txt', 'r')",
+            "open('file.txt', 'w')",
+            "open('file.txt', 'x')",
+            "open('file.txt', 'z')"
+        ],
+        "correct_answer": "D",
+        "topic": "File Handling",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `super()` function do in Python?",
+        "options": [
+            "Calls a function in the current class",
+            "Calls a function in a superclass",
+            "Defines a superclass",
+            "Deletes a class"
+        ],
+        "correct_answer": "B",
+        "topic": "Object-Oriented Programming",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nprint(1 == True)```",
+        "options": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "A",
+        "topic": "Boolean Operations",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is the correct way to raise an exception in Python?",
+        "options": [
+            "throw Exception('message')",
+            "raise Exception('message')",
+            "except Exception('message')",
+            "error Exception('message')"
+        ],
+        "correct_answer": "B",
+        "topic": "Exception Handling",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is a decorator in Python?",
+        "options": [
+            "A design pattern for creating flexible and reusable software",
+            "A way to modify or enhance a function or method",
+            "A type of loop",
+            "A built-in function for debugging"
+        ],
+        "correct_answer": "B",
+        "topic": "Decorators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nprint(list(map(lambda x: x**2, [1, 2, 3])))```",
+        "options": [
+            "[1, 4, 9]",
+            "(1, 4, 9)",
+            "{1, 4, 9}",
+            "Error"
+        ],
+        "correct_answer": "A",
+        "topic": "Lambda Functions and Map",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `__name__` variable contain when a Python script is executed directly?",
+        "options": [
+            "The name of the file",
+            "The name of the main function",
+            "\"__main__\"",
+            "An empty string"
+        ],
+        "correct_answer": "C",
+        "topic": "Modules and Packages",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which module is commonly used for regular expressions in Python?",
+        "options": [
+            "math",
+            "re",
+            "os",
+            "sys"
+        ],
+        "correct_answer": "B",
+        "topic": "Regular Expressions",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nnumbers = [1, 2, 3, 4, 5]\neven_numbers = [x for x in numbers if x % 2 == 0]\nprint(even_numbers)```",
+        "options": [
+            "[1, 3, 5]",
+            "[2, 4]",
+            "[1, 2, 3, 4, 5]",
+            "[]"
+        ],
+        "correct_answer": "B",
+        "topic": "List Comprehension",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of `Pickling` and `Unpickling`?",
+        "options": [
+            "Encryption and decryption of data",
+            "Compression and decompression of data",
+            "Serialization and deserialization of Python object structures",
+            "Hashing of data for security"
+        ],
+        "correct_answer": "C",
+        "topic": "Pickling",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which statement is true about Python's garbage collection?",
+        "options": [
+            "Python does not have garbage collection",
+            "Python uses manual memory management",
+            "Python uses automatic garbage collection with reference counting and a cyclic garbage collector.",
+            "Garbage collection must be explicitly enabled by the user"
+        ],
+        "correct_answer": "C",
+        "topic": "Memory Management",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between `==` and `is` operators in Python?",
+        "options": [
+            "`==` compares the values, `is` compares the data types",
+            "`==` compares the identities, `is` compares the values",
+            "`==` compares the values, `is` compares the identities",
+            "There is no difference between them"
+        ],
+        "correct_answer": "C",
+        "topic": "Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is a generator in Python?",
+        "options": [
+            "A function that always returns a list",
+            "A function that returns an iterator that produces a sequence of values when iterated over",
+            "A function that raises an exception",
+            "A function that defines a class"
+        ],
+        "correct_answer": "B",
+        "topic": "Generators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of `try: print(x) except NameError: print('Variable x is not defined')` if `x` is not defined?",
+        "options": [
+            "Prints nothing",
+            "Prints the value of x",
+            "Prints 'Variable x is not defined'",
+            "Raises a `TypeError`"
+        ],
+        "correct_answer": "C",
+        "topic": "Exception Handling",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which data type is best suited for storing key-value pairs in Python?",
+        "options": [
+            "List",
+            "Tuple",
+            "Set",
+            "Dictionary"
+        ],
+        "correct_answer": "D",
+        "topic": "Data Structures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\ndef func(a, b=1, *args):\n  print(a, b, args)\n\nfunc(2, 3, 4, 5)```",
+        "options": [
+            "2 1 (4, 5)",
+            "2 3 (4, 5)",
+            "2 3 4 5",
+            "Error"
+        ],
+        "correct_answer": "B",
+        "topic": "Functions",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\ndef outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nprint(closure(5))```",
+        "options": [
+            "5",
+            "10",
+            "15",
+            "Error"
+        ],
+        "correct_answer": "15",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following data types is mutable in Python?",
+        "options": [
+            "Tuple",
+            "String",
+            "List",
+            "FrozenSet"
+        ],
+        "correct_answer": "List",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `__init__` method in a Python class?",
+        "options": [
+            "To define a class",
+            "To initialize an object",
+            "To call the parent class constructor",
+            "To define static methods"
+        ],
+        "correct_answer": "To initialize an object",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nnumbers = [1, 2, 3, 4, 5]\nsquared = map(lambda x: x**2, numbers)\nprint(list(squared))\n```",
+        "options": [
+            "[1, 4, 9, 16, 25]",
+            "[1, 2, 3, 4, 5]",
+            "<map object at 0x...>",
+            "Error"
+        ],
+        "correct_answer": "[1, 4, 9, 16, 25]",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `*args` syntax do in a function definition?",
+        "options": [
+            "It allows a function to accept an arbitrary number of keyword arguments.",
+            "It allows a function to accept only positional arguments.",
+            "It allows a function to accept an arbitrary number of positional arguments.",
+            "It defines a default argument."
+        ],
+        "correct_answer": "It allows a function to accept an arbitrary number of positional arguments.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\ndef func():\n    try:\n        return 1\n    finally:\n        return 2\n\nprint(func())\n```",
+        "options": [
+            "1",
+            "2",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "2",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `super()` function in Python?",
+        "options": [
+            "To call a method in the current class.",
+            "To call a method in a subclass.",
+            "To call a method in the parent class.",
+            "To define a static method."
+        ],
+        "correct_answer": "To call a method in the parent class.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is NOT a valid way to open a file in Python?",
+        "options": [
+            "open('file.txt', 'r')",
+            "open('file.txt', 'w')",
+            "open('file.txt', 'a')",
+            "open('file.txt', 'x')"
+        ],
+        "correct_answer": "open('file.txt', 'x')",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\na = [1, 2, 3]\nb = a\nb[0] = 4\nprint(a)\n```",
+        "options": [
+            "[1, 2, 3]",
+            "[4, 2, 3]",
+            "[1, 4, 3]",
+            "Error"
+        ],
+        "correct_answer": "[4, 2, 3]",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is a decorator in Python?",
+        "options": [
+            "A design pattern for creating objects.",
+            "A function that takes another function as an argument and extends its behavior without modifying it.",
+            "A way to define classes.",
+            "A built-in function for sorting lists."
+        ],
+        "correct_answer": "A function that takes another function as an argument and extends its behavior without modifying it.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which statement is used to handle exceptions in Python?",
+        "options": [
+            "if-else",
+            "for loop",
+            "try-except",
+            "while loop"
+        ],
+        "correct_answer": "try-except",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n```python\nprint(type([]))```",
+        "options": [
+            "list",
+            "tuple",
+            "set",
+            "dictionary"
+        ],
+        "correct_answer": "list",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between `==` and `is` operators in Python?",
+        "options": [
+            "`==` compares values, `is` compares memory addresses.",
+            "`==` compares memory addresses, `is` compares values.",
+            "They are interchangeable.",
+            "There is no difference."
+        ],
+        "correct_answer": "`==` compares values, `is` compares memory addresses.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n```python\ndef my_function(a, b=5, c=10):\n    print(\"a=\", a, \"b=\", b, \"c=\", c)\n\nmy_function(3, 7)```",
+        "options": [
+            "a= 3 b= 5 c= 10",
+            "a= 3 b= 7 c= 10",
+            "a= 3 b= 7 c= 5",
+            "Error"
+        ],
+        "correct_answer": "a= 3 b= 7 c= 10",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `pickle` module in Python?",
+        "options": [
+            "To create graphical user interfaces.",
+            "To serialize and deserialize Python object structures.",
+            "To perform mathematical calculations.",
+            "To handle HTTP requests."
+        ],
+        "correct_answer": "To serialize and deserialize Python object structures.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is a correct way to create a shallow copy of a list in Python?",
+        "options": [
+            "`new_list = list(original_list)`",
+            "`new_list = original_list`",
+            "`new_list = original_list.copy()`",
+            "Both A and C"
+        ],
+        "correct_answer": "Both A and C",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `pass` statement do in Python?",
+        "options": [
+            "It terminates the program.",
+            "It skips the current iteration in a loop.",
+            "It does nothing.",
+            "It raises an exception."
+        ],
+        "correct_answer": "It does nothing.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n```python\nlist1 = [1, 2, [3, 4]]\nlist2 = list1[:]\nlist2[2][0] = 5\nprint(list1)```",
+        "options": [
+            "[1, 2, [3, 4]]",
+            "[1, 2, [5, 4]]",
+            "[1, 2, [3, 5]]",
+            "Error"
+        ],
+        "correct_answer": "[1, 2, [5, 4]]",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is a generator in Python?",
+        "options": [
+            "A special type of list.",
+            "A function that returns an iterator that produces a sequence of values.",
+            "A class used to create objects.",
+            "A module for handling regular expressions."
+        ],
+        "correct_answer": "A function that returns an iterator that produces a sequence of values.",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of `__name__ == '__main__'` in a Python script?",
+        "options": [
+            "To define the main function of the script.",
+            "To prevent the script from being executed if it's imported as a module.",
+            "To ensure that the script runs only on the main thread.",
+            "Both A and B"
+        ],
+        "correct_answer": "Both A and B",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code snippet?\n\n```python\ndef func(a, b=[]):\n    b.append(a)\n    return b\n\nprint(func(1))\nprint(func(2))\n```",
+        "options": [
+            "A) [1]\\n[2]",
+            "B) [1]\\n[1, 2]",
+            "C) [1, 2]\\n[1, 2]",
+            "D) [1]\\nNone"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is NOT a valid way to create a dictionary in Python?",
+        "options": [
+            "A) my_dict = {'a': 1, 'b': 2}",
+            "B) my_dict = dict(a=1, b=2)",
+            "C) my_dict = dict([('a', 1), ('b', 2)])",
+            "D) my_dict = {('a', 1), ('b', 2)}"
+        ],
+        "correct_answer": "D",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between `==` and `is` operators in Python?",
+        "options": [
+            "A) `==` compares the values, `is` compares the memory locations",
+            "B) `==` compares the memory locations, `is` compares the values",
+            "C) They are interchangeable",
+            "D) `==` compares data types, `is` compares values"
+        ],
+        "correct_answer": "A",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nx = [1, 2, 3]\ny = x\ny[0] = 4\nprint(x)\n```",
+        "options": [
+            "A) [1, 2, 3]",
+            "B) [4, 2, 3]",
+            "C) [1, 4, 3]",
+            "D) Error"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is the correct way to open a file for reading and ensure it is closed automatically, even if exceptions occur?",
+        "options": [
+            "A) file = open('my_file.txt', 'r'); file.close()",
+            "B) try: file = open('my_file.txt', 'r') finally: file.close()",
+            "C) with open('my_file.txt', 'r') as file: ...",
+            "D) Both B and C"
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `*args` syntax do in a Python function definition?",
+        "options": [
+            "A) It passes a single list as an argument",
+            "B) It passes a single tuple as an argument",
+            "C) It allows the function to accept a variable number of positional arguments",
+            "D) It allows the function to accept a variable number of keyword arguments"
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following data structures is mutable in Python?",
+        "options": [
+            "A) String",
+            "B) Tuple",
+            "C) Set",
+            "D) Integer"
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `__init__` method in a Python class?",
+        "options": [
+            "A) To destroy the object",
+            "B) To initialize the object's attributes",
+            "C) To define class-level attributes",
+            "D) To create a new class"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nprint(list(map(lambda x: x**2, [1, 2, 3, 4])))\n```",
+        "options": [
+            "A) [1, 2, 3, 4]",
+            "B) [1, 4, 9, 16]",
+            "C) (1, 4, 9, 16)",
+            "D) Error"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `super()` function do in Python?",
+        "options": [
+            "A) It calls a function in the parent class",
+            "B) It creates a new instance of the parent class",
+            "C) It deletes the parent class",
+            "D) It renames the current class"
+        ],
+        "correct_answer": "A",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following statements about Python decorators is correct?",
+        "options": [
+            "A) Decorators can only modify the behavior of functions.",
+            "B) Decorators are used to define abstract classes.",
+            "C) Decorators are a form of metaprogramming that allows you to modify the behavior of a function or class.",
+            "D) Decorators can only be used with class methods."
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of `try...except` block in Python?",
+        "options": [
+            "A) To define a function",
+            "B) To handle exceptions",
+            "C) To create a loop",
+            "D) To define a class"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\ndef my_function():\n    try:\n        return 1 / 0\n    except ZeroDivisionError:\n        return 0\n    finally:\n        return 2\n\nprint(my_function())\n```",
+        "options": [
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) Error"
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between a list comprehension and a generator expression?",
+        "options": [
+            "A) List comprehensions create a list in memory, while generator expressions create an iterator.",
+            "B) Generator expressions create a list in memory, while list comprehensions create an iterator.",
+            "C) They are the same thing.",
+            "D) List comprehensions can only be used with simple expressions."
+        ],
+        "correct_answer": "A",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following modules is used for regular expressions in Python?",
+        "options": [
+            "A) datetime",
+            "B) re",
+            "C) math",
+            "D) random"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the following code?\n\n```python\nmy_set = {1, 2, 2, 3, 3, 3}\nprint(len(my_set))\n```",
+        "options": [
+            "A) 6",
+            "B) 3",
+            "C) 1",
+            "D) Error"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is pickling in Python?",
+        "options": [
+            "A) A method to sort data.",
+            "B) A way to compress files.",
+            "C) The process of converting a Python object into a byte stream to store it in a file.",
+            "D) A type of encryption."
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is a correct way to implement multiple inheritance in Python?",
+        "options": [
+            "A) class Child(Parent1, Parent2):",
+            "B) class Child: inherits Parent1, Parent2",
+            "C) class Child: extends Parent1, Parent2",
+            "D) class Child: Parent1 + Parent2"
+        ],
+        "correct_answer": "A",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the `__name__ == '__main__'` block in Python?",
+        "options": [
+            "A) To define the main function of the program.",
+            "B) To ensure that a block of code is only executed when the script is run directly, not when imported as a module.",
+            "C) To declare the name of the current module.",
+            "D) To create a comment."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will be printed by the following code?\n```python\nnumbers = [1, 2, 3, 4, 5]\nresult = [x for x in numbers if x % 2 == 0]\nprint(result)\n```",
+        "options": [
+            "A) [1, 3, 5]",
+            "B) [2, 4]",
+            "C) [1, 2, 3, 4, 5]",
+            "D) []"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "medium"
+    }
+]

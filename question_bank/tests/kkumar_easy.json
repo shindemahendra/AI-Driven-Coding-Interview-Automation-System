@@ -1,0 +1,732 @@
+{
+    "candidate": {
+        "name": "Kiran Kumar",
+        "email": "kiran@gmail.com",
+        "uid": "kkumar",
+        "difficulty": "easy"
+    },
+    "L1": [
+        {
+            "question": "If X is taller than Y, and Y is taller than Z, then X is ______ than Z.",
+            "options": [
+                "shorter",
+                "the same height",
+                "taller",
+                "impossible to tell"
+            ],
+            "correct_answer": "taller"
+        },
+        {
+            "question": "What is the next number in the sequence: 1, 3, 6, 10, ?",
+            "options": [
+                "12",
+                "13",
+                "14",
+                "15"
+            ],
+            "correct_answer": "15"
+        },
+        {
+            "question": "Complete the sequence: 5, 10, 15, 20, ?",
+            "options": [
+                "22",
+                "23",
+                "25",
+                "30"
+            ],
+            "correct_answer": "25"
+        },
+        {
+            "question": "Which word is different from the others: table, chair, sofa, door",
+            "options": [
+                "table",
+                "chair",
+                "sofa",
+                "door"
+            ],
+            "correct_answer": "door"
+        },
+        {
+            "question": "What is the missing number: 1, 8, 27, __ , 125?",
+            "options": [
+                "36",
+                "49",
+                "64",
+                "100"
+            ],
+            "correct_answer": "64"
+        },
+        {
+            "question": "Which word does NOT belong: apple, banana, carrot, orange?",
+            "options": [
+                "apple",
+                "banana",
+                "carrot",
+                "orange"
+            ],
+            "correct_answer": "carrot"
+        },
+        {
+            "question": "If G = 7, H = 8, I = 9, then what does L equal?",
+            "options": [
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "correct_answer": "12"
+        },
+        {
+            "question": "If a = b and b = c, then a = ?",
+            "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+            ],
+            "correct_answer": "c"
+        },
+        {
+            "question": "Complete the sequence: 100, 90, 80, 70, ?",
+            "options": [
+                "50",
+                "60",
+                "75",
+                "85"
+            ],
+            "correct_answer": "60"
+        },
+        {
+            "question": "Complete the sequence: 4, 8, 12, 16, ?",
+            "options": [
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "correct_answer": "20"
+        },
+        {
+            "question": "What number should come next in the sequence: 1, 5, 9, 13, ?",
+            "options": [
+                "14",
+                "15",
+                "16",
+                "17"
+            ],
+            "correct_answer": "17"
+        },
+        {
+            "question": "If all dogs are friendly, and some friendly things wag their tails, then:",
+            "options": [
+                "All dogs wag their tails",
+                "Some dogs wag their tails",
+                "No dogs wag their tails",
+                "Some tail-waggers are dogs"
+            ],
+            "correct_answer": "Some dogs wag their tails"
+        },
+        {
+            "question": "Which is different: March, May, June, July",
+            "options": [
+                "March",
+                "May",
+                "June",
+                "July"
+            ],
+            "correct_answer": "June"
+        },
+        {
+            "question": "What is the next number in the sequence: 1, 2, 4, 8, ?",
+            "options": [
+                "12",
+                "14",
+                "16",
+                "20"
+            ],
+            "correct_answer": "16"
+        },
+        {
+            "question": "Which shape comes next: heart, diamond, heart, diamond, ?",
+            "options": [
+                "club",
+                "diamond",
+                "spade",
+                "heart"
+            ],
+            "correct_answer": "heart"
+        }
+    ],
+    "L2": [
+        {
+            "question": "How do you access the first element of a list called `my_list`?",
+            "options": [
+                "my_list[1]",
+                "my_list.first()",
+                "my_list[0]",
+                "my_list.get(0)"
+            ],
+            "correct_answer": "my_list[0]",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of a `for` loop in Python?",
+            "options": [
+                "To define a function.",
+                "To iterate over a sequence (like a list or string).",
+                "To handle errors.",
+                "To perform mathematical calculations."
+            ],
+            "correct_answer": "To iterate over a sequence (like a list or string).",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does `print('Hello' + 'World')` output?",
+            "options": [
+                "HelloWorld",
+                "Hello World",
+                "Error",
+                "'Hello' + 'World'"
+            ],
+            "correct_answer": "HelloWorld",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the correct file extension for Python files?",
+            "options": [
+                ".py",
+                ".pt",
+                ".pyt",
+                ".p"
+            ],
+            "correct_answer": ".py",
+            "topic": "Python Basics",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print(2 + 2)`?",
+            "options": [
+                "22",
+                "4",
+                "Error",
+                "0"
+            ],
+            "correct_answer": "4",
+            "topic": "Basic Operations",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you access the first element of a list called `my_list`?",
+            "options": [
+                "my_list[1]",
+                "my_list.first()",
+                "my_list[0]",
+                "my_list.get(0)"
+            ],
+            "correct_answer": "my_list[0]",
+            "topic": "Data Structures",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is a collection of ordered and unchangeable items called in Python?",
+            "options": [
+                "List",
+                "Set",
+                "Dictionary",
+                "Tuple"
+            ],
+            "correct_answer": "Tuple",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What will `print(2 * 'abc')` output?",
+            "options": [
+                "abcabc",
+                "2abc",
+                "abc",
+                "Error"
+            ],
+            "correct_answer": "A",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which symbol is used for comments in Python?",
+            "options": [
+                "//",
+                "/*",
+                "#",
+                "--"
+            ],
+            "correct_answer": "C",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is a valid variable name in Python?",
+            "options": [
+                "1variable",
+                "variable 1",
+                "variable-1",
+                "_variable"
+            ],
+            "correct_answer": "D",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does the `in` keyword do?",
+            "options": [
+                "Checks if a value is present in a sequence",
+                "Imports a module",
+                "Defines a function",
+                "Iterates through a loop"
+            ],
+            "correct_answer": "Checks if a value is present in a sequence",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the value of `x` after `x = 5; x = x + 2`?",
+            "options": [
+                "5",
+                "2",
+                "7",
+                "Error"
+            ],
+            "correct_answer": "C",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does the `+` operator do when used with strings?",
+            "options": [
+                "Addition",
+                "Subtraction",
+                "Concatenation",
+                "Multiplication"
+            ],
+            "correct_answer": "Concatenation",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of the `len()` function?",
+            "options": [
+                "To find the length of a string, list, or tuple",
+                "To calculate the square root of a number",
+                "To convert a string to lowercase",
+                "To print output to the console"
+            ],
+            "correct_answer": "To find the length of a string, list, or tuple",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you create an empty list in Python?",
+            "options": [
+                "list()",
+                "[]",
+                "{}",
+                "()"
+            ],
+            "correct_answer": "[]",
+            "topic": "Python",
+            "difficulty": "easy"
+        }
+    ],
+    "L3": [
+        {
+            "question": "What is wrong with the following class definition?\n  class MyClass:\n      def __init__(self, value):\n          self.value = value\n\n      def get_value():\n          return self.value\n\n  obj = MyClass(10)\n  print(obj.get_value())",
+            "code": "class MyClass:\n    def __init__(self, value):\n        self.value = value\n\n    def get_value():\n        return self.value\n\nobj = MyClass(10)\nprint(obj.get_value())",
+            "options": [
+                "Missing self parameter in get_value method",
+                "Incorrect constructor",
+                "Incorrect object instantiation",
+                "No error"
+            ],
+            "correct_answer": "Missing self parameter in get_value method",
+            "topic": "Classes",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the output of the following code snippet? Bug: NameError",
+            "code": "print(x)",
+            "options": [
+                "0",
+                "Error",
+                "None",
+                "Undefined"
+            ],
+            "correct_answer": "Error",
+            "topic": "Debugging",
+            "difficulty": "easy"
+        },
+        {
+            "question": "The following code aims to open and read a file, but it fails. What is the potential issue? Bug: FileNotFoundError",
+            "code": "f = open(\"missing_file.txt\", \"r\")\nprint(f.read())",
+            "options": [
+                "FileNotFoundError",
+                "TypeError",
+                "ValueError",
+                "PermissionError"
+            ],
+            "correct_answer": "FileNotFoundError",
+            "topic": "File Handling",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The following code intends to add an element to a list. What's wrong?",
+            "code": "my_list = [1, 2, 3]\nmy_list.append(4)",
+            "options": [
+                "Incorrect method name",
+                "Missing parenthesis",
+                "Cannot add to list",
+                "None of the above"
+            ],
+            "correct_answer": "None of the above",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the error in this code: `print(\"Hello\" + 5)`?",
+            "code": "print(\"Hello\" + 5)",
+            "options": [
+                "TypeError: can only concatenate str (not \"int\") to str",
+                "SyntaxError: invalid syntax",
+                "ValueError: invalid literal for int() with base 10",
+                "NameError: name 'print' is not defined"
+            ],
+            "correct_answer": "TypeError: can only concatenate str (not \"int\") to str",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of this code when it encounters a potential division by zero error?",
+            "code": "def divide(x, y):\n  try:\n    result = x / y\n    print(\"result is:\", result)\n  except ZeroDivisionError:\n    print(\"division by zero!\")\ndivide(3, 0)",
+            "options": [
+                "0",
+                "3",
+                "Error",
+                "division by zero!"
+            ],
+            "correct_answer": "D",
+            "topic": "L3",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the output of the following code? Focus on import errors.",
+            "code": "import math\nprint(math.PI)",
+            "options": [
+                "3.14159...",
+                "Error",
+                "3.14",
+                "None"
+            ],
+            "correct_answer": "B",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What will be printed by this code?\n  def my_function():\n    return\n  print(my_function())",
+            "code": "def my_function():\n  return\nprint(my_function())",
+            "options": [
+                "0",
+                "Empty string",
+                "None",
+                "Error"
+            ],
+            "correct_answer": "None",
+            "topic": "Functions",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What will be the output of this code: `x = [1, 2, 3]\nprint(x[3])`?",
+            "code": "x = [1, 2, 3]\nprint(x[3])",
+            "options": [
+                "3",
+                "[1, 2, 3]",
+                "IndexError: list index out of range",
+                "2"
+            ],
+            "correct_answer": "IndexError: list index out of range",
+            "topic": "L3",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the error in: `try:\n  x = 1 / 0\nexcept Exception as e:\n  pass\nprint(\"Finished\")`",
+            "code": "try:\n  x = 1 / 0\nexcept Exception as e:\n  pass\nprint(\"Finished\")",
+            "options": [
+                "Will never print \"Finished\"",
+                "No error",
+                "ValueError: invalid literal for int() with base 10",
+                "ZeroDivisionError: division by zero"
+            ],
+            "correct_answer": "No error",
+            "topic": "L3",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the error here: `def func(a, b=[]):\n  b.append(a)\n  return b\n\nprint(func(1))\nprint(func(2))`",
+            "code": "def func(a, b=[]):\n  b.append(a)\n  return b\n\nprint(func(1))\nprint(func(2))",
+            "options": [
+                "Prints [1]\\n[2]",
+                "Prints [1]\\n[1, 2]",
+                "SyntaxError: invalid syntax",
+                "NameError: name 'b' is not defined"
+            ],
+            "correct_answer": "Prints [1]\\n[1, 2]",
+            "topic": "L2",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is the output of the following code?\n  try:\n    print(10 / 0)\n  except Exception as e:\n    print(e)",
+            "code": "try:\n  print(10 / 0)\nexcept Exception as e:\n  print(e)",
+            "options": [
+                "division by zero",
+                "0",
+                "10",
+                "Error"
+            ],
+            "correct_answer": "division by zero",
+            "topic": "Exception Handling",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the problem with this code: `def add(x, y):\n  return x + y\n\nprint(add(1, \"2\"))`",
+            "code": "def add(x, y):\n  return x + y\n\nprint(add(1, \"2\"))",
+            "options": [
+                "NameError",
+                "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
+                "ValueError",
+                "SyntaxError"
+            ],
+            "correct_answer": "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
+            "topic": "L2",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the error in the following code: `my_dict = {1: 'a', 2: 'b'}\nprint(my_dict[3])`",
+            "code": "my_dict = {1: 'a', 2: 'b'}\nprint(my_dict[3])",
+            "options": [
+                "KeyError: 3",
+                "IndexError: list index out of range",
+                "ValueError: invalid literal for int() with base 10",
+                "NameError: name 'my_dict' is not defined"
+            ],
+            "correct_answer": "KeyError: 3",
+            "topic": "L3",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What will be the output of the following code?\n  def outer_function():\n      x = 10\n      def inner_function():\n          nonlocal x\n          x = 20\n      inner_function()\n      print(x)\n  outer_function()",
+            "code": "def outer_function():\n    x = 10\n    def inner_function():\n        nonlocal x\n        x = 20\n    inner_function()\n    print(x)\nouter_function()",
+            "options": [
+                "10",
+                "20",
+                "Error",
+                "None"
+            ],
+            "correct_answer": "20",
+            "topic": "Scope",
+            "difficulty": "hard"
+        }
+    ],
+    "L5": [
+        {
+            "question": "What motivates you most at work?",
+            "options": [
+                "Money",
+                "Recognition",
+                "Challenges",
+                "Easy tasks"
+            ],
+            "correct_answer": "Challenges",
+            "topic": "Motivation",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How important is work-life balance?",
+            "options": [
+                "Not important",
+                "Slightly important",
+                "Very important",
+                "Irrelevant"
+            ],
+            "correct_answer": "Very important",
+            "topic": "Wellbeing",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is your approach to problem-solving?",
+            "options": [
+                "Avoid problems",
+                "Blame others",
+                "Analyze and find solutions",
+                "Ignore the problem"
+            ],
+            "correct_answer": "Analyze and find solutions",
+            "topic": "Problem Solving",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle criticism?",
+            "options": [
+                "Ignore it",
+                "Get defensive",
+                "Learn from it",
+                "Argue back"
+            ],
+            "correct_answer": "Learn from it",
+            "topic": "Communication",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is your biggest weakness?",
+            "options": [
+                "Honesty",
+                "Empathy",
+                "Impatience",
+                "Creativity"
+            ],
+            "correct_answer": "Impatience",
+            "topic": "Self-Awareness",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you adapt to changing priorities?",
+            "options": [
+                "Resist the changes",
+                "Complain about the changes",
+                "Adapt willingly and efficiently",
+                "Ignore the new priorities"
+            ],
+            "correct_answer": "Adapt willingly and efficiently",
+            "topic": "Adaptability",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle conflict with a colleague?",
+            "options": [
+                "Avoid them entirely",
+                "Become confrontational",
+                "Seek a mutually agreeable solution",
+                "Report them immediately"
+            ],
+            "correct_answer": "Seek a mutually agreeable solution",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is your greatest weakness?",
+            "options": [
+                "Perfectionism",
+                "Laziness",
+                "Dishonesty",
+                "Lack of skills"
+            ],
+            "correct_answer": "Perfectionism",
+            "topic": "Self-Awareness",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle a disagreement with your manager?",
+            "options": [
+                "Become insubordinate",
+                "Avoid communication",
+                "Discuss respectfully",
+                "Publicly complain"
+            ],
+            "correct_answer": "Discuss respectfully",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you adapt to changes in project requirements?",
+            "options": [
+                "Resist the changes",
+                "Complain about the changes",
+                "Embrace and adapt",
+                "Ignore the changes"
+            ],
+            "correct_answer": "Embrace and adapt",
+            "topic": "Adaptability",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle difficult clients?",
+            "options": [
+                "Ignore their concerns",
+                "Argue with them",
+                "Listen and find solutions",
+                "Blame the client"
+            ],
+            "correct_answer": "Listen and find solutions",
+            "topic": "Customer Service",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle conflict with a coworker?",
+            "options": [
+                "Avoid them completely",
+                "Gossip about them",
+                "Address it directly and respectfully",
+                "Escalate immediately"
+            ],
+            "correct_answer": "Address it directly and respectfully",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you prioritize tasks when facing multiple deadlines?",
+            "options": [
+                "Randomly choose tasks",
+                "Focus on easiest tasks",
+                "Prioritize by importance",
+                "Ignore deadlines"
+            ],
+            "correct_answer": "Prioritize by importance",
+            "topic": "Time Management",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you adapt to change?",
+            "options": [
+                "Resist change",
+                "Embrace change",
+                "Ignore change",
+                "Fear change"
+            ],
+            "correct_answer": "Embrace change",
+            "topic": "Adaptability",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How important is ethical behavior at work?",
+            "options": [
+                "Not very important",
+                "Only when convenient",
+                "Extremely important",
+                "Only when being watched"
+            ],
+            "correct_answer": "Extremely important",
+            "topic": "Ethics",
+            "difficulty": "easy"
+        }
+    ],
+    "L4": [
+        {
+            "title": "Reverse Words in a String",
+            "description": "Reverse the order of words in a given string.",
+            "input_format": "A string, s.",
+            "output_format": "The string with words reversed.",
+            "constraints": "1 <= length(s) <= 1000. Words are separated by spaces.",
+            "sample_input": "This is a test string",
+            "sample_output": "string test a is This"
+        }
+    ]
+}

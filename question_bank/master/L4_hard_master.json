@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Sum of Two Numbers",
+        "description": "Given two integers, find their sum.",
+        "input_format": "Two integers, A and B, separated by a space.",
+        "output_format": "The sum of A and B.",
+        "constraints": "-1000 <= A, B <= 1000",
+        "sample_input": "5 3",
+        "sample_output": "8"
+    },
+    {
+        "title": "Reverse a String",
+        "description": "Given a string, reverse it.",
+        "input_format": "A string S.",
+        "output_format": "The reversed string S.",
+        "constraints": "1 <= length of S <= 100",
+        "sample_input": "hello",
+        "sample_output": "olleh"
+    },
+    {
+        "title": "Factorial Calculation",
+        "description": "Calculate the factorial of a given non-negative integer.",
+        "input_format": "A non-negative integer N.",
+        "output_format": "The factorial of N.",
+        "constraints": "0 <= N <= 12",
+        "sample_input": "5",
+        "sample_output": "120"
+    },
+    {
+        "title": "Check if a Number is Prime",
+        "description": "Determine if a given integer is a prime number.",
+        "input_format": "An integer N.",
+        "output_format": "Print 'Prime' if N is prime, otherwise print 'Not Prime'.",
+        "constraints": "2 <= N <= 100",
+        "sample_input": "7",
+        "sample_output": "Prime"
+    },
+    {
+        "title": "Find the Largest Element in an Array",
+        "description": "Find the largest element in a given array of integers.",
+        "input_format": "First line contains the number of elements N. Second line contains N integers separated by spaces.",
+        "output_format": "The largest element in the array.",
+        "constraints": "1 <= N <= 100; -1000 <= each element <= 1000",
+        "sample_input": "5\n1 5 2 8 3",
+        "sample_output": "8"
+    },
+    {
+        "title": "Count Vowels",
+        "description": "Count the number of vowels (a, e, i, o, u) in a given string (case-insensitive).",
+        "input_format": "A string S.",
+        "output_format": "The number of vowels in S.",
+        "constraints": "1 <= length of S <= 100",
+        "sample_input": "Hello World",
+        "sample_output": "3"
+    },
+    {
+        "title": "Palindrome Check",
+        "description": "Determine if a given string is a palindrome (reads the same backward as forward, ignoring case).",
+        "input_format": "A string S.",
+        "output_format": "Print 'Palindrome' if S is a palindrome, otherwise print 'Not Palindrome'.",
+        "constraints": "1 <= length of S <= 100",
+        "sample_input": "Racecar",
+        "sample_output": "Palindrome"
+    },
+    {
+        "title": "Fibonacci Sequence",
+        "description": "Generate the nth Fibonacci number.",
+        "input_format": "An integer N.",
+        "output_format": "The nth Fibonacci number.",
+        "constraints": "0 <= N <= 20",
+        "sample_input": "10",
+        "sample_output": "55"
+    },
+    {
+        "title": "Calculate Average",
+        "description": "Calculate the average of a list of numbers.",
+        "input_format": "First line contains the number of elements N. Second line contains N numbers separated by spaces.",
+        "output_format": "The average of the numbers, rounded to two decimal places.",
+        "constraints": "1 <= N <= 100; -1000 <= each element <= 1000",
+        "sample_input": "3\n1 2 3",
+        "sample_output": "2.00"
+    },
+    {
+        "title": "Leap Year Check",
+        "description": "Determine if a given year is a leap year.",
+        "input_format": "An integer representing a year.",
+        "output_format": "Print 'Leap Year' if the year is a leap year, otherwise print 'Not Leap Year'.",
+        "constraints": "1900 <= Year <= 2100",
+        "sample_input": "2024",
+        "sample_output": "Leap Year"
+    },
+    {
+        "title": "String Length",
+        "description": "Calculate the length of a given string.",
+        "input_format": "A string S.",
+        "output_format": "The length of the string S.",
+        "constraints": "1 <= length of S <= 100",
+        "sample_input": "programming",
+        "sample_output": "11"
+    },
+    {
+        "title": "Swap Variables",
+        "description": "Swap the values of two integer variables without using a temporary variable.",
+        "input_format": "Two integers A and B, separated by a space.",
+        "output_format": "Two integers, B and A, separated by a space.",
+        "constraints": "-1000 <= A, B <= 1000",
+        "sample_input": "5 10",
+        "sample_output": "10 5"
+    },
+    {
+        "title": "Reverse an Array",
+        "description": "Reverse the elements of an array in place.",
+        "input_format": "First line contains the number of elements N. Second line contains N integers separated by spaces.",
+        "output_format": "The reversed array, with elements separated by spaces.",
+        "constraints": "1 <= N <= 100; -1000 <= each element <= 1000",
+        "sample_input": "4\n1 2 3 4",
+        "sample_output": "4 3 2 1"
+    },
+    {
+        "title": "Find the Minimum Element in an Array",
+        "description": "Find the smallest element in a given array of integers.",
+        "input_format": "First line contains the number of elements N. Second line contains N integers separated by spaces.",
+        "output_format": "The smallest element in the array.",
+        "constraints": "1 <= N <= 100; -1000 <= each element <= 1000",
+        "sample_input": "5\n5 2 8 1 9",
+        "sample_output": "1"
+    },
+    {
+        "title": "Remove Duplicates from an Array",
+        "description": "Remove duplicate elements from a sorted array.",
+        "input_format": "First line contains the number of elements N. Second line contains N sorted integers separated by spaces.",
+        "output_format": "The array with duplicates removed, with elements separated by spaces.",
+        "constraints": "1 <= N <= 100; -1000 <= each element <= 1000",
+        "sample_input": "6\n1 1 2 2 3 4",
+        "sample_output": "1 2 3 4"
+    },
+    {
+        "title": "Implement Power Function",
+        "description": "Calculate A raised to the power of B (A^B).",
+        "input_format": "Two integers, A and B, separated by a space.",
+        "output_format": "The value of A^B.",
+        "constraints": "0 <= A <= 10; 0 <= B <= 10",
+        "sample_input": "2 3",
+        "sample_output": "8"
+    },
+    {
+        "title": "Binary to Decimal Conversion",
+        "description": "Convert a binary number (represented as a string) to its decimal equivalent.",
+        "input_format": "A string representing a binary number.",
+        "output_format": "The decimal equivalent of the binary number.",
+        "constraints": "1 <= length of Binary String <= 8; The string will only contain 0s and 1s.",
+        "sample_input": "101101",
+        "sample_output": "45"
+    },
+    {
+        "title": "Decimal to Binary Conversion",
+        "description": "Convert a decimal number to its binary equivalent (represented as a string).",
+        "input_format": "A non-negative integer.",
+        "output_format": "The binary equivalent of the decimal number.",
+        "constraints": "0 <= N <= 255",
+        "sample_input": "45",
+        "sample_output": "101101"
+    },
+    {
+        "title": "Anagram Check",
+        "description": "Determine if two given strings are anagrams of each other (contain the same characters in different orders).",
+        "input_format": "Two strings, S1 and S2, separated by a newline.",
+        "output_format": "Print 'Anagram' if the strings are anagrams, otherwise print 'Not Anagram'.",
+        "constraints": "1 <= length of S1, S2 <= 100",
+        "sample_input": "listen\nsilent",
+        "sample_output": "Anagram"
+    },
+    {
+        "title": "Greatest Common Divisor (GCD)",
+        "description": "Find the greatest common divisor (GCD) of two positive integers.",
+        "input_format": "Two positive integers A and B, separated by a space.",
+        "output_format": "The GCD of A and B.",
+        "constraints": "1 <= A, B <= 1000",
+        "sample_input": "48 18",
+        "sample_output": "6"
+    }
+]

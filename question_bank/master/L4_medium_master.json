@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Sum of Two Numbers",
+        "description": "Given two integers, return their sum.",
+        "input_format": "Two integers, each on a new line.",
+        "output_format": "The sum of the two integers.",
+        "constraints": "-1000 <= a, b <= 1000",
+        "sample_input": "5\n3",
+        "sample_output": "8"
+    },
+    {
+        "title": "Reverse a String",
+        "description": "Given a string, return the reversed string.",
+        "input_format": "A single string.",
+        "output_format": "The reversed string.",
+        "constraints": "1 <= length of string <= 100",
+        "sample_input": "hello",
+        "sample_output": "olleh"
+    },
+    {
+        "title": "Factorial",
+        "description": "Calculate the factorial of a non-negative integer.",
+        "input_format": "A single non-negative integer.",
+        "output_format": "The factorial of the integer.",
+        "constraints": "0 <= n <= 12",
+        "sample_input": "5",
+        "sample_output": "120"
+    },
+    {
+        "title": "Palindrome Check",
+        "description": "Check if a given string is a palindrome (reads the same backward as forward).",
+        "input_format": "A single string.",
+        "output_format": "True if the string is a palindrome, False otherwise.",
+        "constraints": "1 <= length of string <= 100.  String contains only lowercase letters.",
+        "sample_input": "racecar",
+        "sample_output": "True"
+    },
+    {
+        "title": "Find the Maximum",
+        "description": "Find the maximum value in a list of integers.",
+        "input_format": "The first line contains the number of integers, n. The second line contains n space-separated integers.",
+        "output_format": "The maximum integer in the list.",
+        "constraints": "1 <= n <= 100. -1000 <= each integer <= 1000",
+        "sample_input": "5\n1 4 2 8 3",
+        "sample_output": "8"
+    },
+    {
+        "title": "Fibonacci Sequence",
+        "description": "Generate the nth Fibonacci number.",
+        "input_format": "A single non-negative integer, n.",
+        "output_format": "The nth Fibonacci number (starting from 0: 0, 1, 1, 2, ...).",
+        "constraints": "0 <= n <= 30",
+        "sample_input": "7",
+        "sample_output": "13"
+    },
+    {
+        "title": "Prime Number Check",
+        "description": "Check if a given integer is a prime number.",
+        "input_format": "A single positive integer.",
+        "output_format": "True if the integer is prime, False otherwise.",
+        "constraints": "1 <= n <= 1000",
+        "sample_input": "17",
+        "sample_output": "True"
+    },
+    {
+        "title": "Count Vowels",
+        "description": "Count the number of vowels (a, e, i, o, u) in a given string.",
+        "input_format": "A single string.",
+        "output_format": "The number of vowels in the string.",
+        "constraints": "1 <= length of string <= 100. String contains only lowercase letters.",
+        "sample_input": "hello",
+        "sample_output": "2"
+    },
+    {
+        "title": "Average of Numbers",
+        "description": "Calculate the average of a list of numbers.",
+        "input_format": "The first line contains the number of numbers, n. The second line contains n space-separated numbers.",
+        "output_format": "The average of the numbers, rounded to two decimal places.",
+        "constraints": "1 <= n <= 100. -1000 <= each number <= 1000",
+        "sample_input": "3\n1 2 3",
+        "sample_output": "2.00"
+    },
+    {
+        "title": "Two Sum",
+        "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+        "input_format": "The first line contains the number of elements in array `nums`, `n`. \nThe second line contains the `n` space-separated integers of the array `nums`. \nThe third line contains the integer `target`.",
+        "output_format": "A list of two space-separated indices of the numbers that add up to the `target`, sorted in ascending order. If there's no such pair, return -1 -1.",
+        "constraints": "2 <= n <= 1000. -1000 <= nums[i] <= 1000. -1000 <= target <= 1000. There is exactly one solution.",
+        "sample_input": "4\n2 7 11 15\n9",
+        "sample_output": "0 1"
+    },
+    {
+        "title": "Binary Search",
+        "description": "Given a sorted array of integers and a target value, find the index of the target value in the array. If the target value is not found, return -1.",
+        "input_format": "The first line contains the number of elements in array `nums`, `n`. \nThe second line contains the `n` space-separated integers of the sorted array `nums`. \nThe third line contains the integer `target`.",
+        "output_format": "The index of the target value in the array. If the target value is not found, return -1.",
+        "constraints": "1 <= n <= 1000. -1000 <= nums[i] <= 1000. -1000 <= target <= 1000.",
+        "sample_input": "5\n2 5 7 8 11\n13",
+        "sample_output": "-1"
+    },
+    {
+        "title": "Calculate the Area of a Rectangle",
+        "description": "Calculate the area of a rectangle given its length and width.",
+        "input_format": "Two integers, representing the length and width of the rectangle, each on a new line.",
+        "output_format": "The area of the rectangle.",
+        "constraints": "1 <= length, width <= 100",
+        "sample_input": "5\n10",
+        "sample_output": "50"
+    },
+    {
+        "title": "String to Integer",
+        "description": "Convert a string to an integer.",
+        "input_format": "A single string representing an integer.",
+        "output_format": "The integer value of the string.",
+        "constraints": "-2147483648 <= integer <= 2147483647",
+        "sample_input": "12345",
+        "sample_output": "12345"
+    },
+    {
+        "title": "Integer to String",
+        "description": "Convert a integer to string.",
+        "input_format": "A single integer.",
+        "output_format": "The String value of the integer.",
+        "constraints": "-2147483648 <= integer <= 2147483647",
+        "sample_input": "12345",
+        "sample_output": "12345"
+    },
+    {
+        "title": "Find the Minimum",
+        "description": "Find the minimum value in a list of integers.",
+        "input_format": "The first line contains the number of integers, n. The second line contains n space-separated integers.",
+        "output_format": "The minimum integer in the list.",
+        "constraints": "1 <= n <= 100. -1000 <= each integer <= 1000",
+        "sample_input": "5\n1 4 2 8 3",
+        "sample_output": "1"
+    },
+    {
+        "title": "Reverse Words in a String",
+        "description": "Given a string, reverse the order of words in the string.",
+        "input_format": "A single string containing multiple words separated by spaces.",
+        "output_format": "The string with the words reversed.",
+        "constraints": "1 <= length of string <= 1000",
+        "sample_input": "the sky is blue",
+        "sample_output": "blue is sky the"
+    },
+    {
+        "title": "Check Anagrams",
+        "description": "Determine if two strings are anagrams of each other (contain the same characters in a different order).",
+        "input_format": "Two strings, each on a new line.",
+        "output_format": "True if the strings are anagrams, False otherwise.",
+        "constraints": "1 <= length of strings <= 100. Strings contain only lowercase letters.",
+        "sample_input": "anagram\nnagaram",
+        "sample_output": "True"
+    },
+    {
+        "title": "Remove Duplicates from Sorted Array",
+        "description": "Given a sorted array of integers, remove the duplicates in-place such that each element appears only once.",
+        "input_format": "The first line contains the number of integers, n. The second line contains n space-separated integers.",
+        "output_format": "The length of the array after removing duplicates.",
+        "constraints": "1 <= n <= 100. -1000 <= each integer <= 1000. The array is sorted.",
+        "sample_input": "5\n1 1 2 2 3",
+        "sample_output": "3"
+    },
+    {
+        "title": "Sum of Digits",
+        "description": "Calculate the sum of the digits of a non-negative integer.",
+        "input_format": "A single non-negative integer.",
+        "output_format": "The sum of the digits of the integer.",
+        "constraints": "0 <= n <= 1000000",
+        "sample_input": "12345",
+        "sample_output": "15"
+    },
+    {
+        "title": "Implement strStr()",
+        "description": "Implement strStr(). Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
+        "input_format": "Two strings, needle and haystack, each on a new line.",
+        "output_format": "The index of the first occurrence of needle in haystack, or -1.",
+        "constraints": "0 <= length of needle, haystack <= 1000",
+        "sample_input": "needle\nhaystackneedlenotfound",
+        "sample_output": "8"
+    }
+]

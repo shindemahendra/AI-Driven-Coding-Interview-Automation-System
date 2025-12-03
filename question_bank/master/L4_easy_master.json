@@ -2,181 +2,181 @@
     {
         "title": "Sum of Two Numbers",
         "description": "Given two integers, find their sum.",
-        "input_format": "Two space-separated integers, a and b.",
-        "output_format": "The sum of a and b.",
-        "constraints": "-1000 <= a, b <= 1000",
+        "input_format": "Two integers, A and B, separated by a space.",
+        "output_format": "The sum of A and B.",
+        "constraints": "-1000 <= A, B <= 1000",
         "sample_input": "5 3",
         "sample_output": "8"
     },
     {
         "title": "Reverse a String",
-        "description": "Reverse a given string.",
-        "input_format": "A string, s.",
-        "output_format": "The reversed string.",
-        "constraints": "1 <= length(s) <= 100",
+        "description": "Given a string, reverse it.",
+        "input_format": "A string S.",
+        "output_format": "The reversed string S.",
+        "constraints": "1 <= length(S) <= 100",
         "sample_input": "hello",
         "sample_output": "olleh"
     },
     {
         "title": "Factorial of a Number",
         "description": "Calculate the factorial of a given non-negative integer.",
-        "input_format": "A non-negative integer, n.",
-        "output_format": "The factorial of n.",
-        "constraints": "0 <= n <= 12",
+        "input_format": "A non-negative integer N.",
+        "output_format": "The factorial of N.",
+        "constraints": "0 <= N <= 12",
         "sample_input": "5",
         "sample_output": "120"
     },
     {
-        "title": "Check if Palindrome",
+        "title": "Palindrome Check",
         "description": "Determine if a given string is a palindrome (reads the same forwards and backward).",
-        "input_format": "A string, s.",
-        "output_format": "True if s is a palindrome, False otherwise.",
-        "constraints": "1 <= length(s) <= 100. String consists only of lowercase letters.",
+        "input_format": "A string S.",
+        "output_format": "Print \"true\" if S is a palindrome, and \"false\" otherwise.",
+        "constraints": "1 <= length(S) <= 100, S contains only lowercase letters.",
         "sample_input": "madam",
-        "sample_output": "True"
+        "sample_output": "true"
     },
     {
-        "title": "Find the Largest Element in an Array",
-        "description": "Find the largest element in a given array of integers.",
-        "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers.",
-        "output_format": "The largest element in the array.",
-        "constraints": "1 <= n <= 100\n-1000 <= each element <= 1000",
+        "title": "Find the Maximum",
+        "description": "Given an array of integers, find the maximum value.",
+        "input_format": "The first line contains an integer N, the number of elements in the array. The second line contains N integers separated by spaces.",
+        "output_format": "The maximum value in the array.",
+        "constraints": "1 <= N <= 100, -1000 <= array elements <= 1000",
         "sample_input": "5\n1 5 2 8 3",
         "sample_output": "8"
     },
     {
-        "title": "Count Vowels",
-        "description": "Count the number of vowels (a, e, i, o, u) in a given string.",
-        "input_format": "A string, s.",
-        "output_format": "The number of vowels in s.",
-        "constraints": "1 <= length(s) <= 100. String consists only of lowercase letters.",
-        "sample_input": "hello",
-        "sample_output": "2"
-    },
-    {
         "title": "Fibonacci Sequence",
-        "description": "Generate the nth Fibonacci number.",
-        "input_format": "A non-negative integer, n.",
-        "output_format": "The nth Fibonacci number.",
-        "constraints": "0 <= n <= 30",
+        "description": "Generate the Nth Fibonacci number. The Fibonacci sequence starts with 0 and 1, and each subsequent number is the sum of the previous two.",
+        "input_format": "An integer N.",
+        "output_format": "The Nth Fibonacci number.",
+        "constraints": "0 <= N <= 20",
         "sample_input": "10",
         "sample_output": "55"
     },
     {
         "title": "Prime Number Check",
-        "description": "Determine if a given integer is a prime number.",
-        "input_format": "An integer, n.",
-        "output_format": "True if n is prime, False otherwise.",
-        "constraints": "2 <= n <= 100",
-        "sample_input": "7",
-        "sample_output": "True"
-    },
-    {
-        "title": "Calculate Average",
-        "description": "Calculate the average of a given array of integers.",
-        "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers.",
-        "output_format": "The average of the array elements, rounded to two decimal places.",
-        "constraints": "1 <= n <= 100\n-1000 <= each element <= 1000",
-        "sample_input": "3\n1 2 3",
-        "sample_output": "2.00"
-    },
-    {
-        "title": "Remove Duplicates from Array",
-        "description": "Remove duplicate elements from a sorted array of integers.",
-        "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers (sorted in ascending order).",
-        "output_format": "A single line containing the elements of the array after removing duplicates, separated by spaces.",
-        "constraints": "1 <= n <= 100\n-1000 <= each element <= 1000",
-        "sample_input": "5\n1 2 2 3 3",
-        "sample_output": "1 2 3"
+        "description": "Determine if a given number is a prime number.",
+        "input_format": "An integer N.",
+        "output_format": "Print \"true\" if N is prime, and \"false\" otherwise.",
+        "constraints": "2 <= N <= 100",
+        "sample_input": "17",
+        "sample_output": "true"
     },
     {
         "title": "Word Count",
-        "description": "Count the number of words in a given string.",
-        "input_format": "A string, s.",
-        "output_format": "The number of words in s.",
-        "constraints": "1 <= length(s) <= 1000. Words are separated by spaces.",
-        "sample_input": "This is a test string",
-        "sample_output": "5"
+        "description": "Count the number of words in a given sentence.",
+        "input_format": "A string S representing the sentence.",
+        "output_format": "The number of words in the sentence.",
+        "constraints": "1 <= length(S) <= 1000, Words are separated by single spaces.",
+        "sample_input": "This is a sentence",
+        "sample_output": "4"
     },
     {
-        "title": "Reverse Words in a String",
-        "description": "Reverse the order of words in a given string.",
-        "input_format": "A string, s.",
-        "output_format": "The string with words reversed.",
-        "constraints": "1 <= length(s) <= 1000. Words are separated by spaces.",
-        "sample_input": "This is a test string",
-        "sample_output": "string test a is This"
+        "title": "Array Sum",
+        "description": "Calculate the sum of all elements in an array.",
+        "input_format": "The first line contains an integer N, the number of elements in the array. The second line contains N integers separated by spaces.",
+        "output_format": "The sum of the elements in the array.",
+        "constraints": "1 <= N <= 100, -100 <= array elements <= 100",
+        "sample_input": "4\n1 2 3 4",
+        "sample_output": "10"
     },
     {
-        "title": "Leap Year Check",
-        "description": "Determine if a given year is a leap year.",
-        "input_format": "An integer representing the year, y.",
-        "output_format": "True if y is a leap year, False otherwise.",
-        "constraints": "1 <= y <= 3000",
-        "sample_input": "2024",
-        "sample_output": "True"
-    },
-    {
-        "title": "Sum of Digits",
-        "description": "Calculate the sum of the digits of a given integer.",
-        "input_format": "An integer, n.",
-        "output_format": "The sum of the digits of n.",
-        "constraints": "0 <= n <= 100000",
-        "sample_input": "12345",
-        "sample_output": "15"
-    },
-    {
-        "title": "Find Missing Number",
-        "description": "Find the missing number in an array of consecutive integers from 1 to n.",
-        "input_format": "First line: The number of elements in the array, n-1.\nSecond line: n-1 space-separated integers.",
-        "output_format": "The missing number.",
-        "constraints": "2 <= n <= 100\nThe array contains distinct integers from 1 to n (inclusive) with one missing.",
-        "sample_input": "4\n1 2 4",
-        "sample_output": "3"
+        "title": "Calculate Average",
+        "description": "Calculate the average of a list of numbers.",
+        "input_format": "The first line contains an integer N, the number of elements in the array. The second line contains N integers separated by spaces.",
+        "output_format": "The average of the numbers, rounded to two decimal places.",
+        "constraints": "1 <= N <= 100, 0 <= array elements <= 100",
+        "sample_input": "3\n10 20 30",
+        "sample_output": "20.00"
     },
     {
         "title": "Second Largest Element",
-        "description": "Find the second largest element in an array of integers.",
-        "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers.",
+        "description": "Find the second largest element in an array of distinct integers.",
+        "input_format": "The first line contains an integer N, the number of elements in the array. The second line contains N integers separated by spaces.",
         "output_format": "The second largest element in the array.",
-        "constraints": "2 <= n <= 100\n-1000 <= each element <= 1000\nThe array contains at least two distinct elements.",
-        "sample_input": "5\n1 5 2 8 3",
-        "sample_output": "5"
+        "constraints": "2 <= N <= 100, -1000 <= array elements <= 1000, all elements are distinct.",
+        "sample_input": "5\n1 2 3 4 5",
+        "sample_output": "4"
     },
     {
         "title": "Most Frequent Character",
-        "description": "Find the most frequent character in a given string.",
-        "input_format": "A string, s.",
-        "output_format": "The most frequent character in s.",
-        "constraints": "1 <= length(s) <= 100. String consists only of lowercase letters.",
+        "description": "Find the most frequent character in a string.",
+        "input_format": "A string S.",
+        "output_format": "The most frequent character in S.",
+        "constraints": "1 <= length(S) <= 100, S contains only lowercase letters.",
         "sample_input": "hello",
         "sample_output": "l"
     },
     {
-        "title": "Anagram Check",
-        "description": "Determine if two given strings are anagrams of each other (contain the same characters with the same frequencies).",
-        "input_format": "First line: String s1.\nSecond line: String s2.",
-        "output_format": "True if s1 and s2 are anagrams, False otherwise.",
-        "constraints": "1 <= length(s1), length(s2) <= 100. Strings consist only of lowercase letters.",
+        "title": "Check if Array is Sorted",
+        "description": "Determine if a given array of integers is sorted in ascending order.",
+        "input_format": "The first line contains an integer N, the number of elements in the array. The second line contains N integers separated by spaces.",
+        "output_format": "Print \"true\" if the array is sorted, and \"false\" otherwise.",
+        "constraints": "1 <= N <= 100, -1000 <= array elements <= 1000",
+        "sample_input": "5\n1 2 3 4 5",
+        "sample_output": "true"
+    },
+    {
+        "title": "Remove Duplicates",
+        "description": "Remove duplicate characters from a string.",
+        "input_format": "A string S.",
+        "output_format": "The string S with duplicate characters removed.",
+        "constraints": "1 <= length(S) <= 100, S contains only lowercase letters.",
+        "sample_input": "hello",
+        "sample_output": "helo"
+    },
+    {
+        "title": "Reverse Words in a String",
+        "description": "Reverse the order of words in a string.",
+        "input_format": "A string S representing a sentence.",
+        "output_format": "The string S with the words reversed.",
+        "constraints": "1 <= length(S) <= 1000, Words are separated by single spaces.",
+        "sample_input": "the sky is blue",
+        "sample_output": "blue is sky the"
+    },
+    {
+        "title": "Leap Year Check",
+        "description": "Determine if a given year is a leap year.",
+        "input_format": "An integer Y representing the year.",
+        "output_format": "Print \"true\" if Y is a leap year, and \"false\" otherwise.",
+        "constraints": "1900 <= Y <= 2100",
+        "sample_input": "2024",
+        "sample_output": "true"
+    },
+    {
+        "title": "Calculate Discount",
+        "description": "Calculate the final price after applying a discount percentage to the original price.",
+        "input_format": "Two numbers separated by space. The first is the original price (P), and the second is the discount percentage (D).",
+        "output_format": "The final price after the discount, rounded to two decimal places.",
+        "constraints": "0 <= P <= 1000, 0 <= D <= 100",
+        "sample_input": "100 10",
+        "sample_output": "90.00"
+    },
+    {
+        "title": "Find the Smallest",
+        "description": "Given an array of integers, find the smallest value.",
+        "input_format": "The first line contains an integer N, the number of elements in the array. The second line contains N integers separated by spaces.",
+        "output_format": "The smallest value in the array.",
+        "constraints": "1 <= N <= 100, -1000 <= array elements <= 1000",
+        "sample_input": "5\n1 5 2 8 3",
+        "sample_output": "1"
+    },
+    {
+        "title": "String Anagrams",
+        "description": "Check if two strings are anagrams of each other.",
+        "input_format": "Two strings, S1 and S2, separated by a newline.",
+        "output_format": "Print \"true\" if S1 and S2 are anagrams, and \"false\" otherwise.",
+        "constraints": "1 <= length(S1), length(S2) <= 100, S1 and S2 contain only lowercase letters.",
         "sample_input": "listen\nsilent",
-        "sample_output": "True"
+        "sample_output": "true"
     },
     {
-        "title": "Two Sum",
-        "description": "Given an array of integers and a target value, find two numbers in the array that add up to the target. Return the indices of the two numbers.",
-        "input_format": "First line: The number of elements in the array, n, and the target value, target, separated by a space.\nSecond line: n space-separated integers.",
-        "output_format": "Two space-separated integers representing the indices of the two numbers that add up to the target (0-indexed). If no such pair exists, return -1 -1.",
-        "constraints": "2 <= n <= 100\n-1000 <= each element <= 1000\n-2000 <= target <= 2000\nThere is exactly one solution.",
-        "sample_input": "4 9\n2 7 11 15",
-        "sample_output": "0 1"
-    },
-    {
-        "title": "Implement strStr()",
-        "description": "Implement strStr(). Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
-        "input_format": "First line: The haystack string.\nSecond line: The needle string.",
-        "output_format": "The index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
-        "constraints": "0 <= length(haystack), length(needle) <= 100",
-        "sample_input": "hello\nllo",
-        "sample_output": "2"
+        "title": "Find missing number",
+        "description": "You are given an array of n-1 integers and integers are in the range of 1 to n. There are no duplicates in the array. One of the integers is missing. Find the missing element",
+        "input_format": "The first line contains an integer N, the actual number of elements in array. The second line contains N-1 integers separated by spaces.",
+        "output_format": "The missing number",
+        "constraints": "2 <= N <= 100, 1 <= array elements <= N",
+        "sample_input": "5\n1 2 4 5",
+        "sample_output": "3"
     }
 ]

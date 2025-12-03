@@ -1,0 +1,983 @@
+[
+    {
+        "question": "Which number logically follows this sequence: 2, 6, 12, 20, ?",
+        "options": [
+            "24",
+            "28",
+            "30",
+            "32"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "If all Bloops are Floops, and some Floops are Gloops, then:",
+        "options": [
+            "All Bloops are Gloops",
+            "Some Bloops are Gloops",
+            "Some Gloops are Bloops",
+            "None of the above"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Find the odd one out: Apple, Orange, Banana, Carrot",
+        "options": [
+            "Apple",
+            "Orange",
+            "Banana",
+            "Carrot"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Complete the analogy: Doctor is to Hospital as Teacher is to:",
+        "options": [
+            "Lawyer",
+            "School",
+            "Patient",
+            "Student"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "What is the next letter in the sequence: A, C, F, J, ?",
+        "options": [
+            "O",
+            "P",
+            "Q",
+            "R"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "If A > B and B > C, then which of the following is definitely true?",
+        "options": [
+            "A < C",
+            "A = C",
+            "A > C",
+            "B > A"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Which shape comes next in the sequence: Square, Triangle, Circle, Square, Triangle, ?",
+        "options": [
+            "Square",
+            "Triangle",
+            "Circle",
+            "Pentagon"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "All squares are rectangles. Some rectangles are parallelograms. Therefore:",
+        "options": [
+            "All squares are parallelograms",
+            "Some squares are parallelograms",
+            "Some parallelograms are squares",
+            "None of the above"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If 'TABLE' is coded as 'VCDNG', then how is 'CHAIR' coded?",
+        "options": [
+            "EJCKT",
+            "DJCKU",
+            "EJCLU",
+            "DJAKU"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "Find the missing number: 4, 9, 16, 25, ?",
+        "options": [
+            "36",
+            "35",
+            "49",
+            "64"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "If John is taller than Mary, and Mary is taller than Peter, then who is the tallest?",
+        "options": [
+            "John",
+            "Mary",
+            "Peter",
+            "Cannot be determined"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "Which word does NOT belong: Run, Walk, Skip, Fly",
+        "options": [
+            "Run",
+            "Walk",
+            "Skip",
+            "Fly"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Complete the series: 1, 8, 27, 64, ?",
+        "options": [
+            "81",
+            "125",
+            "100",
+            "144"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If all cats are mammals and some mammals are pets, then:",
+        "options": [
+            "All cats are pets",
+            "Some cats are pets",
+            "Some pets are cats",
+            "None of the above"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Which number logically follows this sequence: 1, 4, 9, 16, 25, ?",
+        "options": [
+            "30",
+            "32",
+            "36",
+            "49"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Find the odd one out: Circle, Square, Triangle, Cube",
+        "options": [
+            "Circle",
+            "Square",
+            "Triangle",
+            "Cube"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Complete the analogy: Bird is to Nest as Dog is to:",
+        "options": [
+            "Cat",
+            "Bone",
+            "Kennel",
+            "Leash"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "What is the next letter in the sequence: B, E, H, K, ?",
+        "options": [
+            "N",
+            "M",
+            "L",
+            "O"
+        ],
+        "correct_answer": "N"
+    },
+    {
+        "question": "If X < Y and Y = Z, then which of the following is definitely true?",
+        "options": [
+            "X > Z",
+            "X = Z",
+            "X < Z",
+            "Y > X"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Which shape comes next in the sequence: Star, Heart, Diamond, Star, Heart, ?",
+        "options": [
+            "Star",
+            "Heart",
+            "Diamond",
+            "Circle"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "All roses are flowers. Some flowers are red. Therefore:",
+        "options": [
+            "All roses are red",
+            "Some roses are red",
+            "Some red things are roses",
+            "None of the above"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If 'WATER' is coded as 'XBUFS', then how is 'FIRE' coded?",
+        "options": [
+            "GHIS",
+            "GJSE",
+            "GJRF",
+            "FHSD"
+        ],
+        "correct_answer": "GJRF"
+    },
+    {
+        "question": "Find the missing number: 3, 7, 11, 15, ?",
+        "options": [
+            "18",
+            "19",
+            "20",
+            "21"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If Sarah is younger than Tom, and Tom is older than Lisa, then who is the youngest?",
+        "options": [
+            "Sarah",
+            "Tom",
+            "Lisa",
+            "Cannot be determined"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Which word does NOT belong: Car, Train, Bus, Bicycle",
+        "options": [
+            "Car",
+            "Train",
+            "Bus",
+            "Bicycle"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Complete the series: 2, 4, 8, 16, ?",
+        "options": [
+            "24",
+            "32",
+            "64",
+            "36"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If all birds can fly and some flying things are planes, then:",
+        "options": [
+            "All birds are planes",
+            "Some birds are planes",
+            "Some planes are birds",
+            "None of the above"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Which number logically follows this sequence: 3, 8, 13, 18, ?",
+        "options": [
+            "20",
+            "22",
+            "23",
+            "24"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Find the odd one out: Book, Newspaper, Magazine, Computer",
+        "options": [
+            "Book",
+            "Newspaper",
+            "Magazine",
+            "Computer"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Complete the analogy: Cold is to Winter as Hot is to:",
+        "options": [
+            "Rain",
+            "Summer",
+            "Fire",
+            "Sun"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "What is the next letter in the sequence: Z, W, T, Q, ?",
+        "options": [
+            "N",
+            "O",
+            "M",
+            "P"
+        ],
+        "correct_answer": "N"
+    },
+    {
+        "question": "If P > Q and Q < R, then which of the following is definitely true?",
+        "options": [
+            "P < R",
+            "P = R",
+            "P > R",
+            "Cannot be determined"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Which shape comes next in the sequence: Up Arrow, Right Arrow, Down Arrow, Left Arrow, Up Arrow, ?",
+        "options": [
+            "Right Arrow",
+            "Down Arrow",
+            "Left Arrow",
+            "Circle"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "All dogs bark. Some barking things are loud. Therefore:",
+        "options": [
+            "All dogs are loud",
+            "Some dogs are loud",
+            "Some loud things are dogs",
+            "None of the above"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If 'GREEN' is coded as 'ITGGP', then how is 'BLUE' coded?",
+        "options": [
+            "DNWG",
+            "CNWG",
+            "CNXG",
+            "DNXG"
+        ],
+        "correct_answer": "DNWG"
+    },
+    {
+        "question": "Find the missing number: 1, 2, 6, 24, ?",
+        "options": [
+            "72",
+            "96",
+            "120",
+            "48"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "If Mike is richer than Jack, and Jack is poorer than Jill, then who is the richest?",
+        "options": [
+            "Mike",
+            "Jack",
+            "Jill",
+            "Cannot be determined"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Which word does NOT belong: Shirt, Pants, Shoes, Hat",
+        "options": [
+            "Shirt",
+            "Pants",
+            "Shoes",
+            "Hat"
+        ],
+        "correct_answer": "Shoes"
+    },
+    {
+        "question": "Complete the series: 3, 6, 12, 24, ?",
+        "options": [
+            "36",
+            "48",
+            "60",
+            "72"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If all fish live in water and some animals live in water, then:",
+        "options": [
+            "All fish are animals",
+            "Some fish are animals",
+            "Some animals are fish",
+            "None of the above"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Which number logically follows this sequence: 5, 10, 17, 26, ?",
+        "options": [
+            "30",
+            "35",
+            "37",
+            "40"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Find the odd one out: Mouse, Keyboard, Monitor, Printer",
+        "options": [
+            "Mouse",
+            "Keyboard",
+            "Monitor",
+            "Printer",
+            "CPU"
+        ],
+        "correct_answer": "CPU"
+    },
+    {
+        "question": "Complete the analogy: Light is to Dark as Up is to:",
+        "options": [
+            "High",
+            "Low",
+            "Down",
+            "Left"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "What is the next letter in the sequence: A, D, G, J, ?",
+        "options": [
+            "K",
+            "L",
+            "M",
+            "N"
+        ],
+        "correct_answer": "M"
+    },
+    {
+        "question": "If M > N and N > O, then which of the following is definitely true?",
+        "options": [
+            "M < O",
+            "M = O",
+            "M > O",
+            "N > M"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Which shape comes next in the sequence: Cross, Circle, Plus, Cross, Circle, ?",
+        "options": [
+            "Cross",
+            "Circle",
+            "Plus",
+            "Square"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "All birds have feathers. Some things with feathers can sing. Therefore:",
+        "options": [
+            "All birds can sing",
+            "Some birds can sing",
+            "Some things that sing are birds",
+            "None of the above"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If 'WHITE' is coded as 'XIJUF', then how is 'BLACK' coded?",
+        "options": [
+            "CMBDL",
+            "CMBBL",
+            "AMBCK",
+            "BNBML"
+        ],
+        "correct_answer": "CMBDL"
+    },
+    {
+        "question": "Find the missing number: 2, 5, 10, 17, ?",
+        "options": [
+            "24",
+            "25",
+            "26",
+            "28"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "If Sam is faster than Ben, and Ben is slower than Alex, then who is the slowest?",
+        "options": [
+            "Sam",
+            "Ben",
+            "Alex",
+            "Cannot be determined"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Which word does NOT belong: Table, Chair, Sofa, Pillow",
+        "options": [
+            "Table",
+            "Chair",
+            "Sofa",
+            "Pillow"
+        ],
+        "correct_answer": "Pillow"
+    },
+    {
+        "question": "Complete the series: 5, 10, 20, 40, ?",
+        "options": [
+            "60",
+            "80",
+            "100",
+            "120"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If all dogs are mammals and some mammals are pets, then:",
+        "options": [
+            "All dogs are pets",
+            "Some dogs are pets",
+            "Some pets are dogs",
+            "None of the above"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Which number logically follows this sequence: 1, 3, 7, 13, ?",
+        "options": [
+            "19",
+            "21",
+            "22",
+            "23"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "Find the odd one out: Pen, Pencil, Eraser, Book",
+        "options": [
+            "Pen",
+            "Pencil",
+            "Eraser",
+            "Book"
+        ],
+        "correct_answer": "Book"
+    },
+    {
+        "question": "Complete the analogy: Day is to Night as Black is to:",
+        "options": [
+            "White",
+            "Dark",
+            "Gray",
+            "Color"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "What is the next letter in the sequence: Y, V, S, P, ?",
+        "options": [
+            "L",
+            "M",
+            "N",
+            "O"
+        ],
+        "correct_answer": "M"
+    },
+    {
+        "question": "If A < B and B = C, then which of the following is definitely true?",
+        "options": [
+            "A > C",
+            "A = C",
+            "A < C",
+            "B > A"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Which shape comes next in the sequence: Circle, Square, Circle, Square, Circle, ?",
+        "options": [
+            "Square",
+            "Triangle",
+            "Circle",
+            "Pentagon"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "All cars have wheels. Some vehicles have wheels. Therefore:",
+        "options": [
+            "All cars are vehicles",
+            "Some cars are vehicles",
+            "Some vehicles are cars",
+            "None of the above"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If 'HELLO' is coded as 'IFMMP', then how is 'WORLD' coded?",
+        "options": [
+            "XPSME",
+            "XOSME",
+            "XPSMF",
+            "XOSMF"
+        ],
+        "correct_answer": "XPSME"
+    },
+    {
+        "question": "Find the missing number: 0, 2, 6, 12, ?",
+        "options": [
+            "18",
+            "20",
+            "22",
+            "24"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If Tom is shorter than Bob, and Bob is taller than Alice, then who is the tallest?",
+        "options": [
+            "Tom",
+            "Bob",
+            "Alice",
+            "Cannot be determined"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Which word does NOT belong: Gold, Silver, Diamond, Wood",
+        "options": [
+            "Gold",
+            "Silver",
+            "Diamond",
+            "Wood"
+        ],
+        "correct_answer": "Wood"
+    },
+    {
+        "question": "Complete the series: 1, 4, 16, 64, ?",
+        "options": [
+            "128",
+            "256",
+            "32",
+            "100"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If all apples are fruits and some fruits are red, then:",
+        "options": [
+            "All apples are red",
+            "Some apples are red",
+            "Some red things are apples",
+            "None of the above"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "Which number logically follows this sequence: 8, 11, 14, 17, ?",
+        "options": [
+            "18",
+            "19",
+            "20",
+            "21"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Find the odd one out: Table, Chair, Sofa, Bed",
+        "options": [
+            "Table",
+            "Chair",
+            "Sofa",
+            "Bed"
+        ],
+        "correct_answer": "Table"
+    },
+    {
+        "question": "Complete the analogy: Happy is to Sad as Fast is to:",
+        "options": [
+            "Quick",
+            "Slow",
+            "Rapid",
+            "Speed"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "What is the next letter in the sequence: C, E, G, I, ?",
+        "options": [
+            "J",
+            "K",
+            "L",
+            "M"
+        ],
+        "correct_answer": "K"
+    },
+    {
+        "question": "If X > Y and Y > Z, then which of the following is definitely false?",
+        "options": [
+            "X > Z",
+            "X = Z",
+            "X < Z",
+            "Y < X"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Which shape comes next in the sequence: Triangle, Square, Pentagon, Hexagon, Heptagon, ?",
+        "options": [
+            "Octagon",
+            "Nonagon",
+            "Decagon",
+            "Hendecagon"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "All lions are mammals. Some mammals eat meat. Therefore:",
+        "options": [
+            "All lions eat meat",
+            "Some lions eat meat",
+            "Some meat-eaters are lions",
+            "None of the above"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If 'ORANGE' is coded as 'PSGPIF', then how is 'APPLE' coded?",
+        "options": [
+            "BQMMF",
+            "BRQQF",
+            "BRQMF",
+            "BQQMR"
+        ],
+        "correct_answer": "BQMMF"
+    },
+    {
+        "question": "Find the missing number: 1, 3, 6, 10, ?",
+        "options": [
+            "12",
+            "14",
+            "15",
+            "16"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "If John is older than Mary, and Peter is younger than John, then who is the youngest?",
+        "options": [
+            "John",
+            "Mary",
+            "Peter",
+            "Cannot be determined"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Which word does NOT belong: Hammer, Saw, Screwdriver, Rose",
+        "options": [
+            "Hammer",
+            "Saw",
+            "Screwdriver",
+            "Rose"
+        ],
+        "correct_answer": "Rose"
+    },
+    {
+        "question": "Complete the series: 2, 6, 18, 54, ?",
+        "options": [
+            "108",
+            "162",
+            "180",
+            "216"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If all students are people and some people are tall, then:",
+        "options": [
+            "All students are tall",
+            "Some students are tall",
+            "Some tall things are students",
+            "None of the above"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "Which number logically follows this sequence: 4, 8, 16, 32, ?",
+        "options": [
+            "48",
+            "64",
+            "80",
+            "96"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "Find the odd one out: Sun, Moon, Star, Cloud",
+        "options": [
+            "Sun",
+            "Moon",
+            "Star",
+            "Cloud"
+        ],
+        "correct_answer": "Cloud"
+    },
+    {
+        "question": "Complete the analogy: Hot is to Cold as Big is to:",
+        "options": [
+            "Large",
+            "Small",
+            "Enormous",
+            "Huge"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "What is the next letter in the sequence: D, H, L, P, ?",
+        "options": [
+            "S",
+            "T",
+            "R",
+            "U"
+        ],
+        "correct_answer": "T"
+    },
+    {
+        "question": "If A > B and B < C, then which of the following is definitely true?",
+        "options": [
+            "A < C",
+            "A = C",
+            "A > C",
+            "Cannot be determined"
+        ],
+        "correct_answer": "D"
+    },
+    {
+        "question": "Which shape comes next in the sequence: Spiral, Circle, Spiral, Circle, ?",
+        "options": [
+            "Spiral",
+            "Triangle",
+            "Circle",
+            "Rectangle"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "All birds fly. Some flying things are planes. Therefore:",
+        "options": [
+            "All birds are planes",
+            "Some birds are planes",
+            "Some planes are birds",
+            "None of the above"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "If 'HOUSE' is coded as 'IQVUF', then how is 'MOUSE' coded?",
+        "options": [
+            "NPVUF",
+            "NQVUF",
+            "NPVTF",
+            "NQVTE"
+        ],
+        "correct_answer": "NPVUF"
+    },
+    {
+        "question": "Find the missing number: 3, 9, 27, 81, ?",
+        "options": [
+            "162",
+            "243",
+            "270",
+            "324"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "If Ali is faster than Ben, and Ben is faster than Carol, then who is the slowest?",
+        "options": [
+            "Ali",
+            "Ben",
+            "Carol",
+            "Cannot be determined"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Which word does NOT belong: Red, Blue, Green, Round",
+        "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Round"
+        ],
+        "correct_answer": "Round"
+    },
+    {
+        "question": "Complete the series: 7, 14, 21, 28, ?",
+        "options": [
+            "35",
+            "36",
+            "37",
+            "38"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "If all dogs are animals and some animals eat bones, then:",
+        "options": [
+            "All dogs eat bones",
+            "Some dogs eat bones",
+            "Some bone-eaters are dogs",
+            "None of the above"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "Which number logically follows this sequence: 1, 1, 2, 3, 5, ?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "correct_answer": "C"
+    },
+    {
+        "question": "Find the odd one out: River, Lake, Ocean, Hill",
+        "options": [
+            "River",
+            "Lake",
+            "Ocean",
+            "Hill"
+        ],
+        "correct_answer": "Hill"
+    },
+    {
+        "question": "Complete the analogy: Sweet is to Sour as Happy is to:",
+        "options": [
+            "Joyful",
+            "Sad",
+            "Content",
+            "Excited"
+        ],
+        "correct_answer": "B"
+    },
+    {
+        "question": "What is the next letter in the sequence: F, I, L, O, ?",
+        "options": [
+            "Q",
+            "R",
+            "P",
+            "S"
+        ],
+        "correct_answer": "R"
+    },
+    {
+        "question": "If P > Q and Q = R, then which of the following is definitely false?",
+        "options": [
+            "P < R",
+            "P = R",
+            "P > R",
+            "Q < P"
+        ],
+        "correct_answer": "A"
+    },
+    {
+        "question": "Which shape comes next in the sequence: Square, Circle, Triangle, Square, Circle, ?",
+        "options": [
+            "Square",
+            "Triangle",
+            "Circle",
+            "Rectangle"
+        ],
+        "correct_answer": "B"
+    }
+]

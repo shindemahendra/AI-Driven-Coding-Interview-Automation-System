@@ -1,0 +1,1202 @@
+[
+    {
+        "question": "Consider the following code snippet:\n\n```python\ndef outer_function(x):\n    def inner_function(y):\n        nonlocal x\n        x += 1\n        return x + y\n    return inner_function\n\nclosure = outer_function(5)\nprint(closure(3))\nprint(closure(4))\n```\nWhat is the output of this code?",
+        "options": [
+            "8\n9",
+            "8\n10",
+            "9\n10",
+            "9\n11"
+        ],
+        "correct_answer": "A",
+        "topic": "Python Closures and Scopes",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+        "options": [
+            "To dynamically add attributes to an object.",
+            "To limit the attributes an object can have, saving memory and potentially improving performance.",
+            "To define default values for attributes.",
+            "To make attributes read-only."
+        ],
+        "correct_answer": "B",
+        "topic": "Python Object Model",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following statements about metaclasses in Python is FALSE?",
+        "options": [
+            "A metaclass is a class of a class.",
+            "Metaclasses control the creation and behavior of classes.",
+            "The `__new__` method of a metaclass is responsible for creating the class object.",
+            "You cannot inherit from multiple metaclasses."
+        ],
+        "correct_answer": "D",
+        "topic": "Python Metaclasses",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the time complexity of accessing an element in a dictionary using `d['key']` on average and in the worst case, respectively?",
+        "options": [
+            "O(1), O(1)",
+            "O(1), O(n)",
+            "O(n), O(n)",
+            "O(log n), O(n)"
+        ],
+        "correct_answer": "B",
+        "topic": "Python Data Structures",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n```python\ndef func(a=[]):\n  a.append(1)\n  return a\n\nprint(func())\nprint(func())\n```\nWhat will be the output?",
+        "options": [
+            "`[1]\n[1]`",
+            "`[1]\n[1, 1]`",
+            "`[1]\n[2]`",
+            "`[1, 1]\n[1, 1]`"
+        ],
+        "correct_answer": "B",
+        "topic": "Python Default Arguments",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following libraries is most suitable for high-performance numerical computations, especially when dealing with large arrays and matrices?",
+        "options": [
+            "Pandas",
+            "NumPy",
+            "SciPy",
+            "Matplotlib"
+        ],
+        "correct_answer": "B",
+        "topic": "Python Libraries",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the primary purpose of the `asyncio` library in Python?",
+        "options": [
+            "To provide a simpler interface for multithreading.",
+            "To enable asynchronous programming using coroutines and event loops.",
+            "To manage memory allocation and garbage collection more efficiently.",
+            "To optimize CPU-bound tasks using multiprocessing."
+        ],
+        "correct_answer": "B",
+        "topic": "Python Asynchronous Programming",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Given the following code snippet:\n\n```python\ndef decorator(func):\n    def wrapper(*args, **kwargs):\n        print('Before function call')\n        result = func(*args, **kwargs)\n        print('After function call')\n        return result\n    return wrapper\n\n@decorator\ndef my_function(x):\n    return x * 2\n\nprint(my_function(5))\n```\nWhat will be the output?",
+        "options": [
+            "10",
+            "Before function call\nAfter function call\n10",
+            "Before function call\n10\nAfter function call",
+            "Error"
+        ],
+        "correct_answer": "C",
+        "topic": "Python Decorators",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between a generator expression and a list comprehension in Python?",
+        "options": [
+            "Generator expressions are evaluated immediately, while list comprehensions are evaluated lazily.",
+            "List comprehensions are evaluated immediately, while generator expressions are evaluated lazily.",
+            "There is no difference; they are interchangeable.",
+            "List comprehensions can only be used with numbers, while generator expressions can be used with any data type."
+        ],
+        "correct_answer": "B",
+        "topic": "Python Iterators and Generators",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following is a valid use case for the `functools.lru_cache` decorator?",
+        "options": [
+            "Caching the results of database queries.",
+            "Implementing rate limiting for API requests.",
+            "Memoizing computationally expensive function calls with the same arguments.",
+            "All of the above."
+        ],
+        "correct_answer": "D",
+        "topic": "Python Functional Programming",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n```python\nimport threading\n\ndef worker(lock, counter):\n    for _ in range(100000):\n        with lock:\n            counter[0] += 1\n\nlock = threading.Lock()\ncounter = [0]\n\nthreads = []\nfor _ in range(2):\n    thread = threading.Thread(target=worker, args=(lock, counter))\n    threads.append(thread)\n    thread.start()\n\nfor thread in threads:\n    thread.join()\n\nprint(counter[0])\n```\nWhat is the most likely value of counter[0] after the threads finish?",
+        "options": [
+            "200000",
+            "A value less than 200000 due to race conditions",
+            "A value slightly more than 200000",
+            "The program will throw an error"
+        ],
+        "correct_answer": "A",
+        "topic": "Python Concurrency",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which module provides support for creating and manipulating regular expressions in Python?",
+        "options": [
+            "os",
+            "re",
+            "sys",
+            "datetime"
+        ],
+        "correct_answer": "B",
+        "topic": "Python Regular Expressions",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `__future__` module in Python?",
+        "options": [
+            "To access experimental features from future versions of Python.",
+            "To import modules from older versions of Python.",
+            "To define abstract base classes.",
+            "To implement custom iterators."
+        ],
+        "correct_answer": "A",
+        "topic": "Python Internals",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What happens when you raise a `StopIteration` exception in a Python generator?",
+        "options": [
+            "The generator function terminates and no further values are yielded.",
+            "The program crashes.",
+            "The exception is ignored and the generator continues to execute.",
+            "The exception is caught by the `next()` function and handled internally."
+        ],
+        "correct_answer": "A",
+        "topic": "Python Iterators and Generators",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following is a benefit of using virtual environments in Python?",
+        "options": [
+            "It allows you to install different versions of the same package for different projects.",
+            "It improves the performance of your Python code.",
+            "It automatically detects and resolves dependency conflicts.",
+            "It allows you to run Python code in a sandboxed environment."
+        ],
+        "correct_answer": "A",
+        "topic": "Python Environment Management",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the use of `yield from` statement in Python?",
+        "options": [
+            "It is used to terminate a generator function.",
+            "It is used to delegate to another iterable (e.g., another generator or a list).",
+            "It is used to define a context manager.",
+            "It is used to raise an exception within a generator."
+        ],
+        "correct_answer": "B",
+        "topic": "Python Iterators and Generators",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will be the output of the following code snippet?\n```python\nclass A:\n    def __init__(self):\n        self.x = 10\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.y = 20\n\n    def display(self):\n        print(self.x + self.y)\n\nobj = A()\nprint(hasattr(obj, 'y'))\n```",
+        "options": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ],
+        "correct_answer": "B",
+        "topic": "Python Inheritance",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of using a context manager with the `with` statement in Python?",
+        "options": [
+            "To automatically handle exceptions within a block of code.",
+            "To ensure that resources are properly acquired and released, regardless of whether exceptions occur.",
+            "To optimize the execution speed of a block of code.",
+            "To define a custom logging mechanism."
+        ],
+        "correct_answer": "B",
+        "topic": "Python Context Managers",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n```python\nimport asyncio\n\nasync def my_coroutine():\n    print('Coroutine started')\n    await asyncio.sleep(1)\n    print('Coroutine finished')\n\nasync def main():\n    task = asyncio.create_task(my_coroutine())\n    print('Main function running')\n    await task\n    print('Main function finished')\n\nasyncio.run(main())\n```\nWhat will be the output of this code?",
+        "options": [
+            "Coroutine started\nMain function running\nCoroutine finished\nMain function finished",
+            "Main function running\nCoroutine started\nMain function finished\nCoroutine finished",
+            "Main function running\nCoroutine started\nCoroutine finished\nMain function finished",
+            "Coroutine started\nCoroutine finished\nMain function running\nMain function finished"
+        ],
+        "correct_answer": "A",
+        "topic": "Python Asynchronous Programming",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following is the most efficient way to merge a large number of strings in Python?",
+        "options": [
+            "Using the `+` operator in a loop.",
+            "Using the `join()` method on a list of strings.",
+            "Using the `reduce()` function with a lambda expression.",
+            "Using an f-string in a loop."
+        ],
+        "correct_answer": "B",
+        "topic": "Python String Manipulation",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will be the output of the following code snippet?  \n```python\ndef outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nprint(closure.__closure__[0].cell_contents)```",
+        "options": [
+            "10",
+            "A NameError",
+            "A TypeError",
+            "None"
+        ],
+        "correct_answer": "10",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following is the correct way to implement a metaclass that ensures all its derived classes have a 'validate' method?",
+        "options": [
+            "class Meta(type):\n    def __new__(cls, name, bases, attrs):\n        if 'validate' not in attrs:\n            raise TypeError('validate method not implemented')\n        return super().__new__(cls, name, bases, attrs)",
+            "class Meta:\n    def validate(self):\n        pass",
+            "class Meta(type):\n    def __init__(cls, name, bases, attrs):\n        if 'validate' not in attrs:\n            raise TypeError('validate method not implemented')\n        super().__init__(name, bases, attrs)",
+            "class Meta(type):\n    def __call__(cls, *args, **kwargs):\n        if not hasattr(cls, 'validate'):\n            raise TypeError('validate method not implemented')\n        return super().__call__(*args, **kwargs)"
+        ],
+        "correct_answer": "class Meta(type):\n    def __new__(cls, name, bases, attrs):\n        if 'validate' not in attrs:\n            raise TypeError('validate method not implemented')\n        return super().__new__(cls, name, bases, attrs)",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `__slots__` and `property` in Python?",
+        "options": [
+            "`__slots__` reduces memory usage by preventing the creation of `__dict__`, while `property` is a way to customize attribute access.",
+            "`__slots__` enhances attribute access speed, while `property` reduces memory usage.",
+            "`__slots__` is used for creating dynamic attributes, while `property` is used for creating static attributes.",
+            "They are functionally equivalent, but `property` is more readable."
+        ],
+        "correct_answer": "`__slots__` reduces memory usage by preventing the creation of `__dict__`, while `property` is a way to customize attribute access.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n```python\ndef func():\n    x = 10\n    def inner():\n        nonlocal x\n        x = 20\n    inner()\n    return x\n\nprint(func())```\nWhat will be printed?",
+        "options": [
+            "10",
+            "20",
+            "An error",
+            "None"
+        ],
+        "correct_answer": "20",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will be the output of the following code?  \n```python\nimport asyncio\n\nasync def main():\n    task1 = asyncio.create_task(asyncio.sleep(1))\n    task2 = asyncio.create_task(asyncio.sleep(0.5))\n    await asyncio.wait([task1, task2])\n    print(\"Done\")\n\nasyncio.run(main())```",
+        "options": [
+            "The code will not execute because asyncio.wait cannot accept a list.",
+            "Done will be printed after 0.5 seconds.",
+            "Done will be printed after 1 second.",
+            "An error will occur because the loop is not running."
+        ],
+        "correct_answer": "Done will be printed after 1 second.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the primary use case for the `functools.lru_cache` decorator?",
+        "options": [
+            "Memoizing function calls to improve performance.",
+            "Converting a function into a method.",
+            "Validating function arguments.",
+            "Creating a singleton instance of a class."
+        ],
+        "correct_answer": "Memoizing function calls to improve performance.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which statement about Python's garbage collection is MOST accurate?",
+        "options": [
+            "Python only uses reference counting for garbage collection.",
+            "Python uses a generational garbage collector in addition to reference counting.",
+            "Python relies solely on the programmer to explicitly deallocate memory.",
+            "Python's garbage collector is disabled by default and needs to be manually enabled."
+        ],
+        "correct_answer": "Python uses a generational garbage collector in addition to reference counting.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will be the output of the following code?\n```python\nclass A:\n    def __init__(self):\n        self._x = 5\n\n    @property\n    def x(self):\n        return self._x\n\n    @x.setter\n    def x(self, value):\n        self._x = value\n\nclass B(A):\n    @A.x.setter\n    def x(self, value):\n        if value < 0:\n            raise ValueError('Value must be non-negative')\n        super(B, B).x.__set__(self, value) # Fixed line\n\nb = B()\nb.x = 10\nprint(b.x)\n```",
+        "options": [
+            "5",
+            "10",
+            "ValueError: Value must be non-negative",
+            "AttributeError: 'super' object has no attribute 'x'"
+        ],
+        "correct_answer": "10",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `yield from` statement in Python?",
+        "options": [
+            "To iterate over a dictionary's keys and values simultaneously.",
+            "To delegate iteration to a sub-generator.",
+            "To catch exceptions raised within a generator.",
+            "To define a coroutine."
+        ],
+        "correct_answer": "To delegate iteration to a sub-generator.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following best describes the Global Interpreter Lock (GIL) in Python?",
+        "options": [
+            "A mechanism that allows multiple threads to run concurrently in the Python interpreter.",
+            "A lock that prevents multiple native threads from executing Python bytecodes at once.",
+            "A data structure used for inter-process communication in Python.",
+            "A tool for debugging multi-threaded Python applications."
+        ],
+        "correct_answer": "A lock that prevents multiple native threads from executing Python bytecodes at once.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will be the output of the following code snippet?  \n```python\ndef decorator(func):\n    def wrapper(*args, **kwargs):\n        print(\"Before function call\")\n        result = func(*args, **kwargs)\n        print(\"After function call\")\n        return result\n    return wrapper\n\n@decorator\ndef my_function(x, y):\n    return x + y\n\nprint(my_function(3, 5))```",
+        "options": [
+            "8",
+            "Before function call\nAfter function call",
+            "Before function call\nAfter function call\n8",
+            "An error will occur."
+        ],
+        "correct_answer": "Before function call\nAfter function call\n8",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `__enter__` and `__exit__` methods in a Python class?",
+        "options": [
+            "`__enter__` initializes the object, and `__exit__` destroys it.",
+            "`__enter__` is called before the code in a `with` block is executed, and `__exit__` is called after.",
+            "`__enter__` defines how the object is printed, and `__exit__` defines how it is deleted.",
+            "There is no difference; they are used interchangeably."
+        ],
+        "correct_answer": "`__enter__` is called before the code in a `with` block is executed, and `__exit__` is called after.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following is the correct way to implement a custom context manager using the `contextlib` module?",
+        "options": [
+            "@contextlib.contextmanager\ndef my_context():\n    # Setup code\n    yield\n    # Teardown code",
+            "class MyContext(contextlib.ContextDecorator):\n    def __enter__(self):\n        # Setup code\n        return self\n    def __exit__(self, exc_type, exc_val, exc_tb):\n        # Teardown code\n        pass",
+            "class MyContextManager(contextlib.AbstractContextManager):\n    def __init__(self):\n        # Setup code\n        pass\n    def __exit__(self, exc_type, exc_val, exc_tb):\n        # Teardown code\n        pass",
+            "All of the above are valid ways to implement a custom context manager."
+        ],
+        "correct_answer": "@contextlib.contextmanager\ndef my_context():\n    # Setup code\n    yield\n    # Teardown code",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the primary advantage of using `asyncio.gather` over running multiple `asyncio.create_task` calls without `gather`?",
+        "options": [
+            "`asyncio.gather` allows you to specify a timeout for each task.",
+            "`asyncio.gather` guarantees that all tasks will run concurrently.",
+            "`asyncio.gather` provides better exception handling and aggregation of results.",
+            "`asyncio.gather` uses less memory."
+        ],
+        "correct_answer": "`asyncio.gather` provides better exception handling and aggregation of results.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will the code below output? \n```python\ndef f(a=[]):\n    a.append(5)\n    return a\n\nprint(f())\nprint(f())```",
+        "options": [
+            "`[5]`\n`[5]`",
+            "`[5]`\n`[]`",
+            "`[5]`\n`[5, 5]`",
+            "Error: default mutable argument is modified on subsequent calls."
+        ],
+        "correct_answer": "`[5]`\n`[5, 5]`",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What's the purpose of the `breakpoint()` function introduced in Python 3.7?",
+        "options": [
+            "To create a pause in the program execution to analyze memory usage.",
+            "To set a condition that must be met before continuing program execution.",
+            "To start the Python debugger (pdb) at the point where the function is called.",
+            "To automatically log all variable values at the breakpoint location."
+        ],
+        "correct_answer": "To start the Python debugger (pdb) at the point where the function is called.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "How does the `typing.Protocol` differ from a traditional abstract base class (`abc.ABC`)?",
+        "options": [
+            "`typing.Protocol` enforces method signatures at runtime, while `abc.ABC` only provides static type checking.",
+            "`typing.Protocol` allows for structural subtyping (duck typing), while `abc.ABC` requires explicit inheritance.",
+            "`typing.Protocol` is used for defining asynchronous protocols, while `abc.ABC` is used for synchronous protocols.",
+            "They are functionally equivalent and can be used interchangeably."
+        ],
+        "correct_answer": "`typing.Protocol` allows for structural subtyping (duck typing), while `abc.ABC` requires explicit inheritance.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of the following code? \n```python\nfrom concurrent.futures import ThreadPoolExecutor\nimport time\n\ndef task(n):\n    time.sleep(0.1)\n    return n * n\n\nwith ThreadPoolExecutor(max_workers=2) as executor:\n    results = executor.map(task, [1, 2, 3, 4])\n    print(list(results))\n```",
+        "options": [
+            "[1, 4, 9, 16]",
+            "[1, 4]",
+            "A timeout error",
+            "The tasks will run sequentially instead of concurrently."
+        ],
+        "correct_answer": "[1, 4, 9, 16]",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which statement is true regarding the performance characteristics of lists vs. tuples in Python?",
+        "options": [
+            "Lists are generally faster for iteration than tuples.",
+            "Tuples are generally faster for item assignment than lists.",
+            "Tuples consume less memory than lists when storing the same data.",
+            "Lists are immutable and thus have better performance in multithreaded environments."
+        ],
+        "correct_answer": "Tuples consume less memory than lists when storing the same data.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the following code?\n```python\nclass MyDescriptor:\n    def __get__(self, instance, owner):\n        return instance._my_attr\n\n    def __set__(self, instance, value):\n        instance._my_attr = value\n\nclass MyClass:\n    my_attr = MyDescriptor()\n\n    def __init__(self, value):\n        self._my_attr = value\n\nobj = MyClass(10)\nprint(obj.my_attr)\nobj.my_attr = 20\nprint(obj.my_attr)```",
+        "options": [
+            "10\n20",
+            "MyDescriptor object\nMyDescriptor object",
+            "AttributeError",
+            "TypeError"
+        ],
+        "correct_answer": "10\n20",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n\n```python\nimport asyncio\n\nasync def task1():\n    await asyncio.sleep(1)\n    print('Task 1 completed')\n    return 1\n\nasync def task2():\n    await asyncio.sleep(2)\n    print('Task 2 completed')\n    return 2\n\nasync def main():\n    result = await asyncio.gather(task1(), task2())\n    print(f'Results: {result}')\n\nasyncio.run(main())\n```\n\nWhat will be the output of this program?",
+        "options": [
+            "Task 1 completed\\nTask 2 completed\\nResults: [1, 2]",
+            "Task 2 completed\\nTask 1 completed\\nResults: [1, 2]",
+            "Task 1 completed\\nTask 2 completed\\nResults: [2, 1]",
+            "Task 2 completed\\nTask 1 completed\\nResults: [2, 1]"
+        ],
+        "correct_answer": "Task 1 completed\nTask 2 completed\nResults: [1, 2]",
+        "topic": "Python Asyncio",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `__slots__` attribute in a Python class?",
+        "options": [
+            "To prevent the creation of new attributes after the class is defined.",
+            "To reduce memory usage by pre-allocating space for a fixed set of attributes.",
+            "To improve attribute access speed by using a fixed-size structure.",
+            "All of the above."
+        ],
+        "correct_answer": "All of the above.",
+        "topic": "Python Class Attributes",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Given a custom exception `MyException`, how can you ensure it is always raised along with its original traceback when re-raising it?",
+        "options": [
+            "raise MyException from None",
+            "raise MyException()",
+            "raise MyException().with_traceback(sys.exc_info()[2])",
+            "raise MyException from sys.exc_info()[1]"
+        ],
+        "correct_answer": "raise MyException from sys.exc_info()[1]",
+        "topic": "Python Exceptions",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the code snippet:\n```python\ndef outer_function(x):\n def inner_function(y):\n nonlocal x\n x += y\n return x\n return inner_function\n\nfunc = outer_function(5)\nresult = func(3) + func(2)\n```\nWhat is the value of `result`?",
+        "options": [
+            "10",
+            "13",
+            "15",
+            "8"
+        ],
+        "correct_answer": "15",
+        "topic": "Python Closures",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `__enter__` and `__aenter__` methods in Python?",
+        "options": [
+            "`__enter__` is for synchronous context managers, and `__aenter__` is for asynchronous context managers.",
+            "`__enter__` is called when entering a `with` statement, and `__aenter__` is called when exiting a `with` statement.",
+            "`__enter__` can be used in both synchronous and asynchronous context managers, while `__aenter__` is strictly for asynchronous.",
+            "There is no difference; they are interchangeable."
+        ],
+        "correct_answer": "`__enter__` is for synchronous context managers, and `__aenter__` is for asynchronous context managers.",
+        "topic": "Python Context Managers",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following libraries provides functionality for distributed task queues in Python?",
+        "options": [
+            "threading",
+            "multiprocessing",
+            "asyncio",
+            "Celery"
+        ],
+        "correct_answer": "Celery",
+        "topic": "Python Concurrency",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n```python\nimport functools\n\ndef my_decorator(func):\n @functools.wraps(func)\n def wrapper(*args, **kwargs):\n print(\"Before calling function\")\n result = func(*args, **kwargs)\n print(\"After calling function\")\n return result\n return wrapper\n\n@my_decorator\ndef my_function(a, b):\n return a + b\n\nprint(my_function.__name__)\n```\nWhat will be printed?",
+        "options": [
+            "wrapper",
+            "my_decorator",
+            "my_function",
+            "functools.wraps"
+        ],
+        "correct_answer": "my_function",
+        "topic": "Python Decorators",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the primary advantage of using generators over lists when dealing with large datasets?",
+        "options": [
+            "Generators are faster to iterate through.",
+            "Generators consume less memory because they generate values on demand.",
+            "Generators allow for modification of the dataset during iteration.",
+            "Generators are easier to implement than lists."
+        ],
+        "correct_answer": "Generators consume less memory because they generate values on demand.",
+        "topic": "Python Generators",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following statements about metaclasses in Python is most accurate?",
+        "options": [
+            "Metaclasses are used to create instances of classes.",
+            "Metaclasses control the creation of classes.",
+            "Metaclasses are a type of decorator.",
+            "Metaclasses are used for memory management."
+        ],
+        "correct_answer": "Metaclasses control the creation of classes.",
+        "topic": "Python Metaclasses",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `staticmethod` and `classmethod`?",
+        "options": [
+            "`staticmethod` receives an implicit first argument of the class, while `classmethod` does not.",
+            "`classmethod` receives an implicit first argument of the class, while `staticmethod` does not.",
+            "`staticmethod` is used to create helper functions, while `classmethod` is used to create alternative constructors.",
+            "Both B and C."
+        ],
+        "correct_answer": "Both B and C.",
+        "topic": "Python Class Methods",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `__future__` module in Python?",
+        "options": [
+            "To access features that will be deprecated in future versions of Python.",
+            "To enable features that have been removed from the current version of Python.",
+            "To enable features that will be standard in future versions of Python but are not yet enabled by default.",
+            "To manage dependencies for future projects."
+        ],
+        "correct_answer": "To enable features that will be standard in future versions of Python but are not yet enabled by default.",
+        "topic": "Python Future Module",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n```python\ndef my_function(a: int, b: str) -> float:\n return a + float(b)\n\nprint(my_function(5, '3.14'))\n```\nWhat is the purpose of `a: int, b: str` and `-> float` in the function definition?",
+        "options": [
+            "They are type hints used for documentation and static analysis.",
+            "They enforce type checking at runtime.",
+            "They are comments and have no functional effect.",
+            "They are used for debugging purposes."
+        ],
+        "correct_answer": "They are type hints used for documentation and static analysis.",
+        "topic": "Python Type Hints",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following is the correct way to implement a descriptor in Python?",
+        "options": [
+            "By defining the `__get__`, `__set__`, and `__delete__` methods in a class.",
+            "By using the `@property` decorator.",
+            "By overriding the `__getattr__` and `__setattr__` methods in a class.",
+            "All of the above."
+        ],
+        "correct_answer": "By defining the `__get__`, `__set__`, and `__delete__` methods in a class.",
+        "topic": "Python Descriptors",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `memoryview` and `bytearray` in Python?",
+        "options": [
+            "`memoryview` creates a copy of the data, while `bytearray` provides a view without copying.",
+            "`bytearray` creates a copy of the data, while `memoryview` provides a view without copying.",
+            "`memoryview` is mutable, while `bytearray` is immutable.",
+            "There is no difference between them."
+        ],
+        "correct_answer": "`bytearray` creates a copy of the data, while `memoryview` provides a view without copying.",
+        "topic": "Python Memory Management",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `pkgutil` module in Python?",
+        "options": [
+            "To manage Python packages and their dependencies.",
+            "To provide tools for working with package imports and exploration.",
+            "To compress and decompress Python packages.",
+            "To create executable packages from Python code."
+        ],
+        "correct_answer": "To provide tools for working with package imports and exploration.",
+        "topic": "Python Modules and Packages",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the code snippet:\n```python\nimport sys\n\ndef recursive_function():\n recursive_function()\n\ntry:\n recursive_function()\nexcept RecursionError:\n print(sys.getrecursionlimit())\n```\nWhat will the code print?",
+        "options": [
+            "A large integer value representing the recursion limit.",
+            "A traceback indicating a stack overflow.",
+            "0",
+            "None"
+        ],
+        "correct_answer": "A large integer value representing the recursion limit.",
+        "topic": "Python Recursion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following is NOT a valid use case for the `functools.lru_cache` decorator?",
+        "options": [
+            "Caching the results of expensive function calls with the same arguments.",
+            "Caching the results of I/O-bound functions.",
+            "Caching the results of pure functions with no side effects.",
+            "Caching the results of functions that modify global state."
+        ],
+        "correct_answer": "Caching the results of functions that modify global state.",
+        "topic": "Python Caching",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `__iter__` and `__next__` methods?",
+        "options": [
+            "`__iter__` returns an iterator object, while `__next__` returns the next item from the iterator.",
+            "`__iter__` returns the next item from the iterator, while `__next__` returns an iterator object.",
+            "They are interchangeable; both methods do the same thing.",
+            "Only `__iter__` is required for creating iterators; `__next__` is optional."
+        ],
+        "correct_answer": "`__iter__` returns an iterator object, while `__next__` returns the next item from the iterator.",
+        "topic": "Python Iterators",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `mro()` method in Python classes?",
+        "options": [
+            "To define the order in which methods are resolved in inheritance hierarchies.",
+            "To return a list of all the methods defined in a class.",
+            "To modify the method resolution order of a class.",
+            "To check if a method is defined in the class or inherited from a parent class."
+        ],
+        "correct_answer": "To define the order in which methods are resolved in inheritance hierarchies.",
+        "topic": "Python Inheritance",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following libraries is best suited for numerical computation and array manipulation in Python?",
+        "options": [
+            "requests",
+            "BeautifulSoup",
+            "NumPy",
+            "Flask"
+        ],
+        "correct_answer": "NumPy",
+        "topic": "Python Libraries",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n\n```python\ndef outer(x):\n    def inner(y):\n        nonlocal x\n        x += 1\n        return x + y\n    return inner\n\nfunc = outer(5)\nprint(func(5), func(5))```\n\nWhat will be the output?",
+        "options": [
+            "10 10",
+            "10 11",
+            "11 11",
+            "Error"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the behavior of `__slots__` in Python classes?",
+        "options": [
+            "It disables garbage collection for instances.",
+            "It prevents adding new attributes to instances after creation and reduces memory usage.",
+            "It automatically creates getter and setter methods for all attributes.",
+            "It enforces type hints for all attributes."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `asyncio.gather()` function?",
+        "options": [
+            "To execute coroutines sequentially.",
+            "To execute coroutines concurrently and return a single aggregate result.",
+            "To create a new event loop.",
+            "To schedule a single coroutine for execution."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following is true about metaclasses in Python?",
+        "options": [
+            "They are subclasses of the `object` class.",
+            "They are used to define the behavior of classes.",
+            "They are used to create instances of classes.",
+            "They are automatically generated by the interpreter."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What does the `functools.lru_cache` decorator do?",
+        "options": [
+            "It implements a least recently used cache to store function results.",
+            "It limits the number of times a function can be called.",
+            "It encrypts the function's code.",
+            "It optimizes the function's execution speed using just-in-time compilation."
+        ],
+        "correct_answer": "A",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n\n```python\nclass A:\n    def __init__(self, x):\n        self._x = x\n\n    @property\n    def x(self):\n        return self._x\n\n    @x.setter\n    def x(self, value):\n        if value < 0:\n            raise ValueError(\"Value must be non-negative\")\n        self._x = value\n\na = A(5)\na.x = -1\nprint(a.x)```\n\nWhat will happen when this code is executed?",
+        "options": [
+            "The code will print 5.",
+            "The code will print -1.",
+            "The code will raise a ValueError.",
+            "The code will execute without error, setting a._x to -1."
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `multiprocessing.Pool.map` and `multiprocessing.Pool.apply_async`?",
+        "options": [
+            "`map` applies a function to an iterable and blocks until all results are available, while `apply_async` applies a function asynchronously and returns an `AsyncResult` object.",
+            "`map` only works with functions that accept a single argument, while `apply_async` can handle functions with multiple arguments.",
+            "`map` uses shared memory, while `apply_async` uses message passing.",
+            "There is no difference; they are interchangeable."
+        ],
+        "correct_answer": "A",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `__prepare__` method in metaclasses?",
+        "options": [
+            "To customize the namespace dictionary that is passed to the class's body.",
+            "To specify the base classes of the class.",
+            "To define the order in which attributes are initialized.",
+            "To perform validation on the class's attributes."
+        ],
+        "correct_answer": "A",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will be the output of the following code?\n\n```python\ndef gen():\n    for i in range(3):\n        yield i\n\nfor x in gen():\n    print(x)\n    break\nelse:\n    print(\"Else block\")```",
+        "options": [
+            "0\nElse block",
+            "0",
+            "0\n1\n2\nElse block",
+            "Error"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is a 'weakref' in Python, and what problem does it solve?",
+        "options": [
+            "A reference to a variable that cannot be modified.",
+            "A reference that does not prevent an object from being garbage collected.",
+            "A reference that is automatically garbage collected after a short time.",
+            "A reference that is only valid within a specific scope."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `pickle.dump()` and `pickle.dumps()`?",
+        "options": [
+            "`dump()` writes the serialized object to a file, while `dumps()` returns the serialized object as a string.",
+            "`dumps()` writes the serialized object to a file, while `dump()` returns the serialized object as a string.",
+            "There is no difference between them; they are interchangeable.",
+            "`dump()` is used for binary data, while `dumps()` is used for text data."
+        ],
+        "correct_answer": "A",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following statements about the Global Interpreter Lock (GIL) in CPython is most accurate?",
+        "options": [
+            "It allows multiple native threads to execute Python bytecode concurrently on multiple cores.",
+            "It prevents multiple native threads from executing Python bytecode concurrently in a single process.",
+            "It is not present in CPython.",
+            "It only affects I/O-bound operations."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What are decorators with parameters also known as?",
+        "options": [
+            "Syntactic Sugar",
+            "Decorator Factories",
+            "Meta Decorators",
+            "Abstract Decorators"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the use of `types.SimpleNamespace`?",
+        "options": [
+            "Creating dynamic classes",
+            "Creating immutable namespaces",
+            "Creating simple attribute access namespaces",
+            "Creating a new thread"
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider this python code. What will it print?\n```python\nimport sys\n\ndef process_data(data):\n    try:\n        result = 10 / len(data)\n        print(\"Result:\", result)\n    except ZeroDivisionError as e:\n        print(\"Division by zero error:\", e, file=sys.stderr)\n    except Exception as e:\n        print(\"An unexpected error occurred:\", e, file=sys.stderr)\n    finally:\n        print(\"Processing complete.\")\n\nprocess_data([])\n```",
+        "options": [
+            "Result: inf\nProcessing complete.",
+            "Division by zero error: division by zero\nProcessing complete.",
+            "An unexpected error occurred: division by zero\nProcessing complete.",
+            "Processing complete."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of `contextlib.suppress`?",
+        "options": [
+            "To suppress all warnings.",
+            "To suppress a specific exception within a context.",
+            "To suppress output to stdout.",
+            "To suppress garbage collection."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `issubclass(A, B)` and `type(A) is B`?",
+        "options": [
+            "They are equivalent.",
+            "`issubclass` checks if `A` is a subclass of `B`, while `type(A) is B` checks if the type of `A` is exactly `B`.",
+            "`issubclass` checks if the instance of `A` is an instance of `B`, while `type(A) is B` checks if `A` and `B` are of same type.",
+            "`issubclass` checks if `A` is an instance of `B`, while `type(A) is B` checks if `A` is a subclass of `B`."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the main benefit of using Cython?",
+        "options": [
+            "Automatic memory management.",
+            "Converting Python code to C for performance improvement.",
+            "Improved debugging capabilities.",
+            "Native support for multithreading."
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will be the output of the following code snippet?\n```python\nclass MyDescriptor:\n    def __get__(self, instance, owner):\n        return instance._my_attr * 2 if instance else None\n\n    def __set__(self, instance, value):\n        instance._my_attr = value\n\nclass MyClass:\n    my_attr = MyDescriptor()\n\n    def __init__(self, value):\n        self.my_attr = value\n\nobj = MyClass(5)\nprint(obj.my_attr)```",
+        "options": [
+            "5",
+            "10",
+            "None",
+            "Error"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n```python\nimport threading\nimport time\n\nx = 0\nlock = threading.Lock()\n\ndef increment():\n    global x\n    for _ in range(100000):\n        with lock:\n            x += 1\n\nthreads = []\nfor _ in range(2):\n    thread = threading.Thread(target=increment)\n    threads.append(thread)\n    thread.start()\n\nfor thread in threads:\n    thread.join()\n\nprint(x)\n```\nWhat is the most likely output?",
+        "options": [
+            "100000",
+            "200000",
+            "A value between 100000 and 200000",
+            "A value that is always less than 100000"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n\n```python\ndef outer_func():\n    x = 10\n    def inner_func():\n        nonlocal x\n        x = 20\n        print(x)\n    inner_func()\n    print(x)\n\nouter_func()\n```\n\nWhat will be the output?",
+        "options": [
+            "10\\n10",
+            "20\\n10",
+            "10\\n20",
+            "20\\n20"
+        ],
+        "correct_answer": "20\\n20",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the primary difference between `__slots__` and dynamically adding attributes to a class?",
+        "options": [
+            "`__slots__` only allows a fixed set of attributes, while dynamic attributes allow unlimited attributes.",
+            "`__slots__` makes the object immutable, while dynamic attributes do not.",
+            "`__slots__` improves memory usage and potentially speed, while dynamic attributes can increase memory footprint.",
+            "`__slots__` is required for inheritance, dynamic attributes are not."
+        ],
+        "correct_answer": "`__slots__` improves memory usage and potentially speed, while dynamic attributes can increase memory footprint.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the code: `[x**2 for x in range(5) if x % 2 == 0]`. What is the space complexity of this list comprehension?",
+        "options": [
+            "O(1)",
+            "O(n)",
+            "O(log n)",
+            "O(n^2)"
+        ],
+        "correct_answer": "O(n)",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following statements about metaclasses is most accurate?",
+        "options": [
+            "Metaclasses are used to create instances of a class.",
+            "Metaclasses are used to control the creation of classes.",
+            "Metaclasses are used to define static methods.",
+            "Metaclasses are used to define abstract classes."
+        ],
+        "correct_answer": "Metaclasses are used to control the creation of classes.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `yield from` statement in Python?",
+        "options": [
+            "To delegate to a subgenerator.",
+            "To create a new coroutine.",
+            "To define a custom iterator.",
+            "To return multiple values from a function."
+        ],
+        "correct_answer": "To delegate to a subgenerator.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will the following code print? `print(1 == 1 == 1)`",
+        "options": [
+            "True",
+            "False",
+            "TypeError",
+            "SyntaxError"
+        ],
+        "correct_answer": "True",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What does the `lru_cache` decorator from the `functools` module do?",
+        "options": [
+            "It implements a least recently used (LRU) cache for function results.",
+            "It logs all function calls.",
+            "It limits the number of times a function can be called.",
+            "It automatically vectorizes a function for NumPy arrays."
+        ],
+        "correct_answer": "It implements a least recently used (LRU) cache for function results.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `subprocess.run` and `subprocess.Popen`?",
+        "options": [
+            "`subprocess.run` is asynchronous, while `subprocess.Popen` is synchronous.",
+            "`subprocess.run` waits for the command to complete and returns a `CompletedProcess` instance, while `subprocess.Popen` returns immediately a `Popen` object.",
+            "`subprocess.run` can only execute built-in shell commands, while `subprocess.Popen` can execute any executable.",
+            "`subprocess.Popen` is deprecated and `subprocess.run` should always be used instead."
+        ],
+        "correct_answer": "`subprocess.run` waits for the command to complete and returns a `CompletedProcess` instance, while `subprocess.Popen` returns immediately a `Popen` object.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Consider the following code:\n```python\nclass MyDescriptor:\n    def __get__(self, instance, owner):\n        return instance._my_attribute\n\n    def __set__(self, instance, value):\n        instance._my_attribute = value\n\nclass MyClass:\n    my_attribute = MyDescriptor()\n\n    def __init__(self, value):\n        self._my_attribute = value\n\nobj = MyClass(10)\nprint(obj.my_attribute)\n```\nWhat will be the output?",
+        "options": [
+            "10",
+            "MyDescriptor object",
+            "TypeError",
+            "AttributeError"
+        ],
+        "correct_answer": "10",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the primary benefit of using asynchronous programming with `async` and `await`?",
+        "options": [
+            "Improved code readability.",
+            "True parallel execution of code.",
+            "Ability to handle multiple I/O-bound operations concurrently without threads.",
+            "Reduced memory usage."
+        ],
+        "correct_answer": "Ability to handle multiple I/O-bound operations concurrently without threads.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `__prepare__` method in a metaclass?",
+        "options": [
+            "To prepare the instance of the metaclass.",
+            "To prepare the namespace for the class being created.",
+            "To prepare the arguments for the `__new__` method.",
+            "To prepare the inheritance list for the class being created."
+        ],
+        "correct_answer": "To prepare the namespace for the class being created.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the potential impact of using mutable default arguments in a function definition?",
+        "options": [
+            "It raises a TypeError.",
+            "The default argument is created each time the function is called.",
+            "The default argument is shared between function calls, potentially leading to unexpected behavior.",
+            "It slows down the function execution."
+        ],
+        "correct_answer": "The default argument is shared between function calls, potentially leading to unexpected behavior.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following correctly describes the Global Interpreter Lock (GIL) in CPython?",
+        "options": [
+            "It allows true parallel execution of Python threads on multi-core processors.",
+            "It allows only one thread to hold control of the Python interpreter at any one time.",
+            "It manages memory allocation for Python objects.",
+            "It handles I/O operations in Python."
+        ],
+        "correct_answer": "It allows only one thread to hold control of the Python interpreter at any one time.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will be the output of the following code?\n```python\ndef gen():\n    yield 1\n    yield 2\n\ng = gen()\nprint(list(g))\nprint(list(g))\n```",
+        "options": [
+            "[1, 2]\\n[1, 2]",
+            "[1, 2]\\n[]",
+            "[]\\n[1, 2]",
+            "[1, 2]\\nNone"
+        ],
+        "correct_answer": "[1, 2]\\n[]",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the difference between `is` and `==` in Python?",
+        "options": [
+            "`is` compares the values of two objects, while `==` compares their identity.",
+            "`is` compares the identity of two objects, while `==` compares their values.",
+            "They are interchangeable.",
+            "`is` is used for comparing numbers, while `==` is used for comparing strings."
+        ],
+        "correct_answer": "`is` compares the identity of two objects, while `==` compares their values.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `weakref` module?",
+        "options": [
+            "To create weak references to objects, allowing them to be garbage collected even if they are still referenced.",
+            "To create strong references to objects, preventing them from being garbage collected.",
+            "To manage memory allocation more efficiently.",
+            "To improve the performance of garbage collection."
+        ],
+        "correct_answer": "To create weak references to objects, allowing them to be garbage collected even if they are still referenced.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which of the following is NOT a valid use case for context managers (using the `with` statement)?",
+        "options": [
+            "Automatically closing files.",
+            "Acquiring and releasing locks.",
+            "Managing database connections.",
+            "Implementing caching."
+        ],
+        "correct_answer": "Implementing caching.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What will the following code print?\n```python\nclass A:\n    def __init__(self):\n        self.x = 10\n\n    def f(self):\n        print(self.x)\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.x = 20\n\nb = B()\na = A()\nb.f()\na.f()\n```",
+        "options": [
+            "10\\n10",
+            "20\\n10",
+            "10\\n20",
+            "20\\n20"
+        ],
+        "correct_answer": "20\\n10",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the significance of the `typing` module in Python?",
+        "options": [
+            "It enforces strict type checking at runtime.",
+            "It allows for static type checking through type hints and tools like MyPy.",
+            "It enables dynamic type creation.",
+            "It replaces the need for docstrings."
+        ],
+        "correct_answer": "It allows for static type checking through type hints and tools like MyPy.",
+        "topic": "Python",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the purpose of the `pickle` module and what are some of its potential security concerns?",
+        "options": [
+            "The `pickle` module is for serializing and de-serializing Python object structures. A security concern is that unpickling data from untrusted sources can lead to arbitrary code execution.",
+            "The `pickle` module is for encrypting and decrypting data. A security concern is key management.",
+            "The `pickle` module is for creating persistent data stores. A security concern is data corruption.",
+            "The `pickle` module is for optimizing Python code. A security concern is increased memory usage."
+        ],
+        "correct_answer": "The `pickle` module is for serializing and de-serializing Python object structures. A security concern is that unpickling data from untrusted sources can lead to arbitrary code execution.",
+        "topic": "Python",
+        "difficulty": "hard"
+    }
+]

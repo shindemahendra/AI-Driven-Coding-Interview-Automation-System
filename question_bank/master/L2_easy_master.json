@@ -1,49 +1,37 @@
 [
     {
-        "question": "What is the output of `print(2 + 2)`?",
+        "question": "What is the correct file extension for Python files?",
         "options": [
-            "22",
-            "4",
-            "2+2",
-            "Error"
+            ".py",
+            ".pt",
+            ".pyt",
+            ".p"
         ],
-        "correct_answer": "B",
+        "correct_answer": ".py",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
         "question": "Which keyword is used to define a function in Python?",
         "options": [
-            "define",
-            "function",
             "def",
-            "fun"
+            "function",
+            "define",
+            "func"
         ],
-        "correct_answer": "C",
+        "correct_answer": "def",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What data type is used to store whole numbers?",
+        "question": "What is the output of `print(2 + 2)`?",
         "options": [
-            "float",
-            "string",
-            "int",
-            "boolean"
+            "22",
+            "4",
+            "Error",
+            "0"
         ],
-        "correct_answer": "C",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output of `print('Hello' + 'World')`?",
-        "options": [
-            "Hello World",
-            "Hello+World",
-            "HelloWorld",
-            "Error"
-        ],
-        "correct_answer": "C",
+        "correct_answer": "4",
         "topic": "Python",
         "difficulty": "easy"
     },
@@ -51,196 +39,64 @@
         "question": "Which of the following is a valid variable name in Python?",
         "options": [
             "1variable",
-            "variable 1",
-            "variable-1",
-            "_variable"
+            "my-variable",
+            "my_variable",
+            "my variable"
         ],
-        "correct_answer": "D",
+        "correct_answer": "my_variable",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the value of `x` after `x = 5; x = x + 2`?",
+        "question": "What is the purpose of the `print()` function?",
         "options": [
-            "5",
-            "2",
-            "7",
-            "Error"
+            "To get input from the user",
+            "To display output to the console",
+            "To define a variable",
+            "To perform mathematical calculations"
         ],
-        "correct_answer": "C",
+        "correct_answer": "To display output to the console",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "Which symbol is used for comments in Python?",
+        "question": "Which of these data types is NOT a built-in data type in Python?",
         "options": [
-            "//",
-            "/*",
-            "#",
-            "--"
+            "Integer",
+            "Float",
+            "String",
+            "Character"
         ],
-        "correct_answer": "C",
+        "correct_answer": "Character",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the data type of `True`?",
+        "question": "What does the `//` operator do in Python?",
         "options": [
-            "int",
-            "string",
-            "float",
-            "bool"
+            "Floor division",
+            "Exponentiation",
+            "Regular division",
+            "Modulo"
         ],
-        "correct_answer": "D",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does the `len()` function do?",
-        "options": [
-            "Adds two numbers",
-            "Finds the length of a string or list",
-            "Prints to the console",
-            "Calculates the square root"
-        ],
-        "correct_answer": "B",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output of `print(3 > 2)`?",
-        "options": [
-            "True",
-            "False",
-            "Error",
-            "1"
-        ],
-        "correct_answer": "A",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which of these is a comparison operator?",
-        "options": [
-            "=",
-            "+",
-            "*",
-            "=="
-        ],
-        "correct_answer": "D",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does `print(type(5.0))` output?",
-        "options": [
-            "<class 'int'>",
-            "<class 'str'>",
-            "<class 'float'>",
-            "<class 'bool'>"
-        ],
-        "correct_answer": "C",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the purpose of the `input()` function?",
-        "options": [
-            "To display output",
-            "To read input from the user",
-            "To define a function",
-            "To import a module"
-        ],
-        "correct_answer": "B",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What will `print(2 * 'abc')` output?",
-        "options": [
-            "abcabc",
-            "2abc",
-            "abc",
-            "Error"
-        ],
-        "correct_answer": "A",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which is the correct way to import the `math` module?",
-        "options": [
-            "import math",
-            "include math",
-            "using math",
-            "get math"
-        ],
-        "correct_answer": "A",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does `if` statement do?",
-        "options": [
-            "Repeats a block of code",
-            "Executes a block of code only if a condition is true",
-            "Defines a function",
-            "Prints a message"
-        ],
-        "correct_answer": "B",
+        "correct_answer": "Floor division",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
         "question": "What is a list in Python?",
         "options": [
-            "A data type that stores single value",
-            "A data type that stores ordered collection of items",
-            "A keyword",
-            "A function"
+            "An immutable sequence",
+            "A mutable sequence",
+            "A set of key-value pairs",
+            "A single value"
         ],
-        "correct_answer": "B",
+        "correct_answer": "A mutable sequence",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "How do you access the first element of a list called `my_list`?",
-        "options": [
-            "my_list[1]",
-            "my_list.first()",
-            "my_list[0]",
-            "my_list.get(1)"
-        ],
-        "correct_answer": "C",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which of the following is a string?",
-        "options": [
-            "123",
-            "True",
-            "[1,2,3]",
-            "\"Hello\""
-        ],
-        "correct_answer": "D",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output of `print(5 % 2)`?",
-        "options": [
-            "2.5",
-            "1",
-            "0",
-            "Error"
-        ],
-        "correct_answer": "B",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the correct way to comment a single line in Python?",
+        "question": "How do you write a single-line comment in Python?",
         "options": [
             "// This is a comment",
             "# This is a comment",
@@ -252,38 +108,146 @@
         "difficulty": "easy"
     },
     {
-        "question": "Which of the following is NOT a valid data type in Python?",
+        "question": "What is the correct way to check if a variable `x` is equal to 5?",
         "options": [
-            "int",
-            "float",
-            "string",
-            "boolean"
+            "x = 5",
+            "x == 5",
+            "x is 5",
+            "x := 5"
         ],
-        "correct_answer": "boolean",
+        "correct_answer": "x == 5",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the output of `print(2 + 2)`?",
+        "question": "Which of the following is used for taking user input in Python?",
         "options": [
-            "22",
+            "output()",
+            "print()",
+            "input()",
+            "scan()"
+        ],
+        "correct_answer": "input()",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `len('hello')`?",
+        "options": [
             "4",
-            "Error",
-            "None"
+            "5",
+            "6",
+            "Error"
         ],
-        "correct_answer": "4",
+        "correct_answer": "5",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What does the `len()` function do in Python?",
+        "question": "What does the `range()` function return?",
         "options": [
-            "Calculates the length of a string, list, or tuple.",
-            "Prints the output to the console.",
-            "Defines a new function.",
-            "Reads a file."
+            "A list",
+            "A tuple",
+            "A range object",
+            "A string"
         ],
-        "correct_answer": "Calculates the length of a string, list, or tuple.",
+        "correct_answer": "A range object",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is a dictionary in Python?",
+        "options": [
+            "An ordered sequence",
+            "A sequence of numbers",
+            "A collection of key-value pairs",
+            "A data type that holds only integers"
+        ],
+        "correct_answer": "A collection of key-value pairs",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the value of `True + False` in Python?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `if` statement?",
+        "options": [
+            "To define a function",
+            "To loop through a sequence",
+            "To execute code based on a condition",
+            "To print output"
+        ],
+        "correct_answer": "To execute code based on a condition",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which keyword is used to start a loop in Python?",
+        "options": [
+            "loop",
+            "start",
+            "for",
+            "while"
+        ],
+        "correct_answer": "for",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you access the first element of a list named `my_list`?",
+        "options": [
+            "my_list[1]",
+            "my_list[0]",
+            "my_list.first()",
+            "my_list[first]"
+        ],
+        "correct_answer": "my_list[0]",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will be the output of the following code snippet? \n `x = 5 \n y = '5' \n print(x == y)`",
+        "options": [
+            "True",
+            "False",
+            "Error",
+            "5"
+        ],
+        "correct_answer": "False",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the use of `pass` statement in Python?",
+        "options": [
+            "It indicates the end of the program",
+            "It acts as a placeholder",
+            "It forces the program to exit",
+            "It prints a message to the console"
+        ],
+        "correct_answer": "It acts as a placeholder",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the correct way to comment a single line in Python?",
+        "options": [
+            "// This is a comment",
+            "# This is a comment",
+            "/* This is a comment */",
+            "<!-- This is a comment -->"
+        ],
+        "correct_answer": "# This is a comment",
         "topic": "Python",
         "difficulty": "easy"
     },
@@ -300,26 +264,122 @@
         "difficulty": "easy"
     },
     {
-        "question": "What is the purpose of the `if` statement in Python?",
+        "question": "What is the data type of `True` in Python?",
         "options": [
-            "To define a loop.",
-            "To execute a block of code only if a condition is true.",
-            "To import a module.",
-            "To define a function."
+            "integer",
+            "string",
+            "boolean",
+            "float"
         ],
-        "correct_answer": "To execute a block of code only if a condition is true.",
+        "correct_answer": "boolean",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is a list in Python?",
+        "question": "Which of the following is a valid way to print 'Hello, World!' in Python?",
         "options": [
-            "An ordered and mutable sequence of elements.",
-            "An immutable sequence of characters.",
-            "A mathematical function.",
-            "A type of loop."
+            "print('Hello, World!')",
+            "Print('Hello, World!')",
+            "echo 'Hello, World!'",
+            "System.out.println('Hello, World!')"
         ],
-        "correct_answer": "An ordered and mutable sequence of elements.",
+        "correct_answer": "print('Hello, World!')",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `len()` function do in Python?",
+        "options": [
+            "Returns the length of a string",
+            "Returns the length of a list",
+            "Returns the length of a tuple",
+            "All of the above"
+        ],
+        "correct_answer": "All of the above",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `1 + 1` in Python?",
+        "options": [
+            "11",
+            "1",
+            "2",
+            "Error"
+        ],
+        "correct_answer": "2",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following is a mutable data type in Python?",
+        "options": [
+            "string",
+            "tuple",
+            "integer",
+            "list"
+        ],
+        "correct_answer": "list",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `if` statement in Python?",
+        "options": [
+            "To loop through a sequence",
+            "To define a function",
+            "To execute a block of code if a condition is true",
+            "To handle exceptions"
+        ],
+        "correct_answer": "To execute a block of code if a condition is true",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the value of `x` after the following code: `x = 5; x = x + 2`?",
+        "options": [
+            "5",
+            "2",
+            "7",
+            "10"
+        ],
+        "correct_answer": "7",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `type(3.14)`?",
+        "options": [
+            "int",
+            "float",
+            "string",
+            "boolean"
+        ],
+        "correct_answer": "float",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which operator is used for exponentiation in Python?",
+        "options": [
+            "^",
+            "*",
+            "**",
+            "//"
+        ],
+        "correct_answer": "**",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is a 'module' in Python?",
+        "options": [
+            "A built-in function",
+            "A file containing Python code",
+            "A type of data",
+            "A keyword"
+        ],
+        "correct_answer": "A file containing Python code",
         "topic": "Python",
         "difficulty": "easy"
     },
@@ -336,35 +396,71 @@
         "difficulty": "easy"
     },
     {
-        "question": "Which of the following is used for exponentiation in Python?",
+        "question": "What is the result of `5 / 2` in Python 3?",
         "options": [
-            "^",
-            "*",
-            "**",
-            "//"
+            "2",
+            "2.5",
+            "2.0",
+            "Error"
         ],
-        "correct_answer": "**",
+        "correct_answer": "2.5",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the output of `print(type(5.0))`?",
+        "question": "Which loop is used to iterate over a sequence in Python?",
         "options": [
-            "<class 'int'>",
-            "<class 'float'>",
-            "<class 'str'>",
-            "<class 'bool'>"
+            "while",
+            "if",
+            "for",
+            "repeat"
         ],
-        "correct_answer": "<class 'float'>",
+        "correct_answer": "for",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the correct way to import the `math` module?",
+        "question": "What is the purpose of the `range()` function?",
         "options": [
-            "import math",
+            "To generate a sequence of numbers",
+            "To calculate the range of a dataset",
+            "To check if a number is within a certain range",
+            "To convert a string to a range"
+        ],
+        "correct_answer": "To generate a sequence of numbers",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following is used to check for equality in Python?",
+        "options": [
+            "=",
+            "==",
+            "!=",
+            "<>"
+        ],
+        "correct_answer": "==",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `print(type([1, 2, 3]))`?",
+        "options": [
+            "tuple",
+            "set",
+            "list",
+            "array"
+        ],
+        "correct_answer": "list",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the correct way to import the `math` module in Python?",
+        "options": [
             "include math",
-            "from math import all",
+            "import math",
+            "from math",
             "using math"
         ],
         "correct_answer": "import math",
@@ -372,386 +468,62 @@
         "difficulty": "easy"
     },
     {
-        "question": "What is the purpose of a `for` loop in Python?",
+        "question": "What does the `input()` function do in Python?",
         "options": [
-            "To define a function.",
-            "To iterate over a sequence (like a list or string).",
-            "To handle errors.",
-            "To perform mathematical calculations."
+            "Prints output to the console",
+            "Reads input from the user",
+            "Defines a variable",
+            "Imports a module"
         ],
-        "correct_answer": "To iterate over a sequence (like a list or string).",
+        "correct_answer": "Reads input from the user",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What does `//` operator do in Python?",
+        "question": "What is the correct way to print 'Hello, World!' in Python?",
         "options": [
-            "Division",
-            "Floor Division",
-            "Exponentiation",
-            "Modulo"
+            "print('Hello, World!')",
+            "Print('Hello, World!')",
+            "echo 'Hello, World!'",
+            "system.out.println('Hello, World!')"
         ],
-        "correct_answer": "Floor Division",
+        "correct_answer": "print('Hello, World!')",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What will `print(3 > 5)` output?",
+        "question": "Which of the following is NOT a Python data type?",
         "options": [
-            "True",
-            "False",
-            "Error",
-            "None"
+            "int",
+            "float",
+            "string",
+            "character"
         ],
-        "correct_answer": "False",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which function is used to get input from the user?",
-        "options": [
-            "print()",
-            "input()",
-            "get()",
-            "read()"
-        ],
-        "correct_answer": "input()",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is a tuple in Python?",
-        "options": [
-            "An ordered and mutable sequence.",
-            "An ordered and immutable sequence.",
-            "A type of loop.",
-            "A function."
-        ],
-        "correct_answer": "An ordered and immutable sequence.",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you create an empty list in Python?",
-        "options": [
-            "list()",
-            "[]",
-            "{}",
-            "()"
-        ],
-        "correct_answer": "[]",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the purpose of the `else` statement in an `if` statement?",
-        "options": [
-            "To define a function.",
-            "To execute a block of code if the `if` condition is false.",
-            "To import a module.",
-            "To end the program."
-        ],
-        "correct_answer": "To execute a block of code if the `if` condition is false.",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does `print('Hello' + 'World')` output?",
-        "options": [
-            "HelloWorld",
-            "Hello World",
-            "Error",
-            "'Hello' + 'World'"
-        ],
-        "correct_answer": "HelloWorld",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which keyword is used to exit a loop prematurely?",
-        "options": [
-            "stop",
-            "exit",
-            "break",
-            "continue"
-        ],
-        "correct_answer": "break",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the correct file extension for Python files?",
-        "options": [
-            ".py",
-            ".pt",
-            ".p",
-            ".pyt"
-        ],
-        "correct_answer": ".py",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which of the following is a mutable data type in Python?",
-        "options": [
-            "Tuple",
-            "String",
-            "List",
-            "Integer"
-        ],
-        "correct_answer": "List",
+        "correct_answer": "character",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
         "question": "What is the purpose of the `len()` function in Python?",
         "options": [
-            "To find the length of a string",
-            "To calculate the area of a rectangle",
-            "To convert a string to uppercase",
-            "To find the length of any sequence (string, list, tuple)"
+            "To calculate the length of a string or list",
+            "To create a new list",
+            "To convert a string to lowercase",
+            "To find the maximum value in a list"
         ],
-        "correct_answer": "To find the length of any sequence (string, list, tuple)",
+        "correct_answer": "To calculate the length of a string or list",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What does the `//` operator do in Python?",
+        "question": "Which symbol is used for comments in Python?",
         "options": [
-            "Division",
-            "Floor Division",
-            "Exponentiation",
-            "Modulus"
+            "#",
+            "//",
+            "/*",
+            "--"
         ],
-        "correct_answer": "Floor Division",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which keyword is used to define a function in Python?",
-        "options": [
-            "function",
-            "def",
-            "define",
-            "func"
-        ],
-        "correct_answer": "def",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What will be the output of `print(2 + 2)`?",
-        "options": [
-            "22",
-            "4",
-            "Error",
-            "2+2"
-        ],
-        "correct_answer": "4",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which of the following is a valid comment in Python?",
-        "options": [
-            "// This is a comment",
-            "/* This is a comment */",
-            "# This is a comment",
-            "' This is a comment'"
-        ],
-        "correct_answer": "# This is a comment",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the purpose of the `input()` function in Python?",
-        "options": [
-            "To print output to the console",
-            "To read input from the user",
-            "To import a module",
-            "To define a function"
-        ],
-        "correct_answer": "To read input from the user",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does the `+` operator do when used with strings?",
-        "options": [
-            "Addition",
-            "Subtraction",
-            "Concatenation",
-            "Multiplication"
-        ],
-        "correct_answer": "Concatenation",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output of `print(type([1, 2, 3]))`?",
-        "options": [
-            "<class 'tuple'>",
-            "<class 'list'>",
-            "<class 'set'>",
-            "<class 'array'>"
-        ],
-        "correct_answer": "<class 'list'>",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is a boolean data type?",
-        "options": [
-            "A number with decimal point",
-            "A sequence of characters",
-            "True or False",
-            "A collection of items"
-        ],
-        "correct_answer": "True or False",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the value of `x` after `x = 5; x += 2`?",
-        "options": [
-            "5",
-            "2",
-            "7",
-            "3"
-        ],
-        "correct_answer": "7",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which of these is NOT a built-in function in Python?",
-        "options": [
-            "print()",
-            "len()",
-            "sort()",
-            "input()"
-        ],
-        "correct_answer": "sort()",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the purpose of the 'if' statement?",
-        "options": [
-            "To define a loop",
-            "To handle errors",
-            "To make decisions based on a condition",
-            "To define a function"
-        ],
-        "correct_answer": "To make decisions based on a condition",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does the '%' operator do in Python?",
-        "options": [
-            "Division",
-            "Floor Division",
-            "Exponentiation",
-            "Modulus"
-        ],
-        "correct_answer": "Modulus",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which data structure uses key-value pairs?",
-        "options": [
-            "List",
-            "Tuple",
-            "Dictionary",
-            "Set"
-        ],
-        "correct_answer": "Dictionary",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you access the first element of a list called `my_list`?",
-        "options": [
-            "my_list[1]",
-            "my_list.first()",
-            "my_list[0]",
-            "my_list.get(0)"
-        ],
-        "correct_answer": "my_list[0]",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What keyword is used to create a loop that executes a block of code repeatedly?",
-        "options": [
-            "if",
-            "else",
-            "while",
-            "try"
-        ],
-        "correct_answer": "while",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which of the following is used for importing modules in Python?",
-        "options": [
-            "use",
-            "include",
-            "import",
-            "get"
-        ],
-        "correct_answer": "import",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does the '==' operator do in Python?",
-        "options": [
-            "Assignment",
-            "Equality comparison",
-            "Greater than",
-            "Less than"
-        ],
-        "correct_answer": "Equality comparison",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the correct way to comment a single line in Python?",
-        "options": [
-            "// This is a comment",
-            "# This is a comment",
-            "/* This is a comment */",
-            "-- This is a comment"
-        ],
-        "correct_answer": "# This is a comment",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which data type is used to store a sequence of characters?",
-        "options": [
-            "Integer",
-            "Float",
-            "String",
-            "Boolean"
-        ],
-        "correct_answer": "String",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output of `print(2 + 2)`?",
-        "options": [
-            "22",
-            "4",
-            "Error",
-            "None"
-        ],
-        "correct_answer": "4",
+        "correct_answer": "#",
         "topic": "Python",
         "difficulty": "easy"
     },
@@ -768,62 +540,242 @@
         "difficulty": "easy"
     },
     {
-        "question": "What is the purpose of the `len()` function?",
+        "question": "What will be the output of `print(2 + 2)`?",
         "options": [
-            "To find the length of a string, list, or tuple",
-            "To calculate the square root of a number",
-            "To convert a string to lowercase",
-            "To print output to the console"
+            "22",
+            "4",
+            "Error",
+            "2 + 2"
         ],
-        "correct_answer": "To find the length of a string, list, or tuple",
+        "correct_answer": "4",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "Which of the following is a mutable data type in Python?",
+        "question": "Which of the following is a valid variable name in Python?",
         "options": [
-            "Tuple",
-            "String",
-            "Integer",
-            "List"
+            "1variable",
+            "variable 1",
+            "variable-1",
+            "_variable"
         ],
-        "correct_answer": "List",
+        "correct_answer": "_variable",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What does the `//` operator do in Python?",
+        "question": "What is the operator for exponentiation in Python?",
         "options": [
-            "Division",
-            "Floor Division",
-            "Modulo",
-            "Exponentiation"
+            "**",
+            "^",
+            "*",
+            "//"
         ],
-        "correct_answer": "Floor Division",
+        "correct_answer": "**",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "Which of the following is a boolean value?",
+        "question": "What is the purpose of the `if` statement?",
+        "options": [
+            "To execute a block of code only if a condition is true",
+            "To define a function",
+            "To repeat a block of code",
+            "To import a module"
+        ],
+        "correct_answer": "To execute a block of code only if a condition is true",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following creates an empty list?",
+        "options": [
+            "list()",
+            "[]",
+            "{}",
+            "()"
+        ],
+        "correct_answer": "[]",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `print(type(5))` output?",
+        "options": [
+            "<class 'int'>",
+            "<class 'float'>",
+            "<class 'str'>",
+            "<class 'bool'>"
+        ],
+        "correct_answer": "<class 'int'>",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of `5 > 3`?",
         "options": [
             "True",
-            "1",
-            "\"True\"",
-            "true"
+            "False",
+            "Error",
+            "5"
         ],
         "correct_answer": "True",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "How do you import the `math` module in Python?",
+        "question": "How do you access the first element of a list called `my_list`?",
         "options": [
-            "include math",
+            "my_list[0]",
+            "my_list[1]",
+            "my_list.first()",
+            "my_list(0)"
+        ],
+        "correct_answer": "my_list[0]",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does `//` operator do in Python?",
+        "options": [
+            "Floor division",
+            "Normal division",
+            "Exponentiation",
+            "Modulo"
+        ],
+        "correct_answer": "Floor division",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following is an immutable data type?",
+        "options": [
+            "list",
+            "dictionary",
+            "tuple",
+            "set"
+        ],
+        "correct_answer": "tuple",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the use of `in` keyword in Python?",
+        "options": [
+            "To check if an element exists in a sequence",
+            "To include a module",
+            "To iterate over a sequence",
+            "To define a class"
+        ],
+        "correct_answer": "To check if an element exists in a sequence",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does `str()` function do?",
+        "options": [
+            "Converts a value to a string",
+            "Converts a string to integer",
+            "Converts a value to a list",
+            "Converts a value to a boolean"
+        ],
+        "correct_answer": "Converts a value to a string",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you import a module named `math` in Python?",
+        "options": [
             "import math",
-            "using math",
-            "load math"
+            "include math",
+            "from math import *",
+            "using math"
         ],
         "correct_answer": "import math",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which loop is used to execute a block of code repeatedly as long as a condition is true?",
+        "options": [
+            "while loop",
+            "for loop",
+            "if loop",
+            "do-while loop"
+        ],
+        "correct_answer": "while loop",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `range()` function return?",
+        "options": [
+            "A sequence of numbers",
+            "A list of numbers",
+            "A string of numbers",
+            "A tuple of numbers"
+        ],
+        "correct_answer": "A sequence of numbers",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the correct way to comment a single line in Python?",
+        "options": [
+            "// This is a comment",
+            "# This is a comment",
+            "/* This is a comment */",
+            "<!-- This is a comment -->"
+        ],
+        "correct_answer": "# This is a comment",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following is NOT a valid data type in Python?",
+        "options": [
+            "Integer",
+            "Float",
+            "Character",
+            "Boolean"
+        ],
+        "correct_answer": "Character",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `print(2 + 2)`?",
+        "options": [
+            "22",
+            "4",
+            "Error",
+            "0"
+        ],
+        "correct_answer": "4",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which keyword is used to define a function in Python?",
+        "options": [
+            "def",
+            "function",
+            "define",
+            "fun"
+        ],
+        "correct_answer": "def",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `len()` function do?",
+        "options": [
+            "Returns the length of a string, list, or tuple",
+            "Prints the length of an object",
+            "Deletes an object",
+            "Creates a new object"
+        ],
+        "correct_answer": "Returns the length of a string, list, or tuple",
         "topic": "Python",
         "difficulty": "easy"
     },
@@ -840,50 +792,158 @@
         "difficulty": "easy"
     },
     {
-        "question": "Which operator is used for assignment in Python?",
+        "question": "Which operator is used for exponentiation in Python?",
         "options": [
-            "=",
-            "==",
-            "+=",
-            "->"
+            "^",
+            "*",
+            "**",
+            "//"
         ],
-        "correct_answer": "=",
+        "correct_answer": "**",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the index of the first element in a list?",
+        "question": "What is the value of `True and False`?",
         "options": [
-            "1",
-            "0",
-            "-1",
+            "True",
+            "False",
+            "Error",
             "None"
         ],
-        "correct_answer": "0",
+        "correct_answer": "False",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the correct way to write an `if` statement?",
+        "question": "What will `print(3 > 2)` output?",
         "options": [
-            "if x > y then:",
-            "if x > y:",
-            "if (x > y)",
-            "if x > y"
+            "True",
+            "False",
+            "Error",
+            "None"
         ],
-        "correct_answer": "if x > y:",
+        "correct_answer": "True",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "Which of the following is NOT a valid loop type in Python?",
+        "question": "How do you convert a string to an integer in Python?",
         "options": [
-            "for",
-            "while",
-            "do-while",
-            "None of the above"
+            "str()",
+            "int()",
+            "float()",
+            "bool()"
         ],
-        "correct_answer": "do-while",
+        "correct_answer": "int()",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `if` statement?",
+        "options": [
+            "To define a loop",
+            "To define a function",
+            "To make a conditional decision",
+            "To print output"
+        ],
+        "correct_answer": "To make a conditional decision",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is a list in Python?",
+        "options": [
+            "An immutable sequence",
+            "A mutable sequence",
+            "A set of unique elements",
+            "A string"
+        ],
+        "correct_answer": "A mutable sequence",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following is used to create a tuple?",
+        "options": [
+            "[]",
+            "{}",
+            "()",
+            "<>"
+        ],
+        "correct_answer": "()",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `print('Hello'[1])`?",
+        "options": [
+            "H",
+            "e",
+            "l",
+            "o"
+        ],
+        "correct_answer": "e",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `in` operator do in Python?",
+        "options": [
+            "Checks if a variable is initialized",
+            "Checks if a value exists in a sequence",
+            "Performs mathematical operations",
+            "Defines a function"
+        ],
+        "correct_answer": "Checks if a value exists in a sequence",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which loop is best suited for iterating a known number of times?",
+        "options": [
+            "while loop",
+            "if loop",
+            "for loop",
+            "do-while loop"
+        ],
+        "correct_answer": "for loop",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `else` statement used with an `if` statement?",
+        "options": [
+            "To execute code if the condition is true",
+            "To define a function",
+            "To execute code if the condition is false",
+            "To create a loop"
+        ],
+        "correct_answer": "To execute code if the condition is false",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you access the first element of a list named `my_list`?",
+        "options": [
+            "my_list(1)",
+            "my_list[0]",
+            "my_list.first()",
+            "my_list.get(1)"
+        ],
+        "correct_answer": "my_list[0]",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to add an element to the end of a list?",
+        "options": [
+            "insert()",
+            "add()",
+            "append()",
+            "extend()"
+        ],
+        "correct_answer": "append",
         "topic": "Python",
         "difficulty": "easy"
     },
@@ -893,190 +953,154 @@
             "To take input from the user",
             "To display output to the console",
             "To define a function",
-            "To import a module"
+            "To perform mathematical operations"
         ],
         "correct_answer": "To display output to the console",
         "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "Which data structure uses key-value pairs?",
-        "options": [
-            "List",
-            "Tuple",
-            "Dictionary",
-            "Set"
-        ],
-        "correct_answer": "Dictionary",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does the `in` keyword do?",
-        "options": [
-            "Checks if a value is present in a sequence",
-            "Imports a module",
-            "Defines a function",
-            "Iterates through a loop"
-        ],
-        "correct_answer": "Checks if a value is present in a sequence",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output of `print(3 * 'hello')`?",
-        "options": [
-            "hellohellohello",
-            "hello * 3",
-            "Error",
-            "3hello"
-        ],
-        "correct_answer": "hellohellohello",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is a collection of ordered and unchangeable items called in Python?",
-        "options": [
-            "List",
-            "Set",
-            "Dictionary",
-            "Tuple"
-        ],
-        "correct_answer": "Tuple",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the use of `pass` statement in Python?",
-        "options": [
-            "To define a function",
-            "To create a loop",
-            "It is a null statement. Nothing happens when it executes",
-            "To raise an exception"
-        ],
-        "correct_answer": "It is a null statement. Nothing happens when it executes",
-        "topic": "Python",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the correct file extension for Python files?",
-        "options": [
-            ".py",
-            ".pt",
-            ".pyt",
-            ".p"
-        ],
-        "correct_answer": ".py",
-        "topic": "Python Basics",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which of the following is a valid comment in Python?",
+        "question": "What is the correct way to comment a single line in Python?",
         "options": [
             "// This is a comment",
             "# This is a comment",
             "/* This is a comment */",
             "<!-- This is a comment -->"
         ],
-        "correct_answer": "# This is a comment",
-        "topic": "Python Basics",
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
         "question": "Which keyword is used to define a function in Python?",
         "options": [
-            "def",
             "function",
+            "def",
             "define",
             "func"
         ],
-        "correct_answer": "def",
-        "topic": "Functions",
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the output of `print(2 + 2)`?",
+        "question": "What data type is used to store a sequence of characters?",
+        "options": [
+            "integer",
+            "float",
+            "string",
+            "boolean"
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will be the output of `print(2 + 2)`?",
         "options": [
             "22",
             "4",
-            "Error",
-            "0"
+            "2 + 2",
+            "Error"
         ],
-        "correct_answer": "4",
-        "topic": "Basic Operations",
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "Which of the following is a built-in data type in Python?",
+        "question": "Which of the following is a valid variable name in Python?",
         "options": [
-            "Tree",
-            "Array",
-            "String",
-            "Graph"
+            "1variable",
+            "variable 1",
+            "variable-1",
+            "variable_1"
         ],
-        "correct_answer": "String",
-        "topic": "Data Types",
+        "correct_answer": "D",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the purpose of the `len()` function?",
+        "question": "Which operator is used for exponentiation in Python?",
         "options": [
-            "To check the length of an object",
-            "To calculate the square root",
-            "To convert a number to a string",
-            "To print output to the console"
+            "^",
+            "*",
+            "**",
+            "//"
         ],
-        "correct_answer": "To check the length of an object",
-        "topic": "Built-in Functions",
+        "correct_answer": "C",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What does the `if` statement do in Python?",
+        "question": "What does the `len()` function do in Python?",
         "options": [
-            "Defines a loop",
-            "Defines a function",
-            "Executes code based on a condition",
-            "Prints output to the console"
+            "Find the length of a string or list",
+            "Convert a string to lowercase",
+            "Convert a number to a string",
+            "Sort a list"
         ],
-        "correct_answer": "Executes code based on a condition",
-        "topic": "Control Flow",
+        "correct_answer": "A",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "Which operator is used for assignment in Python?",
+        "question": "What will be the output of `print(type(5.0))`?",
         "options": [
-            "==",
-            "=",
-            "+=",
-            "->"
-        ],
-        "correct_answer": "=",
-        "topic": "Operators",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What will `print(type(10))` output?",
-        "options": [
-            "<class 'str'>",
             "<class 'int'>",
             "<class 'float'>",
+            "<class 'str'>",
             "<class 'bool'>"
         ],
-        "correct_answer": "<class 'int'>",
-        "topic": "Data Types",
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is the output of `print(3 > 1)`?",
+        "question": "What is the output of `print(True and False)`?",
         "options": [
             "True",
             "False",
             "Error",
-            "1"
+            "None"
         ],
-        "correct_answer": "True",
-        "topic": "Boolean Logic",
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following is a built-in data structure in Python?",
+        "options": [
+            "Array",
+            "Linked List",
+            "Tuple",
+            "Tree"
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `if` statement in Python?",
+        "options": [
+            "To define a loop",
+            "To define a function",
+            "To execute code based on a condition",
+            "To print output"
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `print('Hello'[1])` output?",
+        "options": [
+            "H",
+            "e",
+            "l",
+            "o"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
@@ -1087,116 +1111,92 @@
             "do-while loop",
             "repeat-until loop"
         ],
-        "correct_answer": "for loop",
-        "topic": "Loops",
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What does the `input()` function do?",
+        "question": "What is the value of `x` after `x = 5; x += 2`?",
         "options": [
-            "Prints output to the console",
-            "Reads input from the user",
-            "Calculates a mathematical expression",
-            "Defines a function"
+            "5",
+            "2",
+            "7",
+            "10"
         ],
-        "correct_answer": "Reads input from the user",
-        "topic": "Input/Output",
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What keyword is used to exit a loop?",
+        "options": [
+            "exit",
+            "return",
+            "break",
+            "continue"
+        ],
+        "correct_answer": "C",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does `//` operator do in Python?",
+        "options": [
+            "Division",
+            "Floor Division",
+            "Exponentiation",
+            "Modulo"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which function is used to get input from the user?",
+        "options": [
+            "print()",
+            "input()",
+            "read()",
+            "scan()"
+        ],
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
         "question": "What is a list in Python?",
         "options": [
-            "An ordered, immutable sequence of items",
-            "An ordered, mutable sequence of items",
+            "An immutable sequence",
+            "A mutable sequence",
             "A set of unique elements",
-            "A dictionary with key-value pairs"
+            "A dictionary"
         ],
-        "correct_answer": "An ordered, mutable sequence of items",
-        "topic": "Data Structures",
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "How do you access the first element of a list called `my_list`?",
+        "question": "Which symbol is used for assignment in Python?",
         "options": [
-            "my_list[1]",
-            "my_list.first()",
-            "my_list[0]",
-            "my_list.get(0)"
+            "==",
+            "=",
+            ":",
+            "+"
         ],
-        "correct_answer": "my_list[0]",
-        "topic": "Data Structures",
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     },
     {
-        "question": "What is a dictionary in Python?",
+        "question": "What is the output of `print(10 % 3)`?",
         "options": [
-            "An ordered sequence of items",
-            "An unordered collection of key-value pairs",
-            "A set of unique elements",
-            "A single variable that stores multiple values"
+            "3",
+            "1",
+            "0",
+            "3.33"
         ],
-        "correct_answer": "An unordered collection of key-value pairs",
-        "topic": "Data Structures",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which keyword is used to exit a loop?",
-        "options": [
-            "stop",
-            "end",
-            "break",
-            "exit"
-        ],
-        "correct_answer": "break",
-        "topic": "Control Flow",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Which of the following is the correct way to create an empty list in Python?",
-        "options": [
-            "list()",
-            "[]",
-            "{}",
-            "()"
-        ],
-        "correct_answer": "[]",
-        "topic": "Data Structures",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the purpose of the `print()` function?",
-        "options": [
-            "To read input from the user",
-            "To display output to the console",
-            "To define a function",
-            "To perform mathematical calculations"
-        ],
-        "correct_answer": "To display output to the console",
-        "topic": "Input/Output",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does the `+` operator do when used with strings?",
-        "options": [
-            "Multiplies the strings",
-            "Concatenates the strings",
-            "Compares the strings",
-            "Subtracts the strings"
-        ],
-        "correct_answer": "Concatenates the strings",
-        "topic": "Operators",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is a tuple in Python?",
-        "options": [
-            "An ordered, mutable sequence of items",
-            "An ordered, immutable sequence of items",
-            "A set of unique elements",
-            "A dictionary with key-value pairs"
-        ],
-        "correct_answer": "An ordered, immutable sequence of items",
-        "topic": "Data Structures",
+        "correct_answer": "B",
+        "topic": "Python",
         "difficulty": "easy"
     }
 ]
