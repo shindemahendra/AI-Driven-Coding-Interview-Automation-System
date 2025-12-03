@@ -2,500 +2,260 @@
     {
         "question": "How do you handle stressful situations?",
         "options": [
-            "Avoid them completely",
-            "Become easily frustrated",
-            "Remain calm and focused",
+            "Avoid the problem",
+            "Take a break then address it",
+            "Ignore everyone",
             "Blame others"
         ],
-        "correct_answer": "Remain calm and focused",
+        "correct_answer": "Take a break then address it",
         "topic": "Stress Management",
         "difficulty": "easy"
     },
     {
-        "question": "What is your preferred communication style?",
-        "options": [
-            "Aggressive and direct",
-            "Passive and indirect",
-            "Assertive and clear",
-            "Avoid communication"
-        ],
-        "correct_answer": "Assertive and clear",
-        "topic": "Communication",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you typically approach teamwork?",
-        "options": [
-            "Prefer to work alone",
-            "Dominate the group",
-            "Actively collaborate",
-            "Avoid responsibility"
-        ],
-        "correct_answer": "Actively collaborate",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you respond to constructive criticism?",
-        "options": [
-            "Become defensive",
-            "Ignore the feedback",
-            "Consider it carefully",
-            "Argue against it"
-        ],
-        "correct_answer": "Consider it carefully",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What motivates you most in a work environment?",
-        "options": [
-            "Money alone",
-            "Recognition alone",
-            "Meaningful work",
-            "Avoiding responsibility"
-        ],
-        "correct_answer": "Meaningful work",
-        "topic": "Motivation",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you deal with conflict within a team?",
-        "options": [
-            "Avoid it at all costs",
-            "Escalate it immediately",
-            "Mediate and find solutions",
-            "Take sides"
-        ],
-        "correct_answer": "Mediate and find solutions",
-        "topic": "Conflict Resolution",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you prioritize tasks when facing multiple deadlines?",
-        "options": [
-            "Randomly choose tasks",
-            "Focus on easiest tasks",
-            "Prioritize by importance",
-            "Ignore deadlines"
-        ],
-        "correct_answer": "Prioritize by importance",
-        "topic": "Time Management",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you adapt to changes in project requirements?",
-        "options": [
-            "Resist the changes",
-            "Complain about the changes",
-            "Embrace and adapt",
-            "Ignore the changes"
-        ],
-        "correct_answer": "Embrace and adapt",
-        "topic": "Adaptability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your typical approach to problem-solving?",
-        "options": [
-            "Avoid problems",
-            "Blame others for problems",
-            "Analyze and find solutions",
-            "Ignore problems"
-        ],
-        "correct_answer": "Analyze and find solutions",
-        "topic": "Problem Solving",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you ensure you understand instructions correctly?",
-        "options": [
-            "Assume understanding",
-            "Never ask questions",
-            "Ask clarifying questions",
-            "Guess the instructions"
-        ],
-        "correct_answer": "Ask clarifying questions",
-        "topic": "Communication",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you maintain a positive attitude at work?",
-        "options": [
-            "Complain frequently",
-            "Focus on negatives",
-            "Focus on positives",
-            "Avoid interaction"
-        ],
-        "correct_answer": "Focus on positives",
-        "topic": "Attitude",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle making a mistake at work?",
-        "options": [
-            "Hide the mistake",
-            "Blame someone else",
-            "Take responsibility",
-            "Ignore the mistake"
-        ],
-        "correct_answer": "Take responsibility",
-        "topic": "Accountability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you give feedback to a colleague?",
-        "options": [
-            "Avoid giving feedback",
-            "Give harsh criticism",
-            "Give constructive feedback",
-            "Gossip behind backs"
-        ],
-        "correct_answer": "Give constructive feedback",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you stay organized at work?",
-        "options": [
-            "Disorganized chaos",
-            "Use effective systems",
-            "Rely on memory",
-            "Avoid organization"
-        ],
-        "correct_answer": "Use effective systems",
-        "topic": "Organization",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle a disagreement with your manager?",
-        "options": [
-            "Become insubordinate",
-            "Avoid communication",
-            "Discuss respectfully",
-            "Publicly complain"
-        ],
-        "correct_answer": "Discuss respectfully",
-        "topic": "Conflict Resolution",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's most important: speed or accuracy?",
-        "options": [
-            "Speed regardless",
-            "Neither is important",
-            "Accuracy first",
-            "Depends on the task"
-        ],
-        "correct_answer": "Depends on the task",
-        "topic": "Decision Making",
-        "difficulty": "medium"
-    },
-    {
-        "question": "Do you prefer independent or collaborative work?",
-        "options": [
-            "Always independent",
-            "Always collaborative",
-            "No preference really",
-            "Depends on project"
-        ],
-        "correct_answer": "Depends on project",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Your role in a team meeting is usually...",
-        "options": [
-            "Silent observer",
-            "Dominate the talking",
-            "Active participant",
-            "Plan my escape"
-        ],
-        "correct_answer": "Active participant",
-        "topic": "Teamwork",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What does 'going the extra mile' mean to you?",
-        "options": [
-            "Avoid extra work",
-            "Minimum effort only",
-            "Exceed expectations",
-            "Not my problem"
-        ],
-        "correct_answer": "Exceed expectations",
-        "topic": "Work Ethic",
-        "difficulty": "medium"
-    },
-    {
-        "question": "When learning a new software skill...",
-        "options": [
-            "Give up easily",
-            "Procrastinate always",
-            "Actively learn",
-            "Hope someone else will"
-        ],
-        "correct_answer": "Actively learn",
-        "topic": "Learning Agility",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle criticism?",
-        "options": [
-            "Ignore it",
-            "Get defensive",
-            "Reflect and learn",
-            "Blame others"
-        ],
-        "correct_answer": "Reflect and learn",
-        "topic": "Communication",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your conflict resolution style?",
-        "options": [
-            "Avoidance",
-            "Collaboration",
-            "Competition",
-            "Accommodation"
-        ],
-        "correct_answer": "Collaboration",
-        "topic": "Conflict Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you prioritize tasks?",
-        "options": [
-            "Randomly",
-            "By urgency",
-            "By importance",
-            "By ease"
-        ],
-        "correct_answer": "By importance",
-        "topic": "Time Management",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What motivates you most?",
-        "options": [
-            "Money",
-            "Recognition",
-            "Challenge",
-            "Security"
-        ],
-        "correct_answer": "Challenge",
-        "topic": "Motivation",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle stress?",
-        "options": [
-            "Panic",
-            "Withdraw",
-            "Problem-solve",
-            "Procrastinate"
-        ],
-        "correct_answer": "Problem-solve",
-        "topic": "Stress Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "Describe your leadership style",
+        "question": "What is your typical leadership style?",
         "options": [
             "Authoritarian",
             "Democratic",
             "Laissez-faire",
-            "Micromanaging"
+            "Dictatorial"
         ],
         "correct_answer": "Democratic",
         "topic": "Leadership",
         "difficulty": "medium"
     },
     {
-        "question": "How do you approach teamwork?",
+        "question": "How do you handle receiving negative feedback?",
         "options": [
-            "Independently",
-            "Collaboratively",
-            "Dominantly",
-            "Passively"
+            "Get defensive",
+            "Become angry",
+            "Analyze and learn from it",
+            "Ignore the feedback"
         ],
-        "correct_answer": "Collaboratively",
-        "topic": "Teamwork",
+        "correct_answer": "Analyze and learn from it",
+        "topic": "Feedback",
         "difficulty": "easy"
     },
     {
-        "question": "How do you adapt to change?",
+        "question": "How do you prioritize tasks?",
         "options": [
-            "Resist change",
-            "Embrace change",
-            "Ignore change",
-            "Fear change"
+            "Randomly",
+            "By deadline and importance",
+            "By personal preference",
+            "Avoid prioritization"
         ],
-        "correct_answer": "Embrace change",
-        "topic": "Adaptability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your greatest strength?",
-        "options": [
-            "Perfectionism",
-            "Communication",
-            "Procrastination",
-            "Stubbornness"
-        ],
-        "correct_answer": "Communication",
-        "topic": "Self-Awareness",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your biggest weakness?",
-        "options": [
-            "Honesty",
-            "Empathy",
-            "Impatience",
-            "Creativity"
-        ],
-        "correct_answer": "Impatience",
-        "topic": "Self-Awareness",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you make decisions?",
-        "options": [
-            "Impulsively",
-            "Logically",
-            "Emotionally",
-            "Randomly"
-        ],
-        "correct_answer": "Logically",
-        "topic": "Decision Making",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you communicate bad news?",
-        "options": [
-            "Abruptly",
-            "Indirectly",
-            "Honestly and kindly",
-            "Avoid communicating"
-        ],
-        "correct_answer": "Honestly and kindly",
-        "topic": "Communication",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's your approach to deadlines?",
-        "options": [
-            "Ignore them",
-            "Rush at the end",
-            "Plan ahead",
-            "Miss them often"
-        ],
-        "correct_answer": "Plan ahead",
+        "correct_answer": "By deadline and importance",
         "topic": "Time Management",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle a difficult client?",
-        "options": [
-            "Argue back",
-            "Become passive",
-            "Listen and empathize",
-            "Ignore their complaints"
-        ],
-        "correct_answer": "Listen and empathize",
-        "topic": "Customer Service",
         "difficulty": "medium"
     },
     {
-        "question": "What is your definition of success?",
+        "question": "How do you motivate a team?",
         "options": [
-            "Wealth",
-            "Power",
-            "Achievement",
-            "Happiness"
+            "Threats and punishment",
+            "Micromanagement",
+            "Positive reinforcement and recognition",
+            "Ignoring their needs"
         ],
-        "correct_answer": "Happiness",
+        "correct_answer": "Positive reinforcement and recognition",
         "topic": "Motivation",
         "difficulty": "medium"
     },
     {
-        "question": "How do you encourage innovation?",
+        "question": "What is your approach to conflict resolution?",
         "options": [
-            "Discourage new ideas",
-            "Brainstorm and support",
-            "Ignore suggestions",
-            "Follow strict rules"
+            "Avoidance",
+            "Aggression",
+            "Collaboration and compromise",
+            "Ignoring the conflict"
         ],
-        "correct_answer": "Brainstorm and support",
-        "topic": "Innovation",
+        "correct_answer": "Collaboration and compromise",
+        "topic": "Conflict Resolution",
         "difficulty": "medium"
     },
     {
-        "question": "How do you handle failure?",
+        "question": "How do you adapt to change?",
         "options": [
-            "Give up easily",
-            "Blame others",
-            "Learn and improve",
-            "Get depressed"
+            "Resist it",
+            "Complain about it",
+            "Embrace it and learn",
+            "Ignore the change"
         ],
-        "correct_answer": "Learn and improve",
-        "topic": "Resilience",
+        "correct_answer": "Embrace it and learn",
+        "topic": "Adaptability",
         "difficulty": "easy"
     },
     {
-        "question": "How do you give feedback?",
+        "question": "How do you communicate with difficult people?",
         "options": [
-            "Harshly and directly",
-            "Vaguely and indirectly",
-            "Constructively and specifically",
-            "Avoid giving feedback"
+            "Yell louder",
+            "Avoid them",
+            "Remain calm and respectful",
+            "Argue constantly"
         ],
-        "correct_answer": "Constructively and specifically",
+        "correct_answer": "Remain calm and respectful",
         "topic": "Communication",
         "difficulty": "medium"
     },
     {
-        "question": "What is your ideal work environment?",
+        "question": "How do you handle a project failure?",
         "options": [
-            "Strictly structured",
-            "Highly independent",
-            "Collaborative and supportive",
-            "Competitive and aggressive"
+            "Blame others",
+            "Give up",
+            "Analyze the cause and learn",
+            "Ignore the failure"
         ],
-        "correct_answer": "Collaborative and supportive",
-        "topic": "Teamwork",
+        "correct_answer": "Analyze the cause and learn",
+        "topic": "Problem Solving",
         "difficulty": "medium"
     },
     {
-        "question": "How do you stay organized?",
+        "question": "How do you ensure teamwork?",
         "options": [
-            "Avoid organization",
-            "Use a planner",
-            "Rely on memory",
-            "Delegate all tasks"
+            "Individual work only",
+            "Ignoring others' opinions",
+            "Encouraging collaboration",
+            "Micromanaging everyone"
         ],
-        "correct_answer": "Use a planner",
-        "topic": "Organization",
+        "correct_answer": "Encouraging collaboration",
+        "topic": "Teamwork",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you deal with ambiguity?",
+        "options": [
+            "Freeze and panic",
+            "Make assumptions without validation",
+            "Seek clarification and explore options",
+            "Ignore the ambiguity"
+        ],
+        "correct_answer": "Seek clarification and explore options",
+        "topic": "Problem Solving",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you provide constructive criticism?",
+        "options": [
+            "Focus on personal attacks",
+            "Be vague and unhelpful",
+            "Offer specific and actionable suggestions",
+            "Avoid giving any feedback"
+        ],
+        "correct_answer": "Offer specific and actionable suggestions",
+        "topic": "Communication",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is your approach to lifelong learning?",
+        "options": [
+            "Never learn new things",
+            "Only learn when forced",
+            "Continuously seek new knowledge",
+            "Avoid challenges"
+        ],
+        "correct_answer": "Continuously seek new knowledge",
+        "topic": "Growth Mindset",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you show empathy to others?",
+        "options": [
+            "Ignore their feelings",
+            "Dismiss their concerns",
+            "Actively listen and understand",
+            "Judge them harshly"
+        ],
+        "correct_answer": "Actively listen and understand",
+        "topic": "Emotional Intelligence",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you handle pressure from deadlines?",
+        "options": [
+            "Procrastinate and avoid",
+            "Become easily overwhelmed",
+            "Stay focused and organized",
+            "Blame others for delays"
+        ],
+        "correct_answer": "Stay focused and organized",
+        "topic": "Stress Management",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What do you value most in a team?",
+        "options": [
+            "Individual achievements only",
+            "Lack of communication",
+            "Open communication and respect",
+            "Cutthroat competition"
+        ],
+        "correct_answer": "Open communication and respect",
+        "topic": "Teamwork",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you maintain a positive attitude?",
+        "options": [
+            "Complain constantly",
+            "Focus on the negative",
+            "Practice gratitude and optimism",
+            "Ignore problems"
+        ],
+        "correct_answer": "Practice gratitude and optimism",
+        "topic": "Attitude",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you handle ethical dilemmas?",
+        "options": [
+            "Ignore them",
+            "Choose the easiest option",
+            "Consult with others and follow ethical guidelines",
+            "Do what benefits you most"
+        ],
+        "correct_answer": "Consult with others and follow ethical guidelines",
+        "topic": "Ethics",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you deal with disagreement?",
+        "options": [
+            "Become defensive",
+            "Avoid the person",
+            "Listen respectfully and find common ground",
+            "Interrupt and argue"
+        ],
+        "correct_answer": "Listen respectfully and find common ground",
+        "topic": "Conflict Resolution",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What motivates you?",
+        "options": [
+            "Money only",
+            "Power over others",
+            "Challenge and growth",
+            "Avoiding responsibility"
+        ],
+        "correct_answer": "Challenge and growth",
+        "topic": "Motivation",
         "difficulty": "easy"
     },
     {
         "question": "How do you handle stressful situations?",
         "options": [
-            "Avoid them completely",
-            "Panic and react impulsively",
-            "Break down the problem and prioritize",
-            "Ignore the stress"
+            "Avoid the situation",
+            "Delegate the task",
+            "Break it down into smaller tasks",
+            "Ignore the pressure"
         ],
-        "correct_answer": "Break down the problem and prioritize",
+        "correct_answer": "Break it down into smaller tasks",
         "topic": "Stress Management",
-        "difficulty": "medium"
+        "difficulty": "easy"
     },
     {
         "question": "What is your preferred communication style?",
         "options": [
-            "Passive",
             "Aggressive",
+            "Passive",
             "Assertive",
             "Avoidant"
         ],
@@ -504,468 +264,228 @@
         "difficulty": "easy"
     },
     {
-        "question": "How do you respond to constructive criticism?",
+        "question": "How do you deal with conflicting viewpoints?",
         "options": [
-            "Get defensive and argue",
-            "Ignore it completely",
-            "Consider it objectively and learn",
-            "Become discouraged and give up"
+            "Avoid the conflict",
+            "Dominate the discussion",
+            "Find common ground",
+            "Ignore the other person"
         ],
-        "correct_answer": "Consider it objectively and learn",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your approach to teamwork?",
-        "options": [
-            "Prefer to work alone",
-            "Only contribute when asked",
-            "Actively collaborate and support",
-            "Dominate the discussion"
-        ],
-        "correct_answer": "Actively collaborate and support",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle conflict with a colleague?",
-        "options": [
-            "Avoid them entirely",
-            "Become confrontational",
-            "Seek a mutually agreeable solution",
-            "Report them immediately"
-        ],
-        "correct_answer": "Seek a mutually agreeable solution",
+        "correct_answer": "Find common ground",
         "topic": "Conflict Resolution",
         "difficulty": "medium"
     },
     {
-        "question": "How do you prioritize tasks with tight deadlines?",
+        "question": "How do you approach teamwork?",
         "options": [
-            "Do them randomly",
-            "Focus on the easiest ones first",
-            "Prioritize based on importance and urgency",
-            "Ignore the deadlines"
+            "Work independently",
+            "Avoid collaboration",
+            "Actively participate",
+            "Only follow instructions"
         ],
-        "correct_answer": "Prioritize based on importance and urgency",
-        "topic": "Time Management",
+        "correct_answer": "Actively participate",
+        "topic": "Teamwork",
         "difficulty": "easy"
-    },
-    {
-        "question": "What motivates you the most at work?",
-        "options": [
-            "Money only",
-            "Recognition only",
-            "Challenging projects and growth",
-            "Avoiding work"
-        ],
-        "correct_answer": "Challenging projects and growth",
-        "topic": "Motivation",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you adapt to changing priorities?",
-        "options": [
-            "Resist the changes",
-            "Complain about the changes",
-            "Adapt willingly and efficiently",
-            "Ignore the new priorities"
-        ],
-        "correct_answer": "Adapt willingly and efficiently",
-        "topic": "Adaptability",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you maintain a positive attitude?",
-        "options": [
-            "Always complain",
-            "Focus on the negative",
-            "Practice gratitude and positivity",
-            "Ignore your feelings"
-        ],
-        "correct_answer": "Practice gratitude and positivity",
-        "topic": "Positivity",
-        "difficulty": "medium"
     },
     {
         "question": "What is your approach to problem-solving?",
         "options": [
             "Avoid problems",
-            "Blame others",
-            "Analyze and find solutions",
-            "Ignore the problem"
+            "Impulsive decisions",
+            "Systematic approach",
+            "Rely on others"
         ],
-        "correct_answer": "Analyze and find solutions",
+        "correct_answer": "Systematic approach",
         "topic": "Problem Solving",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you handle criticism?",
+        "options": [
+            "Get defensive",
+            "Ignore it",
+            "Analyze and learn",
+            "Take it personally"
+        ],
+        "correct_answer": "Analyze and learn",
+        "topic": "Feedback",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How important is time management to you?",
+        "options": [
+            "Not important",
+            "Somewhat important",
+            "Very important",
+            "Irrelevant"
+        ],
+        "correct_answer": "Very important",
+        "topic": "Time Management",
         "difficulty": "easy"
+    },
+    {
+        "question": "What motivates you in a work environment?",
+        "options": [
+            "Money only",
+            "Recognition and growth",
+            "Avoiding work",
+            "Power"
+        ],
+        "correct_answer": "Recognition and growth",
+        "topic": "Motivation",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you adapt to change?",
+        "options": [
+            "Resist change",
+            "Complain constantly",
+            "Embrace new opportunities",
+            "Ignore changes"
+        ],
+        "correct_answer": "Embrace new opportunities",
+        "topic": "Adaptability",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is your leadership style?",
+        "options": [
+            "Authoritarian",
+            "Laissez-faire",
+            "Democratic",
+            "Micromanaging"
+        ],
+        "correct_answer": "Democratic",
+        "topic": "Leadership",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you set goals?",
+        "options": [
+            "Randomly",
+            "Unrealistically",
+            "SMART goals",
+            "Avoid setting goals"
+        ],
+        "correct_answer": "SMART goals",
+        "topic": "Goal Setting",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you stay organized?",
+        "options": [
+            "Disorganized chaos",
+            "Random methods",
+            "Structured systems",
+            "Don't prioritize"
+        ],
+        "correct_answer": "Structured systems",
+        "topic": "Organization",
+        "difficulty": "medium"
     },
     {
         "question": "How do you handle failure?",
         "options": [
-            "Give up immediately",
-            "Blame external factors",
-            "Learn from mistakes and improve",
-            "Pretend it never happened"
+            "Give up easily",
+            "Blame others",
+            "Learn from mistakes",
+            "Ignore the failure"
         ],
-        "correct_answer": "Learn from mistakes and improve",
+        "correct_answer": "Learn from mistakes",
         "topic": "Resilience",
         "difficulty": "medium"
     },
     {
-        "question": "How do you demonstrate leadership?",
+        "question": "What are your strongest interpersonal skills?",
         "options": [
-            "By micromanaging others",
-            "By avoiding responsibility",
-            "By inspiring and guiding others",
-            "By taking credit for others' work"
+            "Ignoring people",
+            "Arguing constantly",
+            "Empathy and listening",
+            "Avoiding interaction"
         ],
-        "correct_answer": "By inspiring and guiding others",
-        "topic": "Leadership",
+        "correct_answer": "Empathy and listening",
+        "topic": "Interpersonal Skills",
         "difficulty": "easy"
     },
     {
-        "question": "What is your approach to learning new skills?",
+        "question": "How do you prioritize tasks?",
         "options": [
-            "Avoid learning",
-            "Only learn when forced",
-            "Actively seek opportunities to learn",
-            "Believe you already know everything"
+            "Randomly",
+            "Based on difficulty",
+            "Urgency and importance",
+            "Ignoring deadlines"
         ],
-        "correct_answer": "Actively seek opportunities to learn",
+        "correct_answer": "Urgency and importance",
+        "topic": "Prioritization",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is your approach to learning new things?",
+        "options": [
+            "Resist learning",
+            "Passive learning",
+            "Active engagement",
+            "Avoid new information"
+        ],
+        "correct_answer": "Active engagement",
         "topic": "Learning Agility",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you give feedback to a colleague?",
-        "options": [
-            "Give only negative feedback",
-            "Avoid giving feedback entirely",
-            "Give specific and constructive feedback",
-            "Give general and vague feedback"
-        ],
-        "correct_answer": "Give specific and constructive feedback",
-        "topic": "Feedback",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you show empathy towards others?",
-        "options": [
-            "Ignore their feelings",
-            "Judge their emotions",
-            "Understand and share their feelings",
-            "Dismiss their experiences"
-        ],
-        "correct_answer": "Understand and share their feelings",
-        "topic": "Empathy",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you maintain professional ethics?",
-        "options": [
-            "By cutting corners",
-            "By compromising values",
-            "By upholding integrity and honesty",
-            "By bending the rules"
-        ],
-        "correct_answer": "By upholding integrity and honesty",
-        "topic": "Ethics",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle difficult clients?",
-        "options": [
-            "Ignore their concerns",
-            "Argue with them",
-            "Listen and find solutions",
-            "Blame the client"
-        ],
-        "correct_answer": "Listen and find solutions",
-        "topic": "Customer Service",
         "difficulty": "medium"
     },
     {
         "question": "How do you contribute to a positive work environment?",
         "options": [
-            "By gossiping about others",
-            "By complaining constantly",
-            "By being supportive and respectful",
-            "By creating drama"
+            "Negativity and gossip",
+            "Avoiding involvement",
+            "Collaboration and support",
+            "Complaining constantly"
         ],
-        "correct_answer": "By being supportive and respectful",
-        "topic": "Work Environment",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you demonstrate creativity?",
-        "options": [
-            "By following the same routines",
-            "By avoiding new ideas",
-            "By generating innovative solutions",
-            "By copying others' work"
-        ],
-        "correct_answer": "By generating innovative solutions",
-        "topic": "Creativity",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your response to unexpected challenges?",
-        "options": [
-            "Give up immediately",
-            "Panic and freeze",
-            "Assess the situation and adapt",
-            "Ignore the challenge"
-        ],
-        "correct_answer": "Assess the situation and adapt",
-        "topic": "Adaptability",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle criticism?",
-        "options": [
-            "Ignore it",
-            "Get defensive",
-            "Learn from it",
-            "Argue back"
-        ],
-        "correct_answer": "Learn from it",
-        "topic": "Communication",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What motivates you most at work?",
-        "options": [
-            "Money",
-            "Recognition",
-            "Challenges",
-            "Easy tasks"
-        ],
-        "correct_answer": "Challenges",
-        "topic": "Motivation",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you prioritize tasks?",
-        "options": [
-            "By urgency",
-            "By interest",
-            "Randomly",
-            "By ease"
-        ],
-        "correct_answer": "By urgency",
-        "topic": "Time Management",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Describe your leadership style.",
-        "options": [
-            "Authoritarian",
-            "Delegative",
-            "Laissez-faire",
-            "Collaborative"
-        ],
-        "correct_answer": "Collaborative",
-        "topic": "Leadership",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle stress?",
-        "options": [
-            "Avoid it",
-            "Panic",
-            "Exercise",
-            "Blame others"
-        ],
-        "correct_answer": "Exercise",
-        "topic": "Stress Management",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your greatest weakness?",
-        "options": [
-            "Perfectionism",
-            "Laziness",
-            "Dishonesty",
-            "Lack of skills"
-        ],
-        "correct_answer": "Perfectionism",
-        "topic": "Self-Awareness",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you deal with conflict?",
-        "options": [
-            "Avoid it",
-            "Confront it",
-            "Ignore it",
-            "Escalate it"
-        ],
-        "correct_answer": "Confront it",
-        "topic": "Conflict Resolution",
-        "difficulty": "medium"
-    },
-    {
-        "question": "Are you a team player?",
-        "options": [
-            "No",
-            "Sometimes",
-            "Yes",
-            "Rarely"
-        ],
-        "correct_answer": "Yes",
+        "correct_answer": "Collaboration and support",
         "topic": "Teamwork",
         "difficulty": "easy"
     },
     {
-        "question": "How do you learn new things?",
+        "question": "How do you deal with tight deadlines?",
         "options": [
-            "By reading",
-            "By doing",
-            "By watching",
-            "All of these"
+            "Panic and stress",
+            "Procrastination",
+            "Focus and efficiency",
+            "Ignoring the deadline"
         ],
-        "correct_answer": "All of these",
-        "topic": "Learning Agility",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Do you adapt to change easily?",
-        "options": [
-            "Never",
-            "Sometimes",
-            "Usually",
-            "Always"
-        ],
-        "correct_answer": "Usually",
-        "topic": "Adaptability",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How important is work-life balance?",
-        "options": [
-            "Not important",
-            "Slightly important",
-            "Very important",
-            "Irrelevant"
-        ],
-        "correct_answer": "Very important",
-        "topic": "Wellbeing",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your definition of success?",
-        "options": [
-            "Money",
-            "Happiness",
-            "Power",
-            "Status"
-        ],
-        "correct_answer": "Happiness",
-        "topic": "Personal Values",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you provide feedback?",
-        "options": [
-            "Bluntly",
-            "Vaguely",
-            "Constructively",
-            "Negatively"
-        ],
-        "correct_answer": "Constructively",
-        "topic": "Communication",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's your approach to problem solving?",
-        "options": [
-            "Avoidance",
-            "Reactive",
-            "Proactive",
-            "Ignoring"
-        ],
-        "correct_answer": "Proactive",
-        "topic": "Problem Solving",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle tight deadlines?",
-        "options": [
-            "Panic",
-            "Procrastinate",
-            "Stay focused",
-            "Give up"
-        ],
-        "correct_answer": "Stay focused",
+        "correct_answer": "Focus and efficiency",
         "topic": "Time Management",
         "difficulty": "medium"
     },
     {
-        "question": "Are you comfortable taking risks?",
+        "question": "What is your negotiation style?",
         "options": [
-            "Never",
-            "Sometimes",
-            "Often",
-            "Always"
+            "Aggressive demands",
+            "Giving in easily",
+            "Finding win-win solutions",
+            "Avoiding negotiation"
         ],
-        "correct_answer": "Sometimes",
-        "topic": "Decision Making",
+        "correct_answer": "Finding win-win solutions",
+        "topic": "Negotiation",
         "difficulty": "medium"
     },
     {
-        "question": "How do you stay organized?",
+        "question": "How do you handle ambiguity?",
         "options": [
-            "Chaos",
-            "Lists",
-            "Forgetfulness",
-            "Disarray"
+            "Become paralyzed",
+            "Avoid making decisions",
+            "Seek clarity and adapt",
+            "Ignore the uncertainty"
         ],
-        "correct_answer": "Lists",
-        "topic": "Organization",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Do you take initiative?",
-        "options": [
-            "Rarely",
-            "Never",
-            "Often",
-            "Sometimes"
-        ],
-        "correct_answer": "Often",
-        "topic": "Initiative",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle repetitive tasks?",
-        "options": [
-            "Complain",
-            "Delegate",
-            "Find efficiency",
-            "Avoid"
-        ],
-        "correct_answer": "Find efficiency",
-        "topic": "Work Ethic",
+        "correct_answer": "Seek clarity and adapt",
+        "topic": "Adaptability",
         "difficulty": "medium"
-    },
-    {
-        "question": "How do you show empathy?",
-        "options": [
-            "Ignore",
-            "Listen actively",
-            "Judge",
-            "Interrupt"
-        ],
-        "correct_answer": "Listen actively",
-        "topic": "Empathy",
-        "difficulty": "easy"
     },
     {
         "question": "How do you handle tight deadlines?",
         "options": [
-            "Avoid them at all costs",
+            "Avoid them entirely",
             "Prioritize and focus",
-            "Procrastinate then panic",
-            "Blame others for delays"
+            "Panic and get stressed",
+            "Ask for extensions immediately"
         ],
         "correct_answer": "Prioritize and focus",
         "topic": "Time Management",
@@ -975,9 +495,9 @@
         "question": "What is your preferred communication style?",
         "options": [
             "Aggressive and direct",
-            "Passive and quiet",
+            "Passive and indirect",
             "Clear and concise",
-            "Avoid communication"
+            "Vague and ambiguous"
         ],
         "correct_answer": "Clear and concise",
         "topic": "Communication",
@@ -986,216 +506,696 @@
     {
         "question": "How do you react to constructive criticism?",
         "options": [
-            "Get defensive and argue",
+            "Get defensive and angry",
             "Ignore it completely",
-            "Consider it and learn",
-            "Become angry and upset"
+            "Accept it and learn",
+            "Argue against it"
         ],
-        "correct_answer": "Consider it and learn",
+        "correct_answer": "Accept it and learn",
         "topic": "Feedback",
         "difficulty": "easy"
     },
     {
-        "question": "Describe your problem-solving approach?",
+        "question": "What motivates you most at work?",
         "options": [
-            "Avoid problems altogether",
-            "Quick and impulsive decisions",
-            "Systematic and analytical",
-            "Ask someone else to solve it"
+            "Earning money",
+            "Recognition and praise",
+            "Challenging projects",
+            "Avoiding work"
         ],
-        "correct_answer": "Systematic and analytical",
-        "topic": "Problem Solving",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you motivate a struggling team member?",
-        "options": [
-            "Publicly criticize them",
-            "Ignore their struggles",
-            "Offer support and encouragement",
-            "Do their work for them"
-        ],
-        "correct_answer": "Offer support and encouragement",
-        "topic": "Leadership",
-        "difficulty": "medium"
+        "correct_answer": "Challenging projects",
+        "topic": "Motivation",
+        "difficulty": "easy"
     },
     {
         "question": "How do you handle conflict with a coworker?",
         "options": [
             "Avoid them completely",
-            "Gossip about them",
-            "Address it directly and respectfully",
-            "Escalate immediately"
+            "Confront them aggressively",
+            "Discuss calmly and find solution",
+            "Gossip about them"
         ],
-        "correct_answer": "Address it directly and respectfully",
+        "correct_answer": "Discuss calmly and find solution",
         "topic": "Conflict Resolution",
         "difficulty": "medium"
     },
     {
-        "question": "What is your preferred team role?",
+        "question": "What is your approach to teamwork?",
         "options": [
-            "Dominating leader",
-            "Passive follower",
-            "Collaborative contributor",
-            "Lone wolf"
+            "Prefer to work alone",
+            "Participate actively and collaborate",
+            "Let others do all the work",
+            "Disrupt the team"
         ],
-        "correct_answer": "Collaborative contributor",
+        "correct_answer": "Participate actively and collaborate",
         "topic": "Teamwork",
         "difficulty": "easy"
     },
     {
-        "question": "How do you manage stress in a demanding role?",
+        "question": "How do you stay organized?",
         "options": [
-            "Isolate yourself completely",
-            "Panic and become overwhelmed",
-            "Take breaks and practice self-care",
-            "Work non-stop until burnout"
+            "Don't bother with organization",
+            "Use a system and stick to it",
+            "Rely on memory",
+            "Procrastinate until the last minute"
         ],
-        "correct_answer": "Take breaks and practice self-care",
+        "correct_answer": "Use a system and stick to it",
+        "topic": "Organization",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you adapt to change?",
+        "options": [
+            "Resist it strongly",
+            "Complain about it constantly",
+            "Embrace it and learn",
+            "Ignore it and hope it goes away"
+        ],
+        "correct_answer": "Embrace it and learn",
+        "topic": "Adaptability",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you handle stress at work?",
+        "options": [
+            "Panic and become unproductive",
+            "Blame others for the stress",
+            "Take breaks and manage tasks",
+            "Ignore it until it explodes"
+        ],
+        "correct_answer": "Take breaks and manage tasks",
         "topic": "Stress Management",
         "difficulty": "medium"
     },
     {
-        "question": "How do you adapt to changing priorities?",
+        "question": "What do you do when you make a mistake?",
         "options": [
-            "Resist the changes",
-            "Complain about the changes",
-            "Adapt quickly and efficiently",
-            "Ignore the new priorities"
+            "Deny it completely",
+            "Blame someone else",
+            "Admit it and fix it",
+            "Hide it and hope no one notices"
         ],
-        "correct_answer": "Adapt quickly and efficiently",
-        "topic": "Adaptability",
+        "correct_answer": "Admit it and fix it",
+        "topic": "Responsibility",
         "difficulty": "easy"
     },
     {
-        "question": "What is your approach to learning new skills?",
+        "question": "How do you handle a difficult client?",
         "options": [
-            "Avoid new challenges",
-            "Rely on existing knowledge only",
-            "Embrace learning opportunities",
-            "Procrastinate on training"
+            "Become defensive and argue",
+            "Ignore their concerns",
+            "Listen empathetically and find solution",
+            "Pass them off to someone else"
         ],
-        "correct_answer": "Embrace learning opportunities",
-        "topic": "Learning Agility",
+        "correct_answer": "Listen empathetically and find solution",
+        "topic": "Customer Service",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is your problem-solving approach?",
+        "options": [
+            "Avoid problems entirely",
+            "Act impulsively without thinking",
+            "Analyze the problem and find solutions",
+            "Ask someone else to solve it"
+        ],
+        "correct_answer": "Analyze the problem and find solutions",
+        "topic": "Problem Solving",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you contribute to a positive work environment?",
+        "options": [
+            "Gossip and complain",
+            "Spread negativity",
+            "Offer support and encouragement",
+            "Isolate yourself"
+        ],
+        "correct_answer": "Offer support and encouragement",
+        "topic": "Work Environment",
         "difficulty": "easy"
     },
     {
-        "question": "How do you measure your success?",
+        "question": "What is your opinion about workplace ethics?",
         "options": [
-            "By comparing to others",
-            "Only through monetary gain",
-            "By personal growth and achievement",
-            "Avoiding failure"
-        ],
-        "correct_answer": "By personal growth and achievement",
-        "topic": "Self Awareness",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What do you do when you disagree with your manager?",
-        "options": [
-            "Publicly challenge them",
-            "Silently resent them",
-            "Respectfully voice concerns",
-            "Ignore their instructions"
-        ],
-        "correct_answer": "Respectfully voice concerns",
-        "topic": "Professionalism",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How important is ethical behavior at work?",
-        "options": [
-            "Not very important",
-            "Only when convenient",
+            "Unnecessary rules",
+            "Sometimes important",
             "Extremely important",
-            "Only when being watched"
+            "Open to interpretation"
         ],
         "correct_answer": "Extremely important",
         "topic": "Ethics",
         "difficulty": "easy"
     },
     {
-        "question": "How do you handle setbacks?",
+        "question": "How do you learn new things quickly?",
         "options": [
-            "Give up immediately",
-            "Blame external factors",
-            "Learn from the experience",
-            "Ignore the setback"
+            "Resist learning new things",
+            "Rely on others to teach you",
+            "Research and practice independently",
+            "Assume you already know everything"
         ],
-        "correct_answer": "Learn from the experience",
-        "topic": "Resilience",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does accountability mean to you?",
-        "options": [
-            "Avoiding blame",
-            "Delegating responsibility",
-            "Taking ownership of results",
-            "Ignoring mistakes"
-        ],
-        "correct_answer": "Taking ownership of results",
-        "topic": "Accountability",
+        "correct_answer": "Research and practice independently",
+        "topic": "Learning Agility",
         "difficulty": "medium"
     },
     {
-        "question": "How do you give difficult feedback?",
+        "question": "How do you provide feedback to a colleague?",
         "options": [
-            "Avoid giving it altogether",
-            "Be blunt and insensitive",
-            "Be direct and supportive",
-            "Gossip instead"
+            "Publicly criticize them",
+            "Avoid giving feedback at all",
+            "Provide specific and actionable suggestions",
+            "Give vague and unhelpful comments"
         ],
-        "correct_answer": "Be direct and supportive",
+        "correct_answer": "Provide specific and actionable suggestions",
         "topic": "Feedback",
         "difficulty": "medium"
     },
     {
-        "question": "How do you ensure you understand instructions?",
+        "question": "How do you deal with failure?",
         "options": [
-            "Assume you understand",
-            "Never ask questions",
-            "Ask clarifying questions",
-            "Pretend to understand"
+            "Give up immediately",
+            "Blame external factors",
+            "Learn from it and try again",
+            "Pretend it never happened"
         ],
-        "correct_answer": "Ask clarifying questions",
+        "correct_answer": "Learn from it and try again",
+        "topic": "Resilience",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What do you do when you disagree with your manager?",
+        "options": [
+            "Publicly challenge their authority",
+            "Silently resent their decision",
+            "Respectfully voice your concerns",
+            "Sabotage their ideas"
+        ],
+        "correct_answer": "Respectfully voice your concerns",
+        "topic": "Communication",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you set priorities when multiple tasks compete?",
+        "options": [
+            "Do whatever comes easiest",
+            "Randomly select tasks",
+            "Evaluate urgency and importance",
+            "Avoid tasks altogether"
+        ],
+        "correct_answer": "Evaluate urgency and importance",
+        "topic": "Prioritization",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What are your strongest leadership qualities?",
+        "options": [
+            "Micromanaging tasks",
+            "Ignoring team members",
+            "Motivating and empowering others",
+            "Avoiding responsibility"
+        ],
+        "correct_answer": "Motivating and empowering others",
+        "topic": "Leadership",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you handle stressful situations?",
+        "options": [
+            "Avoid the problem",
+            "Prioritize and stay calm",
+            "Panic immediately",
+            "Blame others"
+        ],
+        "correct_answer": "Prioritize and stay calm",
+        "topic": "Stress Management",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What's your typical conflict resolution style?",
+        "options": [
+            "Avoid conflict at all costs",
+            "Compromise and collaborate",
+            "Always seek to win",
+            "Become aggressive"
+        ],
+        "correct_answer": "Compromise and collaborate",
+        "topic": "Conflict Resolution",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you prefer to receive feedback?",
+        "options": [
+            "Only positive feedback",
+            "Direct and honest feedback",
+            "No feedback at all",
+            "Vague feedback"
+        ],
+        "correct_answer": "Direct and honest feedback",
+        "topic": "Feedback",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you react to criticism?",
+        "options": [
+            "Become defensive immediately",
+            "Listen and learn from it",
+            "Ignore it completely",
+            "Argue with the critic"
+        ],
+        "correct_answer": "Listen and learn from it",
+        "topic": "Feedback",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you handle tight deadlines?",
+        "options": [
+            "Procrastinate until the last minute",
+            "Break down the task and focus",
+            "Give up easily",
+            "Request an extension immediately"
+        ],
+        "correct_answer": "Break down the task and focus",
+        "topic": "Time Management",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What motivates you the most at work?",
+        "options": [
+            "High salary alone",
+            "Challenging projects and growth",
+            "Minimal work required",
+            "Office gossip"
+        ],
+        "correct_answer": "Challenging projects and growth",
+        "topic": "Motivation",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you handle disagreements with colleagues?",
+        "options": [
+            "Avoid them completely",
+            "Seek a mutually agreeable solution",
+            "Insist on your own way",
+            "Publicly criticize them"
+        ],
+        "correct_answer": "Seek a mutually agreeable solution",
+        "topic": "Teamwork",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How important is teamwork to you?",
+        "options": [
+            "Not important at all",
+            "Very important for success",
+            "Only important when convenient",
+            "Irrelevant to my work"
+        ],
+        "correct_answer": "Very important for success",
+        "topic": "Teamwork",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you stay organized?",
+        "options": [
+            "I don't stay organized",
+            "Use calendars and to-do lists",
+            "Rely on memory alone",
+            "Ask others to organize for me"
+        ],
+        "correct_answer": "Use calendars and to-do lists",
+        "topic": "Organization",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What's your approach to problem-solving?",
+        "options": [
+            "Avoid problems altogether",
+            "Analyze and find solutions",
+            "Hope the problem disappears",
+            "Blame someone else"
+        ],
+        "correct_answer": "Analyze and find solutions",
+        "topic": "Problem Solving",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you typically communicate?",
+        "options": [
+            "Unclear and indirect",
+            "Clearly and concisely",
+            "Aggressively and loudly",
+            "Through rumors"
+        ],
+        "correct_answer": "Clearly and concisely",
         "topic": "Communication",
         "difficulty": "easy"
     },
     {
-        "question": "What is your typical response to change?",
+        "question": "How adaptable are you to change?",
         "options": [
-            "Fear and resistance",
-            "Excitement and adaptation",
-            "Indifference",
-            "Anger and frustration"
+            "Resistant to any change",
+            "Embrace change and new ideas",
+            "Only accept change if forced",
+            "Complain about every change"
         ],
-        "correct_answer": "Excitement and adaptation",
+        "correct_answer": "Embrace change and new ideas",
         "topic": "Adaptability",
         "difficulty": "medium"
     },
     {
-        "question": "How do you approach decision-making?",
+        "question": "How do you handle failure?",
         "options": [
-            "Gut feeling only",
-            "Based on emotion",
-            "Data and analysis",
-            "Avoid making decisions"
+            "Give up immediately",
+            "Learn from mistakes and try again",
+            "Blame external factors",
+            "Pretend it never happened"
         ],
-        "correct_answer": "Data and analysis",
+        "correct_answer": "Learn from mistakes and try again",
+        "topic": "Resilience",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How proactive are you at work?",
+        "options": [
+            "Completely reactive only",
+            "Anticipate needs and take initiative",
+            "Wait to be told what to do",
+            "Avoid extra work"
+        ],
+        "correct_answer": "Anticipate needs and take initiative",
+        "topic": "Initiative",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What's your leadership style?",
+        "options": [
+            "Authoritarian and controlling",
+            "Collaborative and supportive",
+            "Laissez-faire and hands-off",
+            "Micromanaging"
+        ],
+        "correct_answer": "Collaborative and supportive",
+        "topic": "Leadership",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you prioritize tasks?",
+        "options": [
+            "Randomly select tasks",
+            "Based on importance and urgency",
+            "Start with easiest tasks first",
+            "Ignore tasks I dislike"
+        ],
+        "correct_answer": "Based on importance and urgency",
+        "topic": "Prioritization",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you respond to feedback from your manager?",
+        "options": [
+            "Dismiss it immediately",
+            "Consider it carefully and act",
+            "Argue against all suggestions",
+            "Ignore it completely"
+        ],
+        "correct_answer": "Consider it carefully and act",
+        "topic": "Feedback",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is your preferred method of learning new skills?",
+        "options": [
+            "Avoid learning new things",
+            "Hands-on experience and practice",
+            "Only read about them",
+            "Delegate learning to others"
+        ],
+        "correct_answer": "Hands-on experience and practice",
+        "topic": "Learning",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you maintain a positive attitude at work?",
+        "options": [
+            "Complain constantly",
+            "Focus on solutions and positive aspects",
+            "Spread negativity to others",
+            "Ignore problems"
+        ],
+        "correct_answer": "Focus on solutions and positive aspects",
+        "topic": "Attitude",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Describe your level of self-awareness",
+        "options": [
+            "Completely unaware of my actions",
+            "Highly aware of strengths and weaknesses",
+            "Believe I'm always right",
+            "Blame others for my mistakes"
+        ],
+        "correct_answer": "Highly aware of strengths and weaknesses",
+        "topic": "Self-Awareness",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you handle stress?",
+        "options": [
+            "Ignore it completely",
+            "Procrastinate until deadline",
+            "Plan and prioritize tasks",
+            "Blame others for it"
+        ],
+        "correct_answer": "Plan and prioritize tasks",
+        "topic": "Stress Management",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What's your conflict resolution style?",
+        "options": [
+            "Avoidance completely",
+            "Compromise seeking resolution",
+            "Aggressive dominance",
+            "Ignoring the problem"
+        ],
+        "correct_answer": "Compromise seeking resolution",
+        "topic": "Conflict Resolution",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you give constructive feedback?",
+        "options": [
+            "Criticize harshly",
+            "Ignore the issue completely",
+            "Sandwich technique always",
+            "Be direct and specific"
+        ],
+        "correct_answer": "Be direct and specific",
+        "topic": "Communication",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you react to criticism?",
+        "options": [
+            "Get defensive always",
+            "Ignore it completely",
+            "Become angry",
+            "Reflect and learn from it"
+        ],
+        "correct_answer": "Reflect and learn from it",
+        "topic": "Feedback",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What motivates you?",
+        "options": [
+            "Financial rewards only",
+            "External recognition",
+            "Learning and growth",
+            "Avoiding responsibility"
+        ],
+        "correct_answer": "Learning and growth",
+        "topic": "Motivation",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you handle failure?",
+        "options": [
+            "Give up immediately",
+            "Blame others involved",
+            "Learn and adapt",
+            "Pretend it did not happen"
+        ],
+        "correct_answer": "Learn and adapt",
+        "topic": "Resilience",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you build rapport?",
+        "options": [
+            "Dominate conversations always",
+            "Avoid eye contact entirely",
+            "Listen actively",
+            "Interrupt frequently"
+        ],
+        "correct_answer": "Listen actively",
+        "topic": "Interpersonal Skills",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What's your teamworking style?",
+        "options": [
+            "Independent worker always",
+            "Micromanage always",
+            "Collaborative approach",
+            "Avoid group work"
+        ],
+        "correct_answer": "Collaborative approach",
+        "topic": "Teamwork",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you manage your time?",
+        "options": [
+            "Procrastinate frequently",
+            "Prioritize effectively",
+            "Forget deadlines consistently",
+            "Ignore planning"
+        ],
+        "correct_answer": "Prioritize effectively",
+        "topic": "Time Management",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you adapt to change?",
+        "options": [
+            "Resist change constantly",
+            "Complain frequently",
+            "Embrace new challenges",
+            "Ignore new directives"
+        ],
+        "correct_answer": "Embrace new challenges",
+        "topic": "Adaptability",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you handle tight deadlines?",
+        "options": [
+            "Panic and give up",
+            "Work calmly and efficiently",
+            "Procrastinate until last minute",
+            "Blame circumstances"
+        ],
+        "correct_answer": "Work calmly and efficiently",
+        "topic": "Stress Management",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you stay organized?",
+        "options": [
+            "Rely on memory",
+            "Use a system",
+            "Don't organize",
+            "Ignore it all"
+        ],
+        "correct_answer": "Use a system",
+        "topic": "Organization",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you show initiative?",
+        "options": [
+            "Wait to be told",
+            "Offer help proactively",
+            "Avoid new tasks",
+            "Hide when busy"
+        ],
+        "correct_answer": "Offer help proactively",
+        "topic": "Initiative",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you make decisions?",
+        "options": [
+            "Based on emotions",
+            "Impulsively without thinking",
+            "Gather information",
+            "Avoid all responsibility"
+        ],
+        "correct_answer": "Gather information",
         "topic": "Decision Making",
         "difficulty": "medium"
     },
     {
-        "question": "What is most important in a team environment?",
+        "question": "What's your leadership style?",
         "options": [
-            "Individual achievement",
-            "Constant competition",
-            "Collaboration and support",
-            "Strict hierarchy"
+            "Autocratic always",
+            "Laissez-faire only",
+            "Democratic collaborative",
+            "Dictatorial style"
         ],
-        "correct_answer": "Collaboration and support",
+        "correct_answer": "Democratic collaborative",
+        "topic": "Leadership",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you deal with ambiguity?",
+        "options": [
+            "Become paralyzed always",
+            "Avoid uncertain situations",
+            "Seek clarity proactively",
+            "Ignore the problem"
+        ],
+        "correct_answer": "Seek clarity proactively",
+        "topic": "Problem Solving",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you prioritize tasks?",
+        "options": [
+            "Based on personal preference",
+            "Randomly order",
+            "Urgency and importance",
+            "Avoid difficult items"
+        ],
+        "correct_answer": "Urgency and importance",
+        "topic": "Time Management",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you learn new skills?",
+        "options": [
+            "Avoid learning new things",
+            "Through formal training",
+            "Through self-study exploration",
+            "By copying others blindly"
+        ],
+        "correct_answer": "Through self-study exploration",
+        "topic": "Learning Agility",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you handle challenging clients?",
+        "options": [
+            "Argue and defend",
+            "Avoid them completely",
+            "Listen and empathize",
+            "Pass them to someone else"
+        ],
+        "correct_answer": "Listen and empathize",
+        "topic": "Customer Service",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you contribute to a positive work environment?",
+        "options": [
+            "Gossip and complain always",
+            "Remain neutral",
+            "Offer support",
+            "Spread negativity always"
+        ],
+        "correct_answer": "Offer support",
         "topic": "Teamwork",
         "difficulty": "easy"
     }

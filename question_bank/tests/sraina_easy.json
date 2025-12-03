@@ -1,0 +1,732 @@
+{
+    "candidate": {
+        "name": "Suresh Raina",
+        "email": "suresh@gmail.com",
+        "uid": "sraina",
+        "difficulty": "easy"
+    },
+    "L1": [
+        {
+            "question": "Which shape comes next: triangle, circle, triangle, circle, ?",
+            "options": [
+                "square",
+                "circle",
+                "pentagon",
+                "triangle"
+            ],
+            "correct_answer": "triangle"
+        },
+        {
+            "question": "What is the missing number: 3, 6, 9, __ , 15?",
+            "options": [
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "correct_answer": "12"
+        },
+        {
+            "question": "Which number is the odd one out: 4, 6, 8, 9, 10?",
+            "options": [
+                "4",
+                "6",
+                "8",
+                "9"
+            ],
+            "correct_answer": "9"
+        },
+        {
+            "question": "If earth + water = mud, and mud + fire = clay, then earth + water + fire = ?",
+            "options": [
+                "dirt",
+                "dust",
+                "mud",
+                "clay"
+            ],
+            "correct_answer": "clay"
+        },
+        {
+            "question": "Which is different: March, May, June, July",
+            "options": [
+                "March",
+                "May",
+                "June",
+                "July"
+            ],
+            "correct_answer": "June"
+        },
+        {
+            "question": "What is the next number in the series: 2, 5, 8, 11, ?",
+            "options": [
+                "12",
+                "13",
+                "14",
+                "15"
+            ],
+            "correct_answer": "14"
+        },
+        {
+            "question": "What number should come next in the sequence: 2, 4, 6, 8, ?",
+            "options": [
+                "9",
+                "10",
+                "11",
+                "12"
+            ],
+            "correct_answer": "10"
+        },
+        {
+            "question": "What is the next letter: B, E, H, K, ?",
+            "options": [
+                "L",
+                "M",
+                "N",
+                "O"
+            ],
+            "correct_answer": "N"
+        },
+        {
+            "question": "If a turtle travels 20 miles in 10 hours, what is its average speed?",
+            "options": [
+                "1 mph",
+                "2 mph",
+                "3 mph",
+                "4 mph"
+            ],
+            "correct_answer": "2 mph"
+        },
+        {
+            "question": "If J = 10, K = 11, L = 12, then what does O equal?",
+            "options": [
+                "13",
+                "14",
+                "15",
+                "16"
+            ],
+            "correct_answer": "15"
+        },
+        {
+            "question": "Complete the sequence: 100, 90, 80, 70, ?",
+            "options": [
+                "50",
+                "60",
+                "75",
+                "85"
+            ],
+            "correct_answer": "60"
+        },
+        {
+            "question": "If every S is a T, and some T are U, then some S are necessarily:",
+            "options": [
+                "U",
+                "not U",
+                "T",
+                "unknown"
+            ],
+            "correct_answer": "unknown"
+        },
+        {
+            "question": "What is the next number in the sequence: 1, 2, 4, 8, ?",
+            "options": [
+                "12",
+                "14",
+                "16",
+                "20"
+            ],
+            "correct_answer": "16"
+        },
+        {
+            "question": "What is the missing number: 2, 4, __, 8, 10?",
+            "options": [
+                "3",
+                "5",
+                "6",
+                "7"
+            ],
+            "correct_answer": "6"
+        },
+        {
+            "question": "If all cats are animals, and some animals are black, then:",
+            "options": [
+                "All cats are black",
+                "Some cats are black",
+                "No cats are black",
+                "Some black animals are cats"
+            ],
+            "correct_answer": "Some cats are black"
+        }
+    ],
+    "L2": [
+        {
+            "question": "What is the output of `print(2 + 2)`?",
+            "options": [
+                "22",
+                "4",
+                "Error",
+                "None"
+            ],
+            "correct_answer": "4",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of the `len()` function in Python?",
+            "options": [
+                "To find the length of a string",
+                "To calculate the area of a rectangle",
+                "To convert a string to uppercase",
+                "To find the length of any sequence (string, list, tuple)"
+            ],
+            "correct_answer": "To find the length of any sequence (string, list, tuple)",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does the `len()` function do in Python?",
+            "options": [
+                "Calculates the length of a string, list, or tuple.",
+                "Prints the output to the console.",
+                "Defines a new function.",
+                "Reads a file."
+            ],
+            "correct_answer": "Calculates the length of a string, list, or tuple.",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What keyword is used to define a function in Python?",
+            "options": [
+                "def",
+                "function",
+                "define",
+                "func"
+            ],
+            "correct_answer": "def",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is used for importing modules in Python?",
+            "options": [
+                "use",
+                "include",
+                "import",
+                "get"
+            ],
+            "correct_answer": "import",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the purpose of the `print()` function?",
+            "options": [
+                "To take input from the user",
+                "To display output to the console",
+                "To define a function",
+                "To import a module"
+            ],
+            "correct_answer": "To display output to the console",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of `print('Hello' + 'World')`?",
+            "options": [
+                "Hello World",
+                "Hello+World",
+                "HelloWorld",
+                "Error"
+            ],
+            "correct_answer": "C",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which is the correct way to import the `math` module?",
+            "options": [
+                "import math",
+                "include math",
+                "using math",
+                "get math"
+            ],
+            "correct_answer": "A",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is the correct way to create an empty list in Python?",
+            "options": [
+                "list()",
+                "[]",
+                "{}",
+                "()"
+            ],
+            "correct_answer": "[]",
+            "topic": "Data Structures",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of these is a comparison operator?",
+            "options": [
+                "=",
+                "+",
+                "*",
+                "=="
+            ],
+            "correct_answer": "D",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What data type is used to store whole numbers?",
+            "options": [
+                "float",
+                "string",
+                "int",
+                "boolean"
+            ],
+            "correct_answer": "C",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which keyword is used to define a function in Python?",
+            "options": [
+                "define",
+                "function",
+                "def",
+                "fun"
+            ],
+            "correct_answer": "C",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Which of the following is NOT a valid loop type in Python?",
+            "options": [
+                "for",
+                "while",
+                "do-while",
+                "None of the above"
+            ],
+            "correct_answer": "do-while",
+            "topic": "Python",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What will `print(type(10))` output?",
+            "options": [
+                "<class 'str'>",
+                "<class 'int'>",
+                "<class 'float'>",
+                "<class 'bool'>"
+            ],
+            "correct_answer": "<class 'int'>",
+            "topic": "Data Types",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What does `if` statement do?",
+            "options": [
+                "Repeats a block of code",
+                "Executes a block of code only if a condition is true",
+                "Defines a function",
+                "Prints a message"
+            ],
+            "correct_answer": "B",
+            "topic": "Python",
+            "difficulty": "easy"
+        }
+    ],
+    "L3": [
+        {
+            "question": "What is the output of the following code? The bug often stems from incorrect list indexing.",
+            "code": "my_list = [1, 2, 3]\nprint(my_list[3])",
+            "options": [
+                "3",
+                "Error",
+                "1",
+                "None"
+            ],
+            "correct_answer": "B",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of this code and potential problem: `x = {\"a\": 1, \"b\": 2}\ny = x\ny[\"a\"] = 5\nprint(x)`",
+            "code": "x = {\"a\": 1, \"b\": 2}\ny = x\ny[\"a\"] = 5\nprint(x)",
+            "options": [
+                "{\"a\": 1, \"b\": 2}",
+                "{\"a\": 5, \"b\": 2}",
+                "NameError: name 'x' is not defined",
+                "TypeError: 'str' object is not callable"
+            ],
+            "correct_answer": "{\"a\": 5, \"b\": 2}",
+            "topic": "L3",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which method helps you track variables and execution flow in pdb? Bug: PDB Function",
+            "code": "None",
+            "options": [
+                "next",
+                "continue",
+                "step",
+                "return"
+            ],
+            "correct_answer": "step",
+            "topic": "Debugging Tools",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the issue with this code? \n  def foo(a=[]):\n      a.append(5)\n      return a\n\n  print(foo())\n  print(foo())",
+            "code": "def foo(a=[]):\n    a.append(5)\n    return a\n\nprint(foo())\nprint(foo())",
+            "options": [
+                "Syntax error",
+                "Unexpected output due to mutable default argument",
+                "TypeError",
+                "NameError"
+            ],
+            "correct_answer": "Unexpected output due to mutable default argument",
+            "topic": "Functions",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Which keyword is used to explicitly raise an exception? Bug: Raising Exceptions",
+            "code": "None",
+            "options": [
+                "raise",
+                "except",
+                "throw",
+                "error"
+            ],
+            "correct_answer": "raise",
+            "topic": "Exception Handling",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The following code intends to add an element to a list. What's wrong?",
+            "code": "my_list = [1, 2, 3]\nmy_list.append(4)",
+            "options": [
+                "Incorrect method name",
+                "Missing parenthesis",
+                "Cannot add to list",
+                "None of the above"
+            ],
+            "correct_answer": "None of the above",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the output of the following list comprehension?",
+            "code": "numbers = [1, 2, 3, 4, 5]\nsquares = [x**2 for x in numbers if x % 2 == 0]\nprint(squares)",
+            "options": [
+                "[1, 4, 9, 16, 25]",
+                "[4, 16]",
+                "[1, 9, 25]",
+                "Error"
+            ],
+            "correct_answer": "B",
+            "topic": "L3",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Which error will occur when trying to access an index out of range in a list?",
+            "code": null,
+            "options": [
+                "TypeError",
+                "IndexError",
+                "ValueError",
+                "KeyError"
+            ],
+            "correct_answer": "IndexError",
+            "topic": "Lists",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What happens if you try to open a file for reading that doesn't exist?",
+            "code": null,
+            "options": [
+                "Returns None",
+                "Creates an empty file",
+                "Raises a FileNotFoundError",
+                "Raises an IOError"
+            ],
+            "correct_answer": "Raises a FileNotFoundError",
+            "topic": "File Handling",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the error in this code: `print(\"Hello\" + 5)`?",
+            "code": "print(\"Hello\" + 5)",
+            "options": [
+                "TypeError: can only concatenate str (not \"int\") to str",
+                "SyntaxError: invalid syntax",
+                "ValueError: invalid literal for int() with base 10",
+                "NameError: name 'print' is not defined"
+            ],
+            "correct_answer": "TypeError: can only concatenate str (not \"int\") to str",
+            "topic": "L1",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Find the bug in the following code (intended to sum list elements):\n  def sum_list(lst):\n    sum = 0\n    for i in range(1,len(lst)):\n      sum += lst[i]\n    return sum\n  print(sum_list([1,2,3]))",
+            "code": "def sum_list(lst):\n  sum = 0\n  for i in range(1,len(lst)):\n    sum += lst[i]\n  return sum\nprint(sum_list([1,2,3]))",
+            "options": [
+                "The variable 'sum' is not initialized.",
+                "The loop should start at index 0.",
+                "The function should not return a value.",
+                "The input should be a tuple instead of a list."
+            ],
+            "correct_answer": "The loop should start at index 0.",
+            "topic": "Loops",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the output of the following and its problem: `x = 5\ndef func():\n  x = 3\n  print(x)\nfunc()\nprint(x)`",
+            "code": "x = 5\ndef func():\n  x = 3\n  print(x)\nfunc()\nprint(x)",
+            "options": [
+                "3\\n3",
+                "5\\n5",
+                "3\\n5",
+                "5\\n3"
+            ],
+            "correct_answer": "3\\n5",
+            "topic": "L2",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the output of the following code? \n  x = 5 \n  y = \"10\" \n  print(x + y)",
+            "code": "x = 5\ny = \"10\"\nprint(x + y)",
+            "options": [
+                "15",
+                "510",
+                "Error",
+                "None of the above"
+            ],
+            "correct_answer": "Error",
+            "topic": "Type Conversion",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is the error in the following code? The intention was to access the first element of the list.",
+            "code": "my_list = [1, 2, 3]\nprint(my_list[0])",
+            "options": [
+                "IndexError",
+                "TypeError",
+                "SyntaxError",
+                "NameError"
+            ],
+            "correct_answer": "None of the above",
+            "topic": "L2",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What will the following code output? Bug: Type Conversion",
+            "code": "print(int(\"123.45\"))",
+            "options": [
+                "123",
+                "123.45",
+                "Error",
+                "None"
+            ],
+            "correct_answer": "Error",
+            "topic": "Type Conversion",
+            "difficulty": "medium"
+        }
+    ],
+    "L5": [
+        {
+            "question": "How do you demonstrate leadership?",
+            "options": [
+                "By micromanaging others",
+                "By avoiding responsibility",
+                "By inspiring and guiding others",
+                "By taking credit for others' work"
+            ],
+            "correct_answer": "By inspiring and guiding others",
+            "topic": "Leadership",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Are you a team player?",
+            "options": [
+                "No",
+                "Sometimes",
+                "Yes",
+                "Rarely"
+            ],
+            "correct_answer": "Yes",
+            "topic": "Teamwork",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is your approach to teamwork?",
+            "options": [
+                "Prefer to work alone",
+                "Only contribute when asked",
+                "Actively collaborate and support",
+                "Dominate the discussion"
+            ],
+            "correct_answer": "Actively collaborate and support",
+            "topic": "Teamwork",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What motivates you most in a work environment?",
+            "options": [
+                "Money alone",
+                "Recognition alone",
+                "Meaningful work",
+                "Avoiding responsibility"
+            ],
+            "correct_answer": "Meaningful work",
+            "topic": "Motivation",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you handle setbacks?",
+            "options": [
+                "Give up immediately",
+                "Blame external factors",
+                "Learn from the experience",
+                "Ignore the setback"
+            ],
+            "correct_answer": "Learn from the experience",
+            "topic": "Resilience",
+            "difficulty": "easy"
+        },
+        {
+            "question": "What is your preferred team role?",
+            "options": [
+                "Dominating leader",
+                "Passive follower",
+                "Collaborative contributor",
+                "Lone wolf"
+            ],
+            "correct_answer": "Collaborative contributor",
+            "topic": "Teamwork",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle conflict with a colleague?",
+            "options": [
+                "Avoid them entirely",
+                "Become confrontational",
+                "Seek a mutually agreeable solution",
+                "Report them immediately"
+            ],
+            "correct_answer": "Seek a mutually agreeable solution",
+            "topic": "Conflict Resolution",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you prioritize tasks when facing multiple deadlines?",
+            "options": [
+                "Randomly choose tasks",
+                "Focus on easiest tasks",
+                "Prioritize by importance",
+                "Ignore deadlines"
+            ],
+            "correct_answer": "Prioritize by importance",
+            "topic": "Time Management",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How important is ethical behavior at work?",
+            "options": [
+                "Not very important",
+                "Only when convenient",
+                "Extremely important",
+                "Only when being watched"
+            ],
+            "correct_answer": "Extremely important",
+            "topic": "Ethics",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle stressful situations?",
+            "options": [
+                "Avoid them completely",
+                "Panic and react impulsively",
+                "Break down the problem and prioritize",
+                "Ignore the stress"
+            ],
+            "correct_answer": "Break down the problem and prioritize",
+            "topic": "Stress Management",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you learn new things?",
+            "options": [
+                "By reading",
+                "By doing",
+                "By watching",
+                "All of these"
+            ],
+            "correct_answer": "All of these",
+            "topic": "Learning Agility",
+            "difficulty": "easy"
+        },
+        {
+            "question": "How do you handle making a mistake at work?",
+            "options": [
+                "Hide the mistake",
+                "Blame someone else",
+                "Take responsibility",
+                "Ignore the mistake"
+            ],
+            "correct_answer": "Take responsibility",
+            "topic": "Accountability",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you motivate a struggling team member?",
+            "options": [
+                "Publicly criticize them",
+                "Ignore their struggles",
+                "Offer support and encouragement",
+                "Do their work for them"
+            ],
+            "correct_answer": "Offer support and encouragement",
+            "topic": "Leadership",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you give difficult feedback?",
+            "options": [
+                "Avoid giving it altogether",
+                "Be blunt and insensitive",
+                "Be direct and supportive",
+                "Gossip instead"
+            ],
+            "correct_answer": "Be direct and supportive",
+            "topic": "Feedback",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do you stay organized at work?",
+            "options": [
+                "Disorganized chaos",
+                "Use effective systems",
+                "Rely on memory",
+                "Avoid organization"
+            ],
+            "correct_answer": "Use effective systems",
+            "topic": "Organization",
+            "difficulty": "medium"
+        }
+    ],
+    "L4": [
+        {
+            "title": "Second Largest Element",
+            "description": "Find the second largest element in an array of integers.",
+            "input_format": "First line: The number of elements in the array, n.\nSecond line: n space-separated integers.",
+            "output_format": "The second largest element in the array.",
+            "constraints": "2 <= n <= 100\n-1000 <= each element <= 1000\nThe array contains at least two distinct elements.",
+            "sample_input": "5\n1 5 2 8 3",
+            "sample_output": "5"
+        }
+    ]
+}

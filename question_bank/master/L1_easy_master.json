@@ -1,6 +1,6 @@
 [
     {
-        "question": "What number should come next in the sequence: 2, 4, 6, 8, ?",
+        "question": "What number should come next in the series? 2, 4, 6, 8, ?",
         "options": [
             "9",
             "10",
@@ -10,7 +10,37 @@
         "correct_answer": "10"
     },
     {
-        "question": "If A = 1, B = 2, C = 3, then what does F equal?",
+        "question": "If all Bloops are Razzies and all Razzies are Lazooms, then all Bloops are definitely:",
+        "options": [
+            "Lazooms",
+            "Not Lazooms",
+            "Razzies",
+            "Not Razzies"
+        ],
+        "correct_answer": "Lazooms"
+    },
+    {
+        "question": "Which word does NOT belong in the following list? Apple, Banana, Carrot, Orange",
+        "options": [
+            "Apple",
+            "Banana",
+            "Carrot",
+            "Orange"
+        ],
+        "correct_answer": "Carrot"
+    },
+    {
+        "question": "Complete the series: A1Z, B2Y, C3X, ?",
+        "options": [
+            "D4W",
+            "E5V",
+            "F6U",
+            "G7T"
+        ],
+        "correct_answer": "D4W"
+    },
+    {
+        "question": "If A=1, B=2, C=3, then what does F equal?",
         "options": [
             "4",
             "5",
@@ -20,34 +50,254 @@
         "correct_answer": "6"
     },
     {
-        "question": "Which word does NOT belong: apple, banana, carrot, orange?",
+        "question": "What comes next: J, F, M, A, M, J, J, A, ?",
         "options": [
-            "apple",
-            "banana",
-            "carrot",
-            "orange"
+            "S",
+            "O",
+            "N",
+            "D"
         ],
-        "correct_answer": "carrot"
+        "correct_answer": "S"
     },
     {
-        "question": "Complete the series: 1, 4, 9, 16, ?",
+        "question": "Which number is missing? 1, 4, 9, ?, 25",
         "options": [
-            "20",
-            "25",
+            "12",
+            "16",
+            "18",
+            "20"
+        ],
+        "correct_answer": "16"
+    },
+    {
+        "question": "Dog is to Bark as Cat is to:",
+        "options": [
+            "Meow",
+            "Growl",
+            "Hiss",
+            "Purr"
+        ],
+        "correct_answer": "Meow"
+    },
+    {
+        "question": "What is the next letter in the following sequence: O, T, T, F, F, S, S, E, ?",
+        "options": [
+            "N",
+            "T",
+            "O",
+            "F"
+        ],
+        "correct_answer": "N"
+    },
+    {
+        "question": "Find the odd one out: Chair, Table, Bed, Plate",
+        "options": [
+            "Chair",
+            "Table",
+            "Bed",
+            "Plate"
+        ],
+        "correct_answer": "Plate"
+    },
+    {
+        "question": "What comes next? 1, 3, 5, 7, ?",
+        "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "correct_answer": "9"
+    },
+    {
+        "question": "Cup is to Coffee as Bowl is to:",
+        "options": [
+            "Cereal",
+            "Soup",
+            "Water",
+            "Food"
+        ],
+        "correct_answer": "Soup"
+    },
+    {
+        "question": "If all squares are rectangles, and some rectangles are parallelograms, then:",
+        "options": [
+            "All squares are parallelograms",
+            "Some squares are parallelograms",
+            "No squares are parallelograms",
+            "All parallelograms are squares"
+        ],
+        "correct_answer": "Some squares are parallelograms"
+    },
+    {
+        "question": "Which of the following is the odd one out: Red, Green, Blue, Yellow",
+        "options": [
+            "Red",
+            "Green",
+            "Blue",
+            "Yellow"
+        ],
+        "correct_answer": "Yellow"
+    },
+    {
+        "question": "Complete the series: 2, 6, 12, 20, ?",
+        "options": [
+            "24",
+            "28",
             "30",
-            "36"
+            "32"
         ],
-        "correct_answer": "25"
+        "correct_answer": "30"
     },
     {
-        "question": "If all cats are mammals, and some mammals are pets, then:",
+        "question": "Book is to Reading as Fork is to:",
         "options": [
-            "All cats are pets",
-            "Some cats are pets",
-            "No cats are pets",
-            "Some pets are cats"
+            "Eating",
+            "Writing",
+            "Drawing",
+            "Sleeping"
         ],
-        "correct_answer": "Some cats are pets"
+        "correct_answer": "Eating"
+    },
+    {
+        "question": "Which number should replace the question mark? 5, 10, 15, ?, 25",
+        "options": [
+            "18",
+            "20",
+            "22",
+            "24"
+        ],
+        "correct_answer": "20"
+    },
+    {
+        "question": "If 2 + 2 = 4, then 2 + 3 = ?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "correct_answer": "5"
+    },
+    {
+        "question": "Which word does NOT belong: Run, Walk, Skip, Fly",
+        "options": [
+            "Run",
+            "Walk",
+            "Skip",
+            "Fly"
+        ],
+        "correct_answer": "Fly"
+    },
+    {
+        "question": "Complete the sequence: 1, 8, 27, ?",
+        "options": [
+            "36",
+            "48",
+            "64",
+            "81"
+        ],
+        "correct_answer": "64"
+    },
+    {
+        "question": "Pen is to Paper as Brush is to:",
+        "options": [
+            "Paint",
+            "Canvas",
+            "Color",
+            "Art"
+        ],
+        "correct_answer": "Canvas"
+    },
+    {
+        "question": "What is the next shape in the sequence: Circle, Square, Triangle, Circle, Square, ?",
+        "options": [
+            "Circle",
+            "Square",
+            "Triangle",
+            "Rectangle"
+        ],
+        "correct_answer": "Triangle"
+    },
+    {
+        "question": "If day before yesterday was Sunday, what day is today?",
+        "options": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
+        "correct_answer": "Tuesday"
+    },
+    {
+        "question": "Choose the word that is most similar to 'Happy':",
+        "options": [
+            "Sad",
+            "Joyful",
+            "Angry",
+            "Bored"
+        ],
+        "correct_answer": "Joyful"
+    },
+    {
+        "question": "What comes next: 1, 1, 2, 3, 5, ?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "correct_answer": "8"
+    },
+    {
+        "question": "Hour is to Minute as Minute is to:",
+        "options": [
+            "Second",
+            "Day",
+            "Week",
+            "Month"
+        ],
+        "correct_answer": "Second"
+    },
+    {
+        "question": "If all cats have fur, and Mittens is a cat, then Mittens has:",
+        "options": [
+            "Scales",
+            "Feathers",
+            "Fur",
+            "Gills"
+        ],
+        "correct_answer": "Fur"
+    },
+    {
+        "question": "Which number is the odd one out: 2, 4, 6, 7, 8",
+        "options": [
+            "2",
+            "4",
+            "6",
+            "7"
+        ],
+        "correct_answer": "7"
+    },
+    {
+        "question": "Complete the series: 10, 8, 6, 4, ?",
+        "options": [
+            "5",
+            "3",
+            "2",
+            "1"
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "Hot is to Cold as Up is to:",
+        "options": [
+            "Down",
+            "Left",
+            "Right",
+            "Middle"
+        ],
+        "correct_answer": "Down"
     },
     {
         "question": "What is the next letter in the sequence: A, C, E, G, ?",
@@ -60,197 +310,27 @@
         "correct_answer": "I"
     },
     {
-        "question": "If a train travels 100 miles in 2 hours, what is its average speed?",
+        "question": "If all birds have wings, and penguins are birds, then penguins have:",
         "options": [
-            "25 mph",
-            "50 mph",
-            "75 mph",
-            "100 mph"
+            "Fins",
+            "Scales",
+            "Wings",
+            "Gills"
         ],
-        "correct_answer": "50 mph"
+        "correct_answer": "Wings"
     },
     {
-        "question": "Which shape comes next: square, triangle, square, triangle, ?",
+        "question": "Which word does NOT belong: Green, Blue, Round, Yellow",
         "options": [
-            "circle",
-            "square",
-            "pentagon",
-            "triangle"
+            "Green",
+            "Blue",
+            "Round",
+            "Yellow"
         ],
-        "correct_answer": "square"
+        "correct_answer": "Round"
     },
     {
-        "question": "What is the missing number: 1, 3, __, 7, 9?",
-        "options": [
-            "4",
-            "5",
-            "6",
-            "8"
-        ],
-        "correct_answer": "5"
-    },
-    {
-        "question": "If blue + yellow = green, and green + red = brown, then blue + yellow + red = ?",
-        "options": [
-            "purple",
-            "brown",
-            "orange",
-            "black"
-        ],
-        "correct_answer": "brown"
-    },
-    {
-        "question": "Which number is the odd one out: 2, 4, 6, 9, 10?",
-        "options": [
-            "2",
-            "4",
-            "6",
-            "9"
-        ],
-        "correct_answer": "9"
-    },
-    {
-        "question": "What comes next in the pattern:  up, down, left, right, up, down, left, ?",
-        "options": [
-            "up",
-            "down",
-            "left",
-            "right"
-        ],
-        "correct_answer": "right"
-    },
-    {
-        "question": "If X is taller than Y, and Y is taller than Z, then X is ______ than Z.",
-        "options": [
-            "shorter",
-            "the same height",
-            "taller",
-            "impossible to tell"
-        ],
-        "correct_answer": "taller"
-    },
-    {
-        "question": "Complete the sequence: 5, 10, 15, 20, ?",
-        "options": [
-            "22",
-            "23",
-            "25",
-            "30"
-        ],
-        "correct_answer": "25"
-    },
-    {
-        "question": "Which is different: January, February, July, April",
-        "options": [
-            "January",
-            "February",
-            "July",
-            "April"
-        ],
-        "correct_answer": "February"
-    },
-    {
-        "question": "If every A is a B, and some B are C, then some A are necessarily:",
-        "options": [
-            "C",
-            "not C",
-            "B",
-            "unknown"
-        ],
-        "correct_answer": "unknown"
-    },
-    {
-        "question": "What is the missing number: 12, 15, 18, __ , 24?",
-        "options": [
-            "19",
-            "20",
-            "21",
-            "22"
-        ],
-        "correct_answer": "21"
-    },
-    {
-        "question": "Find the odd one out:  dog, cat, bird, fish",
-        "options": [
-            "dog",
-            "cat",
-            "bird",
-            "fish"
-        ],
-        "correct_answer": "bird"
-    },
-    {
-        "question": "What is the next number in the sequence: 1, 2, 4, 8, ?",
-        "options": [
-            "12",
-            "14",
-            "16",
-            "20"
-        ],
-        "correct_answer": "16"
-    },
-    {
-        "question": "If a = b and b = c, then a = ?",
-        "options": [
-            "a",
-            "b",
-            "c",
-            "d"
-        ],
-        "correct_answer": "c"
-    },
-    {
-        "question": "Complete the sequence: 2, 6, 12, 20, ?",
-        "options": [
-            "24",
-            "28",
-            "30",
-            "32"
-        ],
-        "correct_answer": "30"
-    },
-    {
-        "question": "Which word is different from the others: run, walk, swim, fly",
-        "options": [
-            "run",
-            "walk",
-            "swim",
-            "fly"
-        ],
-        "correct_answer": "swim"
-    },
-    {
-        "question": "What is the missing number: 1, 8, 27, __ , 125?",
-        "options": [
-            "36",
-            "49",
-            "64",
-            "100"
-        ],
-        "correct_answer": "64"
-    },
-    {
-        "question": "If all roses are flowers and some flowers are red, then:",
-        "options": [
-            "All roses are red",
-            "Some roses are red",
-            "No roses are red",
-            "Some red things are roses"
-        ],
-        "correct_answer": "Some roses are red"
-    },
-    {
-        "question": "What is the next letter: Z, X, V, T, ?",
-        "options": [
-            "R",
-            "Q",
-            "S",
-            "U"
-        ],
-        "correct_answer": "R"
-    },
-    {
-        "question": "What number should come next in the sequence: 3, 6, 9, 12, ?",
+        "question": "Complete the series: 3, 6, 9, 12, ?",
         "options": [
             "13",
             "14",
@@ -260,44 +340,344 @@
         "correct_answer": "15"
     },
     {
-        "question": "If D = 4, E = 5, F = 6, then what does I equal?",
+        "question": "Tree is to Forest as Flower is to:",
+        "options": [
+            "Garden",
+            "Stem",
+            "Root",
+            "Leaf"
+        ],
+        "correct_answer": "Garden"
+    },
+    {
+        "question": "What number should replace the question mark? 1, 3, 5, ?, 9",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "10"
+        ],
+        "correct_answer": "7"
+    },
+    {
+        "question": "If 5 + 5 = 10, then 5 + 6 = ?",
+        "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+        ],
+        "correct_answer": "11"
+    },
+    {
+        "question": "Which word does NOT belong: Swim, Run, Fly, Crawl",
+        "options": [
+            "Swim",
+            "Run",
+            "Fly",
+            "Crawl"
+        ],
+        "correct_answer": "Fly"
+    },
+    {
+        "question": "Complete the sequence: 2, 4, 8, ?",
+        "options": [
+            "10",
+            "12",
+            "14",
+            "16"
+        ],
+        "correct_answer": "16"
+    },
+    {
+        "question": "Hammer is to Nail as Screwdriver is to:",
+        "options": [
+            "Screw",
+            "Wood",
+            "Wall",
+            "Metal"
+        ],
+        "correct_answer": "Screw"
+    },
+    {
+        "question": "What is the next shape in the sequence: Square, Circle, Square, Circle, ?",
+        "options": [
+            "Triangle",
+            "Square",
+            "Circle",
+            "Rectangle"
+        ],
+        "correct_answer": "Square"
+    },
+    {
+        "question": "If tomorrow is Friday, what day was yesterday?",
+        "options": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "correct_answer": "Tuesday"
+    },
+    {
+        "question": "Choose the word that is most similar to 'Brave':",
+        "options": [
+            "Scared",
+            "Courageous",
+            "Weak",
+            "Timid"
+        ],
+        "correct_answer": "Courageous"
+    },
+    {
+        "question": "What comes next: 2, 4, 6, 8, 10, ?",
+        "options": [
+            "11",
+            "12",
+            "13",
+            "14"
+        ],
+        "correct_answer": "12"
+    },
+    {
+        "question": "Day is to Night as Light is to:",
+        "options": [
+            "Dark",
+            "Sun",
+            "Moon",
+            "Star"
+        ],
+        "correct_answer": "Dark"
+    },
+    {
+        "question": "If all dogs are animals, and Fido is a dog, then Fido is:",
+        "options": [
+            "A plant",
+            "An animal",
+            "A rock",
+            "A tree"
+        ],
+        "correct_answer": "An animal"
+    },
+    {
+        "question": "Which number is the odd one out: 1, 3, 5, 8, 9",
+        "options": [
+            "1",
+            "3",
+            "5",
+            "8"
+        ],
+        "correct_answer": "8"
+    },
+    {
+        "question": "Complete the series: 15, 12, 9, 6, ?",
+        "options": [
+            "5",
+            "4",
+            "3",
+            "2"
+        ],
+        "correct_answer": "3"
+    },
+    {
+        "question": "Sweet is to Sour as Happy is to:",
+        "options": [
+            "Joyful",
+            "Sad",
+            "Angry",
+            "Excited"
+        ],
+        "correct_answer": "Sad"
+    },
+    {
+        "question": "What is the next letter in the sequence: Z, Y, X, W, ?",
+        "options": [
+            "U",
+            "V",
+            "A",
+            "B"
+        ],
+        "correct_answer": "V"
+    },
+    {
+        "question": "If all fish live in water, and Nemo is a fish, then Nemo lives in:",
+        "options": [
+            "Air",
+            "Land",
+            "Water",
+            "Fire"
+        ],
+        "correct_answer": "Water"
+    },
+    {
+        "question": "Which word does NOT belong: Car, Truck, Bike, Tree",
+        "options": [
+            "Car",
+            "Truck",
+            "Bike",
+            "Tree"
+        ],
+        "correct_answer": "Tree"
+    },
+    {
+        "question": "Complete the series: 4, 8, 12, 16, ?",
+        "options": [
+            "18",
+            "19",
+            "20",
+            "21"
+        ],
+        "correct_answer": "20"
+    },
+    {
+        "question": "Doctor is to Hospital as Teacher is to:",
+        "options": [
+            "Patient",
+            "Student",
+            "School",
+            "Book"
+        ],
+        "correct_answer": "School"
+    },
+    {
+        "question": "What number should replace the question mark? 2, 4, 6, ?, 10",
         "options": [
             "7",
             "8",
             "9",
-            "10"
+            "11"
         ],
-        "correct_answer": "9"
+        "correct_answer": "8"
     },
     {
-        "question": "Which word does NOT belong: chair, table, bed, glass?",
+        "question": "If 10 + 10 = 20, then 10 + 11 = ?",
         "options": [
-            "chair",
-            "table",
-            "bed",
-            "glass"
+            "20",
+            "21",
+            "22",
+            "23"
         ],
-        "correct_answer": "glass"
+        "correct_answer": "21"
     },
     {
-        "question": "Complete the series: 2, 4, 8, 16, ?",
+        "question": "Which word does NOT belong: Red, Round, Square, Circle",
         "options": [
-            "24",
-            "30",
-            "32",
-            "40"
+            "Red",
+            "Round",
+            "Square",
+            "Circle"
         ],
-        "correct_answer": "32"
+        "correct_answer": "Red"
     },
     {
-        "question": "If all birds are animals, and some animals can fly, then:",
+        "question": "Complete the sequence: 5, 10, 15, ?",
         "options": [
-            "All birds can fly",
-            "Some birds can fly",
-            "No birds can fly",
-            "Some flying animals are birds"
+            "16",
+            "17",
+            "18",
+            "20"
         ],
-        "correct_answer": "Some birds can fly"
+        "correct_answer": "20"
+    },
+    {
+        "question": "Needle is to Thread as Pen is to:",
+        "options": [
+            "Paper",
+            "Ink",
+            "Write",
+            "Draw"
+        ],
+        "correct_answer": "Ink"
+    },
+    {
+        "question": "What is the next shape in the sequence: Triangle, Square, Circle, Triangle, ?",
+        "options": [
+            "Circle",
+            "Square",
+            "Triangle",
+            "Rectangle"
+        ],
+        "correct_answer": "Square"
+    },
+    {
+        "question": "If yesterday was Monday, what day is tomorrow?",
+        "options": [
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "correct_answer": "Wednesday"
+    },
+    {
+        "question": "Choose the word that is most similar to 'Cold':",
+        "options": [
+            "Hot",
+            "Warm",
+            "Chilly",
+            "Sunny"
+        ],
+        "correct_answer": "Chilly"
+    },
+    {
+        "question": "What comes next: 1, 4, 9, 16, ?",
+        "options": [
+            "20",
+            "22",
+            "25",
+            "27"
+        ],
+        "correct_answer": "25"
+    },
+    {
+        "question": "Month is to Year as Day is to:",
+        "options": [
+            "Week",
+            "Hour",
+            "Second",
+            "Minute"
+        ],
+        "correct_answer": "Week"
+    },
+    {
+        "question": "If all flowers have petals, and roses are flowers, then roses have:",
+        "options": [
+            "Thorns",
+            "Leaves",
+            "Petals",
+            "Roots"
+        ],
+        "correct_answer": "Petals"
+    },
+    {
+        "question": "Which number is the odd one out: 10, 12, 14, 15, 16",
+        "options": [
+            "10",
+            "12",
+            "14",
+            "15"
+        ],
+        "correct_answer": "15"
+    },
+    {
+        "question": "Complete the series: 20, 17, 14, 11, ?",
+        "options": [
+            "9",
+            "8",
+            "7",
+            "6"
+        ],
+        "correct_answer": "8"
+    },
+    {
+        "question": "Big is to Small as Tall is to:",
+        "options": [
+            "Wide",
+            "Short",
+            "Fat",
+            "Thin"
+        ],
+        "correct_answer": "Short"
     },
     {
         "question": "What is the next letter in the sequence: B, D, F, H, ?",
@@ -310,207 +690,47 @@
         "correct_answer": "J"
     },
     {
-        "question": "If a car travels 120 miles in 3 hours, what is its average speed?",
+        "question": "If all cars have wheels, and a bus is a car, then a bus has:",
         "options": [
-            "30 mph",
-            "40 mph",
-            "50 mph",
-            "60 mph"
+            "Wings",
+            "Sails",
+            "Wheels",
+            "Tracks"
         ],
-        "correct_answer": "40 mph"
+        "correct_answer": "Wheels"
     },
     {
-        "question": "Which shape comes next: circle, square, circle, square, ?",
+        "question": "Which word does NOT belong: Circle, Square, Triangle, Ball",
         "options": [
-            "circle",
-            "triangle",
-            "pentagon",
-            "square"
+            "Circle",
+            "Square",
+            "Triangle",
+            "Ball"
         ],
-        "correct_answer": "circle"
+        "correct_answer": "Ball"
     },
     {
-        "question": "What is the missing number: 2, 4, __, 8, 10?",
+        "question": "Complete the series: 6, 12, 18, 24, ?",
         "options": [
-            "3",
-            "5",
-            "6",
-            "7"
-        ],
-        "correct_answer": "6"
-    },
-    {
-        "question": "If black + white = gray, and gray + black = darker gray, then black + white + black = ?",
-        "options": [
-            "white",
-            "black",
-            "gray",
-            "darker gray"
-        ],
-        "correct_answer": "darker gray"
-    },
-    {
-        "question": "Which number is the odd one out: 3, 5, 7, 8, 11?",
-        "options": [
-            "3",
-            "5",
-            "7",
-            "8"
-        ],
-        "correct_answer": "8"
-    },
-    {
-        "question": "What comes next in the pattern:  red, blue, green, red, blue, ?",
-        "options": [
-            "red",
-            "blue",
-            "green",
-            "yellow"
-        ],
-        "correct_answer": "green"
-    },
-    {
-        "question": "If P is smaller than Q, and Q is smaller than R, then P is ______ than R.",
-        "options": [
-            "larger",
-            "the same size",
-            "smaller",
-            "impossible to tell"
-        ],
-        "correct_answer": "smaller"
-    },
-    {
-        "question": "Complete the sequence: 3, 6, 9, 12, ?",
-        "options": [
-            "13",
-            "14",
-            "15",
-            "16"
-        ],
-        "correct_answer": "15"
-    },
-    {
-        "question": "Which is different: Monday, Tuesday, Friday, Sunday",
-        "options": [
-            "Monday",
-            "Tuesday",
-            "Friday",
-            "Sunday"
-        ],
-        "correct_answer": "Sunday"
-    },
-    {
-        "question": "If every X is a Y, and some Y are Z, then some X are necessarily:",
-        "options": [
-            "Z",
-            "not Z",
-            "Y",
-            "unknown"
-        ],
-        "correct_answer": "unknown"
-    },
-    {
-        "question": "What is the missing number: 22, 25, 28, __ , 34?",
-        "options": [
-            "29",
+            "25",
+            "28",
             "30",
-            "31",
             "32"
         ],
-        "correct_answer": "31"
+        "correct_answer": "30"
     },
     {
-        "question": "Find the odd one out:  horse, cow, chicken, sheep",
+        "question": "Shoe is to Foot as Glove is to:",
         "options": [
-            "horse",
-            "cow",
-            "chicken",
-            "sheep"
+            "Hand",
+            "Arm",
+            "Finger",
+            "Wrist"
         ],
-        "correct_answer": "chicken"
+        "correct_answer": "Hand"
     },
     {
-        "question": "What is the next number in the sequence: 3, 6, 12, 24, ?",
-        "options": [
-            "36",
-            "42",
-            "48",
-            "50"
-        ],
-        "correct_answer": "48"
-    },
-    {
-        "question": "If x = y and y = z, then x = ?",
-        "options": [
-            "x",
-            "y",
-            "z",
-            "w"
-        ],
-        "correct_answer": "z"
-    },
-    {
-        "question": "Complete the sequence: 1, 3, 5, 7, ?",
-        "options": [
-            "8",
-            "9",
-            "10",
-            "11"
-        ],
-        "correct_answer": "9"
-    },
-    {
-        "question": "Which word is different from the others: book, pen, paper, apple",
-        "options": [
-            "book",
-            "pen",
-            "paper",
-            "apple"
-        ],
-        "correct_answer": "apple"
-    },
-    {
-        "question": "What is the missing number: 2, 4, 6, __ , 10?",
-        "options": [
-            "5",
-            "7",
-            "8",
-            "9"
-        ],
-        "correct_answer": "8"
-    },
-    {
-        "question": "If all dogs are mammals and some mammals are brown, then:",
-        "options": [
-            "All dogs are brown",
-            "Some dogs are brown",
-            "No dogs are brown",
-            "Some brown things are dogs"
-        ],
-        "correct_answer": "Some dogs are brown"
-    },
-    {
-        "question": "What is the next letter: A, D, G, J, ?",
-        "options": [
-            "K",
-            "M",
-            "N",
-            "P"
-        ],
-        "correct_answer": "M"
-    },
-    {
-        "question": "What number should come next in the sequence: 1, 5, 9, 13, ?",
-        "options": [
-            "14",
-            "15",
-            "16",
-            "17"
-        ],
-        "correct_answer": "17"
-    },
-    {
-        "question": "If G = 7, H = 8, I = 9, then what does L equal?",
+        "question": "What number should replace the question mark? 3, 6, 9, ?, 15",
         "options": [
             "10",
             "11",
@@ -520,473 +740,243 @@
         "correct_answer": "12"
     },
     {
-        "question": "Which word does NOT belong: shoe, sock, glove, hat?",
+        "question": "If 15 + 15 = 30, then 15 + 16 = ?",
         "options": [
-            "shoe",
-            "sock",
-            "glove",
-            "hat"
+            "30",
+            "31",
+            "32",
+            "33"
         ],
-        "correct_answer": "hat"
+        "correct_answer": "31"
     },
     {
-        "question": "Complete the series: 3, 9, 27, 81, ?",
+        "question": "Which word does NOT belong: Run, Jog, Walk, Sleep",
         "options": [
-            "162",
-            "243",
-            "270",
-            "324"
+            "Run",
+            "Jog",
+            "Walk",
+            "Sleep"
         ],
-        "correct_answer": "243"
+        "correct_answer": "Sleep"
     },
     {
-        "question": "If all cats are animals, and some animals are black, then:",
+        "question": "Complete the sequence: 3, 9, 27, ?",
         "options": [
-            "All cats are black",
-            "Some cats are black",
-            "No cats are black",
-            "Some black animals are cats"
+            "30",
+            "36",
+            "54",
+            "81"
         ],
-        "correct_answer": "Some cats are black"
+        "correct_answer": "81"
+    },
+    {
+        "question": "Key is to Lock as Password is to:",
+        "options": [
+            "Computer",
+            "Account",
+            "Security",
+            "Internet"
+        ],
+        "correct_answer": "Account"
+    },
+    {
+        "question": "What is the next shape in the sequence: Heart, Star, Heart, Star, ?",
+        "options": [
+            "Circle",
+            "Heart",
+            "Star",
+            "Diamond"
+        ],
+        "correct_answer": "Heart"
+    },
+    {
+        "question": "If the day after tomorrow is Sunday, what day was yesterday?",
+        "options": [
+            "Thursday",
+            "Friday",
+            "Monday",
+            "Tuesday"
+        ],
+        "correct_answer": "Thursday"
+    },
+    {
+        "question": "Choose the word that is most similar to 'Smart':",
+        "options": [
+            "Dull",
+            "Intelligent",
+            "Silly",
+            "Foolish"
+        ],
+        "correct_answer": "Intelligent"
+    },
+    {
+        "question": "What comes next: 3, 6, 9, 12, 15, ?",
+        "options": [
+            "16",
+            "17",
+            "18",
+            "20"
+        ],
+        "correct_answer": "18"
+    },
+    {
+        "question": "Sun is to Day as Moon is to:",
+        "options": [
+            "Star",
+            "Sky",
+            "Night",
+            "Planet"
+        ],
+        "correct_answer": "Night"
+    },
+    {
+        "question": "If all birds can fly, and chickens are birds, then chickens can:",
+        "options": [
+            "Swim",
+            "Walk",
+            "Fly",
+            "Climb"
+        ],
+        "correct_answer": "Fly"
+    },
+    {
+        "question": "Which number is the odd one out: 2, 4, 5, 6, 8",
+        "options": [
+            "2",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "5"
+    },
+    {
+        "question": "Complete the series: 25, 20, 15, 10, ?",
+        "options": [
+            "6",
+            "5",
+            "4",
+            "0"
+        ],
+        "correct_answer": "5"
+    },
+    {
+        "question": "Happy is to Sad as Loud is to:",
+        "options": [
+            "Quiet",
+            "Excited",
+            "Angry",
+            "Silent"
+        ],
+        "correct_answer": "Quiet"
     },
     {
         "question": "What is the next letter in the sequence: C, E, G, I, ?",
         "options": [
-            "J",
             "K",
-            "L",
-            "M"
+            "J",
+            "H",
+            "L"
         ],
         "correct_answer": "K"
     },
     {
-        "question": "If a bike travels 60 miles in 5 hours, what is its average speed?",
+        "question": "If all dogs bark, and a poodle is a dog, then a poodle:",
         "options": [
-            "10 mph",
-            "11 mph",
-            "12 mph",
-            "13 mph"
+            "Meows",
+            "Barks",
+            "Sings",
+            "Hisses"
         ],
-        "correct_answer": "12 mph"
+        "correct_answer": "Barks"
     },
     {
-        "question": "Which shape comes next: triangle, circle, triangle, circle, ?",
+        "question": "Which word does NOT belong: Green, Round, Square, Triangle",
         "options": [
-            "square",
-            "circle",
-            "pentagon",
-            "triangle"
+            "Green",
+            "Round",
+            "Square",
+            "Triangle"
         ],
-        "correct_answer": "triangle"
+        "correct_answer": "Green"
     },
     {
-        "question": "What is the missing number: 3, 5, __, 9, 11?",
+        "question": "Complete the series: 7, 14, 21, 28, ?",
         "options": [
-            "4",
-            "6",
-            "7",
-            "8"
+            "29",
+            "32",
+            "35",
+            "36"
         ],
-        "correct_answer": "7"
+        "correct_answer": "35"
     },
     {
-        "question": "If earth + water = mud, and mud + fire = clay, then earth + water + fire = ?",
+        "question": "Car is to Road as Boat is to:",
         "options": [
-            "dirt",
-            "dust",
-            "mud",
-            "clay"
+            "Land",
+            "Sea",
+            "Air",
+            "Sky"
         ],
-        "correct_answer": "clay"
+        "correct_answer": "Sea"
     },
     {
-        "question": "Which number is the odd one out: 1, 3, 6, 7, 9?",
+        "question": "What number should replace the question mark? 4, 8, 12, ?, 20",
         "options": [
-            "1",
-            "3",
-            "6",
-            "7"
+            "13",
+            "14",
+            "15",
+            "16"
         ],
-        "correct_answer": "6"
+        "correct_answer": "16"
     },
     {
-        "question": "What comes next in the pattern:  sun, moon, star, sun, moon, ?",
+        "question": "If 20 + 20 = 40, then 20 + 21 = ?",
         "options": [
-            "sun",
-            "moon",
-            "star",
-            "planet"
-        ],
-        "correct_answer": "star"
-    },
-    {
-        "question": "If M is heavier than N, and N is heavier than O, then M is ______ than O.",
-        "options": [
-            "lighter",
-            "the same weight",
-            "heavier",
-            "impossible to tell"
-        ],
-        "correct_answer": "heavier"
-    },
-    {
-        "question": "Complete the sequence: 4, 8, 12, 16, ?",
-        "options": [
-            "17",
-            "18",
-            "19",
-            "20"
-        ],
-        "correct_answer": "20"
-    },
-    {
-        "question": "Which is different: March, May, June, July",
-        "options": [
-            "March",
-            "May",
-            "June",
-            "July"
-        ],
-        "correct_answer": "June"
-    },
-    {
-        "question": "If every P is a Q, and some Q are R, then some P are necessarily:",
-        "options": [
-            "R",
-            "not R",
-            "Q",
-            "unknown"
-        ],
-        "correct_answer": "unknown"
-    },
-    {
-        "question": "What is the missing number: 32, 35, 38, __ , 44?",
-        "options": [
-            "39",
             "40",
             "41",
-            "42"
+            "42",
+            "43"
         ],
         "correct_answer": "41"
     },
     {
-        "question": "Find the odd one out:  car, bus, train, boat",
+        "question": "Which word does NOT belong: Run, Swim, Walk, Eat",
         "options": [
-            "car",
-            "bus",
-            "train",
-            "boat"
+            "Run",
+            "Swim",
+            "Walk",
+            "Eat"
         ],
-        "correct_answer": "boat"
+        "correct_answer": "Eat"
     },
     {
-        "question": "What is the next number in the sequence: 4, 8, 16, 32, ?",
+        "question": "Complete the sequence: 4, 16, 64, ?",
         "options": [
-            "48",
-            "56",
-            "64",
-            "72"
+            "128",
+            "192",
+            "256",
+            "512"
         ],
-        "correct_answer": "64"
+        "correct_answer": "256"
     },
     {
-        "question": "If a = c and c = e, then a = ?",
+        "question": "Door is to House as Page is to:",
         "options": [
-            "a",
-            "c",
-            "e",
-            "f"
+            "Book",
+            "Read",
+            "Write",
+            "Paragraph"
         ],
-        "correct_answer": "e"
+        "correct_answer": "Book"
     },
     {
-        "question": "Complete the sequence: 4, 6, 8, 10, ?",
+        "question": "What number is missing? 2, 6, 10, ?, 18",
         "options": [
             "11",
             "12",
             "13",
             "14"
         ],
-        "correct_answer": "12"
-    },
-    {
-        "question": "Which word is different from the others: table, chair, sofa, door",
-        "options": [
-            "table",
-            "chair",
-            "sofa",
-            "door"
-        ],
-        "correct_answer": "door"
-    },
-    {
-        "question": "What is the missing number: 3, 6, 9, __ , 15?",
-        "options": [
-            "10",
-            "11",
-            "12",
-            "13"
-        ],
-        "correct_answer": "12"
-    },
-    {
-        "question": "If all birds are animals and some animals eat seeds, then:",
-        "options": [
-            "All birds eat seeds",
-            "Some birds eat seeds",
-            "No birds eat seeds",
-            "Some seed-eaters are birds"
-        ],
-        "correct_answer": "Some birds eat seeds"
-    },
-    {
-        "question": "What is the next letter: B, E, H, K, ?",
-        "options": [
-            "L",
-            "M",
-            "N",
-            "O"
-        ],
-        "correct_answer": "N"
-    },
-    {
-        "question": "What number should come next in the sequence: 2, 7, 12, 17, ?",
-        "options": [
-            "18",
-            "20",
-            "22",
-            "23"
-        ],
-        "correct_answer": "22"
-    },
-    {
-        "question": "If J = 10, K = 11, L = 12, then what does O equal?",
-        "options": [
-            "13",
-            "14",
-            "15",
-            "16"
-        ],
-        "correct_answer": "15"
-    },
-    {
-        "question": "Which word does NOT belong: shirt, pants, jacket, water?",
-        "options": [
-            "shirt",
-            "pants",
-            "jacket",
-            "water"
-        ],
-        "correct_answer": "water"
-    },
-    {
-        "question": "Complete the series: 4, 16, 64, 256, ?",
-        "options": [
-            "512",
-            "768",
-            "1024",
-            "1280"
-        ],
-        "correct_answer": "1024"
-    },
-    {
-        "question": "If all dogs are friendly, and some friendly things wag their tails, then:",
-        "options": [
-            "All dogs wag their tails",
-            "Some dogs wag their tails",
-            "No dogs wag their tails",
-            "Some tail-waggers are dogs"
-        ],
-        "correct_answer": "Some dogs wag their tails"
-    },
-    {
-        "question": "What is the next letter in the sequence: D, F, H, J, ?",
-        "options": [
-            "K",
-            "L",
-            "M",
-            "N"
-        ],
-        "correct_answer": "L"
-    },
-    {
-        "question": "If a turtle travels 20 miles in 10 hours, what is its average speed?",
-        "options": [
-            "1 mph",
-            "2 mph",
-            "3 mph",
-            "4 mph"
-        ],
-        "correct_answer": "2 mph"
-    },
-    {
-        "question": "Which shape comes next: heart, diamond, heart, diamond, ?",
-        "options": [
-            "club",
-            "diamond",
-            "spade",
-            "heart"
-        ],
-        "correct_answer": "heart"
-    },
-    {
-        "question": "What is the missing number: 4, 6, __, 10, 12?",
-        "options": [
-            "5",
-            "7",
-            "8",
-            "9"
-        ],
-        "correct_answer": "8"
-    },
-    {
-        "question": "If sun + moon = light, and light + shadow = image, then sun + moon + shadow = ?",
-        "options": [
-            "image",
-            "night",
-            "light",
-            "dark"
-        ],
-        "correct_answer": "image"
-    },
-    {
-        "question": "Which number is the odd one out: 4, 6, 8, 9, 10?",
-        "options": [
-            "4",
-            "6",
-            "8",
-            "9"
-        ],
-        "correct_answer": "9"
-    },
-    {
-        "question": "What comes next in the pattern:  one, two, three, one, two, ?",
-        "options": [
-            "one",
-            "two",
-            "three",
-            "four"
-        ],
-        "correct_answer": "three"
-    },
-    {
-        "question": "If R is faster than S, and S is faster than T, then R is ______ than T.",
-        "options": [
-            "slower",
-            "the same speed",
-            "faster",
-            "impossible to tell"
-        ],
-        "correct_answer": "faster"
-    },
-    {
-        "question": "Complete the sequence: 5, 10, 15, 20, ?",
-        "options": [
-            "21",
-            "22",
-            "23",
-            "25"
-        ],
-        "correct_answer": "25"
-    },
-    {
-        "question": "Which is different: orange, apple, pear, rose",
-        "options": [
-            "orange",
-            "apple",
-            "pear",
-            "rose"
-        ],
-        "correct_answer": "rose"
-    },
-    {
-        "question": "If every S is a T, and some T are U, then some S are necessarily:",
-        "options": [
-            "U",
-            "not U",
-            "T",
-            "unknown"
-        ],
-        "correct_answer": "unknown"
-    },
-    {
-        "question": "What is the missing number: 42, 45, 48, __ , 54?",
-        "options": [
-            "49",
-            "50",
-            "51",
-            "52"
-        ],
-        "correct_answer": "51"
-    },
-    {
-        "question": "Find the odd one out:  fork, spoon, knife, cup",
-        "options": [
-            "fork",
-            "spoon",
-            "knife",
-            "cup"
-        ],
-        "correct_answer": "cup"
-    },
-    {
-        "question": "What is the next number in the sequence: 5, 10, 20, 40, ?",
-        "options": [
-            "50",
-            "60",
-            "70",
-            "80"
-        ],
-        "correct_answer": "80"
-    },
-    {
-        "question": "If q = r and r = s, then q = ?",
-        "options": [
-            "q",
-            "r",
-            "s",
-            "t"
-        ],
-        "correct_answer": "s"
-    },
-    {
-        "question": "What is the next number in the series: 2, 5, 8, 11, ?",
-        "options": [
-            "12",
-            "13",
-            "14",
-            "15"
-        ],
         "correct_answer": "14"
-    },
-    {
-        "question": "Which word is the odd one out: red, green, blue, circle?",
-        "options": [
-            "red",
-            "green",
-            "blue",
-            "circle"
-        ],
-        "correct_answer": "circle"
-    },
-    {
-        "question": "Complete the sequence: 100, 90, 80, 70, ?",
-        "options": [
-            "50",
-            "60",
-            "75",
-            "85"
-        ],
-        "correct_answer": "60"
-    },
-    {
-        "question": "What is the next number in the sequence: 1, 3, 6, 10, ?",
-        "options": [
-            "12",
-            "13",
-            "14",
-            "15"
-        ],
-        "correct_answer": "15"
     }
 ]
