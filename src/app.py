@@ -11,7 +11,18 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
 # --- Imports from your project ---
-from generate_candidate_test import run_candidate_test_generation
+try:
+    # Assuming generate_candidate_test.py is in the project root (not src/)
+    from generate_candidate_test import run_candidate_test_generation
+except ImportError:
+    st.error(
+        "Could not import 'run_candidate_test_generation'. Please ensure 'generate_candidate_test.py' is in the project root.")
+
+
+    # Define a mock function to prevent the app from crashing during development
+    def run_candidate_test_generation(name, email, difficulty):
+        raise NotImplementedError("run_candidate_test_generation is not available.")
+
 from src.utils.google_forms.create_all_forms import create_all_google_forms
 from src.utils.google_forms.evaluate_round import evaluate_round_core
 
@@ -51,29 +62,33 @@ with st.container():
 
     col1, col2, col3 = st.columns([1, 1, 1])
 
-    candidate_name = col1.text_input("Candidate Full Name", value="Ravi Kumar Bodicherla")
-    candidate_email = col2.text_input("Candidate Email", value="rbodicherla@example.com")
+    # Setting value="" to remove default text
+    candidate_name = col1.text_input("Candidate Full Name", value="")
+    candidate_email = col2.text_input("Candidate Email", value="")
 
     difficulty_options = ["easy", "medium", "hard"]
+    # Setting index=None to have no initial selection/default
     difficulty = col3.selectbox(
         "Difficulty Level",
         options=difficulty_options,
-        index=0,
+        index=None,
+        placeholder="Select difficulty",
     )
 
     st.markdown("---")
     st.subheader("Generation Flow")
     st.markdown(
         """
-        1. Generate a **candidate test JSON** (L1–L5) using master banks.  
-        2. Use that JSON to **create 5 Google Forms** (L1, L2, L3, L5, and optional L4 coding).  
-        3. Show the **form links** below (click to open, copy for HR to share).
+        1. Generate a **candidate test JSON** (L1–L5) using master banks.   
+        2. Use the links below to **open the form in a new tab.**
         """
     )
 
     if st.button("🚀 Generate Test & Create Google Forms", type="primary"):
         if not candidate_name.strip() or not candidate_email.strip():
             st.error("Please enter both candidate name and email.")
+        elif difficulty is None:
+            st.error("Please select a difficulty level.")
         else:
             try:
                 # 1️⃣ Generate candidate test JSON (all rounds for selected difficulty)
@@ -97,48 +112,47 @@ with st.container():
 
                 # 2️⃣ Create all Google Forms from this JSON
                 form_ids = create_all_google_forms(json_path)
-                # create_all_google_forms is expected to return: { "L1": formId, "L2": ..., ... }
                 st.session_state["latest_form_ids"] = form_ids
 
                 st.success("🎉 All Google Forms created successfully!")
 
-                # 3️⃣ Show forms in a small summary table
-                st.subheader("Generated Google Forms")
-
-                table_rows = []
-                for level, form_id in form_ids.items():
-                    form_url = f"https://docs.google.com/forms/d/{form_id}/edit"
-                    table_rows.append(
-                        {
-                            "Round": level,
-                            "Form URL": form_url,
-                            "Open": f"[Open {level} Form]({form_url})",
-                        }
-                    )
-
-                if table_rows:
-                    df = pd.DataFrame(table_rows)
-                    # Show as Markdown so links are clickable
-                    st.markdown("**Forms Overview**")
-                    st.markdown(df[["Round", "Open"]].to_markdown(index=False), unsafe_allow_html=True)
-
-                    st.markdown("**Copy Form Links**")
-                    st.info(
-                        "Use the boxes below to copy each form URL easily and share with the candidate."
-                    )
-                    for row in table_rows:
-                        level = row["Round"]
-                        url = row["Form URL"]
-                        st.text_input(
-                            label=f"{level} Form Link",
-                            value=url,
-                            key=f"copy_{level}",
-                        )
-
             except FileNotFoundError as fe:
-                st.error(f"❌ {fe}")
+                st.error(f"❌ File Not Found: {fe}")
+            except NotImplementedError:
+                st.error("❌ Test generation function is missing. Cannot proceed.")
             except Exception as e:
                 st.error(f"❌ Unexpected error during form generation: {e}")
+
+    # --- Container for Forms ---
+    form_display_container = st.empty()
+
+    # Logic to populate the container
+    if st.session_state.get("latest_form_ids"):
+        with form_display_container.container():
+            st.subheader("Generated Google Forms")
+            st.markdown("Click the link below to open the form in a new window.")
+
+            form_ids = st.session_state["latest_form_ids"]
+
+            # Define the desired order: L1, L2, L3, L4, L5 (L4 before L5)
+            target_order = ["L1", "L2", "L3", "L4", "L5"]
+
+            # Filter and sort the existing keys according to the target order
+            sorted_levels = [level for level in target_order if level in form_ids]
+
+            # Display form links
+            for level in sorted_levels:
+                form_id = form_ids[level]
+                # Use /viewform for candidate link
+                form_url = f"https://docs.google.com/forms/d/{form_id}/viewform"
+
+                # Display the link without any associated button or timer logic
+                st.markdown(
+                    f'**{level} Form:** <a href="{form_url}" target="_blank">Open Form in New Tab</a>',
+                    unsafe_allow_html=True
+                )
+
+    st.markdown("---")
 
 st.divider()
 
@@ -153,9 +167,7 @@ st.markdown(
 Select a **round**, pick the associated Google Form, and the system will:
 
 - Fetch the **latest submission** from that Form  
-- Compare each MCQ answer with the **candidate JSON**  
-- Compute **score, percentage, pass/fail**  
-- Store the result in a per-candidate **Google Sheet** inside your fixed results folder  
+- Compare each MCQ answer with the **candidate JSON** - Compute **score, percentage, pass/fail** - Store the result in a per-candidate **Google Sheet** inside your fixed results folder  
 """
 )
 
@@ -179,8 +191,8 @@ json_path_eval = st.text_input(
 )
 
 # Round selection
-round_options = ["L1", "L2", "L3", "L5"]
-selected_round = st.selectbox("Select Round to Evaluate", options=round_options, index=0)
+round_options_eval = ["L1", "L2", "L3", "L4", "L5"]
+selected_round = st.selectbox("Select Round to Evaluate", options=round_options_eval, index=0)
 
 # Auto-fetch formId for that round if we have it
 default_form_id = ""
