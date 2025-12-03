@@ -1,15 +1,26 @@
+# Core HTTP
 requests
-# Google & AI APIs
-google-api-python-client
+
+# Google Auth / API Client
+google-auth
 google-auth-oauthlib
 google-auth-httplib2
-google-genai
+google-api-python-client
+
+# Google Sheets Editor (for appending results)
+gspread
+oauth2client
+
+# Gemini Model Support (if generating new master banks)
+google-generativeai
 python-dotenv
 
-# Data & UI
-streamlit
+# Data Handling & UI
 pandas
+streamlit
 
-# Reporting
-gspread
+# Results Reporting (docs / sheets)
 python-docx
+
+# Console Formatting
+tabulate
