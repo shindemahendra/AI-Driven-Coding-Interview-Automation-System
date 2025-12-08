@@ -4,20 +4,17 @@ from src.utils.question_generator.core.validator import extract_json
 
 def generate_L4_questions(difficulty, count):
     prompt = f"""
-Generate {count} coding challenges.
-
-Each question must contain:
-- title
-- description
-- input_format
-- output_format
-- constraints
-- sample_input
-- sample_output
-
-Return JSON: {{ "questions": [ ... ] }}
+Generate EXACTLY {count} coding questions with:
+title, description, input_format, output_format, constraints, sample_input, sample_output
+difficulty="{difficulty}"
+Strict JSON:
+{{ "questions": [ ... ] }}
 """
 
-    text = call_llm(prompt)
-    data = extract_json(text)
-    return data
+    raw = call_llm(prompt)
+    parsed = extract_json(raw)
+
+    if isinstance(parsed, dict):
+        parsed = parsed.get("questions", [])
+
+    return parsed

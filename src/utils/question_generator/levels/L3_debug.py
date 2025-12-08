@@ -10,48 +10,33 @@ def generate_L3_questions(difficulty, total_count):
     batches = total_count // batch_size
 
     for b in range(batches):
-        print(f"   → L3 Batch {b+1}/{batches}")
+        print(f"→ L3 Batch {b+1}/{batches}")
 
         prompt = f"""
-Generate EXACTLY {batch_size} debugging MCQ questions for Python.
-
-VERY IMPORTANT:
-- DO NOT USE CODE BLOCKS (no ```python)
-- If code is needed, return it as a single-line string with \\n where needed.
-- JSON MUST BE VALID.
-- Escape all quotes inside strings.
-
-Return ONLY a JSON array like:
-
-[
-  {{
-    "question": "Bug description...",
-    "code": "single line python code with \\n escape",
-    "options": ["A", "B", "C", "D"],
-    "correct_answer": "A",
-    "topic": "L3",
-    "difficulty": "{difficulty}"
-  }}
-]
+Generate EXACTLY {batch_size} debugging MCQs.
+Code (if present) must use "\\n" for line breaks.
+Fields: question, code(optional), options, correct_answer
+topic="Debugging", difficulty="{difficulty}"
+Strict JSON array only.
 """
 
-        for attempt in range(10):
+        for _ in range(10):
             try:
-                resp = model.generate_content(prompt)
-                raw = resp.text.strip()
+                raw = model.generate_content(prompt).text.strip()
+                parsed = extract_json(raw)
 
-                data = extract_json(raw)
+                if isinstance(parsed, dict):
+                    parsed = parsed.get("questions", [])
 
-                # Some attempts may produce fewer/more: strict check
-                if len(data) == batch_size:
-                    final_questions.extend(data)
-                    print("      ✔ Clean L3 batch added")
+                if len(parsed) == batch_size:
+                    final_questions.extend(parsed)
+                    print("✔ Batch OK")
                     break
-                else:
-                    print(f"      ⚠ Wrong count {len(data)}, retrying…")
+
+                print("⚠ Wrong count → retry")
 
             except Exception as e:
-                print(f"      ⚠ JSON error: {e}, retrying…")
+                print(f"⚠ JSON error: {e}")
 
-    print(f"✔ Total L3 built: {len(final_questions)}")
+    print(f"✔ L3 Generated: {len(final_questions)}")
     return final_questions
