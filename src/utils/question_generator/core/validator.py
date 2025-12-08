@@ -1,29 +1,41 @@
+# src/utils/question_generator/core/validator.py
+
 import json
 import re
 
 def extract_json(raw_text: str):
     """
-    Extracts the FIRST valid top-level JSON array from Gemini output.
-    Handles messy output, comments, text before/after JSON.
+    Extracts JSON array from Gemini response by cleaning common errors.
+    Handles:
+    - text before/after JSON
+    - invalid escape sequences
+    - trailing commas
+    - nested list wrapping
     """
-    # Find the first '[' and last ']'
+
+    # Try to locate first JSON array block
     start = raw_text.find('[')
     end = raw_text.rfind(']')
 
     if start == -1 or end == -1:
-        raise ValueError("No JSON array found in text.")
+        raise ValueError("❌ No JSON array detected in response.")
 
     json_str = raw_text[start:end+1]
 
-    # Remove trailing commas
+    # Fix invalid escape characters like "\("
+    json_str = re.sub(r'\\(?!["\\/bfnrt])', '', json_str)
+
+    # Remove trailing commas before `]`
     json_str = re.sub(r",\s*]", "]", json_str)
+
+    # Remove trailing commas before `}`
+    json_str = re.sub(r",\s*}", "}", json_str)
 
     try:
         data = json.loads(json_str)
-    except Exception as e:
-        raise ValueError(f"Invalid JSON after cleanup: {e}")
+    except json.JSONDecodeError as e:
+        raise ValueError(f"❌ JSON still invalid after cleanup: {e}")
 
-    # Flatten nested lists
     flat = []
     for item in data:
         if isinstance(item, list):

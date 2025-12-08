@@ -4,28 +4,29 @@ from src.utils.question_generator.core.validator import extract_json
 
 def generate_L1_questions(difficulty, count):
     prompt = f"""
-Generate {count} logical reasoning MCQs for IT hiring assessments.
-
-Difficulty: {difficulty}
+Generate EXACTLY {count} logical reasoning MCQs.
 Rules:
-- Only logical puzzles, patterns, sequences, analytical reasoning.
-- No Python, no coding, no softskills.
-- 4 valid MCQ options.
-- Output STRICT JSON with fields:
-  question, options, correct_answer
+- Logical reasoning only
+- 4 MCQ options (A,B,C,D)
+- STRICT JSON
+Difficulty = "{difficulty}"
 
-Return JSON:
-{{
-  "questions": [
-      {{
-          "question": "...",
-          "options": ["A", "B", "C", "D"],
-          "correct_answer": "B"
-      }}
-  ]
-}}
+JSON format:
+[
+  {{
+    "question": "",
+    "options": ["A","B","C","D"],
+    "correct_answer": "A",
+    "difficulty": "{difficulty}",
+    "topic": "Logic"
+  }}
+]
 """
 
-    text = call_llm(prompt)
-    data = extract_json(text)
-    return data
+    raw = call_llm(prompt)
+    parsed = extract_json(raw)
+
+    if isinstance(parsed, dict):
+        parsed = parsed.get("questions", [])
+
+    return parsed

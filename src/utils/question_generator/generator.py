@@ -11,7 +11,7 @@ from .save_manager import save
 
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-2.5-flash-live"
 
 # --- helpers for robust JSON parsing ---
 def write_raw_debug(level, difficulty, raw_text):

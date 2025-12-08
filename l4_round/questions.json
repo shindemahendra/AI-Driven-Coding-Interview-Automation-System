@@ -1,0 +1,1165 @@
+[
+    {
+        "title": "Sum of Two Numbers",
+        "description": "Write a function that takes two numbers as input and returns their sum.",
+        "difficulty": "BASIC",
+        "public_tests": [
+            {
+                "input": "2, 3",
+                "expected": "5"
+            },
+            {
+                "input": "-1, 1",
+                "expected": "0"
+            },
+            {
+                "input": "0, 0",
+                "expected": "0"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "10, 5",
+                "expected": "15"
+            },
+            {
+                "input": "-5, 10",
+                "expected": "5"
+            },
+            {
+                "input": "100, -50",
+                "expected": "50"
+            },
+            {
+                "input": "-100, -100",
+                "expected": "-200"
+            },
+            {
+                "input": "1.5, 2.5",
+                "expected": "4.0"
+            },
+            {
+                "input": "-1.5, 2.5",
+                "expected": "1.0"
+            },
+            {
+                "input": "1.5, -2.5",
+                "expected": "-1.0"
+            },
+            {
+                "input": "1000, 1",
+                "expected": "1001"
+            },
+            {
+                "input": "1, 1000",
+                "expected": "1001"
+            },
+            {
+                "input": "999, 1",
+                "expected": "1000"
+            },
+            {
+                "input": "-999, 1",
+                "expected": "-998"
+            },
+            {
+                "input": "1, -999",
+                "expected": "-998"
+            },
+            {
+                "input": "12345, 67890",
+                "expected": "80235"
+            },
+            {
+                "input": "-12345, 67890",
+                "expected": "55545"
+            },
+            {
+                "input": "12345, -67890",
+                "expected": "-55545"
+            }
+        ]
+    },
+    {
+        "title": "Reverse a String",
+        "description": "Write a function that takes a string as input and returns its reversed version.",
+        "difficulty": "BASIC",
+        "public_tests": [
+            {
+                "input": "\"hello\"",
+                "expected": "\"olleh\""
+            },
+            {
+                "input": "\"world\"",
+                "expected": "\"dlrow\""
+            },
+            {
+                "input": "\"\"",
+                "expected": "\"\""
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "\"python\"",
+                "expected": "\"nohtyp\""
+            },
+            {
+                "input": "\"racecar\"",
+                "expected": "\"racecar\""
+            },
+            {
+                "input": "\"A man, a plan, a canal: Panama\"",
+                "expected": "\".amanaP :lanac a ,nalp a ,nam A\""
+            },
+            {
+                "input": "\"12345\"",
+                "expected": "\"54321\""
+            },
+            {
+                "input": "\"abc def\"",
+                "expected": "\"fed cba\""
+            },
+            {
+                "input": "\"madam\"",
+                "expected": "\"madam\""
+            },
+            {
+                "input": "\"level\"",
+                "expected": "\"level\""
+            },
+            {
+                "input": "\"rotor\"",
+                "expected": "\"rotor\""
+            },
+            {
+                "input": "\"stats\"",
+                "expected": "\"stats\""
+            },
+            {
+                "input": "\"step on no pets\"",
+                "expected": "\"step on no pets\""
+            },
+            {
+                "input": "\"Was it a car or a cat I saw?\"",
+                "expected": "\"?was I tac a ro rac a ti saW\""
+            },
+            {
+                "input": "\"Eva, can I see bees in a cave?\"",
+                "expected": "\"?evac a ni seesb ees I nac ,avE\""
+            },
+            {
+                "input": "\"Hello, World!\"",
+                "expected": "\"!dlroW ,olleH\""
+            },
+            {
+                "input": "\"Testing 123\"",
+                "expected": "\"321 gnitseT\""
+            },
+            {
+                "input": "\"Long string with many characters.\"",
+                "expected": "\".sretcarahc ynam htiw gnirts gnoL\""
+            }
+        ]
+    },
+    {
+        "title": "Find the Maximum Element in a List",
+        "description": "Write a function that takes a list of numbers and returns the maximum element.",
+        "difficulty": "BASIC",
+        "public_tests": [
+            {
+                "input": "[1, 2, 3, 4, 5]",
+                "expected": "5"
+            },
+            {
+                "input": "[-1, -2, -3]",
+                "expected": "-1"
+            },
+            {
+                "input": "[5, 5, 5, 5]",
+                "expected": "5"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "[10, 5, 8, 20, 1]",
+                "expected": "20"
+            },
+            {
+                "input": "[0, 0, 0, 0]",
+                "expected": "0"
+            },
+            {
+                "input": "[-1, -5, -2, -10]",
+                "expected": "-1"
+            },
+            {
+                "input": "[1, 100, 2, 50]",
+                "expected": "100"
+            },
+            {
+                "input": "[100, 1, 50, 2]",
+                "expected": "100"
+            },
+            {
+                "input": "[1.5, 2.5, 3.5]",
+                "expected": "3.5"
+            },
+            {
+                "input": "[-1.5, -2.5, -0.5]",
+                "expected": "-0.5"
+            },
+            {
+                "input": "[1000]",
+                "expected": "1000"
+            },
+            {
+                "input": "[-1000]",
+                "expected": "-1000"
+            },
+            {
+                "input": "[1, 2, 3, 4, 1000]",
+                "expected": "1000"
+            },
+            {
+                "input": "[1000, 1, 2, 3, 4]",
+                "expected": "1000"
+            },
+            {
+                "input": "[123, 456, 789]",
+                "expected": "789"
+            },
+            {
+                "input": "[-123, -456, -789]",
+                "expected": "-123"
+            },
+            {
+                "input": "[999, 1000, 1001]",
+                "expected": "1001"
+            },
+            {
+                "input": "[1001, 1000, 999]",
+                "expected": "1001"
+            }
+        ]
+    },
+    {
+        "title": "Check if a Number is Prime",
+        "description": "Write a function that takes an integer as input and returns True if it's a prime number, False otherwise.",
+        "difficulty": "MEDIUM",
+        "public_tests": [
+            {
+                "input": "2",
+                "expected": "True"
+            },
+            {
+                "input": "4",
+                "expected": "False"
+            },
+            {
+                "input": "11",
+                "expected": "True"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "3",
+                "expected": "True"
+            },
+            {
+                "input": "5",
+                "expected": "True"
+            },
+            {
+                "input": "7",
+                "expected": "True"
+            },
+            {
+                "input": "13",
+                "expected": "True"
+            },
+            {
+                "input": "17",
+                "expected": "True"
+            },
+            {
+                "input": "19",
+                "expected": "True"
+            },
+            {
+                "input": "23",
+                "expected": "True"
+            },
+            {
+                "input": "29",
+                "expected": "True"
+            },
+            {
+                "input": "31",
+                "expected": "True"
+            },
+            {
+                "input": "1",
+                "expected": "False"
+            },
+            {
+                "input": "0",
+                "expected": "False"
+            },
+            {
+                "input": "9",
+                "expected": "False"
+            },
+            {
+                "input": "25",
+                "expected": "False"
+            },
+            {
+                "input": "49",
+                "expected": "False"
+            },
+            {
+                "input": "100",
+                "expected": "False"
+            }
+        ]
+    },
+    {
+        "title": "Calculate the Factorial of a Number",
+        "description": "Write a function that takes an integer as input and returns its factorial.",
+        "difficulty": "MEDIUM",
+        "public_tests": [
+            {
+                "input": "0",
+                "expected": "1"
+            },
+            {
+                "input": "1",
+                "expected": "1"
+            },
+            {
+                "input": "5",
+                "expected": "120"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "2",
+                "expected": "2"
+            },
+            {
+                "input": "3",
+                "expected": "6"
+            },
+            {
+                "input": "4",
+                "expected": "24"
+            },
+            {
+                "input": "6",
+                "expected": "720"
+            },
+            {
+                "input": "7",
+                "expected": "5040"
+            },
+            {
+                "input": "8",
+                "expected": "40320"
+            },
+            {
+                "input": "9",
+                "expected": "362880"
+            },
+            {
+                "input": "10",
+                "expected": "3628800"
+            },
+            {
+                "input": "11",
+                "expected": "39916800"
+            },
+            {
+                "input": "12",
+                "expected": "479001600"
+            },
+            {
+                "input": "13",
+                "expected": "6227020800"
+            },
+            {
+                "input": "14",
+                "expected": "87178291200"
+            },
+            {
+                "input": "15",
+                "expected": "1307674368000"
+            },
+            {
+                "input": "16",
+                "expected": "20922789888000"
+            },
+            {
+                "input": "17",
+                "expected": "355687428096000"
+            }
+        ]
+    },
+    {
+        "title": "Fibonacci Sequence",
+        "description": "Write a function to generate the Fibonacci sequence up to n terms.",
+        "difficulty": "MEDIUM",
+        "public_tests": [
+            {
+                "input": "5",
+                "expected": "[0, 1, 1, 2, 3]"
+            },
+            {
+                "input": "1",
+                "expected": "[0]"
+            },
+            {
+                "input": "0",
+                "expected": "[]"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "2",
+                "expected": "[0, 1]"
+            },
+            {
+                "input": "3",
+                "expected": "[0, 1, 1]"
+            },
+            {
+                "input": "4",
+                "expected": "[0, 1, 1, 2]"
+            },
+            {
+                "input": "6",
+                "expected": "[0, 1, 1, 2, 3, 5]"
+            },
+            {
+                "input": "7",
+                "expected": "[0, 1, 1, 2, 3, 5, 8]"
+            },
+            {
+                "input": "8",
+                "expected": "[0, 1, 1, 2, 3, 5, 8, 13]"
+            },
+            {
+                "input": "9",
+                "expected": "[0, 1, 1, 2, 3, 5, 8, 13, 21]"
+            },
+            {
+                "input": "10",
+                "expected": "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]"
+            },
+            {
+                "input": "11",
+                "expected": "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]"
+            },
+            {
+                "input": "12",
+                "expected": "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]"
+            },
+            {
+                "input": "13",
+                "expected": "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]"
+            },
+            {
+                "input": "14",
+                "expected": "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233]"
+            },
+            {
+                "input": "15",
+                "expected": "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]"
+            },
+            {
+                "input": "16",
+                "expected": "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610]"
+            }
+        ]
+    },
+    {
+        "title": "Anagram Checker",
+        "description": "Write a function that checks if two strings are anagrams of each other (case-insensitive, ignore spaces).",
+        "difficulty": "MEDIUM",
+        "public_tests": [
+            {
+                "input": "\"listen\", \"silent\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"hello\", \"world\"",
+                "expected": "False"
+            },
+            {
+                "input": "\"Debit Card\", \"Bad Credit\"",
+                "expected": "True"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "\"Astronomer\", \"Moon starer\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"School master\", \"The classroom\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"dormitory\", \"dirty room\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"eleven plus two\", \"twelve plus one\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"conversation\", \"voices rant on\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"William Shakespeare\", \"I am a weakish speller\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"The Morse Code\", \"Here come dots\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"old west action\", \"clint eastwood\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"Tom Marvolo Riddle\", \"I am Lord Voldemort\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"\", \"\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"abc\", \"cba\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"abc\", \"abca\"",
+                "expected": "False"
+            },
+            {
+                "input": "\"abca\", \"abc\"",
+                "expected": "False"
+            },
+            {
+                "input": "\"AbC\", \"Bac\"",
+                "expected": "True"
+            },
+            {
+                "input": "\"a b c\", \"bac\"",
+                "expected": "True"
+            }
+        ]
+    },
+    {
+        "title": "Implement a Queue using List",
+        "description": "Implement a Queue data structure using a Python list. Implement enqueue (add to the end), dequeue (remove from the front), peek (return the front element), and is_empty methods.",
+        "difficulty": "MEDIUM",
+        "public_tests": [
+            {
+                "input": "enqueue(1), enqueue(2), dequeue(), peek()",
+                "expected": "2"
+            },
+            {
+                "input": "is_empty()",
+                "expected": "True"
+            },
+            {
+                "input": "enqueue(5), is_empty()",
+                "expected": "False"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "enqueue(1), enqueue(2), enqueue(3), dequeue(), dequeue(), peek()",
+                "expected": "3"
+            },
+            {
+                "input": "enqueue(10), enqueue(20), enqueue(30), dequeue(), enqueue(40), dequeue(), peek()",
+                "expected": "30"
+            },
+            {
+                "input": "enqueue(1), dequeue(), is_empty()",
+                "expected": "True"
+            },
+            {
+                "input": "enqueue(5), enqueue(6), enqueue(7), dequeue(), enqueue(8), enqueue(9), dequeue(), dequeue(), peek()",
+                "expected": "8"
+            },
+            {
+                "input": "enqueue(1), enqueue(1), enqueue(1), dequeue(), dequeue(), dequeue(), is_empty()",
+                "expected": "True"
+            },
+            {
+                "input": "enqueue(1), enqueue(2), enqueue(3), enqueue(4), dequeue(), dequeue(), dequeue(), dequeue(), is_empty()",
+                "expected": "True"
+            },
+            {
+                "input": "enqueue(1), peek(), dequeue(), is_empty()",
+                "expected": "True"
+            },
+            {
+                "input": "enqueue(5), dequeue(), enqueue(10), peek()",
+                "expected": "10"
+            },
+            {
+                "input": "enqueue(15), dequeue(), enqueue(20), dequeue(), is_empty()",
+                "expected": "True"
+            },
+            {
+                "input": "is_empty(), enqueue(5), is_empty(), dequeue(), is_empty()",
+                "expected": "True"
+            },
+            {
+                "input": "enqueue(-1), peek()",
+                "expected": "-1"
+            },
+            {
+                "input": "enqueue(0), peek()",
+                "expected": "0"
+            },
+            {
+                "input": "enqueue(1000), peek()",
+                "expected": "1000"
+            },
+            {
+                "input": "enqueue(-100), peek()",
+                "expected": "-100"
+            },
+            {
+                "input": "enqueue(1), enqueue(2), enqueue(3), dequeue(), peek()",
+                "expected": "2"
+            }
+        ]
+    },
+    {
+        "title": "Merge Two Sorted Lists",
+        "description": "Write a function to merge two sorted lists into a single sorted list.",
+        "difficulty": "MEDIUM",
+        "public_tests": [
+            {
+                "input": "[1, 3, 5], [2, 4, 6]",
+                "expected": "[1, 2, 3, 4, 5, 6]"
+            },
+            {
+                "input": "[1, 2, 3], []",
+                "expected": "[1, 2, 3]"
+            },
+            {
+                "input": "[], [4, 5, 6]",
+                "expected": "[4, 5, 6]"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]",
+                "expected": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+            },
+            {
+                "input": "[6, 7, 8, 9, 10], [1, 2, 3, 4, 5]",
+                "expected": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+            },
+            {
+                "input": "[1, 3, 5, 7, 9], [2, 4, 6, 8, 10]",
+                "expected": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+            },
+            {
+                "input": "[2, 4, 6, 8, 10], [1, 3, 5, 7, 9]",
+                "expected": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+            },
+            {
+                "input": "[1, 1, 2, 2], [1, 1, 2, 2]",
+                "expected": "[1, 1, 1, 1, 2, 2, 2, 2]"
+            },
+            {
+                "input": "[-3, -1, 1, 3], [-2, 0, 2, 4]",
+                "expected": "[-3, -2, -1, 0, 1, 2, 3, 4]"
+            },
+            {
+                "input": "[1], [2]",
+                "expected": "[1, 2]"
+            },
+            {
+                "input": "[2], [1]",
+                "expected": "[1, 2]"
+            },
+            {
+                "input": "[5, 5, 5], [5, 5, 5]",
+                "expected": "[5, 5, 5, 5, 5, 5]"
+            },
+            {
+                "input": "[-1, 0, 1], [-2, -1, 0]",
+                "expected": "[-2, -1, -1, 0, 0, 1]"
+            },
+            {
+                "input": "[-5, -4, -3], [-2, -1, 0]",
+                "expected": "[-5, -4, -3, -2, -1, 0]"
+            },
+            {
+                "input": "[10, 20, 30], [15, 25, 35]",
+                "expected": "[10, 15, 20, 25, 30, 35]"
+            },
+            {
+                "input": "[100, 200, 300], [50, 150, 250]",
+                "expected": "[50, 100, 150, 200, 250, 300]"
+            },
+            {
+                "input": "[1, 10, 100], [2, 20, 200]",
+                "expected": "[1, 2, 10, 20, 100, 200]"
+            },
+            {
+                "input": "[-100, -10, -1], [-200, -20, -2]",
+                "expected": "[-200, -100, -20, -10, -2, -1]"
+            }
+        ]
+    },
+    {
+        "title": "Binary Search",
+        "description": "Implement binary search on a sorted list to find a target element. Return the index of the element if found, otherwise return -1.",
+        "difficulty": "MEDIUM",
+        "public_tests": [
+            {
+                "input": "[2, 5, 7, 8, 11, 12], 13",
+                "expected": "-1"
+            },
+            {
+                "input": "[2, 5, 7, 8, 11, 12], 12",
+                "expected": "5"
+            },
+            {
+                "input": "[2, 5, 7, 8, 11, 12], 0",
+                "expected": "-1"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "[2, 5, 7, 8, 11, 12], 5",
+                "expected": "1"
+            },
+            {
+                "input": "[2, 5, 7, 8, 11, 12], 2",
+                "expected": "0"
+            },
+            {
+                "input": "[2, 5, 7, 8, 11, 12], 8",
+                "expected": "3"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5], 3",
+                "expected": "2"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5], 1",
+                "expected": "0"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5], 5",
+                "expected": "4"
+            },
+            {
+                "input": "[1], 1",
+                "expected": "0"
+            },
+            {
+                "input": "[1], 0",
+                "expected": "-1"
+            },
+            {
+                "input": "[], 5",
+                "expected": "-1"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 7",
+                "expected": "6"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 1",
+                "expected": "0"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10",
+                "expected": "9"
+            },
+            {
+                "input": "[-5, -3, -1, 1, 3, 5], 1",
+                "expected": "3"
+            },
+            {
+                "input": "[-5, -3, -1, 1, 3, 5], -5",
+                "expected": "0"
+            },
+            {
+                "input": "[-5, -3, -1, 1, 3, 5], 5",
+                "expected": "5"
+            }
+        ]
+    },
+    {
+        "title": "Count Vowels",
+        "description": "Write a function that counts the number of vowels (a, e, i, o, u) in a given string (case-insensitive).",
+        "difficulty": "BASIC",
+        "public_tests": [
+            {
+                "input": "\"hello\"",
+                "expected": "2"
+            },
+            {
+                "input": "\"AEIOU\"",
+                "expected": "5"
+            },
+            {
+                "input": "\"rhythm\"",
+                "expected": "0"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "\"Python\"",
+                "expected": "1"
+            },
+            {
+                "input": "\"programming\"",
+                "expected": "3"
+            },
+            {
+                "input": "\"Algorithm\"",
+                "expected": "3"
+            },
+            {
+                "input": "\"aeiouAEIOU\"",
+                "expected": "10"
+            },
+            {
+                "input": "\"The quick brown fox\"",
+                "expected": "5"
+            },
+            {
+                "input": "\"12345\"",
+                "expected": "0"
+            },
+            {
+                "input": "\"\"",
+                "expected": "0"
+            },
+            {
+                "input": "\"a\"",
+                "expected": "1"
+            },
+            {
+                "input": "\"e\"",
+                "expected": "1"
+            },
+            {
+                "input": "\"i\"",
+                "expected": "1"
+            },
+            {
+                "input": "\"o\"",
+                "expected": "1"
+            },
+            {
+                "input": "\"u\"",
+                "expected": "1"
+            },
+            {
+                "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+                "expected": "5"
+            },
+            {
+                "input": "\"Vowels are fun!\"",
+                "expected": "5"
+            },
+            {
+                "input": "\"No vowels here.\"",
+                "expected": "5"
+            }
+        ]
+    },
+    {
+        "title": "Calculate the Area of a Circle",
+        "description": "Write a function that calculates the area of a circle given its radius.",
+        "difficulty": "BASIC",
+        "public_tests": [
+            {
+                "input": "5",
+                "expected": "78.53981633974483"
+            },
+            {
+                "input": "1",
+                "expected": "3.141592653589793"
+            },
+            {
+                "input": "0",
+                "expected": "0.0"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "2",
+                "expected": "12.566370614359172"
+            },
+            {
+                "input": "3",
+                "expected": "28.274333882308138"
+            },
+            {
+                "input": "4",
+                "expected": "50.26548245743669"
+            },
+            {
+                "input": "6",
+                "expected": "113.09733552923255"
+            },
+            {
+                "input": "7",
+                "expected": "153.93804002589985"
+            },
+            {
+                "input": "8",
+                "expected": "201.06192982974676"
+            },
+            {
+                "input": "9",
+                "expected": "254.46900494077323"
+            },
+            {
+                "input": "10",
+                "expected": "314.1592653589793"
+            },
+            {
+                "input": "1.5",
+                "expected": "7.0685834705770345"
+            },
+            {
+                "input": "2.5",
+                "expected": "19.634954084936208"
+            },
+            {
+                "input": "3.5",
+                "expected": "38.48451000647496"
+            },
+            {
+                "input": "4.5",
+                "expected": "63.61725123519331"
+            },
+            {
+                "input": "5.5",
+                "expected": "95.0331777710914"
+            },
+            {
+                "input": "6.5",
+                "expected": "132.7322896141691"
+            },
+            {
+                "input": "7.5",
+                "expected": "176.71458647644025"
+            }
+        ]
+    },
+    {
+        "title": "Remove Duplicates from a List",
+        "description": "Write a function that takes a list as input and returns a new list with duplicates removed, preserving the original order.",
+        "difficulty": "MEDIUM",
+        "public_tests": [
+            {
+                "input": "[1, 2, 2, 3, 4, 4, 5]",
+                "expected": "[1, 2, 3, 4, 5]"
+            },
+            {
+                "input": "[1, 1, 1, 1]",
+                "expected": "[1]"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5]",
+                "expected": "[1, 2, 3, 4, 5]"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "[1, 2, 1, 3, 2, 4, 3, 5]",
+                "expected": "[1, 2, 3, 4, 5]"
+            },
+            {
+                "input": "[]",
+                "expected": "[]"
+            },
+            {
+                "input": "[5, 4, 3, 2, 1]",
+                "expected": "[5, 4, 3, 2, 1]"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5, 1, 2, 3, 4, 5]",
+                "expected": "[1, 2, 3, 4, 5]"
+            },
+            {
+                "input": "[1, 1, 1, 2, 2, 2, 3, 3, 3]",
+                "expected": "[1, 2, 3]"
+            },
+            {
+                "input": "[1, 2, 3, 2, 1]",
+                "expected": "[1, 2, 3]"
+            },
+            {
+                "input": "[1, 1, 2, 2, 1, 1]",
+                "expected": "[1, 2]"
+            },
+            {
+                "input": "[1, 2, 3, 1, 2, 3]",
+                "expected": "[1, 2, 3]"
+            },
+            {
+                "input": "[10, 20, 30, 10, 20, 30]",
+                "expected": "[10, 20, 30]"
+            },
+            {
+                "input": "[-1, -2, -1, -3, -2, -4]",
+                "expected": "[-1, -2, -3, -4]"
+            },
+            {
+                "input": "[0, 0, 0, 0]",
+                "expected": "[0]"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3]",
+                "expected": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+            },
+            {
+                "input": "[1.0, 1.0, 2.0, 2.0]",
+                "expected": "[1.0, 2.0]"
+            },
+            {
+                "input": "[\"a\", \"b\", \"a\", \"c\"]",
+                "expected": "[\"a\", \"b\", \"c\"]"
+            },
+            {
+                "input": "[\"apple\", \"banana\", \"apple\", \"orange\"]",
+                "expected": "[\"apple\", \"banana\", \"orange\"]"
+            }
+        ]
+    },
+    {
+        "title": "Find the Second Largest Number in a List",
+        "description": "Write a function that finds the second largest number in a list of numbers. Return None if the list has fewer than two elements.",
+        "difficulty": "MEDIUM",
+        "public_tests": [
+            {
+                "input": "[1, 2, 3, 4, 5]",
+                "expected": "4"
+            },
+            {
+                "input": "[5, 4, 3, 2, 1]",
+                "expected": "4"
+            },
+            {
+                "input": "[1, 1, 1, 1]",
+                "expected": "None"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "[5, 5, 5, 5, 6]",
+                "expected": "5"
+            },
+            {
+                "input": "[6, 5, 5, 5, 5]",
+                "expected": "5"
+            },
+            {
+                "input": "[1, 2]",
+                "expected": "1"
+            },
+            {
+                "input": "[2, 1]",
+                "expected": "1"
+            },
+            {
+                "input": "[1]",
+                "expected": "None"
+            },
+            {
+                "input": "[]",
+                "expected": "None"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+                "expected": "9"
+            },
+            {
+                "input": "[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]",
+                "expected": "9"
+            },
+            {
+                "input": "[1, 5, 2, 4, 3]",
+                "expected": "4"
+            },
+            {
+                "input": "[-1, -2, -3, -4, -5]",
+                "expected": "-2"
+            },
+            {
+                "input": "[-5, -4, -3, -2, -1]",
+                "expected": "-2"
+            },
+            {
+                "input": "[1, 1, 2, 2, 3]",
+                "expected": "2"
+            },
+            {
+                "input": "[3, 2, 2, 1, 1]",
+                "expected": "2"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5, 5]",
+                "expected": "4"
+            },
+            {
+                "input": "[5, 5, 4, 3, 2, 1]",
+                "expected": "4"
+            }
+        ]
+    },
+    {
+        "title": "Calculate the Average of Numbers in a List",
+        "description": "Write a function that takes a list of numbers and returns the average of those numbers. Return 0 if the list is empty.",
+        "difficulty": "BASIC",
+        "public_tests": [
+            {
+                "input": "[1, 2, 3, 4, 5]",
+                "expected": "3.0"
+            },
+            {
+                "input": "[10, 20, 30]",
+                "expected": "20.0"
+            },
+            {
+                "input": "[]",
+                "expected": "0"
+            }
+        ],
+        "hidden_tests": [
+            {
+                "input": "[1, 1, 1, 1, 1]",
+                "expected": "1.0"
+            },
+            {
+                "input": "[1, 2, 3, 4, 5, 6]",
+                "expected": "3.5"
+            },
+            {
+                "input": "[0, 0, 0, 0]",
+                "expected": "0.0"
+            }
+        ]
+    }
+]

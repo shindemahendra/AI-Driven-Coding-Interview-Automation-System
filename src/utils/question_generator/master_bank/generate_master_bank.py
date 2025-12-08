@@ -1,6 +1,4 @@
-import os
-import json
-
+import os, json
 from src.utils.question_generator.levels.L1_logic import generate_L1_questions
 from src.utils.question_generator.levels.L2_python import generate_L2_questions
 from src.utils.question_generator.levels.L3_debug import generate_L3_questions
@@ -8,11 +6,7 @@ from src.utils.question_generator.levels.L4_coding import generate_L4_questions
 from src.utils.question_generator.levels.L5_softskills import generate_L5_questions
 
 MASTER_DIR = "question_bank/master"
-
-
-def ensure_dir():
-    os.makedirs(MASTER_DIR, exist_ok=True)
-
+os.makedirs(MASTER_DIR, exist_ok=True)
 
 GEN_MAP = {
     "L1": generate_L1_questions,
@@ -24,15 +18,15 @@ GEN_MAP = {
 
 
 def generate_master(level, difficulty, count):
-    ensure_dir()
-    func = GEN_MAP[level]
+    print(f"\n📌 Generating MASTER → {level}_{difficulty} ({count})")
 
-    print(f"🔵 Generating master bank: {level}_{difficulty}")
+    data = GEN_MAP[level](difficulty, count)
 
-    data = func(difficulty, count)
+    if not isinstance(data, list):
+        raise RuntimeError("Expected list of questions")
 
-    outfile = f"{MASTER_DIR}/{level}_{difficulty}_master.json"
-    with open(outfile, "w") as f:
+    out = f"{MASTER_DIR}/{level}_{difficulty}_master.json"
+    with open(out, "w") as f:
         json.dump(data, f, indent=4)
 
-    print(f"✔ Saved → {outfile}")
+    print(f"✔ Saved → {out}")

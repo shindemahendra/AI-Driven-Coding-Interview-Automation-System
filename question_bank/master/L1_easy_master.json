@@ -1,982 +1,1466 @@
 [
     {
-        "question": "What number should come next in the series? 2, 4, 6, 8, ?",
+        "question": "All dogs are mammals. Fido is a dog. Therefore, Fido is a mammal. This is an example of which type of reasoning?",
         "options": [
-            "9",
-            "10",
-            "11",
-            "12"
+            "Inductive Reasoning",
+            "Deductive Reasoning",
+            "Abductive Reasoning",
+            "Analogical Reasoning"
         ],
-        "correct_answer": "10"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all Bloops are Razzies and all Razzies are Lazooms, then all Bloops are definitely:",
+        "question": "If it rains, the ground gets wet. It is raining. What can we conclude?",
         "options": [
-            "Lazooms",
-            "Not Lazooms",
-            "Razzies",
-            "Not Razzies"
+            "The ground is dry.",
+            "The ground will get wet.",
+            "It did not rain.",
+            "The ground might get wet."
         ],
-        "correct_answer": "Lazooms"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong in the following list? Apple, Banana, Carrot, Orange",
+        "question": "All birds have feathers. A robin is a bird. Therefore, a robin has feathers. This is a valid argument.",
         "options": [
-            "Apple",
-            "Banana",
-            "Carrot",
-            "Orange"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially True"
         ],
-        "correct_answer": "Carrot"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: A1Z, B2Y, C3X, ?",
+        "question": "Choose the statement that logically follows: If John studies, he will pass the exam. John did not pass the exam. What can be concluded about John's studying?",
         "options": [
-            "D4W",
-            "E5V",
-            "F6U",
-            "G7T"
+            "John studied.",
+            "John did not study.",
+            "John might have studied.",
+            "We cannot know if John studied."
         ],
-        "correct_answer": "D4W"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If A=1, B=2, C=3, then what does F equal?",
+        "question": "Consider the following: All A are B. All B are C. Therefore, all A are C. This is an example of:",
         "options": [
-            "4",
-            "5",
-            "6",
-            "7"
+            "Affirming the consequent",
+            "Denying the antecedent",
+            "Hypothetical syllogism",
+            "Disjunctive syllogism"
         ],
-        "correct_answer": "6"
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What comes next: J, F, M, A, M, J, J, A, ?",
+        "question": "If a number is even, it is divisible by 2. The number 10 is even. What is true?",
         "options": [
-            "S",
-            "O",
-            "N",
-            "D"
+            "10 is not divisible by 2.",
+            "10 is divisible by 2.",
+            "The number 10 is odd.",
+            "We cannot determine if 10 is divisible by 2."
         ],
-        "correct_answer": "S"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which number is missing? 1, 4, 9, ?, 25",
+        "question": "All squares are rectangles. This shape is a square. Therefore, this shape is a rectangle. This is a valid inference.",
         "options": [
-            "12",
-            "16",
-            "18",
-            "20"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Sometimes true"
         ],
-        "correct_answer": "16"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Dog is to Bark as Cat is to:",
+        "question": "If it is sunny, I will go to the park. I went to the park. What can we conclude?",
         "options": [
-            "Meow",
-            "Growl",
-            "Hiss",
-            "Purr"
+            "It was sunny.",
+            "It was not sunny.",
+            "It might have been sunny.",
+            "We cannot conclude anything about the weather."
         ],
-        "correct_answer": "Meow"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What is the next letter in the following sequence: O, T, T, F, F, S, S, E, ?",
+        "question": "Premise 1: All students in this class are intelligent. Premise 2: Sarah is a student in this class. Conclusion: Sarah is intelligent. This is a valid argument.",
         "options": [
-            "N",
-            "T",
-            "O",
-            "F"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially valid"
         ],
-        "correct_answer": "N"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Find the odd one out: Chair, Table, Bed, Plate",
+        "question": "If the alarm rings, I wake up. I woke up. What can be concluded?",
         "options": [
-            "Chair",
-            "Table",
-            "Bed",
-            "Plate"
+            "The alarm rang.",
+            "The alarm did not ring.",
+            "The alarm might have rung.",
+            "We cannot conclude anything about the alarm."
         ],
-        "correct_answer": "Plate"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What comes next? 1, 3, 5, 7, ?",
+        "question": "All apples are fruits. Some fruits are red. Therefore, some apples are red. Is this argument necessarily true?",
         "options": [
-            "8",
-            "9",
-            "10",
-            "11"
+            "Yes",
+            "No",
+            "Cannot be determined",
+            "Only if all red fruits are apples."
         ],
-        "correct_answer": "9"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Cup is to Coffee as Bowl is to:",
+        "question": "If a person is a doctor, they have studied medicine. Mary has studied medicine. Therefore, Mary is a doctor. This is a logical fallacy called:",
         "options": [
-            "Cereal",
-            "Soup",
-            "Water",
-            "Food"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "Soup"
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all squares are rectangles, and some rectangles are parallelograms, then:",
+        "question": "All cats are animals. All animals need to eat. Therefore, all cats need to eat. This is a valid deduction.",
         "options": [
-            "All squares are parallelograms",
-            "Some squares are parallelograms",
-            "No squares are parallelograms",
-            "All parallelograms are squares"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially true"
         ],
-        "correct_answer": "Some squares are parallelograms"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which of the following is the odd one out: Red, Green, Blue, Yellow",
+        "question": "If it is snowing, the roads are slippery. The roads are not slippery. What can be concluded?",
         "options": [
-            "Red",
-            "Green",
-            "Blue",
-            "Yellow"
+            "It is snowing.",
+            "It is not snowing.",
+            "It might be snowing.",
+            "We cannot conclude anything about the snow."
         ],
-        "correct_answer": "Yellow"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: 2, 6, 12, 20, ?",
+        "question": "Premise 1: All men are mortal. Premise 2: Socrates is a man. Conclusion: Socrates is mortal. This is a classic example of:",
         "options": [
-            "24",
-            "28",
-            "30",
-            "32"
+            "Inductive Reasoning",
+            "Deductive Reasoning",
+            "Abductive Reasoning",
+            "Logical Fallacy"
         ],
-        "correct_answer": "30"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Book is to Reading as Fork is to:",
+        "question": "If you finish your homework, you can play video games. You played video games. What can be concluded?",
         "options": [
-            "Eating",
-            "Writing",
-            "Drawing",
-            "Sleeping"
+            "You finished your homework.",
+            "You did not finish your homework.",
+            "You might have finished your homework.",
+            "We cannot be sure if you finished your homework."
         ],
-        "correct_answer": "Eating"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which number should replace the question mark? 5, 10, 15, ?, 25",
+        "question": "All cars have wheels. My bicycle has wheels. Therefore, my bicycle is a car. Is this argument valid?",
         "options": [
-            "18",
-            "20",
-            "22",
-            "24"
+            "Yes",
+            "No",
+            "Cannot be determined",
+            "Only if all things with wheels are cars."
         ],
-        "correct_answer": "20"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If 2 + 2 = 4, then 2 + 3 = ?",
+        "question": "If a number is prime, it is greater than 1. The number 7 is greater than 1. What can be concluded?",
         "options": [
-            "4",
-            "5",
-            "6",
-            "7"
+            "7 is a prime number.",
+            "7 is not a prime number.",
+            "7 might be a prime number.",
+            "We cannot conclude if 7 is prime."
         ],
-        "correct_answer": "5"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong: Run, Walk, Skip, Fly",
+        "question": "All P are Q. No Q are R. Therefore, no P are R. This is a valid syllogism.",
         "options": [
-            "Run",
-            "Walk",
-            "Skip",
-            "Fly"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Depends on the specific P, Q, and R."
         ],
-        "correct_answer": "Fly"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the sequence: 1, 8, 27, ?",
+        "question": "If the light is green, cars can go. Cars can go. What can be concluded about the light?",
         "options": [
-            "36",
-            "48",
-            "64",
-            "81"
+            "The light is green.",
+            "The light is not green.",
+            "The light might be green.",
+            "We cannot conclude anything about the light."
         ],
-        "correct_answer": "64"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Pen is to Paper as Brush is to:",
+        "question": "All students passed the test. Mark is a student. Therefore, Mark passed the test. This is a valid conclusion.",
         "options": [
-            "Paint",
-            "Canvas",
-            "Color",
-            "Art"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially true"
         ],
-        "correct_answer": "Canvas"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What is the next shape in the sequence: Circle, Square, Triangle, Circle, Square, ?",
+        "question": "If it is hot, I wear shorts. I am wearing shorts. What can be concluded?",
         "options": [
-            "Circle",
-            "Square",
-            "Triangle",
-            "Rectangle"
+            "It is hot.",
+            "It is not hot.",
+            "It might be hot.",
+            "We cannot conclude anything about the temperature."
         ],
-        "correct_answer": "Triangle"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If day before yesterday was Sunday, what day is today?",
+        "question": "All mammals are animals. A cat is a mammal. Therefore, a cat is an animal. This argument is:",
         "options": [
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
+            "Invalid",
+            "Valid",
+            "Uncertain",
+            "A fallacy"
         ],
-        "correct_answer": "Tuesday"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Choose the word that is most similar to 'Happy':",
+        "question": "If a triangle has three equal sides, it is equilateral. Triangle ABC has three equal sides. Therefore, Triangle ABC is equilateral. This is:",
         "options": [
-            "Sad",
-            "Joyful",
-            "Angry",
-            "Bored"
+            "Modus Tollens",
+            "Denying the Antecedent",
+            "Modus Ponens",
+            "Affirming the Consequent"
         ],
-        "correct_answer": "Joyful"
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What comes next: 1, 1, 2, 3, 5, ?",
+        "question": "All teachers grade papers. Mr. Smith grades papers. Therefore, Mr. Smith is a teacher. Is this argument necessarily true?",
         "options": [
-            "6",
-            "7",
-            "8",
-            "9"
+            "Yes",
+            "No",
+            "Cannot be determined",
+            "Only if all people who grade papers are teachers."
         ],
-        "correct_answer": "8"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Hour is to Minute as Minute is to:",
+        "question": "If the train is late, I will miss my appointment. I did not miss my appointment. What can be concluded?",
         "options": [
-            "Second",
-            "Day",
-            "Week",
-            "Month"
+            "The train was late.",
+            "The train was not late.",
+            "The train might have been late.",
+            "We cannot conclude anything about the train."
         ],
-        "correct_answer": "Second"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all cats have fur, and Mittens is a cat, then Mittens has:",
+        "question": "All flowers are plants. A rose is a flower. Therefore, a rose is a plant. This is a sound argument.",
         "options": [
-            "Scales",
-            "Feathers",
-            "Fur",
-            "Gills"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially sound"
         ],
-        "correct_answer": "Fur"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which number is the odd one out: 2, 4, 6, 7, 8",
+        "question": "If you study hard, you will get good grades. You got good grades. What can be concluded?",
         "options": [
-            "2",
-            "4",
-            "6",
-            "7"
+            "You studied hard.",
+            "You did not study hard.",
+            "You might have studied hard.",
+            "We cannot be sure if you studied hard."
         ],
-        "correct_answer": "7"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: 10, 8, 6, 4, ?",
+        "question": "All birds can fly. A penguin is a bird. Therefore, a penguin can fly. This conclusion is:",
         "options": [
-            "5",
-            "3",
-            "2",
-            "1"
+            "Logically valid, but factually incorrect.",
+            "Logically invalid, and factually incorrect.",
+            "Logically valid and factually correct.",
+            "Logically invalid, but factually correct."
         ],
-        "correct_answer": "2"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Hot is to Cold as Up is to:",
+        "question": "If it is raining, the streets are wet. It is not raining. What can be concluded?",
         "options": [
-            "Down",
-            "Left",
-            "Right",
-            "Middle"
+            "The streets are wet.",
+            "The streets are not wet.",
+            "The streets might be wet.",
+            "We cannot conclude anything about the streets."
         ],
-        "correct_answer": "Down"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What is the next letter in the sequence: A, C, E, G, ?",
+        "question": "Premise 1: All books have pages. Premise 2: This object has pages. Conclusion: This object is a book. Is this argument valid?",
         "options": [
-            "H",
-            "I",
-            "J",
-            "K"
+            "Yes",
+            "No",
+            "Cannot be determined",
+            "Only if all things with pages are books."
         ],
-        "correct_answer": "I"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all birds have wings, and penguins are birds, then penguins have:",
+        "question": "If a number is divisible by 4, it is divisible by 2. The number 9 is divisible by 2. What can be concluded?",
         "options": [
-            "Fins",
-            "Scales",
-            "Wings",
-            "Gills"
+            "9 is divisible by 4.",
+            "9 is not divisible by 4.",
+            "9 might be divisible by 4.",
+            "We cannot conclude anything about divisibility by 4."
         ],
-        "correct_answer": "Wings"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong: Green, Blue, Round, Yellow",
+        "question": "All squares have four sides. A rectangle has four sides. Therefore, a rectangle is a square. This is:",
         "options": [
-            "Green",
-            "Blue",
-            "Round",
-            "Yellow"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "Round"
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: 3, 6, 9, 12, ?",
+        "question": "If I am tired, I will sleep. I am not tired. What can be concluded?",
         "options": [
-            "13",
-            "14",
-            "15",
-            "16"
+            "I will sleep.",
+            "I will not sleep.",
+            "I might sleep.",
+            "We cannot conclude anything about sleeping."
         ],
-        "correct_answer": "15"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Tree is to Forest as Flower is to:",
+        "question": "All dogs are canines. Fido is a canine. Therefore, Fido is a dog. Is this argument necessarily true?",
         "options": [
-            "Garden",
-            "Stem",
-            "Root",
-            "Leaf"
+            "Yes",
+            "No",
+            "Cannot be determined",
+            "Only if all canines are dogs."
         ],
-        "correct_answer": "Garden"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What number should replace the question mark? 1, 3, 5, ?, 9",
+        "question": "If the weather is good, we will have a picnic. We did not have a picnic. What can be concluded?",
         "options": [
-            "6",
-            "7",
-            "8",
-            "10"
+            "The weather was good.",
+            "The weather was not good.",
+            "The weather might have been good.",
+            "We cannot conclude anything about the weather."
         ],
-        "correct_answer": "7"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If 5 + 5 = 10, then 5 + 6 = ?",
+        "question": "All apples are fruits. This is a fruit. Therefore, this is an apple. This is:",
         "options": [
-            "10",
-            "11",
-            "12",
-            "13"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "11"
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong: Swim, Run, Fly, Crawl",
+        "question": "If a student passes the exam, they have studied. Sarah did not study. What can be concluded?",
         "options": [
-            "Swim",
-            "Run",
-            "Fly",
-            "Crawl"
+            "Sarah passed the exam.",
+            "Sarah did not pass the exam.",
+            "Sarah might have passed the exam.",
+            "We cannot conclude anything about Sarah's exam status."
         ],
-        "correct_answer": "Fly"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the sequence: 2, 4, 8, ?",
+        "question": "All numbers divisible by 10 are divisible by 5. The number 25 is divisible by 5. What can be concluded?",
         "options": [
-            "10",
-            "12",
-            "14",
-            "16"
+            "25 is divisible by 10.",
+            "25 is not divisible by 10.",
+            "25 might be divisible by 10.",
+            "We cannot conclude anything about divisibility by 10."
         ],
-        "correct_answer": "16"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Hammer is to Nail as Screwdriver is to:",
+        "question": "If a creature has wings, it can fly. This creature does not have wings. What can be concluded?",
         "options": [
-            "Screw",
-            "Wood",
-            "Wall",
-            "Metal"
+            "This creature can fly.",
+            "This creature cannot fly.",
+            "This creature might be able to fly.",
+            "We cannot conclude anything about its ability to fly."
         ],
-        "correct_answer": "Screw"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What is the next shape in the sequence: Square, Circle, Square, Circle, ?",
+        "question": "All cats are mammals. Whiskers is a mammal. Therefore, Whiskers is a cat. This is a:",
         "options": [
-            "Triangle",
-            "Square",
-            "Circle",
-            "Rectangle"
+            "Valid argument",
+            "Invalid argument",
+            "Sound argument",
+            "False premise"
         ],
-        "correct_answer": "Square"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If tomorrow is Friday, what day was yesterday?",
+        "question": "If you are a student, you have homework. You do not have homework. What can be concluded?",
         "options": [
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Saturday"
+            "You are a student.",
+            "You are not a student.",
+            "You might be a student.",
+            "We cannot conclude anything about your student status."
         ],
-        "correct_answer": "Tuesday"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Choose the word that is most similar to 'Brave':",
+        "question": "All dogs bark. Rex does not bark. Therefore, Rex is not a dog. This argument uses:",
         "options": [
-            "Scared",
-            "Courageous",
-            "Weak",
-            "Timid"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "Courageous"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What comes next: 2, 4, 6, 8, 10, ?",
+        "question": "If the sky is blue, then there are clouds. There are clouds. What can be concluded about the sky's color?",
         "options": [
-            "11",
-            "12",
-            "13",
-            "14"
+            "The sky is blue.",
+            "The sky is not blue.",
+            "The sky might be blue.",
+            "We cannot conclude anything about the sky's color."
         ],
-        "correct_answer": "12"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Day is to Night as Light is to:",
+        "question": "All cars require fuel. My electric car does not require fuel (in the traditional sense). Therefore, my electric car is not a car. This argument is:",
         "options": [
-            "Dark",
-            "Sun",
-            "Moon",
-            "Star"
+            "Valid",
+            "Invalid",
+            "Sound",
+            "Unsound"
         ],
-        "correct_answer": "Dark"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all dogs are animals, and Fido is a dog, then Fido is:",
+        "question": "If it is cold, I wear a hat. I am not wearing a hat. What can be concluded?",
         "options": [
-            "A plant",
-            "An animal",
-            "A rock",
-            "A tree"
+            "It is cold.",
+            "It is not cold.",
+            "It might be cold.",
+            "We cannot conclude anything about the temperature."
         ],
-        "correct_answer": "An animal"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which number is the odd one out: 1, 3, 5, 8, 9",
+        "question": "All mammals have lungs. A whale is a mammal. Therefore, a whale has lungs. This is a:",
         "options": [
-            "1",
-            "3",
-            "5",
-            "8"
+            "Fallacy",
+            "Valid deduction",
+            "Invalid deduction",
+            "Contradiction"
         ],
-        "correct_answer": "8"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: 15, 12, 9, 6, ?",
+        "question": "If you eat too much, you feel sick. You do not feel sick. What can be concluded?",
         "options": [
-            "5",
-            "4",
-            "3",
-            "2"
+            "You ate too much.",
+            "You did not eat too much.",
+            "You might have eaten too much.",
+            "We cannot conclude anything about your eating habits."
         ],
-        "correct_answer": "3"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Sweet is to Sour as Happy is to:",
+        "question": "All birds are animals. This creature is an animal. Therefore, this creature is a bird. Is this argument necessarily true?",
         "options": [
-            "Joyful",
-            "Sad",
-            "Angry",
-            "Excited"
+            "Yes",
+            "No",
+            "Cannot be determined",
+            "Only if all animals are birds."
         ],
-        "correct_answer": "Sad"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What is the next letter in the sequence: Z, Y, X, W, ?",
+        "question": "If a number is even, it ends in 0, 2, 4, 6, or 8. The number 35 ends in 5. What can be concluded?",
         "options": [
-            "U",
-            "V",
-            "A",
-            "B"
+            "35 is even.",
+            "35 is odd.",
+            "35 might be even.",
+            "We cannot conclude anything about 35."
         ],
-        "correct_answer": "V"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all fish live in water, and Nemo is a fish, then Nemo lives in:",
+        "question": "If it is raining, the ground is wet. The ground is wet. What can be concluded about the rain?",
         "options": [
-            "Air",
-            "Land",
-            "Water",
-            "Fire"
+            "It is raining.",
+            "It is not raining.",
+            "It might be raining.",
+            "We cannot conclude anything about the rain."
         ],
-        "correct_answer": "Water"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong: Car, Truck, Bike, Tree",
+        "question": "All squares are rectangles. This shape is not a rectangle. Therefore, this shape is not a square. This is:",
         "options": [
-            "Car",
-            "Truck",
-            "Bike",
-            "Tree"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "Tree"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: 4, 8, 12, 16, ?",
+        "question": "If a person is happy, they smile. John is smiling. What can be concluded about John's happiness?",
         "options": [
-            "18",
-            "19",
-            "20",
-            "21"
+            "John is happy.",
+            "John is not happy.",
+            "John might be happy.",
+            "We cannot conclude anything about John's happiness."
         ],
-        "correct_answer": "20"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Doctor is to Hospital as Teacher is to:",
+        "question": "All A are B. Some B are C. Therefore, some A are C. This is a valid argument.",
         "options": [
-            "Patient",
-            "Student",
-            "School",
-            "Book"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Depends on specific A, B, C."
         ],
-        "correct_answer": "School"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What number should replace the question mark? 2, 4, 6, ?, 10",
+        "question": "If the train leaves on time, I will arrive by noon. I arrived by noon. What can be concluded?",
         "options": [
-            "7",
-            "8",
-            "9",
-            "11"
+            "The train left on time.",
+            "The train did not leave on time.",
+            "The train might have left on time.",
+            "We cannot conclude anything about the train's departure."
         ],
-        "correct_answer": "8"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If 10 + 10 = 20, then 10 + 11 = ?",
+        "question": "All apples are fruits. This is an apple. Therefore, this is a fruit. This is a:",
         "options": [
-            "20",
-            "21",
-            "22",
-            "23"
+            "Valid argument",
+            "Invalid argument",
+            "Fallacy",
+            "False premise"
         ],
-        "correct_answer": "21"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong: Red, Round, Square, Circle",
+        "question": "If a person is a doctor, they have a medical degree. Sarah has a medical degree. What can be concluded about Sarah?",
         "options": [
-            "Red",
-            "Round",
-            "Square",
-            "Circle"
+            "Sarah is a doctor.",
+            "Sarah is not a doctor.",
+            "Sarah might be a doctor.",
+            "We cannot conclude anything about Sarah's profession."
         ],
-        "correct_answer": "Red"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the sequence: 5, 10, 15, ?",
+        "question": "All numbers divisible by 6 are divisible by 3. The number 10 is not divisible by 3. What can be concluded?",
         "options": [
-            "16",
-            "17",
-            "18",
-            "20"
+            "10 is divisible by 6.",
+            "10 is not divisible by 6.",
+            "10 might be divisible by 6.",
+            "We cannot conclude anything about divisibility by 6."
         ],
-        "correct_answer": "20"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Needle is to Thread as Pen is to:",
+        "question": "If the power goes out, the lights turn off. The lights are on. What can be concluded?",
         "options": [
-            "Paper",
-            "Ink",
-            "Write",
-            "Draw"
+            "The power is out.",
+            "The power is not out.",
+            "The power might be out.",
+            "We cannot conclude anything about the power."
         ],
-        "correct_answer": "Ink"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What is the next shape in the sequence: Triangle, Square, Circle, Triangle, ?",
+        "question": "All triangles have three sides. A square has four sides. Therefore, a square is not a triangle. This is:",
         "options": [
-            "Circle",
-            "Square",
-            "Triangle",
-            "Rectangle"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "Square"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If yesterday was Monday, what day is tomorrow?",
+        "question": "If you are hungry, you eat. You are eating. What can be concluded?",
         "options": [
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
+            "You are hungry.",
+            "You are not hungry.",
+            "You might be hungry.",
+            "We cannot conclude anything about your hunger."
         ],
-        "correct_answer": "Wednesday"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Choose the word that is most similar to 'Cold':",
+        "question": "All books are made of paper. This item is made of paper. Therefore, this item is a book. This argument is:",
         "options": [
-            "Hot",
-            "Warm",
-            "Chilly",
-            "Sunny"
+            "Valid",
+            "Invalid",
+            "Sound",
+            "Unsound"
         ],
-        "correct_answer": "Chilly"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What comes next: 1, 4, 9, 16, ?",
+        "question": "If a person is a lawyer, they have a law degree. Mark does not have a law degree. What can be concluded about Mark?",
         "options": [
-            "20",
-            "22",
-            "25",
-            "27"
+            "Mark is a lawyer.",
+            "Mark is not a lawyer.",
+            "Mark might be a lawyer.",
+            "We cannot conclude anything about Mark's profession."
         ],
-        "correct_answer": "25"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Month is to Year as Day is to:",
+        "question": "All mammals are warm-blooded. A snake is cold-blooded. Therefore, a snake is not a mammal. This is a valid deduction.",
         "options": [
-            "Week",
-            "Hour",
-            "Second",
-            "Minute"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially true"
         ],
-        "correct_answer": "Week"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all flowers have petals, and roses are flowers, then roses have:",
+        "question": "If the sun is shining, it is daytime. It is nighttime. What can be concluded?",
         "options": [
-            "Thorns",
-            "Leaves",
-            "Petals",
-            "Roots"
+            "The sun is shining.",
+            "The sun is not shining.",
+            "The sun might be shining.",
+            "We cannot conclude anything about the sun."
         ],
-        "correct_answer": "Petals"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which number is the odd one out: 10, 12, 14, 15, 16",
+        "question": "All A are B. No C are B. Therefore, no A are C. This is a valid syllogism.",
         "options": [
-            "10",
-            "12",
-            "14",
-            "15"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Depends on specific A, B, C."
         ],
-        "correct_answer": "15"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: 20, 17, 14, 11, ?",
+        "question": "If you practice, you will improve. You did not improve. What can be concluded?",
         "options": [
-            "9",
-            "8",
-            "7",
-            "6"
+            "You practiced.",
+            "You did not practice.",
+            "You might have practiced.",
+            "We cannot conclude anything about your practice."
         ],
-        "correct_answer": "8"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Big is to Small as Tall is to:",
+        "question": "All men are mortal. My pet is not mortal. Therefore, my pet is not a man. This is:",
         "options": [
-            "Wide",
-            "Short",
-            "Fat",
-            "Thin"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "Short"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What is the next letter in the sequence: B, D, F, H, ?",
+        "question": "If a number is a multiple of 10, it is a multiple of 5. The number 15 is not a multiple of 10. What can be concluded?",
         "options": [
-            "I",
-            "J",
-            "K",
-            "L"
+            "15 is a multiple of 5.",
+            "15 is not a multiple of 5.",
+            "15 might be a multiple of 5.",
+            "We cannot conclude anything about 15."
         ],
-        "correct_answer": "J"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all cars have wheels, and a bus is a car, then a bus has:",
+        "question": "All red cars are vehicles. This is a vehicle. Therefore, this is a red car. This is:",
         "options": [
-            "Wings",
-            "Sails",
-            "Wheels",
-            "Tracks"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "Wheels"
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong: Circle, Square, Triangle, Ball",
+        "question": "If it is raining, I use an umbrella. I am not using an umbrella. What can be concluded?",
         "options": [
-            "Circle",
-            "Square",
-            "Triangle",
-            "Ball"
+            "It is raining.",
+            "It is not raining.",
+            "It might be raining.",
+            "We cannot conclude anything about the rain."
         ],
-        "correct_answer": "Ball"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: 6, 12, 18, 24, ?",
+        "question": "All birds have wings. A bat has wings. Therefore, a bat is a bird. Is this argument necessarily true?",
         "options": [
-            "25",
-            "28",
-            "30",
-            "32"
+            "Yes",
+            "No",
+            "Cannot be determined",
+            "Only if all winged creatures are birds."
         ],
-        "correct_answer": "30"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Shoe is to Foot as Glove is to:",
+        "question": "If a person is a baker, they make bread. Sarah makes bread. What can be concluded about Sarah?",
         "options": [
-            "Hand",
-            "Arm",
-            "Finger",
-            "Wrist"
+            "Sarah is a baker.",
+            "Sarah is not a baker.",
+            "Sarah might be a baker.",
+            "We cannot conclude anything about Sarah's profession."
         ],
-        "correct_answer": "Hand"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What number should replace the question mark? 3, 6, 9, ?, 15",
+        "question": "All metals expand when heated. Iron is a metal. Therefore, iron expands when heated. This is a:",
         "options": [
-            "10",
-            "11",
-            "12",
-            "13"
+            "Valid argument",
+            "Invalid argument",
+            "Fallacy",
+            "False premise"
         ],
-        "correct_answer": "12"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If 15 + 15 = 30, then 15 + 16 = ?",
+        "question": "If you are late, you miss the start. You missed the start. What can be concluded?",
         "options": [
-            "30",
-            "31",
-            "32",
-            "33"
+            "You were late.",
+            "You were not late.",
+            "You might have been late.",
+            "We cannot conclude anything about your punctuality."
         ],
-        "correct_answer": "31"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong: Run, Jog, Walk, Sleep",
+        "question": "All squares are polygons. This shape is a polygon. Therefore, this shape is a square. This is:",
         "options": [
-            "Run",
-            "Jog",
-            "Walk",
-            "Sleep"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "Sleep"
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the sequence: 3, 9, 27, ?",
+        "question": "If a number is even, it is divisible by 2. The number 7 is not divisible by 2. What can be concluded?",
         "options": [
-            "30",
-            "36",
-            "54",
-            "81"
+            "7 is even.",
+            "7 is odd.",
+            "7 might be even.",
+            "We cannot conclude anything about 7."
         ],
-        "correct_answer": "81"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Key is to Lock as Password is to:",
+        "question": "All fish live in water. A dolphin is a fish. Therefore, a dolphin lives in water. This is a valid deduction.",
         "options": [
-            "Computer",
-            "Account",
-            "Security",
-            "Internet"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially true"
         ],
-        "correct_answer": "Account"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What is the next shape in the sequence: Heart, Star, Heart, Star, ?",
+        "question": "If the alarm is set, I will wake up on time. I did not wake up on time. What can be concluded?",
         "options": [
-            "Circle",
-            "Heart",
-            "Star",
-            "Diamond"
+            "The alarm was set.",
+            "The alarm was not set.",
+            "The alarm might have been set.",
+            "We cannot conclude anything about the alarm."
         ],
-        "correct_answer": "Heart"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If the day after tomorrow is Sunday, what day was yesterday?",
+        "question": "All cars have engines. My toy car does not have an engine. Therefore, my toy car is not a car. This argument is:",
         "options": [
-            "Thursday",
-            "Friday",
-            "Monday",
-            "Tuesday"
+            "Valid",
+            "Invalid",
+            "Sound",
+            "Unsound"
         ],
-        "correct_answer": "Thursday"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Choose the word that is most similar to 'Smart':",
+        "question": "If a food is sweet, it contains sugar. This food does not contain sugar. What can be concluded?",
         "options": [
-            "Dull",
-            "Intelligent",
-            "Silly",
-            "Foolish"
+            "This food is sweet.",
+            "This food is not sweet.",
+            "This food might be sweet.",
+            "We cannot conclude anything about the food's taste."
         ],
-        "correct_answer": "Intelligent"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What comes next: 3, 6, 9, 12, 15, ?",
+        "question": "All dogs are animals. Spot is an animal. Therefore, Spot is a dog. This is a:",
         "options": [
-            "16",
-            "17",
-            "18",
-            "20"
+            "Valid argument",
+            "Invalid argument",
+            "Sound argument",
+            "False premise"
         ],
-        "correct_answer": "18"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Sun is to Day as Moon is to:",
+        "question": "If a triangle has a right angle, it is a right-angled triangle. Triangle XYZ does not have a right angle. What can be concluded?",
         "options": [
-            "Star",
-            "Sky",
-            "Night",
-            "Planet"
+            "Triangle XYZ is a right-angled triangle.",
+            "Triangle XYZ is not a right-angled triangle.",
+            "Triangle XYZ might be a right-angled triangle.",
+            "We cannot conclude anything about Triangle XYZ."
         ],
-        "correct_answer": "Night"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all birds can fly, and chickens are birds, then chickens can:",
+        "question": "All A are B. Some A are C. Therefore, some B are C. This is a valid argument.",
         "options": [
-            "Swim",
-            "Walk",
-            "Fly",
-            "Climb"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Depends on specific A, B, C."
         ],
-        "correct_answer": "Fly"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which number is the odd one out: 2, 4, 5, 6, 8",
+        "question": "If you are sick, you have a fever. You have a fever. What can be concluded?",
         "options": [
-            "2",
-            "4",
-            "5",
-            "6"
+            "You are sick.",
+            "You are not sick.",
+            "You might be sick.",
+            "We cannot conclude anything about your health."
         ],
-        "correct_answer": "5"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: 25, 20, 15, 10, ?",
+        "question": "All teachers grade papers. Ms. Davis does not grade papers. Therefore, Ms. Davis is not a teacher. This is:",
         "options": [
-            "6",
-            "5",
-            "4",
-            "0"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "5"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Happy is to Sad as Loud is to:",
+        "question": "If a number is divisible by 4, it is divisible by 2. The number 10 is not divisible by 4. What can be concluded?",
         "options": [
-            "Quiet",
-            "Excited",
-            "Angry",
-            "Silent"
+            "10 is divisible by 2.",
+            "10 is not divisible by 2.",
+            "10 might be divisible by 2.",
+            "We cannot conclude anything about divisibility by 2."
         ],
-        "correct_answer": "Quiet"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What is the next letter in the sequence: C, E, G, I, ?",
+        "question": "All mammals are animals. A fish is an animal. Therefore, a fish is a mammal. This argument is:",
         "options": [
-            "K",
-            "J",
-            "H",
-            "L"
+            "Valid",
+            "Invalid",
+            "Sound",
+            "Unsound"
         ],
-        "correct_answer": "K"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If all dogs bark, and a poodle is a dog, then a poodle:",
+        "question": "If it is sunny, I wear sunglasses. I am not wearing sunglasses. What can be concluded?",
         "options": [
-            "Meows",
-            "Barks",
-            "Sings",
-            "Hisses"
+            "It is sunny.",
+            "It is not sunny.",
+            "It might be sunny.",
+            "We cannot conclude anything about the weather."
         ],
-        "correct_answer": "Barks"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong: Green, Round, Square, Triangle",
+        "question": "All squares are quadrilaterals. A triangle is not a quadrilateral. Therefore, a triangle is not a square. This is:",
         "options": [
-            "Green",
-            "Round",
-            "Square",
-            "Triangle"
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
         ],
-        "correct_answer": "Green"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the series: 7, 14, 21, 28, ?",
+        "question": "If you drink coffee, you will be awake. You are awake. What can be concluded?",
         "options": [
-            "29",
-            "32",
-            "35",
-            "36"
+            "You drank coffee.",
+            "You did not drink coffee.",
+            "You might have drunk coffee.",
+            "We cannot conclude anything about your coffee consumption."
         ],
-        "correct_answer": "35"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Car is to Road as Boat is to:",
+        "question": "All birds are feathered. A snake is not feathered. Therefore, a snake is not a bird. This is a valid deduction.",
         "options": [
-            "Land",
-            "Sea",
-            "Air",
-            "Sky"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially true"
         ],
-        "correct_answer": "Sea"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What number should replace the question mark? 4, 8, 12, ?, 20",
+        "question": "If a number is odd, it is not divisible by 2. The number 9 is odd. What can be concluded?",
         "options": [
-            "13",
-            "14",
-            "15",
-            "16"
+            "9 is divisible by 2.",
+            "9 is not divisible by 2.",
+            "9 might be divisible by 2.",
+            "We cannot conclude anything about 9."
         ],
-        "correct_answer": "16"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "If 20 + 20 = 40, then 20 + 21 = ?",
+        "question": "All cats are mammals. My dog is a mammal. Therefore, my dog is a cat. This argument is:",
         "options": [
-            "40",
-            "41",
-            "42",
-            "43"
+            "Valid",
+            "Invalid",
+            "Sound",
+            "Unsound"
         ],
-        "correct_answer": "41"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Which word does NOT belong: Run, Swim, Walk, Eat",
+        "question": "If the door is locked, you cannot enter. You can enter. What can be concluded?",
         "options": [
-            "Run",
-            "Swim",
-            "Walk",
-            "Eat"
+            "The door is locked.",
+            "The door is not locked.",
+            "The door might be locked.",
+            "We cannot conclude anything about the door."
         ],
-        "correct_answer": "Eat"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Complete the sequence: 4, 16, 64, ?",
+        "question": "All P are Q. No R are Q. Therefore, no P are R. This is a valid syllogism.",
         "options": [
-            "128",
-            "192",
-            "256",
-            "512"
+            "True",
+            "False",
+            "Cannot be determined",
+            "Depends on specific P, Q, R."
         ],
-        "correct_answer": "256"
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "Door is to House as Page is to:",
+        "question": "If you are happy, you will smile. You did not smile. What can be concluded?",
         "options": [
-            "Book",
-            "Read",
-            "Write",
-            "Paragraph"
+            "You are happy.",
+            "You are not happy.",
+            "You might be happy.",
+            "We cannot conclude anything about your happiness."
         ],
-        "correct_answer": "Book"
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
     },
     {
-        "question": "What number is missing? 2, 6, 10, ?, 18",
+        "question": "If a number is prime, it has only two divisors. The number 1 is not prime. What can be concluded?",
         "options": [
-            "11",
-            "12",
-            "13",
-            "14"
+            "1 has only two divisors.",
+            "1 does not have only two divisors.",
+            "1 might have only two divisors.",
+            "We cannot conclude anything about the divisors of 1."
         ],
-        "correct_answer": "14"
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All dogs are mammals. Fido is a mammal. Therefore, Fido is a dog. This is:",
+        "options": [
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
+        ],
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If it is cold, I wear a coat. I am wearing a coat. What can be concluded?",
+        "options": [
+            "It is cold.",
+            "It is not cold.",
+            "It might be cold.",
+            "We cannot conclude anything about the temperature."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All men are mortal. My neighbor is mortal. Therefore, my neighbor is a man. This argument is:",
+        "options": [
+            "Valid",
+            "Invalid",
+            "Sound",
+            "Unsound"
+        ],
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If a car has a flat tire, it cannot drive. This car cannot drive. What can be concluded?",
+        "options": [
+            "This car has a flat tire.",
+            "This car does not have a flat tire.",
+            "This car might have a flat tire.",
+            "We cannot conclude anything about the tires."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All rectangles have four sides. A square has four sides. Therefore, a square is a rectangle. This is a valid deduction.",
+        "options": [
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially true"
+        ],
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If the alarm rings, I wake up. I did not wake up. What can be concluded?",
+        "options": [
+            "The alarm rang.",
+            "The alarm did not ring.",
+            "The alarm might have rung.",
+            "We cannot conclude anything about the alarm."
+        ],
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All birds have feathers. This creature is not a bird. Therefore, this creature does not have feathers. This is:",
+        "options": [
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If you eat vegetables, you are healthy. You are healthy. What can be concluded?",
+        "options": [
+            "You eat vegetables.",
+            "You do not eat vegetables.",
+            "You might eat vegetables.",
+            "We cannot conclude anything about your diet."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All A are B. Some B are C. Therefore, some A are C. This argument is always valid.",
+        "options": [
+            "True",
+            "False",
+            "Cannot be determined",
+            "Only if B is a subset of A."
+        ],
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If the test is hard, I will fail. I did not fail. What can be concluded?",
+        "options": [
+            "The test was hard.",
+            "The test was not hard.",
+            "The test might have been hard.",
+            "We cannot conclude anything about the test's difficulty."
+        ],
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All mammals breathe air. A fish does not breathe air (directly). Therefore, a fish is not a mammal. This is a valid deduction.",
+        "options": [
+            "True",
+            "False",
+            "Cannot be determined",
+            "Partially true"
+        ],
+        "correct_answer": "A",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If a number is divisible by 10, it is divisible by 2. The number 15 is divisible by 2. What can be concluded?",
+        "options": [
+            "15 is divisible by 10.",
+            "15 is not divisible by 10.",
+            "15 might be divisible by 10.",
+            "We cannot conclude anything about divisibility by 10."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All squares have right angles. This shape does not have right angles. Therefore, this shape is not a square. This is:",
+        "options": [
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
+        ],
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If you study, you will learn. You learned. What can be concluded?",
+        "options": [
+            "You studied.",
+            "You did not study.",
+            "You might have studied.",
+            "We cannot conclude anything about your studying."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All apples are fruits. This is a fruit. Therefore, this is an apple. This is a:",
+        "options": [
+            "Valid argument",
+            "Invalid argument",
+            "Sound argument",
+            "Fallacy"
+        ],
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If a person is a teacher, they have a degree. Sarah has a degree. What can be concluded about Sarah?",
+        "options": [
+            "Sarah is a teacher.",
+            "Sarah is not a teacher.",
+            "Sarah might be a teacher.",
+            "We cannot conclude anything about Sarah's profession."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All men are mortal. Socrates is mortal. Therefore, Socrates is a man. This argument is:",
+        "options": [
+            "Valid",
+            "Invalid",
+            "Sound",
+            "Unsound"
+        ],
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If it is raining, the ground is wet. It is not raining. What can be concluded about the ground?",
+        "options": [
+            "The ground is wet.",
+            "The ground is not wet.",
+            "The ground might be wet.",
+            "We cannot conclude anything about the ground."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All dogs are canines. My cat is a canine. Therefore, my cat is a dog. This is:",
+        "options": [
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
+        ],
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If you are thirsty, you drink water. You are drinking water. What can be concluded?",
+        "options": [
+            "You are thirsty.",
+            "You are not thirsty.",
+            "You might be thirsty.",
+            "We cannot conclude anything about your thirst."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All birds are animals. This is an animal. Therefore, this is a bird. This argument is:",
+        "options": [
+            "Valid",
+            "Invalid",
+            "Sound",
+            "Unsound"
+        ],
+        "correct_answer": "B",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If a number is divisible by 3, it is odd or even. The number 7 is odd. What can be concluded about divisibility by 3?",
+        "options": [
+            "7 is divisible by 3.",
+            "7 is not divisible by 3.",
+            "7 might be divisible by 3.",
+            "We cannot conclude anything about divisibility by 3."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "If the light is red, cars must stop. Cars must stop. What can be concluded about the light?",
+        "options": [
+            "The light is red.",
+            "The light is not red.",
+            "The light might be red.",
+            "We cannot conclude anything about the light."
+        ],
+        "correct_answer": "D",
+        "difficulty": "easy",
+        "topic": "Logic"
+    },
+    {
+        "question": "All squares are rectangles. This shape is a rectangle. Therefore, this shape is a square. This is:",
+        "options": [
+            "Modus Ponens",
+            "Modus Tollens",
+            "Affirming the Consequent",
+            "Denying the Antecedent"
+        ],
+        "correct_answer": "C",
+        "difficulty": "easy",
+        "topic": "Logic"
     }
 ]
