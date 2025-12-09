@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Round Test</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <div class="brand">Coding Round</div>
+    <div class="top-right">
+        <div id="timer-display">20:00</div>
+        <div id="score-display">Score: 0/0</div>
+        <div id="violation-display" title="Tab switch / focus violations">Focus OK</div>
+    </div>
+</header>
+
+<main class="container">
+    <section class="left-panel">
+        <h2 id="question-title">{{ question.title }}</h2>
+        <p id="question-desc">
+            {{ question.description | e | replace('\n', '<br>') | safe }}
+        </p>
+
+        <h3>Sample Tests</h3>
+        <div id="sample-tests"></div>
+
+        <div class="note">
+            <strong>Note:</strong> "Run" uses only sample (public) tests.
+            "Submit" runs all tests (public + hidden) and finalises your attempt.
+        </div>
+    </section>
+
+    <section class="right-panel">
+        <label class="editor-label">Write your solution here (function: <code>solve(...)</code>)</label>
+        <textarea id="editor" spellcheck="false">def solve(*args):
+    """
+    Implement your solution here.
+    'args' corresponds to the values from the test input.
+    Example:
+        For input: ["hello"]  → args = ("hello",)
+        For input: [[1,2,3]] → args = ([1,2,3],)
+    Return the result that will be compared to 'expected'.
+    """
+    # TODO: Write your code
+    pass
+        </textarea>
+
+        <div class="button-row">
+            <button id="run-btn">Run (Public Tests)</button>
+            <button id="submit-btn">Submit (Final)</button>
+        </div>
+
+        <div id="output-box">⚙ Ready.</div>
+    </section>
+</main>
+
+<script>
+    const QUESTION = {{ question | tojson }};
+</script>
+<script src="/static/script.js"></script>
+</body>
+</html>

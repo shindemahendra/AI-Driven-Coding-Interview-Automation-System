@@ -1,0 +1,377 @@
+- title: Reverse String
+  difficulty: BASIC
+  description: |
+    Given a string, return the reversed string.
+  public_tests:
+    - input: ["hello"]
+      expected: "olleh"
+    - input: ["a"]
+      expected: "a"
+    - input: [""]
+      expected: ""
+  hidden_tests:
+    - input: ["ab"]
+      expected: "ba"
+    - input: ["abc"]
+      expected: "cba"
+    - input: ["racecar"]
+      expected: "racecar"
+    - input: ["12345"]
+      expected: "54321"
+    - input: ["Hello World"]
+      expected: "dlroW olleH"
+    - input: ["aaaa"]
+      expected: "aaaa"
+    - input: ["AaBb"]
+      expected: "bBaA"
+    - input: ["!@#"]
+      expected: "#@!"
+    - input: ["abcde"]
+      expected: "edcba"
+    - input: ["xy"]
+      expected: "yx"
+    - input: ["0"]
+      expected: "0"
+    - input: ["Ravi"]
+      expected: "ivaR"
+
+- title: Word Count
+  difficulty: BASIC
+  description: |
+    Count how many words are in a sentence.
+    Words are separated by spaces.
+  public_tests:
+    - input: ["Hello world"]
+      expected: 2
+    - input: ["one two"]
+      expected: 2
+    - input: ["a"]
+      expected: 1
+  hidden_tests:
+    - input: [""]
+      expected: 0
+    - input: ["   "]
+      expected: 0
+    - input: ["one"]
+      expected: 1
+    - input: ["one two three"]
+      expected: 3
+    - input: ["python java c"]
+      expected: 3
+    - input: ["a b c d"]
+      expected: 4
+    - input: ["word  word"]
+      expected: 2
+    - input: ["multiple   spaces"]
+      expected: 2
+    - input: [" edge case "]
+      expected: 2
+    - input: ["UPPER lower"]
+      expected: 2
+    - input: ["numbers 123 ok"]
+      expected: 3
+    - input: ["Hello   world"]
+      expected: 2
+
+- title: Remove Vowels
+  difficulty: BASIC
+  description: |
+    Remove all vowels (a, e, i, o, u) from the given string.
+    Case-insensitive.
+  public_tests:
+    - input: ["hello"]
+      expected: "hll"
+    - input: ["aeiou"]
+      expected: ""
+    - input: ["xyz"]
+      expected: "xyz"
+  hidden_tests:
+    - input: ["Ravi"]
+      expected: "Rv"
+    - input: ["HELLO"]
+      expected: "HLL"
+    - input: ["AbCdEf"]
+      expected: "bCdF"
+    - input: ["queue"]
+      expected: "q"
+    - input: ["banana"]
+      expected: "bnn"
+    - input: ["apple"]
+      expected: "ppl"
+    - input: ["AeiOu"]
+      expected: ""
+    - input: ["AaEeIi"]
+      expected: ""
+    - input: ["Python"]
+      expected: "Pythn"
+    - input: ["why"]
+      expected: "why"
+    - input: ["book"]
+      expected: "bk"
+    - input: ["test case"]
+      expected: "tst cs"
+
+- title: Sum of List
+  difficulty: BASIC
+  description: |
+    Return the sum of all numbers in the list.
+  public_tests:
+    - input: [[1,2,3]]
+      expected: 6
+    - input: [[-1,-1]]
+      expected: -2
+    - input: [[5]]
+      expected: 5
+  hidden_tests:
+    - input: [[0,0,0]]
+      expected: 0
+    - input: [[10,-10]]
+      expected: 0
+    - input: [[100]]
+      expected: 100
+    - input: [[1,2,3,4]]
+      expected: 10
+    - input: [[5,5,5]]
+      expected: 15
+    - input: [[2,2,2,2]]
+      expected: 8
+    - input: [[-5,5]]
+      expected: 0
+    - input: [[9,1]]
+      expected: 10
+    - input: [[4,3,2,1]]
+      expected: 10
+    - input: [[50,50]]
+      expected: 100
+    - input: [[10]]
+      expected: 10
+    - input: [[8,7]]
+      expected: 15
+
+- title: Find Maximum
+  difficulty: BASIC
+  description: |
+    Return the maximum number in the list.
+  public_tests:
+    - input: [[1,2,3]]
+      expected: 3
+    - input: [[-3,-1]]
+      expected: -1
+    - input: [[10]]
+      expected: 10
+  hidden_tests:
+    - input: [[9,9]]
+      expected: 9
+    - input: [[0]]
+      expected: 0
+    - input: [[-5,-10]]
+      expected: -5
+    - input: [[8,1,2]]
+      expected: 8
+    - input: [[100,50,75]]
+      expected: 100
+    - input: [[3,3,3]]
+      expected: 3
+    - input: [[7]]
+      expected: 7
+    - input: [[4,9,2]]
+      expected: 9
+    - input: [[15,10,5]]
+      expected: 15
+    - input: [[1000]]
+      expected: 1000
+    - input: [[6,2,4]]
+      expected: 6
+    - input: [[5,1,3]]
+      expected: 5
+
+- title: Two Sum
+  difficulty: MEDIUM
+  description: |
+    Given a list nums and an integer target, return indices of
+    two numbers such that they add up to target.
+    Always return the first valid pair (smallest left index).
+  public_tests:
+    - input: [[2,7,11,15], 9]
+      expected: [0,1]
+    - input: [[3,2,4], 6]
+      expected: [1,2]
+    - input: [[1,5,3,7], 8]
+      expected: [0,3]
+  hidden_tests:
+    - input: [[1,2,3,4], 5]
+      expected: [0,3]
+    - input: [[10,20,10,40,50], 50]
+      expected: [0,3]
+    - input: [[5,75,25], 100]
+      expected: [1,2]
+    - input: [[2,5,5,11], 10]
+      expected: [1,2]
+    - input: [[0,4,3,0], 0]
+      expected: [0,3]
+    - input: [[-3,4,3,90], 0]
+      expected: [0,2]
+    - input: [[1,3,4,2], 6]
+      expected: [1,3]
+    - input: [[1,2], 3]
+      expected: [0,1]
+    - input: [[3,3], 6]
+      expected: [0,1]
+    - input: [[8,7,2,1], 9]
+      expected: [1,3]
+    - input: [[4,4,1,2], 8]
+      expected: [0,1]
+    - input: [[6,1,3,4,2], 5]
+      expected: [3,4]
+
+- title: Valid Parentheses
+  difficulty: MEDIUM
+  description: |
+    Given a string containing characters '()[]{}',
+    return true if the brackets are valid and balanced, else false.
+  public_tests:
+    - input: ["()"]
+      expected: true
+    - input: ["()[]{}"]
+      expected: true
+    - input: ["(]"]
+      expected: false
+  hidden_tests:
+    - input: ["([)]"]
+      expected: false
+    - input: ["{[]}"]
+      expected: true
+    - input: ["()()"]
+      expected: true
+    - input: ["("]
+      expected: false
+    - input: ["(([]){})"]
+      expected: true
+    - input: ["([{}])"]
+      expected: true
+    - input: ["{[}]"]
+      expected: false
+    - input: ["((()))"]
+      expected: true
+    - input: ["[]{}()"]
+      expected: true
+    - input: ["([{})"]
+      expected: false
+    - input: ["([{}])(){}[]"]
+      expected: true
+    - input: [""]
+      expected: true
+
+- title: Maximum Subarray
+  difficulty: MEDIUM
+  description: |
+    Given an integer array nums, find the contiguous subarray
+    (containing at least one number) which has the largest sum.
+  public_tests:
+    - input: [[-2,1,-3,4,-1,2,1,-5,4]]
+      expected: 6
+    - input: [[1]]
+      expected: 1
+    - input: [[5,4,-1,7,8]]
+      expected: 23
+  hidden_tests:
+    - input: [[-1,-2,-3,-4]]
+      expected: -1
+    - input: [[0,0,0]]
+      expected: 0
+    - input: [[2,-1,2,3,4,-5]]
+      expected: 10
+    - input: [[1,2,3,4,5]]
+      expected: 15
+    - input: [[-2,1]]
+      expected: 1
+    - input: [[100,-1,-2,50]]
+      expected: 147
+    - input: [[3,-2,5,-1]]
+      expected: 6
+    - input: [[-1,3,-2,5,-1]]
+      expected: 6
+    - input: [[2,-8,3,-2,4,-10]]
+      expected: 5
+    - input: [[0,-3,1,2,-1,2]]
+      expected: 4
+    - input: [[9]]
+      expected: 9
+    - input: [[-5]]
+      expected: -5
+
+- title: Merge Intervals
+  difficulty: HARD
+  description: |
+    Given a list of intervals where each interval is [start, end],
+    merge all overlapping intervals and return the result.
+  public_tests:
+    - input: [[[1,3],[2,6],[8,10],[15,18]]]
+      expected: [[1,6],[8,10],[15,18]]
+    - input: [[[1,4],[0,4]]]
+      expected: [[0,4]]
+    - input: [[[1,4],[4,5]]]
+      expected: [[1,5]]
+  hidden_tests:
+    - input: [[]]
+      expected: []
+    - input: [[[1,4]]]
+      expected: [[1,4]]
+    - input: [[[1,3],[2,4],[5,7]]]
+      expected: [[1,4],[5,7]]
+    - input: [[[6,8],[1,9],[2,4],[4,7]]]
+      expected: [[1,9]]
+    - input: [[[1,10],[2,3],[4,5]]]
+      expected: [[1,10]]
+    - input: [[[2,3],[4,5],[6,7]]]
+      expected: [[2,3],[4,5],[6,7]]
+    - input: [[[1,4],[5,6]]]
+      expected: [[1,4],[5,6]]
+    - input: [[[1,4],[0,2]]]
+      expected: [[0,4]]
+    - input: [[[1,4],[0,1]]]
+      expected: [[0,4]]
+    - input: [[[1,4],[2,3]]]
+      expected: [[1,4]]
+    - input: [[[0,0],[0,0]]]
+      expected: [[0,0]]
+    - input: [[[1,5],[2,3],[4,8]]]
+      expected: [[1,8]]
+
+- title: Longest Common Prefix
+  difficulty: MEDIUM
+  description: |
+    Given an array of strings, return the longest common prefix string
+    amongst them. If there is no common prefix, return an empty string.
+  public_tests:
+    - input: [["flower","flow","flight"]]
+      expected: "fl"
+    - input: [["a"]]
+      expected: "a"
+    - input: [["interview","integrate","integer"]]
+      expected: "inte"
+  hidden_tests:
+    - input: [["dog","racecar","car"]]
+      expected: ""
+    - input: [["c","c"]]
+      expected: "c"
+    - input: [["prefix","preach","preform","pre"]]
+      expected: "pre"
+    - input: [[]]
+      expected: ""
+    - input: [["same","same","same"]]
+      expected: "same"
+    - input: [["ab","a"]]
+      expected: "a"
+    - input: [["abc","abcd","abf"]]
+      expected: "ab"
+    - input: [["z"]]
+      expected: "z"
+    - input: [["apple","banana","carrot"]]
+      expected: ""
+    - input: [["longest","long","longitudinal"]]
+      expected: "long"
+    - input: [["xxy","xxyz","xxyzz"]]
+      expected: "xxy"
+    - input: [["alpha","alph","alp"]]
+      expected: "alp"
