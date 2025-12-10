@@ -41,6 +41,28 @@ def fetch_latest_answers(form_id: str) -> Dict[str, str]:
     return answers_map
 
 
+def check_if_response_exists(form_id: str) -> bool:
+    """
+    Checks the Google Form response sheet linked to the given Form ID
+    to see if at least one response (submission) has been recorded.
+
+    This is used by the Streamlit app timer to detect early submission.
+
+    Args:
+        form_id: The ID of the Google Form.
+
+    Returns:
+        True if at least one submission exists, False otherwise.
+    """
+    # NOTE: IMPLEMENTATION REQUIRED
+    # You must implement the Google Sheets API call here to check for responses.
+
+    # Placeholder: Raise an error if called before being implemented
+    raise NotImplementedError(
+        f"Google Forms API logic for check_if_response_exists (Form ID: {form_id}) "
+        "must be implemented here to enable timer shutdown on early submission."
+    )
+
 def build_question_index(candidate_data: dict) -> Dict[str, Tuple[str, str]]:
     """
     Build map: question_title_clean -> (correct_answer, level)

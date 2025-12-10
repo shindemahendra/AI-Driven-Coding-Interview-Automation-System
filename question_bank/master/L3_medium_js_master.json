@@ -1,0 +1,1713 @@
+[
+    {
+        "question": "The function is intended to count how many times it is called. Why does it reset the count every time?",
+        "snippet": "function counter() { let count = 0; count++; return count; } console.log(counter()); console.log(counter());",
+        "options": [
+            "The function is an arrow function.",
+            "The variable `count` is local to the function's scope, and is **re-initialized to 0** on every call.",
+            "The `let` keyword is incorrect.",
+            "The function is missing a `return` statement."
+        ],
+        "correct_answer": "The variable `count` is local to the function's scope, and is **re-initialized to 0** on every call.",
+        "topic": "Scope and Initialization",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code attempts to use an immediately-invoked function to preserve the value of `i`. Why does it still print '3' twice?",
+        "snippet": "for (var i = 0; i < 2; i++) { (function() { setTimeout(function() { console.log(i); }, 100); })(); }",
+        "options": [
+            "The IIFE is not correctly structured.",
+            "The IIFE **does not receive `i` as an argument**, so the inner `setTimeout` still references the globally scoped `i` (which is 2 after the loop, printing 2 twice).",
+            "The `var` should be `let`.",
+            "The timeout is too short."
+        ],
+        "correct_answer": "The IIFE **does not receive `i` as an argument**, so the inner `setTimeout` still references the globally scoped `i` (which is 2 after the loop, printing 2 twice).",
+        "topic": "Closures and Scoping",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the expected output of this complex string coercion?",
+        "snippet": "console.log(1 + 2 + '3' + 4 + 5);",
+        "options": [
+            "3345",
+            "12345",
+            "**3345** (1+2=3, 3+'3'='33', '33'+4='334', '334'+5='3345').",
+            "339"
+        ],
+        "correct_answer": "**3345** (1+2=3, 3+'3'='33', '33'+4='334', '334'+5='3345').",
+        "topic": "Complex Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to create a method that references the object. What is the value of `this.name` when `getName()` is called?",
+        "snippet": "const user = { name: 'Dan', getName: () => { return this.name; } }; console.log(user.getName());",
+        "options": [
+            "'Dan'",
+            "Error, `this` is undefined.",
+            "**undefined** (or global object's name), because **arrow functions do not have their own `this` binding**; they inherit it from the surrounding scope (usually global).",
+            "The object itself."
+        ],
+        "correct_answer": "**undefined** (or global object's name), because **arrow functions do not have their own `this` binding**; they inherit it from the surrounding scope (usually global).",
+        "topic": "`this` Binding (Arrow Functions)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the strict equality operator on `null` and `0`?",
+        "snippet": "console.log(null === 0);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Strict Equality",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The `bind` method is supposed to fix `this`. What does the function call return?",
+        "snippet": "const obj = { x: 10 }; function getX() { return this.x; } const boundGetX = getX.bind({ x: 50 }); console.log(boundGetX());",
+        "options": [
+            "10",
+            "50",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "50",
+        "topic": "`this` Binding (`bind`)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the first `Promise` resolve before the second `console.log` executes, even with `await`?",
+        "snippet": "async function run() { console.log(1); await Promise.resolve(2).then(console.log); console.log(3); } run(); console.log(4);",
+        "options": [
+            "The `await` keyword is wrong.",
+            "The `await` pauses `run()`, but the **`then` callback is a Microtask** that executes immediately after the main thread completes (before the next `await`), printing 1, 4, 2, 3.",
+            "The `await` is only applicable to the Promise object.",
+            "Promises are always faster than synchronous code."
+        ],
+        "correct_answer": "The `await` pauses `run()`, but the **`then` callback is a Microtask** that executes immediately after the main thread completes (before the next `await`), printing 1, 4, 2, 3.",
+        "topic": "Async/Await and Microtasks",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of applying the Logical NOT operator to the `typeof` of a regular expression?",
+        "snippet": "console.log(!typeof /a/);",
+        "options": [
+            "false",
+            "true",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Type Coercion and `typeof`",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to return the first element greater than 20. What is the bug?",
+        "snippet": "let data = [10, 30, 20]; let found = data.find(num => num > 20); console.log(found);",
+        "options": [
+            "The method name is wrong.",
+            "The code correctly finds and returns **30** (the first element that satisfies the condition).",
+            "The condition is wrong.",
+            "The array is too small."
+        ],
+        "correct_answer": "The code correctly finds and returns **30** (the first element that satisfies the condition).",
+        "topic": "Array Methods (Find)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the object fail to inherit the property from the prototype?",
+        "snippet": "function Animal(name) { this.name = name; } Animal.prototype.type = 'Mammal'; let dog = new Animal('Buddy'); delete dog.name; console.log(dog.name);",
+        "options": [
+            "The property is deleted.",
+            "The `name` property is an **own property** on `dog`, and deleting it causes the engine to look up the prototype, but the prototype does not have a `name` property, returning `undefined`.",
+            "The `new` keyword is incorrect.",
+            "The property should be defined with `var`."
+        ],
+        "correct_answer": "The `name` property is an **own property** on `dog`, and deleting it causes the engine to look up the prototype, but the prototype does not have a `name` property, returning `undefined`.",
+        "topic": "Prototypes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to create a closure that holds `x`. What is the result of the function call?",
+        "snippet": "function outer(x) { return function inner(y) { return x + y; } } const add5 = outer(5); console.log(add5(10));",
+        "options": [
+            "10",
+            "15",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "15",
+        "topic": "Closures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of the `switch` statement due to loose equality/coercion?",
+        "snippet": "let val = 1; switch(val) { case '1': console.log('String 1'); break; default: console.log('Default'); }",
+        "options": [
+            "String 1",
+            "Default",
+            "Error",
+            "The case statement uses **strict equality** (`===`) by default, so the number 1 does not match the string '1', printing **'Default'**."
+        ],
+        "correct_answer": "The case statement uses **strict equality** (`===`) by default, so the number 1 does not match the string '1', printing **'Default'**.",
+        "topic": "Switch Statement Behavior",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array is intended to be copied. Why does modifying the clone affect the original?",
+        "snippet": "let arr1 = [{ id: 1 }]; let arr2 = [...arr1]; arr2[0].id = 2; console.log(arr1[0].id);",
+        "options": [
+            "The `...` operator is wrong.",
+            "The spread operator performs a **shallow copy**, copying the *reference* to the inner object, so mutating the object in `arr2` mutates the object in `arr1`.",
+            "The array should be defined with `const`.",
+            "The `id` property is immutable."
+        ],
+        "correct_answer": "The spread operator performs a **shallow copy**, copying the *reference* to the inner object, so mutating the object in `arr2` mutates the object in `arr1`.",
+        "topic": "Shallow Copying",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to get the maximum number?",
+        "snippet": "console.log(Math.max(1, 2, '3', 4));",
+        "options": [
+            "4",
+            "NaN",
+            "3",
+            "Error"
+        ],
+        "correct_answer": "4",
+        "topic": "Type Coercion (Math)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to demonstrate hoisting. What is the value of `a` inside the function?",
+        "snippet": "var a = 1; function test() { console.log(a); var a = 2; } test();",
+        "options": [
+            "1",
+            "2",
+            "**undefined**, because the local `var a` is hoisted, but the assignment of 2 is not, shadowing the outer `a`.",
+            "Error"
+        ],
+        "correct_answer": "**undefined**, because the local `var a` is hoisted, but the assignment of 2 is not, shadowing the outer `a`.",
+        "topic": "Hoisting and Shadowing",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the `Promise.all` fail to return the resolved array?",
+        "snippet": "const p1 = Promise.resolve(1); const p2 = Promise.reject('Error'); Promise.all([p1, p2]).then(console.log).catch(console.error);",
+        "options": [
+            "The array is too small.",
+            "The array is resolved to `[1, 'Error']`.",
+            "The `Promise.all` immediately **rejects** if *any* promise in the iterable rejects, printing **'Error'**.",
+            "The promises are asynchronous."
+        ],
+        "correct_answer": "The `Promise.all` immediately **rejects** if *any* promise in the iterable rejects, printing **'Error'**.",
+        "topic": "Promise Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to modify a prototype property?",
+        "snippet": "function Car() {} Car.prototype.wheels = 4; let bmw = new Car(); bmw.wheels = 3; console.log(bmw.wheels);",
+        "options": [
+            "4",
+            "3",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "3",
+        "topic": "Prototypes and Own Properties",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to be a generator. What is the output?",
+        "snippet": "function* generator() { yield 1; yield 2; } const gen = generator(); console.log(gen.next().value); console.log(gen.next().value);",
+        "options": [
+            "1, 2",
+            "undefined, undefined",
+            "Error",
+            "1, 1"
+        ],
+        "correct_answer": "1, 2",
+        "topic": "ES6+ Generators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the Logical OR operator with `0` and an empty array?",
+        "snippet": "console.log(0 || []);",
+        "options": [
+            "0",
+            "[]",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "[]",
+        "topic": "Logical Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the array method only produce the even numbers?",
+        "snippet": "let arr = [1, 2, 3, 4]; arr.filter(num => num % 2 === 0).forEach(num => console.log(num));",
+        "options": [
+            "The `forEach` method is wrong.",
+            "The code correctly **filters for numbers divisible by 2** and prints 2, 4.",
+            "The comparison should use `==`.",
+            "The array is too small."
+        ],
+        "correct_answer": "The code correctly **filters for numbers divisible by 2** and prints 2, 4.",
+        "topic": "Array Methods (Chaining)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code attempts to use `call` to set `this`. What is the output?",
+        "snippet": "function sayHi(a) { return this.name + a; } const user = { name: 'Bob' }; console.log(sayHi.call(user, ' Hello'));",
+        "options": [
+            "'Bob'",
+            "'Bob Hello'",
+            "undefined Hello",
+            "Error"
+        ],
+        "correct_answer": "'Bob Hello'",
+        "topic": "`this` Binding (`call`)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code is intended to check for equality. What is the output?",
+        "snippet": "let a = { id: 1 }; let b = a; console.log(a == b); console.log(a === b);",
+        "options": [
+            "true, false",
+            "false, false",
+            "**true, true**, because both variables point to the **same memory reference**.",
+            "true, true"
+        ],
+        "correct_answer": "**true, true**, because both variables point to the **same memory reference**.",
+        "topic": "Reference Equality",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of this tricky expression involving coercion and comparison?",
+        "snippet": "console.log([] == ![]);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Complex Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code not produce a warning about undeclared variables?",
+        "snippet": "function test() { 'use strict'; x = 5; console.log(x); } test();",
+        "options": [
+            "The variable is defined with `var`.",
+            "The code causes a **ReferenceError** because **strict mode** prevents implicit global variable creation, but the code snippet is missing the `let`/`const`/`var` declaration for `x`.",
+            "The function is not called.",
+            "The variable is hoisted."
+        ],
+        "correct_answer": "The code causes a **ReferenceError** because **strict mode** prevents implicit global variable creation, but the code snippet is missing the `let`/`const`/`var` declaration for `x`.",
+        "topic": "Strict Mode",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to modify the object. Why is the original object updated?",
+        "snippet": "function modify(obj) { obj.id = 2; obj = { id: 3 }; } let data = { id: 1 }; modify(data); console.log(data.id);",
+        "options": [
+            "The function is not called.",
+            "The function updates `data.id` via reference, but the subsequent **reassignment of the parameter `obj` to a new object** does not affect the outer `data` reference.",
+            "Objects are immutable.",
+            "The variable `data` is defined with `let`."
+        ],
+        "correct_answer": "The function updates `data.id` via reference, but the subsequent **reassignment of the parameter `obj` to a new object** does not affect the outer `data` reference.",
+        "topic": "Pass by Value/Reference (Objects)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of the logical assignment operator?",
+        "snippet": "let a = 0; a ||= 50; console.log(a);",
+        "options": [
+            "0",
+            "50",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "50",
+        "topic": "ES2021 Logical Assignment",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code uses a constructor function. What is the type of `user`?",
+        "snippet": "function User(name) { this.name = name; } let user = new User('Alice'); console.log(typeof user);",
+        "options": [
+            "function",
+            "object",
+            "User",
+            "undefined"
+        ],
+        "correct_answer": "object",
+        "topic": "`typeof` and Constructors",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code throw a `TypeError` when calling `getName`?",
+        "snippet": "class Person { constructor(name) { this.name = name; } } let p = new Person('Tom'); let { getName } = p; getName();",
+        "options": [
+            "The class syntax is wrong.",
+            "The method is being accessed directly, losing its implicit binding to the `Person` instance, causing **`this` to be undefined** when called.",
+            "The variable `p` is defined with `let`.",
+            "The class must extend `Object`."
+        ],
+        "correct_answer": "The method is being accessed directly, losing its implicit binding to the `Person` instance, causing **`this` to be undefined** when called.",
+        "topic": "Class Methods and `this`",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the optional chaining operator on a nested property?",
+        "snippet": "let data = { user: null }; console.log(data.user?.age);",
+        "options": [
+            "Error",
+            "undefined",
+            "null",
+            "0"
+        ],
+        "correct_answer": "undefined",
+        "topic": "ES2020 Optional Chaining",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The `reduce` method is intended to concatenate strings. What is the bug?",
+        "snippet": "let words = ['a', 'b', 'c']; let result = words.reduce((acc, word) => acc + word); console.log(result);",
+        "options": [
+            "The reduction is performed correctly, resulting in **'abc'** (default accumulator is the first element).",
+            "The initial value is missing.",
+            "The array is too small.",
+            "The variable `result` should be a `const`."
+        ],
+        "correct_answer": "The reduction is performed correctly, resulting in **'abc'** (default accumulator is the first element).",
+        "topic": "Array Methods (Reduce)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code is intended to handle an error. Why does it not execute the `catch` block?",
+        "snippet": "new Promise((resolve, reject) => { resolve(1); }).catch(err => console.error(err));",
+        "options": [
+            "The promise is resolved, not rejected, so the **`catch` block is skipped**.",
+            "The `catch` block is missing a `throw`.",
+            "The promise should be asynchronous.",
+            "The resolve function is wrong."
+        ],
+        "correct_answer": "The promise is resolved, not rejected, so the **`catch` block is skipped**.",
+        "topic": "Promises (Catch)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to add a string and a boolean?",
+        "snippet": "console.log('1' + true);",
+        "options": [
+            "2",
+            "'1true'",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "'1true'",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to return the last element greater than 10. What is the bug?",
+        "snippet": "let data = [5, 15, 25]; let found = data.findLast(num => num > 10); console.log(found);",
+        "options": [
+            "The method name is wrong.",
+            "The code correctly finds and returns **25** (the last element that satisfies the condition).",
+            "The condition is wrong.",
+            "The array is too small."
+        ],
+        "correct_answer": "The code correctly finds and returns **25** (the last element that satisfies the condition).",
+        "topic": "ES2023 Array Methods (FindLast)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of checking the type of an arrow function?",
+        "snippet": "console.log(typeof (() => {}));",
+        "options": [
+            "object",
+            "function",
+            "undefined",
+            "string"
+        ],
+        "correct_answer": "function",
+        "topic": "`typeof` Operator",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to create a new array without mutation. What is the bug?",
+        "snippet": "let arr = [1, 2]; let newArr = arr; newArr.push(3); console.log(arr);",
+        "options": [
+            "The `push` method is wrong.",
+            "The code creates a **reference copy**, so both variables point to the same array, and `arr` is mutated to `[1, 2, 3]`.",
+            "The array should be defined with `const`.",
+            "The array is too small."
+        ],
+        "correct_answer": "The code creates a **reference copy**, so both variables point to the same array, and `arr` is mutated to `[1, 2, 3]`.",
+        "topic": "Reference vs. Value",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to check the prototype chain?",
+        "snippet": "let obj = {}; console.log(obj.__proto__ === Object.prototype);",
+        "options": [
+            "false",
+            "true",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Prototypes",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the object fail to print the default value?",
+        "snippet": "let obj = { a: 1 }; let { b = 5 } = obj; console.log(b);",
+        "options": [
+            "The object is empty.",
+            "The code correctly uses **destructuring with a default value** for a non-existent property, printing **5**.",
+            "The variable `b` is not hoisted.",
+            "The destructuring syntax is wrong."
+        ],
+        "correct_answer": "The code correctly uses **destructuring with a default value** for a non-existent property, printing **5**.",
+        "topic": "ES6 Destructuring",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this arithmetic operation?",
+        "snippet": "console.log(10 * 'a');",
+        "options": [
+            "10a",
+            "NaN",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "NaN",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to create a private counter using a closure. What is the bug?",
+        "snippet": "function createCounter() { let count = 0; return { increment: () => { count++; return count; } }; } const counter = createCounter(); console.log(counter.increment()); console.log(counter.increment());",
+        "options": [
+            "The function must be a class.",
+            "The code is **correct** and prints 1, 2, successfully demonstrating a **closure** protecting `count`.",
+            "The arrow function is wrong.",
+            "The variable `count` is public."
+        ],
+        "correct_answer": "The code is **correct** and prints 1, 2, successfully demonstrating a **closure** protecting `count`.",
+        "topic": "Closures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print 'World' for the global variable?",
+        "snippet": "var word = 'Hello'; function changeWord() { word = 'World'; } changeWord(); console.log(word);",
+        "options": [
+            "The function is not called.",
+            "The inner function modifies the **globally scoped `var`** because no local declaration exists.",
+            "The variable `word` is hoisted.",
+            "The function must be an arrow function."
+        ],
+        "correct_answer": "The inner function modifies the **globally scoped `var`** because no local declaration exists.",
+        "topic": "Global Scope Mutation",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to check array type?",
+        "snippet": "console.log(Array.isArray([]));",
+        "options": [
+            "false",
+            "true",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Type Checking",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to execute asynchronously. What is the output order?",
+        "snippet": "function one() { console.log(1); } function two() { console.log(2); } Promise.resolve().then(one); two();",
+        "options": [
+            "1, 2",
+            "**2, 1**, because `two()` is synchronous, and `one()` is a **Microtask** scheduled for the next tick.",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "**2, 1**, because `two()` is synchronous, and `one()` is a **Microtask** scheduled for the next tick.",
+        "topic": "Event Loop (Microtasks)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print `undefined`?",
+        "snippet": "let user = { name: 'Jim' }; let { age } = user; console.log(age);",
+        "options": [
+            "The object is empty.",
+            "The property `age` is **non-existent** on `user`, so destructuring assigns `undefined` to the local variable `age`.",
+            "The destructuring syntax is wrong.",
+            "The variable `user` is not hoisted."
+        ],
+        "correct_answer": "The property `age` is **non-existent** on `user`, so destructuring assigns `undefined` to the local variable `age`.",
+        "topic": "ES6 Destructuring",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this complex comparison?",
+        "snippet": "console.log(new String('a') == 'a'); console.log(new String('a') === 'a');",
+        "options": [
+            "true, true",
+            "false, false",
+            "**true, false**, because `==` coerces the object to a string, but `===` compares object reference to primitive string, which are never equal.",
+            "true, undefined"
+        ],
+        "correct_answer": "**true, false**, because `==` coerces the object to a string, but `===` compares object reference to primitive string, which are never equal.",
+        "topic": "Type Coercion (Object Wrappers)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The class method is intended to be called. Why does it not execute?",
+        "snippet": "class MyClass { constructor() { console.log('Init'); } method() { console.log('Called'); } } new MyClass().method;",
+        "options": [
+            "The class syntax is wrong.",
+            "The method is being **referenced** but **not called** (missing parentheses `()`). The constructor executes, but the method doesn't print.",
+            "The method is missing `this`.",
+            "The method should be static."
+        ],
+        "correct_answer": "The method is being **referenced** but **not called** (missing parentheses `()`). The constructor executes, but the method doesn't print.",
+        "topic": "Function Call Syntax",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the nullish coalescing operator?",
+        "snippet": "console.log(0 ?? 10);",
+        "options": [
+            "0",
+            "10",
+            "undefined",
+            "null"
+        ],
+        "correct_answer": "0",
+        "topic": "ES2020 Nullish Coalescing",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the `filter` method not modify the original array?",
+        "snippet": "let arr = [1, 2, 3]; arr.filter(n => n > 1); console.log(arr);",
+        "options": [
+            "The array is too small.",
+            "`filter()` returns a **new array** and does not mutate the original `arr`, which remains `[1, 2, 3]`.",
+            "The variable `arr` should be a `const`.",
+            "The condition is wrong."
+        ],
+        "correct_answer": "`filter()` returns a **new array** and does not mutate the original `arr`, which remains `[1, 2, 3]`.",
+        "topic": "Array Methods (Immutability)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to create a closure. What is the output?",
+        "snippet": "for (let i = 0; i < 2; i++) { setTimeout(() => console.log(i), 100); }",
+        "options": [
+            "2, 2",
+            "**0, 1**, because `let` creates a **new block-scoped variable** for each iteration, which the closure captures correctly.",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "**0, 1**, because `let` creates a **new block-scoped variable** for each iteration, which the closure captures correctly.",
+        "topic": "Closures and `let` in Loops",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of applying the Logical NOT operator to the `typeof` of an array?",
+        "snippet": "console.log(!typeof []);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Type Coercion and `typeof`",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the object fail to print the property value using bracket notation?",
+        "snippet": "let obj = { 'key-one': 1 }; console.log(obj.key-one);",
+        "options": [
+            "The property name is wrong.",
+            "The dot notation treats `key-one` as **`key` minus `one`**, causing a `ReferenceError` (or subtraction if `key` and `one` were defined). It requires bracket notation `obj['key-one']`.",
+            "The object is empty.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "The dot notation treats `key-one` as **`key` minus `one`**, causing a `ReferenceError` (or subtraction if `key` and `one` were defined). It requires bracket notation `obj['key-one']`.",
+        "topic": "Object Access (Invalid Identifier)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code is intended to check if an object is an instance of a function. What is the bug?",
+        "snippet": "function A() {} function B() {} let b = new B(); console.log(b instanceof A);",
+        "options": "false",
+        "correct_answer": "false",
+        "topic": "Inheritance (`instanceof`)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of the `reduce` method without an initial value on an array with one element?",
+        "snippet": "let arr = [5]; let result = arr.reduce((acc, curr) => acc + curr); console.log(result);",
+        "options": [
+            "5",
+            "undefined",
+            "Error",
+            "NaN"
+        ],
+        "correct_answer": "5",
+        "topic": "Array Methods (Reduce)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does `reduce` fail to return a number for this array?",
+        "snippet": "let arr = ['1', '2', '3']; let sum = arr.reduce((acc, curr) => acc + curr); console.log(sum);",
+        "options": [
+            "The array is too small.",
+            "The accumulator starts as the first string '1', and the subsequent `+` performs **string concatenation**, resulting in **'123'**.",
+            "The initial value is missing.",
+            "The array elements are strings."
+        ],
+        "correct_answer": "The accumulator starts as the first string '1', and the subsequent `+` performs **string concatenation**, resulting in **'123'**.",
+        "topic": "Array Methods and Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code uses a logical OR. What is the output?",
+        "snippet": "let x = 5; x = x || 10; console.log(x);",
+        "options": [
+            "5",
+            "10",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "5",
+        "topic": "Logical Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the spread operator on a string?",
+        "snippet": "console.log([...'hello']);",
+        "options": [
+            "['h', 'e', 'l', 'l', 'o']",
+            "['hello']",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "['h', 'e', 'l', 'l', 'o']",
+        "topic": "ES6+ Spread Operator",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code throw a `TypeError`?",
+        "snippet": "const obj = { name: 'A' }; Object.freeze(obj); obj.name = 'B'; console.log(obj.name);",
+        "options": [
+            "The `freeze` method is wrong.",
+            "The property update is **silently ignored** (no error in non-strict mode), and the output is **'A'**.",
+            "The object is too small.",
+            "The object is defined with `const`."
+        ],
+        "correct_answer": "The property update is **silently ignored** (no error in non-strict mode), and the output is **'A'**.",
+        "topic": "Object Immutability (`Object.freeze`)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to demonstrate a promise chain. What is the output?",
+        "snippet": "Promise.resolve(1).then(result => result + 1).then(console.log);",
+        "options": [
+            "1",
+            "2",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "2",
+        "topic": "Promises (Chaining)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print `undefined`?",
+        "snippet": "let { a, b } = { a: 1 }; console.log(b);",
+        "options": [
+            "The destructuring syntax is wrong.",
+            "The property `b` is **non-existent** on the right-hand side object, so destructuring assigns `undefined` to the local variable `b`.",
+            "The object is empty.",
+            "The variable `a` is not hoisted."
+        ],
+        "correct_answer": "The property `b` is **non-existent** on the right-hand side object, so destructuring assigns `undefined` to the local variable `b`.",
+        "topic": "ES6 Destructuring",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of checking the prototype relationship?",
+        "snippet": "let obj = Object.create(null); console.log(obj.toString);",
+        "options": [
+            "The `toString` function.",
+            "**undefined**, because `Object.create(null)` creates an object with **no prototype chain**.",
+            "Error",
+            "null"
+        ],
+        "correct_answer": "**undefined**, because `Object.create(null)` creates an object with **no prototype chain**.",
+        "topic": "Prototypes (Null Prototype)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The `map` method is intended to return objects. What is the bug?",
+        "snippet": "let arr = [1, 2]; let result = arr.map(n => { value: n }); console.log(result);",
+        "options": [
+            "The array is too small.",
+            "The curly braces are interpreted as a **function body block**, and the inner statement `value: n` is a label, causing the function to implicitly return `undefined` for each element.",
+            "The arrow function is wrong.",
+            "The variable `result` is not hoisted."
+        ],
+        "correct_answer": "The curly braces are interpreted as a **function body block**, and the inner statement `value: n` is a label, causing the function to implicitly return `undefined` for each element.",
+        "topic": "Arrow Functions Syntax",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to add an empty object and an array?",
+        "snippet": "console.log({} + []);",
+        "options": [
+            "0",
+            "[object Object]",
+            "**0**, as the object is coerced to a string, then to a number (which is 0).",
+            "Error"
+        ],
+        "correct_answer": "0",
+        "topic": "Complex Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print 'End' before 'Promise'?",
+        "snippet": "console.log('Start'); Promise.resolve().then(() => console.log('Promise')); console.log('End');",
+        "options": [
+            "Promises are slow.",
+            "The promise callback is a **Microtask** and executes only after the synchronous code ('Start', 'End') finishes.",
+            "The `resolve` function is wrong.",
+            "The console log is fast."
+        ],
+        "correct_answer": "The promise callback is a **Microtask** and executes only after the synchronous code ('Start', 'End') finishes.",
+        "topic": "Event Loop (Microtasks)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to be a recursive fibonacci. What is the bug?",
+        "snippet": "function fib(n) { if (n <= 1) return n; return fib(n - 1) + fib(n - 2); } console.log(fib(5));",
+        "options": [
+            "The function is recursive.",
+            "The function is **correct** and returns the 5th Fibonacci number (0, 1, 1, 2, 3, **5**).",
+            "The base case is wrong.",
+            "The function must use a loop."
+        ],
+        "correct_answer": "The function is **correct** and returns the 5th Fibonacci number (0, 1, 1, 2, 3, **5**).",
+        "topic": "Recursion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the `delete` operator on an array element?",
+        "snippet": "let arr = [1, 2, 3]; delete arr[1]; console.log(arr.length);",
+        "options": [
+            "2",
+            "3",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "3",
+        "topic": "Array Properties (Mutation)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the property assignment fail?",
+        "snippet": "const obj = { a: 1 }; Object.preventExtensions(obj); obj.b = 2; console.log(obj.b);",
+        "options": [
+            "The object is defined with `const`.",
+            "The property assignment is **silently ignored** (no error in non-strict mode) because `Object.preventExtensions` disallows adding new properties.",
+            "The variable `obj` is too small.",
+            "The `preventExtensions` method is wrong."
+        ],
+        "correct_answer": "The property assignment is **silently ignored** (no error in non-strict mode) because `Object.preventExtensions` disallows adding new properties.",
+        "topic": "Object Extensibility",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to use a tagged template literal. What is the output?",
+        "snippet": "function tag(strings, ...values) { return strings[0] + values[0] + strings[1]; } console.log(tag`Result is: ${10}`);",
+        "options": [
+            "Result is: 10",
+            "Error",
+            "undefined",
+            "Result is: 10undefined"
+        ],
+        "correct_answer": "Result is: 10",
+        "topic": "ES6+ Template Literals",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to get the object keys?",
+        "snippet": "let obj = { a: 1, b: 2 }; console.log(Object.keys(obj).length);",
+        "options": [
+            "1",
+            "2",
+            "0",
+            "Error"
+        ],
+        "correct_answer": "2",
+        "topic": "Object Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to use rest parameters. What is the bug?",
+        "snippet": "function sum(a, b, ...rest) { return rest.length; } console.log(sum(1, 2, 3, 4, 5));",
+        "options": [
+            "The function name is wrong.",
+            "The code is **correct** and returns **3** (the count of extra arguments collected by `...rest`).",
+            "The rest parameter must be the only parameter.",
+            "The function is missing a `return` statement."
+        ],
+        "correct_answer": "The code is **correct** and returns **3** (the count of extra arguments collected by `...rest`).",
+        "topic": "ES6+ Rest Parameters",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print 'World' for the global variable?",
+        "snippet": "let word = 'Hello'; function changeWord() { word = 'World'; } changeWord(); console.log(word);",
+        "options": [
+            "The function is not called.",
+            "The inner function modifies the **globally scoped `let`** because no local declaration exists, but this modification is only allowed if `word` is declared in the outer scope, which it is.",
+            "The variable `word` is hoisted.",
+            "The function must be an arrow function."
+        ],
+        "correct_answer": "The inner function modifies the **globally scoped `let`** because no local declaration exists, but this modification is only allowed if `word` is declared in the outer scope, which it is.",
+        "topic": "Global Scope Mutation",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the `in` operator on an array?",
+        "snippet": "let arr = [10, 20]; console.log('1' in arr);",
+        "options": [
+            "false",
+            "true",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Object Properties (Arrays)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to return a promise. What is the output?",
+        "snippet": "async function getData() { return 5; } console.log(getData());",
+        "options": [
+            "5",
+            "Promise { 5 }",
+            "**Promise { <pending> }** (or similar), because `async` functions **always return a Promise** which resolves with the return value.",
+            "Error"
+        ],
+        "correct_answer": "**Promise { <pending> }** (or similar), because `async` functions **always return a Promise** which resolves with the return value.",
+        "topic": "Async/Await",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the `map` callback receive an unexpected second argument?",
+        "snippet": "let arr = ['a', 'b', 'c']; arr.map((item, index) => console.log(index));",
+        "options": [
+            "The array is too small.",
+            "The second argument to the `map` callback is the **current index** of the element, printing 0, 1, 2.",
+            "The function is missing a `return` statement.",
+            "The array is defined with `let`."
+        ],
+        "correct_answer": "The second argument to the `map` callback is the **current index** of the element, printing 0, 1, 2.",
+        "topic": "Array Methods (Callbacks)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to check the prototype chain?",
+        "snippet": "let arr = [1, 2]; console.log(arr.__proto__ === Array.prototype);",
+        "options": [
+            "false",
+            "true",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Prototypes",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code uses a logical assignment operator. What is the output?",
+        "snippet": "let b = 'hello'; b &&= 'world'; console.log(b);",
+        "options": [
+            "'hello'",
+            "'world'",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "'world'",
+        "topic": "ES2021 Logical Assignment",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code not correctly handle the `await`?",
+        "snippet": "function run() { let result = await Promise.resolve(10); console.log(result); } run();",
+        "options": [
+            "The function is missing the **`async`** keyword, causing a **Syntax Error** because `await` can only be used inside an `async` function.",
+            "The `await` keyword is wrong.",
+            "The `Promise.resolve` is incorrect.",
+            "The function is not called."
+        ],
+        "correct_answer": "The function is missing the **`async`** keyword, causing a **Syntax Error** because `await` can only be used inside an `async` function.",
+        "topic": "Async/Await",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the Logical AND operator with two arrays?",
+        "snippet": "console.log([1] && [2]);",
+        "options": [
+            "[1]",
+            "[2]",
+            "true",
+            "false"
+        ],
+        "correct_answer": "[2]",
+        "topic": "Logical Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to merge two objects. What is the bug?",
+        "snippet": "let obj1 = { a: 1 }; let obj2 = { b: 2 }; let merged = Object.assign(obj1, obj2); console.log(obj1);",
+        "options": [
+            "The `assign` method is wrong.",
+            "The `Object.assign` method **mutates the target object (`obj1`)** and returns it, resulting in `obj1` being `{ a: 1, b: 2 }`.",
+            "The objects are too small.",
+            "The variable `merged` should be a `const`."
+        ],
+        "correct_answer": "The `Object.assign` method **mutates the target object (`obj1`)** and returns it, resulting in `obj1` being `{ a: 1, b: 2 }`.",
+        "topic": "Object Mutability",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of checking the length of arguments in an arrow function?",
+        "snippet": "const func = (...args) => console.log(arguments.length); func(1, 2, 3);",
+        "options": [
+            "3",
+            "Error",
+            "undefined",
+            "0"
+        ],
+        "correct_answer": "Error",
+        "topic": "Arrow Functions (Arguments)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code fail to execute the `finally` block?",
+        "snippet": "new Promise((resolve, reject) => { resolve(1); }).finally(() => console.log('Done'));",
+        "options": [
+            "The promise is resolved.",
+            "The `finally` block **always executes** after the promise settles (either resolved or rejected), printing **'Done'**.",
+            "The `finally` method is wrong.",
+            "The promise should be asynchronous."
+        ],
+        "correct_answer": "The `finally` block **always executes** after the promise settles (either resolved or rejected), printing **'Done'**.",
+        "topic": "Promises (Finally)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to add a boolean and a number?",
+        "snippet": "console.log(true + 5);",
+        "options": [
+            "6",
+            "'true5'",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "6",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to create a frozen object. What is the bug?",
+        "snippet": "const obj = { a: { b: 1 } }; Object.freeze(obj); obj.a.b = 2; console.log(obj.a.b);",
+        "options": [
+            "The `freeze` method is wrong.",
+            "`Object.freeze` performs a **shallow freeze**, meaning the inner object `a` is still mutable, resulting in the output **2**.",
+            "The object is too small.",
+            "The object is defined with `const`."
+        ],
+        "correct_answer": "`Object.freeze` performs a **shallow freeze**, meaning the inner object `a` is still mutable, resulting in the output **2**.",
+        "topic": "Object Immutability (`Object.freeze`)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the object fail to print the property value using dot notation?",
+        "snippet": "let obj = { '1a': 10 }; console.log(obj.1a);",
+        "options": [
+            "The property name is wrong.",
+            "The property name `1a` is an **invalid identifier** for dot notation (cannot start with a number); it requires bracket notation `obj['1a']` and causes a **Syntax Error**.",
+            "The object is empty.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "The property name `1a` is an **invalid identifier** for dot notation (cannot start with a number); it requires bracket notation `obj['1a']` and causes a **Syntax Error**.",
+        "topic": "Object Access (Invalid Identifier)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to be a promise. What is the bug?",
+        "snippet": "const p = Promise.resolve(10); p.then(console.log);",
+        "options": [
+            "The promise is resolved.",
+            "The code is **correct** and prints **10** (the resolved value) asynchronously.",
+            "The `then` method is wrong.",
+            "The variable `p` should be a `const`."
+        ],
+        "correct_answer": "The code is **correct** and prints **10** (the resolved value) asynchronously.",
+        "topic": "Promises",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of this complex type coercion?",
+        "snippet": "console.log(5 < 6 < 7);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Complex Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code is intended to check for object extensibility. What is the bug?",
+        "snippet": "let obj = { a: 1 }; Object.preventExtensions(obj); console.log(Object.isExtensible(obj));",
+        "options": [
+            "The `isExtensible` method is wrong.",
+            "The code is **correct** and prints **false** because `Object.preventExtensions` was called.",
+            "The object is too small.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "The code is **correct** and prints **false** because `Object.preventExtensions` was called.",
+        "topic": "Object Properties",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the `Promise.race` resolve with the first value?",
+        "snippet": "const p1 = new Promise(r => setTimeout(() => r(1), 500)); const p2 = new Promise(r => setTimeout(() => r(2), 100)); Promise.race([p1, p2]).then(console.log);",
+        "options": [
+            "The array is too small.",
+            "The promise resolves with **2**, because `Promise.race` returns the result of the promise that **settles first** (p2 is faster).",
+            "The timeouts are too long.",
+            "The variable `p1` should be a `const`."
+        ],
+        "correct_answer": "The promise resolves with **2**, because `Promise.race` returns the result of the promise that **settles first** (p2 is faster).",
+        "topic": "Promise Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to find the index. What is the bug?",
+        "snippet": "let data = [10, 20, 30]; console.log(data.lastIndexOf(20, 0));",
+        "options": [
+            "The method name is wrong.",
+            "The search starts backward from index **0** (the first element), so it fails to find 20 and returns **-1**.",
+            "The array is too small.",
+            "The second argument is unnecessary."
+        ],
+        "correct_answer": "The search starts backward from index **0** (the first element), so it fails to find 20 and returns **-1**.",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to add a number and a function?",
+        "snippet": "console.log(1 + function(){});",
+        "options": [
+            "1",
+            "**1function(){}**, as the function is coerced to its string representation during concatenation.",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "**1function(){}**, as the function is coerced to its string representation during concatenation.",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code throw a `TypeError` for the function call?",
+        "snippet": "const obj = { a: 1 }; function getValue() { return this.a; } console.log(getValue());",
+        "options": [
+            "The function is not defined.",
+            "The function is called without a context (`this` defaults to `undefined` in strict mode or the global object), so `this.a` is accessed on an incorrect object.",
+            "The object is too small.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "The function is called without a context (`this` defaults to `undefined` in strict mode or the global object), so `this.a` is accessed on an incorrect object.",
+        "topic": "`this` Binding",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to fill the array with a value. What is the bug?",
+        "snippet": "let arr = [1, 2, 3]; arr.fill(0, 1); console.log(arr);",
+        "options": [
+            "The method name is wrong.",
+            "The code fills the array with 0 starting from index **1**, resulting in **[1, 0, 0]**.",
+            "The array is too small.",
+            "The second argument is wrong."
+        ],
+        "correct_answer": "The code fills the array with 0 starting from index **1**, resulting in **[1, 0, 0]**.",
+        "topic": "Array Methods (Mutation)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to get the maximum number?",
+        "snippet": "console.log(Math.max());",
+        "options": [
+            "0",
+            "NaN",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "-Infinity",
+        "topic": "Built-in Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the object fail to print the default value?",
+        "snippet": "let obj = { a: 1 }; let { a, b = 5 } = obj; console.log(a);",
+        "options": [
+            "The object is empty.",
+            "The code correctly prints **1**, because the property `a` exists and its value overrides the default value for `b`.",
+            "The destructuring syntax is wrong.",
+            "The variable `a` is not hoisted."
+        ],
+        "correct_answer": "The code correctly prints **1**, because the property `a` exists and its value overrides the default value for `b`.",
+        "topic": "ES6 Destructuring",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code uses a class inheritance. What is the bug?",
+        "snippet": "class Parent { constructor(name) { this.name = name; } } class Child extends Parent { constructor(name, age) { this.age = age; super(name); } }",
+        "options": [
+            "The `super` call must be the **first statement** in the `Child` constructor when using `extends`, causing a **ReferenceError**.",
+            "The class syntax is wrong.",
+            "The variable `age` is not defined.",
+            "The constructor must be empty."
+        ],
+        "correct_answer": "The `super` call must be the **first statement** in the `Child` constructor when using `extends`, causing a **ReferenceError**.",
+        "topic": "ES6+ Classes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to add a null and a number?",
+        "snippet": "console.log(null + 5);",
+        "options": [
+            "5",
+            "null5",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code is intended to create a closure that holds `x`. What is the result of the function call?",
+        "snippet": "function outer(x) { x = 10; return function inner(y) { return x + y; } } const add5 = outer(5); console.log(add5(10));",
+        "options": [
+            "10",
+            "15",
+            "**20**, because `x` is immediately reassigned to 10 inside `outer`, and the closure captures the value **10**.",
+            "undefined"
+        ],
+        "correct_answer": "**20**, because `x` is immediately reassigned to 10 inside `outer`, and the closure captures the value **10**.",
+        "topic": "Closures and Mutability",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the object fail to inherit the property from the prototype?",
+        "snippet": "function Person(name) { this.name = name; } Person.prototype.city = 'London'; let p = new Person('John'); delete p.city; console.log(p.city);",
+        "options": [
+            "The property is deleted.",
+            "The `city` property is inherited from the prototype, so deleting it from the instance only removes the potential shadowing, and the engine **finds the prototype property 'London'**.",
+            "The `new` keyword is incorrect.",
+            "The variable `p` is defined with `let`."
+        ],
+        "correct_answer": "The `city` property is inherited from the prototype, so deleting it from the instance only removes the potential shadowing, and the engine **finds the prototype property 'London'**.",
+        "topic": "Prototypes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to check the type of a symbol?",
+        "snippet": "console.log(typeof Symbol('id'));",
+        "options": [
+            "object",
+            "symbol",
+            "undefined",
+            "string"
+        ],
+        "correct_answer": "symbol",
+        "topic": "`typeof` Operator",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to find the index. What is the bug?",
+        "snippet": "let data = [10, 20, 30]; console.log(data.indexOf('10'));",
+        "options": [
+            "The method name is wrong.",
+            "The search uses **strict equality** (`===`), so the number 10 is not strictly equal to the string '10', returning **-1**.",
+            "The array is too small.",
+            "The variable `data` is not hoisted."
+        ],
+        "correct_answer": "The search uses **strict equality** (`===`), so the number 10 is not strictly equal to the string '10', returning **-1**.",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the `if` condition fail when checking for an empty object?",
+        "snippet": "let obj = {}; if (obj) { console.log('Defined'); }",
+        "options": [
+            "The object is empty.",
+            "The empty object (`{}`) is a **truthy value** (it is an object), so the `if` block executes, printing 'Defined'.",
+            "The comparison should use `Object.keys(obj).length === 0`.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "The empty object (`{}`) is a **truthy value** (it is an object), so the `if` block executes, printing 'Defined'.",
+        "topic": "Truthy Values",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to divide by zero?",
+        "snippet": "console.log(0 / 0);",
+        "options": [
+            "0",
+            "Infinity",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "NaN",
+        "topic": "Special Values",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to create a default parameter. What is the bug?",
+        "snippet": "function greet(name = 'Guest') { console.log(`Hello ${name}`); } greet(undefined);",
+        "options": [
+            "The function name is wrong.",
+            "The code is **correct** and prints **'Hello Guest'**, as `undefined` explicitly triggers the default parameter.",
+            "The default parameter is wrong.",
+            "The function must be an arrow function."
+        ],
+        "correct_answer": "The code is **correct** and prints **'Hello Guest'**, as `undefined` explicitly triggers the default parameter.",
+        "topic": "ES6+ Default Parameters",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code fail to execute the `then` block?",
+        "snippet": "new Promise((resolve, reject) => { reject('Error'); }).then(console.log).catch(console.error);",
+        "options": [
+            "The promise is resolved.",
+            "The promise **rejects**, causing the **`then` block to be skipped** and the `catch` block to execute, printing **'Error'**.",
+            "The `then` method is wrong.",
+            "The promise should be synchronous."
+        ],
+        "correct_answer": "The promise **rejects**, causing the **`then` block to be skipped** and the `catch` block to execute, printing **'Error'**.",
+        "topic": "Promises (Rejection)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of this comparison?",
+        "snippet": "console.log(Number('1') === new Number(1));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Type Coercion (Object Wrappers)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to return the element. What is the bug?",
+        "snippet": "let arr = [10, 20]; console.log(arr.at(-1));",
+        "options": [
+            "The method name is wrong.",
+            "The code correctly returns **20**, as `at(-1)` returns the last element of the array.",
+            "The array is too small.",
+            "The argument is wrong."
+        ],
+        "correct_answer": "The code correctly returns **20**, as `at(-1)` returns the last element of the array.",
+        "topic": "ES2022 Array Methods (`at`)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code throw a `ReferenceError`?",
+        "snippet": "let x = 1; if (true) { console.log(x); let x = 2; }",
+        "options": [
+            "The variable `x` is defined with `let`.",
+            "The local `let x` inside the block is hoisted, placing `x` in the **Temporal Dead Zone (TDZ)** before its declaration, causing a `ReferenceError`.",
+            "The variable `x` is not hoisted.",
+            "The `if` condition is wrong."
+        ],
+        "correct_answer": "The local `let x` inside the block is hoisted, placing `x` in the **Temporal Dead Zone (TDZ)** before its declaration, causing a `ReferenceError`.",
+        "topic": "Temporal Dead Zone (TDZ)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to check the type of `Symbol()`?",
+        "snippet": "console.log(typeof Symbol());",
+        "options": [
+            "object",
+            "symbol",
+            "undefined",
+            "string"
+        ],
+        "correct_answer": "symbol",
+        "topic": "`typeof` Operator",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to be called right away. What is the bug?",
+        "snippet": "(() => { console.log('IIFE?'); })();",
+        "options": [
+            "The function is an arrow function.",
+            "The code is **correct** and prints **'IIFE?'**; arrow functions can be used in IIFEs.",
+            "The function must be a regular function.",
+            "The console log is asynchronous."
+        ],
+        "correct_answer": "The code is **correct** and prints **'IIFE?'**; arrow functions can be used in IIFEs.",
+        "topic": "IIFE Syntax",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the Logical OR operator with two empty objects?",
+        "snippet": "console.log({} || { a: 1 });",
+        "options": [
+            "{}",
+            "{ a: 1 }",
+            "true",
+            "false"
+        ],
+        "correct_answer": "{}",
+        "topic": "Logical Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to find the index. What is the bug?",
+        "snippet": "let data = [10, 20, 30]; console.log(data.findIndex(num => num > 20));",
+        "options": [
+            "The method name is wrong.",
+            "The code correctly finds and returns **2** (the index of 30).",
+            "The condition is wrong.",
+            "The array is too small."
+        ],
+        "correct_answer": "The code correctly finds and returns **2** (the index of 30).",
+        "topic": "Array Methods (FindIndex)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code throw a `TypeError` for the function call?",
+        "snippet": "function test() { 'use strict'; console.log(this); } test();",
+        "options": [
+            "The function is not defined.",
+            "The code prints **undefined**, because in **strict mode**, a function called without a context (`this`) defaults to `undefined`.",
+            "The function must be an arrow function.",
+            "The function is not called."
+        ],
+        "correct_answer": "The code prints **undefined**, because in **strict mode**, a function called without a context (`this`) defaults to `undefined`.",
+        "topic": "`this` Binding (Strict Mode)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to add two empty arrays?",
+        "snippet": "console.log([] + []);",
+        "options": [
+            "[]",
+            "''",
+            "0",
+            "Error"
+        ],
+        "correct_answer": "''",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code uses object shorthand. What is the bug?",
+        "snippet": "let a = 1; let obj = { a }; console.log(obj.a);",
+        "options": [
+            "The shorthand is wrong.",
+            "The code is **correct** and prints **1**, as shorthand notation is used correctly.",
+            "The object is empty.",
+            "The variable `a` is not hoisted."
+        ],
+        "correct_answer": "The code is **correct** and prints **1**, as shorthand notation is used correctly.",
+        "topic": "ES6 Object Shorthand",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print 'World' for the global variable?",
+        "snippet": "var word = 'Hello'; function changeWord() { 'use strict'; word = 'World'; } changeWord(); console.log(word);",
+        "options": [
+            "The function is not called.",
+            "The inner function modifies the **globally scoped `var`** because no local declaration exists; strict mode inside the function only applies to *new* implicit globals, not existing global variables.",
+            "The variable `word` is hoisted.",
+            "The function must be an arrow function."
+        ],
+        "correct_answer": "The inner function modifies the **globally scoped `var`** because no local declaration exists; strict mode inside the function only applies to *new* implicit globals, not existing global variables.",
+        "topic": "Strict Mode vs. Global Scope",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of checking the prototype relationship?",
+        "snippet": "function A() {} function B() {} B.prototype = new A(); let b = new B(); console.log(b instanceof A);",
+        "options": [
+            "false",
+            "true",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Inheritance (`instanceof`)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to return a flattened array. What is the bug?",
+        "snippet": "let arr = [1, [2, 3], 4]; console.log(arr.flat());",
+        "options": [
+            "The method name is wrong.",
+            "The code is **correct** and returns **[1, 2, 3, 4]** (flat with default depth 1).",
+            "The array is too small.",
+            "The variable `arr` should be a `const`."
+        ],
+        "correct_answer": "The code is **correct** and returns **[1, 2, 3, 4]** (flat with default depth 1).",
+        "topic": "ES2019 Array Methods (`flat`)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to get the maximum number?",
+        "snippet": "let arr = []; console.log(Math.max(...arr));",
+        "options": [
+            "0",
+            "NaN",
+            "-Infinity",
+            "Error"
+        ],
+        "correct_answer": "-Infinity",
+        "topic": "Built-in Methods (Spread Operator)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print `undefined`?",
+        "snippet": "let obj = { a: 1 }; delete obj.a; console.log(obj.a);",
+        "options": [
+            "The object is empty.",
+            "The **`delete` operator** successfully removes the property, so accessing it returns `undefined`.",
+            "The property is immutable.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "The **`delete` operator** successfully removes the property, so accessing it returns `undefined`.",
+        "topic": "Object Properties",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to find the element. What is the bug?",
+        "snippet": "let data = [10, 20, 30]; console.log(data.find(num => num === '20'));",
+        "options": [
+            "The method name is wrong.",
+            "The search uses **strict equality** (`===`), and the number 20 is not strictly equal to the string '20', returning **undefined**.",
+            "The array is too small.",
+            "The variable `data` is not hoisted."
+        ],
+        "correct_answer": "The search uses **strict equality** (`===`), and the number 20 is not strictly equal to the string '20', returning **undefined**.",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of this comparison involving coercion?",
+        "snippet": "console.log(null >= 0);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Complex Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code is intended to use spread in an object. What is the bug?",
+        "snippet": "let obj1 = { a: 1 }; let obj2 = { ...obj1 }; console.log(obj2.a);",
+        "options": [
+            "The spread operator is wrong.",
+            "The code is **correct** and prints **1**, as the spread operator copies properties from `obj1` to `obj2`.",
+            "The object is too small.",
+            "The variable `obj1` is not hoisted."
+        ],
+        "correct_answer": "The code is **correct** and prints **1**, as the spread operator copies properties from `obj1` to `obj2`.",
+        "topic": "ES2018 Spread Operator",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print 'End' before 'Timeout'?",
+        "snippet": "console.log('Start'); setTimeout(() => console.log('Timeout'), 0); console.log('End');",
+        "options": [
+            "The delay is too short.",
+            "The `setTimeout` is an **asynchronous Macrotask** and is deferred to the Event Loop, executing only after the synchronous code ('Start', 'End') finishes.",
+            "The function is not called.",
+            "The console log is fast."
+        ],
+        "correct_answer": "The `setTimeout` is an **asynchronous Macrotask** and is deferred to the Event Loop, executing only after the synchronous code ('Start', 'End') finishes.",
+        "topic": "Event Loop (Macrotasks)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to add a boolean and a string?",
+        "snippet": "console.log(false + '0');",
+        "options": [
+            "0",
+            "'false0'",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "'false0'",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The function is intended to be called right away. What is the bug?",
+        "snippet": "(() => console.log('IIFE!'))",
+        "options": [
+            "The function is an arrow function.",
+            "The function is defined but **not invoked** (missing trailing parentheses `()`), so nothing is printed.",
+            "The console log is asynchronous.",
+            "The function must be a regular function."
+        ],
+        "correct_answer": "The function is defined but **not invoked** (missing trailing parentheses `()`), so nothing is printed.",
+        "topic": "IIFE Syntax",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print `undefined`?",
+        "snippet": "let x = 10; function test() { console.log(x); var x = 5; } test();",
+        "options": [
+            "The variable `x` is defined with `let`.",
+            "The local `var x` inside the function is hoisted, but the assignment of 5 is not, **shadowing** the outer `x` and printing **undefined**.",
+            "The variable `x` is not hoisted.",
+            "The function is not called."
+        ],
+        "correct_answer": "The local `var x` inside the function is hoisted, but the assignment of 5 is not, **shadowing** the outer `x` and printing **undefined**.",
+        "topic": "Hoisting and Shadowing",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to find the index. What is the bug?",
+        "snippet": "let data = [10, 20, 30]; console.log(data.lastIndexOf(20, 2));",
+        "options": [
+            "The method name is wrong.",
+            "The code correctly finds and returns **1**, as the search starts backward from index 2 and finds 20 at index 1.",
+            "The array is too small.",
+            "The second argument is unnecessary."
+        ],
+        "correct_answer": "The code correctly finds and returns **1**, as the search starts backward from index 2 and finds 20 at index 1.",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the Logical OR operator with a number and a boolean?",
+        "snippet": "console.log(0 || false);",
+        "options": [
+            "0",
+            "false",
+            "true",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Logical Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code uses a logical assignment operator. What is the output?",
+        "snippet": "let c = null; c ??= 99; console.log(c);",
+        "options": [
+            "null",
+            "99",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "99",
+        "topic": "ES2021 Logical Assignment",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the code print 'End' before 'Promise'?",
+        "snippet": "console.log('Start'); setTimeout(() => console.log('Timeout'), 0); Promise.resolve().then(() => console.log('Promise')); console.log('End');",
+        "options": [
+            "Promises are slow.",
+            "Promises (Microtasks) run **before** `setTimeout` (Macrotasks) in the Event Loop, printing 'Start', 'End', 'Promise', 'Timeout'.",
+            "The `resolve` function is wrong.",
+            "The console log is fast."
+        ],
+        "correct_answer": "Promises (Microtasks) run **before** `setTimeout` (Macrotasks) in the Event Loop, printing 'Start', 'End', 'Promise', 'Timeout'.",
+        "topic": "Event Loop (Microtasks vs Macrotasks)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The array method is intended to return a flattened array. What is the bug?",
+        "snippet": "let arr = [1, [2, [3]]]; console.log(arr.flat(2));",
+        "options": [
+            "The method name is wrong.",
+            "The code is **correct** and returns **[1, 2, 3]** (flat with depth 2).",
+            "The array is too small.",
+            "The argument is wrong."
+        ],
+        "correct_answer": "The code is **correct** and returns **[1, 2, 3]** (flat with depth 2).",
+        "topic": "ES2019 Array Methods (`flat`)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of this attempt to check the type of a BigInt?",
+        "snippet": "console.log(typeof 10n);",
+        "options": [
+            "number",
+            "bigint",
+            "object",
+            "undefined"
+        ],
+        "correct_answer": "bigint",
+        "topic": "`typeof` Operator",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The code intends to use a recursive function. What is the bug?",
+        "snippet": "function factorial(n) { if (n === 0) return 1; return n * factorial(n - 1); } console.log(factorial(4));",
+        "options": [
+            "The function is recursive.",
+            "The function is **correct** and returns **24** (4 * 3 * 2 * 1).",
+            "The base case is wrong.",
+            "The function must use a loop."
+        ],
+        "correct_answer": "The function is **correct** and returns **24** (4 * 3 * 2 * 1).",
+        "topic": "Recursion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Why does the `Promise.allSettled` fail to return the resolved array?",
+        "snippet": "const p1 = Promise.resolve(1); const p2 = Promise.reject('Error'); Promise.allSettled([p1, p2]).then(console.log);",
+        "options": [
+            "The array is too small.",
+            "The promise resolves with an **array of status/value objects** for both promises, including the rejection status.",
+            "The promises are asynchronous.",
+            "The method name is wrong."
+        ],
+        "correct_answer": "The promise resolves with an **array of status/value objects** for both promises, including the rejection status.",
+        "topic": "Promise Methods",
+        "difficulty": "medium"
+    }
+]

@@ -1,0 +1,1862 @@
+[
+    {
+        "question": "What is the correct way to declare a variable that cannot be reassigned in JavaScript (ES6)?",
+        "options": [
+            "var myVar;",
+            "let myVar;",
+            "const myVar;",
+            "static myVar;"
+        ],
+        "correct_answer": "const myVar;",
+        "topic": "Variables (const)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which keyword is used to define a function in JavaScript (ES5)?",
+        "options": [
+            "def",
+            "func",
+            "function",
+            "define"
+        ],
+        "correct_answer": "function",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(2 + '2')`?",
+        "options": [
+            "4",
+            "22",
+            "Error",
+            "NaN"
+        ],
+        "correct_answer": "22",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you write an 'if' statement in JavaScript?",
+        "options": [
+            "if i = 5 then",
+            "if (i == 5)",
+            "if i == 5",
+            "if {i == 5}"
+        ],
+        "correct_answer": "if (i == 5)",
+        "topic": "Control Flow",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which operator is used to check for both value and type equality (strict equality)?",
+        "options": [
+            "=",
+            "==",
+            "===",
+            "!="
+        ],
+        "correct_answer": "===",
+        "topic": "Operators",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of the following is NOT a primitive data type in JavaScript?",
+        "options": [
+            "string",
+            "boolean",
+            "object",
+            "number"
+        ],
+        "correct_answer": "object",
+        "topic": "Data Types",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the correct file extension for JavaScript files?",
+        "options": [
+            ".js",
+            ".java",
+            ".jsc",
+            ".script"
+        ],
+        "correct_answer": ".js",
+        "topic": "Basics",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you create an array named `myArray` with elements 1, 2, and 3?",
+        "options": [
+            "var myArray = (1, 2, 3)",
+            "var myArray = [1, 2, 3]",
+            "var myArray = {1, 2, 3}",
+            "var myArray = <1, 2, 3>"
+        ],
+        "correct_answer": "var myArray = [1, 2, 3]",
+        "topic": "Data Structures (Arrays)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you add a single-line comment in JavaScript?",
+        "options": [
+            "# This is a comment",
+            "// This is a comment",
+            "/* This is a comment */",
+            ""
+        ],
+        "correct_answer": "// This is a comment",
+        "topic": "Syntax",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of `typeof null` in JavaScript?",
+        "options": [
+            "'null'",
+            "'object'",
+            "'undefined'",
+            "'number'"
+        ],
+        "correct_answer": "'object'",
+        "topic": "Data Types and Operators",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `isNaN()` function check for?",
+        "options": [
+            "If a value is a string",
+            "If a value is not a number",
+            "If a value is an integer",
+            "If a value is null"
+        ],
+        "correct_answer": "If a value is not a number",
+        "topic": "Built-in Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which function is used to print content to the browser's console?",
+        "options": [
+            "print()",
+            "log()",
+            "console.log()",
+            "write()"
+        ],
+        "correct_answer": "console.log()",
+        "topic": "Debugging/Output",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which statement is used to stop a loop's current iteration and continue to the next one?",
+        "options": [
+            "break",
+            "continue",
+            "stop",
+            "exit"
+        ],
+        "correct_answer": "continue",
+        "topic": "Control Flow (Loops)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you access the element with index 0 in an array named `arr`?",
+        "options": [
+            "arr.0",
+            "arr[1]",
+            "arr[0]",
+            "arr(0)"
+        ],
+        "correct_answer": "arr[0]",
+        "topic": "Data Structures (Arrays)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `console.log(5 + 3 + '8')` output?",
+        "options": [
+            "16",
+            "88",
+            "538",
+            "Error"
+        ],
+        "correct_answer": "88",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of `typeof 42`?",
+        "options": [
+            "'integer'",
+            "'number'",
+            "'float'",
+            "'int'"
+        ],
+        "correct_answer": "'number'",
+        "topic": "Data Types",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which array method adds one or more elements to the **end** of an array?",
+        "options": [
+            "shift()",
+            "append()",
+            "push()",
+            "insert()"
+        ],
+        "correct_answer": "push()",
+        "topic": "Array Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does **DOM** stand for in JavaScript and web development?",
+        "options": [
+            "Data Object Model",
+            "Document Output Method",
+            "Document Object Model",
+            "Dynamic Output Manager"
+        ],
+        "correct_answer": "Document Object Model",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the difference between `let` and `var` in terms of scoping?",
+        "options": [
+            "`let` is function-scoped, `var` is block-scoped.",
+            "`let` is globally scoped, `var` is locally scoped.",
+            "`let` is block-scoped, `var` is function-scoped.",
+            "They are identical."
+        ],
+        "correct_answer": "`let` is block-scoped, `var` is function-scoped.",
+        "topic": "Variables (let/var)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you select an HTML element by its ID attribute using JavaScript?",
+        "options": [
+            "document.selectId('myId')",
+            "document.getElementById('myId')",
+            "document.query('myId')",
+            "document.findByID('myId')"
+        ],
+        "correct_answer": "document.getElementById('myId')",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which symbol is used for the logical **AND** operator?",
+        "options": [
+            "||",
+            "&",
+            "&&",
+            "!"
+        ],
+        "correct_answer": "&&",
+        "topic": "Operators (Logical)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of `10 % 3` (Modulo operator)?",
+        "options": [
+            "3",
+            "1",
+            "0",
+            "3.33"
+        ],
+        "correct_answer": "1",
+        "topic": "Operators (Arithmetic)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of these is used to define an object literal?",
+        "options": [
+            "[] (Square brackets)",
+            "() (Parentheses)",
+            "{} (Curly braces)",
+            "<> (Angle brackets)"
+        ],
+        "correct_answer": "{} (Curly braces)",
+        "topic": "Data Structures (Objects)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you call a function named `myFunction`?",
+        "options": [
+            "call myFunction",
+            "myFunction()",
+            "start myFunction",
+            "execute myFunction"
+        ],
+        "correct_answer": "myFunction()",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which keyword is used to conditionally execute a block of code if the initial `if` condition is false?",
+        "options": [
+            "except",
+            "else",
+            "default",
+            "finally"
+        ],
+        "correct_answer": "else",
+        "topic": "Control Flow",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(5 === '5')`?",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "NaN"
+        ],
+        "correct_answer": "false",
+        "topic": "Operators (Strict Equality)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which array method is used to add elements to the **beginning** of an array?",
+        "options": [
+            "pop()",
+            "push()",
+            "shift()",
+            "unshift()"
+        ],
+        "correct_answer": "unshift()",
+        "topic": "Array Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the default value of a variable that has been declared but not initialized?",
+        "options": [
+            "`null`",
+            "`0`",
+            "`undefined`",
+            "An empty string"
+        ],
+        "correct_answer": "`undefined`",
+        "topic": "Variables and Data Types",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which operator is used for exponentiation (raising to a power) in ES6?",
+        "options": [
+            "^",
+            "**",
+            "*",
+            "//"
+        ],
+        "correct_answer": "**",
+        "topic": "Operators (Arithmetic)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is an **event handler** in JavaScript?",
+        "options": [
+            "A variable that stores event data.",
+            "A function that executes when a specific event occurs.",
+            "A type of loop for handling events.",
+            "An external library for managing time."
+        ],
+        "correct_answer": "A function that executes when a specific event occurs.",
+        "topic": "Web APIs/Events",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you access a property named `age` from an object named `person` using dot notation?",
+        "options": [
+            "person['age']",
+            "person->age",
+            "person.age",
+            "person:age"
+        ],
+        "correct_answer": "person.age",
+        "topic": "Data Structures (Objects)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `console.log(typeof NaN)` output?",
+        "options": [
+            "'NaN'",
+            "'number'",
+            "'undefined'",
+            "'object'"
+        ],
+        "correct_answer": "'number'",
+        "topic": "Data Types and Operators",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which built-in function is used to convert a string to an integer?",
+        "options": [
+            "stringToInt()",
+            "parseInt()",
+            "toFloat()",
+            "number()"
+        ],
+        "correct_answer": "parseInt()",
+        "topic": "Built-in Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to join all elements of an array into a single string?",
+        "options": [
+            "concat()",
+            "toString()",
+            "join()",
+            "reduce()"
+        ],
+        "correct_answer": "join()",
+        "topic": "Array Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(Boolean(0))`?",
+        "options": [
+            "true",
+            "false",
+            "0",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Truthiness/Falsiness",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does **API** stand for?",
+        "options": [
+            "Application Program Instruction",
+            "Automated Protocol Interface",
+            "Application Programming Interface",
+            "Advanced Program Integration"
+        ],
+        "correct_answer": "Application Programming Interface",
+        "topic": "General Knowledge",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which property returns the number of elements in an array?",
+        "options": [
+            "count",
+            "size",
+            "length",
+            "arraySize"
+        ],
+        "correct_answer": "length",
+        "topic": "Array Properties",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you create an arrow function with no arguments that returns the string 'Hello'?",
+        "options": [
+            "let greet = => 'Hello';",
+            "let greet = () => 'Hello';",
+            "let greet = function() 'Hello';",
+            "let greet = function 'Hello';"
+        ],
+        "correct_answer": "let greet = () => 'Hello';",
+        "topic": "Functions (ES6)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which function is used to convert a number to a string?",
+        "options": [
+            "str()",
+            "toString()",
+            "parseString()",
+            "stringify()"
+        ],
+        "correct_answer": "toString()",
+        "topic": "Built-in Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `return` statement in a function?",
+        "options": [
+            "To print a value to the console.",
+            "To stop the loop execution.",
+            "To define function parameters.",
+            "To stop function execution and return a value."
+        ],
+        "correct_answer": "To stop function execution and return a value.",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "In a `for` loop, what part is executed once before the loop begins?",
+        "options": [
+            "The condition",
+            "The final expression",
+            "The initialization",
+            "The body of the loop"
+        ],
+        "correct_answer": "The initialization",
+        "topic": "Control Flow (Loops)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `console.log('5' - 3)` output due to coercion?",
+        "options": [
+            "53",
+            "2",
+            "NaN",
+            "8"
+        ],
+        "correct_answer": "2",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to remove the **first** element from an array?",
+        "options": [
+            "pop()",
+            "unshift()",
+            "shift()",
+            "removeFirst()"
+        ],
+        "correct_answer": "shift()",
+        "topic": "Array Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the type of variable declared without `var`, `let`, or `const` (in non-strict mode)?",
+        "options": [
+            "Local scope",
+            "Block scope",
+            "Global scope",
+            "Function scope"
+        ],
+        "correct_answer": "Global scope",
+        "topic": "Variables and Scope",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you access an object property named `user-name`?",
+        "options": [
+            "object.user-name",
+            "object[user-name]",
+            "object['user-name']",
+            "object(user-name)"
+        ],
+        "correct_answer": "object['user-name']",
+        "topic": "Data Structures (Objects)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of the logical NOT operator (`!`) on a boolean value, e.g., `!true`?",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Operators (Logical)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which DOM method is used to change the content of an HTML element?",
+        "options": [
+            "document.write()",
+            "element.innerHTML",
+            "element.content",
+            "element.setText()"
+        ],
+        "correct_answer": "element.innerHTML",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which statement is used to loop through the elements of an array (ES6)?",
+        "options": [
+            "for...in",
+            "for...of",
+            "while",
+            "do...while"
+        ],
+        "correct_answer": "for...of",
+        "topic": "Loops (ES6)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does **IIFE** stand for in JavaScript?",
+        "options": [
+            "Immediate Interface Function Execution",
+            "Immediately Invoked Function Expression",
+            "Independent Initial Function Engine",
+            "Internal Input File Endpoint"
+        ],
+        "correct_answer": "Immediately Invoked Function Expression",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which value is considered 'truthy' in JavaScript?",
+        "options": [
+            "null",
+            "undefined",
+            "\"\"",
+            "\"hello\""
+        ],
+        "correct_answer": "\"hello\"",
+        "topic": "Truthiness/Falsiness",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `toFixed()` method do to a number?",
+        "options": [
+            "Rounds the number to the nearest integer.",
+            "Formats a number to a specified number of decimal places.",
+            "Converts the number to a float.",
+            "Checks if the number is an integer."
+        ],
+        "correct_answer": "Formats a number to a specified number of decimal places.",
+        "topic": "Built-in Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you define a function that accepts two arguments, `a` and `b`?",
+        "options": [
+            "function sum[a, b]",
+            "function sum(a, b)",
+            "function sum: a, b",
+            "function (a, b) sum"
+        ],
+        "correct_answer": "function sum(a, b)",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(typeof [])`?",
+        "options": [
+            "'array'",
+            "'object'",
+            "'list'",
+            "'undefined'"
+        ],
+        "correct_answer": "'object'",
+        "topic": "Data Types and Operators",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to find the index of the first occurrence of a specified value in a string or array?",
+        "options": [
+            "search()",
+            "indexOf()",
+            "find()",
+            "location()"
+        ],
+        "correct_answer": "indexOf()",
+        "topic": "Array/String Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `alert()` function?",
+        "options": [
+            "To send an HTTP request.",
+            "To display a modal dialog with a specified message.",
+            "To write data to the console.",
+            "To define a variable in global scope."
+        ],
+        "correct_answer": "To display a modal dialog with a specified message.",
+        "topic": "Web APIs/Browser",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How can you use the **strict inequality** operator?",
+        "options": [
+            "!==",
+            "!=",
+            "!= = ",
+            "=="
+        ],
+        "correct_answer": "!==",
+        "topic": "Operators",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `setTimeout()` function do?",
+        "options": [
+            "Executes a function immediately.",
+            "Executes a function repeatedly.",
+            "Executes a function once after a specified delay.",
+            "Checks the current time."
+        ],
+        "correct_answer": "Executes a function once after a specified delay.",
+        "topic": "Asynchronous JavaScript",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you access the value of a property named `city` from an object named `address` using bracket notation?",
+        "options": [
+            "address.city",
+            "address('city')",
+            "address[city]",
+            "address['city']"
+        ],
+        "correct_answer": "address['city']",
+        "topic": "Data Structures (Objects)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to iterate over array elements and apply a function to each element, returning a **new array**?",
+        "options": [
+            "forEach()",
+            "filter()",
+            "map()",
+            "reduce()"
+        ],
+        "correct_answer": "map()",
+        "topic": "Array Methods (Higher-Order)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `querySelector()` method?",
+        "options": [
+            "To select all elements that match a CSS selector.",
+            "To select the first element that matches a CSS selector.",
+            "To select an element by its ID.",
+            "To change the style of an element."
+        ],
+        "correct_answer": "To select the first element that matches a CSS selector.",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `console.log(null == undefined)` output?",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "NaN"
+        ],
+        "correct_answer": "true",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to remove whitespace from both ends of a string?",
+        "options": [
+            "clean()",
+            "trim()",
+            "strip()",
+            "removeWhitespace()"
+        ],
+        "correct_answer": "trim()",
+        "topic": "String Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does `this` refer to in the global scope (outside of any function) in a web browser?",
+        "options": [
+            "The Document object",
+            "The Console object",
+            "The Window object",
+            "undefined"
+        ],
+        "correct_answer": "The Window object",
+        "topic": "Execution Context",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you write a `while` loop that continues as long as `i` is less than 5?",
+        "options": [
+            "while i < 5",
+            "while (i < 5)",
+            "for (i < 5)",
+            "do while i < 5"
+        ],
+        "correct_answer": "while (i < 5)",
+        "topic": "Control Flow (Loops)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which comparison operator checks if the left operand is less than or equal to the right operand?",
+        "options": [
+            "<",
+            "=<",
+            "<=",
+            ">="
+        ],
+        "correct_answer": "<=",
+        "topic": "Operators (Comparison)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `console.log(3 + 4 + ' apples')` output?",
+        "options": [
+            "34 apples",
+            "7 apples",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "7 apples",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the **try...catch** block?",
+        "options": [
+            "To define a new function.",
+            "To handle exceptions (errors).",
+            "To execute code only once.",
+            "To loop through an object's properties."
+        ],
+        "correct_answer": "To handle exceptions (errors).",
+        "topic": "Error Handling",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which DOM method is used to create a new HTML element?",
+        "options": [
+            "document.newElement()",
+            "document.createElement()",
+            "document.makeElement()",
+            "document.createNode()"
+        ],
+        "correct_answer": "document.createElement()",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method returns a new array containing all elements that pass a test implemented by the provided function?",
+        "options": [
+            "map()",
+            "find()",
+            "some()",
+            "filter()"
+        ],
+        "correct_answer": "filter()",
+        "topic": "Array Methods (Higher-Order)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you include an external JavaScript file named `script.js` in an HTML page?",
+        "options": [
+            "<script link='script.js'>",
+            "<script href='script.js'>",
+            "<script src='script.js'>",
+            "<link rel='script' href='script.js'>"
+        ],
+        "correct_answer": "<script src='script.js'>",
+        "topic": "HTML Integration",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is a **callback function**?",
+        "options": [
+            "A function that calls itself recursively.",
+            "A function passed as an argument to another function.",
+            "A function defined inside an object.",
+            "A function that must be executed immediately."
+        ],
+        "correct_answer": "A function passed as an argument to another function.",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(!!'false')` (double negation)?",
+        "options": [
+            "false",
+            "true",
+            "undefined",
+            "0"
+        ],
+        "correct_answer": "true",
+        "topic": "Truthiness/Falsiness",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which string method converts a string to lowercase letters?",
+        "options": [
+            "lowerCase()",
+            "toLower()",
+            "toLowerCase()",
+            "caseLower()"
+        ],
+        "correct_answer": "toLowerCase()",
+        "topic": "String Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you get the number of properties in a JavaScript object `obj`?",
+        "options": [
+            "obj.length",
+            "Object.keys(obj).length",
+            "obj.size",
+            "obj.count"
+        ],
+        "correct_answer": "Object.keys(obj).length",
+        "topic": "Data Structures (Objects)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is a **closure** in JavaScript?",
+        "options": [
+            "A way to define a private class.",
+            "A function having access to the parent scope even after the parent function has closed.",
+            "A function that returns a boolean value.",
+            "The process of cleaning up memory."
+        ],
+        "correct_answer": "A function having access to the parent scope even after the parent function has closed.",
+        "topic": "Scope and Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `setInterval()` function do?",
+        "options": [
+            "Executes a function only once after a delay.",
+            "Executes a function repeatedly at specified intervals.",
+            "Stops the execution of a function.",
+            "Calculates the time difference."
+        ],
+        "correct_answer": "Executes a function repeatedly at specified intervals.",
+        "topic": "Asynchronous JavaScript",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which built-in object is used to perform mathematical tasks with properties like `PI` and methods like `random()`?",
+        "options": [
+            "System",
+            "Math",
+            "Calculate",
+            "Number"
+        ],
+        "correct_answer": "Math",
+        "topic": "Built-in Objects",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(typeof undefined)`?",
+        "options": [
+            "'null'",
+            "'object'",
+            "'undefined'",
+            "'boolean'"
+        ],
+        "correct_answer": "'undefined'",
+        "topic": "Data Types and Operators",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you prevent the default action of an event (like a form submission)?",
+        "options": [
+            "event.stop()",
+            "event.preventDefault()",
+            "event.cancel()",
+            "event.halt()"
+        ],
+        "correct_answer": "event.preventDefault()",
+        "topic": "Web APIs/Events",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to get the length of a string named `str`?",
+        "options": [
+            "str.size()",
+            "str.count",
+            "str.length",
+            "str.getLength()"
+        ],
+        "correct_answer": "str.length",
+        "topic": "String Properties",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `break` statement inside a loop?",
+        "options": [
+            "To skip the current iteration.",
+            "To stop the loop and exit to the code following the loop.",
+            "To restart the loop from the beginning.",
+            "To throw an error."
+        ],
+        "correct_answer": "To stop the loop and exit to the code following the loop.",
+        "topic": "Control Flow (Loops)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which equality operator performs loose equality comparison?",
+        "options": [
+            "===",
+            "!=",
+            "==",
+            "!=="
+        ],
+        "correct_answer": "==",
+        "topic": "Operators",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `Array.isArray()` method check for?",
+        "options": [
+            "If an array is empty.",
+            "If the argument is a valid object.",
+            "If the argument is an array.",
+            "If the array is sorted."
+        ],
+        "correct_answer": "If the argument is an array.",
+        "topic": "Built-in Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of `console.log(Boolean(1))`?",
+        "options": [
+            "false",
+            "true",
+            "1",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Truthiness/Falsiness",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you select all elements that match a CSS selector in the DOM?",
+        "options": [
+            "document.querySelector()",
+            "document.getElementById()",
+            "document.querySelectorAll()",
+            "document.selectElements()"
+        ],
+        "correct_answer": "document.querySelectorAll()",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to make a new array from a portion of an existing array without modifying the original?",
+        "options": [
+            "slice()",
+            "splice()",
+            "split()",
+            "copy()"
+        ],
+        "correct_answer": "slice()",
+        "topic": "Array Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(Math.floor(3.9))`?",
+        "options": [
+            "4",
+            "3",
+            "3.5",
+            "3.9"
+        ],
+        "correct_answer": "3",
+        "topic": "Built-in Objects",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which logical operator returns `true` if at least one of its operands is `true`?",
+        "options": [
+            "&& (AND)",
+            "|| (OR)",
+            "! (NOT)",
+            "& (Bitwise AND)"
+        ],
+        "correct_answer": "|| (OR)",
+        "topic": "Operators (Logical)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the primary function of the `document` object in the browser environment?",
+        "options": [
+            "To manage HTTP requests.",
+            "To represent the HTML document loaded in the window.",
+            "To handle asynchronous operations.",
+            "To perform mathematical calculations."
+        ],
+        "correct_answer": "To represent the HTML document loaded in the window.",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which string method converts a string to uppercase letters?",
+        "options": [
+            "toUpperCase()",
+            "upperCase()",
+            "toUpper()",
+            "caseUpper()"
+        ],
+        "correct_answer": "toUpperCase()",
+        "topic": "String Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the scope of a variable declared with `const`?",
+        "options": [
+            "Global scope",
+            "Function scope",
+            "Block scope",
+            "Local scope"
+        ],
+        "correct_answer": "Block scope",
+        "topic": "Variables (const/let)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is typically used to iterate over array elements to perform an action, without returning a new array?",
+        "options": [
+            "map()",
+            "filter()",
+            "reduce()",
+            "forEach()"
+        ],
+        "correct_answer": "forEach()",
+        "topic": "Array Methods (Higher-Order)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What keyword is used to stop the execution of a `switch` block and move to the next statement after the switch?",
+        "options": [
+            "continue",
+            "break",
+            "stop",
+            "exit"
+        ],
+        "correct_answer": "break",
+        "topic": "Control Flow",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(null === undefined)`?",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "NaN"
+        ],
+        "correct_answer": "false",
+        "topic": "Operators (Strict Equality)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you define a constant named `PI` with the value 3.14159?",
+        "options": [
+            "var PI = 3.14159;",
+            "let PI = 3.14159;",
+            "const PI = 3.14159;",
+            "PI = 3.14159;"
+        ],
+        "correct_answer": "const PI = 3.14159;",
+        "topic": "Variables (const)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which DOM property is used to retrieve the value of an input field?",
+        "options": [
+            "element.text",
+            "element.innerHTML",
+            "element.value",
+            "element.content"
+        ],
+        "correct_answer": "element.value",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the term for a function that is passed as an argument to another function, to be executed later?",
+        "options": [
+            "Asynchronous function",
+            "Closure",
+            "Callback function",
+            "Inner function"
+        ],
+        "correct_answer": "Callback function",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method can be used to convert JSON text into a JavaScript object?",
+        "options": [
+            "JSON.stringify()",
+            "JSON.parse()",
+            "JSON.toObject()",
+            "JSON.read()"
+        ],
+        "correct_answer": "JSON.parse()",
+        "topic": "JSON",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `console.log(typeof true)` output?",
+        "options": [
+            "'True'",
+            "'boolean'",
+            "'object'",
+            "'number'"
+        ],
+        "correct_answer": "'boolean'",
+        "topic": "Data Types",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you create a multiline comment in JavaScript?",
+        "options": [
+            "// This is a comment",
+            "# This is a comment #",
+            "/* This is a comment */",
+            ""
+        ],
+        "correct_answer": "/* This is a comment */",
+        "topic": "Syntax",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to change the CSS style of an element using JavaScript?",
+        "options": [
+            "element.css()",
+            "element.styles.color",
+            "element.style.color",
+            "element.setStyle('color')"
+        ],
+        "correct_answer": "element.style.color",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `console.log(Math.round(4.4))` output?",
+        "options": [
+            "4",
+            "5",
+            "4.5",
+            "Error"
+        ],
+        "correct_answer": "4",
+        "topic": "Built-in Objects",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of using the plus operator on a string and a number, e.g., `'10' + 5`?",
+        "options": [
+            "15",
+            "'105'",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "'105'",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you convert a JavaScript object into a JSON string?",
+        "options": [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "JSON.toText()",
+            "JSON.convert()"
+        ],
+        "correct_answer": "JSON.stringify()",
+        "topic": "JSON",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `default` keyword in a `switch` statement?",
+        "options": [
+            "It is executed first.",
+            "It is executed if none of the cases match the expression.",
+            "It is required for every switch statement.",
+            "It sets the initial value of the variable."
+        ],
+        "correct_answer": "It is executed if none of the cases match the expression.",
+        "topic": "Control Flow",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which array method checks if at least one element in the array passes the test implemented by the provided function?",
+        "options": [
+            "every()",
+            "some()",
+            "find()",
+            "include()"
+        ],
+        "correct_answer": "some()",
+        "topic": "Array Methods (Higher-Order)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(!!0)`?",
+        "options": [
+            "true",
+            "false",
+            "0",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Truthiness/Falsiness",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which type of loop executes the block of code once before checking the condition?",
+        "options": [
+            "for loop",
+            "while loop",
+            "do...while loop",
+            "for...of loop"
+        ],
+        "correct_answer": "do...while loop",
+        "topic": "Control Flow (Loops)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you assign a default value of 10 to a function parameter `x` if no value is passed (ES6)?",
+        "options": [
+            "function func(x = 10)",
+            "function func(x || 10)",
+            "function func(x : 10)",
+            "function func(x, 10)"
+        ],
+        "correct_answer": "function func(x = 10)",
+        "topic": "Functions (ES6)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `prompt()` function in the browser?",
+        "options": [
+            "To display a simple message.",
+            "To ask the user for input with an optional default value.",
+            "To confirm a decision.",
+            "To send a notification."
+        ],
+        "correct_answer": "To ask the user for input with an optional default value.",
+        "topic": "Web APIs/Browser",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to remove a property from an object?",
+        "options": [
+            "remove",
+            "delete",
+            "pop",
+            "splice"
+        ],
+        "correct_answer": "delete",
+        "topic": "Data Structures (Objects)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(parseInt('10.5'))`?",
+        "options": [
+            "10.5",
+            "10",
+            "NaN",
+            "11"
+        ],
+        "correct_answer": "10",
+        "topic": "Built-in Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which event occurs when a user clicks on an HTML element?",
+        "options": [
+            "onchange",
+            "onmouseover",
+            "onclick",
+            "onsubmit"
+        ],
+        "correct_answer": "onclick",
+        "topic": "Web APIs/Events",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the term for JavaScript running in the browser using the browser's engine?",
+        "options": [
+            "Server-side scripting",
+            "Client-side scripting",
+            "Backend programming",
+            "Desktop application"
+        ],
+        "correct_answer": "Client-side scripting",
+        "topic": "Basics",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `arguments` object inside a regular function?",
+        "options": [
+            "It is an array containing the function parameters.",
+            "It is an array-like object containing the values of arguments passed to the function.",
+            "It contains the function's scope.",
+            "It is only used in arrow functions."
+        ],
+        "correct_answer": "It is an array-like object containing the values of arguments passed to the function.",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to create a string from an array of elements, inserting a separator between them?",
+        "options": [
+            "split()",
+            "join()",
+            "concat()",
+            "slice()"
+        ],
+        "correct_answer": "join()",
+        "topic": "Array Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(Math.random() < 1)`?",
+        "options": [
+            "0",
+            "A random number",
+            "true",
+            "false"
+        ],
+        "correct_answer": "true",
+        "topic": "Built-in Objects",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you declare a variable that can be reassigned and is block-scoped (ES6)?",
+        "options": [
+            "var myVar;",
+            "let myVar;",
+            "const myVar;",
+            "set myVar;"
+        ],
+        "correct_answer": "let myVar;",
+        "topic": "Variables (let/const)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of `'hello'.length`?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "String Properties",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which object contains properties and methods related to the user's browser history?",
+        "options": [
+            "document",
+            "window",
+            "history",
+            "location"
+        ],
+        "correct_answer": "history",
+        "topic": "Web APIs/Browser",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of using backticks (``) for strings in ES6?",
+        "options": [
+            "To define regex patterns.",
+            "To enable strict mode.",
+            "To create template literals, allowing embedded expressions and multiline strings.",
+            "To define raw strings."
+        ],
+        "correct_answer": "To create template literals, allowing embedded expressions and multiline strings.",
+        "topic": "Syntax (ES6)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the correct syntax for checking if a variable `x` is *not equal* to 5 (strict)?",
+        "options": [
+            "x != 5",
+            "x !== 5",
+            "x <> 5",
+            "x =! 5"
+        ],
+        "correct_answer": "x !== 5",
+        "topic": "Operators (Strict Inequality)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which property is used to get or set the HTML markup contained within an element?",
+        "options": [
+            "innerText",
+            "innerHTML",
+            "textContent",
+            "outerHTML"
+        ],
+        "correct_answer": "innerHTML",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the array method `reverse()` do?",
+        "options": [
+            "Sorts the array in reverse alphabetical order.",
+            "Creates a new reversed array.",
+            "Reverses the order of the elements in the array *in place*.",
+            "Checks if the array is already reversed."
+        ],
+        "correct_answer": "Reverses the order of the elements in the array *in place*.",
+        "topic": "Array Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `console.log('hello'.charAt(0))` output?",
+        "options": [
+            "h",
+            "e",
+            "l",
+            "0"
+        ],
+        "correct_answer": "h",
+        "topic": "String Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of these is used to select elements by their class name?",
+        "options": [
+            "document.getElementById()",
+            "document.getElementsByClassName()",
+            "document.selectClass()",
+            "document.queryByClass()"
+        ],
+        "correct_answer": "document.getElementsByClassName()",
+        "topic": "Web APIs/DOM",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `console.clear()` method?",
+        "options": [
+            "To clear all variables.",
+            "To clear the browser's console window.",
+            "To clear the browser's cache.",
+            "To reset the program execution."
+        ],
+        "correct_answer": "To clear the browser's console window.",
+        "topic": "Debugging/Output",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What happens when you try to reassign a variable declared with `const`?",
+        "options": [
+            "The value is reassigned successfully.",
+            "A warning is logged to the console.",
+            "A SyntaxError is thrown.",
+            "A TypeError is thrown."
+        ],
+        "correct_answer": "A TypeError is thrown.",
+        "topic": "Variables (const)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to get the current date and time?",
+        "options": [
+            "Time.now()",
+            "Date.getTime()",
+            "new Date()",
+            "CurrentTime()"
+        ],
+        "correct_answer": "new Date()",
+        "topic": "Built-in Objects",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `splice()` method do to an array?",
+        "options": [
+            "Joins array elements into a string.",
+            "Adds/removes elements to/from an array and returns the removed elements.",
+            "Creates a new subarray.",
+            "Fills the array with a static value."
+        ],
+        "correct_answer": "Adds/removes elements to/from an array and returns the removed elements.",
+        "topic": "Array Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What will `console.log(10 < 5 || 10 > 2)` output?",
+        "options": [
+            "false",
+            "true",
+            "10",
+            "Error"
+        ],
+        "correct_answer": "true",
+        "topic": "Operators (Logical)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which HTML tag is used to embed JavaScript code directly within an HTML document?",
+        "options": [
+            "<javascript>",
+            "<js>",
+            "<script>",
+            "<code>"
+        ],
+        "correct_answer": "<script>",
+        "topic": "HTML Integration",
+        "difficulty": "easy"
+    },
+    {
+        "question": "In a `for` loop, what happens if the condition is never met?",
+        "options": [
+            "The loop body executes only once.",
+            "The loop executes infinitely.",
+            "The loop never starts.",
+            "The program throws an error."
+        ],
+        "correct_answer": "The loop never starts.",
+        "topic": "Control Flow (Loops)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of `console.log(!!null)`?",
+        "options": [
+            "true",
+            "false",
+            "0",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Truthiness/Falsiness",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to attach an event handler to an element (modern way)?",
+        "options": [
+            "element.onclick = function() {}",
+            "element.attachEvent()",
+            "element.addEventListener()",
+            "element.addEvent()"
+        ],
+        "correct_answer": "element.addEventListener()",
+        "topic": "Web APIs/Events",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `console.error()` method?",
+        "options": [
+            "To log a standard message.",
+            "To clear the console.",
+            "To log a message styled as an error.",
+            "To stop script execution."
+        ],
+        "correct_answer": "To log a message styled as an error.",
+        "topic": "Debugging/Output",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which statement is used to jump out of a loop or a `switch` statement?",
+        "options": [
+            "return",
+            "break",
+            "continue",
+            "exit"
+        ],
+        "correct_answer": "break",
+        "topic": "Control Flow",
+        "difficulty": "easy"
+    },
+    {
+        "question": "How do you check if a variable `myVar` is *not* `null`?",
+        "options": [
+            "myVar != null",
+            "myVar !== null",
+            "Both A and B (for loose vs strict)",
+            "myVar === null"
+        ],
+        "correct_answer": "Both A and B (for loose vs strict)",
+        "topic": "Operators (Comparison)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `arguments.length` property inside a function refer to?",
+        "options": [
+            "The number of parameters defined in the function signature.",
+            "The number of arguments actually passed to the function.",
+            "The length of the function's name.",
+            "The length of the `this` object."
+        ],
+        "correct_answer": "The number of arguments actually passed to the function.",
+        "topic": "Functions",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which array method checks if **all** elements in the array pass the test implemented by the provided function?",
+        "options": [
+            "some()",
+            "every()",
+            "filter()",
+            "find()"
+        ],
+        "correct_answer": "every()",
+        "topic": "Array Methods (Higher-Order)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(typeof Symbol('id'))`?",
+        "options": [
+            "'object'",
+            "'string'",
+            "'symbol'",
+            "'undefined'"
+        ],
+        "correct_answer": "'symbol'",
+        "topic": "Data Types (ES6)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which built-in object is used to represent and manipulate sequences of text?",
+        "options": [
+            "Text",
+            "String",
+            "Char",
+            "System"
+        ],
+        "correct_answer": "String",
+        "topic": "Built-in Objects",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the purpose of the `toFixed(2)` method when applied to a number?",
+        "options": [
+            "It rounds the number to the nearest two decimals.",
+            "It limits the number to two digits.",
+            "It formats the number to exactly two decimal places, returning a string.",
+            "It checks if the number is an integer."
+        ],
+        "correct_answer": "It formats the number to exactly two decimal places, returning a string.",
+        "topic": "Built-in Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the output of `console.log(parseInt('10 years'))`?",
+        "options": [
+            "10",
+            "NaN",
+            "0",
+            "Error"
+        ],
+        "correct_answer": "10",
+        "topic": "Built-in Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to get the character at a specified index in a string?",
+        "options": [
+            "charAt()",
+            "indexChar()",
+            "getString()",
+            "getChar()"
+        ],
+        "correct_answer": "charAt()",
+        "topic": "String Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is **Type Coercion** in JavaScript?",
+        "options": [
+            "The process of explicitly converting a value from one type to another.",
+            "The automatic or implicit conversion of values from one data type to another.",
+            "A JavaScript error.",
+            "A security feature."
+        ],
+        "correct_answer": "The automatic or implicit conversion of values from one data type to another.",
+        "topic": "Data Types and Operators",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of `console.log(Math.max(1, 5, 2))`?",
+        "options": [
+            "1",
+            "2",
+            "5",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "Built-in Objects",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which of these is **not** a way to define a variable in ES6?",
+        "options": [
+            "var",
+            "let",
+            "const",
+            "int"
+        ],
+        "correct_answer": "int",
+        "topic": "Variables (ES6)",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the default behavior of the `sort()` method on an array of numbers?",
+        "options": [
+            "It sorts the numbers correctly (ascending).",
+            "It sorts the numbers as strings (lexicographically).",
+            "It sorts the numbers in descending order.",
+            "It requires a comparison function, or it fails."
+        ],
+        "correct_answer": "It sorts the numbers as strings (lexicographically).",
+        "topic": "Array Methods",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does the `location.href` property contain?",
+        "options": [
+            "The current URL of the page.",
+            "The path to the current file.",
+            "The hostname of the server.",
+            "The browser name."
+        ],
+        "correct_answer": "The current URL of the page.",
+        "topic": "Web APIs/Browser",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the correct syntax for a simple `switch` statement based on a variable `day`?",
+        "options": [
+            "switch day: { case 1: ... }",
+            "switch (day) { case 1: ... }",
+            "if day switch 1: ...",
+            "select (day) { case 1: ... }"
+        ],
+        "correct_answer": "switch (day) { case 1: ... }",
+        "topic": "Control Flow",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to get the current year from a Date object `d`?",
+        "options": [
+            "d.getFullYear()",
+            "d.getYear()",
+            "d.currentYear()",
+            "d.Year()"
+        ],
+        "correct_answer": "d.getFullYear()",
+        "topic": "Built-in Objects",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the result of the `typeof function() {}`?",
+        "options": [
+            "'object'",
+            "'function'",
+            "'undefined'",
+            "'method'"
+        ],
+        "correct_answer": "'function'",
+        "topic": "Data Types and Operators",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which method is used to run a function after all elements on the page are loaded (older way)?",
+        "options": [
+            "window.onload",
+            "document.onReady",
+            "window.onPageLoad",
+            "document.load"
+        ],
+        "correct_answer": "window.onload",
+        "topic": "Web APIs/Events",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What does **JSON** stand for?",
+        "options": [
+            "JavaScript Object Notation",
+            "Java Standard Object Notation",
+            "Joint Object Network",
+            "JavaScript Output Network"
+        ],
+        "correct_answer": "JavaScript Object Notation",
+        "topic": "General Knowledge",
+        "difficulty": "easy"
+    }
+]
