@@ -20,16 +20,29 @@ LEVEL_QUESTION_COUNTS = {
 }
 
 
-def pick_questions_from_master(level: str, difficulty: str, count: int):
+def pick_questions_from_master(level: str, difficulty: str, count: int, domain: str):
     """
-    Read the master bank JSON for given level+difficulty and randomly select `count` questions.
+    Read the master bank JSON for given level+difficulty and domain, and randomly select `count` questions.
+
+    If domain is 'js' or 'javascript' and level is L2 or L3, it looks for the '_js' suffix.
+
     Raises:
         FileNotFoundError if the master file does not exist
         ValueError if not enough questions in the bank
     """
-    file_path = f"{MASTER_DIR}/{level}_{difficulty}_master.json"
+    difficulty = difficulty.lower().strip()
+    domain = domain.lower().strip()
+
+    # Determine the domain suffix for L2 and L3
+    domain_suffix = ""
+    if level in ["L2", "L3"] and domain in ["js", "javascript"]:
+        domain_suffix = "_js"
+    # L4 is a coding round (repo), L1 and L5 are domain-agnostic.
+
+    file_path = f"{MASTER_DIR}/{level}_{difficulty}{domain_suffix}_master.json"
 
     if not os.path.exists(file_path):
+        # Provide context in the error message about the file path being sought
         raise FileNotFoundError(f"Master bank missing: {file_path}")
 
     with open(file_path, "r", encoding="utf-8") as f:
@@ -44,7 +57,7 @@ def pick_questions_from_master(level: str, difficulty: str, count: int):
     return random.sample(bank, count)
 
 
-def generate_candidate_test(full_name: str, email: str, difficulty: str):
+def generate_candidate_test(full_name: str, email: str, difficulty: str, domain: str):
     """
     Generate a per-candidate full test JSON for ALL rounds (L1-L5) for the given difficulty.
 
@@ -78,7 +91,7 @@ def generate_candidate_test(full_name: str, email: str, difficulty: str):
     # Build test for all levels
     for level, q_count in LEVEL_QUESTION_COUNTS.items():
         try:
-            selected_questions = pick_questions_from_master(level, difficulty, q_count)
+            selected_questions = pick_questions_from_master(level, difficulty, q_count, domain)
             test_data[level] = selected_questions
         except FileNotFoundError as e:
             missing_files.append(str(e))

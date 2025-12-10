@@ -1,0 +1,1550 @@
+[
+    {
+        "question": "What is the difference between `let` and `const` variables when declared globally in terms of adding them to the global (window) object?",
+        "options": [
+            "Both `let` and `const` are added to the global object.",
+            "`let` is added, but `const` is not.",
+            "`const` is added, but `let` is not.",
+            "Neither `let` nor `const` are added to the global object, unlike `var`."
+        ],
+        "correct_answer": "Neither `let` nor `const` are added to the global object, unlike `var`.",
+        "topic": "ES6 Variables and Scope",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the `this` keyword refer to inside an **arrow function**?",
+        "options": [
+            "The object that called the function.",
+            "The object the function is currently executing on.",
+            "The global object (window/global).",
+            "The `this` value from the enclosing lexical context (parent scope)."
+        ],
+        "correct_answer": "The `this` value from the enclosing lexical context (parent scope).",
+        "topic": "ES6 Functions and Context",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(1 < 2 < 3)` in JavaScript?",
+        "options": [
+            "true",
+            "false",
+            "3",
+            "Error"
+        ],
+        "correct_answer": "true",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following array methods returns a new array after applying a function to every element?",
+        "options": [
+            "forEach()",
+            "filter()",
+            "map()",
+            "reduce()"
+        ],
+        "correct_answer": "map()",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is a **closure** in JavaScript?",
+        "options": [
+            "A function defined inside an object.",
+            "A function that is immediately invoked.",
+            "A function that returns another function.",
+            "A function bundled with references to its surrounding state (lexical environment)."
+        ],
+        "correct_answer": "A function bundled with references to its surrounding state (lexical environment).",
+        "topic": "Functions and Scope",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the primary difference between **`==`** and **`===`**?",
+        "options": [
+            "`==` checks value only, `===` checks both value and type.",
+            "`==` is for numbers, `===` is for strings.",
+            "`==` checks value and type, `===` checks value only.",
+            "`===` is slower than `==`."
+        ],
+        "correct_answer": "`==` checks value only, `===` checks both value and type.",
+        "topic": "Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which object acts as the blueprint for creating new objects in the **Prototype Inheritance** model?",
+        "options": [
+            "Class",
+            "Prototype",
+            "Constructor function",
+            "Instance"
+        ],
+        "correct_answer": "Prototype",
+        "topic": "Prototypes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(typeof NaN)`?",
+        "options": [
+            "'NaN'",
+            "'undefined'",
+            "'object'",
+            "'number'"
+        ],
+        "correct_answer": "'number'",
+        "topic": "Data Types and Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the **`async`** keyword before a function declaration imply?",
+        "options": [
+            "The function must not contain any loops.",
+            "The function will execute in a separate thread.",
+            "The function will return a Promise.",
+            "The function will run synchronously."
+        ],
+        "correct_answer": "The function will return a Promise.",
+        "topic": "Asynchronous JavaScript (ES6+)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method is used to combine the elements of two or more arrays without mutating the original arrays?",
+        "options": [
+            "merge()",
+            "push()",
+            "splice()",
+            "concat()"
+        ],
+        "correct_answer": "concat()",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is **event bubbling**?",
+        "options": [
+            "When an event triggers on a parent element first and then on its children.",
+            "When an event triggers on the element it originated on, then triggers on its ancestors in the DOM.",
+            "When an event is captured by the target element immediately.",
+            "A memory leak related to event handlers."
+        ],
+        "correct_answer": "When an event triggers on the element it originated on, then triggers on its ancestors in the DOM.",
+        "topic": "DOM and Events",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you correctly handle the resolved value of a **Promise**?",
+        "options": [
+            "Using `try...catch` block.",
+            "Using the `.success()` method.",
+            "Using the `.then()` method.",
+            "Using the `.run()` method."
+        ],
+        "correct_answer": "Using the `.then()` method.",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the value of `x` after this code: `let x = [10]; x.push(20); x = 5;`?",
+        "options": [
+            "10",
+            "[10, 20]",
+            "5",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "Variables (let/const) and Reassignment",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **Destructuring Assignment** (e.g., `const { name } = user;`)?",
+        "options": [
+            "To remove properties from an object.",
+            "To simplify extracting values from arrays or object properties into distinct variables.",
+            "To convert an object into an array.",
+            "To create a copy of an object."
+        ],
+        "correct_answer": "To simplify extracting values from arrays or object properties into distinct variables.",
+        "topic": "ES6 Features",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which keyword is used for defining a generator function?",
+        "options": [
+            "function",
+            "async function",
+            "function*",
+            "yield"
+        ],
+        "correct_answer": "function*",
+        "topic": "ES6+ Functions",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the **`bind()`** method do?",
+        "options": [
+            "Executes a function immediately with a specified `this` context.",
+            "Creates a new function that, when called, has its `this` value set to a specific value.",
+            "Attaches an event listener to an element.",
+            "Links an object property to a specific value."
+        ],
+        "correct_answer": "Creates a new function that, when called, has its `this` value set to a specific value.",
+        "topic": "Function Methods (Call, Apply, Bind)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the **Spread Operator** (`...`) primarily used for with arrays?",
+        "options": [
+            "To remove elements.",
+            "To flatten a multi-dimensional array.",
+            "To clone or combine array elements into a new array.",
+            "To find the sum of all elements."
+        ],
+        "correct_answer": "To clone or combine array elements into a new array.",
+        "topic": "ES6 Features",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(0.1 + 0.2 === 0.3)`?",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Data Types and Arithmetic",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you implement an **Immediately Invoked Function Expression (IIFE)**?",
+        "options": [
+            "function() {}();",
+            "(() => {})()",
+            "(function() {})",
+            "(function() {})()"
+        ],
+        "correct_answer": "(function() {})()",
+        "topic": "Functions and Scope",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of these is **mutable** in JavaScript?",
+        "options": [
+            "string",
+            "number",
+            "object",
+            "boolean"
+        ],
+        "correct_answer": "object",
+        "topic": "Immutability",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`super`** keyword inside a class constructor?",
+        "options": [
+            "To call a static method on the parent class.",
+            "To call the constructor of the parent class.",
+            "To access the instance of the parent class.",
+            "To define a new property."
+        ],
+        "correct_answer": "To call the constructor of the parent class.",
+        "topic": "ES6 Classes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What happens if a **Promise** is created but neither `.then()` nor `.catch()` is attached to it?",
+        "options": [
+            "It automatically throws an error.",
+            "It becomes a synchronous operation.",
+            "It executes but its result is ignored, leading to an unhandled rejection warning if it fails.",
+            "The Promise is immediately cancelled."
+        ],
+        "correct_answer": "It executes but its result is ignored, leading to an unhandled rejection warning if it fails.",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How can you iterate over the *values* of an object (ES8)?",
+        "options": [
+            "Object.keys()",
+            "Object.values()",
+            "Object.entries()",
+            "for...in"
+        ],
+        "correct_answer": "Object.values()",
+        "topic": "Object Methods (ES8)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which array method checks if **at least one** element passes a test, returning a boolean?",
+        "options": [
+            "every()",
+            "find()",
+            "some()",
+            "filter()"
+        ],
+        "correct_answer": "some()",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "In the DOM, what does **Event Delegation** mean?",
+        "options": [
+            "Handling all events on the `window` object.",
+            "Attaching a single event listener to a parent element to manage events for its descendants.",
+            "Using only the `capture` phase for event handling.",
+            "Delegating event handling to a worker thread."
+        ],
+        "correct_answer": "Attaching a single event listener to a parent element to manage events for its descendants.",
+        "topic": "DOM and Events",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the **Rest Parameter** (`...`) in a function signature do?",
+        "options": [
+            "It allows passing an array as separate arguments.",
+            "It collects all remaining function arguments into a single array.",
+            "It defines the default values for parameters.",
+            "It prevents the function from being modified."
+        ],
+        "correct_answer": "It collects all remaining function arguments into a single array.",
+        "topic": "ES6 Features",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will `console.log('1' - - '1')` output?",
+        "options": [
+            "0",
+            "11",
+            "2",
+            "NaN"
+        ],
+        "correct_answer": "2",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you achieve deep cloning of an object that contains only JSON-safe values?",
+        "options": [
+            "Object.assign({}, obj)",
+            "const newObj = {...obj}",
+            "JSON.parse(JSON.stringify(obj))",
+            "Object.create(obj)"
+        ],
+        "correct_answer": "JSON.parse(JSON.stringify(obj))",
+        "topic": "Object Manipulation",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method is used to remove elements from an array at a specific index and/or insert new elements, mutating the original array?",
+        "options": [
+            "slice()",
+            "concat()",
+            "splice()",
+            "pop()"
+        ],
+        "correct_answer": "splice()",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`await`** keyword inside an `async` function?",
+        "options": [
+            "It makes the function synchronous.",
+            "It pauses the execution of the `async` function until the Promise is resolved or rejected.",
+            "It immediately returns the value of a Promise.",
+            "It defines a new Promise."
+        ],
+        "correct_answer": "It pauses the execution of the `async` function until the Promise is resolved or rejected.",
+        "topic": "Asynchronous JavaScript (ES6+)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is **Typeof Duality** related to the `typeof` operator?",
+        "options": [
+            "When `typeof` returns both 'number' and 'string'.",
+            "When `typeof` returns 'object' for both arrays and objects.",
+            "When `typeof` returns 'object' for `null`.",
+            "When `typeof` returns 'function' for a function."
+        ],
+        "correct_answer": "When `typeof` returns 'object' for `null`.",
+        "topic": "Data Types and Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which design pattern is used to define a constructor for objects and assign properties and methods to new objects?",
+        "options": [
+            "Singleton Pattern",
+            "Module Pattern",
+            "Factory Pattern",
+            "Constructor Pattern"
+        ],
+        "correct_answer": "Constructor Pattern",
+        "topic": "Design Patterns",
+        "difficulty": "medium"
+    },
+    {
+        "question": "In an event listener added with `addEventListener(event, handler, useCapture)`, what does `useCapture = true` signify?",
+        "options": [
+            "The event will be handled in the bubbling phase.",
+            "The event will be handled in the capture phase.",
+            "The event will only be handled on the target element.",
+            "The event will only be handled once."
+        ],
+        "correct_answer": "The event will be handled in the capture phase.",
+        "topic": "DOM and Events",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of `['a', 'b', 'c'].reduce((acc, curr) => acc + curr)` with no initial value?",
+        "options": [
+            "abc",
+            "a,b,c",
+            "Error",
+            "undefinedabc"
+        ],
+        "correct_answer": "abc",
+        "topic": "Array Methods (Reduce)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`call()`** method in relation to function execution?",
+        "options": [
+            "It creates a copy of the function.",
+            "It executes the function with a specific `this` context and arguments passed individually.",
+            "It executes the function after a delay.",
+            "It executes the function with arguments passed as an array."
+        ],
+        "correct_answer": "It executes the function with a specific `this` context and arguments passed individually.",
+        "topic": "Function Methods (Call, Apply, Bind)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you implement the **Module Pattern** using an IIFE to create private and public scope?",
+        "options": [
+            "Use the `class` keyword.",
+            "Return an object containing public methods and properties from the function.",
+            "Use the `export` and `import` keywords.",
+            "Declare everything using `const`."
+        ],
+        "correct_answer": "Return an object containing public methods and properties from the function.",
+        "topic": "Design Patterns",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the main advantage of using **ES6 Modules** (`import`/`export`) over older module patterns?",
+        "options": [
+            "They are executed synchronously.",
+            "They support dynamic imports.",
+            "They are static, allowing for static analysis and tree-shaking.",
+            "They only work in Node.js."
+        ],
+        "correct_answer": "They are static, allowing for static analysis and tree-shaking.",
+        "topic": "ES6 Modules",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does **Temporal Dead Zone (TDZ)** refer to?",
+        "options": [
+            "The time between an ES6 variable's declaration and initialization, where it cannot be accessed.",
+            "The time a `var` variable is hoisted but not yet assigned.",
+            "The period after a Promise is resolved.",
+            "A zone in memory used for garbage collection."
+        ],
+        "correct_answer": "The time between an ES6 variable's declaration and initialization, where it cannot be accessed.",
+        "topic": "ES6 Variables and Scope",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of `console.log(null || 'default')`?",
+        "options": [
+            "null",
+            "'default'",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "'default'",
+        "topic": "Operators (Logical OR)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which operator is used for checking if a property exists in an object or its prototype chain?",
+        "options": [
+            "hasOwnProperty()",
+            "exists",
+            "in",
+            "typeof"
+        ],
+        "correct_answer": "in",
+        "topic": "Object Manipulation",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log([1, 2, 3].includes(2))` (ES7)?",
+        "options": [
+            "true",
+            "false",
+            "2",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Array Methods (ES7)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the **Event Loop** primarily responsible for in the JavaScript runtime?",
+        "options": [
+            "Handling user input events.",
+            "Managing asynchronous callbacks and moving them from the Message Queue to the Call Stack.",
+            "Compiling JavaScript code.",
+            "Garbage collection."
+        ],
+        "correct_answer": "Managing asynchronous callbacks and moving them from the Message Queue to the Call Stack.",
+        "topic": "Asynchronous JavaScript",
+        "difficulty": "medium"
+    },
+    {
+        "question": "In ES6 classes, how do you define a method that belongs to the class itself, rather than to an instance of the class?",
+        "options": [
+            "Using the `private` keyword.",
+            "Using the `static` keyword.",
+            "Defining it outside the class body.",
+            "Using the `class` keyword within the method."
+        ],
+        "correct_answer": "Using the `static` keyword.",
+        "topic": "ES6 Classes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What will `console.log(typeof (() => {}))` output?",
+        "options": [
+            "'object'",
+            "'arrow'",
+            "'function'",
+            "'undefined'"
+        ],
+        "correct_answer": "'function'",
+        "topic": "Data Types and Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which operator is used for checking if the left operand is **truthy**, otherwise returning the right operand (ES2020)?",
+        "options": [
+            "||",
+            "??",
+            "&&",
+            "!!"
+        ],
+        "correct_answer": "||",
+        "topic": "Operators (Logical OR)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`apply()`** method in relation to function execution?",
+        "options": [
+            "It creates a new function with the specified `this` context.",
+            "It executes the function with a specific `this` context and arguments passed as an array.",
+            "It only works with arrow functions.",
+            "It calls the function in the global scope."
+        ],
+        "correct_answer": "It executes the function with a specific `this` context and arguments passed as an array.",
+        "topic": "Function Methods (Call, Apply, Bind)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(Number(''))`?",
+        "options": [
+            "NaN",
+            "0",
+            "undefined",
+            "''"
+        ],
+        "correct_answer": "0",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which mechanism is responsible for reclaiming memory occupied by objects that are no longer reachable or used?",
+        "options": [
+            "Memory Management",
+            "Event Loop",
+            "Call Stack",
+            "Garbage Collection"
+        ],
+        "correct_answer": "Garbage Collection",
+        "topic": "Execution Context",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which built-in object is used to create and manipulate a key-value store where the keys must be objects and are held weakly (ES6)?",
+        "options": [
+            "Map",
+            "Set",
+            "WeakMap",
+            "Object"
+        ],
+        "correct_answer": "WeakMap",
+        "topic": "ES6 Data Structures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the final state of a Promise that has failed?",
+        "options": [
+            "Pending",
+            "Resolved",
+            "Rejected",
+            "Settled"
+        ],
+        "correct_answer": "Rejected",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`Object.seal()`** method?",
+        "options": [
+            "It prevents adding and deleting properties, but allows modifying existing ones.",
+            "It prevents any changes (adding, deleting, or modifying) to the object.",
+            "It makes all properties enumerable.",
+            "It freezes the object's prototype."
+        ],
+        "correct_answer": "It prevents adding and deleting properties, but allows modifying existing ones.",
+        "topic": "Object Manipulation",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method is used to create a new object, using an existing object as the prototype of the newly created object?",
+        "options": [
+            "new Object()",
+            "Object.assign()",
+            "Object.create()",
+            "Object.setPrototypeOf()"
+        ],
+        "correct_answer": "Object.create()",
+        "topic": "Prototypes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(0 || 5)`?",
+        "options": [
+            "0",
+            "5",
+            "null",
+            "false"
+        ],
+        "correct_answer": "5",
+        "topic": "Operators (Logical OR)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of `console.log(NaN === NaN)`?",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Data Types and Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is the correct way to inherit properties from a parent class (`Parent`) to a child class (`Child`) in ES6?",
+        "options": [
+            "class Child extends Parent {}",
+            "class Child inherits Parent {}",
+            "class Child : Parent {}",
+            "class Child from Parent {}"
+        ],
+        "correct_answer": "class Child extends Parent {}",
+        "topic": "ES6 Classes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method is used to create an array from an iterable object, like a NodeList (DOM) or a string (ES6)?",
+        "options": [
+            "Array.of()",
+            "Array.new()",
+            "Array.from()",
+            "new Array()"
+        ],
+        "correct_answer": "Array.from()",
+        "topic": "Array Methods (ES6)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`finally`** block in a Promise chain?",
+        "options": [
+            "It is always executed, whether the Promise is resolved or rejected.",
+            "It is only executed if an error occurs.",
+            "It is executed before the Promise starts.",
+            "It defines the initial state of the Promise."
+        ],
+        "correct_answer": "It is always executed, whether the Promise is resolved or rejected.",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method on the `Array` prototype is used to flatten a nested array up to a specified depth (ES2019)?",
+        "options": [
+            "reduce()",
+            "flat()",
+            "flatten()",
+            "map()"
+        ],
+        "correct_answer": "flat()",
+        "topic": "Array Methods (ES2019)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is **Strict Mode** (`'use strict';`) primarily intended to do?",
+        "options": [
+            "Optimize code performance.",
+            "Catch common coding errors and prevent unsafe actions.",
+            "Enforce block scoping.",
+            "Allow asynchronous operations."
+        ],
+        "correct_answer": "Catch common coding errors and prevent unsafe actions.",
+        "topic": "Execution Context",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of `console.log(typeof Symbol('foo'))`?",
+        "options": [
+            "'object'",
+            "'string'",
+            "'symbol'",
+            "'undefined'"
+        ],
+        "correct_answer": "'symbol'",
+        "topic": "Data Types (ES6)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you correctly throw an error within a Promise chain to be caught by `.catch()`?",
+        "options": [
+            "Use `return Error('message')`",
+            "Use `throw new Error('message')`",
+            "Use `console.error('message')`",
+            "Use `Promise.fail('message')`"
+        ],
+        "correct_answer": "Use `throw new Error('message')`",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which operator is used for checking if the left operand is `null` or `undefined`, otherwise returning the left operand (ES2020)?",
+        "options": [
+            "??",
+            "||",
+            "&&",
+            "!?"
+        ],
+        "correct_answer": "??",
+        "topic": "Operators (Nullish Coalescing)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does **Memoization** refer to in JavaScript?",
+        "options": [
+            "Storing a variable's value in the browser's local storage.",
+            "A form of caching where the result of an expensive function call is stored and returned when the same inputs occur again.",
+            "A memory leak pattern.",
+            "The process of cleaning up unused variables."
+        ],
+        "correct_answer": "A form of caching where the result of an expensive function call is stored and returned when the same inputs occur again.",
+        "topic": "Functions and Optimization",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which built-in object is used to create and manipulate a collection of unique, ordered values (ES6)?",
+        "options": [
+            "Array",
+            "Map",
+            "Set",
+            "Object"
+        ],
+        "correct_answer": "Set",
+        "topic": "ES6 Data Structures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(1 / 0)`?",
+        "options": [
+            "0",
+            "NaN",
+            "Infinity",
+            "Error"
+        ],
+        "correct_answer": "Infinity",
+        "topic": "Data Types and Arithmetic",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method is used to check if an object contains a specific property, excluding those inherited from the prototype chain?",
+        "options": [
+            "hasOwnProperty()",
+            "in",
+            "Object.keys()",
+            "isPrototypeOf()"
+        ],
+        "correct_answer": "hasOwnProperty()",
+        "topic": "Object Manipulation",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the **`constructor`** property of a JavaScript object refer to?",
+        "options": [
+            "The name of the object.",
+            "The function that was used to create the instance.",
+            "The object's prototype.",
+            "The parent class."
+        ],
+        "correct_answer": "The function that was used to create the instance.",
+        "topic": "Prototypes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which array method can be used to perform a search for an element and return the element itself, rather than its index?",
+        "options": [
+            "indexOf()",
+            "findIndex()",
+            "includes()",
+            "find()"
+        ],
+        "correct_answer": "find()",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of using the **Optional Chaining** operator (`?.`) on a property, e.g., `user?.address`?",
+        "options": [
+            "It throws an error if `user` is null or undefined.",
+            "It returns `undefined` if `user` is null or undefined, otherwise returns `user.address`.",
+            "It returns the default value for `address`.",
+            "It converts `user` to a string."
+        ],
+        "correct_answer": "It returns `undefined` if `user` is null or undefined, otherwise returns `user.address`.",
+        "topic": "ES2020 Features",
+        "difficulty": "medium"
+    },
+    {
+        "question": "In the context of asynchronous operations, what is a **Microtask Queue** (or job queue)?",
+        "options": [
+            "The queue for all DOM events.",
+            "A high-priority queue for Promise callbacks and `queueMicrotask()` calls.",
+            "The queue for `setTimeout` and `setInterval`.",
+            "The Call Stack."
+        ],
+        "correct_answer": "A high-priority queue for Promise callbacks and `queueMicrotask()` calls.",
+        "topic": "Asynchronous JavaScript",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`Object.freeze()`** method?",
+        "options": [
+            "It prevents new properties from being added.",
+            "It prevents existing properties from being modified, deleted, or configured.",
+            "It prevents only the deletion of properties.",
+            "It makes the object's prototype immutable."
+        ],
+        "correct_answer": "It prevents existing properties from being modified, deleted, or configured.",
+        "topic": "Object Manipulation",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which design pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation?",
+        "options": [
+            "Observer Pattern",
+            "Factory Pattern",
+            "Iterator Pattern",
+            "Decorator Pattern"
+        ],
+        "correct_answer": "Iterator Pattern",
+        "topic": "Design Patterns",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(!!' ' - 1)`?",
+        "options": [
+            "0",
+            "-1",
+            "1",
+            "NaN"
+        ],
+        "correct_answer": "0",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the **`yield`** keyword do inside a generator function?",
+        "options": [
+            "It returns the final result and terminates the function.",
+            "It throws an error.",
+            "It pauses the function execution and returns the value of the expression following it.",
+            "It creates a new thread."
+        ],
+        "correct_answer": "It pauses the function execution and returns the value of the expression following it.",
+        "topic": "ES6+ Functions",
+        "difficulty": "medium"
+    },
+    {
+        "question": "In ES6 classes, what is the default behavior if you define a subclass but omit its `constructor`?",
+        "options": [
+            "An error is thrown.",
+            "A default constructor is automatically created that calls `super()` with all passed arguments.",
+            "The class cannot be instantiated.",
+            "The class constructor is inherited directly from the parent."
+        ],
+        "correct_answer": "A default constructor is automatically created that calls `super()` with all passed arguments.",
+        "topic": "ES6 Classes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the key difference between **`Promise.all()`** and **`Promise.race()`**?",
+        "options": [
+            "Race is synchronous, All is asynchronous.",
+            "All waits for all Promises to resolve; Race settles as soon as the first Promise settles (resolves or rejects).",
+            "All only handles rejections; Race only handles resolutions.",
+            "They are functionally the same."
+        ],
+        "correct_answer": "All waits for all Promises to resolve; Race settles as soon as the first Promise settles (resolves or rejects).",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which array method is used to execute a reducer function on each element, resulting in a single output value?",
+        "options": [
+            "map()",
+            "filter()",
+            "forEach()",
+            "reduce()"
+        ],
+        "correct_answer": "reduce()",
+        "topic": "Array Methods (Reduce)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the concept of **Function Currying**?",
+        "options": [
+            "Passing a function as an argument to another function.",
+            "Transforming a function that takes multiple arguments into a sequence of functions, each taking a single argument.",
+            "Calling a function recursively.",
+            "Returning a function from another function."
+        ],
+        "correct_answer": "Transforming a function that takes multiple arguments into a sequence of functions, each taking a single argument.",
+        "topic": "Functions and Functional Programming",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(parseInt('5px'))`?",
+        "options": [
+            "5px",
+            "NaN",
+            "5",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does **Immutability** mean for a data structure like a string?",
+        "options": [
+            "The string can be modified in place.",
+            "The string cannot be used as an object key.",
+            "Any operation that appears to modify the string actually returns a new string.",
+            "The string is protected by `Object.freeze()`."
+        ],
+        "correct_answer": "Any operation that appears to modify the string actually returns a new string.",
+        "topic": "Immutability",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method is used to asynchronously define an iterable sequence of values (ES6)?",
+        "options": [
+            "async function*",
+            "Promise.resolve()",
+            "setTimeout()",
+            "Array.from()"
+        ],
+        "correct_answer": "async function*",
+        "topic": "Asynchronous JavaScript (ES6+)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the name for the pattern where an object notifies multiple dependent objects (subscribers) about any changes to its state?",
+        "options": [
+            "Singleton Pattern",
+            "Observer Pattern",
+            "Factory Pattern",
+            "Module Pattern"
+        ],
+        "correct_answer": "Observer Pattern",
+        "topic": "Design Patterns",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which object method is used to get an array of all enumerable property keys of an object?",
+        "options": [
+            "Object.values()",
+            "Object.entries()",
+            "Object.keys()",
+            "Object.getOwnPropertyNames()"
+        ],
+        "correct_answer": "Object.keys()",
+        "topic": "Object Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "In a Promise chain, what is the recommended way to handle errors from any part of the chain?",
+        "options": [
+            "Use a `try...catch` around the entire chain.",
+            "Attach `.catch()` after every `.then()`.",
+            "Attach a single `.catch()` at the very end of the chain.",
+            "Use `Promise.error()`."
+        ],
+        "correct_answer": "Attach a single `.catch()` at the very end of the chain.",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`arguments`** object *not* being available inside arrow functions?",
+        "options": [
+            "To promote performance.",
+            "To simplify syntax.",
+            "Arrow functions inherit `arguments` from the lexical scope, promoting cleaner code.",
+            "It is a bug in the ES6 specification."
+        ],
+        "correct_answer": "Arrow functions inherit `arguments` from the lexical scope, promoting cleaner code.",
+        "topic": "ES6 Functions and Context",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of `console.log(Array.isArray({}))`?",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Data Types and Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method is used to check if an object exists in the prototype chain of another object?",
+        "options": [
+            "isPrototypeOf()",
+            "constructor",
+            "Object.create()",
+            "Object.getPrototypeOf()"
+        ],
+        "correct_answer": "isPrototypeOf()",
+        "topic": "Prototypes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the maximum safe integer value that can be represented in JavaScript (ES6)?",
+        "options": [
+            "$2^{53}$",
+            "$2^{53} - 1$",
+            "$2^{32} - 1$",
+            "$2^{64} - 1$"
+        ],
+        "correct_answer": "$2^{53} - 1$",
+        "topic": "Data Types",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which property in the DOM API is used to retrieve the text content of an element and all its descendants, excluding HTML tags?",
+        "options": [
+            "innerHTML",
+            "textContent",
+            "innerText",
+            "outerHTML"
+        ],
+        "correct_answer": "textContent",
+        "topic": "DOM and Events",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between synchronous and asynchronous code execution?",
+        "options": [
+            "Synchronous runs fast, Asynchronous runs slowly.",
+            "Synchronous blocks execution until completion; Asynchronous non-blocks and delegates tasks to be completed later.",
+            "Asynchronous uses Promises; Synchronous uses Callbacks.",
+            "They are the same, just different names."
+        ],
+        "correct_answer": "Synchronous blocks execution until completion; Asynchronous non-blocks and delegates tasks to be completed later.",
+        "topic": "Asynchronous JavaScript",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the **`delete`** operator return upon successful deletion of a property?",
+        "options": [
+            "The deleted value.",
+            "The key of the deleted property.",
+            "true.",
+            "undefined."
+        ],
+        "correct_answer": "true.",
+        "topic": "Object Manipulation",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which design pattern ensures a class has only one instance and provides a global point of access to it?",
+        "options": [
+            "Observer Pattern",
+            "Factory Pattern",
+            "Decorator Pattern",
+            "Singleton Pattern"
+        ],
+        "correct_answer": "Singleton Pattern",
+        "topic": "Design Patterns",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of **`Promise.allSettled()`** (ES2020)?",
+        "options": [
+            "It settles as soon as the first Promise settles.",
+            "It rejects if any Promise rejects.",
+            "It waits for all Promises to settle (resolve or reject) and returns an array of status/value objects.",
+            "It only waits for Promises to resolve."
+        ],
+        "correct_answer": "It waits for all Promises to settle (resolve or reject) and returns an array of status/value objects.",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(parseInt(null))`?",
+        "options": [
+            "null",
+            "NaN",
+            "0",
+            "undefined"
+        ],
+        "correct_answer": "NaN",
+        "topic": "Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you achieve **Property Shorthand** in an object literal (ES6)?",
+        "options": [
+            "let obj = { prop: prop }",
+            "let obj = { :prop }",
+            "let obj = { prop }",
+            "let obj = { prop = prop }"
+        ],
+        "correct_answer": "let obj = { prop }",
+        "topic": "ES6 Features",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which array method is used to test whether a string begins with the characters of a specified string (ES6)?",
+        "options": [
+            "includes()",
+            "startsWith()",
+            "match()",
+            "search()"
+        ],
+        "correct_answer": "startsWith()",
+        "topic": "String Methods (ES6)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of `console.log(true + true)`?",
+        "options": [
+            "true",
+            "false",
+            "2",
+            "Error"
+        ],
+        "correct_answer": "2",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which array method is preferred for sorting an array of objects by one of their properties?",
+        "options": [
+            "map()",
+            "filter()",
+            "sort() with a comparison function",
+            "reduce()"
+        ],
+        "correct_answer": "sort() with a comparison function",
+        "topic": "Array Methods",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(!!' ' - 1)`?",
+        "options": [
+            "0",
+            "-1",
+            "1",
+            "NaN"
+        ],
+        "correct_answer": "0",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`export default`** syntax in ES6 modules?",
+        "options": [
+            "To export a module that can only be used once.",
+            "To define a named export.",
+            "To define the single, primary export of a module.",
+            "To export all module contents at once."
+        ],
+        "correct_answer": "To define the single, primary export of a module.",
+        "topic": "ES6 Modules",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does **Transpilation** refer to in modern JavaScript development?",
+        "options": [
+            "Converting JavaScript code into machine code.",
+            "Converting newer JavaScript code (ES6+) into older versions (ES5) for wider browser compatibility.",
+            "Minifying JavaScript code.",
+            "Converting JavaScript to TypeScript."
+        ],
+        "correct_answer": "Converting newer JavaScript code (ES6+) into older versions (ES5) for wider browser compatibility.",
+        "topic": "General Knowledge",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(typeof /regex/);`?",
+        "options": [
+            "'regex'",
+            "'object'",
+            "'function'",
+            "'string'"
+        ],
+        "correct_answer": "'object'",
+        "topic": "Data Types and Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which DOM method is used to insert a new node *before* the reference node as a child of the parent node?",
+        "options": [
+            "appendChild()",
+            "insertBefore()",
+            "replaceChild()",
+            "prepend()"
+        ],
+        "correct_answer": "insertBefore()",
+        "topic": "DOM and Events",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the **`arguments`** object in a normal function an instance of?",
+        "options": [
+            "Array",
+            "Object",
+            "Array-like object",
+            "Function"
+        ],
+        "correct_answer": "Array-like object",
+        "topic": "Functions and Scope",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the **`instanceof`** operator check for?",
+        "options": [
+            "If an object is equal to another object.",
+            "If an object is of a certain type.",
+            "If an object is an instance of a particular constructor.",
+            "If a variable is null."
+        ],
+        "correct_answer": "If an object is an instance of a particular constructor.",
+        "topic": "Operators",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you achieve private variables/methods in ES6 classes (without using external tools)?",
+        "options": [
+            "Use the `private` keyword.",
+            "Use the `#` prefix (ES2020 Private Class Fields).",
+            "Use the `let` keyword inside the class.",
+            "It is not possible in pure JavaScript classes."
+        ],
+        "correct_answer": "Use the `#` prefix (ES2020 Private Class Fields).",
+        "topic": "ES6 Classes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method is used to convert an array of objects into a single object, typically grouping by a common key (ES2019)?",
+        "options": [
+            "Array.from()",
+            "Object.assign()",
+            "Object.fromEntries()",
+            "reduce()"
+        ],
+        "correct_answer": "Object.fromEntries()",
+        "topic": "Object Methods (ES2019)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of `console.log('2' > '10')`?",
+        "options": [
+            "true",
+            "false",
+            "2",
+            "10"
+        ],
+        "correct_answer": "true",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`URLSearchParams`** interface?",
+        "options": [
+            "To manage routing in a single-page application.",
+            "To easily read and modify the query parameters of a URL.",
+            "To create a new URL object.",
+            "To send a GET request."
+        ],
+        "correct_answer": "To easily read and modify the query parameters of a URL.",
+        "topic": "Web APIs",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the concept of **Tail Call Optimization (TCO)**?",
+        "options": [
+            "Optimizing the last function call in a series of recursive calls to avoid stack overflow.",
+            "Making array methods run faster.",
+            "Only available in asynchronous functions.",
+            "A method to minimize event bubbling."
+        ],
+        "correct_answer": "Optimizing the last function call in a series of recursive calls to avoid stack overflow.",
+        "topic": "Functions and Optimization",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(Boolean(new Boolean(false)))`?",
+        "options": [
+            "true",
+            "false",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "true",
+        "topic": "Truthiness/Falsiness",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which method is used to get the entire prototype of an object (ES5)?",
+        "options": [
+            "Object.prototype",
+            "Object.proto",
+            "Object.getPrototypeOf()",
+            "Object.constructor"
+        ],
+        "correct_answer": "Object.getPrototypeOf()",
+        "topic": "Prototypes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`Map.prototype.get()`** method?",
+        "options": [
+            "To check if a key exists in the Map.",
+            "To return the value associated with the specified key.",
+            "To return an array of all keys.",
+            "To iterate over the Map."
+        ],
+        "correct_answer": "To return the value associated with the specified key.",
+        "topic": "ES6 Data Structures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which pattern is used to dynamically add new behaviors to an object without changing its implementation?",
+        "options": [
+            "Singleton Pattern",
+            "Observer Pattern",
+            "Decorator Pattern",
+            "Factory Pattern"
+        ],
+        "correct_answer": "Decorator Pattern",
+        "topic": "Design Patterns",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(!!'false')`?",
+        "options": [
+            "true",
+            "false",
+            "undefined",
+            "''"
+        ],
+        "correct_answer": "true",
+        "topic": "Truthiness/Falsiness",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the maximum number of arguments that can be passed to a function using the `call()` or `apply()` methods?",
+        "options": [
+            "10",
+            "100",
+            "The browser's or Node.js's heap limit.",
+            "Limited by the maximum size of the call stack."
+        ],
+        "correct_answer": "Limited by the maximum size of the call stack.",
+        "topic": "Function Methods (Call, Apply, Bind)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "How do you create an array from the return value of a generator function?",
+        "options": [
+            "Using `generator.toArray()`",
+            "Using the Spread Operator (`[...generator()]`)",
+            "Using `Array.push()` inside the generator.",
+            "Using `generator.next()` repeatedly."
+        ],
+        "correct_answer": "Using the Spread Operator (`[...generator()]`)",
+        "topic": "ES6+ Functions",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the primary function of **`Promise.resolve(value)`**?",
+        "options": [
+            "To reject a Promise with a value.",
+            "To create a Promise that is immediately resolved with the given value.",
+            "To convert an asynchronous function to a synchronous one.",
+            "To execute all Promises in parallel."
+        ],
+        "correct_answer": "To create a Promise that is immediately resolved with the given value.",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is an example of an **iterable** object in JavaScript?",
+        "options": [
+            "Object",
+            "Number",
+            "Set",
+            "Boolean"
+        ],
+        "correct_answer": "Set",
+        "topic": "ES6 Data Structures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "In the DOM, what is **reflow** (or layout)?",
+        "options": [
+            "The process of recalculating the positions and geometries of elements in the document.",
+            "The process of drawing pixels on the screen.",
+            "The process of loading new CSS files.",
+            "The process of clearing memory."
+        ],
+        "correct_answer": "The process of recalculating the positions and geometries of elements in the document.",
+        "topic": "DOM and Events",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the output of `console.log(2.0 == 2)`?",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Operators and Type Coercion",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which built-in object is used to create and manipulate a key-value store where the keys can be any type and are held strongly (ES6)?",
+        "options": [
+            "Object",
+            "Set",
+            "WeakMap",
+            "Map"
+        ],
+        "correct_answer": "Map",
+        "topic": "ES6 Data Structures",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the purpose of the **`String.prototype.trimStart()`** method (ES2019)?",
+        "options": [
+            "To remove whitespace from the end of a string.",
+            "To remove all whitespace from a string.",
+            "To remove whitespace from the beginning of a string.",
+            "To trim a string to a specific length."
+        ],
+        "correct_answer": "To remove whitespace from the beginning of a string.",
+        "topic": "String Methods (ES2019)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is **Polymorphism** in the context of JavaScript objects/classes?",
+        "options": [
+            "The ability to inherit from multiple classes.",
+            "The ability of an object to take on many forms (e.g., methods being overridden in subclasses).",
+            "The ability to access private class fields.",
+            "The ability to create multiple instances of a class."
+        ],
+        "correct_answer": "The ability of an object to take on many forms (e.g., methods being overridden in subclasses).",
+        "topic": "ES6 Classes and Inheritance",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the difference between `let/const` and `var` variables in terms of hoisting?",
+        "options": [
+            "`var` is not hoisted; `let/const` are fully hoisted (declaration and initialization).",
+            "`var` is hoisted and initialized to `undefined`; `let/const` are hoisted but remain in the Temporal Dead Zone (TDZ).",
+            "All variables are hoisted and initialized to `undefined`.",
+            "Only function declarations are hoisted."
+        ],
+        "correct_answer": "`var` is hoisted and initialized to `undefined`; `let/const` are hoisted but remain in the Temporal Dead Zone (TDZ).",
+        "topic": "ES6 Variables and Scope",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of these is **not** a possible state of a Promise?",
+        "options": [
+            "Pending",
+            "Resolved",
+            "Terminated",
+            "Rejected"
+        ],
+        "correct_answer": "Terminated",
+        "topic": "Asynchronous JavaScript (Promises)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What does the **`with`** statement do, and why is it discouraged in strict mode?",
+        "options": [
+            "It defines a new scope; it's discouraged because it causes performance issues.",
+            "It extends the scope chain; it's discouraged because it makes code harder to read and breaks optimizations.",
+            "It creates a new object; it's discouraged because it is redundant.",
+            "It handles errors; it's discouraged because `try...catch` is better."
+        ],
+        "correct_answer": "It extends the scope chain; it's discouraged because it makes code harder to read and breaks optimizations.",
+        "topic": "Execution Context",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the result of `console.log(0 ?? 5)`?",
+        "options": [
+            "0",
+            "5",
+            "null",
+            "undefined"
+        ],
+        "correct_answer": "0",
+        "topic": "Operators (Nullish Coalescing)",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which operator is used to check if an object is an instance of a specified class or constructor function?",
+        "options": [
+            "typeof",
+            "in",
+            "instanceof",
+            "isType"
+        ],
+        "correct_answer": "instanceof",
+        "topic": "Operators",
+        "difficulty": "medium"
+    }
+]

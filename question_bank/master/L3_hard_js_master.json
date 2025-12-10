@@ -1,0 +1,1484 @@
+[
+    {
+        "question": "What is the output of the code snippet, specifically focusing on how the prototype chain is utilized?",
+        "snippet": "const proto = { a: 1 }; const obj = Object.create(proto); proto.a = 5; console.log(obj.a);",
+        "options": [
+            "1",
+            "5",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "Prototypal Inheritance (Dynamic Lookup)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code attempts to use an IIFE to initialize a module. What is the value of `i` inside the `setTimeout` function?",
+        "snippet": "for (var i = 0; i < 3; i++) { (function(i) { setTimeout(() => console.log(i), 100); })(i); }",
+        "options": [
+            "3, 3, 3",
+            "0, 1, 2",
+            "undefined, undefined, undefined",
+            "Error"
+        ],
+        "correct_answer": "0, 1, 2",
+        "topic": "Closures, IIFE, and `var`",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using the equality operator on an empty string and zero?",
+        "snippet": "console.log('' == 0);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Obscure Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function attempts to use `this` inside an arrow function property on an object. What does it log?",
+        "snippet": "const user = { name: 'Bob', score: 10, calculateScore: function() { return (() => this.score + 1)(); } }; console.log(user.calculateScore());",
+        "options": [
+            "10",
+            "11",
+            "undefined",
+            "NaN"
+        ],
+        "correct_answer": "11",
+        "topic": "`this` Binding (Lexical Scope)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output order of the nested asynchronous calls?",
+        "snippet": "console.log(1); setTimeout(() => console.log(2), 0); Promise.resolve().then(() => console.log(3)); console.log(4);",
+        "options": [
+            "1, 2, 3, 4",
+            "1, 4, 3, 2",
+            "1, 3, 4, 2",
+            "1, 4, 2, 3"
+        ],
+        "correct_answer": "1, 4, 3, 2",
+        "topic": "Event Loop (Microtasks vs. Macrotasks)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.defineProperty` to prevent deletion. What is the value of `obj.a` after the `delete` operation?",
+        "snippet": "const obj = { b: 2 }; Object.defineProperty(obj, 'a', { value: 1, configurable: false }); delete obj.a; console.log(obj.a);",
+        "options": [
+            "1",
+            "undefined",
+            "Error",
+            "null"
+        ],
+        "correct_answer": "1",
+        "topic": "Property Descriptors",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the generator function after the first `next()` call?",
+        "snippet": "function* sequence() { const input = yield 1; yield input + 1; } const gen = sequence(); console.log(gen.next().value); console.log(gen.next(10).value);",
+        "options": [
+            "1, 11",
+            "1, undefined",
+            "1, 10",
+            "1, NaN"
+        ],
+        "correct_answer": "1, 11",
+        "topic": "Generators (Input)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `call` to set `this`. What is the output?",
+        "snippet": "function Person(name) { this.name = name; } const user = { name: 'Dan' }; console.log(Person.call(user, 'Alex')); console.log(user.name);",
+        "options": [
+            "undefined, Dan",
+            "undefined, Alex",
+            "Person, Alex",
+            "Error"
+        ],
+        "correct_answer": "undefined, Alex",
+        "topic": "Function Context (`call`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using `instanceof` with a primitive and a constructor?",
+        "snippet": "console.log('hello' instanceof String);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "`instanceof` Obscurities",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The array method is intended to sum the numbers. What is the final value of `sum`?",
+        "snippet": "const arr = [1, 2, 3]; const sum = arr.reduce((acc, current) => { acc = acc + current; return acc; }, 0); console.log(sum);",
+        "options": [
+            "1",
+            "6",
+            "undefined",
+            "NaN"
+        ],
+        "correct_answer": "6",
+        "topic": "Array Methods (Reduce)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the value of the `count` property on the `book` object after the assignment?",
+        "snippet": "const book = { title: 'JS', author: 'Me' }; const count = { value: 10 }; Object.setPrototypeOf(book, count); console.log(book.count);",
+        "options": [
+            "10",
+            "undefined",
+            "Error",
+            "null"
+        ],
+        "correct_answer": "undefined",
+        "topic": "Prototypal Inheritance (Object.setPrototypeOf)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Why does the `WeakMap` key disappear from memory when the reference is cleared?",
+        "snippet": "let obj = { id: 1 }; const wm = new WeakMap(); wm.set(obj, 'data'); obj = null; // Key reference cleared. ",
+        "options": [
+            "WeakMaps are only for primitive types.",
+            "The key is **garbage collected** because the external reference (`obj`) was removed, and WeakMaps only hold **weak references** to keys.",
+            "The `set` method is wrong.",
+            "The `WeakMap` must be a `const`."
+        ],
+        "correct_answer": "The key is **garbage collected** because the external reference (`obj`) was removed, and WeakMaps only hold **weak references** to keys.",
+        "topic": "WeakMap and Garbage Collection",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this attempt to add an array and an object?",
+        "snippet": "console.log([] + {});",
+        "options": [
+            "[object Object]",
+            "''",
+            "0",
+            "Error"
+        ],
+        "correct_answer": "[object Object]",
+        "topic": "Complex Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `new` and `call`. What is the value of `this.x` after the invocation?",
+        "snippet": "function C(x) { this.x = x; } function F() { return C.call(this, 10); } const instance = new F(); console.log(instance.x);",
+        "options": [
+            "10",
+            "undefined",
+            "Error",
+            "NaN"
+        ],
+        "correct_answer": "10",
+        "topic": "`this` Binding (`new` and `call`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the value of `result` after the execution of the array method?",
+        "snippet": "const arr = [1, 2, 3]; const result = arr.map(parseInt); console.log(result);",
+        "options": [
+            "[1, 2, 3]",
+            "[1, NaN, NaN]",
+            "[1, NaN, 3]",
+            "[1, 1, 1]"
+        ],
+        "correct_answer": "[1, NaN, NaN]",
+        "topic": "Array Methods (Obscure Callbacks)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.defineProperty` to make a property non-writable. What is the value of `obj.a` after the attempted assignment?",
+        "snippet": "const obj = { a: 1 }; Object.defineProperty(obj, 'a', { writable: false }); obj.a = 5; console.log(obj.a);",
+        "options": [
+            "1",
+            "5",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "Property Descriptors",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using the Logical OR operator with two arrays?",
+        "snippet": "console.log([] || [1]);",
+        "options": [
+            "[]",
+            "[1]",
+            "true",
+            "false"
+        ],
+        "correct_answer": "[]",
+        "topic": "Truthy/Falsy Values",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The `bind` method is supposed to fix `this`. Why does it not work as expected in this new context?",
+        "snippet": "function C(x) { this.x = x; } const boundC = C.bind({ y: 5 }); const instance = new boundC(10); console.log(instance.x); console.log(instance.y);",
+        "options": [
+            "10, 5",
+            "10, undefined",
+            "undefined, 5",
+            "Error"
+        ],
+        "correct_answer": "10, undefined",
+        "topic": "`this` Binding (`new` and `bind`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output order of the nested asynchronous calls?",
+        "snippet": "function one() { console.log(1); } function two() { console.log(2); } setTimeout(one, 0); Promise.resolve().then(two);",
+        "options": [
+            "1, 2",
+            "2, 1",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "2, 1",
+        "topic": "Event Loop (Microtasks vs. Macrotasks)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses a proxy to trap property access. What is the value of `proxy.a`?",
+        "snippet": "const target = { a: 1 }; const handler = { get: (t, prop) => 10 }; const proxy = new Proxy(target, handler); console.log(proxy.a);",
+        "options": [
+            "1",
+            "10",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "10",
+        "topic": "ES6+ Proxy/Reflect",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of the `reduce` method?",
+        "snippet": "const arr = [1, 2, 3]; const result = arr.reduce((acc, current) => { acc.push(current + 1); return acc; }, []); console.log(result);",
+        "options": [
+            "[2, 3, 4]",
+            "[1, 2, 3]",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "[2, 3, 4]",
+        "topic": "Array Methods (Reduce)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Why does the object fail to inherit the property from the prototype?",
+        "snippet": "const proto = { city: 'NY' }; const obj = Object.create(proto); delete obj.city; console.log(obj.city);",
+        "options": [
+            "The property is deleted.",
+            "The `city` property is inherited from the prototype, so deleting the non-existent own property on `obj` has no effect, and the engine **finds the prototype property 'NY'**.",
+            "The object is too small.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "The `city` property is inherited from the prototype, so deleting the non-existent own property on `obj` has no effect, and the engine **finds the prototype property 'NY'**.",
+        "topic": "Prototypes and Own Properties",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of applying the logical NOT operator to `NaN`?",
+        "snippet": "console.log(!NaN);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Truthy/Falsy Values",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `apply` and `bind`. What is the value of `this.x` when `boundFunc` is called?",
+        "snippet": "function F() { return this.x; } const boundFunc = F.bind({ x: 5 }); console.log(boundFunc.apply({ x: 10 }));",
+        "options": [
+            "5",
+            "10",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "`this` Binding (`bind` immutability)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the generator function after the first `next()` call?",
+        "snippet": "function* sequence() { yield 1; yield 2; return 3; } const gen = sequence(); console.log(gen.next().value); console.log(gen.next().done); console.log(gen.next().value);",
+        "options": [
+            "1, false, 2",
+            "1, true, 3",
+            "1, false, 3",
+            "1, false, 2"
+        ],
+        "correct_answer": "1, false, 3",
+        "topic": "Generators (Return Value)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The array method is intended to sum the numbers. What is the bug?",
+        "snippet": "const arr = [1, 2, 3]; const sum = arr.reduce((acc, current, index) => { if (index === 0) return acc; return acc + current; }, 0); console.log(sum);",
+        "options": [
+            "The array is too small.",
+            "The initial accumulator is 0. The first iteration returns the accumulator (0). The sum is calculated as 0 + 2 + 3 = **5**.",
+            "The initial value is wrong.",
+            "The reduction is performed correctly."
+        ],
+        "correct_answer": "The initial accumulator is 0. The first iteration returns the accumulator (0). The sum is calculated as 0 + 2 + 3 = **5**.",
+        "topic": "Array Methods (Reduce Logic)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.isExtensible`. What is the output?",
+        "snippet": "const obj = {}; Object.seal(obj); console.log(Object.isExtensible(obj));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Object Mutability (`seal`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using the strict equality operator on a number and a symbol?",
+        "snippet": "console.log(10 === Symbol('a'));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Strict Equality",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function is intended to be called right away. What is the bug?",
+        "snippet": "new function() { console.log('IIFE?'); }",
+        "options": [
+            "The function must be an arrow function.",
+            "The code is **correct** and prints **'IIFE?'**; the `new` operator invokes the constructor immediately.",
+            "The function is not called.",
+            "The function must be a regular function."
+        ],
+        "correct_answer": "The code is **correct** and prints **'IIFE?'**; the `new` operator invokes the constructor immediately.",
+        "topic": "IIFE Obscurities",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the code snippet, focusing on property shadowing?",
+        "snippet": "const proto = { x: 1 }; const obj = Object.create(proto); obj.x = 2; delete obj.x; console.log(obj.x);",
+        "options": [
+            "1",
+            "2",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "Prototypal Inheritance (Shadowing)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this obscure type coercion?",
+        "snippet": "console.log([1] + [2]);",
+        "options": [
+            "12",
+            "[1, 2]",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "12",
+        "topic": "Complex Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The array method is intended to find the index. What is the result of the call?",
+        "snippet": "const arr = [10, 20, 30]; const result = arr.indexOf(20, 2); console.log(result);",
+        "options": [
+            "1",
+            "-1",
+            "2",
+            "0"
+        ],
+        "correct_answer": "-1",
+        "topic": "Array Methods (Search Index)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this attempt to get the maximum number?",
+        "snippet": "console.log(Math.max(1, undefined, 3));",
+        "options": [
+            "3",
+            "1",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "NaN",
+        "topic": "Built-in Methods (Coercion)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `bind` and then `new`. What is the value of `this.x` after the invocation?",
+        "snippet": "function F() { this.x = 1; } const boundF = F.bind({ x: 5 }); const instance = new boundF(); console.log(instance.x);",
+        "options": [
+            "1",
+            "5",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "`this` Binding (`new` and `bind`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the value of `result` after the execution of the array method?",
+        "snippet": "const arr = [1, 2, 3]; const result = arr.flatMap(x => [x, x * 2]); console.log(result);",
+        "options": [
+            "[1, 2, 2, 4, 3, 6]",
+            "[1, 2, 3]",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "[1, 2, 2, 4, 3, 6]",
+        "topic": "ES2019 Array Methods (`flatMap`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.defineProperty` to create a property with a getter. What is the output?",
+        "snippet": "const obj = {}; Object.defineProperty(obj, 'a', { get: () => 5 }); obj.a = 10; console.log(obj.a);",
+        "options": [
+            "5",
+            "10",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "Property Descriptors (Getter/Setter)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of the `switch` statement due to loose equality/coercion?",
+        "snippet": "const val = '10'; switch(val) { case 10: console.log('Number 10'); break; default: console.log('Default'); }",
+        "options": [
+            "Number 10",
+            "Default",
+            "Error",
+            "The case statement uses strict equality (`===`), so the string '10' does not match the number 10, printing **'Default'**."
+        ],
+        "correct_answer": "Default",
+        "topic": "Switch Statement Behavior",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code attempts to create a custom iterable. What is the value of `result`?",
+        "snippet": "const obj = { [Symbol.iterator]: function*() { yield 1; yield 2; } }; const result = [...obj]; console.log(result);",
+        "options": [
+            "[1, 2]",
+            "[]",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "[1, 2]",
+        "topic": "Iterators and Spread",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this complex type coercion?",
+        "snippet": "console.log(null > 0); console.log(null == 0); console.log(null >= 0);",
+        "options": [
+            "false, false, false",
+            "false, true, true",
+            "false, false, true",
+            "true, false, true"
+        ],
+        "correct_answer": "false, false, true",
+        "topic": "Complex Coercion (null)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `bind` and an arrow function. What is the value of `this.x` when `boundFunc` is called?",
+        "snippet": "const obj = { x: 10 }; const func = () => this.x; const boundFunc = func.bind(obj); console.log(boundFunc());",
+        "options": [
+            "10",
+            "undefined",
+            "Error",
+            "null"
+        ],
+        "correct_answer": "undefined",
+        "topic": "`this` Binding (Arrow Functions and `bind`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Why does the object fail to print the property value using dot notation?",
+        "snippet": "const obj = { 'key-one': 1 }; console.log(obj.key - one);",
+        "options": [
+            "The property name is wrong.",
+            "The dot notation treats `key-one` as **`key` minus `one`**, causing a `ReferenceError` (since `key` and `one` are undeclared variables).",
+            "The object is empty.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "The dot notation treats `key-one` as **`key` minus `one`**, causing a `ReferenceError` (since `key` and `one` are undeclared variables).",
+        "topic": "Object Access (Invalid Identifier)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.freeze` and property assignment. What is the output?",
+        "snippet": "const obj = { a: 1 }; Object.freeze(obj); obj.a = 2; console.log(obj.a);",
+        "options": [
+            "1",
+            "2",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "1",
+        "topic": "Object Immutability (`freeze`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the nested asynchronous calls?",
+        "snippet": "console.log(1); queueMicrotask(() => console.log(2)); console.log(3);",
+        "options": [
+            "1, 2, 3",
+            "1, 3, 2",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "1, 3, 2",
+        "topic": "Event Loop (Microtasks)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function is intended to create a factory. What is the output?",
+        "snippet": "function Factory(x) { this.x = x; return { x: x + 1 }; } const obj = new Factory(5); console.log(obj.x);",
+        "options": [
+            "5",
+            "6",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "6",
+        "topic": "Constructors and Return Value",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using the `in` operator on an array?",
+        "snippet": "const arr = [10, 20]; console.log('length' in arr);",
+        "options": [
+            "false",
+            "true",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Object Properties (Arrays)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.keys`. What is the output?",
+        "snippet": "const obj = { a: 1, [Symbol('b')]: 2 }; console.log(Object.keys(obj).length);",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "Object Methods (Symbols)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of this comparison involving coercion?",
+        "snippet": "console.log(0 == false); console.log(0 === false);",
+        "options": [
+            "true, true",
+            "true, false",
+            "false, true",
+            "false, false"
+        ],
+        "correct_answer": "true, false",
+        "topic": "Type Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses a Proxy with a `set` trap. What is the final value of `target.a`?",
+        "snippet": "const target = { a: 1 }; const handler = { set: (t, prop, val) => { t[prop] = val * 2; return true; } }; const proxy = new Proxy(target, handler); proxy.a = 5; console.log(target.a);",
+        "options": [
+            "1",
+            "5",
+            "10",
+            "Error"
+        ],
+        "correct_answer": "10",
+        "topic": "ES6+ Proxy/Reflect",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Why does the `WeakSet` key disappear from memory when the reference is cleared?",
+        "snippet": "let obj = { id: 1 }; const ws = new WeakSet(); ws.add(obj); obj = null; // Key reference cleared. ",
+        "options": [
+            "WeakSets are only for primitive types.",
+            "The key is **garbage collected** because the external reference (`obj`) was removed, and WeakSets only hold **weak references** to keys.",
+            "The `add` method is wrong.",
+            "The `WeakSet` must be a `const`."
+        ],
+        "correct_answer": "The key is **garbage collected** because the external reference (`obj`) was removed, and WeakSets only hold **weak references** to keys.",
+        "topic": "WeakSet and Garbage Collection",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function attempts to use `arguments` inside an arrow function. What is the output?",
+        "snippet": "function wrapper() { const func = () => console.log(arguments[0]); func(2); } wrapper(1);",
+        "options": [
+            "1",
+            "2",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "Arrow Functions (Arguments)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this obscure type coercion?",
+        "snippet": "console.log(typeof NaN);",
+        "options": [
+            "number",
+            "NaN",
+            "undefined",
+            "string"
+        ],
+        "correct_answer": "number",
+        "topic": "Type Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses a proxy to trap property access. What is the value of `proxy.b`?",
+        "snippet": "const target = { a: 1 }; const handler = { get: (t, prop) => t[prop] || 10 }; const proxy = new Proxy(target, handler); console.log(proxy.b);",
+        "options": [
+            "1",
+            "10",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "10",
+        "topic": "ES6+ Proxy/Reflect",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using the `delete` operator on an object property?",
+        "snippet": "const obj = { a: 1 }; const result = delete obj.a; console.log(result);",
+        "options": [
+            "true",
+            "false",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "true",
+        "topic": "Object Properties",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function is intended to create a deep clone. What is the bug?",
+        "snippet": "const obj1 = { a: 1, b: { c: 2 } }; const obj2 = JSON.parse(JSON.stringify(obj1)); obj2.b.c = 3; console.log(obj1.b.c);",
+        "options": [
+            "The array is too small.",
+            "The code is **correct** and prints **2**, as `JSON.parse(JSON.stringify(..))` performs a deep clone (for JSON-safe data).",
+            "The method name is wrong.",
+            "The deep clone fails."
+        ],
+        "correct_answer": "The code is **correct** and prints **2**, as `JSON.parse(JSON.stringify(..))` performs a deep clone (for JSON-safe data).",
+        "topic": "Deep Cloning (JSON Safety)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this attempt to get the maximum number?",
+        "snippet": "console.log(Math.max(1, [2], 3));",
+        "options": [
+            "3",
+            "1",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "3",
+        "topic": "Built-in Methods (Coercion)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.isSealed`. What is the output?",
+        "snippet": "const obj = {}; Object.freeze(obj); console.log(Object.isSealed(obj));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Object Mutability (`freeze`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using the Logical OR operator with a number and an empty object?",
+        "snippet": "console.log(0 || {});",
+        "options": [
+            "0",
+            "{}",
+            "true",
+            "false"
+        ],
+        "correct_answer": "{}",
+        "topic": "Truthy/Falsy Values",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `bind` and then `new`. What is the value of `this.x` after the invocation?",
+        "snippet": "function F(x) { this.x = x; } const boundF = F.bind(null, 5); const instance = new boundF(10); console.log(instance.x);",
+        "options": [
+            "5",
+            "10",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "10",
+        "topic": "`this` Binding (`new` and `bind`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the value of `result` after the execution of the array method?",
+        "snippet": "const arr = [1, 2, 3]; const result = arr.map(Number); console.log(result);",
+        "options": [
+            "[1, 2, 3]",
+            "[1, NaN, NaN]",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "[1, 2, 3]",
+        "topic": "Array Methods (Callbacks)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.defineProperty` with an accessor property. What is the output?",
+        "snippet": "const obj = { _a: 1 }; Object.defineProperty(obj, 'a', { get: () => obj._a, set: (val) => { obj._a = val * 2; } }); obj.a = 5; console.log(obj.a);",
+        "options": [
+            "1",
+            "5",
+            "10",
+            "Error"
+        ],
+        "correct_answer": "10",
+        "topic": "Property Descriptors (Getter/Setter)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this obscure type coercion?",
+        "snippet": "console.log(10 * '5');",
+        "options": [
+            "50",
+            "105",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "50",
+        "topic": "Complex Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function is intended to create a closure that holds `x`. What is the result of the function call?",
+        "snippet": "function outer(x) { x = 10; return function inner(y) { return x + y; } } const add5 = outer(5); console.log(add5(10));",
+        "options": [
+            "10",
+            "15",
+            "20",
+            "undefined"
+        ],
+        "correct_answer": "20",
+        "topic": "Closures and Mutability",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Why does the `Promise.all` succeed, even though one promise rejects?",
+        "snippet": "const p1 = Promise.resolve(1); const p2 = new Promise(r => r(2)); Promise.all([p1, p2]).then(console.log);",
+        "options": [
+            "The array is too small.",
+            "The promises all **resolve**; the `Promise.all` fulfills with the array of resolved values **[1, 2]**.",
+            "The promises are asynchronous.",
+            "The method name is wrong."
+        ],
+        "correct_answer": "The promises all **resolve**; the `Promise.all` fulfills with the array of resolved values **[1, 2]**.",
+        "topic": "Promise Methods",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.isFrozen`. What is the output?",
+        "snippet": "const obj = { a: 1 }; Object.seal(obj); console.log(Object.isFrozen(obj));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Object Mutability (`seal` vs. `freeze`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of this comparison involving coercion?",
+        "snippet": "console.log(NaN == NaN); console.log(NaN === NaN);",
+        "options": [
+            "true, true",
+            "true, false",
+            "false, true",
+            "false, false"
+        ],
+        "correct_answer": "false, false",
+        "topic": "NaN Comparison",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses a Proxy to trap property deletion. What is the value of `target.a` after the `delete` operation?",
+        "snippet": "const target = { a: 1 }; const handler = { deleteProperty: (t, prop) => false }; const proxy = new Proxy(target, handler); delete proxy.a; console.log(target.a);",
+        "options": [
+            "1",
+            "undefined",
+            "Error",
+            "null"
+        ],
+        "correct_answer": "1",
+        "topic": "ES6+ Proxy/Reflect",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this obscure type coercion?",
+        "snippet": "console.log(1 / 'a');",
+        "options": [
+            "1a",
+            "NaN",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "NaN",
+        "topic": "Type Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `bind` and then `new`. What is the value of `this.x` after the invocation?",
+        "snippet": "function F(x) { this.x = x; } const boundF = F.bind({ y: 5 }); const instance = new boundF(10); console.log(instance.x);",
+        "options": [
+            "5",
+            "10",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "10",
+        "topic": "`this` Binding (`new` and `bind`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses a WeakSet. What is the output of checking the size?",
+        "snippet": "const ws = new WeakSet(); const obj = {}; ws.add(obj); console.log(ws.has(obj));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "WeakSet",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the nested asynchronous calls?",
+        "snippet": "console.log(1); Promise.resolve().then(() => console.log(2)); setTimeout(() => console.log(3), 0); console.log(4);",
+        "options": [
+            "1, 2, 3, 4",
+            "1, 4, 2, 3",
+            "1, 3, 2, 4",
+            "1, 4, 3, 2"
+        ],
+        "correct_answer": "1, 4, 2, 3",
+        "topic": "Event Loop (Microtasks vs. Macrotasks)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The array method is intended to sum the numbers. What is the bug?",
+        "snippet": "const arr = [1, 2, 3]; const sum = arr.reduce((acc, current) => acc + current); console.log(sum);",
+        "options": [
+            "The array is too small.",
+            "The reduction is performed correctly, resulting in **6** (default accumulator is the first element).",
+            "The initial value is missing.",
+            "The array elements are strings."
+        ],
+        "correct_answer": "6",
+        "topic": "Array Methods (Reduce)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.isExtensible`. What is the output?",
+        "snippet": "const obj = {}; Object.preventExtensions(obj); console.log(Object.isExtensible(obj));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Object Mutability (`preventExtensions`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using the Logical AND operator with two arrays?",
+        "snippet": "console.log([] && [1]);",
+        "options": [
+            "[]",
+            "[1]",
+            "true",
+            "false"
+        ],
+        "correct_answer": "[1]",
+        "topic": "Truthy/Falsy Values",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `bind` and then `call`. What is the value of `this.x` when `boundFunc` is called?",
+        "snippet": "function F() { return this.x; } const boundFunc = F.bind({ x: 5 }); console.log(boundFunc.call({ x: 10 }));",
+        "options": [
+            "5",
+            "10",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "`this` Binding (`bind` immutability)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses a Proxy with a `set` trap. What is the final value of `target.a`?",
+        "snippet": "const target = { a: 1 }; const handler = { set: (t, prop, val) => { return false; } }; const proxy = new Proxy(target, handler); proxy.a = 5; console.log(target.a);",
+        "options": [
+            "1",
+            "5",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "ES6+ Proxy/Reflect",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the code snippet, focusing on how the prototype chain is utilized?",
+        "snippet": "const proto = { a: 1 }; const obj = Object.create(proto); obj.a = 2; console.log(proto.a);",
+        "options": [
+            "1",
+            "2",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "Prototypal Inheritance (Shadowing)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The array method is intended to sum the numbers. What is the result of the call?",
+        "snippet": "const arr = [1, 2, 3]; const sum = arr.reduce((acc, current) => { acc = acc + current; return acc; }); console.log(sum);",
+        "options": [
+            "1",
+            "6",
+            "undefined",
+            "NaN"
+        ],
+        "correct_answer": "6",
+        "topic": "Array Methods (Reduce)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this obscure type coercion?",
+        "snippet": "console.log(1 + null);",
+        "options": [
+            "1",
+            "null",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "Type Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `bind` and then `new`. What is the value of `this.x` after the invocation?",
+        "snippet": "function F() { this.x = 1; } const boundF = F.bind({ y: 5 }); const instance = new boundF(); console.log(instance.y);",
+        "options": [
+            "1",
+            "5",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "undefined",
+        "topic": "`this` Binding (`new` and `bind`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the value of `result` after the execution of the array method?",
+        "snippet": "const arr = ['1', '2', '3']; const result = arr.map(parseInt); console.log(result);",
+        "options": [
+            "[1, 2, 3]",
+            "[1, NaN, NaN]",
+            "[1, NaN, 3]",
+            "[1, 1, 1]"
+        ],
+        "correct_answer": "[1, NaN, NaN]",
+        "topic": "Array Methods (Obscure Callbacks)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.defineProperty` to create a property with a setter. What is the output?",
+        "snippet": "let val = 1; const obj = {}; Object.defineProperty(obj, 'a', { set: (v) => { val = v; } }); obj.a = 5; console.log(val);",
+        "options": [
+            "1",
+            "5",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "5",
+        "topic": "Property Descriptors (Getter/Setter)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of this comparison involving coercion?",
+        "snippet": "console.log([] == ![]);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Complex Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code attempts to use a WeakMap with a primitive key. What is the result?",
+        "snippet": "const wm = new WeakMap(); wm.set('a', 1); console.log(wm.get('a'));",
+        "options": [
+            "1",
+            "undefined",
+            "Error",
+            "null"
+        ],
+        "correct_answer": "Error",
+        "topic": "WeakMap (Invalid Key)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function is intended to be called right away. What is the bug?",
+        "snippet": "const obj = new function() { this.x = 10; return 5; }; console.log(obj.x);",
+        "options": [
+            "The function is not called.",
+            "The `new` operator is used, but the constructor returns a **primitive value (5)**, which is ignored, and the instance object is returned, printing **10**.",
+            "The function must be an arrow function.",
+            "The function is missing a `return` statement."
+        ],
+        "correct_answer": "10",
+        "topic": "Constructors and Return Value",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Why does the object fail to inherit the property from the prototype?",
+        "snippet": "const proto = { city: 'NY' }; const obj = Object.create(proto); obj.city = 'LA'; delete obj.city; console.log(obj.city);",
+        "options": [
+            "The property is deleted.",
+            "The `city` property on `obj` (the shadowing property) is deleted, causing the engine to look up the prototype, and the **prototype property 'NY' is found**.",
+            "The object is too small.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "NY",
+        "topic": "Prototypes and Own Properties",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this obscure type coercion?",
+        "snippet": "console.log(null * 5);",
+        "options": [
+            "0",
+            "null",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "0",
+        "topic": "Type Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The array method is intended to find the index. What is the result of the call?",
+        "snippet": "const arr = [10, 20, 30]; const result = arr.indexOf('20'); console.log(result);",
+        "options": [
+            "1",
+            "-1",
+            "2",
+            "0"
+        ],
+        "correct_answer": "-1",
+        "topic": "Array Methods (Search Index)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using the Logical OR operator with a number and an empty array?",
+        "snippet": "console.log(0 || []);",
+        "options": [
+            "0",
+            "[]",
+            "true",
+            "false"
+        ],
+        "correct_answer": "[]",
+        "topic": "Truthy/Falsy Values",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `bind` and then `new`. What is the value of `this.x` after the invocation?",
+        "snippet": "function F(x) { this.x = x; } const boundF = F.bind({ y: 5 }, 5); const instance = new boundF(10); console.log(instance.x);",
+        "options": [
+            "5",
+            "10",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "10",
+        "topic": "`this` Binding (`new` and `bind`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the value of `result` after the execution of the array method?",
+        "snippet": "const arr = [1, 2, 3]; const result = arr.reduce((acc, current, index) => { if (index === 0) return current; return acc + current; }); console.log(result);",
+        "options": [
+            "1",
+            "6",
+            "undefined",
+            "NaN"
+        ],
+        "correct_answer": "6",
+        "topic": "Array Methods (Reduce Logic)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.isSealed`. What is the output?",
+        "snippet": "const obj = {}; Object.preventExtensions(obj); console.log(Object.isSealed(obj));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Object Mutability (`preventExtensions` vs. `seal`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of this comparison involving coercion?",
+        "snippet": "console.log(true + false);",
+        "options": [
+            "1",
+            "truefalse",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "Type Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses a Proxy to trap property access. What is the value of `proxy.a`?",
+        "snippet": "const target = { a: 1 }; const handler = { get: (t, prop) => Reflect.get(t, prop) * 2 }; const proxy = new Proxy(target, handler); console.log(proxy.a);",
+        "options": [
+            "1",
+            "2",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "2",
+        "topic": "ES6+ Proxy/Reflect",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the code snippet, focusing on how the prototype chain is utilized?",
+        "snippet": "const proto = { a: 1 }; const obj = Object.create(proto); delete proto.a; console.log(obj.a);",
+        "options": [
+            "1",
+            "undefined",
+            "Error",
+            "null"
+        ],
+        "correct_answer": "undefined",
+        "topic": "Prototypal Inheritance (Dynamic Lookup)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The array method is intended to sum the numbers. What is the result of the call?",
+        "snippet": "const arr = ['1', '2', '3']; const sum = arr.reduce((acc, current) => acc + current, 0); console.log(sum);",
+        "options": [
+            "6",
+            "'0123'",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "'0123'",
+        "topic": "Array Methods and Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this obscure type coercion?",
+        "snippet": "console.log(1 + undefined);",
+        "options": [
+            "1",
+            "undefined",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "NaN",
+        "topic": "Type Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `bind` and then `new`. What is the value of `this.x` after the invocation?",
+        "snippet": "function F() { this.x = 1; } const boundF = F.bind({ y: 5 }, 5); const instance = new boundF(10); console.log(instance.x);",
+        "options": [
+            "1",
+            "5",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "`this` Binding (`new` and `bind`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the value of `result` after the execution of the array method?",
+        "snippet": "const arr = [1, 2, 3]; const result = arr.map(Boolean); console.log(result);",
+        "options": [
+            "[true, true, true]",
+            "[false, false, false]",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "[true, true, true]",
+        "topic": "Array Methods (Callbacks)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.defineProperty` to create a non-enumerable property. What is the output?",
+        "snippet": "const obj = {}; Object.defineProperty(obj, 'a', { value: 1, enumerable: false }); console.log(Object.keys(obj).length);",
+        "options": [
+            "0",
+            "1",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "0",
+        "topic": "Property Descriptors (Enumerability)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of this comparison involving coercion?",
+        "snippet": "console.log(new Boolean(false) == false);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Type Coercion (Object Wrappers)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code attempts to use a WeakSet with a primitive. What is the result?",
+        "snippet": "const ws = new WeakSet(); ws.add(1); console.log(ws.has(1));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "Error",
+        "topic": "WeakSet (Invalid Key)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function is intended to be called right away. What is the bug?",
+        "snippet": "const obj = new function() { this.x = 10; return { x: 5 }; }; console.log(obj.x);",
+        "options": [
+            "The function is not called.",
+            "The `new` operator is used, but the constructor returns a **non-primitive object**, which is returned instead of the instance, printing **5**.",
+            "The function must be an arrow function.",
+            "The function is missing a `return` statement."
+        ],
+        "correct_answer": "5",
+        "topic": "Constructors and Return Value",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Why does the object fail to inherit the property from the prototype?",
+        "snippet": "const proto = { city: 'NY' }; const obj = Object.create(proto); console.log(Object.prototype.isPrototypeOf(obj));",
+        "options": [
+            "The prototype is not set.",
+            "The object `obj` inherits from `proto`, and `proto` inherits from `Object.prototype`, so the result is **true**.",
+            "The object is too small.",
+            "The variable `obj` is not hoisted."
+        ],
+        "correct_answer": "true",
+        "topic": "Prototypal Inheritance",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this obscure type coercion?",
+        "snippet": "console.log(10 + '5');",
+        "options": [
+            "15",
+            "105",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "105",
+        "topic": "Type Coercion",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The array method is intended to find the index. What is the result of the call?",
+        "snippet": "const arr = [10, 20, 30]; const result = arr.findIndex(num => num > 20); console.log(result);",
+        "options": [
+            "1",
+            "-1",
+            "2",
+            "0"
+        ],
+        "correct_answer": "2",
+        "topic": "Array Methods (Search Index)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of using the Logical OR operator with a boolean and an empty array?",
+        "snippet": "console.log(false || []);",
+        "options": [
+            "0",
+            "[]",
+            "true",
+            "false"
+        ],
+        "correct_answer": "[]",
+        "topic": "Truthy/Falsy Values",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The function uses `bind` and then `new`. What is the value of `this.x` after the invocation?",
+        "snippet": "function F(x) { this.x = x; } const boundF = F.bind({ y: 5 }, 5); const instance = new boundF(); console.log(instance.x);",
+        "options": [
+            "5",
+            "undefined",
+            "Error",
+            "null"
+        ],
+        "correct_answer": "5",
+        "topic": "`this` Binding (`new` and `bind`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the value of `result` after the execution of the array method?",
+        "snippet": "const arr = [1, 2, 3]; const result = arr.reduce((acc, current) => acc * current, 1); console.log(result);",
+        "options": [
+            "1",
+            "6",
+            "undefined",
+            "NaN"
+        ],
+        "correct_answer": "6",
+        "topic": "Array Methods (Reduce)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses `Object.isExtensible`. What is the output?",
+        "snippet": "const obj = {}; console.log(Object.isExtensible(obj));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "true",
+        "topic": "Object Mutability (`isExtensible`)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the result of this comparison involving coercion?",
+        "snippet": "console.log(null === undefined);",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Strict Equality",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The code uses a Proxy with a `get` trap. What is the value of `proxy.a`?",
+        "snippet": "const target = { a: 1 }; const handler = { get: (t, prop) => Reflect.get(t, prop) }; const proxy = new Proxy(target, handler); console.log(proxy.a);",
+        "options": [
+            "1",
+            "2",
+            "undefined",
+            "Error"
+        ],
+        "correct_answer": "1",
+        "topic": "ES6+ Proxy/Reflect",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of the code snippet, focusing on how the prototype chain is utilized?",
+        "snippet": "const proto = { a: 1 }; const obj = Object.create(proto); console.log(obj.hasOwnProperty('a'));",
+        "options": [
+            "true",
+            "false",
+            "Error",
+            "undefined"
+        ],
+        "correct_answer": "false",
+        "topic": "Prototypal Inheritance (hasOwnProperty)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The array method is intended to sum the numbers. What is the result of the call?",
+        "snippet": "const arr = [1, 2, 3]; const sum = arr.reduce((acc, current, index) => { if (index === 0) return acc; return acc + current; }); console.log(sum);",
+        "options": [
+            "1",
+            "5",
+            "undefined",
+            "NaN"
+        ],
+        "correct_answer": "5",
+        "topic": "Array Methods (Reduce Logic)",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the output of this obscure type coercion?",
+        "snippet": "console.log(10 + null);",
+        "options": [
+            "10",
+            "null",
+            "NaN",
+            "Error"
+        ],
+        "correct_answer": "10",
+        "topic": "Type Coercion",
+        "difficulty": "hard"
+    }
+]
