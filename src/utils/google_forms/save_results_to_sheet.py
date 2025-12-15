@@ -18,7 +18,6 @@ def _get_or_create_result_sheet(uid: str) -> str:
 
     file_name = f"{uid}_results"
 
-    # 1) Try to find existing spreadsheet in that folder
     query = (
         f"name = '{file_name}' and "
         f"'{FOLDER_ID}' in parents and "
@@ -37,12 +36,10 @@ def _get_or_create_result_sheet(uid: str) -> str:
     if files:
         return files[0]["id"]
 
-    # 2) Create new spreadsheet
     body = {"properties": {"title": file_name}}
     sheet_resp = sheets.spreadsheets().create(body=body).execute()
     spreadsheet_id = sheet_resp["spreadsheetId"]
 
-    # 3) Put it into the desired folder
     drive.files().update(
         fileId=spreadsheet_id,
         addParents=FOLDER_ID,
@@ -61,21 +58,21 @@ def save_round_result(
     correct_answers: int,
     score_percent: float,
     status: str,
+    focus_violations: int = 0,  # ✅ NEW (backward compatible)
 ) -> str:
     """
     Append one row for this round into the candidate's results sheet.
 
     Columns:
-    UID | Candidate Name | Email | Round | Total Qs | Correct | Score % | Status | Timestamp
+    UID | Candidate Name | Email | Round | Total Qs | Correct | Score % | Focus Violations | Status | Timestamp
     """
     sheets = get_sheets_service()
     spreadsheet_id = _get_or_create_result_sheet(uid)
 
     sheet_name = "Sheet1"
-    header_range = f"{sheet_name}!A1:I1"
+    header_range = f"{sheet_name}!A1:J1"
     data_range = f"{sheet_name}!A1"
 
-    # 1) Ensure header row exists
     header = [
         "UID",
         "Candidate Name",
@@ -84,6 +81,7 @@ def save_round_result(
         "Total Questions",
         "Correct Answers",
         "Score %",
+        "Focus Violations",   # ✅ NEW
         "Status",
         "Timestamp",
     ]
@@ -101,7 +99,6 @@ def save_round_result(
             body={"values": [header]},
         ).execute()
 
-    # 2) Append this round result
     timestamp = datetime.now().isoformat(timespec="seconds")
     row = [
         uid,
@@ -111,6 +108,7 @@ def save_round_result(
         total_questions,
         correct_answers,
         score_percent,
+        focus_violations,     # ✅ NEW
         status,
         timestamp,
     ]

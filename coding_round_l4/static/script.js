@@ -21,7 +21,6 @@ if (QUESTION && Array.isArray(QUESTION.public_tests)) {
     });
 }
 
-// --- Helper to update output ---
 function setOutput(text) {
     outputBox.textContent = text;
     outputBox.scrollTop = outputBox.scrollHeight;
@@ -32,16 +31,9 @@ function appendOutput(text) {
     outputBox.scrollTop = outputBox.scrollHeight;
 }
 
-// --- State ---
 let examFinished = false;
 let tabViolations = 0;
-let timeLeft = 20 * 60; // 20 minutes in seconds
-
-function setButtonsDisabled(flag) {
-    runBtn.disabled = flag;
-    submitBtn.disabled = flag;
-    editor.disabled = flag;
-}
+let timeLeft = 20 * 60;
 
 // --- Timer ---
 function formatTime(sec) {
@@ -59,6 +51,7 @@ const timerId = setInterval(() => {
     }
 
     timeLeft -= 1;
+
     if (timeLeft <= 60) {
         timerDisplay.style.color = "#ff5555";
     }
@@ -66,87 +59,74 @@ const timerId = setInterval(() => {
     if (timeLeft <= 0) {
         timerDisplay.textContent = "00:00";
         clearInterval(timerId);
-        appendOutput("\n[Timer] Time is up. Auto-submitting your solution...\n");
-        runTests(true); // final submit
+        appendOutput("\n[Timer] Time is up. Auto-submitting...\n");
+        runTests(true);
     } else {
         timerDisplay.textContent = formatTime(timeLeft);
     }
 }, 1000);
 
-// --- Basic proctoring: tab switch detection ---
+// --- Focus / tab detection ---
 document.addEventListener("visibilitychange", () => {
-    if (document.hidden || document.visibilityState !== "visible") {
-        if (!examFinished) {
-            tabViolations += 1;
-            violationDisplay.textContent = `Focus lost ${tabViolations} time(s)`;
-            appendOutput(`[Proctor] Tab switch / focus lost #${tabViolations}`);
-
-            // Optional: after 3 violations, auto-submit
-            if (tabViolations === 3) {
-                appendOutput("\n[Proctor] Multiple focus losses. Auto-submitting...\n");
-                runTests(true);
-            }
-        }
+    if (document.hidden && !examFinished) {
+        tabViolations += 1;
+        violationDisplay.textContent = `Focus lost ${tabViolations} time(s)`;
+        appendOutput(`[Proctor] Focus lost #${tabViolations}`);
     }
 });
 
-// Warn before closing/refreshing if exam not finished
 window.addEventListener("beforeunload", (e) => {
     if (!examFinished) {
         e.preventDefault();
-        e.returnValue = "Your test is not submitted yet. Are you sure you want to leave?";
+        e.returnValue = "Your test is not submitted yet.";
     }
 });
 
-// --- Core: call backend to run tests ---
+// --- Backend call ---
 async function runTests(isSubmit) {
-    if (examFinished && isSubmit) {
-        appendOutput("[Info] Exam already finished.\n");
-        return;
-    }
+    if (examFinished && isSubmit) return;
 
-    setButtonsDisabled(true);
-    const label = isSubmit ? "Running ALL tests (final submit)..." : "Running public tests...";
-    setOutput(`⏳ ${label}`);
+    runBtn.disabled = true;
+    submitBtn.disabled = true;
+    editor.disabled = true;
 
-    try {
-        const res = await fetch("/run_code", {
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({
-                code: editor.value,
-                submit: isSubmit
-            })
-        });
+    setOutput(isSubmit ? "Running final tests..." : "Running public tests...");
 
-        if (!res.ok) {
-            const txt = await res.text();
-            setOutput(`Server error: ${res.status}\n${txt}`);
-            setButtonsDisabled(false);
-            return;
-        }
+   try {
+    const res = await fetch("/run_code", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            code: editor.value,
+            submit: isSubmit,
+            focus_violations: tabViolations
+        })
+    });
+
 
         const result = await res.json();
-        setOutput(result.output || "No output received.");
+        setOutput(result.output || "");
 
-        if (typeof result.passed === "number" && typeof result.total === "number") {
+        if (typeof result.passed === "number") {
             scoreDisplay.textContent = `Score: ${result.passed}/${result.total}`;
         }
 
         if (result.finished) {
             examFinished = true;
-            setButtonsDisabled(true);
-            appendOutput("\n[Info] Final submission completed. Editor is now locked.");
+            appendOutput("\n[Info] Final submission completed.");
         } else {
-            // Re-enable for further public test runs
-            setButtonsDisabled(false);
+            runBtn.disabled = false;
+            submitBtn.disabled = false;
+            editor.disabled = false;
         }
+
     } catch (err) {
-        setOutput("Client error while contacting server:\n" + err.message);
-        setButtonsDisabled(false);
+        setOutput("Client error: " + err.message);
+        runBtn.disabled = false;
+        submitBtn.disabled = false;
+        editor.disabled = false;
     }
 }
 
-// --- Wire buttons ---
 runBtn.addEventListener("click", () => runTests(false));
 submitBtn.addEventListener("click", () => runTests(true));
