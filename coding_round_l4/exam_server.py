@@ -5,9 +5,11 @@ import tempfile
 import os
 import random
 import sys
+import json
+from datetime import datetime
 
 # -------------------------------------------------
-# FIX 1️⃣ : FORCE CORRECT WORKING DIRECTORY
+# FORCE CORRECT WORKING DIRECTORY
 # -------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 os.chdir(BASE_DIR)
@@ -15,17 +17,22 @@ os.chdir(BASE_DIR)
 app = Flask(__name__)
 
 # -------------------------------------------------
-# FIX 2️⃣ : PORT HANDLING
+# PORT HANDLING
 # -------------------------------------------------
 PORT = 5000
 if len(sys.argv) > 1:
     try:
         PORT = int(sys.argv[1])
-    except:
+    except Exception:
         pass
 
 # -------------------------------------------------
-# Load questions.yaml (NOW SAFE)
+# RESULT STORAGE
+# -------------------------------------------------
+RESULT_FILE = os.path.join(BASE_DIR, "l4_result.json")
+
+# -------------------------------------------------
+# Load questions.yaml
 # -------------------------------------------------
 with open("questions.yaml", "r", encoding="utf-8") as f:
     QUESTIONS = yaml.safe_load(f)
@@ -44,17 +51,25 @@ def index():
 @app.route("/run_code", methods=["POST"])
 def run_code():
     data = request.get_json(force=True) or {}
+
     code = data.get("code", "")
     is_submit = bool(data.get("submit", False))
-    focus_violations = int(data.get("focus_violations", 0))
+    focus_lost = int(data.get("focus_lost", 0))
 
     public_tests = ASSIGNED_QUESTION.get("public_tests", [])
     hidden_tests = ASSIGNED_QUESTION.get("hidden_tests", [])
-    tests = public_tests + hidden_tests if is_submit else public_tests
 
+    # 🚨 If not submit → no evaluation allowed
+    if not is_submit:
+        return jsonify({
+            "finished": False,
+            "output": "Public tests executed. Final submission not done.",
+        })
+
+    tests = public_tests + hidden_tests
     passed = 0
     total = len(tests)
-    results = []
+    details = []
 
     for i, t in enumerate(tests, 1):
         temp = None
@@ -75,31 +90,59 @@ def run_code():
                 timeout=5
             )
 
-            output = proc.stdout.strip().splitlines()[-1] if proc.returncode == 0 else proc.stderr
+            output = proc.stdout.strip().splitlines()[-1] if proc.returncode == 0 else ""
             ok = str(output) == str(t["expected"])
             if ok:
                 passed += 1
 
-            results.append(f"Test {i}: {'PASS' if ok else 'FAIL'}")
+            details.append({
+                "test": i,
+                "passed": ok,
+                "expected": t["expected"],
+                "output": output
+            })
 
         finally:
             if temp and os.path.exists(temp):
                 os.remove(temp)
 
-    score = round((passed / total) * 100, 2) if total else 0
-    status = "PASS" if score >= 75 and focus_violations == 0 else "FAIL"
+    score_percent = round((passed / total) * 100, 2) if total else 0
 
-    return jsonify({
-        "finished": is_submit,
+    # ✅ FINAL AUTHORITATIVE DECISION
+    status = "PASS"
+    reason = "OK"
+
+    if not is_submit:
+        status = "FAIL"
+        reason = "NOT_SUBMITTED"
+    elif focus_lost > 0:
+        status = "FAIL"
+        reason = "FOCUS_LOST"
+    elif score_percent < 75:
+        status = "FAIL"
+        reason = "LOW_SCORE"
+
+    # ✅ Persist final result
+    result_payload = {
+        "submitted": True,
         "passed": passed,
         "total": total,
-        "score_percent": score,
-        "focus_violations": focus_violations,
+        "score_percent": score_percent,
+        "focus_lost": focus_lost,
         "status": status,
-        "output": "\n".join(results)
+        "reason": reason,
+        "details": details,
+    }
+
+    with open("l4_result.json", "w", encoding="utf-8") as f:
+        json.dump(result_payload, f, indent=2)
+
+    return jsonify({
+        "finished": True,
+        "output": f"Final Result → {status} ({score_percent}%)",
+        **result_payload
     })
 
-
 if __name__ == "__main__":
-    print(f"🚀 L4 server running on http://localhost:{PORT}")
+    print(f"L4 server running at http://localhost:{PORT}")
     app.run(host="127.0.0.1", port=PORT, debug=False)
