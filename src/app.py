@@ -183,7 +183,8 @@ if st.button("Generate Test & Create Forms", key="create_interview"):
         time.sleep(1.2)
 
         st.session_state.l4_server_process = proc
-        forms["L4"] = f"http://localhost:{port}"
+        VM_IP = os.environ.get("VM_IP", "172.30.62.30")
+        forms["L4"] = f"http://{VM_IP}:{port}"
         st.session_state.latest_form_ids = forms
 
         st.success("Interview created successfully")
