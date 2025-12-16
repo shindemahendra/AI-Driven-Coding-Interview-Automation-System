@@ -5,7 +5,6 @@ import signal
 import subprocess
 from pathlib import Path
 
-import pandas as pd
 import streamlit as st
 
 # ================================================================
@@ -22,128 +21,126 @@ from src.utils.google_forms.manage_form_status import disable_google_form
 from src.utils.google_forms.create_all_forms import create_all_google_forms
 from src.utils.google_forms.evaluate_round import (
     evaluate_round_core,
-    check_if_response_exists,
-    evaluate_l4_round
+    evaluate_l4_round,
 )
 
-try:
-    from generate_candidate_test import run_candidate_test_generation
-except Exception:
-    st.error("generate_candidate_test.py missing in project root")
+from generate_candidate_test import run_candidate_test_generation
 
 # ================================================================
 # STREAMLIT CONFIG
 # ================================================================
 st.set_page_config(page_title="Interview Automation System", layout="wide")
-st.title("AI-Driven Coding Interview Automation System")
-st.divider()
 
 # ================================================================
-# SESSION STATE INITIALIZATION (IMPORTANT FIX)
+# CORPORATE UI THEME
 # ================================================================
-SESSION_KEYS = {
+st.markdown("""
+<style>
+.stApp { background-color: #F8FAFC; }
+h1 { color:#0F172A; font-weight:700; }
+h2 { color:#1E293B; border-left:5px solid #2563EB; padding-left:8px; }
+.block-container { padding-top: 1.2rem; }
+[data-testid="stVerticalBlock"] > div {
+    background:#FFF;
+    border-radius:10px;
+    padding:0.9rem;
+    margin-bottom:0.7rem;
+    box-shadow:0 4px 14px rgba(0,0,0,0.05);
+}
+.stButton > button {
+    background:#2563EB;
+    color:white;
+    border-radius:8px;
+    font-weight:600;
+}
+.stButton > button:hover { background:#1D4ED8; }
+.instructions {
+    background:#EFF6FF;
+    border-left:4px solid #2563EB;
+    padding:10px;
+    border-radius:8px;
+    font-size:0.85rem;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# ================================================================
+# TITLE + INSTRUCTIONS
+# ================================================================
+st.title("AI-Driven Coding Interview Automation System")
+
+st.markdown("""
+<div class="instructions">
+<b>Usage Instructions</b><br>
+• Enter candidate details and generate tests.<br>
+• Start the timer when the candidate begins a round.<br>
+• Stop the timer manually or let it auto-end.<br>
+• Evaluate a round only after submission.
+</div>
+""", unsafe_allow_html=True)
+
+# ================================================================
+# SESSION STATE
+# ================================================================
+DEFAULT_STATE = {
     "latest_uid": None,
     "latest_candidate_name": None,
     "latest_candidate_email": None,
     "latest_difficulty": None,
     "latest_domain": None,
     "latest_json_path": None,
-    "latest_form_ids": {},          # ✅ FIX
+    "latest_form_ids": {},
     "l4_server_process": None,
-    "latest_l4_url": None,
     "timer_start_time": None,
     "active_round": None,
     "is_timer_running": False,
 }
 
-for key, default in SESSION_KEYS.items():
-    if key not in st.session_state:
-        st.session_state[key] = default
+for k, v in DEFAULT_STATE.items():
+    if k not in st.session_state:
+        st.session_state[k] = v
+
+TIMER_DURATION = 15 * 60
 
 # ================================================================
-# CONSTANTS
-# ================================================================
-TEST_JSON_BASE_DIR = "question_bank/tests"
-TIMER_DURATION_SECONDS = 15 * 60
-
-# ================================================================
-# TIMER HELPERS
+# TIMER FUNCTIONS (STABLE)
 # ================================================================
 def start_timer(round_name):
     st.session_state.is_timer_running = True
-    st.session_state.timer_start_time = time.time()
     st.session_state.active_round = round_name
+    st.session_state.timer_start_time = time.time()
     st.rerun()
 
-def get_remaining_time():
+def remaining_time():
     if not st.session_state.is_timer_running:
-        return TIMER_DURATION_SECONDS
+        return TIMER_DURATION
     elapsed = time.time() - st.session_state.timer_start_time
-    return max(0, TIMER_DURATION_SECONDS - elapsed)
+    return max(0, TIMER_DURATION - elapsed)
 
-def stop_timer_and_disable_form(round_name, form_id, reason):
+def stop_timer(manual=True):
+    round_name = st.session_state.active_round
     st.session_state.is_timer_running = False
     st.session_state.active_round = None
-    if form_id:
-        disable_google_form(form_id, round_name)
-    st.toast(f"{round_name} ended: {reason}")
+
+    if manual:
+        st.toast(f"{round_name} timer stopped manually")
+    else:
+        st.toast(f"{round_name} timer completed")
+
     st.rerun()
-
-# ================================================================
-# L4 SERVER MANAGEMENT
-# ================================================================
-def kill_l4_server():
-    proc = st.session_state.l4_server_process
-    if proc and proc.poll() is None:
-        try:
-            os.kill(proc.pid, signal.SIGTERM)
-        except Exception:
-            pass
-    st.session_state.l4_server_process = None
-    st.session_state.latest_l4_url = None
-
-def start_l4_server():
-    kill_l4_server()
-
-    import socket
-    port = 5001
-    while True:
-        try:
-            s = socket.socket()
-            s.bind(("127.0.0.1", port))
-            s.close()
-            break
-        except OSError:
-            port += 1
-
-    exam_server = PROJECT_ROOT / "coding_round_l4" / "exam_server.py"
-
-    proc = subprocess.Popen(
-        [sys.executable, exam_server, str(port)],
-        cwd=str(PROJECT_ROOT / "coding_round_l4"),  # 🔥 FIX
-        creationflags=subprocess.CREATE_NEW_PROCESS_GROUP
-    )
-
-    # ✅ give Flask time to boot
-    time.sleep(1.5)
-
-    st.session_state.l4_server_process = proc
-    st.session_state.latest_l4_url = f"http://localhost:{port}"
-    return st.session_state.latest_l4_url
-
 
 # ================================================================
 # 1️⃣ CREATE INTERVIEW
 # ================================================================
 st.header("1. Create New Interview")
 
-col1, col2, col3, col4 = st.columns(4)
-candidate_name = col1.text_input("Candidate Name")
-candidate_email = col2.text_input("Candidate Email")
-difficulty = col3.selectbox("Difficulty", ["easy", "medium", "hard"], index=None)
-domain = col4.selectbox("Domain", ["Python", "JavaScript"], index=None)
+c1, c2, c3, c4 = st.columns(4)
+candidate_name = c1.text_input("Candidate Name")
+candidate_email = c2.text_input("Candidate Email")
+difficulty = c3.selectbox("Difficulty", ["easy", "medium", "hard"], index=None)
+domain = c4.selectbox("Domain", ["Python", "JavaScript"], index=None)
 
-if st.button("Generate Test & Create Forms"):
+if st.button("Generate Test & Create Forms", key="create_interview"):
     if not all([candidate_name, candidate_email, difficulty, domain]):
         st.error("All fields are required")
     else:
@@ -151,7 +148,7 @@ if st.button("Generate Test & Create Forms"):
             candidate_name.strip(),
             candidate_email.strip(),
             difficulty,
-            domain
+            domain,
         )
 
         st.session_state.latest_uid = uid
@@ -161,66 +158,131 @@ if st.button("Generate Test & Create Forms"):
         st.session_state.latest_domain = domain
         st.session_state.latest_json_path = json_path
 
-        # Create Google Forms
-        form_ids = create_all_google_forms(json_path)
+        forms = create_all_google_forms(json_path)
 
-        # Start L4 server
-        l4_url = start_l4_server()
-        form_ids["L4"] = l4_url
+        # ---- Start L4 server ----
+        import socket
+        port = 5001
+        while True:
+            try:
+                s = socket.socket()
+                s.bind(("127.0.0.1", port))
+                s.close()
+                break
+            except OSError:
+                port += 1
 
-        st.session_state.latest_form_ids = form_ids
+        proc = subprocess.Popen(
+            [sys.executable, PROJECT_ROOT / "coding_round_l4" / "exam_server.py", str(port)],
+            cwd=str(PROJECT_ROOT / "coding_round_l4"),
+            creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,
+        )
+        time.sleep(1.2)
+
+        st.session_state.l4_server_process = proc
+        forms["L4"] = f"http://localhost:{port}"
+        st.session_state.latest_form_ids = forms
+
         st.success("Interview created successfully")
         st.rerun()
 
 # ================================================================
-# LINKS + TIMER
+# INTERVIEW LINKS + TIMER (SINGLE IMPLEMENTATION)
 # ================================================================
 if st.session_state.latest_form_ids:
-    st.subheader("Interview Links")
+    st.header("Interview Rounds & Timer")
 
-    for level in ["L1", "L2", "L3", "L4", "L5"]:
-        if level not in st.session_state.latest_form_ids:
+    rounds = ["L1", "L2", "L3", "L4", "L5"]
+    cols = st.columns(len(rounds))
+
+    for i, lvl in enumerate(rounds):
+        if lvl not in st.session_state.latest_form_ids:
             continue
 
-        link = st.session_state.latest_form_ids[level]
-        if level == "L4":
-            url = link
-        else:
-            url = f"https://docs.google.com/forms/d/{link}/viewform"
+        url = (
+            st.session_state.latest_form_ids[lvl]
+            if lvl == "L4"
+            else f"https://docs.google.com/forms/d/{st.session_state.latest_form_ids[lvl]}/viewform"
+        )
 
-        st.markdown(f"{level}: [Open]({url})")
+        with cols[i]:
+            st.markdown(f"### {lvl}")
+            st.markdown(f"[Open Test]({url})")
+
+            if st.session_state.is_timer_running:
+                if st.session_state.active_round == lvl:
+                    st.button("⏳ Running", key=f"running_{lvl}", disabled=True)
+                else:
+                    st.button("Start Timer", key=f"disabled_{lvl}", disabled=True)
+            else:
+                if st.button(f"Start {lvl} Timer", key=f"start_{lvl}"):
+                    start_timer(lvl)
+
+    # ---------------- TIMER DISPLAY ----------------
+    if st.session_state.is_timer_running:
+        rem = remaining_time()
+        mins, secs = divmod(int(rem), 60)
+
+        st.info(f"⏱ {st.session_state.active_round} — {mins:02d}:{secs:02d}")
+
+        if st.button("🛑 Stop Timer", key="stop_timer"):
+            stop_timer(manual=True)
+
+        if rem <= 0:
+            stop_timer(manual=False)
+        else:
+            time.sleep(1)
+            st.rerun()
 
 # ================================================================
-# 2️⃣ EVALUATE ROUND
+# 2️⃣ EVALUATE ROUND (ALWAYS AVAILABLE)
 # ================================================================
 st.divider()
 st.header("2. Evaluate Round")
 
 json_path = st.text_input(
     "Candidate JSON Path",
-    st.session_state.latest_json_path or ""
+    st.session_state.latest_json_path or "",
 )
 
-selected_round = st.selectbox("Select Round", ["L1", "L2", "L3", "L4", "L5"])
+round_sel = st.selectbox("Select Round", ["L1", "L2", "L3", "L4", "L5"])
+default_id = st.session_state.latest_form_ids.get(round_sel, "")
+form_id = st.text_input("Form ID / L4 URL", default_id)
 
-default_form = st.session_state.latest_form_ids.get(selected_round, "")
-form_id = st.text_input("Form ID / L4 URL", default_form)
+if st.button("Evaluate", key="evaluate_round"):
+    if round_sel == "L4":
+        info = {
+            "uid": st.session_state.latest_uid,
+            "name": st.session_state.latest_candidate_name,
+            "email": st.session_state.latest_candidate_email,
+        }
+        res = evaluate_l4_round(
+            str(PROJECT_ROOT / "coding_round_l4" / "l4_result.json"),
+            info,
+        )
 
-if st.button("Evaluate"):
-    if selected_round == "L4":
-        result = evaluate_l4_round("coding_round_l4/l4_result.json")
-
-        if result["status"] == "NO_SUBMISSION":
+        if res["status"] == "NO_SUBMISSION":
             st.warning("L4 not submitted yet")
         else:
-            st.metric("Score (%)", result["score_percent"])
-            st.metric("Focus Lost", result["focus_lost"])
-            st.metric("Status", result["status"])
-    else:
-        result = evaluate_round_core(form_id, json_path)
+            c1, c2, c3 = st.columns(3)
+            c1.metric("Score (%)", res["score_percent"])
+            c2.metric("Focus Lost", res["focus_lost"])
+            c3.metric("Status", res["status"])
 
-        if result["status"] == "NO_RESPONSES":
+            if res.get("spreadsheet_id"):
+                st.markdown(
+                    f"[Open Result Sheet](https://docs.google.com/spreadsheets/d/{res['spreadsheet_id']})"
+                )
+    else:
+        res = evaluate_round_core(form_id, json_path)
+        if res["status"] == "NO_RESPONSES":
             st.warning("No responses yet")
         else:
-            st.metric("Score (%)", result["score_percent"])
-            st.metric("Status", result["status"])
+            c1, c2 = st.columns(2)
+            c1.metric("Score (%)", res["score_percent"])
+            c2.metric("Status", res["status"])
+
+            if res.get("spreadsheet_id"):
+                st.markdown(
+                    f"[Open Result Sheet](https://docs.google.com/spreadsheets/d/{res['spreadsheet_id']})"
+                )

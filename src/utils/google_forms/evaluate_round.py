@@ -8,6 +8,7 @@ from src.utils.google_forms.form_api import get_forms_service
 from src.utils.google_forms.save_results_to_sheet import save_round_result
 
 
+
 # =========================================================
 # Helpers
 # =========================================================
@@ -274,22 +275,54 @@ def evaluate_round(form_id: str, json_path: str):
     print(json.dumps(result, indent=2))
 
 
-def evaluate_l4_round(result_json_path: str):
-    if not os.path.exists(result_json_path):
+def evaluate_l4_round(result_path: str, candidate_data: dict):
+    """
+    Evaluate L4 coding round from persisted JSON result
+    (Backward compatible & safe)
+    """
+
+    if not os.path.exists(result_path):
         return {"status": "NO_SUBMISSION"}
 
-    with open(result_json_path, "r", encoding="utf-8") as f:
+    with open(result_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    return {
-        "round_name": "L4",
-        "total_questions": data["total"],
-        "correct_count": data["passed"],
-        "score_percent": data["percent"],
-        "focus_lost": data["focus_lost"],
-        "status": data["status"],
-    }
+    passed = int(data.get("passed", 0))
+    total = int(data.get("total", 0))
 
+    # ✅ SAFETY: compute score if missing
+    if "score_percent" in data:
+        score_percent = float(data["score_percent"])
+    else:
+        score_percent = round((passed / total) * 100, 2) if total else 0.0
+
+    focus_lost = int(data.get("focus_lost", data.get("focus_violations", 0)))
+
+    status = data.get("status", "FAIL")
+
+    # 🔒 Enforce proctoring rule again (double safety)
+    if focus_lost > 0:
+        status = "FAIL"
+
+    spreadsheet_id = save_round_result(
+        uid=candidate_data["uid"],
+        candidate_name=candidate_data["name"],
+        email=candidate_data["email"],
+        round_name="L4",
+        total_questions=total,
+        correct_answers=passed,
+        score_percent=score_percent,
+        status=status,
+    )
+
+    return {
+        "passed": passed,
+        "total": total,
+        "score_percent": score_percent,
+        "focus_lost": focus_lost,
+        "status": status,
+        "spreadsheet_id": spreadsheet_id,
+    }
 
 
 if __name__ == "__main__":
