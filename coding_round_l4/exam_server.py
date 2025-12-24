@@ -108,7 +108,7 @@ def run_code():
 
     score_percent = round((passed / total) * 100, 2) if total else 0
 
-    # ✅ FINAL AUTHORITATIVE DECISION
+    # FINAL DECISION
     status = "PASS"
     reason = "OK"
 
@@ -122,7 +122,7 @@ def run_code():
         status = "FAIL"
         reason = "LOW_SCORE"
 
-    # ✅ Persist final result
+    # SAVE RESULT
     result_payload = {
         "submitted": True,
         "passed": passed,
