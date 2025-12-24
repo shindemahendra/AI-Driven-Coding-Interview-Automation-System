@@ -1,5 +1,5 @@
 - title: Reverse String
-  difficulty: BASIC
+  difficulty: EASY
   description: |
     Given a string, return the reversed string.
   public_tests:
@@ -36,7 +36,7 @@
       expected: "ivaR"
 
 - title: Word Count
-  difficulty: BASIC
+  difficulty: EASY
   description: |
     Count how many words are in a sentence.
     Words are separated by spaces.
@@ -74,7 +74,7 @@
       expected: 2
 
 - title: Remove Vowels
-  difficulty: BASIC
+  difficulty: EASY
   description: |
     Remove all vowels (a, e, i, o, u) from the given string.
     Case-insensitive.
@@ -112,7 +112,7 @@
       expected: "tst cs"
 
 - title: Sum of List
-  difficulty: BASIC
+  difficulty: EASY
   description: |
     Return the sum of all numbers in the list.
   public_tests:
@@ -149,7 +149,7 @@
       expected: 15
 
 - title: Find Maximum
-  difficulty: BASIC
+  difficulty: EASY
   description: |
     Return the maximum number in the list.
   public_tests:
