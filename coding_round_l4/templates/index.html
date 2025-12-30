@@ -10,55 +10,76 @@
 <header class="top-bar">
     <div class="brand">Coding Round</div>
     <div class="top-right">
+        <select id="lang-select">
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+        </select>
         <div id="timer-display">20:00</div>
         <div id="score-display">Score: 0/0</div>
-        <div id="violation-display" title="Tab switch / focus violations">Focus OK</div>
+        <div id="violation-display">Focus OK</div>
     </div>
 </header>
 
 <main class="container">
     <section class="left-panel">
         <h2 id="question-title">{{ question.title }}</h2>
+
         <p id="question-desc">
-            {{ question.description | e | replace('\n', '<br>') | safe }}
+            {{ question.description | e | replace('\n','<br>') | safe }}
         </p>
 
         <h3>Sample Tests</h3>
         <div id="sample-tests"></div>
 
         <div class="note">
-            <strong>Note:</strong> "Run" uses only sample (public) tests.
-            "Submit" runs all tests (public + hidden) and finalises your attempt.
+            <strong>Note:</strong><br>
+            • <b>Run</b> → Executes public tests only<br>
+            • <b>Submit</b> → Executes all tests (final evaluation)
         </div>
     </section>
 
     <section class="right-panel">
-        <label class="editor-label">Write your solution here (function: <code>solve(...)</code>)</label>
-        <textarea id="editor" spellcheck="false">def solve(*args):
-    """
-    Implement your solution here.
-    'args' corresponds to the values from the test input.
-    Example:
-        For input: ["hello"]  → args = ("hello",)
-        For input: [[1,2,3]] → args = ([1,2,3],)
-    Return the result that will be compared to 'expected'.
-    """
-    # TODO: Write your code
-    pass
-        </textarea>
+        <label class="editor-label">
+            Write your solution (implement <code>solve</code>)
+        </label>
+
+        <!-- ✅ STARTER CODE (NO *args ANYWHERE) -->
+        <textarea id="editor" spellcheck="false">{{ starters["python"] }}</textarea>
 
         <div class="button-row">
-            <button id="run-btn">Run (Public Tests)</button>
-            <button id="submit-btn">Submit (Final)</button>
+            <button id="run-btn">Run</button>
+            <button id="submit-btn">Submit</button>
         </div>
 
-        <div id="output-box">⚙ Ready.</div>
+        <div id="output-box">Ready.</div>
     </section>
 </main>
 
+<!-- ✅ DATA FROM BACKEND -->
 <script>
     const QUESTION = {{ question | tojson }};
+    const STARTERS = {
+        python: {{ starters["python"] | tojson }},
+        javascript: {{ starters["javascript"] | tojson }},
+        java: {{ starters["java"] | tojson }}
+    };
 </script>
+
 <script src="/static/script.js"></script>
+
+<script>
+    // -------------------------------------------------
+    // LANGUAGE SWITCH HANDLER (CRITICAL FIX)
+    // -------------------------------------------------
+    const langSelect = document.getElementById("lang-select");
+    const editor = document.getElementById("editor");
+
+    langSelect.addEventListener("change", () => {
+        const lang = langSelect.value;
+        editor.value = STARTERS[lang];
+    });
+</script>
+
 </body>
 </html>

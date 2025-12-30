@@ -1,148 +1,186 @@
 from flask import Flask, render_template, request, jsonify
-import yaml
-import subprocess
-import tempfile
-import os
-import random
-import sys
-import json
+import yaml, subprocess, os, random, sys, json
 from datetime import datetime
 
 # -------------------------------------------------
-# FORCE CORRECT WORKING DIRECTORY
+# PORT
 # -------------------------------------------------
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-os.chdir(BASE_DIR)
+PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 5000
+
+# -------------------------------------------------
+# BASE
+# -------------------------------------------------
+BASE = os.path.dirname(os.path.abspath(__file__))
+os.chdir(BASE)
 
 app = Flask(__name__)
 
-# -------------------------------------------------
-# PORT HANDLING
-# -------------------------------------------------
-PORT = 5000
-if len(sys.argv) > 1:
-    try:
-        PORT = int(sys.argv[1])
-    except Exception:
-        pass
+RESULT_FILE = os.path.join(BASE, "l4_result.json")
 
 # -------------------------------------------------
-# RESULT STORAGE
-# -------------------------------------------------
-RESULT_FILE = os.path.join(BASE_DIR, "l4_result.json")
-
-# -------------------------------------------------
-# Load questions.yaml
+# LOAD QUESTIONS
 # -------------------------------------------------
 with open("questions.yaml", "r", encoding="utf-8") as f:
     QUESTIONS = yaml.safe_load(f)
 
 if not QUESTIONS:
-    raise RuntimeError("questions.yaml is empty or invalid")
+    raise RuntimeError("questions.yaml empty")
 
 ASSIGNED_QUESTION = random.choice(QUESTIONS)
 
+# -------------------------------------------------
+# PARAM INFERENCE (CRITICAL)
+# -------------------------------------------------
+def infer_params(sample_input):
+    names = []
+    for i, v in enumerate(sample_input):
+        if isinstance(v, list):
+            names.append(f"arr{i}")
+        elif isinstance(v, str):
+            names.append(f"s{i}")
+        else:
+            names.append(f"x{i}")
+    return names
 
+# -------------------------------------------------
+# STARTER CODE (NO *ARGS)
+# -------------------------------------------------
+def generate_starter_code(question, lang):
+    sample_input = question["public_tests"][0]["input"]
+    params = infer_params(sample_input)
+    args = ", ".join(params)
+
+    if lang == "python":
+        return f"""def solve({args}):
+    # Write your solution here
+    pass
+"""
+
+    if lang == "javascript":
+        return f"""function solve({args}) {{
+    // Write your solution here
+}}
+"""
+
+    if lang == "java":
+        java_args = []
+        for p in params:
+            if p.startswith("arr"):
+                java_args.append(f"int[] {p}")
+            else:
+                java_args.append(f"String {p}")
+
+        return f"""class Solution {{
+    public static Object solve({", ".join(java_args)}) {{
+        // Write your solution here
+        return null;
+    }}
+}}
+"""
+
+# -------------------------------------------------
+# EXECUTORS (UNCHANGED)
+# -------------------------------------------------
+def run_python(code, args):
+    p = subprocess.Popen(
+        ["python3", "executors/run_python.py"],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+    )
+    out, err = p.communicate(json.dumps({"code": code, "args": args}))
+    return json.loads(out)
+
+def run_js(code, args):
+    p = subprocess.Popen(
+        ["node", "executors/run_js.js"],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+    )
+    out, err = p.communicate(json.dumps({"code": code, "args": args}))
+    return json.loads(out)
+
+def run_java(code, args):
+    p = subprocess.Popen(
+        ["bash", "executors/run_java.sh"],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+    )
+    out, err = p.communicate(json.dumps({"code": code, "args": args}))
+    return json.loads(out)
+
+LANG_EXEC = {
+    "python": run_python,
+    "javascript": run_js,
+    "java": run_java
+}
+
+# -------------------------------------------------
+# ROUTES
+# -------------------------------------------------
 @app.route("/")
 def index():
-    return render_template("index.html", question=ASSIGNED_QUESTION)
+    starters = {
+        "python": generate_starter_code(ASSIGNED_QUESTION, "python"),
+        "javascript": generate_starter_code(ASSIGNED_QUESTION, "javascript"),
+        "java": generate_starter_code(ASSIGNED_QUESTION, "java"),
+    }
 
+    return render_template(
+        "index.html",
+        question=ASSIGNED_QUESTION,
+        starters=starters
+    )
 
 @app.route("/run_code", methods=["POST"])
 def run_code():
-    data = request.get_json(force=True) or {}
+    data = request.get_json(force=True)
 
-    code = data.get("code", "")
+    code = data["code"]
+    lang = data["language"]
     is_submit = bool(data.get("submit", False))
     focus_lost = int(data.get("focus_lost", 0))
 
-    public_tests = ASSIGNED_QUESTION.get("public_tests", [])
-    hidden_tests = ASSIGNED_QUESTION.get("hidden_tests", [])
+    tests = ASSIGNED_QUESTION["public_tests"]
+    if is_submit:
+        tests += ASSIGNED_QUESTION["hidden_tests"]
 
-    # 🚨 If not submit → no evaluation allowed
-    if not is_submit:
-        return jsonify({
-            "finished": False,
-            "output": "Public tests executed. Final submission not done.",
-        })
-
-    tests = public_tests + hidden_tests
+    executor = LANG_EXEC[lang]
     passed = 0
+
+    for t in tests:
+        res = executor(code, t["input"])
+        if str(res.get("stdout", "")).strip() == str(t["expected"]):
+            passed += 1
+
     total = len(tests)
-    details = []
+    score = round((passed / total) * 100, 2)
 
-    for i, t in enumerate(tests, 1):
-        temp = None
-        try:
-            with tempfile.NamedTemporaryFile(mode="w", suffix=".py", delete=False) as f:
-                temp = f.name
-                f.write(code)
-                f.write("\n\ndef _run():\n")
-                f.write(f"    args = {repr(t['input'])}\n")
-                f.write("    r = solve(*args) if isinstance(args, (list, tuple)) else solve(args)\n")
-                f.write("    print(r)\n\n")
-                f.write("if __name__ == '__main__': _run()\n")
-
-            proc = subprocess.run(
-                [sys.executable, temp],
-                capture_output=True,
-                text=True,
-                timeout=5
-            )
-
-            output = proc.stdout.strip().splitlines()[-1] if proc.returncode == 0 else ""
-            ok = str(output) == str(t["expected"])
-            if ok:
-                passed += 1
-
-            details.append({
-                "test": i,
-                "passed": ok,
-                "expected": t["expected"],
-                "output": output
-            })
-
-        finally:
-            if temp and os.path.exists(temp):
-                os.remove(temp)
-
-    score_percent = round((passed / total) * 100, 2) if total else 0
-
-    # FINAL DECISION
-    status = "PASS"
-    reason = "OK"
-
-    if not is_submit:
-        status = "FAIL"
-        reason = "NOT_SUBMITTED"
-    elif focus_lost > 0:
-        status = "FAIL"
-        reason = "FOCUS_LOST"
-    elif score_percent < 75:
-        status = "FAIL"
-        reason = "LOW_SCORE"
-
-    # SAVE RESULT
-    result_payload = {
-        "submitted": True,
-        "passed": passed,
-        "total": total,
-        "score_percent": score_percent,
-        "focus_lost": focus_lost,
-        "status": status,
-        "reason": reason,
-        "details": details,
-    }
-
-    with open("l4_result.json", "w", encoding="utf-8") as f:
-        json.dump(result_payload, f, indent=2)
+    if is_submit:
+        with open(RESULT_FILE, "w") as f:
+            json.dump({
+                "score_percent": score,
+                "passed": passed,
+                "total": total,
+                "language": lang,
+                "focus_lost": focus_lost,
+                "timestamp": datetime.utcnow().isoformat()
+            }, f, indent=2)
 
     return jsonify({
-        "finished": True,
-        "output": f"Final Result → {status} ({score_percent}%)",
-        **result_payload
+        "passed": passed,
+        "total": total,
+        "finished": is_submit
     })
 
+# -------------------------------------------------
+# MAIN
+# -------------------------------------------------
 if __name__ == "__main__":
-    print(f"L4 server running at http://localhost:{PORT}")
+    print(f"🚀 L4 server running at http://localhost:{PORT}")
     app.run(host="0.0.0.0", port=PORT, debug=False)

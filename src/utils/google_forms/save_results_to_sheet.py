@@ -1,44 +1,33 @@
-# src/utils/google_forms/save_results_to_sheet.py
-
 from datetime import datetime
 from src.utils.google_forms.form_api import get_sheets_service, get_drive_service
 
-# 👉 Your fixed folder ID where all result sheets will live
 FOLDER_ID = "1pcXw5Rn-2z3YBULkkbTmiPo91P9xxjRm"
+ROUND_ORDER = ["L1", "L2", "L3", "L4", "L5"]
 
 
 def _get_or_create_result_sheet(uid: str) -> str:
-    """
-    Find or create ONE results sheet per candidate.
-    Sheet name: <uid>_results
-    Returns: spreadsheetId
-    """
     drive = get_drive_service()
     sheets = get_sheets_service()
 
-    file_name = f"{uid}_results"
+    name = f"{uid}_results"
 
     query = (
-        f"name = '{file_name}' and "
+        f"name = '{name}' and "
         f"'{FOLDER_ID}' in parents and "
-        "mimeType = 'application/vnd.google-apps.spreadsheet' and "
-        "trashed = false"
+        "mimeType = 'application/vnd.google-apps.spreadsheet' and trashed = false"
     )
 
-    resp = drive.files().list(
-        q=query,
-        spaces="drive",
-        fields="files(id, name)",
-        pageSize=10,
-    ).execute()
-
+    resp = drive.files().list(q=query, fields="files(id)").execute()
     files = resp.get("files", [])
+
     if files:
         return files[0]["id"]
 
-    body = {"properties": {"title": file_name}}
-    sheet_resp = sheets.spreadsheets().create(body=body).execute()
-    spreadsheet_id = sheet_resp["spreadsheetId"]
+    sheet = sheets.spreadsheets().create(
+        body={"properties": {"title": name}}
+    ).execute()
+
+    spreadsheet_id = sheet["spreadsheetId"]
 
     drive.files().update(
         fileId=spreadsheet_id,
@@ -46,7 +35,32 @@ def _get_or_create_result_sheet(uid: str) -> str:
         fields="id, parents",
     ).execute()
 
+    _initialize_sheet(sheets, spreadsheet_id)
     return spreadsheet_id
+
+
+def _initialize_sheet(sheets, spreadsheet_id):
+    header = [[
+        "UID", "Candidate Name", "Email", "Round",
+        "Total Questions", "Correct Answers", "Score %",
+        "Focus Violations", "Status", "Last Updated"
+    ]]
+
+    sheets.spreadsheets().values().update(
+        spreadsheetId=spreadsheet_id,
+        range="Sheet1!A1:J1",
+        valueInputOption="RAW",
+        body={"values": header},
+    ).execute()
+
+    rows = [["", "", "", rnd, "", "", "", "", "", ""] for rnd in ROUND_ORDER]
+
+    sheets.spreadsheets().values().update(
+        spreadsheetId=spreadsheet_id,
+        range="Sheet1!A2:J6",
+        valueInputOption="RAW",
+        body={"values": rows},
+    ).execute()
 
 
 def save_round_result(
@@ -58,22 +72,20 @@ def save_round_result(
     correct_answers: int,
     score_percent: float,
     status: str,
-    focus_violations: int = 0,  # ✅ NEW (backward compatible)
+    focus_violations: int = 0,
 ) -> str:
     """
-    Append one row for this round into the candidate's results sheet.
-
-    Columns:
-    UID | Candidate Name | Email | Round | Total Qs | Correct | Score % | Focus Violations | Status | Timestamp
+    Update ONE fixed row per round (L1–L5).
+    Idempotent. Never appends. Never deletes.
     """
+
     sheets = get_sheets_service()
     spreadsheet_id = _get_or_create_result_sheet(uid)
 
     sheet_name = "Sheet1"
-    header_range = f"{sheet_name}!A1:J1"
-    data_range = f"{sheet_name}!A1"
 
-    header = [
+    # Header (safe overwrite)
+    header = [[
         "UID",
         "Candidate Name",
         "Email",
@@ -81,26 +93,32 @@ def save_round_result(
         "Total Questions",
         "Correct Answers",
         "Score %",
-        "Focus Violations",   # ✅ NEW
+        "Focus Violations",
         "Status",
-        "Timestamp",
-    ]
+        "Last Updated",
+    ]]
 
-    header_resp = sheets.spreadsheets().values().get(
+    sheets.spreadsheets().values().update(
         spreadsheetId=spreadsheet_id,
-        range=header_range,
+        range=f"{sheet_name}!A1:J1",
+        valueInputOption="RAW",
+        body={"values": header},
     ).execute()
 
-    if "values" not in header_resp:
-        sheets.spreadsheets().values().update(
-            spreadsheetId=spreadsheet_id,
-            range=header_range,
-            valueInputOption="RAW",
-            body={"values": [header]},
-        ).execute()
+    ROUND_TO_ROW = {
+        "L1": 2,
+        "L2": 3,
+        "L3": 4,
+        "L4": 5,
+        "L5": 6,
+    }
 
-    timestamp = datetime.now().isoformat(timespec="seconds")
-    row = [
+    if round_name not in ROUND_TO_ROW:
+        return spreadsheet_id
+
+    row_num = ROUND_TO_ROW[round_name]
+
+    values = [[
         uid,
         candidate_name,
         email,
@@ -108,17 +126,16 @@ def save_round_result(
         total_questions,
         correct_answers,
         score_percent,
-        focus_violations,     # ✅ NEW
+        focus_violations,
         status,
-        timestamp,
-    ]
+        datetime.now().isoformat(timespec="seconds"),
+    ]]
 
-    sheets.spreadsheets().values().append(
+    sheets.spreadsheets().values().update(
         spreadsheetId=spreadsheet_id,
-        range=data_range,
+        range=f"{sheet_name}!A{row_num}:J{row_num}",
         valueInputOption="USER_ENTERED",
-        insertDataOption="INSERT_ROWS",
-        body={"values": [row]},
+        body={"values": values},
     ).execute()
 
     return spreadsheet_id

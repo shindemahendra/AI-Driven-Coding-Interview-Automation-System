@@ -1,7 +1,14 @@
-- title: Reverse String
+- id: 1
+  title: Reverse String
   difficulty: EASY
   description: |
     Given a string, return the reversed string.
+  function:
+    python: "def solve(s):"
+    javascript: "function solve(s) {"
+    java:
+      class: "Solution"
+      method: "public static String solve(String s)"
   public_tests:
     - input: ["hello"]
       expected: "olleh"
@@ -35,11 +42,18 @@
     - input: ["Ravi"]
       expected: "ivaR"
 
-- title: Word Count
+- id: 2
+  title: Word Count
   difficulty: EASY
   description: |
     Count how many words are in a sentence.
     Words are separated by spaces.
+  function:
+    python: "def solve(s):"
+    javascript: "function solve(s) {"
+    java:
+      class: "Solution"
+      method: "public static int solve(String s)"
   public_tests:
     - input: ["Hello world"]
       expected: 2
@@ -73,11 +87,18 @@
     - input: ["Hello   world"]
       expected: 2
 
-- title: Remove Vowels
+- id: 3
+  title: Remove Vowels
   difficulty: EASY
   description: |
     Remove all vowels (a, e, i, o, u) from the given string.
     Case-insensitive.
+  function:
+    python: "def solve(s):"
+    javascript: "function solve(s) {"
+    java:
+      class: "Solution"
+      method: "public static String solve(String s)"
   public_tests:
     - input: ["hello"]
       expected: "hll"
@@ -111,10 +132,17 @@
     - input: ["test case"]
       expected: "tst cs"
 
-- title: Sum of List
+- id: 4
+  title: Sum of List
   difficulty: EASY
   description: |
     Return the sum of all numbers in the list.
+  function:
+    python: "def solve(nums):"
+    javascript: "function solve(nums) {"
+    java:
+      class: "Solution"
+      method: "public static int solve(int[] nums)"
   public_tests:
     - input: [[1,2,3]]
       expected: 6
@@ -148,10 +176,17 @@
     - input: [[8,7]]
       expected: 15
 
-- title: Find Maximum
+- id: 5
+  title: Find Maximum
   difficulty: EASY
   description: |
     Return the maximum number in the list.
+  function:
+    python: "def solve(nums):"
+    javascript: "function solve(nums) {"
+    java:
+      class: "Solution"
+      method: "public static int solve(int[] nums)"
   public_tests:
     - input: [[1,2,3]]
       expected: 3
@@ -184,13 +219,19 @@
       expected: 6
     - input: [[5,1,3]]
       expected: 5
-
-- title: Two Sum
+- id: 6
+  title: Two Sum
   difficulty: MEDIUM
   description: |
-    Given a list nums and an integer target, return indices of
-    two numbers such that they add up to target.
-    Always return the first valid pair (smallest left index).
+    Given a list of integers nums and an integer target, return the indices
+    of two numbers such that they add up to target.
+    Always return the first valid pair with the smallest left index.
+  function:
+    python: "def solve(nums, target):"
+    javascript: "function solve(nums, target) {"
+    java:
+      class: "Solution"
+      method: "public static int[] solve(int[] nums, int target)"
   public_tests:
     - input: [[2,7,11,15], 9]
       expected: [0,1]
@@ -224,11 +265,18 @@
     - input: [[6,1,3,4,2], 5]
       expected: [3,4]
 
-- title: Valid Parentheses
+- id: 7
+  title: Valid Parentheses
   difficulty: MEDIUM
   description: |
-    Given a string containing characters '()[]{}',
-    return true if the brackets are valid and balanced, else false.
+    Given a string consisting of the characters '()[]{}',
+    return true if the brackets are correctly balanced.
+  function:
+    python: "def solve(s):"
+    javascript: "function solve(s) {"
+    java:
+      class: "Solution"
+      method: "public static boolean solve(String s)"
   public_tests:
     - input: ["()"]
       expected: true
@@ -262,11 +310,17 @@
     - input: [""]
       expected: true
 
-- title: Maximum Subarray
+- id: 8
+  title: Maximum Subarray
   difficulty: MEDIUM
   description: |
-    Given an integer array nums, find the contiguous subarray
-    (containing at least one number) which has the largest sum.
+    Find the contiguous subarray within nums which has the largest sum.
+  function:
+    python: "def solve(nums):"
+    javascript: "function solve(nums) {"
+    java:
+      class: "Solution"
+      method: "public static int solve(int[] nums)"
   public_tests:
     - input: [[-2,1,-3,4,-1,2,1,-5,4]]
       expected: 6
@@ -300,11 +354,17 @@
     - input: [[-5]]
       expected: -5
 
-- title: Merge Intervals
+- id: 9
+  title: Merge Intervals
   difficulty: HARD
   description: |
-    Given a list of intervals where each interval is [start, end],
-    merge all overlapping intervals and return the result.
+    Given a list of intervals [start, end], merge all overlapping intervals.
+  function:
+    python: "def solve(intervals):"
+    javascript: "function solve(intervals) {"
+    java:
+      class: "Solution"
+      method: "public static int[][] solve(int[][] intervals)"
   public_tests:
     - input: [[[1,3],[2,6],[8,10],[15,18]]]
       expected: [[1,6],[8,10],[15,18]]
@@ -338,11 +398,18 @@
     - input: [[[1,5],[2,3],[4,8]]]
       expected: [[1,8]]
 
-- title: Longest Common Prefix
+- id: 10
+  title: Longest Common Prefix
   difficulty: MEDIUM
   description: |
-    Given an array of strings, return the longest common prefix string
-    amongst them. If there is no common prefix, return an empty string.
+    Given an array of strings, return the longest common prefix
+    among them. Return "" if none exists.
+  function:
+    python: "def solve(arr):"
+    javascript: "function solve(arr) {"
+    java:
+      class: "Solution"
+      method: "public static String solve(String[] arr)"
   public_tests:
     - input: [["flower","flow","flight"]]
       expected: "fl"
@@ -375,3 +442,4 @@
       expected: "xxy"
     - input: [["alpha","alph","alp"]]
       expected: "alp"
+
