@@ -34,8 +34,9 @@
 
         <div class="note">
             <strong>Note:</strong><br>
-            • <b>Run</b> → Executes public tests only<br>
-            • <b>Submit</b> → Executes all tests (final evaluation)
+            • <b>Run</b> → Executes public test cases<br>
+            • <b>Run Hidden Tests</b> → Executes hidden tests (practice, no submit)<br>
+            • <b>Submit Test</b> → Final submission (locks the test)
         </div>
     </section>
 
@@ -49,7 +50,12 @@
 
         <div class="button-row">
             <button id="run-btn">Run</button>
-            <button id="submit-btn">Submit</button>
+
+            <!-- ✅ NEW BUTTON -->
+            <button id="run-hidden-btn">Run Hidden Tests</button>
+
+            <!-- ✅ RENAMED -->
+            <button id="submit-btn">Submit Test</button>
         </div>
 
         <div id="output-box">Ready.</div>
@@ -70,7 +76,7 @@
 
 <script>
     // -------------------------------------------------
-    // LANGUAGE SWITCH HANDLER (CRITICAL FIX)
+    // LANGUAGE SWITCH HANDLER (SAFE & UNCHANGED)
     // -------------------------------------------------
     const langSelect = document.getElementById("lang-select");
     const editor = document.getElementById("editor");
