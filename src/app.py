@@ -6,6 +6,22 @@ from pathlib import Path
 
 import streamlit as st
 import pandas as pd
+import socket
+
+def get_vm_ip():
+    """
+    Reliable way to get VM IP (LAN/VPN safe).
+    Does NOT use localhost.
+    """
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        # Doesn't need to be reachable
+        s.connect(("8.8.8.8", 80))
+        ip = s.getsockname()[0]
+    finally:
+        s.close()
+    return ip
+
 
 # ================================================================
 # PATH FIX
@@ -215,8 +231,8 @@ if st.button("🚀 Generate Tests for All Candidates"):
         st.session_state.l4_process = proc
 
         time.sleep(1)
-        VM_IP = os.environ.get("VM_IP", "localhost")
-        forms["L4"] = f"http://{VM_IP}:{port}"
+        vm_ip = get_vm_ip()
+        forms["L4"] = f"http://{vm_ip}:{port}"
 
         cand["forms"] = forms
         cand["json_path"] = json_path
