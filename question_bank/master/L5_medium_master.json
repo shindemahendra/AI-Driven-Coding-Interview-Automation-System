@@ -1,1202 +1,902 @@
 [
-    {
-        "question": "How do you handle stressful situations?",
-        "options": [
-            "Avoid them",
-            "Panic and react",
-            "Take a deep breath and prioritize",
-            "Blame others"
-        ],
-        "correct_answer": "Take a deep breath and prioritize",
-        "topic": "Stress Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your preferred communication style?",
-        "options": [
-            "Aggressive",
-            "Passive",
-            "Assertive",
-            "Avoidant"
-        ],
-        "correct_answer": "Assertive",
-        "topic": "Communication",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle feedback?",
-        "options": [
-            "Get defensive",
-            "Ignore it",
-            "Reflect and learn",
-            "Reject it outright"
-        ],
-        "correct_answer": "Reflect and learn",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you approach problem-solving?",
-        "options": [
-            "Avoid problems",
-            "Blame someone else",
-            "Analyze and strategize",
-            "Ignore the problem"
-        ],
-        "correct_answer": "Analyze and strategize",
-        "topic": "Problem Solving",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you motivate a team?",
-        "options": [
-            "Threaten them",
-            "Offer incentives and recognition",
-            "Ignore their needs",
-            "Micromanage them"
-        ],
-        "correct_answer": "Offer incentives and recognition",
-        "topic": "Leadership",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle conflict with a colleague?",
-        "options": [
-            "Avoid them",
-            "Become aggressive",
-            "Find a compromise",
-            "Gossip about them"
-        ],
-        "correct_answer": "Find a compromise",
-        "topic": "Conflict Resolution",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your approach to time management?",
-        "options": [
-            "Procrastinate",
-            "Prioritize and schedule",
-            "Do whatever feels urgent",
-            "Forget deadlines"
-        ],
-        "correct_answer": "Prioritize and schedule",
-        "topic": "Time Management",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle a tight deadline?",
-        "options": [
-            "Panic and give up",
-            "Work efficiently and ask for help",
-            "Ignore the deadline",
-            "Blame others"
-        ],
-        "correct_answer": "Work efficiently and ask for help",
-        "topic": "Stress Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you deal with ambiguity?",
-        "options": [
-            "Become paralyzed",
-            "Seek clarification and adapt",
-            "Ignore the ambiguity",
-            "Complain about it"
-        ],
-        "correct_answer": "Seek clarification and adapt",
-        "topic": "Adaptability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you react to change?",
-        "options": [
-            "Resist the change",
-            "Embrace the change",
-            "Complain about the change",
-            "Ignore the change"
-        ],
-        "correct_answer": "Embrace the change",
-        "topic": "Adaptability",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How important is teamwork to you?",
-        "options": [
-            "Unimportant",
-            "Somewhat important",
-            "Very important",
-            "Irrelevant"
-        ],
-        "correct_answer": "Very important",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle a difficult client?",
-        "options": [
-            "Argue with them",
-            "Ignore them",
-            "Listen and find a solution",
-            "Become defensive"
-        ],
-        "correct_answer": "Listen and find a solution",
-        "topic": "Customer Service",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you show initiative?",
-        "options": [
-            "Wait for instructions",
-            "Volunteer for tasks",
-            "Avoid responsibility",
-            "Do the bare minimum"
-        ],
-        "correct_answer": "Volunteer for tasks",
-        "topic": "Initiative",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your leadership style?",
-        "options": [
-            "Autocratic",
-            "Democratic",
-            "Laissez-faire",
-            "Dictatorial"
-        ],
-        "correct_answer": "Democratic",
-        "topic": "Leadership",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you build rapport with others?",
-        "options": [
-            "Remain aloof",
-            "Show genuine interest",
-            "Be judgmental",
-            "Gossip"
-        ],
-        "correct_answer": "Show genuine interest",
-        "topic": "Interpersonal Skills",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What does accountability mean to you?",
-        "options": [
-            "Blaming others",
-            "Taking responsibility",
-            "Avoiding mistakes",
-            "Ignoring errors"
-        ],
-        "correct_answer": "Taking responsibility",
-        "topic": "Accountability",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle failure?",
-        "options": [
-            "Give up",
-            "Learn from it",
-            "Blame someone else",
-            "Ignore it"
-        ],
-        "correct_answer": "Learn from it",
-        "topic": "Resilience",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your conflict resolution style?",
-        "options": [
-            "Avoiding",
-            "Accommodating",
-            "Compromising",
-            "Competing"
-        ],
-        "correct_answer": "Compromising",
-        "topic": "Conflict Resolution",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you stay organized?",
-        "options": [
-            "Using a system and tools",
-            "Randomly",
-            "Disorganized",
-            "Ignoring organization"
-        ],
-        "correct_answer": "Using a system and tools",
-        "topic": "Organization",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you contribute to a positive work environment?",
-        "options": [
-            "By complaining",
-            "By being supportive",
-            "By being negative",
-            "By being indifferent"
-        ],
-        "correct_answer": "By being supportive",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle tight deadlines?",
-        "options": [
-            "Panic and rush",
-            "Prioritize and plan",
-            "Ask for extensions",
-            "Ignore the deadline"
-        ],
-        "correct_answer": "Prioritize and plan",
-        "topic": "Time Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your approach to teamwork?",
-        "options": [
-            "Work independently",
-            "Contribute actively",
-            "Avoid collaboration",
-            "Delegate everything"
-        ],
-        "correct_answer": "Contribute actively",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you react to constructive criticism?",
-        "options": [
-            "Become defensive",
-            "Ignore the feedback",
-            "Analyze and learn",
-            "Get angry"
-        ],
-        "correct_answer": "Analyze and learn",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you resolve conflicts with coworkers?",
-        "options": [
-            "Avoid confrontation",
-            "Seek compromise",
-            "Escalate immediately",
-            "Become aggressive"
-        ],
-        "correct_answer": "Seek compromise",
-        "topic": "Conflict Resolution",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What motivates you in a work environment?",
-        "options": [
-            "High salary only",
-            "Recognition and growth",
-            "Easy tasks",
-            "Minimal responsibility"
-        ],
-        "correct_answer": "Recognition and growth",
-        "topic": "Motivation",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle a stressful situation?",
-        "options": [
-            "Become overwhelmed",
-            "Take a break",
-            "Blame others",
-            "Stay calm and focused"
-        ],
-        "correct_answer": "Stay calm and focused",
-        "topic": "Stress Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you approach problem-solving?",
-        "options": [
-            "Give up easily",
-            "Analyze and strategize",
-            "Ignore the problem",
-            "Ask others to solve it"
-        ],
-        "correct_answer": "Analyze and strategize",
-        "topic": "Problem Solving",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your communication style?",
-        "options": [
-            "Aggressive",
-            "Passive",
-            "Assertive",
-            "Avoidant"
-        ],
-        "correct_answer": "Assertive",
-        "topic": "Communication",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you prioritize tasks?",
-        "options": [
-            "Randomly",
-            "Based on importance",
-            "Based on ease",
-            "Ignore priorities"
-        ],
-        "correct_answer": "Based on importance",
-        "topic": "Prioritization",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you adapt to change?",
-        "options": [
-            "Resist change",
-            "Embrace change",
-            "Ignore change",
-            "Complain about change"
-        ],
-        "correct_answer": "Embrace change",
-        "topic": "Adaptability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What are your strengths in teamwork?",
-        "options": [
-            "Dominating discussions",
-            "Active listening",
-            "Avoiding interaction",
-            "Ignoring others ideas"
-        ],
-        "correct_answer": "Active listening",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle failure?",
-        "options": [
-            "Give up completely",
-            "Learn from mistakes",
-            "Blame others",
-            "Ignore the failure"
-        ],
-        "correct_answer": "Learn from mistakes",
-        "topic": "Resilience",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you give feedback to colleagues?",
-        "options": [
-            "Critically and harshly",
-            "Avoid giving feedback",
-            "Constructively and respectfully",
-            "Give only positive feedback"
-        ],
-        "correct_answer": "Constructively and respectfully",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you maintain a positive attitude?",
-        "options": [
-            "By complaining constantly",
-            "By focusing on the negative",
-            "By focusing on solutions",
-            "By ignoring problems"
-        ],
-        "correct_answer": "By focusing on solutions",
-        "topic": "Positive Attitude",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you demonstrate leadership skills?",
-        "options": [
-            "By micromanaging others",
-            "By empowering others",
-            "By avoiding responsibility",
-            "By taking credit for others work"
-        ],
-        "correct_answer": "By empowering others",
-        "topic": "Leadership",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your approach to learning new skills?",
-        "options": [
-            "Resist learning",
-            "Learn independently",
-            "Rely solely on others",
-            "Avoid challenging tasks"
-        ],
-        "correct_answer": "Learn independently",
-        "topic": "Learning Agility",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you ensure accuracy in your work?",
-        "options": [
-            "By rushing through tasks",
-            "By double-checking carefully",
-            "By ignoring errors",
-            "By assuming accuracy"
-        ],
-        "correct_answer": "By double-checking carefully",
-        "topic": "Attention to Detail",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle ambiguity in a task?",
-        "options": [
-            "Avoid the task",
-            "Seek clarification",
-            "Make assumptions blindly",
-            "Procrastinate indefinitely"
-        ],
-        "correct_answer": "Seek clarification",
-        "topic": "Adaptability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How important is ethical behaviour to you?",
-        "options": [
-            "Not important at all",
-            "Somewhat important",
-            "Extremely important",
-            "Depends on the situation"
-        ],
-        "correct_answer": "Extremely important",
-        "topic": "Ethics",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle working with difficult people?",
-        "options": [
-            "Avoid them entirely",
-            "Try to understand their perspective",
-            "Become equally difficult",
-            "Complain about them to others"
-        ],
-        "correct_answer": "Try to understand their perspective",
-        "topic": "Interpersonal Skills",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle tight deadlines?",
-        "options": [
-            "Panic and rush",
-            "Prioritize and focus",
-            "Ask for extensions",
-            "Delegate everything"
-        ],
-        "correct_answer": "Prioritize and focus",
-        "topic": "Time Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your preferred communication style?",
-        "options": [
-            "Indirect and subtle",
-            "Direct and honest",
-            "Aggressive and demanding",
-            "Passive and avoiding"
-        ],
-        "correct_answer": "Direct and honest",
-        "topic": "Communication",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you react to constructive criticism?",
-        "options": [
-            "Get defensive and argue",
-            "Become withdrawn and silent",
-            "Accept it and learn",
-            "Ignore it completely"
-        ],
-        "correct_answer": "Accept it and learn",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What motivates you most at work?",
-        "options": [
-            "High salary",
-            "Recognition and praise",
-            "Challenging projects",
-            "Easy workload"
-        ],
-        "correct_answer": "Challenging projects",
-        "topic": "Motivation",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle conflict with a colleague?",
-        "options": [
-            "Avoid them completely",
-            "Gossip about them",
-            "Address the issue directly",
-            "Escalate to management immediately"
-        ],
-        "correct_answer": "Address the issue directly",
-        "topic": "Conflict Resolution",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle setbacks?",
-        "options": [
-            "Give up easily",
-            "Blame others",
-            "Learn from mistakes",
-            "Ignore the problem"
-        ],
-        "correct_answer": "Learn from mistakes",
-        "topic": "Resilience",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you foster teamwork?",
-        "options": [
-            "Micromanage everyone",
-            "Work independently",
-            "Collaborate and support",
-            "Compete with team members"
-        ],
-        "correct_answer": "Collaborate and support",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How important is work-life balance to you?",
-        "options": [
-            "Not important at all",
-            "Somewhat important",
-            "Extremely important",
-            "Irrelevant to success"
-        ],
-        "correct_answer": "Extremely important",
-        "topic": "Work-Life Balance",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your approach to problem-solving?",
-        "options": [
-            "Avoid difficult problems",
-            "Guess the solution",
-            "Analyze and strategize",
-            "Ask someone else to solve it"
-        ],
-        "correct_answer": "Analyze and strategize",
-        "topic": "Problem Solving",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you adapt to change?",
-        "options": [
-            "Resist all changes",
-            "Complain about changes",
-            "Embrace and adapt",
-            "Ignore the new changes"
-        ],
-        "correct_answer": "Embrace and adapt",
-        "topic": "Adaptability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you prioritize tasks?",
-        "options": [
-            "Randomly choose tasks",
-            "Do easiest tasks first",
-            "Focus on urgent and important",
-            "Procrastinate on difficult tasks"
-        ],
-        "correct_answer": "Focus on urgent and important",
-        "topic": "Prioritization",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle difficult clients?",
-        "options": [
-            "Ignore their complaints",
-            "Argue with them",
-            "Listen and empathize",
-            "Pass them to someone else"
-        ],
-        "correct_answer": "Listen and empathize",
-        "topic": "Customer Service",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your leadership style?",
-        "options": [
-            "Autocratic and controlling",
-            "Laissez-faire and hands-off",
-            "Democratic and collaborative",
-            "Micromanaging and critical"
-        ],
-        "correct_answer": "Democratic and collaborative",
-        "topic": "Leadership",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you make decisions under pressure?",
-        "options": [
-            "Panic and freeze",
-            "Delegate to someone else",
-            "Gather information quickly",
-            "Make impulsive decisions"
-        ],
-        "correct_answer": "Gather information quickly",
-        "topic": "Decision Making",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you stay organized?",
-        "options": [
-            "Keep everything in my head",
-            "Use a disorganized system",
-            "Use a structured system",
-            "Rely on others to organize"
-        ],
-        "correct_answer": "Use a structured system",
-        "topic": "Organization",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you respond to failure?",
-        "options": [
-            "Become discouraged",
-            "Blame external factors",
-            "Analyze and improve",
-            "Ignore the failure"
-        ],
-        "correct_answer": "Analyze and improve",
-        "topic": "Resilience",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you contribute to a positive work environment?",
-        "options": [
-            "Gossip and complain",
-            "Remain isolated",
-            "Offer support and encouragement",
-            "Create unnecessary drama"
-        ],
-        "correct_answer": "Offer support and encouragement",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you demonstrate initiative?",
-        "options": [
-            "Wait for instructions",
-            "Avoid taking on new tasks",
-            "Seek out opportunities",
-            "Rely on others for direction"
-        ],
-        "correct_answer": "Seek out opportunities",
-        "topic": "Initiative",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What are your strengths in a team setting?",
-        "options": [
-            "Dominating conversations",
-            "Avoiding collaboration",
-            "Active listening and contribution",
-            "Creating conflict"
-        ],
-        "correct_answer": "Active listening and contribution",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle giving negative feedback?",
-        "options": [
-            "Avoid giving it altogether",
-            "Be harsh and critical",
-            "Be direct and constructive",
-            "Give it publicly"
-        ],
-        "correct_answer": "Be direct and constructive",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle conflicting deadlines?",
-        "options": [
-            "Ignore the least important deadline",
-            "Prioritize and communicate transparently",
-            "Ask a colleague to handle one task",
-            "Work on all deadlines simultaneously"
-        ],
-        "correct_answer": "Prioritize and communicate transparently",
-        "topic": "Time Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your approach to receiving criticism?",
-        "options": [
-            "Become defensive and dismiss it",
-            "Analyze it objectively and learn from it",
-            "Ignore the feedback entirely",
-            "Argue against the criticism"
-        ],
-        "correct_answer": "Analyze it objectively and learn from it",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you motivate a struggling team member?",
-        "options": [
-            "Offer constructive support and encouragement",
-            "Publicly criticize their performance",
-            "Ignore the situation and hope it improves",
-            "Assign them easier tasks"
-        ],
-        "correct_answer": "Offer constructive support and encouragement",
-        "topic": "Leadership",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What do you do when you make a mistake?",
-        "options": [
-            "Blame someone else for the error",
-            "Take responsibility and learn from it",
-            "Hide the mistake and hope no one notices",
-            "Minimize the impact of the mistake"
-        ],
-        "correct_answer": "Take responsibility and learn from it",
-        "topic": "Accountability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle a difficult client?",
-        "options": [
-            "Avoid interacting with the client",
-            "Listen empathetically and find solutions",
-            "Become defensive and argue with the client",
-            "Escalate the issue immediately"
-        ],
-        "correct_answer": "Listen empathetically and find solutions",
-        "topic": "Communication",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you stay organized at work?",
-        "options": [
-            "Rely on memory",
-            "Use a system for managing tasks and information",
-            "Procrastinate until the last minute",
-            "Avoid planning and be spontaneous"
-        ],
-        "correct_answer": "Use a system for managing tasks and information",
-        "topic": "Organization",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your preferred method for problem-solving?",
-        "options": [
-            "Act impulsively",
-            "Analyze the problem thoroughly before acting",
-            "Ask others to solve the problem",
-            "Avoid difficult problems"
-        ],
-        "correct_answer": "Analyze the problem thoroughly before acting",
-        "topic": "Problem Solving",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you approach teamwork?",
-        "options": [
-            "Prefer working independently",
-            "Collaborate and contribute actively",
-            "Dominate the team discussions",
-            "Avoid team projects"
-        ],
-        "correct_answer": "Collaborate and contribute actively",
-        "topic": "Teamwork",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you respond to unexpected changes?",
-        "options": [
-            "Become frustrated and resist the change",
-            "Adapt quickly and find solutions",
-            "Ignore the change and continue as before",
-            "Complain about the change"
-        ],
-        "correct_answer": "Adapt quickly and find solutions",
-        "topic": "Adaptability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you prioritize tasks?",
-        "options": [
-            "Based on personal preference",
-            "Based on urgency and importance",
-            "Randomly select tasks",
-            "Ignore deadlines"
-        ],
-        "correct_answer": "Based on urgency and importance",
-        "topic": "Prioritization",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you react when someone disagrees with you?",
-        "options": [
-            "Become angry and defensive",
-            "Listen respectfully and consider their perspective",
-            "Dismiss their opinion immediately",
-            "Avoid discussing controversial topics"
-        ],
-        "correct_answer": "Listen respectfully and consider their perspective",
-        "topic": "Conflict Resolution",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What do you do to improve your skills?",
-        "options": [
-            "Avoid learning new things",
-            "Seek opportunities for professional development",
-            "Rely on existing knowledge",
-            "Ignore feedback on performance"
-        ],
-        "correct_answer": "Seek opportunities for professional development",
-        "topic": "Personal Development",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle stress at work?",
-        "options": [
-            "Panic and become unproductive",
-            "Develop healthy coping mechanisms",
-            "Ignore the stress and hope it goes away",
-            "Blame others for the stress"
-        ],
-        "correct_answer": "Develop healthy coping mechanisms",
-        "topic": "Stress Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you give feedback to a colleague?",
-        "options": [
-            "Criticize them publicly",
-            "Offer constructive feedback privately",
-            "Avoid giving feedback entirely",
-            "Focus only on the negatives"
-        ],
-        "correct_answer": "Offer constructive feedback privately",
-        "topic": "Feedback",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How important is ethical behavior to you?",
-        "options": [
-            "Unimportant",
-            "Very important",
-            "Depends on the situation",
-            "Only important when convenient"
-        ],
-        "correct_answer": "Very important",
-        "topic": "Ethics",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your definition of success?",
-        "options": [
-            "Accumulating wealth",
-            "Achieving personal and professional goals",
-            "Having power over others",
-            "Avoiding challenges"
-        ],
-        "correct_answer": "Achieving personal and professional goals",
-        "topic": "Motivation",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you build rapport with others?",
-        "options": [
-            "Remain distant and aloof",
-            "Show genuine interest and empathy",
-            "Dominate the conversation",
-            "Only talk about yourself"
-        ],
-        "correct_answer": "Show genuine interest and empathy",
-        "topic": "Interpersonal Skills",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you ensure clear communication?",
-        "options": [
-            "Use jargon and technical terms",
-            "Listen actively and confirm understanding",
-            "Assume everyone understands",
-            "Avoid asking questions"
-        ],
-        "correct_answer": "Listen actively and confirm understanding",
-        "topic": "Communication",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you deal with uncertainty?",
-        "options": [
-            "Become paralyzed by fear",
-            "Gather information and make informed decisions",
-            "Ignore the uncertainty and hope for the best",
-            "Make rash decisions"
-        ],
-        "correct_answer": "Gather information and make informed decisions",
-        "topic": "Decision Making",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What makes you a good leader?",
-        "options": [
-            "Demanding perfection from everyone",
-            "Inspiring and supporting my team",
-            "Taking all the credit for success",
-            "Avoiding responsibility for failures"
-        ],
-        "correct_answer": "Inspiring and supporting my team",
-        "topic": "Leadership",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle stressful situations?",
-        "options": [
-            "Avoid the situation",
-            "Panic and freeze",
-            "Break down tasks and prioritize",
-            "Blame others"
-        ],
-        "correct_answer": "Break down tasks and prioritize",
-        "topic": "Stress Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's your approach to teamwork?",
-        "options": [
-            "Prefer working alone",
-            "Only follow instructions",
-            "Collaborate and contribute actively",
-            "Dominate discussions"
-        ],
-        "correct_answer": "Collaborate and contribute actively",
-        "topic": "Teamwork",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you receive feedback?",
-        "options": [
-            "Get defensive immediately",
-            "Ignore the feedback completely",
-            "Listen and reflect on the feedback",
-            "Dismiss feedback as unhelpful"
-        ],
-        "correct_answer": "Listen and reflect on the feedback",
-        "topic": "Feedback",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is your conflict resolution style?",
-        "options": [
-            "Avoid confrontation at all costs",
-            "Become aggressive and argumentative",
-            "Seek to understand different perspectives",
-            "Ignore the conflict entirely"
-        ],
-        "correct_answer": "Seek to understand different perspectives",
-        "topic": "Conflict Resolution",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle tight deadlines?",
-        "options": [
-            "Procrastinate until the last minute",
-            "Give up easily",
-            "Prioritize tasks and manage time effectively",
-            "Blame others for delays"
-        ],
-        "correct_answer": "Prioritize tasks and manage time effectively",
-        "topic": "Time Management",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What motivates you at work?",
-        "options": [
-            "Money only",
-            "Personal growth and achievement",
-            "Avoiding responsibility",
-            "Constant supervision"
-        ],
-        "correct_answer": "Personal growth and achievement",
-        "topic": "Motivation",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you adapt to change?",
-        "options": [
-            "Resist change at all costs",
-            "Complain constantly about change",
-            "Embrace change and learn new skills",
-            "Ignore the change and hope it goes away"
-        ],
-        "correct_answer": "Embrace change and learn new skills",
-        "topic": "Adaptability",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your communication style?",
-        "options": [
-            "Aggressive and demanding",
-            "Passive and unclear",
-            "Clear concise and respectful",
-            "Rambling and unfocused"
-        ],
-        "correct_answer": "Clear concise and respectful",
-        "topic": "Communication",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you handle failure?",
-        "options": [
-            "Become discouraged and give up",
-            "Blame external factors",
-            "Learn from mistakes and improve",
-            "Ignore the failure completely"
-        ],
-        "correct_answer": "Learn from mistakes and improve",
-        "topic": "Resilience",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your leadership style?",
-        "options": [
-            "Autocratic and controlling",
-            "Laissez-faire and uninvolved",
-            "Collaborative and empowering",
-            "Micromanaging and detail-oriented"
-        ],
-        "correct_answer": "Collaborative and empowering",
-        "topic": "Leadership",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle difficult clients?",
-        "options": [
-            "Argue with them",
-            "Ignore their complaints",
-            "Listen empathize and find solutions",
-            "Pass them off to someone else"
-        ],
-        "correct_answer": "Listen empathize and find solutions",
-        "topic": "Customer Service",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your approach to problem-solving?",
-        "options": [
-            "Avoid problems whenever possible",
-            "Guess at solutions without analysis",
-            "Analyze the problem and find logical solutions",
-            "Blame others for the problem"
-        ],
-        "correct_answer": "Analyze the problem and find logical solutions",
-        "topic": "Problem Solving",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How important is ethics in the workplace?",
-        "options": [
-            "Not important at all",
-            "Only important when convenient",
-            "Extremely important and non-negotiable",
-            "Less important than profit"
-        ],
-        "correct_answer": "Extremely important and non-negotiable",
-        "topic": "Ethics",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you show initiative?",
-        "options": [
-            "Wait to be told what to do",
-            "Avoid taking on extra work",
-            "Volunteer for new challenges",
-            "Complain about having too much work"
-        ],
-        "correct_answer": "Volunteer for new challenges",
-        "topic": "Initiative",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is your definition of professionalism?",
-        "options": [
-            "Wearing expensive clothes",
-            "Always being right",
-            "Maintaining a positive and respectful attitude",
-            "Avoiding all social interaction"
-        ],
-        "correct_answer": "Maintaining a positive and respectful attitude",
-        "topic": "Professionalism",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you prioritize tasks?",
-        "options": [
-            "Based on personal preference",
-            "Randomly",
-            "Based on urgency and importance",
-            "Ignoring deadlines"
-        ],
-        "correct_answer": "Based on urgency and importance",
-        "topic": "Prioritization",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you deal with ambiguity?",
-        "options": [
-            "Get frustrated and give up",
-            "Demand constant clarification",
-            "Seek clarity while moving forward",
-            "Ignore the ambiguity"
-        ],
-        "correct_answer": "Seek clarity while moving forward",
-        "topic": "Ambiguity",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's your approach to learning new things?",
-        "options": [
-            "Avoid learning new skills",
-            "Learn only when forced to",
-            "Actively seek out learning opportunities",
-            "Assume you already know everything"
-        ],
-        "correct_answer": "Actively seek out learning opportunities",
-        "topic": "Learning",
-        "difficulty": "easy"
-    },
-    {
-        "question": "How do you build rapport with colleagues?",
-        "options": [
-            "Avoid all personal interaction",
-            "Gossip about other colleagues",
-            "Find common interests and build relationships",
-            "Compete with everyone"
-        ],
-        "correct_answer": "Find common interests and build relationships",
-        "topic": "Rapport",
-        "difficulty": "medium"
-    },
-    {
-        "question": "How do you handle constructive criticism?",
-        "options": [
-            "Reject it outright",
-            "Take it personally and get upset",
-            "Use it to improve your performance",
-            "Ignore it completely"
-        ],
-        "correct_answer": "Use it to improve your performance",
-        "topic": "Criticism",
-        "difficulty": "medium"
-    }
+  {
+    "question": "You're presenting quarterly progress to a mixed audience of stakeholders with different priorities. A stakeholder interrupts with a concern that's outside your scope. How should you handle it?",
+    "options": [
+      "Tell them to wait until after the presentation",
+      "Acknowledge their concern, briefly address it if possible, and offer to discuss in detail after the presentation",
+      "Ignore them completely",
+      "Spend 15 minutes diving into their specific concern"
+    ],
+    "correct_answer": "Acknowledge their concern, briefly address it if possible, and offer to discuss in detail after the presentation",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Two members of your team have a conflict that's affecting productivity and morale. As a senior team member, what's your first step?",
+    "options": [
+      "Report directly to HR",
+      "Meet with each person individually to understand the root cause, then facilitate a conversation between them",
+      "Take sides with the person you like better",
+      "Ignore it and hope it resolves itself"
+    ],
+    "correct_answer": "Meet with each person individually to understand the root cause, then facilitate a conversation between them",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A junior team member you're mentoring made a significant mistake on a client deliverable. How do you handle the coaching?",
+    "options": [
+      "Fix it yourself without telling them",
+      "Involve them in understanding what went wrong, guide them through a fix, and discuss prevention",
+      "Report the mistake to their manager",
+      "Let them redo the entire project from scratch"
+    ],
+    "correct_answer": "Involve them in understanding what went wrong, guide them through a fix, and discuss prevention",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's scope has shifted significantly mid-project due to client feedback. Resources remain the same. How should you communicate this change?",
+    "options": [
+      "Inform the team the scope changed but project end date won't change",
+      "Present the scope change, discuss trade-offs, and collaboratively create a revised plan with timeline adjustments",
+      "Make decisions unilaterally without team input",
+      "Pretend the change is minor"
+    ],
+    "correct_answer": "Present the scope change, discuss trade-offs, and collaboratively create a revised plan with timeline adjustments",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A colleague proposes a process improvement that could impact your team's workflow. You see potential benefits but also risks. What's your approach?",
+    "options": [
+      "Immediately reject it to protect your workflow",
+      "Analyze the proposal, discuss pros and cons with your colleague, and recommend a pilot or phased approach",
+      "Implement it immediately without testing",
+      "Dismiss it without proper consideration"
+    ],
+    "correct_answer": "Analyze the proposal, discuss pros and cons with your colleague, and recommend a pilot or phased approach",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're working across departments on a project, but there's misalignment on priorities. How should you address this?",
+    "options": [
+      "Escalate immediately without trying to resolve",
+      "Schedule a working session with key stakeholders from all departments to align on goals and priorities",
+      "Work with only your department",
+      "Proceed without alignment and hope it works out"
+    ],
+    "correct_answer": "Schedule a working session with key stakeholders from all departments to align on goals and priorities",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member's performance has been declining, and you suspect personal issues might be involved. As their peer or informal mentor, how should you approach this?",
+    "options": [
+      "Ignore the decline",
+      "Have a private, compassionate conversation about whether they need support, while being clear about performance expectations",
+      "Discuss it with other team members",
+      "Recommend them for performance improvement immediately"
+    ],
+    "correct_answer": "Have a private, compassionate conversation about whether they need support, while being clear about performance expectations",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You disagree with your manager's decision to pursue a strategy you believe is flawed. How should you handle this?",
+    "options": [
+      "Sabotage the strategy to prove you're right",
+      "Request a one-on-one meeting, present your analysis respectfully, and discuss concerns",
+      "Publicly criticize the decision in team meetings",
+      "Execute the strategy passively aggressively"
+    ],
+    "correct_answer": "Request a one-on-one meeting, present your analysis respectfully, and discuss concerns",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A project deadline is at risk due to unforeseen technical challenges that were not anticipated during planning. You need to communicate this to leadership. What's your approach?",
+    "options": [
+      "Delay the update until it's absolutely necessary",
+      "Inform leadership early with an analysis of the issue, mitigation options, and a revised timeline recommendation",
+      "Blame the team for underestimating complexity",
+      "Try to hide the issue and scramble internally"
+    ],
+    "correct_answer": "Inform leadership early with an analysis of the issue, mitigation options, and a revised timeline recommendation",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You've been asked to lead a cross-functional team on a new initiative. Team members have competing priorities from their own managers. How should you establish buy-in?",
+    "options": [
+      "Issue directives and demand compliance",
+      "Meet with each member and their manager to negotiate priorities, align expectations, and clarify the importance of the initiative",
+      "Work only with willing participants",
+      "Assume everyone will deprioritize their own work"
+    ],
+    "correct_answer": "Meet with each member and their manager to negotiate priorities, align expectations, and clarify the importance of the initiative",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a client call, a misunderstanding arises about what was promised versus what can be delivered. How should you handle it professionally?",
+    "options": [
+      "Immediately blame the previous team member",
+      "Acknowledge the misunderstanding calmly, clarify what can actually be done, and work toward a solution that manages expectations",
+      "Overpromise to keep the client happy",
+      "Avoid addressing the issue"
+    ],
+    "correct_answer": "Acknowledge the misunderstanding calmly, clarify what can actually be done, and work toward a solution that manages expectations",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A major organizational change is announced that affects your team significantly. As a leader, how should you handle team concerns?",
+    "options": [
+      "Minimize the impact to avoid worry",
+      "Acknowledge the change, share what you know transparently, listen to concerns, and provide clarity on next steps",
+      "Avoid discussing it until there's a formal announcement",
+      "Make decisions about how the change affects the team without consulting"
+    ],
+    "correct_answer": "Acknowledge the change, share what you know transparently, listen to concerns, and provide clarity on next steps",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're managing a project with a very demanding client who frequently changes requirements. How should you handle scope management?",
+    "options": [
+      "Accept every change without pushing back",
+      "Establish a clear change management process: document requests, assess impact, and discuss trade-offs and timeline implications",
+      "Ignore change requests you don't like",
+      "Implement changes and bill for additional work silently"
+    ],
+    "correct_answer": "Establish a clear change management process: document requests, assess impact, and discuss trade-offs and timeline implications",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A high-performing team member has indicated they're thinking of leaving. You want to retain them. What's your approach?",
+    "options": [
+      "Tell them you'll report them for considering it",
+      "Have an open conversation about their career goals, growth opportunities, and what would make them stay",
+      "Offer a raise immediately without discussion",
+      "Accept their decision and move on"
+    ],
+    "correct_answer": "Have an open conversation about their career goals, growth opportunities, and what would make them stay",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is being asked to adopt new tools and methodologies simultaneously while maintaining current project deadlines. How do you manage this?",
+    "options": [
+      "Refuse to adopt anything new",
+      "Work with leadership to establish a phased adoption plan, allocate training time, and adjust expectations if needed",
+      "Adopt everything at once and hope for the best",
+      "Have the team do extra hours to manage both"
+    ],
+    "correct_answer": "Work with leadership to establish a phased adoption plan, allocate training time, and adjust expectations if needed",
+    "topic": "Adaptability",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member's work quality is slipping, but they're going through a tough personal situation. How should you balance empathy with accountability?",
+    "options": [
+      "Completely excuse the quality drop",
+      "Show empathy while setting clear expectations: offer support options and establish a timeline for improvement",
+      "Treat them the same as anyone else with no accommodations",
+      "Report them immediately"
+    ],
+    "correct_answer": "Show empathy while setting clear expectations: offer support options and establish a timeline for improvement",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're presenting a controversial proposal to leadership. You expect resistance. How should you prepare?",
+    "options": [
+      "Avoid acknowledging potential concerns",
+      "Anticipate objections, prepare counter-arguments backed by data, and present trade-offs honestly",
+      "Only present the positives",
+      "Be defensive about the proposal"
+    ],
+    "correct_answer": "Anticipate objections, prepare counter-arguments backed by data, and present trade-offs honestly",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You discover that a colleague from another department has been taking credit for collaborative work without acknowledging your team's contribution. How should you address this?",
+    "options": [
+      "Publicly call them out in a meeting",
+      "Document the contributions and discuss the issue privately; escalate if unresolved",
+      "Do nothing and resent them",
+      "Retaliate on a future project"
+    ],
+    "correct_answer": "Document the contributions and discuss the issue privately; escalate if unresolved",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A major vendor relationship is deteriorating due to communication breakdowns. As the account lead, what should you do?",
+    "options": [
+      "Wait for them to initiate contact",
+      "Take initiative to schedule a candid conversation, acknowledge issues, and establish a structured communication plan",
+      "Switch vendors",
+      "Blame your team internally"
+    ],
+    "correct_answer": "Take initiative to schedule a candid conversation, acknowledge issues, and establish a structured communication plan",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is facing burnout due to sustained high workload. As the leader, how should you address this?",
+    "options": [
+      "Tell them to just manage it",
+      "Assess workload distribution, discuss priorities with stakeholders, redistribute work, and ensure time for recovery",
+      "Offer only motivational speeches",
+      "Blame external circumstances"
+    ],
+    "correct_answer": "Assess workload distribution, discuss priorities with stakeholders, redistribute work, and ensure time for recovery",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're asked to manage a project in an industry or domain you're unfamiliar with. How should you approach it?",
+    "options": [
+      "Pretend to know everything",
+      "Admit your knowledge gap, seek mentorship, conduct research, and leverage domain experts on your team",
+      "Decline the opportunity",
+      "Learn solely through trial and error"
+    ],
+    "correct_answer": "Admit your knowledge gap, seek mentorship, conduct research, and leverage domain experts on your team",
+    "topic": "Adaptability",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A subordinate disagrees strongly with your decision and continues to argue after you've made your choice. How should you handle this?",
+    "options": [
+      "Fire them for insubordination",
+      "Listen to their concerns once more, explain your decision-making rationale, and set clear expectations for execution",
+      "Change your decision to avoid conflict",
+      "Ignore their input and proceed"
+    ],
+    "correct_answer": "Listen to their concerns once more, explain your decision-making rationale, and set clear expectations for execution",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's work is being unfairly criticized by leadership who don't understand the constraints you were working under. How should you advocate for your team?",
+    "options": [
+      "Do nothing and let the team take hits",
+      "Request a meeting to contextualize the constraints, explain decisions made, and present what was achieved within those limits",
+      "Blame individual team members to protect yourself",
+      "Publicly defend the team aggressively"
+    ],
+    "correct_answer": "Request a meeting to contextualize the constraints, explain decisions made, and present what was achieved within those limits",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member has been remote for extended periods and seems disconnected from team culture and goals. How should you re-engage them?",
+    "options": [
+      "Force them to come to the office immediately",
+      "Increase touchpoints through one-on-ones, involve them in discussions, and create opportunities for connection",
+      "Accept that they're disengaged",
+      "Reduce their responsibilities"
+    ],
+    "correct_answer": "Increase touchpoints through one-on-ones, involve them in discussions, and create opportunities for connection",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're leading a post-incident retrospective after a service failure. The team is defensive and blaming each other. How should you facilitate constructively?",
+    "options": [
+      "Take sides with whoever you agree with",
+      "Establish psychological safety, focus on what happened rather than blame, and collaboratively identify process improvements",
+      "Cancel the retrospective",
+      "Make people feel guilty"
+    ],
+    "correct_answer": "Establish psychological safety, focus on what happened rather than blame, and collaboratively identify process improvements",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You need to deliver difficult feedback to a high-performing employee whose behavior is affecting team dynamics. How should you approach it?",
+    "options": [
+      "Give feedback in a group setting",
+      "Schedule a private conversation, focus on specific behaviors and impact, and emphasize your respect for their contributions",
+      "Avoid the feedback to protect the relationship",
+      "Give feedback in writing without discussion"
+    ],
+    "correct_answer": "Schedule a private conversation, focus on specific behaviors and impact, and emphasize your respect for their contributions",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A process change you implemented is facing pushback from the team. How should you handle resistance?",
+    "options": [
+      "Force compliance immediately",
+      "Listen to specific concerns, adjust where valid, communicate the rationale clearly, and provide support during transition",
+      "Abandon the change",
+      "Ignore the pushback and implement silently"
+    ],
+    "correct_answer": "Listen to specific concerns, adjust where valid, communicate the rationale clearly, and provide support during transition",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're balancing requests from multiple senior leaders with conflicting priorities. How should you manage this?",
+    "options": [
+      "Do everything and burn out",
+      "Meet with each leader to understand importance and dependencies, then create a prioritized roadmap with transparently communicated trade-offs",
+      "Choose favorites",
+      "Execute randomly"
+    ],
+    "correct_answer": "Meet with each leader to understand importance and dependencies, then create a prioritized roadmap with transparently communicated trade-offs",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A long-tenured team member is resistant to new ways of working that are necessary for growth. How should you approach this?",
+    "options": [
+      "Push them out",
+      "Acknowledge their experience, explain the business need, involve them in the transition, and provide training and support",
+      "Move forward without them",
+      "Demote them"
+    ],
+    "correct_answer": "Acknowledge their experience, explain the business need, involve them in the transition, and provide training and support",
+    "topic": "Adaptability",
+    "difficulty": "medium"
+  },
+  {
+    "question": "During a client demo, a technical issue arises that you can't immediately resolve. How should you handle it professionally?",
+    "options": [
+      "Panic and apologize repeatedly",
+      "Acknowledge the issue transparently, demonstrate what works, explain what's happening, and provide a timeline for resolution",
+      "Fake that it's working",
+      "Blame the technical team"
+    ],
+    "correct_answer": "Acknowledge the issue transparently, demonstrate what works, explain what's happening, and provide a timeline for resolution",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You've been assigned to mentor a talented but difficult team member whose potential is significant. How should you approach it?",
+    "options": [
+      "Give up and recommend removal",
+      "Build trust, set clear behavioral expectations, leverage their strengths, and provide honest feedback on areas for growth",
+      "Avoid interactions",
+      "Coddle them"
+    ],
+    "correct_answer": "Build trust, set clear behavioral expectations, leverage their strengths, and provide honest feedback on areas for growth",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A critical team member is being recruited by another department. You want them to stay but understand the opportunity. What should you do?",
+    "options": [
+      "Discourage them from considering it",
+      "Acknowledge the opportunity, discuss what you can offer for their growth, and let them make an informed decision",
+      "Go to HR and block the move",
+      "Be offended and distance yourself"
+    ],
+    "correct_answer": "Acknowledge the opportunity, discuss what you can offer for their growth, and let them make an informed decision",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's morale is declining after a strategic pivot that some disagree with. How should you address this?",
+    "options": [
+      "Ignore it and expect it to pass",
+      "Acknowledge the concerns, explain the rationale for the pivot, address the emotional impact, and show a path forward",
+      "Blame those who disagree",
+      "Roll out new initiatives to distract"
+    ],
+    "correct_answer": "Acknowledge the concerns, explain the rationale for the pivot, address the emotional impact, and show a path forward",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're managing two teams with different cultures that are merging. How should you facilitate integration?",
+    "options": [
+      "Impose one team's culture on the other",
+      "Learn both cultures, involve leaders from both teams, establish shared values, and create joint initiatives",
+      "Keep them separate",
+      "Move people around arbitrarily"
+    ],
+    "correct_answer": "Learn both cultures, involve leaders from both teams, establish shared values, and create joint initiatives",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're presenting to executive leadership and they challenge your recommendation with new information you didn't have. How should you respond?",
+    "options": [
+      "Defend your recommendation even if it's flawed",
+      "Acknowledge the new information, thank them for the context, and adjust your recommendation if warranted",
+      "Dismiss the new information",
+      "Become defensive"
+    ],
+    "correct_answer": "Acknowledge the new information, thank them for the context, and adjust your recommendation if warranted",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is preventing others from sharing ideas in meetings through dominating conversations. How should you address this?",
+    "options": [
+      "Do nothing",
+      "Speak to them privately about creating space for others, and establish meeting norms that encourage participation",
+      "Call them out publicly",
+      "Remove them from meetings"
+    ],
+    "correct_answer": "Speak to them privately about creating space for others, and establish meeting norms that encourage participation",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're being asked to do something that contradicts your professional ethics or company values. How should you handle it?",
+    "options": [
+      "Just do it to avoid conflict",
+      "Respectfully decline, explain your concern, and discuss alternative approaches with the requester",
+      "Do it secretly",
+      "Agree but don't follow through"
+    ],
+    "correct_answer": "Respectfully decline, explain your concern, and discuss alternative approaches with the requester",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A colleague from another team is underperforming on a shared project, but they don't report to you. How should you address this?",
+    "options": [
+      "Complain to their manager without talking to them",
+      "First, talk to them directly about the gap and see if there's support you can provide; then involve their manager if unresolved",
+      "Do their work for them",
+      "Let it fail"
+    ],
+    "correct_answer": "First, talk to them directly about the gap and see if there's support you can provide; then involve their manager if unresolved",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You've implemented a decision that turned out to be problematic. How should you handle it?",
+    "options": [
+      "Blame the team for not implementing correctly",
+      "Acknowledge the issue quickly, take responsibility, explain what was learned, and implement a correction",
+      "Hide the problem",
+      "Double down on the flawed decision"
+    ],
+    "correct_answer": "Acknowledge the issue quickly, take responsibility, explain what was learned, and implement a correction",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member has an excellent idea but is struggling to influence key stakeholders to adopt it. As their leader, how should you help?",
+    "options": [
+      "Tell them it's not viable without giving reasons",
+      "Help them refine the idea, develop a compelling business case, and facilitate conversations with stakeholders",
+      "Forget about it",
+      "Implement it without stakeholder buy-in"
+    ],
+    "correct_answer": "Help them refine the idea, develop a compelling business case, and facilitate conversations with stakeholders",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're managing a team through rapid scaling while maintaining quality and culture. How should you approach this?",
+    "options": [
+      "Hire quickly and figure it out later",
+      "Be intentional about hiring to culture fit, establish clear values, maintain frequent communication, and support existing team members",
+      "Don't hire and overwork current team",
+      "Sacrifice quality to grow faster"
+    ],
+    "correct_answer": "Be intentional about hiring to culture fit, establish clear values, maintain frequent communication, and support existing team members",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A high-stakes meeting is derailing due to strong emotions and disagreement. As the facilitator, how should you intervene?",
+    "options": [
+      "Let the loudest person win",
+      "Acknowledge the passion, refocus on the shared goal, encourage listening, and suggest a structured decision-making process",
+      "Cancel the meeting",
+      "Side with one person"
+    ],
+    "correct_answer": "Acknowledge the passion, refocus on the shared goal, encourage listening, and suggest a structured decision-making process",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're tasked with improving team collaboration across a distributed global team with time zone challenges. How should you approach this?",
+    "options": [
+      "Schedule all meetings during office hours of one location",
+      "Establish asynchronous communication norms, use time zone rotation for meetings, and invest in collaboration tools",
+      "Expect people to always be available",
+      "Assume it's not feasible"
+    ],
+    "correct_answer": "Establish asynchronous communication norms, use time zone rotation for meetings, and invest in collaboration tools",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're delivering feedback to a peer at your level who you have a conflict with. How should you approach this?",
+    "options": [
+      "Withhold feedback to avoid conflict",
+      "Request a private conversation, focus on the behavior and impact objectively, and be open to their perspective",
+      "Email them criticism",
+      "Involve your manager to side with you"
+    ],
+    "correct_answer": "Request a private conversation, focus on the behavior and impact objectively, and be open to their perspective",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's most senior member disagrees with the strategic direction you're taking the team. How should you handle this?",
+    "options": [
+      "Overrule them without discussion",
+      "Have a deep conversation to understand their concerns, present your rationale, and seek to address legitimate gaps",
+      "Replace them",
+      "Let them dictate strategy"
+    ],
+    "correct_answer": "Have a deep conversation to understand their concerns, present your rationale, and seek to address legitimate gaps",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "An external vendor's poor performance is affecting your team's credibility with clients. How should you handle this?",
+    "options": [
+      "Complain to the client about the vendor",
+      "Document the issues, communicate to the vendor with specific examples, create an improvement plan, and escalate if unresolved",
+      "Switch vendors without notice",
+      "Accept the poor performance"
+    ],
+    "correct_answer": "Document the issues, communicate to the vendor with specific examples, create an improvement plan, and escalate if unresolved",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're being passed over for an opportunity you wanted. How should you respond professionally?",
+    "options": [
+      "Become resentful and disengage",
+      "Ask for feedback on why you weren't selected, discuss what you can work on, and understand the timeline for future opportunities",
+      "Complain publicly",
+      "Start job hunting immediately"
+    ],
+    "correct_answer": "Ask for feedback on why you weren't selected, discuss what you can work on, and understand the timeline for future opportunities",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is brilliant technically but lacks soft skills and is hindering team dynamics. How should you develop them?",
+    "options": [
+      "Isolate them to avoid disruption",
+      "Provide coaching on soft skills, involve them in team-building, set expectations, and recognize improvements",
+      "Fire them",
+      "Ignore the soft skills gap"
+    ],
+    "correct_answer": "Provide coaching on soft skills, involve them in team-building, set expectations, and recognize improvements",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're receiving conflicting guidance from multiple senior stakeholders on how to proceed with a project. How should you resolve this?",
+    "options": [
+      "Pick the person you like most and follow their advice",
+      "Facilitate a conversation with all stakeholders to align on priorities, trade-offs, and rationale for the decision",
+      "Go with your gut",
+      "Delay until they resolve it themselves"
+    ],
+    "correct_answer": "Facilitate a conversation with all stakeholders to align on priorities, trade-offs, and rationale for the decision",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's sprint planning consistently gets derailed by scope creep from stakeholders. How should you establish boundaries?",
+    "options": [
+      "Refuse all scope changes",
+      "Establish a clear change request process, explain capacity constraints, and manage expectations about what can fit in a sprint",
+      "Hide from stakeholders",
+      "Commit to everything and overwork the team"
+    ],
+    "correct_answer": "Establish a clear change request process, explain capacity constraints, and manage expectations about what can fit in a sprint",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A colleague is spreading rumors that are damaging team morale. How should you address this?",
+    "options": [
+      "Spread counter-rumors",
+      "Address it directly with the person, explain the impact, and suggest focusing on facts and constructive communication",
+      "Report them immediately without talking to them",
+      "Ignore it"
+    ],
+    "correct_answer": "Address it directly with the person, explain the impact, and suggest focusing on facts and constructive communication",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're presenting a strategic initiative to a board that includes investors with different risk tolerance levels. How should you frame the message?",
+    "options": [
+      "Focus only on upside potential",
+      "Acknowledge the opportunity, address risks transparently, present mitigation plans, and be clear about assumptions",
+      "Hide the risks",
+      "Only discuss downside scenarios"
+    ],
+    "correct_answer": "Acknowledge the opportunity, address risks transparently, present mitigation plans, and be clear about assumptions",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member is highly skilled but their communication style is alienating others. How should you coach them?",
+    "options": [
+      "Fire them for poor soft skills",
+      "Have a conversation about impact, provide coaching on communication, involve them in team dynamics, and measure improvement",
+      "Reassign them to solo projects",
+      "Criticize them publicly"
+    ],
+    "correct_answer": "Have a conversation about impact, provide coaching on communication, involve them in team dynamics, and measure improvement",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's estimated capacity keeps getting exceeded by incoming requests. How should you address this pattern?",
+    "options": [
+      "Tell the team to just work faster",
+      "Analyze the root cause (estimation, scope creep, unclear priorities), address systematically, and adjust capacity planning",
+      "Accept that overload is normal",
+      "Hire more people immediately"
+    ],
+    "correct_answer": "Analyze the root cause (estimation, scope creep, unclear priorities), address systematically, and adjust capacity planning",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You've received critical feedback from your team about your leadership style. How should you respond?",
+    "options": [
+      "Dismiss it as group think",
+      "Listen carefully, reflect genuinely, identify specific areas to improve, and communicate changes and progress back to the team",
+      "Defend your style",
+      "Ignore it and hope it goes away"
+    ],
+    "correct_answer": "Listen carefully, reflect genuinely, identify specific areas to improve, and communicate changes and progress back to the team",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A cross-functional project is stalling due to different interpretations of requirements. How should you facilitate resolution?",
+    "options": [
+      "Let them argue until they agree",
+      "Bring together key stakeholders, document current understanding, identify gaps, and align on clear requirements and next steps",
+      "Impose a solution",
+      "Escalate immediately"
+    ],
+    "correct_answer": "Bring together key stakeholders, document current understanding, identify gaps, and align on clear requirements and next steps",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A senior team member is resistant to a decision you've made as their manager. How should you handle this?",
+    "options": [
+      "Overrule them forcefully",
+      "Explain your decision-making process, listen to their perspective, acknowledge concerns, and set expectations for execution",
+      "Change your decision to please them",
+      "Punish their resistance"
+    ],
+    "correct_answer": "Explain your decision-making process, listen to their perspective, acknowledge concerns, and set expectations for execution",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're managing a team with a significant skill gap for a critical role. What's your development approach?",
+    "options": [
+      "Accept the gap and hope it doesn't affect performance",
+      "Create a structured development plan with mentoring, training, stretch assignments, and clear milestones for capability building",
+      "Replace the person immediately",
+      "Avoid giving them important work"
+    ],
+    "correct_answer": "Create a structured development plan with mentoring, training, stretch assignments, and clear milestones for capability building",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's communication patterns show that junior members are not speaking up in meetings. How should you address this?",
+    "options": [
+      "Accept that hierarchy means junior members shouldn't speak up",
+      "Create psychological safety through direct invitations to speak, establish speaking norms, and recognize contributions",
+      "Exclude junior members from meetings",
+      "Criticize them for not speaking"
+    ],
+    "correct_answer": "Create psychological safety through direct invitations to speak, establish speaking norms, and recognize contributions",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A colleague outside your team is not cooperating on a shared initiative. How should you build the relationship?",
+    "options": [
+      "Escalate to their manager immediately",
+      "Understand their priorities and constraints, find mutual benefits, involve them in problem-solving, and build trust",
+      "Work around them",
+      "Complain about them"
+    ],
+    "correct_answer": "Understand their priorities and constraints, find mutual benefits, involve them in problem-solving, and build trust",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're introducing a significant change to your team's workflow. Resistance is anticipated. What's your approach?",
+    "options": [
+      "Implement quickly before they can resist",
+      "Explain the rationale, involve them in transition planning, address concerns, provide training, and establish clear checkpoints to adjust",
+      "Make it voluntary",
+      "Announce it and disappear"
+    ],
+    "correct_answer": "Explain the rationale, involve them in transition planning, address concerns, provide training, and establish clear checkpoints to adjust",
+    "topic": "Adaptability",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is meeting a deadline but quality is suffering. As the leader, how should you navigate this trade-off?",
+    "options": [
+      "Sacrifice quality and miss deadline anyway to rush",
+      "Assess what quality is acceptable, prioritize core features, communicate clearly about what won't make the deadline, and plan for post-launch improvements",
+      "Extend deadline indefinitely",
+      "Blame the team for not working harder"
+    ],
+    "correct_answer": "Assess what quality is acceptable, prioritize core features, communicate clearly about what won't make the deadline, and plan for post-launch improvements",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member's performance is declining, but their personal circumstances suggest they're overwhelmed. How should you intervene?",
+    "options": [
+      "Ignore the decline and wait for improvement",
+      "Have a private conversation showing empathy, discuss support options, set clear expectations, and monitor progress",
+      "Fire them to resolve the problem",
+      "Let their performance issue escalate"
+    ],
+    "correct_answer": "Have a private conversation showing empathy, discuss support options, set clear expectations, and monitor progress",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're managing two teams that don't naturally collaborate. How should you build cross-team relationships?",
+    "options": [
+      "Keep them separate and ensure they don't overlap",
+      "Create joint projects, facilitate social interactions, establish shared metrics, and celebrate joint wins",
+      "Force people to switch teams",
+      "Only communicate top-down directives"
+    ],
+    "correct_answer": "Create joint projects, facilitate social interactions, establish shared metrics, and celebrate joint wins",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A high-visibility project has failed. You need to communicate this to leadership. How should you approach it?",
+    "options": [
+      "Hide the failure as long as possible",
+      "Inform leadership promptly with facts, root cause analysis, impact assessment, and a recovery plan",
+      "Blame the team publicly",
+      "Claim the failure wasn't your fault"
+    ],
+    "correct_answer": "Inform leadership promptly with facts, root cause analysis, impact assessment, and a recovery plan",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team is working on a technically complex problem and morale is dropping. How should you maintain engagement?",
+    "options": [
+      "Push harder and work longer hours",
+      "Break the problem into smaller wins, celebrate progress, adjust expectations if needed, and provide support and resources",
+      "Lower expectations without communicating",
+      "Change the project"
+    ],
+    "correct_answer": "Break the problem into smaller wins, celebrate progress, adjust expectations if needed, and provide support and resources",
+    "topic": "Teamwork",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member asks for a significant scope change to their role. You're concerned but want to retain them. How should you handle this?",
+    "options": [
+      "Immediately approve to keep them happy",
+      "Have a discussion about their motivations, assess the business case, negotiate a solution that works for both parties",
+      "Refuse outright",
+      "Tell them to take it or leave it"
+    ],
+    "correct_answer": "Have a discussion about their motivations, assess the business case, negotiate a solution that works for both parties",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's sprint reviews are becoming defensive with blame being assigned. How should you change the dynamic?",
+    "options": [
+      "Skip sprint reviews entirely",
+      "Reframe reviews as learning opportunities, focus on process improvements rather than blame, and celebrate wins",
+      "Make reviews more critical",
+      "Only invite your direct reports"
+    ],
+    "correct_answer": "Reframe reviews as learning opportunities, focus on process improvements rather than blame, and celebrate wins",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member has been with the company longer than you and is implicitly questioning your authority. How should you establish credibility?",
+    "options": [
+      "Fire them to assert dominance",
+      "Earn respect through competence, ask for their input respectfully, learn from their experience, and establish trust through clear decision-making",
+      "Avoid their input",
+      "Ignore their concerns"
+    ],
+    "correct_answer": "Earn respect through competence, ask for their input respectfully, learn from their experience, and establish trust through clear decision-making",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're receiving conflicting advice from multiple mentors on a career decision. How should you navigate this?",
+    "options": [
+      "Follow the highest-ranking mentor's advice",
+      "Seek to understand the reasoning behind each perspective, consider your context and values, and make your own informed decision",
+      "Flip a coin",
+      "Avoid making a decision"
+    ],
+    "correct_answer": "Seek to understand the reasoning behind each perspective, consider your context and values, and make your own informed decision",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Your team's productivity is being measured in a way that creates perverse incentives. How should you address this?",
+    "options": [
+      "Accept the metrics and work within them",
+      "Document the negative impacts, propose better metrics with rationale, involve the team in the discussion, and escalate if needed",
+      "Have the team game the metrics",
+      "Ignore the metrics"
+    ],
+    "correct_answer": "Document the negative impacts, propose better metrics with rationale, involve the team in the discussion, and escalate if needed",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member's performance is excellent on their current work but they want to move into management. You're unsure they'll be good at it. How should you advise them?",
+    "options": [
+      "Push them into management because they're high-performing",
+      "Discuss the differences between IC and management roles, provide trial opportunities, get feedback, and help them decide",
+      "Tell them they're not suited for management",
+      "Let them find out on their own"
+    ],
+    "correct_answer": "Discuss the differences between IC and management roles, provide trial opportunities, get feedback, and help them decide",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're being asked to deliver more with fewer resources than is realistic. How should you communicate this constraint?",
+    "options": [
+      "Accept and overcommit your team",
+      "Present the trade-offs clearly with data, explain what will be sacrificed, and propose alternatives or realistic timelines",
+      "Just try your best and hope",
+      "Complain and do nothing"
+    ],
+    "correct_answer": "Present the trade-offs clearly with data, explain what will be sacrificed, and propose alternatives or realistic timelines",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A team member feels they're being overlooked for promotion. You agree their work is good but timing isn't right. How should you have this conversation?",
+    "options": [
+      "Tell them they're not ready without explanation",
+      "Acknowledge their contributions, explain the timing and criteria for promotion, create a development plan with clear milestones, and discuss timeline",
+      "Avoid the conversation",
+      "Promote them to avoid the discussion"
+    ],
+    "correct_answer": "Acknowledge their contributions, explain the timing and criteria for promotion, create a development plan with clear milestones, and discuss timeline",
+    "topic": "Communication",
+    "difficulty": "medium"
+  },
+  {
+    "question": "You're presenting to a stakeholder group where one person dominates discussions and others can't get a word in. How should you facilitate better engagement?",
+    "options": [
+      "Let the dominant person continue",
+      "Politely redirect conversation, invite input from quieter participants, set norms about balanced speaking",
+      "Cancel the meeting",
+      "Only invite the talkative person next time"
+    ],
+    "correct_answer": "Politely redirect conversation, invite input from quieter participants, set norms about balanced speaking",
+    "topic": "Communication",
+    "difficulty": "medium"
+  }
 ]

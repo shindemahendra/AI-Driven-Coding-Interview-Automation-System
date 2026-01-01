@@ -1,0 +1,541 @@
+[
+  {
+    "question": "Which Python data type is immutable and can contain elements of different types?",
+    "options": ["List", "Tuple", "Dictionary", "Set"],
+    "correct_answer": "Tuple",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the result of using the modulo operator with negative numbers in Python?",
+    "options": ["The sign follows the divisor", "The sign follows the dividend", "Always returns positive", "Always returns negative"],
+    "correct_answer": "The sign follows the divisor",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which conditional construct allows multiple conditions to be checked sequentially?",
+    "options": ["if-else", "if-elif-else", "nested if", "switch-case"],
+    "correct_answer": "if-elif-else",
+    "topic": "Conditionals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What happens when you use 'break' inside a loop?",
+    "options": ["Exits the current iteration", "Exits the entire loop", "Skips to the next iteration", "Restarts the loop"],
+    "correct_answer": "Exits the entire loop",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which string method returns a copy with all characters in uppercase?",
+    "options": ["capitalize()", "upper()", "title()", "swapcase()"],
+    "correct_answer": "upper()",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'append()' method do to a list?",
+    "options": ["Adds multiple elements", "Adds an element at the end", "Inserts at a specific index", "Removes an element"],
+    "correct_answer": "Adds an element at the end",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Why are tuples preferred over lists for representing fixed collections?",
+    "options": ["They use less memory and are immutable", "They are faster to create", "They support more methods", "They allow modifications"],
+    "correct_answer": "They use less memory and are immutable",
+    "topic": "Tuples",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What method retrieves a value from a dictionary without raising an error if the key doesn't exist?",
+    "options": ["fetch()", "get()", "retrieve()", "find()"],
+    "correct_answer": "get()",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which OOP principle allows a child class to inherit properties from a parent class?",
+    "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
+    "correct_answer": "Inheritance",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What Git command is used to save changes to the local repository?",
+    "options": ["git push", "git commit", "git add", "git save"],
+    "correct_answer": "git commit",
+    "topic": "Git",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Linux command displays the current working directory?",
+    "options": ["cd", "pwd", "ls", "dir"],
+    "correct_answer": "pwd",
+    "topic": "Linux",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which data type is ordered, mutable, and allows duplicate elements?",
+    "options": ["Set", "Dictionary", "List", "Frozenset"],
+    "correct_answer": "List",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do comparison operators return in Python?",
+    "options": ["Integers", "Boolean values", "Strings", "None"],
+    "correct_answer": "Boolean values",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'pass' statement do in Python?",
+    "options": ["Exits the program", "Does nothing, acts as placeholder", "Raises an error", "Skips the next line"],
+    "correct_answer": "Does nothing, acts as placeholder",
+    "topic": "Conditionals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between 'break' and 'continue' in loops?",
+    "options": ["Both exit the loop", "break exits loop, continue skips to next iteration", "continue exits, break skips", "Both are identical"],
+    "correct_answer": "break exits loop, continue skips to next iteration",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Are strings mutable or immutable in Python?",
+    "options": ["Mutable", "Immutable", "Depends on the string length", "Depends on the content"],
+    "correct_answer": "Immutable",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does list slicing with negative indices represent?",
+    "options": ["Counts from the end", "Reverses the list", "Removes elements", "Raises an error"],
+    "correct_answer": "Counts from the end",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can tuples contain mutable objects like lists?",
+    "options": ["No, only immutable objects", "Yes, the tuple itself remains immutable", "Only in Python 3", "Only if explicitly defined"],
+    "correct_answer": "Yes, the tuple itself remains immutable",
+    "topic": "Tuples",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What happens when you try to access a non-existent key in a dictionary?",
+    "options": ["Returns None", "Raises KeyError", "Returns empty string", "Creates the key"],
+    "correct_answer": "Raises KeyError",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the '__init__' method do in a class?",
+    "options": ["Deletes an object", "Initializes object attributes", "Creates a class", "Defines class methods"],
+    "correct_answer": "Initializes object attributes",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'git clone' do?",
+    "options": ["Creates a branch", "Copies a remote repository locally", "Merges branches", "Deletes a repository"],
+    "correct_answer": "Copies a remote repository locally",
+    "topic": "Git",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Linux command lists files and directories?",
+    "options": ["show", "ls", "dir", "list"],
+    "correct_answer": "ls",
+    "topic": "Linux",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Python data type is unordered and contains only unique elements?",
+    "options": ["List", "Tuple", "Set", "Dictionary"],
+    "correct_answer": "Set",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'is' operator check in Python?",
+    "options": ["Value equality", "Identity (same object)", "Type equality", "String comparison"],
+    "correct_answer": "Identity (same object)",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can you nest if statements inside other if statements?",
+    "options": ["No, not allowed", "Yes, creating nested conditionals", "Only in Python 3.8+", "Only with elif"],
+    "correct_answer": "Yes, creating nested conditionals",
+    "topic": "Conditionals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a 'while' loop used for in Python?",
+    "options": ["Fixed iterations", "Condition-based iterations", "Iterating over sequences", "Only infinite loops"],
+    "correct_answer": "Condition-based iterations",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is string concatenation in Python?",
+    "options": ["Joining strings together", "Splitting strings", "Converting to uppercase", "Removing spaces"],
+    "correct_answer": "Joining strings together",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'extend()' method do to a list?",
+    "options": ["Adds single element", "Adds multiple elements from iterable", "Removes elements", "Sorts the list"],
+    "correct_answer": "Adds multiple elements from iterable",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you access the first element of a tuple?",
+    "options": ["tuple.first()", "tuple[0]", "tuple(0)", "tuple.get(0)"],
+    "correct_answer": "tuple[0]",
+    "topic": "Tuples",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can dictionary keys be of any data type?",
+    "options": ["Yes, any type", "Only immutable types", "Only strings", "Only numbers"],
+    "correct_answer": "Only immutable types",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does inheritance allow in object-oriented programming?",
+    "options": ["Creating objects", "Deriving classes from parent classes", "Hiding data", "Defining methods"],
+    "correct_answer": "Deriving classes from parent classes",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'git pull' do?",
+    "options": ["Pushes changes", "Fetches and merges remote changes", "Creates a branch", "Deletes files"],
+    "correct_answer": "Fetches and merges remote changes",
+    "topic": "Git",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Linux command changes the current directory?",
+    "options": ["chdir", "cd", "goto", "move"],
+    "correct_answer": "cd",
+    "topic": "Linux",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which built-in function returns the type of an object?",
+    "options": ["typeof()", "type()", "gettype()", "class()"],
+    "correct_answer": "type()",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between '==' and 'is' operators?",
+    "options": ["No difference", "== checks value, is checks identity", "is checks value, == checks identity", "Both check type"],
+    "correct_answer": "== checks value, is checks identity",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a ternary operator in Python?",
+    "options": ["Three operands", "Conditional expression in one line", "Triple comparison", "Three variables"],
+    "correct_answer": "Conditional expression in one line",
+    "topic": "Conditionals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'range()' function do in for loops?",
+    "options": ["Returns a list", "Generates sequence of numbers", "Counts iterations", "Creates variables"],
+    "correct_answer": "Generates sequence of numbers",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'split()' method do on strings?",
+    "options": ["Joins strings", "Divides string into list", "Removes characters", "Converts to list of characters"],
+    "correct_answer": "Divides string into list",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is list comprehension?",
+    "options": ["Reading lists", "Concise way to create lists", "Sorting method", "List concatenation"],
+    "correct_answer": "Concise way to create lists",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is tuple packing?",
+    "options": ["Compressing tuples", "Assigning multiple values to tuple", "Removing elements", "Converting to list"],
+    "correct_answer": "Assigning multiple values to tuple",
+    "topic": "Tuples",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What method returns all keys in a dictionary?",
+    "options": ["keys()", "getkeys()", "allkeys()", "keylist()"],
+    "correct_answer": "keys()",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does polymorphism mean in OOP?",
+    "options": ["Multiple forms of methods", "Creating objects", "Data hiding", "Variable declaration"],
+    "correct_answer": "Multiple forms of methods",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'git status' show?",
+    "options": ["Remote branches", "Working directory status", "Commit history", "User information"],
+    "correct_answer": "Working directory status",
+    "topic": "Git",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Linux command creates a new directory?",
+    "options": ["createdir", "mkdir", "newdir", "makedir"],
+    "correct_answer": "mkdir",
+    "topic": "Linux",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is type conversion in Python?",
+    "options": ["Changing variable names", "Converting one data type to another", "Creating new types", "Deleting types"],
+    "correct_answer": "Converting one data type to another",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What are logical operators used for?",
+    "options": ["Arithmetic operations", "Combining boolean expressions", "String operations", "Type checking"],
+    "correct_answer": "Combining boolean expressions",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can you use multiple elif statements in a single conditional?",
+    "options": ["No, only one", "Yes, as many as needed", "Maximum of three", "Only in Python 3"],
+    "correct_answer": "Yes, as many as needed",
+    "topic": "Conditionals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an infinite loop?",
+    "options": ["Loop with errors", "Loop that never terminates", "Loop with no body", "Loop with break"],
+    "correct_answer": "Loop that never terminates",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'replace()' method do on strings?",
+    "options": ["Deletes characters", "Substitutes substring with another", "Reverses string", "Converts case"],
+    "correct_answer": "Substitutes substring with another",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'pop()' method do on lists?",
+    "options": ["Adds element", "Removes and returns last element", "Sorts list", "Clears list"],
+    "correct_answer": "Removes and returns last element",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is tuple unpacking?",
+    "options": ["Creating tuples", "Extracting values from tuple", "Deleting tuples", "Sorting tuples"],
+    "correct_answer": "Extracting values from tuple",
+    "topic": "Tuples",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'update()' method do on dictionaries?",
+    "options": ["Sorts dictionary", "Merges another dictionary", "Clears dictionary", "Reverses keys"],
+    "correct_answer": "Merges another dictionary",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the 'self' parameter in class methods?",
+    "options": ["Class name", "Instance reference", "Method name", "Return value"],
+    "correct_answer": "Instance reference",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'git add' do?",
+    "options": ["Commits changes", "Stages files for commit", "Creates files", "Pushes to remote"],
+    "correct_answer": "Stages files for commit",
+    "topic": "Git",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Linux command removes a file?",
+    "options": ["delete", "rm", "remove", "del"],
+    "correct_answer": "rm",
+    "topic": "Linux",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the Boolean data type used for?",
+    "options": ["Storing numbers", "Representing True or False", "Storing text", "Storing collections"],
+    "correct_answer": "Representing True or False",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'not' operator do?",
+    "options": ["Compares values", "Inverts boolean value", "Checks identity", "Performs arithmetic"],
+    "correct_answer": "Inverts boolean value",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is short-circuit evaluation in conditionals?",
+    "options": ["Quick execution", "Stops evaluation when result is determined", "Error handling", "Loop termination"],
+    "correct_answer": "Stops evaluation when result is determined",
+    "topic": "Conditionals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "When does the 'else' clause execute in a for loop?",
+    "options": ["Always after loop", "If loop completes without break", "Never executes", "Only on errors"],
+    "correct_answer": "If loop completes without break",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What are f-strings in Python?",
+    "options": ["Function strings", "Formatted string literals", "Foreign strings", "Fixed strings"],
+    "correct_answer": "Formatted string literals",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'reverse()' method do on lists?",
+    "options": ["Sorts descending", "Reverses in-place", "Returns reversed copy", "Shuffles elements"],
+    "correct_answer": "Reverses in-place",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can tuples be used as dictionary keys?",
+    "options": ["No, never", "Yes, because they are immutable", "Only if empty", "Only with strings"],
+    "correct_answer": "Yes, because they are immutable",
+    "topic": "Tuples",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'items()' method return for dictionaries?",
+    "options": ["Keys only", "Values only", "Key-value pairs", "Dictionary copy"],
+    "correct_answer": "Key-value pairs",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a class attribute?",
+    "options": ["Attribute of an instance", "Shared by all instances", "Method parameter", "Local variable"],
+    "correct_answer": "Shared by all instances",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'git branch' do?",
+    "options": ["Merges branches", "Lists or creates branches", "Deletes branches", "Switches branches"],
+    "correct_answer": "Lists or creates branches",
+    "topic": "Git",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Linux command displays file contents?",
+    "options": ["show", "cat", "display", "read"],
+    "correct_answer": "cat",
+    "topic": "Linux",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the None type in Python?",
+    "options": ["Empty string", "Zero value", "Null or absence of value", "Boolean false"],
+    "correct_answer": "Null or absence of value",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the '//' operator do?",
+    "options": ["Regular division", "Floor division", "Modulo", "Exponentiation"],
+    "correct_answer": "Floor division",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Why would you use nested conditionals?",
+    "options": ["Faster execution", "Check conditions within conditions", "Error handling", "Loop control"],
+    "correct_answer": "Check conditions within conditions",
+    "topic": "Conditionals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'enumerate()' provide in loops?",
+    "options": ["Element count", "Index and value pairs", "Reversed iteration", "Filtered elements"],
+    "correct_answer": "Index and value pairs",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is string indexing?",
+    "options": ["Searching strings", "Accessing characters by position", "Sorting characters", "Counting characters"],
+    "correct_answer": "Accessing characters by position",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the 'sort()' method do on lists?",
+    "options": ["Returns sorted copy", "Sorts in-place", "Reverses list", "Removes duplicates"],
+    "correct_answer": "Sorts in-place",
+    "topic": "Lists",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the main advantage of tuples over lists?",
+    "options": ["More methods", "Immutability and performance", "Can be modified", "Larger size"],
+    "correct_answer": "Immutability and performance",
+    "topic": "Tuples",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can dictionary values be mutable objects?",
+    "options": ["No, only immutable", "Yes, any object", "Only lists", "Only tuples"],
+    "correct_answer": "Yes, any object",
+    "topic": "Dictionaries",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is method overriding in OOP?",
+    "options": ["Creating new methods", "Redefining parent class method", "Deleting methods", "Hiding methods"],
+    "correct_answer": "Redefining parent class method",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does 'git merge' do?",
+    "options": ["Creates branch", "Combines branches", "Deletes branch", "Lists branches"],
+    "correct_answer": "Combines branches",
+    "topic": "Git",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which Linux command copies files?",
+    "options": ["copy", "cp", "duplicate", "cpy"],
+    "correct_answer": "cp",
+    "topic": "Linux",
+    "difficulty": "easy"
+  }
+]

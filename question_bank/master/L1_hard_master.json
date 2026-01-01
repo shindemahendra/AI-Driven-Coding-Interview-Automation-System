@@ -1,1922 +1,902 @@
 [
-    {
-        "question": "If all X are Y, and no Y are Z, which of the following conclusions can be logically derived?",
-        "options": [
-            "All X are Z",
-            "No X are Z",
-            "Some X are Z",
-            "Some X are not Z"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "A statement claims: 'If the economy improves, then unemployment will decrease.' The economy did not improve. What can we definitively conclude about unemployment?",
-        "options": [
-            "Unemployment decreased",
-            "Unemployment increased",
-            "Unemployment remained the same",
-            "We cannot definitively conclude anything about unemployment"
-        ],
-        "correct_answer": "D",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise 1: All artists are creative. Premise 2: Some creative people are musicians. Conclusion: Some artists are musicians. Is this conclusion valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid under certain conditions.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "In a group of 100 people, 70 like coffee, 50 like tea, and 30 like both. How many people like neither coffee nor tea?",
-        "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Consider the argument: 'The streets are wet, therefore it must have rained.' What is the logical fallacy, if any, present in this argument?",
-        "options": [
-            "Ad Hominem",
-            "Straw Man",
-            "Affirming the Consequent",
-            "Denying the Antecedent"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "If it is raining, then the ground is wet. The ground is not wet. What can be logically concluded?",
-        "options": [
-            "It is raining",
-            "It is not raining",
-            "The ground is dry",
-            "We cannot conclude anything"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise 1: If a person is a doctor, then they have a medical degree. Premise 2: Sarah does not have a medical degree. Conclusion: Sarah is not a doctor. Is this conclusion valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It depends on other factors.",
-            "The premises are contradictory."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All squares are rectangles. Some rectangles are long and thin. Therefore, some squares are long and thin. Is this argument valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all long and thin shapes are rectangles.",
-            "It cannot be determined from the given information."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "A survey found that people who eat breakfast regularly are healthier. However, this correlation does not prove causation. What is the most likely logical flaw being overlooked?",
-        "options": [
-            "Correlation implies causation",
-            "Hasty generalization",
-            "False dichotomy",
-            "Begging the question"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "If A is true, then B is true. If B is true, then C is true. If A is false, what can we conclude about C?",
-        "options": [
-            "C is true",
-            "C is false",
-            "C might be true or false",
-            "B must be false"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    },
-    {
-        "question": "Premise 1: No dogs are cats. Premise 2: Some pets are cats. Conclusion: Some pets are not dogs. Is this conclusion valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all pets are cats.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "A scientist states: 'Our experiment was flawed, so our results are meaningless.' What is the logical error?",
-        "options": [
-            "Ad populum",
-            "Appeal to authority",
-            "False dichotomy",
-            "Overstatement of consequence"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "If a number is even, it is divisible by 2. The number 7 is not divisible by 2. Therefore, 7 is not even. What type of reasoning is this?",
-        "options": [
-            "Inductive Reasoning",
-            "Deductive Reasoning",
-            "Abductive Reasoning",
-            "Analogical Reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    },
-    {
-        "question": "Consider the statement: 'Either the alarm is broken, or the power is out.' If the alarm is not broken, what can we conclude?",
-        "options": [
-            "The power is out",
-            "The power is not out",
-            "The alarm is working",
-            "Nothing can be concluded"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Disjunctive Syllogism"
-    },
-    {
-        "question": "Premise 1: All birds have feathers. Premise 2: Some animals with feathers are not birds. Conclusion: Some animals are not birds. Is this conclusion valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all animals have feathers.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "Argument: 'My opponent wants to raise taxes, which will cripple the economy and lead to widespread poverty. We cannot allow such a destructive policy.' What logical fallacy is most prominent?",
-        "options": [
-            "Equivocation",
-            "Slippery Slope",
-            "Straw Man",
-            "Red Herring"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "If all A are B, and some B are C, can we conclude that some A are C?",
-        "options": [
-            "Yes",
-            "No",
-            "Only if B is a subset of C",
-            "Only if A and C are identical"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "A politician argues: 'We must increase defense spending. If we don't, our enemies will attack.' This is an example of:",
-        "options": [
-            "Appeal to emotion",
-            "False cause",
-            "Ad hominem",
-            "Straw man"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: If it is sunny, I will go to the beach. Premise 2: I did not go to the beach. Conclusion: It was not sunny. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if going to the beach is the only reason to go out.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a class, 25 students passed math, 30 passed science, and 15 passed both. If there are 50 students in the class, how many passed neither subject?",
-        "options": [
-            "5",
-            "10",
-            "15",
-            "20"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "If someone argues that a policy is bad because a particular politician supports it, what fallacy are they committing?",
-        "options": [
-            "Appeal to Pity",
-            "Ad Hominem",
-            "Bandwagon",
-            "Genetic Fallacy"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All engineers are problem-solvers. Premise 2: Some problem-solvers are not engineers. Conclusion: Some problem-solvers are not engineers. Is this conclusion valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all problem-solvers are engineers.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "Consider the argument: 'The sun rises in the east. Therefore, the earth is round.' What type of reasoning is this, assuming the premise is true?",
-        "options": [
-            "Deductive",
-            "Inductive",
-            "Abductive",
-            "Analogical"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Abductive Reasoning"
-    },
-    {
-        "question": "If a statement is true, then its negation is false. The negation of a statement is true. What can we conclude about the original statement?",
-        "options": [
-            "The original statement is true.",
-            "The original statement is false.",
-            "The original statement is neither true nor false.",
-            "We cannot determine the truth value of the original statement."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Law of Non-Contradiction"
-    },
-    {
-        "question": "Premise 1: All students who study diligently pass the exam. Premise 2: John did not pass the exam. Conclusion: John did not study diligently. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It depends on whether studying diligently guarantees passing.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Argument: 'We should not ban plastic bags. If we ban them, soon they will ban all packaging, and then we won't be able to buy anything.' This exemplifies:",
-        "options": [
-            "False Cause",
-            "Slippery Slope",
-            "Equivocation",
-            "Circular Reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "If 'All A are B' and 'No C are B', what can we conclude?",
-        "options": [
-            "All A are C",
-            "No A are C",
-            "Some A are C",
-            "Some A are not C"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "A person claims: 'I've never seen a purple elephant, so purple elephants don't exist.' What is the flaw in this reasoning?",
-        "options": [
-            "Appeal to Authority",
-            "Argument from Ignorance",
-            "False Dichotomy",
-            "Hasty Generalization"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: Some mammals are swimmers. Premise 2: All dolphins are mammals. Conclusion: Some dolphins are swimmers. Is this conclusion valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all swimmers are mammals.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If the statement 'The sky is green' is false, what can we logically conclude about the statement 'The sky is not green'?",
-        "options": [
-            "It is true.",
-            "It is false.",
-            "It is neither true nor false.",
-            "It is contingent."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Law of Excluded Middle"
-    },
-    {
-        "question": "In a group of 60 people, 40 play chess, 30 play checkers, and 20 play both. How many play only chess?",
-        "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'You're either with us or against us.' This is an example of:",
-        "options": [
-            "Straw Man",
-            "False Dichotomy",
-            "Ad Hominem",
-            "Red Herring"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: If it is raining, the streets are wet. Premise 2: It is raining. Conclusion: The streets are wet. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if the streets are always wet when it rains.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "If all P are Q, and some Q are R, what can be concluded?",
-        "options": [
-            "All P are R",
-            "No P are R",
-            "Some P are R",
-            "We cannot conclude anything about the relationship between P and R."
-        ],
-        "correct_answer": "D",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "A scientist presents evidence that a new drug is effective, but they fail to mention potential severe side effects. This could be an example of:",
-        "options": [
-            "Equivocation",
-            "Cherry Picking",
-            "Hasty Generalization",
-            "Appeal to Authority"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: If a number is a multiple of 4, it is a multiple of 2. Premise 2: The number 6 is a multiple of 2. Conclusion: The number 6 is a multiple of 4. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all multiples of 2 are multiples of 4.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a survey of 100 students, 60 liked pop music, 50 liked rock music, and 40 liked both. How many students liked at least one of these genres?",
-        "options": [
-            "50",
-            "60",
-            "70",
-            "80"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'Since we've never found evidence of aliens, they must not exist.' This is an instance of:",
-        "options": [
-            "Straw Man",
-            "False Cause",
-            "Argument from Ignorance",
-            "Ad Populum"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All A are B. Premise 2: All C are B. Conclusion: All A are C. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if A and C are identical.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A implies B, and B implies C, and we know that C is false, what can we conclude about A?",
-        "options": [
-            "A is true",
-            "A is false",
-            "A might be true or false",
-            "B is false"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    },
-    {
-        "question": "A company advertises: 'Our product is the best because everyone is buying it.' This is an example of:",
-        "options": [
-            "Appeal to Authority",
-            "Bandwagon Fallacy",
-            "False Dichotomy",
-            "Slippery Slope"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: Some politicians are honest. Premise 2: All honest people are trustworthy. Conclusion: Some politicians are trustworthy. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all politicians are honest.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "Consider the statement: 'If it is a dog, then it is a mammal.' If we know it is a mammal, can we conclude it is a dog?",
-        "options": [
-            "Yes",
-            "No",
-            "Only if all mammals are dogs",
-            "Only if it is a specific type of mammal"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 75 students, 45 study history, 40 study geography, and 25 study both. How many students study neither subject?",
-        "options": [
-            "5",
-            "10",
-            "15",
-            "20"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'You can't trust anything he says, he's a known liar.' This fallacy is:",
-        "options": [
-            "Straw Man",
-            "Ad Hominem",
-            "Appeal to Pity",
-            "False Cause"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: No birds are mammals. Premise 2: All sparrows are birds. Conclusion: No sparrows are mammals. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all mammals are birds.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If I say 'All men are mortal' and 'Socrates is a man', what can I logically conclude?",
-        "options": [
-            "Socrates is not mortal",
-            "Socrates is mortal",
-            "Some men are not mortal",
-            "No men are mortal"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "A statement: 'If it's a square, then it has four sides.' We observe an object with four sides. What can we conclude?",
-        "options": [
-            "It is a square.",
-            "It is not a square.",
-            "It might be a square.",
-            "This statement is false."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Argument: 'The government should provide free healthcare. Everyone deserves to be healthy.' This reasoning is flawed because it:",
-        "options": [
-            "Assumes what it's trying to prove (Begging the Question).",
-            "Uses an irrelevant argument (Red Herring).",
-            "Makes a generalization based on insufficient evidence (Hasty Generalization).",
-            "Lacks a clear logical connection between premises and conclusion."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All cars have wheels. Premise 2: Some things with wheels are bicycles. Conclusion: Some cars are bicycles. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all bicycles are cars.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If statement P implies statement Q, and statement Q implies statement R, and we know that R is true, what can we say about P?",
-        "options": [
-            "P must be true.",
-            "P must be false.",
-            "P might be true or false.",
-            "Q must be true."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    },
-    {
-        "question": "A person says, 'The stock market went up today, so my investment will definitely increase.' What is the logical flaw?",
-        "options": [
-            "Post hoc ergo propter hoc (After this, therefore because of this).",
-            "Confusing correlation with causation.",
-            "False dichotomy.",
-            "Appeal to ignorance."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All dogs are animals. Premise 2: Some animals are cats. Conclusion: Some dogs are cats. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all cats are animals.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is not raining, then the picnic will be cancelled. The picnic was not cancelled. What can be concluded?",
-        "options": [
-            "It is raining.",
-            "It is not raining.",
-            "The picnic was successful.",
-            "We cannot conclude anything."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a class of 50 students, 30 play soccer, 25 play basketball, and 15 play both. How many students play exactly one sport?",
-        "options": [
-            "15",
-            "20",
-            "25",
-            "30"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'If we allow students to use calculators, they will become dependent on them and lose their basic math skills.' This is an example of:",
-        "options": [
-            "False Dichotomy",
-            "Slippery Slope",
-            "Ad Hominem",
-            "Straw Man"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All X are Y. Premise 2: Some Z are not Y. Conclusion: Some Z are not X. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all X are Z.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A is necessary for B, and B is false, what can be concluded about A?",
-        "options": [
-            "A is true.",
-            "A is false.",
-            "A might be true or false.",
-            "B is true."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A person argues: 'This law is unfair because it was proposed by my political rival.' This is an example of:",
-        "options": [
-            "Straw Man",
-            "Appeal to Pity",
-            "Ad Hominem",
-            "False Cause"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All birds can fly. Premise 2: Penguins are birds. Conclusion: Penguins can fly. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all birds can fly.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is snowing, then it is cold. It is not cold. What can be concluded?",
-        "options": [
-            "It is snowing.",
-            "It is not snowing.",
-            "It is freezing.",
-            "We cannot conclude anything."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 100 people, 80 have a smartphone, 60 have a tablet, and 50 have both. How many have neither?",
-        "options": [
-            "0",
-            "10",
-            "20",
-            "30"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'You can't prove that ghosts don't exist, so they must exist.' This is an example of:",
-        "options": [
-            "Appeal to Authority",
-            "Bandwagon",
-            "Argument from Ignorance",
-            "False Dichotomy"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: If you are a cat, then you are a mammal. Premise 2: My pet is a mammal. Conclusion: My pet is a cat. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all mammals are cats.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "If 'All X are Y' and 'Some X are Z', what can be concluded?",
-        "options": [
-            "All Y are Z",
-            "No Y are Z",
-            "Some Y are Z",
-            "We cannot conclude anything about the relationship between Y and Z."
-        ],
-        "correct_answer": "D",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "A company claims its product is superior because it uses 'advanced technology.' This is vague and potentially misleading. What fallacy might be at play?",
-        "options": [
-            "Equivocation",
-            "Appeal to Emotion",
-            "Vagueness/Ambiguity",
-            "Red Herring"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All squares are polygons. Premise 2: Some polygons are triangles. Conclusion: Some squares are triangles. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all triangles are polygons.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is sunny, I wear sunglasses. I am wearing sunglasses. Therefore, it is sunny. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if wearing sunglasses is only done when it's sunny.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 80 people, 50 enjoy reading, 40 enjoy writing, and 30 enjoy both. How many enjoy only reading?",
-        "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'We must continue the current policy. If we change it, the whole system will collapse.' This is an example of:",
-        "options": [
-            "False Cause",
-            "Slippery Slope",
-            "Straw Man",
-            "Ad Populum"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: No engineers are artists. Premise 2: Some artists are musicians. Conclusion: Some musicians are not engineers. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all musicians are artists.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A is sufficient for B, and B is false, what can be concluded about A?",
-        "options": [
-            "A is true.",
-            "A is false.",
-            "A might be true or false.",
-            "B is true."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A person claims that a new law is bad because it was written by a committee that included someone they dislike. This is a form of:",
-        "options": [
-            "Straw Man",
-            "Appeal to Emotion",
-            "Ad Hominem",
-            "Red Herring"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All fish live in water. Premise 2: Some creatures that live in water are not fish. Conclusion: Some creatures that live in water are not fish. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all creatures that live in water are fish.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is raining, then the traffic is bad. The traffic is not bad. What can be concluded?",
-        "options": [
-            "It is raining.",
-            "It is not raining.",
-            "The roads are clear.",
-            "We cannot conclude anything."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a survey of 90 people, 60 like pizza, 50 like burgers, and 40 like both. How many like at least one?",
-        "options": [
-            "50",
-            "60",
-            "70",
-            "80"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'The doctor recommended this treatment, so it must be the best option.' This is an example of:",
-        "options": [
-            "Appeal to Authority",
-            "Bandwagon",
-            "False Dichotomy",
-            "Straw Man"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All dogs are mammals. Premise 2: All mammals are animals. Conclusion: All dogs are animals. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all animals are dogs.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If a statement is false, then its negation is true. The negation of a statement is false. What can be concluded about the original statement?",
-        "options": [
-            "The original statement is true.",
-            "The original statement is false.",
-            "The original statement is neither true nor false.",
-            "We cannot determine the truth value of the original statement."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Law of Non-Contradiction"
-    },
-    {
-        "question": "Premise 1: If the alarm sounds, then there is a fire. Premise 2: There is a fire. Conclusion: The alarm sounds. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if the alarm always sounds when there is a fire.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 70 students, 40 study physics, 35 study chemistry, and 20 study both. How many study neither?",
-        "options": [
-            "10",
-            "15",
-            "20",
-            "25"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'We need to find a scapegoat for this problem. Let's blame the previous administration.' This is an example of:",
-        "options": [
-            "Straw Man",
-            "Red Herring",
-            "Ad Hominem",
-            "False Dichotomy"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All mammals breathe air. Premise 2: Whales are mammals. Conclusion: Whales breathe air. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all things that breathe air are mammals.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A implies B, and A is false, what can be concluded about B?",
-        "options": [
-            "B is true.",
-            "B is false.",
-            "B might be true or false.",
-            "A is true."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    },
-    {
-        "question": "A politician argues: 'My opponent has been accused of financial impropriety, so his economic plan must be flawed.' This is an example of:",
-        "options": [
-            "Straw Man",
-            "Appeal to Pity",
-            "Ad Hominem",
-            "False Cause"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: Some fruits are sweet. Premise 2: All sweet things are delicious. Conclusion: Some fruits are delicious. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all fruits are sweet.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is hot, then I will swim. I did not swim. What can be concluded?",
-        "options": [
-            "It is hot.",
-            "It is not hot.",
-            "The water is cold.",
-            "We cannot conclude anything."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 60 people, 40 like coffee, 30 like tea, and 20 like both. How many like only tea?",
-        "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'This new streaming service is terrible. It has the same features as the old one, but it costs more.' This is potentially a:",
-        "options": [
-            "Straw Man",
-            "False Analogy",
-            "Red Herring",
-            "Circular Reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All dogs are canines. Premise 2: No canines are felines. Conclusion: No dogs are felines. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all felines are canines.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A is required for B, and B is true, what can be concluded about A?",
-        "options": [
-            "A is true.",
-            "A is false.",
-            "A might be true or false.",
-            "B is false."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A company states that its profits have increased because it implemented a new marketing strategy. However, the profits also increased for all competitors. This might be an example of:",
-        "options": [
-            "Hasty Generalization",
-            "Post hoc ergo propter hoc",
-            "False Dichotomy",
-            "Appeal to Authority"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: Some politicians are trustworthy. Premise 2: All trustworthy people are honest. Conclusion: Some politicians are honest. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all politicians are trustworthy.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is raining, the ground gets wet. The ground is wet. Therefore, it is raining. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if rain is the only cause of wet ground.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a class of 80 students, 50 passed Math, 45 passed Science, and 30 passed both. How many passed neither?",
-        "options": [
-            "5",
-            "10",
-            "15",
-            "20"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'We should increase military spending because it will create jobs and boost the economy.' This argument is flawed if the primary goal of military spending is national defense, and the job creation is secondary. What fallacy is at play?",
-        "options": [
-            "Red Herring",
-            "Straw Man",
-            "False Dichotomy",
-            "Ad Hominem"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All X are Y. Premise 2: Some Y are Z. Conclusion: Some X are Z. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if X and Z are the same.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If P is a necessary condition for Q, and Q is true, what can be concluded about P?",
-        "options": [
-            "P is true.",
-            "P is false.",
-            "P might be true or false.",
-            "Q is false."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A person argues, 'The government should provide free education. Education is a fundamental right.' This is an example of:",
-        "options": [
-            "Begging the Question",
-            "Straw Man",
-            "Red Herring",
-            "False Cause"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All birds have wings. Premise 2: Some winged creatures cannot fly. Conclusion: Some birds cannot fly. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all winged creatures are birds.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is warm, I will eat ice cream. I am not eating ice cream. What can be concluded?",
-        "options": [
-            "It is warm.",
-            "It is not warm.",
-            "The ice cream is delicious.",
-            "We cannot conclude anything."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 75 people, 45 like dogs, 40 like cats, and 25 like both. How many like only dogs?",
-        "options": [
-            "10",
-            "15",
-            "20",
-            "25"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'If we allow gay marriage, then people will want to marry animals.' This is an example of:",
-        "options": [
-            "Straw Man",
-            "Slippery Slope",
-            "Ad Hominem",
-            "False Cause"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: No students are teachers. Premise 2: Some teachers are well-paid. Conclusion: Some well-paid people are not students. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all well-paid people are teachers.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A is a sufficient condition for B, and B is false, what can be concluded about A?",
-        "options": [
-            "A is true.",
-            "A is false.",
-            "A might be true or false.",
-            "B is true."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A person argues: 'You must accept my proposal. If you don't, the company will go bankrupt.' This is an example of:",
-        "options": [
-            "Appeal to Emotion",
-            "False Cause",
-            "Straw Man",
-            "Ad Populum"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All apples are fruits. Premise 2: Some fruits are red. Conclusion: Some apples are red. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all red things are fruits.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A implies B, and A is true, what can be concluded about B?",
-        "options": [
-            "B is true.",
-            "B is false.",
-            "B might be true or false.",
-            "A is false."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    },
-    {
-        "question": "A company advertises: 'Our product is the best because it is the most popular.' This is an example of:",
-        "options": [
-            "Appeal to Authority",
-            "Bandwagon Fallacy",
-            "False Dichotomy",
-            "Slippery Slope"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All squares have four sides. Premise 2: All rectangles have four sides. Conclusion: All squares are rectangles. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all rectangles are squares.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is warm, I will go for a walk. I did not go for a walk. What can be concluded?",
-        "options": [
-            "It is warm.",
-            "It is not warm.",
-            "The weather is pleasant.",
-            "We cannot conclude anything."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 90 students, 60 play chess, 50 play checkers, and 40 play both. How many play only chess?",
-        "options": [
-            "10",
-            "15",
-            "20",
-            "30"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'If we allow this small change, soon there will be chaos and anarchy.' This is an example of:",
-        "options": [
-            "False Cause",
-            "Slippery Slope",
-            "Straw Man",
-            "Ad Populum"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All engineers are problem-solvers. Premise 2: John is a problem-solver. Conclusion: John is an engineer. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all problem-solvers are engineers.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If P is a sufficient condition for Q, and P is false, what can be concluded about Q?",
-        "options": [
-            "Q is true.",
-            "Q is false.",
-            "Q might be true or false.",
-            "P is true."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A scientist claims a new discovery is true because it has been published in a prestigious journal. This is an example of:",
-        "options": [
-            "Appeal to Authority",
-            "Bandwagon",
-            "False Dichotomy",
-            "Straw Man"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: No cats are dogs. Premise 2: Some pets are dogs. Conclusion: Some pets are not cats. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all pets are dogs.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is cold, I will wear a coat. I am wearing a coat. Therefore, it is cold. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if wearing a coat is only done when it is cold.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 100 people, 70 have cars, 50 have bikes, and 30 have both. How many have only cars?",
-        "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-        ],
-        "correct_answer": "D",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'We should cut funding for the arts. It's a waste of taxpayer money when we have more pressing issues.' This could be considered:",
-        "options": [
-            "Straw Man",
-            "False Dichotomy",
-            "Red Herring",
-            "Begging the Question"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All A are B. Premise 2: No B are C. Conclusion: No A are C. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if A and C are identical.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If P implies Q, and Q is false, what can be concluded about P?",
-        "options": [
-            "P is true.",
-            "P is false.",
-            "P might be true or false.",
-            "Q is true."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    },
-    {
-        "question": "A person argues: 'My diet is healthy because it includes plenty of vegetables.' This is an example of:",
-        "options": [
-            "Begging the Question",
-            "Straw Man",
-            "False Cause",
-            "Appeal to Authority"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All dogs are animals. Premise 2: Some animals are not dogs. Conclusion: Some animals are not dogs. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all animals are dogs.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is sunny, I will wear a hat. I am wearing a hat. Therefore, it is sunny. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if wearing a hat is only done when it is sunny.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 80 people, 50 like pizza, 45 like burgers, and 30 like both. How many like only pizza?",
-        "options": [
-            "10",
-            "15",
-            "20",
-            "25"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'We must ban all sugary drinks. If we don't, obesity rates will skyrocket, leading to a healthcare crisis.' This is an example of:",
-        "options": [
-            "Straw Man",
-            "Slippery Slope",
-            "Ad Hominem",
-            "False Cause"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All A are B. Premise 2: Some C are not B. Conclusion: Some C are not A. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all A are C.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A is a necessary condition for B, and B is false, what can be concluded about A?",
-        "options": [
-            "A is true.",
-            "A is false.",
-            "A might be true or false.",
-            "B is true."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A politician argues, 'We must support this bill. Everyone else is supporting it!' This is an example of:",
-        "options": [
-            "Appeal to Authority",
-            "Bandwagon Fallacy",
-            "False Dichotomy",
-            "Straw Man"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All squares are quadrilaterals. Premise 2: Some quadrilaterals are rhombuses. Conclusion: Some squares are rhombuses. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all rhombuses are quadrilaterals.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If P implies Q, and P is true, what can be concluded about Q?",
-        "options": [
-            "Q is true.",
-            "Q is false.",
-            "Q might be true or false.",
-            "P is false."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    },
-    {
-        "question": "A company advertises: 'Our product is the best because it has been endorsed by a famous celebrity.' This is an example of:",
-        "options": [
-            "Appeal to Authority",
-            "Bandwagon",
-            "False Dichotomy",
-            "Straw Man"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: Some students are athletes. Premise 2: All athletes are fit. Conclusion: Some students are fit. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all students are athletes.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is raining, the streets are wet. The streets are not wet. What can be concluded?",
-        "options": [
-            "It is raining.",
-            "It is not raining.",
-            "The roads are dry.",
-            "We cannot conclude anything."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 70 people, 40 like dogs, 35 like cats, and 20 like both. How many like only cats?",
-        "options": [
-            "10",
-            "15",
-            "20",
-            "25"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'We have to do this. It's the only way to prevent disaster.' This is an example of:",
-        "options": [
-            "False Dichotomy",
-            "Slippery Slope",
-            "Straw Man",
-            "Ad Populum"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All A are B. Premise 2: Some X are not A. Conclusion: Some X are not B. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all A are X.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A is a sufficient condition for B, and B is true, what can be concluded about A?",
-        "options": [
-            "A is true.",
-            "A is false.",
-            "A might be true or false.",
-            "B is false."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A person argues, 'The economy is bad because my business is struggling.' This is an example of:",
-        "options": [
-            "Hasty Generalization",
-            "False Cause",
-            "Straw Man",
-            "Appeal to Emotion"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All birds can fly. Premise 2: Eagles are birds. Conclusion: Eagles can fly. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all birds can fly.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is snowing, then it is cold. It is cold. What can be concluded?",
-        "options": [
-            "It is snowing.",
-            "It is not snowing.",
-            "It is freezing.",
-            "We cannot conclude anything."
-        ],
-        "correct_answer": "D",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 90 people, 60 like coffee, 50 like tea, and 40 like both. How many like neither?",
-        "options": [
-            "0",
-            "5",
-            "10",
-            "15"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'We need to take action. Doing nothing is the worst possible outcome.' This is an example of:",
-        "options": [
-            "False Dichotomy",
-            "Slippery Slope",
-            "Straw Man",
-            "Ad Populum"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All mammals are animals. Premise 2: All animals are living beings. Conclusion: All mammals are living beings. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all living beings are mammals.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A implies B, and B is true, what can be concluded about A?",
-        "options": [
-            "A is true.",
-            "A is false.",
-            "A might be true or false.",
-            "B is false."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    },
-    {
-        "question": "A person argues, 'My neighbor's cat is black, and my other neighbor's cat is black, therefore all cats are black.' This is an example of:",
-        "options": [
-            "Hasty Generalization",
-            "False Cause",
-            "Straw Man",
-            "Appeal to Authority"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: Some mammals are swimmers. Premise 2: All whales are mammals. Conclusion: Some whales are swimmers. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all swimmers are mammals.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is hot, I will swim. I swam. Therefore, it is hot. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if swimming is only done when it is hot.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 75 people, 45 like pizza, 40 like burgers, and 25 like both. How many like neither?",
-        "options": [
-            "5",
-            "10",
-            "15",
-            "20"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'We cannot let this company succeed. If it does, other companies will copy its practices, leading to a race to the bottom.' This is an example of:",
-        "options": [
-            "Straw Man",
-            "Slippery Slope",
-            "Ad Hominem",
-            "False Cause"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All X are Y. Premise 2: Some Z are Y. Conclusion: Some X are Z. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if X and Z are the same.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A is a necessary condition for B, and B is true, what can be concluded about A?",
-        "options": [
-            "A is true.",
-            "A is false.",
-            "A might be true or false.",
-            "B is false."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A politician argues: 'My opponent's plan is radical and will destroy our way of life.' This is an example of:",
-        "options": [
-            "Straw Man",
-            "Appeal to Emotion",
-            "Ad Hominem",
-            "False Cause"
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: No dogs are cats. Premise 2: All cats are mammals. Conclusion: No dogs are mammals. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all mammals are cats.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If it is sunny, I will go to the park. I went to the park. Therefore, it is sunny. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if going to the park is only done when it is sunny.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "B",
-        "difficulty": "hard",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "In a group of 100 people, 80 have smartphones, 60 have tablets, and 50 have both. How many have at least one?",
-        "options": [
-            "70",
-            "80",
-            "90",
-            "100"
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Set Theory"
-    },
-    {
-        "question": "Argument: 'We must build this wall. If we don't, our borders will be overrun.' This is an example of:",
-        "options": [
-            "False Dichotomy",
-            "Slippery Slope",
-            "Straw Man",
-            "Ad Populum"
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Fallacies"
-    },
-    {
-        "question": "Premise 1: All dogs are animals. Premise 2: Some animals are cats. Conclusion: Some dogs are not cats. Is this valid?",
-        "options": [
-            "Yes, it is valid.",
-            "No, it is invalid.",
-            "It is valid only if all cats are animals.",
-            "It cannot be determined."
-        ],
-        "correct_answer": "A",
-        "difficulty": "hard",
-        "topic": "Syllogisms"
-    },
-    {
-        "question": "If A implies B, and A is false, what can be concluded about B?",
-        "options": [
-            "B is true.",
-            "B is false.",
-            "B might be true or false.",
-            "A is true."
-        ],
-        "correct_answer": "C",
-        "difficulty": "hard",
-        "topic": "Deductive Reasoning"
-    }
+  {
+    "question": "A value increases by 20%, then decreases by 20%, then increases by 25%. Net change?",
+    "options": [
+      "8% increase",
+      "10% increase",
+      "12% increase",
+      "15% increase"
+    ],
+    "correct_answer": "12% increase",
+    "topic": "Percentages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If an amount becomes ₹14400 after two years at compound interest of 20% p.a., initial amount = ?",
+    "options": [
+      "₹10,000",
+      "₹10,500",
+      "₹11,000",
+      "₹12,000"
+    ],
+    "correct_answer": "₹10,000",
+    "topic": "Percentages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Three successive discounts of 20%, 25%, 30% equal a single discount of?",
+    "options": [
+      "75%",
+      "65%",
+      "58%",
+      "45%"
+    ],
+    "correct_answer": "58%",
+    "topic": "Percentages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Class A has 30 students with average age 20. Class B has 20 students with average age 22. Combined average?",
+    "options": [
+      "20.8",
+      "21",
+      "21.2",
+      "21.5"
+    ],
+    "correct_answer": "20.8",
+    "topic": "Averages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A merchant mixes 10 kg sugar at ₹40/kg and 5 kg at ₹50/kg. Cost per kg?",
+    "options": [
+      "₹42",
+      "₹43",
+      "₹43.33",
+      "₹44"
+    ],
+    "correct_answer": "₹43.33",
+    "topic": "Averages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If A:B:C = 2:3:4 and A+B+C = 180, what is B?",
+    "options": [
+      "40",
+      "60",
+      "80",
+      "100"
+    ],
+    "correct_answer": "60",
+    "topic": "Ratios & Proportions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Three friends share profit in ratio 3:4:5. If total profit is ₹12,000, the largest share is?",
+    "options": [
+      "₹4,000",
+      "₹5,000",
+      "₹6,000",
+      "₹7,000"
+    ],
+    "correct_answer": "₹5,000",
+    "topic": "Ratios & Proportions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A merchant buys 100 items for ₹40 each. He sells 60 at ₹50, 30 at ₹45, 10 at ₹30. Net profit%?",
+    "options": [
+      "12%",
+      "13%",
+      "14%",
+      "15%"
+    ],
+    "correct_answer": "12%",
+    "topic": "Profit & Loss",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Cost price of article A is 3/4 of B. If both are sold at equal profit%, ratio of SP = ?",
+    "options": [
+      "3:4",
+      "4:3",
+      "1:1",
+      "2:3"
+    ],
+    "correct_answer": "3:4",
+    "topic": "Profit & Loss",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A takes 30 days, B takes 40 days, C takes 60 days to complete a task. If they work together, time taken?",
+    "options": [
+      "13.33 days",
+      "10 days",
+      "13.33 days",
+      "15 days"
+    ],
+    "correct_answer": "13.33 days",
+    "topic": "Time & Work",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A boat's speed in still water is 12 km/hr. Stream speed is 4 km/hr. Distance upstream in 4 hours?",
+    "options": [
+      "32 km",
+      "36 km",
+      "40 km",
+      "44 km"
+    ],
+    "correct_answer": "32 km",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Two trains start from opposite directions at speeds 40 km/hr and 60 km/hr. They meet after 3 hours. Distance between stations?",
+    "options": [
+      "200 km",
+      "250 km",
+      "300 km",
+      "350 km"
+    ],
+    "correct_answer": "300 km",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 1, 2, 6, 24, 120, ?",
+    "options": [
+      "600",
+      "720",
+      "840",
+      "960"
+    ],
+    "correct_answer": "720",
+    "topic": "Number Series",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 1, 4, 10, 20, 35, ?",
+    "options": [
+      "50",
+      "56",
+      "60",
+      "70"
+    ],
+    "correct_answer": "56",
+    "topic": "Number Series",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 2, 5, 11, 23, 47, ?",
+    "options": [
+      "85",
+      "89",
+      "95",
+      "100"
+    ],
+    "correct_answer": "95",
+    "topic": "Number Series",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A walks 5m north, 3m east, 4m south, 2m west. Final distance and direction?",
+    "options": [
+      "√2 m NE",
+      "√10 m NE",
+      "√8 m NE",
+      "√5 m NE"
+    ],
+    "correct_answer": "√10 m NE",
+    "topic": "Directions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A starts at origin, goes 6 units north, 8 units east, 3 units south, 4 units west. Distance from origin?",
+    "options": [
+      "5 units",
+      "√61 units",
+      "√85 units",
+      "10 units"
+    ],
+    "correct_answer": "√85 units",
+    "topic": "Directions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A's father's mother's only son is B. How many male relatives of A in B's lineage (excluding B)?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "2",
+    "topic": "Blood Relations",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If X's father is Y's grandfather and Y's mother is X's mother, then Y is X's __?",
+    "options": [
+      "Brother",
+      "Cousin",
+      "Son",
+      "Nephew"
+    ],
+    "correct_answer": "Brother",
+    "topic": "Blood Relations",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If MATHEMATICS is coded as 82963486347, how is MATH coded?",
+    "options": [
+      "8296",
+      "8269",
+      "8296",
+      "8239"
+    ],
+    "correct_answer": "8296",
+    "topic": "Coding-Decoding",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If each letter in STUDENT is replaced by the letter 2 positions ahead, the code is?",
+    "options": [
+      "UVWFGPV",
+      "VWIGNQV",
+      "UWHFGQV",
+      "VXIHGRW"
+    ],
+    "correct_answer": "UVWFGPV",
+    "topic": "Coding-Decoding",
+    "difficulty": "hard"
+  },
+  {
+    "question": "5 people sit in a row. A is next to B. C is next to D. If E is at one end, how many arrangements?",
+    "options": [
+      "24",
+      "48",
+      "72",
+      "96"
+    ],
+    "correct_answer": "48",
+    "topic": "Seating Arrangements",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The word most similar in meaning to 'pugnacious' is?",
+    "options": [
+      "Aggressive",
+      "Peaceful",
+      "Quiet",
+      "Calm"
+    ],
+    "correct_answer": "Aggressive",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which word is closest in meaning to 'perspicacious'?",
+    "options": [
+      "Sweating",
+      "Insightful",
+      "Visible",
+      "Obvious"
+    ],
+    "correct_answer": "Insightful",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Choose correct: 'Had he known the truth, he _____.' A)would come B)will come C)would have come D)came",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correct_answer": "C",
+    "topic": "Grammar",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify error: 'The committee have decided to postpone the meeting.'",
+    "options": [
+      "committee",
+      "'have' to 'has'",
+      "'decided' to 'decide'",
+      "No error"
+    ],
+    "correct_answer": "'have' to 'has'",
+    "topic": "Grammar",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Arrange: A) This led to increased productivity. B) The company implemented new strategies. C) Employee satisfaction improved. D) Automation reduced manual work.",
+    "options": [
+      "BADC",
+      "BDAC",
+      "BCAD",
+      "BCDA"
+    ],
+    "correct_answer": "BDAC",
+    "topic": "Para Jumbles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Passage: 'Artificial intelligence has revolutionized many industries. Manufacturing, healthcare, and finance have all benefited from AI. However, the rise of AI has also raised concerns about job displacement.' What is the main concern mentioned?",
+    "options": [
+      "High cost",
+      "Job displacement",
+      "Poor quality",
+      "Complexity"
+    ],
+    "correct_answer": "Job displacement",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A amount becomes ₹2420 in 2 years at 10% SI. Initial amount = ?",
+    "options": [
+      "₹1800",
+      "₹2000",
+      "₹2100",
+      "₹2200"
+    ],
+    "correct_answer": "₹2000",
+    "topic": "Percentages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Two containers: A has 5 red, 3 blue balls. B has 2 red, 4 blue balls. Probability of drawing one red from each?",
+    "options": [
+      "5/16",
+      "5/8",
+      "10/64",
+      "5/32"
+    ],
+    "correct_answer": "10/64",
+    "topic": "Averages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If x:y:z = 1:2:3 and xyz = 48, find x",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "2",
+    "topic": "Ratios & Proportions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A trader marks profit 40%, gives discount 25%. Net profit%?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "correct_answer": "5%",
+    "topic": "Profit & Loss",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A, B, C together finish work in 5 days. A alone takes 10 days. B+C together = ?",
+    "options": [
+      "10 days",
+      "15 days",
+      "8 days",
+      "12 days"
+    ],
+    "correct_answer": "10 days",
+    "topic": "Time & Work",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Two swimmers 100m apart swim toward each other. One at 3 m/s, other at 2 m/s. Time to meet?",
+    "options": [
+      "15 seconds",
+      "20 seconds",
+      "25 seconds",
+      "30 seconds"
+    ],
+    "correct_answer": "20 seconds",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 5, 11, 23, 47, 95, ?",
+    "options": [
+      "185",
+      "190",
+      "191",
+      "192"
+    ],
+    "correct_answer": "191",
+    "topic": "Number Series",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A starts at (0,0), goes 3 units north, 4 units east, 5 units south, 2 units west. Position?",
+    "options": [
+      "(2,-2)",
+      "(2,-1)",
+      "(1,-2)",
+      "(1,-1)"
+    ],
+    "correct_answer": "(2,-2)",
+    "topic": "Directions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How is X related to Y? X's son's sister is Y's mother.",
+    "options": [
+      "Father",
+      "Grandfather",
+      "Uncle",
+      "Cousin"
+    ],
+    "correct_answer": "Grandfather",
+    "topic": "Blood Relations",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If ZEBRA is coded using the pattern where each letter is replaced by its position in alphabet, the code is?",
+    "options": [
+      "26521",
+      "265218",
+      "26518",
+      "2615189"
+    ],
+    "correct_answer": "2615189",
+    "topic": "Coding-Decoding",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The synonym of 'laconic' is?",
+    "options": [
+      "Talkative",
+      "Eloquent",
+      "Concise",
+      "Verbose"
+    ],
+    "correct_answer": "Concise",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Correct: 'The data ____ incomplete, so we cannot proceed.'",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have been"
+    ],
+    "correct_answer": "is",
+    "topic": "Grammar",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Arrange in logical order: A) She decided to pursue medicine. B) She scored well in board exams. C) Her dream came true. D) She got admitted to a medical college.",
+    "options": [
+      "BADC",
+      "BACD",
+      "ACBD",
+      "DCBA"
+    ],
+    "correct_answer": "BADC",
+    "topic": "Para Jumbles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "From passage: 'Technology has enabled remote work, increasing flexibility. However, it has blurred work-life boundaries.' What is the trade-off?",
+    "options": [
+      "Cost vs benefit",
+      "Flexibility vs boundaries",
+      "Productivity vs health",
+      "None"
+    ],
+    "correct_answer": "Flexibility vs boundaries",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Simple interest on ₹1500 for 3 years at 8% p.a. = ?",
+    "options": [
+      "₹300",
+      "₹360",
+      "₹400",
+      "₹450"
+    ],
+    "correct_answer": "₹360",
+    "topic": "Percentages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If three articles cost ₹120, ₹140, ₹160 respectively, weighted average cost?",
+    "options": [
+      "₹140",
+      "₹145",
+      "₹150",
+      "₹155"
+    ],
+    "correct_answer": "₹140",
+    "topic": "Averages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Ratio 12:18:24 in simplest form is?",
+    "options": [
+      "2:3:4",
+      "4:6:8",
+      "1:1.5:2",
+      "6:9:12"
+    ],
+    "correct_answer": "2:3:4",
+    "topic": "Ratios & Proportions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If CP is 60% of SP, profit% = ?",
+    "options": [
+      "40%",
+      "50%",
+      "66.67%",
+      "75%"
+    ],
+    "correct_answer": "66.67%",
+    "topic": "Profit & Loss",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A's 1-day work + B's 1-day work = 1/6 of task. If A does it in 10 days, B does in?",
+    "options": [
+      "15 days",
+      "18 days",
+      "20 days",
+      "24 days"
+    ],
+    "correct_answer": "15 days",
+    "topic": "Time & Work",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A car average speed for 120 km at 60 km/hr and next 120 km at 40 km/hr, overall average?",
+    "options": [
+      "48 km/hr",
+      "50 km/hr",
+      "52 km/hr",
+      "55 km/hr"
+    ],
+    "correct_answer": "48 km/hr",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 1, 1, 2, 3, 5, 8, 13, ?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "correct_answer": "21",
+    "topic": "Number Series",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A walks to point (5,5) via (3,2). If he retraces, final position?",
+    "options": [
+      "(0,0)",
+      "(3,2)",
+      "(5,5)",
+      "(8,8)"
+    ],
+    "correct_answer": "(0,0)",
+    "topic": "Directions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If P's father's sister is Q and Q's son is R, how is R related to P?",
+    "options": [
+      "Brother",
+      "Cousin",
+      "Uncle",
+      "Nephew"
+    ],
+    "correct_answer": "Cousin",
+    "topic": "Blood Relations",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If reverse of 'GOOD' is coded as specific pattern, 'BAD' reverse code?",
+    "options": [
+      "DAB",
+      "DAAB",
+      "ABC",
+      "CBA"
+    ],
+    "correct_answer": "DAB",
+    "topic": "Coding-Decoding",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Antonym of 'benign' is?",
+    "options": [
+      "Malicious",
+      "Harmful",
+      "Kind",
+      "Gentle"
+    ],
+    "correct_answer": "Malicious",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Correct: 'Not only John but also Mary ____ present.'",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "correct_answer": "is",
+    "topic": "Grammar",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Arrange: A) The project was completed successfully. B) The team worked tirelessly. C) It was celebrated as a major achievement. D) The deadline was extended twice.",
+    "options": [
+      "BDAC",
+      "BADC",
+      "ABDC",
+      "BCAD"
+    ],
+    "correct_answer": "BDAC",
+    "topic": "Para Jumbles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Passage: 'Climate change is accelerating. Extreme weather events are becoming frequent.' Which word best describes the mood?",
+    "options": [
+      "Optimistic",
+      "Alarming",
+      "Neutral",
+      "Humorous"
+    ],
+    "correct_answer": "Alarming",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If 40% of x = 50% of y, ratio x:y = ?",
+    "options": [
+      "4:5",
+      "5:4",
+      "2:5",
+      "5:2"
+    ],
+    "correct_answer": "5:4",
+    "topic": "Percentages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Three numbers in ratio 2:3:5 with sum 300. Largest number?",
+    "options": [
+      "100",
+      "120",
+      "150",
+      "180"
+    ],
+    "correct_answer": "150",
+    "topic": "Ratios & Proportions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A mixture of milk and water in ratio 3:2. If 10 liters added, ratio becomes 1:1. Original mixture?",
+    "options": [
+      "20 L",
+      "25 L",
+      "30 L",
+      "35 L"
+    ],
+    "correct_answer": "25 L",
+    "topic": "Ratios & Proportions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Profit% when CP = ₹250, discount = 20%, marked price = ₹400?",
+    "options": [
+      "20%",
+      "28%",
+      "32%",
+      "35%"
+    ],
+    "correct_answer": "28%",
+    "topic": "Profit & Loss",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A and B do work in 12 and 15 days. C undoes in 20 days. Working together, time?",
+    "options": [
+      "8 days",
+      "10 days",
+      "12 days",
+      "15 days"
+    ],
+    "correct_answer": "10 days",
+    "topic": "Time & Work",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Two trains start simultaneously. One goes 50 km/hr north, another 40 km/hr east. Distance after 2 hours?",
+    "options": [
+      "100 km",
+      "80 km",
+      "128.06 km",
+      "150 km"
+    ],
+    "correct_answer": "128.06 km",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 1, 3, 6, 10, 15, ?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "25"
+    ],
+    "correct_answer": "21",
+    "topic": "Number Series",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Person moves 7 units north, 9 units east. Vector distance?",
+    "options": [
+      "11.4 units",
+      "12.2 units",
+      "13.1 units",
+      "14.3 units"
+    ],
+    "correct_answer": "11.4 units",
+    "topic": "Directions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "X's only sister's husband is Y. Y is X's __?",
+    "options": [
+      "Brother-in-law",
+      "Brother",
+      "Cousin",
+      "Uncle"
+    ],
+    "correct_answer": "Brother-in-law",
+    "topic": "Blood Relations",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If CODE is 3-15-4-5, what is DECODE?",
+    "options": [
+      "4-5-3-15-4-5",
+      "3-5-3-15-4-5",
+      "4-5-3-15-4-5",
+      "5-5-3-15-4-5"
+    ],
+    "correct_answer": "4-5-3-15-4-5",
+    "topic": "Coding-Decoding",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Synonym of 'ephemeral' is?",
+    "options": [
+      "Permanent",
+      "Transient",
+      "Eternal",
+      "Durable"
+    ],
+    "correct_answer": "Transient",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Choose correct form: 'I wish I ____ more time.'",
+    "options": [
+      "have",
+      "had",
+      "would have",
+      "has"
+    ],
+    "correct_answer": "had",
+    "topic": "Grammar",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Arrange: A) Innovation drives growth. B) Companies must adapt. C) Markets are evolving. D) Competition is fierce.",
+    "options": [
+      "CADB",
+      "CDAB",
+      "DBAC",
+      "ACDB"
+    ],
+    "correct_answer": "CADB",
+    "topic": "Para Jumbles",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Passage: 'Education opens doors.' What does 'opens doors' mean here?",
+    "options": [
+      "Physical doors",
+      "New opportunities",
+      "Unlock buildings",
+      "Door mechanisms"
+    ],
+    "correct_answer": "New opportunities",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If 15% of x = 25% of y and sum is 100, then x = ?",
+    "options": [
+      "30",
+      "40",
+      "60",
+      "70"
+    ],
+    "correct_answer": "40",
+    "topic": "Percentages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Average of arithmetic sequence 5, 10, 15,...,100 = ?",
+    "options": [
+      "50",
+      "52.5",
+      "55",
+      "57.5"
+    ],
+    "correct_answer": "52.5",
+    "topic": "Averages",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A:B:C = 2:3:4, B = 60. Then A+C = ?",
+    "options": [
+      "80",
+      "100",
+      "120",
+      "140"
+    ],
+    "correct_answer": "100",
+    "topic": "Ratios & Proportions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Profit when marked price = ₹500, discount = 25%, cost = ₹300?",
+    "options": [
+      "₹75",
+      "₹100",
+      "₹125",
+      "₹150"
+    ],
+    "correct_answer": "₹75",
+    "topic": "Profit & Loss",
+    "difficulty": "hard"
+  },
+  {
+    "question": "A pipe fills in 6 hrs, B empties in 10 hrs. Both open, time to fill?",
+    "options": [
+      "12 hrs",
+      "15 hrs",
+      "18 hrs",
+      "20 hrs"
+    ],
+    "correct_answer": "15 hrs",
+    "topic": "Time & Work",
+    "difficulty": "hard"
+  }
 ]

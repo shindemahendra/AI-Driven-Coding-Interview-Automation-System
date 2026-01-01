@@ -1,0 +1,902 @@
+[
+  {
+    "question": "A shirt costs ₹500 and is offered at a discount of 20%. What is the final price?",
+    "options": [
+      "₹350",
+      "₹400",
+      "₹450",
+      "₹480"
+    ],
+    "correct_answer": "₹400",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a product's price increases from ₹100 to ₹125, what is the percentage increase?",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "35%"
+    ],
+    "correct_answer": "25%",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A company reduces its workforce by 15%. If it had 200 employees, how many remain?",
+    "options": [
+      "170",
+      "175",
+      "185",
+      "190"
+    ],
+    "correct_answer": "170",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is 30% of 150?",
+    "options": [
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "correct_answer": "45",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 40% of a number is 80, what is the number?",
+    "options": [
+      "180",
+      "200",
+      "220",
+      "240"
+    ],
+    "correct_answer": "200",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The average of 5, 10, and 15 is?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct_answer": "10",
+    "topic": "Averages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If the average of four numbers is 20, what is their sum?",
+    "options": [
+      "60",
+      "80",
+      "100",
+      "120"
+    ],
+    "correct_answer": "80",
+    "topic": "Averages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The average weight of 3 people is 60 kg. If two of them weigh 55 kg and 65 kg, what is the weight of the third person?",
+    "options": [
+      "55 kg",
+      "60 kg",
+      "65 kg",
+      "70 kg"
+    ],
+    "correct_answer": "60 kg",
+    "topic": "Averages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If the ratio of apples to oranges is 3:2 and there are 15 apples, how many oranges are there?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct_answer": "10",
+    "topic": "Ratios",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A:B = 2:3 and B:C = 3:4, what is A:C?",
+    "options": [
+      "1:2",
+      "2:3",
+      "2:4",
+      "3:4"
+    ],
+    "correct_answer": "2:4",
+    "topic": "Ratios",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A trader buys an item for ₹200 and sells it for ₹250. What is the profit percentage?",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "35%"
+    ],
+    "correct_answer": "25%",
+    "topic": "Profit & Loss",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If cost price is ₹100 and profit is ₹25, what is the selling price?",
+    "options": [
+      "₹100",
+      "₹110",
+      "₹125",
+      "₹150"
+    ],
+    "correct_answer": "₹125",
+    "topic": "Profit & Loss",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A merchant sells a book for ₹240 at a loss of ₹60. What was the cost price?",
+    "options": [
+      "₹280",
+      "₹300",
+      "₹320",
+      "₹340"
+    ],
+    "correct_answer": "₹300",
+    "topic": "Profit & Loss",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A can complete a task in 10 days, what part of the task can A complete in 1 day?",
+    "options": [
+      "1/5",
+      "1/8",
+      "1/10",
+      "1/12"
+    ],
+    "correct_answer": "1/10",
+    "topic": "Time & Work",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A and B together can complete a work in 4 days, and A alone can complete it in 6 days, how many days will B take alone?",
+    "options": [
+      "8 days",
+      "10 days",
+      "12 days",
+      "14 days"
+    ],
+    "correct_answer": "12 days",
+    "topic": "Time & Work",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete the series: 2, 4, 6, 8, ?",
+    "options": [
+      "9",
+      "10",
+      "12",
+      "14"
+    ],
+    "correct_answer": "10",
+    "topic": "Number Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete the series: 1, 4, 9, 16, ?",
+    "options": [
+      "20",
+      "24",
+      "25",
+      "30"
+    ],
+    "correct_answer": "25",
+    "topic": "Number Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete the series: 5, 10, 15, 20, ?",
+    "options": [
+      "22",
+      "24",
+      "25",
+      "30"
+    ],
+    "correct_answer": "25",
+    "topic": "Number Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete the series: A1, B2, C3, D4, ?",
+    "options": [
+      "D5",
+      "E5",
+      "E4",
+      "F5"
+    ],
+    "correct_answer": "E5",
+    "topic": "Alphanumeric Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete the series: Z26, Y25, X24, ?, V23",
+    "options": [
+      "W22",
+      "W23",
+      "W24",
+      "V22"
+    ],
+    "correct_answer": "W22",
+    "topic": "Alphanumeric Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A person walks 10m north, then 10m east. What is the shortest distance to reach the starting point?",
+    "options": [
+      "10√2 m",
+      "14.14 m",
+      "20 m",
+      "15 m"
+    ],
+    "correct_answer": "10√2 m",
+    "topic": "Directions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A is facing north and turns 90° clockwise, which direction is A facing now?",
+    "options": [
+      "North",
+      "East",
+      "South",
+      "West"
+    ],
+    "correct_answer": "East",
+    "topic": "Directions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A's father is B's son. How is A related to B?",
+    "options": [
+      "Grandson",
+      "Son",
+      "Father",
+      "Grandson"
+    ],
+    "correct_answer": "Grandson",
+    "topic": "Blood Relations",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Pointing to a man, a woman says, 'He is the only son of my mother.' How is the man related to the woman?",
+    "options": [
+      "Brother",
+      "Father",
+      "Husband",
+      "Cousin"
+    ],
+    "correct_answer": "Brother",
+    "topic": "Blood Relations",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which word is a synonym of 'clever'?",
+    "options": [
+      "Dull",
+      "Intelligent",
+      "Lazy",
+      "Rude"
+    ],
+    "correct_answer": "Intelligent",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which word is an antonym of 'brave'?",
+    "options": [
+      "Courageous",
+      "Fearless",
+      "Cowardly",
+      "Valiant"
+    ],
+    "correct_answer": "Cowardly",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which word is a synonym of 'happy'?",
+    "options": [
+      "Sad",
+      "Joyful",
+      "Angry",
+      "Worried"
+    ],
+    "correct_answer": "Joyful",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the grammatical error: 'She don't like apples.'",
+    "options": [
+      "'She' is incorrect",
+      "'don't' should be 'doesn't'",
+      "'like' is incorrect",
+      "No error"
+    ],
+    "correct_answer": "'don't' should be 'doesn't'",
+    "topic": "Grammar",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the grammatical error: 'He go to school daily.'",
+    "options": [
+      "'He' is incorrect",
+      "'go' should be 'goes'",
+      "'school' is incorrect",
+      "No error"
+    ],
+    "correct_answer": "'go' should be 'goes'",
+    "topic": "Grammar",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the correct sentence:",
+    "options": [
+      "I is happy",
+      "She are coming",
+      "They is here",
+      "He is working"
+    ],
+    "correct_answer": "He is working",
+    "topic": "Grammar",
+    "difficulty": "easy"
+  },
+  {
+    "question": "She ___ to the market yesterday.",
+    "options": [
+      "go",
+      "goes",
+      "went",
+      "going"
+    ],
+    "correct_answer": "went",
+    "topic": "Fill in the Blanks",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The book is ___ interesting.",
+    "options": [
+      "very",
+      "much",
+      "too much",
+      "very much"
+    ],
+    "correct_answer": "very",
+    "topic": "Fill in the Blanks",
+    "difficulty": "easy"
+  },
+  {
+    "question": "I have ___ apple and ___ orange.",
+    "options": [
+      "a, a",
+      "an, an",
+      "a, an",
+      "an, a"
+    ],
+    "correct_answer": "a, an",
+    "topic": "Fill in the Blanks",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If the ratio of boys to girls in a class is 3:2, and there are 30 students total, how many boys are there?",
+    "options": [
+      "12",
+      "18",
+      "20",
+      "24"
+    ],
+    "correct_answer": "18",
+    "topic": "Ratios",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is 15% of 200?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct_answer": "30",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete the series: 3, 6, 12, 24, ?",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "60"
+    ],
+    "correct_answer": "48",
+    "topic": "Number Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The average of 10, 20, and 30 is?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "correct_answer": "20",
+    "topic": "Averages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a cost price is ₹150 and selling price is ₹180, what is the profit percentage?",
+    "options": [
+      "15%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "correct_answer": "20%",
+    "topic": "Profit & Loss",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A can do a work in 5 days, in how many days can A do 2/5 of the work?",
+    "options": [
+      "1 day",
+      "2 days",
+      "3 days",
+      "4 days"
+    ],
+    "correct_answer": "2 days",
+    "topic": "Time & Work",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A man walks 5m north, then 12m east. What is the shortest distance from start?",
+    "options": [
+      "13 m",
+      "17 m",
+      "15 m",
+      "10 m"
+    ],
+    "correct_answer": "13 m",
+    "topic": "Directions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A's sister is B's mother, then A is B's __?",
+    "options": [
+      "Uncle",
+      "Aunt",
+      "Cousin",
+      "Sibling"
+    ],
+    "correct_answer": "Aunt",
+    "topic": "Blood Relations",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which word is a synonym of 'ancient'?",
+    "options": [
+      "Modern",
+      "Old",
+      "Recent",
+      "New"
+    ],
+    "correct_answer": "Old",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the error: 'Neither the teacher nor the students was ready.'",
+    "options": [
+      "No error",
+      "'was' should be 'were'",
+      "'teacher' is wrong",
+      "'ready' is wrong"
+    ],
+    "correct_answer": "'was' should be 'were'",
+    "topic": "Grammar",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The children ___ playing in the park.",
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "correct_answer": "are",
+    "topic": "Fill in the Blanks",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 25% of x = 50, what is x?",
+    "options": [
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "correct_answer": "200",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete: 2, 5, 10, 17, ?",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "30"
+    ],
+    "correct_answer": "26",
+    "topic": "Number Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A shopkeeper gives a discount of 10% on a shirt marked ₹1000. What is the selling price?",
+    "options": [
+      "₹800",
+      "₹850",
+      "₹900",
+      "₹950"
+    ],
+    "correct_answer": "₹900",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If A can complete a task in 8 days and B in 4 days, working together they can complete it in?",
+    "options": [
+      "2 days",
+      "2.67 days",
+      "3 days",
+      "4 days"
+    ],
+    "correct_answer": "2.67 days",
+    "topic": "Time & Work",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the average of 7, 14, 21, 28?",
+    "options": [
+      "15",
+      "17.5",
+      "20",
+      "17"
+    ],
+    "correct_answer": "17.5",
+    "topic": "Averages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A man buys an item for ₹400 and sells at 25% loss. What is the selling price?",
+    "options": [
+      "₹250",
+      "₹275",
+      "₹300",
+      "₹350"
+    ],
+    "correct_answer": "₹300",
+    "topic": "Profit & Loss",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete: A2Z, B4Y, C6X, ?",
+    "options": [
+      "D8W",
+      "D9W",
+      "E8W",
+      "D8V"
+    ],
+    "correct_answer": "D8W",
+    "topic": "Alphanumeric Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a person turns 90° counter-clockwise from facing east, which way is he facing?",
+    "options": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "correct_answer": "North",
+    "topic": "Directions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "My mother's sister is my __?",
+    "options": [
+      "Cousin",
+      "Aunt",
+      "Niece",
+      "Sister"
+    ],
+    "correct_answer": "Aunt",
+    "topic": "Blood Relations",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is a synonym of 'start'?",
+    "options": [
+      "Begin",
+      "End",
+      "Stop",
+      "Finish"
+    ],
+    "correct_answer": "Begin",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Choose the correct option: 'Each of the students ____ completed the assignment.'",
+    "options": [
+      "have",
+      "has",
+      "are",
+      "be"
+    ],
+    "correct_answer": "has",
+    "topic": "Grammar",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The weather ___ very pleasant today.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "correct_answer": "is",
+    "topic": "Fill in the Blanks",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If 60% of a number is 90, the number is?",
+    "options": [
+      "120",
+      "130",
+      "140",
+      "150"
+    ],
+    "correct_answer": "150",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete: 8, 24, 72, ?",
+    "options": [
+      "144",
+      "216",
+      "288",
+      "360"
+    ],
+    "correct_answer": "216",
+    "topic": "Number Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A price decreases from ₹500 to ₹400. What is the percentage decrease?",
+    "options": [
+      "15%",
+      "18%",
+      "20%",
+      "25%"
+    ],
+    "correct_answer": "20%",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If the average of 5 numbers is 25, their sum is?",
+    "options": [
+      "100",
+      "125",
+      "150",
+      "175"
+    ],
+    "correct_answer": "125",
+    "topic": "Averages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A:B = 4:5 and B:C = 5:6. Find A:C.",
+    "options": [
+      "4:6",
+      "5:6",
+      "4:5",
+      "2:3"
+    ],
+    "correct_answer": "4:6",
+    "topic": "Ratios",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If CP = ₹500 and profit = ₹100, then SP = ?",
+    "options": [
+      "₹400",
+      "₹500",
+      "₹600",
+      "₹700"
+    ],
+    "correct_answer": "₹600",
+    "topic": "Profit & Loss",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete: 100, 50, 25, ?",
+    "options": [
+      "12",
+      "12.5",
+      "15",
+      "20"
+    ],
+    "correct_answer": "12.5",
+    "topic": "Number Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A walks 3m north, 4m west. Distance from start = ?",
+    "options": [
+      "5 m",
+      "7 m",
+      "1 m",
+      "12 m"
+    ],
+    "correct_answer": "5 m",
+    "topic": "Directions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "My father's father is my __?",
+    "options": [
+      "Grandfather",
+      "Grandmother",
+      "Father",
+      "Uncle"
+    ],
+    "correct_answer": "Grandfather",
+    "topic": "Blood Relations",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Antonym of 'big' is?",
+    "options": [
+      "Large",
+      "Huge",
+      "Small",
+      "Giant"
+    ],
+    "correct_answer": "Small",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Find the error: 'The team have won the match.'",
+    "options": [
+      "No error",
+      "'have' should be 'has'",
+      "'team' is wrong",
+      "'won' is wrong"
+    ],
+    "correct_answer": "'have' should be 'has'",
+    "topic": "Grammar",
+    "difficulty": "easy"
+  },
+  {
+    "question": "She ___ a doctor.",
+    "options": [
+      "is",
+      "are",
+      "be",
+      "am"
+    ],
+    "correct_answer": "is",
+    "topic": "Fill in the Blanks",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the value of 50% of 80?",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "correct_answer": "40",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete: 1, 1, 2, 3, 5, ?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct_answer": "8",
+    "topic": "Number Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If x% of 500 = 125, then x = ?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct_answer": "25",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Complete: 15, 12, 9, 6, ?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "3",
+    "topic": "Number Series",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Average of 5, 15, 20 = ?",
+    "options": [
+      "10",
+      "13",
+      "15",
+      "20"
+    ],
+    "correct_answer": "13",
+    "topic": "Averages",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If ratio A:B = 3:4 and A = 9, then B = ?",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "18"
+    ],
+    "correct_answer": "12",
+    "topic": "Ratios",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A sweater costs ₹600 after 25% discount. Original price = ?",
+    "options": [
+      "₹700",
+      "₹750",
+      "₹800",
+      "₹850"
+    ],
+    "correct_answer": "₹800",
+    "topic": "Percentages",
+    "difficulty": "easy"
+  }
+]
