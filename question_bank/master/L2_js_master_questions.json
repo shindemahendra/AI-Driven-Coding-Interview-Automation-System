@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Which of the following is a primitive data type in JavaScript?",
+    "options": [
+      "Object",
+      "Array",
+      "Boolean",
+      "Function"
+    ],
+    "correct_answer": "Boolean",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the result of typeof undefined?",
+    "options": [
+      "\"undefined\"",
+      "\"null\"",
+      "null",
+      "undefined"
+    ],
+    "correct_answer": "\"undefined\"",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which operator is used to assign a value to a variable?",
+    "options": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ],
+    "correct_answer": "=",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the modulo operator (%) return?",
+    "options": [
+      "The quotient of division",
+      "The remainder of division",
+      "The product of two numbers",
+      "The difference of two numbers"
+    ],
+    "correct_answer": "The remainder of division",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you write an if statement in JavaScript?",
+    "options": [
+      "if x > 5:",
+      "if (x > 5) { }",
+      "if x > 5 then { }",
+      "if x > 5 { }"
+    ],
+    "correct_answer": "if (x > 5) { }",
+    "topic": "Conditional Statements",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the correct way to declare a variable in modern JavaScript?",
+    "options": [
+      "variable x = 5",
+      "var x = 5",
+      "const x = 5",
+      "declare x = 5"
+    ],
+    "correct_answer": "const x = 5",
+    "topic": "Variables",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which loop will execute at least once even if the condition is false?",
+    "options": [
+      "for loop",
+      "while loop",
+      "do...while loop",
+      "for...in loop"
+    ],
+    "correct_answer": "do...while loop",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you find the length of a string?",
+    "options": [
+      "string.size()",
+      "string.length()",
+      "string.length",
+      "length(string)"
+    ],
+    "correct_answer": "string.length",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which method adds an element to the end of an array?",
+    "options": [
+      "append()",
+      "add()",
+      "push()",
+      "insert()"
+    ],
+    "correct_answer": "push()",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an object in JavaScript?",
+    "options": [
+      "A collection of ordered values",
+      "A collection of key-value pairs",
+      "A primitive data type",
+      "A function declaration"
+    ],
+    "correct_answer": "A collection of key-value pairs",
+    "topic": "Objects",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you create a function in JavaScript?",
+    "options": [
+      "function = myFunction() { }",
+      "function myFunction() { }",
+      "def myFunction() { }",
+      "func myFunction() { }"
+    ],
+    "correct_answer": "function myFunction() { }",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the return statement do in a function?",
+    "options": [
+      "Declares a new variable",
+      "Exits the function and optionally returns a value",
+      "Repeats the function",
+      "Skips to the next function"
+    ],
+    "correct_answer": "Exits the function and optionally returns a value",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between == and ===?",
+    "options": [
+      "There is no difference",
+      "== checks type and value, === checks only value",
+      "=== checks type and value, == checks only value",
+      "=== is for objects, == is for primitives"
+    ],
+    "correct_answer": "=== checks type and value, == checks only value",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which method removes the last element from an array?",
+    "options": [
+      "remove()",
+      "pop()",
+      "shift()",
+      "unshift()"
+    ],
+    "correct_answer": "pop()",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is console.log() used for?",
+    "options": [
+      "Creating a new variable",
+      "Printing output to the browser console",
+      "Importing a module",
+      "Defining a function"
+    ],
+    "correct_answer": "Printing output to the browser console",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you access a property of an object?",
+    "options": [
+      "object[property]",
+      "object.property",
+      "Both of the above are correct",
+      "object->property"
+    ],
+    "correct_answer": "Both of the above are correct",
+    "topic": "Objects",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the break statement in loops?",
+    "options": [
+      "Skips the current iteration",
+      "Exits the loop entirely",
+      "Restarts the loop",
+      "Ends the program"
+    ],
+    "correct_answer": "Exits the loop entirely",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which is NOT a valid data type in JavaScript?",
+    "options": [
+      "Number",
+      "String",
+      "Character",
+      "Boolean"
+    ],
+    "correct_answer": "Character",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the continue statement do in a loop?",
+    "options": [
+      "Exits the entire loop",
+      "Skips the current iteration and continues to the next",
+      "Pauses the loop",
+      "Restarts the loop from the beginning"
+    ],
+    "correct_answer": "Skips the current iteration and continues to the next",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you check if a variable exists?",
+    "options": [
+      "if (var x) { }",
+      "if (typeof x !== 'undefined') { }",
+      "if (exists(x)) { }",
+      "if (x != null) { }"
+    ],
+    "correct_answer": "if (typeof x !== 'undefined') { }",
+    "topic": "Variables",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is NaN in JavaScript?",
+    "options": [
+      "A special object",
+      "A value representing \"Not-a-Number\"",
+      "A type of error",
+      "A reserved keyword"
+    ],
+    "correct_answer": "A value representing \"Not-a-Number\"",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you convert a string to a number?",
+    "options": [
+      "Number(string)",
+      "parseInt(string)",
+      "parseFloat(string)",
+      "All of the above are correct"
+    ],
+    "correct_answer": "All of the above are correct",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the typeof operator do?",
+    "options": [
+      "Declares a new type",
+      "Returns the type of a value as a string",
+      "Converts a value to a specific type",
+      "Checks if a value equals a type"
+    ],
+    "correct_answer": "Returns the type of a value as a string",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you create an array in JavaScript?",
+    "options": [
+      "let arr = [1, 2, 3]",
+      "let arr = {1, 2, 3}",
+      "let arr = new Array(1, 2, 3)",
+      "Both the first and third options are correct"
+    ],
+    "correct_answer": "Both the first and third options are correct",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a method in JavaScript?",
+    "options": [
+      "A way to organize code",
+      "A function that belongs to an object",
+      "A type of variable",
+      "A loop structure"
+    ],
+    "correct_answer": "A function that belongs to an object",
+    "topic": "Objects",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the this keyword?",
+    "options": [
+      "To create a new variable",
+      "To refer to the current object context",
+      "To compare two values",
+      "To import a module"
+    ],
+    "correct_answer": "To refer to the current object context",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you check if an element exists in an array?",
+    "options": [
+      "array.exists(element)",
+      "array.contains(element)",
+      "array.includes(element)",
+      "array.has(element)"
+    ],
+    "correct_answer": "array.includes(element)",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a template literal in JavaScript?",
+    "options": [
+      "A string using single quotes",
+      "A string using double quotes",
+      "A string using backticks that allows variable interpolation",
+      "A reserved string keyword"
+    ],
+    "correct_answer": "A string using backticks that allows variable interpolation",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which method returns the index of the first occurrence in an array?",
+    "options": [
+      "find()",
+      "search()",
+      "indexOf()",
+      "findIndex()"
+    ],
+    "correct_answer": "indexOf()",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a constructor function in JavaScript?",
+    "options": [
+      "A function that builds HTML",
+      "A function used to create objects",
+      "A function that imports modules",
+      "A function that executes automatically"
+    ],
+    "correct_answer": "A function used to create objects",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you use the ternary operator?",
+    "options": [
+      "condition ? true_value : false_value",
+      "condition ? true_value ? false_value",
+      "condition : true_value : false_value",
+      "condition ? true_value . false_value"
+    ],
+    "correct_answer": "condition ? true_value : false_value",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the join() method do?",
+    "options": [
+      "Combines two arrays",
+      "Converts array elements into a single string",
+      "Adds an element to an array",
+      "Removes elements from an array"
+    ],
+    "correct_answer": "Converts array elements into a single string",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you create an object with properties?",
+    "options": [
+      "let obj = { name: 'John', age: 30 }",
+      "let obj = new Object { name: 'John', age: 30 }",
+      "let obj = Object(name: 'John', age: 30)",
+      "let obj = create(name: 'John', age: 30)"
+    ],
+    "correct_answer": "let obj = { name: 'John', age: 30 }",
+    "topic": "Objects",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between null and undefined?",
+    "options": [
+      "null is a type, undefined is a value",
+      "undefined means a variable has no value, null is an intentional assignment of no value",
+      "They are identical",
+      "null refers to objects, undefined refers to functions"
+    ],
+    "correct_answer": "undefined means a variable has no value, null is an intentional assignment of no value",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you slice an array?",
+    "options": [
+      "array.cut(start, end)",
+      "array.slice(start, end)",
+      "array.substring(start, end)",
+      "array.extract(start, end)"
+    ],
+    "correct_answer": "array.slice(start, end)",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the scope of a variable declared with let?",
+    "options": [
+      "Global scope",
+      "Function scope",
+      "Block scope",
+      "Object scope"
+    ],
+    "correct_answer": "Block scope",
+    "topic": "Variables",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you convert a number to a string?",
+    "options": [
+      "String(number)",
+      "number.toString()",
+      "Both of the above are correct",
+      "toString(number)"
+    ],
+    "correct_answer": "Both of the above are correct",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the spread operator (...) do?",
+    "options": [
+      "Creates a loop",
+      "Expands an iterable into individual elements",
+      "Compresses an array",
+      "Creates a new object"
+    ],
+    "correct_answer": "Expands an iterable into individual elements",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which method sorts an array?",
+    "options": [
+      "array.arrange()",
+      "array.sort()",
+      "array.order()",
+      "array.organize()"
+    ],
+    "correct_answer": "array.sort()",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a string method?",
+    "options": [
+      "A function that belongs to a string value",
+      "A way to declare a string",
+      "A type of loop",
+      "A data type"
+    ],
+    "correct_answer": "A function that belongs to a string value",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you check if a string contains a substring?",
+    "options": [
+      "string.has(substring)",
+      "string.includes(substring)",
+      "string.contains(substring)",
+      "string.find(substring)"
+    ],
+    "correct_answer": "string.includes(substring)",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the new keyword?",
+    "options": [
+      "To declare a new variable",
+      "To create an instance of an object",
+      "To import a module",
+      "To define a function"
+    ],
+    "correct_answer": "To create an instance of an object",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you iterate over an array?",
+    "options": [
+      "for loop with index",
+      "forEach method",
+      "for...of loop",
+      "All of the above are correct"
+    ],
+    "correct_answer": "All of the above are correct",
+    "topic": "Loops",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between var, let, and const?",
+    "options": [
+      "var is global, let is block-scoped, const cannot be reassigned",
+      "They are all identical",
+      "var cannot be reassigned, let and const can",
+      "const is global, let and var are local"
+    ],
+    "correct_answer": "var is global, let is block-scoped, const cannot be reassigned",
+    "topic": "Variables",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the map() method do?",
+    "options": [
+      "Finds elements in an array",
+      "Creates a new array by applying a function to each element",
+      "Filters array elements",
+      "Sorts an array"
+    ],
+    "correct_answer": "Creates a new array by applying a function to each element",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is hoisting in JavaScript?",
+    "options": [
+      "A way to optimize code",
+      "Moving declarations to the top of their scope before execution",
+      "A type of error",
+      "A reserved keyword"
+    ],
+    "correct_answer": "Moving declarations to the top of their scope before execution",
+    "topic": "Variables",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you check the type of a function?",
+    "options": [
+      "typeof function returns \"function\"",
+      "function.type()",
+      "isFunction(function)",
+      "function.getType()"
+    ],
+    "correct_answer": "typeof function returns \"function\"",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the filter() method do?",
+    "options": [
+      "Removes all elements from an array",
+      "Creates a new array with elements that pass a test",
+      "Sorts an array",
+      "Maps over an array"
+    ],
+    "correct_answer": "Creates a new array with elements that pass a test",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the delete operator?",
+    "options": [
+      "Removes a variable",
+      "Removes a property from an object",
+      "Clears an array",
+      "Stops code execution"
+    ],
+    "correct_answer": "Removes a property from an object",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you convert an array to a string?",
+    "options": [
+      "array.toString()",
+      "array.join()",
+      "Both of the above are correct",
+      "string(array)"
+    ],
+    "correct_answer": "Both of the above are correct",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a callback function?",
+    "options": [
+      "A function that calls another function",
+      "A function passed as an argument to another function",
+      "A function that returns a function",
+      "A function that repeats indefinitely"
+    ],
+    "correct_answer": "A function passed as an argument to another function",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the reduce() method do?",
+    "options": [
+      "Filters array elements",
+      "Maps over an array",
+      "Reduces an array to a single value",
+      "Sorts an array in reverse"
+    ],
+    "correct_answer": "Reduces an array to a single value",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you check if an object has a property?",
+    "options": [
+      "object.has(property)",
+      "property in object",
+      "object.property !== undefined",
+      "All of the above are correct"
+    ],
+    "correct_answer": "All of the above are correct",
+    "topic": "Objects",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of Object.keys()?",
+    "options": [
+      "Returns the values of an object",
+      "Returns the property names of an object",
+      "Creates a new object",
+      "Deletes object properties"
+    ],
+    "correct_answer": "Returns the property names of an object",
+    "topic": "Objects",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you concatenate strings?",
+    "options": [
+      "Using the + operator",
+      "Using the concat() method",
+      "Using template literals",
+      "All of the above are correct"
+    ],
+    "correct_answer": "All of the above are correct",
+    "topic": "Strings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the logical AND operator?",
+    "options": [
+      "||",
+      "&&",
+      "&",
+      "and"
+    ],
+    "correct_answer": "&&",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the logical OR operator?",
+    "options": [
+      "&",
+      "||",
+      "|",
+      "or"
+    ],
+    "correct_answer": "||",
+    "topic": "Operators",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you create a class in JavaScript?",
+    "options": [
+      "class MyClass { }",
+      "function MyClass() { }",
+      "Both of the first two are valid",
+      "object MyClass { }"
+    ],
+    "correct_answer": "Both of the first two are valid",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the super keyword?",
+    "options": [
+      "To define a new method",
+      "To call a parent class method or constructor",
+      "To create a new object",
+      "To import a module"
+    ],
+    "correct_answer": "To call a parent class method or constructor",
+    "topic": "OOP Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you clone a git repository?",
+    "options": [
+      "git copy <url>",
+      "git clone <url>",
+      "git download <url>",
+      "git pull <url>"
+    ],
+    "correct_answer": "git clone <url>",
+    "topic": "Git Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of git add?",
+    "options": [
+      "Creates a new repository",
+      "Stages changes for commit",
+      "Pushes changes to remote",
+      "Deletes files from tracking"
+    ],
+    "correct_answer": "Stages changes for commit",
+    "topic": "Git Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you view git commit history?",
+    "options": [
+      "git history",
+      "git log",
+      "git commits",
+      "git past"
+    ],
+    "correct_answer": "git log",
+    "topic": "Git Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of git commit?",
+    "options": [
+      "Saves changes to local repository",
+      "Pushes changes to remote",
+      "Creates a new branch",
+      "Deletes a file"
+    ],
+    "correct_answer": "Saves changes to local repository",
+    "topic": "Git Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you list files in Linux?",
+    "options": [
+      "list",
+      "ls",
+      "show",
+      "dir"
+    ],
+    "correct_answer": "ls",
+    "topic": "Linux Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of the cd command?",
+    "options": [
+      "Creates a directory",
+      "Changes directory",
+      "Copies a file",
+      "Deletes a file"
+    ],
+    "correct_answer": "Changes directory",
+    "topic": "Linux Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you create a directory in Linux?",
+    "options": [
+      "makedir",
+      "mkdir <name>",
+      "newdir <name>",
+      "create <name>"
+    ],
+    "correct_answer": "mkdir <name>",
+    "topic": "Linux Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the grep command used for?",
+    "options": [
+      "Copies files",
+      "Searches for text patterns",
+      "Creates files",
+      "Deletes files"
+    ],
+    "correct_answer": "Searches for text patterns",
+    "topic": "Linux Basics",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the shift() method do?",
+    "options": [
+      "Adds an element to the beginning",
+      "Removes and returns the first element",
+      "Sorts the array",
+      "Reverses the array order"
+    ],
+    "correct_answer": "Removes and returns the first element",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the unshift() method do?",
+    "options": [
+      "Removes the first element",
+      "Adds one or more elements to the beginning",
+      "Sorts the array",
+      "Filters the array"
+    ],
+    "correct_answer": "Adds one or more elements to the beginning",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between slice() and splice()?",
+    "options": [
+      "They are the same",
+      "slice() doesn't modify the original array, splice() does",
+      "splice() doesn't modify the original array, slice() does",
+      "slice() is for strings, splice() is for arrays"
+    ],
+    "correct_answer": "slice() doesn't modify the original array, splice() does",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the find() method do?",
+    "options": [
+      "Removes elements from an array",
+      "Returns the first element that passes a test",
+      "Maps over an array",
+      "Sorts an array"
+    ],
+    "correct_answer": "Returns the first element that passes a test",
+    "topic": "Arrays",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the purpose of Object.values()?",
+    "options": [
+      "Returns property names",
+      "Returns property values",
+      "Creates a new object",
+      "Deletes properties"
+    ],
+    "correct_answer": "Returns property values",
+    "topic": "Objects",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an arrow function in JavaScript?",
+    "options": [
+      "A function declared with the => syntax",
+      "A function that points to another function",
+      "A type of loop",
+      "A method to modify objects"
+    ],
+    "correct_answer": "A function declared with the => syntax",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do you declare an arrow function?",
+    "options": [
+      "function => { }",
+      "const func = () => { }",
+      "arrow func() { }",
+      "function() => { }"
+    ],
+    "correct_answer": "const func = () => { }",
+    "topic": "Functions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What are the falsy values in JavaScript?",
+    "options": [
+      "Only false and 0",
+      "false, 0, \"\", null, undefined, NaN",
+      "false, true",
+      "null and undefined only"
+    ],
+    "correct_answer": "false, 0, \"\", null, undefined, NaN",
+    "topic": "Data Types",
+    "difficulty": "easy"
+  }
+]

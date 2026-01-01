@@ -1,1302 +1,902 @@
 [
-    {
-        "question": "What is the error in the following code snippet?\n\"print(\"Hello\" + 123)\"",
-        "code": "print(\"Hello\" + 123)",
-        "options": [
-            "TypeError: can only concatenate str (not \"int\") to str",
-            "ValueError: invalid literal for int() with base 10: 'Hello'",
-            "SyntaxError: invalid syntax",
-            "NameError: name 'print' is not defined"
-        ],
-        "correct_answer": "TypeError: can only concatenate str (not \"int\") to str",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output of the following code? If there is an error, explain why.\n\"x = 5; print(x++);\"",
-        "code": "x = 5; print(x++)",
-        "options": [
-            "6",
-            "5",
-            "SyntaxError: invalid syntax",
-            "TypeError: 'int' object is not callable"
-        ],
-        "correct_answer": "SyntaxError: invalid syntax",
-        "topic": "L1",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the error in the following code snippet?\n\"def my_function(a, b):\n  return a + b\n\nprint(my_function(1))\"",
-        "code": "def my_function(a, b):\n  return a + b\n\nprint(my_function(1))",
-        "options": [
-            "TypeError: my_function() missing 1 required positional argument: 'b'",
-            "ValueError: too many values to unpack (expected 2)",
-            "IndexError: list index out of range",
-            "NameError: name 'my_function' is not defined"
-        ],
-        "correct_answer": "TypeError: my_function() missing 1 required positional argument: 'b'",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the error in the following code?\n\"for i in range(10):\nprint(i)\"",
-        "code": "for i in range(10):\nprint(i)",
-        "options": [
-            "IndentationError: expected an indented block",
-            "NameError: name 'i' is not defined",
-            "TypeError: 'int' object is not iterable",
-            "SyntaxError: invalid syntax"
-        ],
-        "correct_answer": "IndentationError: expected an indented block",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output of the following code?\n\"x = [1, 2, 3]\nprint(x[3])\"",
-        "code": "x = [1, 2, 3]\nprint(x[3])",
-        "options": [
-            "3",
-            "None",
-            "IndexError: list index out of range",
-            "KeyError: 3"
-        ],
-        "correct_answer": "IndexError: list index out of range",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the issue with this code?\n\"def add(x, y):\n  result = x + y\nadd(5,3)\nprint(result)\"",
-        "code": "def add(x, y):\n  result = x + y\nadd(5,3)\nprint(result)",
-        "options": [
-            "NameError: name 'result' is not defined",
-            "TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'",
-            "SyntaxError: invalid syntax",
-            "ValueError: invalid literal for int() with base 10: 'result'"
-        ],
-        "correct_answer": "NameError: name 'result' is not defined",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is wrong with this code? \n\"def greet(name):\n print(\"Hello, \" + name)\n\ngreet(5)\"",
-        "code": "def greet(name):\n print(\"Hello, \" + name)\n\ngreet(5)",
-        "options": [
-            "TypeError: can only concatenate str (not \"int\") to str",
-            "ValueError: name must be a string",
-            "SyntaxError: invalid syntax",
-            "NameError: name 'greet' is not defined"
-        ],
-        "correct_answer": "TypeError: can only concatenate str (not \"int\") to str",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the problem with the following code?\n\"def divide(x, y):\n  return x / y\n\nprint(divide(10, 0))\"",
-        "code": "def divide(x, y):\n  return x / y\n\nprint(divide(10, 0))",
-        "options": [
-            "ZeroDivisionError: division by zero",
-            "TypeError: unsupported operand type(s) for /: 'int' and 'str'",
-            "ValueError: math domain error",
-            "OverflowError: result too large"
-        ],
-        "correct_answer": "ZeroDivisionError: division by zero",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the error in this code?\n\"my_dict = {\"a\": 1, \"b\": 2}\nprint(my_dict[\"c\"])\"",
-        "code": "my_dict = {\"a\": 1, \"b\": 2}\nprint(my_dict[\"c\"])",
-        "options": [
-            "KeyError: 'c'",
-            "IndexError: list index out of range",
-            "TypeError: string indices must be integers",
-            "ValueError: invalid literal for int() with base 10: 'c'"
-        ],
-        "correct_answer": "KeyError: 'c'",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "Identify the bug in the following code:\n\"def factorial(n):\n if n == 0:\n return 1\n else:\n return n * factorial(n+1)\nprint(factorial(5))\"",
-        "code": "def factorial(n):\n if n == 0:\n return 1\n else:\n return n * factorial(n+1)\nprint(factorial(5))",
-        "options": [
-            "RecursionError: maximum recursion depth exceeded",
-            "OverflowError: result too large",
-            "TypeError: can't multiply sequence by non-int of type 'float'",
-            "ValueError: factorial() not defined for negative values"
-        ],
-        "correct_answer": "RecursionError: maximum recursion depth exceeded",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What's the problem with this code snippet?\n\"my_string = \"Hello\"\nmy_string[0] = 'J'\"",
-        "code": "my_string = \"Hello\"\nmy_string[0] = 'J'",
-        "options": [
-            "TypeError: 'str' object does not support item assignment",
-            "IndexError: string index out of range",
-            "ValueError: cannot assign to literal",
-            "SyntaxError: invalid syntax"
-        ],
-        "correct_answer": "TypeError: 'str' object does not support item assignment",
-        "topic": "L1",
-        "difficulty": "medium"
-    },
-    {
-        "question": "Why does this code fail?\n\"def func(a):\n b = a + 2\n return\nprint(func(2))\"",
-        "code": "def func(a):\n b = a + 2\n return\nprint(func(2))",
-        "options": [
-            "Prints None",
-            "NameError: name 'b' is not defined",
-            "TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'",
-            "ValueError: invalid literal for int() with base 10: 'func'"
-        ],
-        "correct_answer": "Prints None",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "Find the error in this code:\n\"try:\n x = 1 / 0\nexcept Exception as e:\n pass\nfinally:\n print(\"Finally\")\nprint(e)\"",
-        "code": "try:\n x = 1 / 0\nexcept Exception as e:\n pass\nfinally:\n print(\"Finally\")\nprint(e)",
-        "options": [
-            "NameError: name 'e' is not defined",
-            "ZeroDivisionError: division by zero",
-            "TypeError: unsupported operand type(s) for /: 'int' and 'int'",
-            "SyntaxError: invalid syntax"
-        ],
-        "correct_answer": "NameError: name 'e' is not defined",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "Why does this code not produce the expected output?\n\"def append_to_list(val, my_list=[]):\n my_list.append(val)\n return my_list\n\nlist1 = append_to_list(1)\nlist2 = append_to_list(2)\nprint(list1, list2)\"",
-        "code": "def append_to_list(val, my_list=[]):\n my_list.append(val)\n return my_list\n\nlist1 = append_to_list(1)\nlist2 = append_to_list(2)\nprint(list1, list2)",
-        "options": [
-            "The default argument is evaluated only once.",
-            "The function does not return anything",
-            "The function parameters are incorrectly assigned",
-            "There's an error in print statement."
-        ],
-        "correct_answer": "The default argument is evaluated only once.",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What is wrong with the following code?\n\"x = 10\ndef my_function():\n  x = x + 5\n  print(x)\nmy_function()\"",
-        "code": "x = 10\ndef my_function():\n  x = x + 5\n  print(x)\nmy_function()",
-        "options": [
-            "UnboundLocalError: local variable 'x' referenced before assignment",
-            "NameError: name 'x' is not defined",
-            "TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'",
-            "SyntaxError: invalid syntax"
-        ],
-        "correct_answer": "UnboundLocalError: local variable 'x' referenced before assignment",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "Debug the following code: \"def foo(a, b=3, c):\n  print(a, b, c)\nfoo(1,2)\"",
-        "code": "def foo(a, b=3, c):\n  print(a, b, c)\nfoo(1,2)",
-        "options": [
-            "SyntaxError: non-default argument follows default argument",
-            "TypeError: foo() missing 1 required positional argument: 'c'",
-            "NameError: name 'foo' is not defined",
-            "ValueError: too many values to unpack (expected 3)"
-        ],
-        "correct_answer": "SyntaxError: non-default argument follows default argument",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What error will occur?\n\"x = \"hello\"\nfor i in range(len(x)):\n x[i] = x[i].upper()\"",
-        "code": "x = \"hello\"\nfor i in range(len(x)):\n x[i] = x[i].upper()",
-        "options": [
-            "TypeError: 'str' object does not support item assignment",
-            "IndexError: string index out of range",
-            "ValueError: invalid literal for int() with base 10: 'i'",
-            "NameError: name 'x' is not defined"
-        ],
-        "correct_answer": "TypeError: 'str' object does not support item assignment",
-        "topic": "L1",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output of the following code?\n\"def modify_list(lst):\n lst = [1, 2, 3]\n\nmy_list = [4, 5, 6]\nmodify_list(my_list)\nprint(my_list)\"",
-        "code": "def modify_list(lst):\n lst = [1, 2, 3]\n\nmy_list = [4, 5, 6]\nmodify_list(my_list)\nprint(my_list)",
-        "options": [
-            "[4, 5, 6]",
-            "[1, 2, 3]",
-            "None",
-            "Error"
-        ],
-        "correct_answer": "[4, 5, 6]",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "Why does the code not work as intended?\n\"def process_data(data):\n  try:\n   result = int(data)\n  except:\n   result = None\n  return result\n\nmy_data = [\"1\", \"2\", \"a\", \"4\"]\nprocessed_data = [process_data(item) for item in my_data if item is not None]\nprint(processed_data)\"",
-        "code": "def process_data(data):\n  try:\n   result = int(data)\n  except:\n   result = None\n  return result\n\nmy_data = [\"1\", \"2\", \"a\", \"4\"]\nprocessed_data = [process_data(item) for item in my_data if item is not None]\nprint(processed_data)",
-        "options": [
-            "The code runs successfully but does not handle None values correctly.",
-            "The code causes a TypeError.",
-            "The list comprehension has a syntax error.",
-            "The except block should specify a specific exception type."
-        ],
-        "correct_answer": "The code runs successfully but does not handle None values correctly.",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What's the problem here?\n\"def function():\n global x\n x = 5\nfunction()\nprint(x)\nx = 10\"",
-        "code": "def function():\n global x\n x = 5\nfunction()\nprint(x)\nx = 10",
-        "options": [
-            "The code runs fine and prints 5",
-            "The code throws NameError",
-            "The code prints 10",
-            "The code results in infinite recursion"
-        ],
-        "correct_answer": "The code runs fine and prints 5",
-        "topic": "L3",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output of the following code? Bug Description: The division operation is performed before the addition, leading to an incorrect result.",
-        "code": "print(2 + 10 / 2)",
-        "options": [
-            "7.0",
-            "6.0",
-            "12.0",
-            "5.0"
-        ],
-        "correct_answer": "7.0",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What will be printed? Bug: Index out of bounds error in list access.",
-        "code": "my_list = [1, 2, 3]; print(my_list[3])",
-        "options": [
-            "3",
-            "Error",
-            "1",
-            "None"
-        ],
-        "correct_answer": "Error",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output? Bug: Incorrect type conversion leads to unexpected behavior.",
-        "code": "x = \"5\"; y = 2; print(x + y)",
-        "options": [
-            "7",
-            "52",
-            "Error",
-            "25"
-        ],
-        "correct_answer": "Error",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the final value of `result`? Bug: Incorrect logic within the loop.",
-        "code": "result = 0\nfor i in range(5):\n  result += i\nprint(result)",
-        "options": [
-            "10",
-            "15",
-            "4",
-            "5"
-        ],
-        "correct_answer": "10",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output? Bug: NameError because variable is not defined.",
-        "code": "print(undefined_variable)",
-        "options": [
-            "0",
-            "None",
-            "Error",
-            "Undefined"
-        ],
-        "correct_answer": "Error",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What will this code print? Bug: Incorrect indentation leads to a syntax error.",
-        "code": "if True:\nprint(\"Hello\")",
-        "options": [
-            "Hello",
-            "Error",
-            "True",
-            "None"
-        ],
-        "correct_answer": "Error",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What's the output of this code? Bug: TypeError due to incorrect operator for string concatenation.",
-        "code": "name = \"Alice\"; age = 30; print(\"Name: \" + age)",
-        "options": [
-            "Name: Alice30",
-            "Name: 30",
-            "Error",
-            "Name: Alice"
-        ],
-        "correct_answer": "Error",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What does the following code print? Bug: Logic error; `break` statement is unreachable.",
-        "code": "for i in range(5):\n  print(i)\n  break",
-        "options": [
-            "0\\n1\\n2\\n3\\n4\\n",
-            "0",
-            "Error",
-            "1"
-        ],
-        "correct_answer": "0",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output of this function call? Bug: Off-by-one error in loop condition.",
-        "code": "def sum_list(numbers):\n  total = 0\n  for i in range(len(numbers) + 1):\n    total += numbers[i]\n  return total\nprint(sum_list([1, 2, 3]))",
-        "options": [
-            "6",
-            "Error",
-            "7",
-            "5"
-        ],
-        "correct_answer": "Error",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What's the output? Bug: Incorrect variable scope, accessing a local variable outside its scope.",
-        "code": "def my_func():\n  x = 10\nmy_func()\nprint(x)",
-        "options": [
-            "10",
-            "Error",
-            "None",
-            "0"
-        ],
-        "correct_answer": "Error",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What will this print? Bug: Incorrect logic in conditional statement with `and`.",
-        "code": "a = 5; b = 10\nif a > 0 and b < 5:\n  print(\"Both conditions are true\")\nelse:\n  print(\"At least one condition is false\")",
-        "options": [
-            "Both conditions are true",
-            "At least one condition is false",
-            "Error",
-            "None"
-        ],
-        "correct_answer": "At least one condition is false",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's the output of this? Bug: Unintended side effect modifies original list.",
-        "code": "def modify_list(lst):\n  lst.append(4)\nmy_list = [1, 2, 3]\nmodify_list(my_list)\nprint(my_list)",
-        "options": [
-            "[1, 2, 3]",
-            "[1, 2, 3, 4]",
-            "Error",
-            "[4]"
-        ],
-        "correct_answer": "[1, 2, 3, 4]",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What does this print? Bug: Incorrect modulo operation when handling zero division possibility.",
-        "code": "x = 10; y = 0; print(x % y)",
-        "options": [
-            "0",
-            "10",
-            "Error",
-            "None"
-        ],
-        "correct_answer": "Error",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output of this snippet? Bug: Shallow copy results in unintended modifications.",
-        "code": "list1 = [1, [2, 3]]\nlist2 = list1\nlist2[1][0] = 5\nprint(list1)",
-        "options": [
-            "[1, [2, 3]]",
-            "[1, [5, 3]]",
-            "[1, [2, 5]]",
-            "Error"
-        ],
-        "correct_answer": "[1, [5, 3]]",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What will be printed? Bug: Logical error in boolean expression.",
-        "code": "a = True; b = False\nprint(a and not b or b)",
-        "options": [
-            "True",
-            "False",
-            "Error",
-            "None"
-        ],
-        "correct_answer": "True",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's the output of this code? Bug: Incorrect use of global keyword.",
-        "code": "x = 10\ndef my_func():\n  global x\n  x = 5\nmy_func()\nprint(x)",
-        "options": [
-            "10",
-            "5",
-            "Error",
-            "None"
-        ],
-        "correct_answer": "5",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What will be printed? Bug: Incorrect usage of string formatting.",
-        "code": "name = \"Bob\"\nage = 25\nprint(\"My name is %s and I am %d years old.\" % name)",
-        "options": [
-            "My name is Bob and I am 25 years old.",
-            "Error",
-            "My name is %s and I am %d years old.",
-            "None"
-        ],
-        "correct_answer": "Error",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output of this code? Bug: The file might not exist causing a FileNotFoundError.",
-        "code": "try:\n  with open(\"nonexistent_file.txt\", \"r\") as f:\n    print(f.read())\nexcept FileNotFoundError:\n  print(\"File not found\")",
-        "options": [
-            "Error",
-            "File not found",
-            "None",
-            "Contents of file"
-        ],
-        "correct_answer": "File not found",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What's the output? Bug: Incorrect assumption about dictionary keys.",
-        "code": "my_dict = {1: \"a\", 2: \"b\"}\nprint(my_dict[\"1\"])",
-        "options": [
-            "a",
-            "Error",
-            "b",
-            "None"
-        ],
-        "correct_answer": "Error",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is printed? Bug: Infinite recursion without a base case.",
-        "code": "def recursive_func():\n  recursive_func()\nrecursive_func()",
-        "options": [
-            "None",
-            "Error",
-            "RecursionError",
-            "0"
-        ],
-        "correct_answer": "Error",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What is wrong with the following code snippet?\n\"def my_function(a, b):\n    return a + b\nprint(my_function(1, \\\"2\\\"))\"",
-        "code": "def my_function(a, b):\n    return a + b\nprint(my_function(1, \"2\"))",
-        "options": [
-            "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
-            "NameError: name 'my_function' is not defined",
-            "SyntaxError: invalid syntax",
-            "ValueError: could not convert string to float"
-        ],
-        "correct_answer": "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What is the output of the following code, and what is the underlying issue?\n\"x = 5\ndef my_function():\n    x = 10\n    print(x)\nmy_function()\nprint(x)\"",
-        "code": "x = 5\ndef my_function():\n    x = 10\n    print(x)\nmy_function()\nprint(x)",
-        "options": [
-            "10\\n10  - Scope issue",
-            "5\\n5 - Global variable not modified",
-            "10\\n5 - Scope issue",
-            "5\\n10 - Global variable modified incorrectly"
-        ],
-        "correct_answer": "10\\n5 - Scope issue",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What will happen if you run the following code?\n\"def divide(x, y):\n    try:\n        result = x / y\n    except ZeroDivisionError:\n        print(\"division by zero!\")\n    else:\n        print(\"result is\", result)\n    finally:\n        print(\"executing finally clause\")\ndivide(2, 0)\"",
-        "code": "def divide(x, y):\n    try:\n        result = x / y\n    except ZeroDivisionError:\n        print(\"division by zero!\")\n    else:\n        print(\"result is\", result)\n    finally:\n        print(\"executing finally clause\")\ndivide(2, 0)",
-        "options": [
-            "division by zero!\\nexecuting finally clause",
-            "result is 0.0\\nexecuting finally clause",
-            "ZeroDivisionError: division by zero",
-            "executing finally clause"
-        ],
-        "correct_answer": "division by zero!\\nexecuting finally clause",
-        "topic": "L3",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the problem with the following code?\n\"my_list = [1, 2, 3]\nprint(my_list[3])\"",
-        "code": "my_list = [1, 2, 3]\nprint(my_list[3])",
-        "options": [
-            "IndexError: list index out of range",
-            "NameError: name 'my_list' is not defined",
-            "TypeError: list indices must be integers or slices, not str",
-            "ValueError: invalid literal for int() with base 10: '3'"
-        ],
-        "correct_answer": "IndexError: list index out of range",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the error in the following code?\n\"def greet(name):\n  print(\"Hello, \" + name)\n\ngreet()\"",
-        "code": "def greet(name):\n  print(\"Hello, \" + name)\n\ngreet()",
-        "options": [
-            "TypeError: greet() missing 1 required positional argument: 'name'",
-            "NameError: name 'greet' is not defined",
-            "SyntaxError: invalid syntax",
-            "ValueError: not enough values to unpack (expected 1, got 0)"
-        ],
-        "correct_answer": "TypeError: greet() missing 1 required positional argument: 'name'",
-        "topic": "L2",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What happens when you execute this code?\n\"def function():\n    print(variable)\nvariable = 10\nfunction()\"",
-        "code": "def function():\n    print(variable)\nvariable = 10\nfunction()",
-        "options": [
-            "10",
-            "NameError: name 'variable' is not defined",
-            "Prints nothing",
-            "SyntaxError: invalid syntax"
-        ],
-        "correct_answer": "10",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What will be printed by the following code snippet?\n\"def modify_list(my_list):\n    my_list.append(4)\nmy_list = [1, 2, 3]\nmodify_list(my_list)\nprint(my_list)\"",
-        "code": "def modify_list(my_list):\n    my_list.append(4)\nmy_list = [1, 2, 3]\nmodify_list(my_list)\nprint(my_list)",
-        "options": [
-            "[1, 2, 3]",
-            "[1, 2, 3, 4]",
-            "[4]",
-            "None"
-        ],
-        "correct_answer": "[1, 2, 3, 4]",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's wrong with this code?\n\"def factorial(n):\n  if n == 0:\n    return 1\n  else:\n    return n * factorial(n-1)\nprint(factorial(-1))\"",
-        "code": "def factorial(n):\n  if n == 0:\n    return 1\n  else:\n    return n * factorial(n-1)\nprint(factorial(-1))",
-        "options": [
-            "RecursionError: maximum recursion depth exceeded",
-            "ValueError: n must be a non-negative integer",
-            "TypeError: can't multiply sequence by non-int of type 'float'",
-            "Returns 0"
-        ],
-        "correct_answer": "RecursionError: maximum recursion depth exceeded",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "Identify the bug in the following Python code:\n\"def calculate_average(numbers):\n    sum = 0\n    for number in numbers:\n        sum += number\n    average = sum / len(numbers)\n    return average\n\nprint(calculate_average([]))\"",
-        "code": "def calculate_average(numbers):\n    sum = 0\n    for number in numbers:\n        sum += number\n    average = sum / len(numbers)\n    return average\n\nprint(calculate_average([]))",
-        "options": [
-            "ZeroDivisionError: division by zero",
-            "TypeError: 'int' object is not iterable",
-            "NameError: name 'sum' is not defined",
-            "ValueError: invalid literal for int() with base 10: ''"
-        ],
-        "correct_answer": "ZeroDivisionError: division by zero",
-        "topic": "L3",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is wrong with the following function?\n\"def add_numbers(a, b):\nreturn a + b\nprint(add_numbers(5, 3))\"",
-        "code": "def add_numbers(a, b):\nreturn a + b\nprint(add_numbers(5, 3))",
-        "options": [
-            "IndentationError: expected an indented block",
-            "SyntaxError: invalid syntax",
-            "TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'",
-            "NameError: name 'return' is not defined"
-        ],
-        "correct_answer": "IndentationError: expected an indented block",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the problem with the following code snippet?\n\"x = 10\nif x > 5\n  print(\"x is greater than 5\")\"",
-        "code": "x = 10\nif x > 5\n  print(\"x is greater than 5\")",
-        "options": [
-            "SyntaxError: invalid syntax",
-            "IndentationError: expected an indented block",
-            "NameError: name 'x' is not defined",
-            "TypeError: '>=' not supported between instances of 'int' and 'str'"
-        ],
-        "correct_answer": "SyntaxError: invalid syntax",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What will be the output of the following code?\n\"numbers = [1, 2, 3, 4, 5]\nfor i in range(len(numbers)):\n    numbers.pop(i)\nprint(numbers)\"",
-        "code": "numbers = [1, 2, 3, 4, 5]\nfor i in range(len(numbers)):\n    numbers.pop(i)\nprint(numbers)",
-        "options": [
-            "[2, 4]",
-            "[1, 3, 5]",
-            "[]",
-            "[1, 2, 3, 4, 5]"
-        ],
-        "correct_answer": "[2, 4]",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What is the issue with the following code?\n\"def greet(name='Guest'):\n    print(\"Hello, \" + name)\n\ngreet(None)\"",
-        "code": "def greet(name='Guest'):\n    print(\"Hello, \" + name)\n\ngreet(None)",
-        "options": [
-            "TypeError: can only concatenate str (not \"NoneType\") to str",
-            "ValueError: name cannot be None",
-            "It prints \"Hello, Guest\"",
-            "NameError: name 'None' is not defined"
-        ],
-        "correct_answer": "TypeError: can only concatenate str (not \"NoneType\") to str",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is wrong with the following code?\n\"def my_function(x):\n    if x > 0:\n        return x\nprint(my_function(-5))\"",
-        "code": "def my_function(x):\n    if x > 0:\n        return x\nprint(my_function(-5))",
-        "options": [
-            "Prints None",
-            "Prints -5",
-            "ValueError: x must be positive",
-            "TypeError: x must be an integer"
-        ],
-        "correct_answer": "Prints None",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What happens when you try to run this code?\n\"my_tuple = (1, 2, 3)\nmy_tuple[0] = 4\"",
-        "code": "my_tuple = (1, 2, 3)\nmy_tuple[0] = 4",
-        "options": [
-            "TypeError: 'tuple' object does not support item assignment",
-            "It changes the tuple to (4, 2, 3)",
-            "ValueError: invalid literal for int() with base 10: '4'",
-            "NameError: name 'my_tuple' is not defined"
-        ],
-        "correct_answer": "TypeError: 'tuple' object does not support item assignment",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the problem with the following code?\n\"def process_data(data):\n    for i in range(len(data)):\n        data[i] = int(data[i])\n\ndata = [1, 2, 'a', 4]\nprocess_data(data)\"",
-        "code": "def process_data(data):\n    for i in range(len(data)):\n        data[i] = int(data[i])\n\ndata = [1, 2, 'a', 4]\nprocess_data(data)",
-        "options": [
-            "ValueError: invalid literal for int() with base 10: 'a'",
-            "TypeError: 'str' object cannot be interpreted as an integer",
-            "IndexError: list index out of range",
-            "NameError: name 'data' is not defined"
-        ],
-        "correct_answer": "ValueError: invalid literal for int() with base 10: 'a'",
-        "topic": "L3",
-        "difficulty": "medium"
-    },
-    {
-        "question": "Find the error in the following code:\n\"def some_function():\n  try:\n    result = 5 / 0\n  except Exception as e:\n    pass # Handle the exception\n  print(\"Function complete\")\n\nsome_function()\"",
-        "code": "def some_function():\n  try:\n    result = 5 / 0\n  except Exception as e:\n    pass # Handle the exception\n  print(\"Function complete\")\n\nsome_function()",
-        "options": [
-            "The code runs without any issues",
-            "ZeroDivisionError will be raised and crash the program",
-            "The code will raise a generic Exception",
-            "NameError: name 'result' is not defined"
-        ],
-        "correct_answer": "The code runs without any issues",
-        "topic": "L3",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's the problem with the following code?\n\"def print_values(a, b, c=10):\n    print(a, b, c)\n\nprint_values(1, c=5, 2)\"",
-        "code": "def print_values(a, b, c=10):\n    print(a, b, c)\n\nprint_values(1, c=5, 2)",
-        "options": [
-            "SyntaxError: positional argument follows keyword argument",
-            "TypeError: print_values() missing 1 required positional argument: 'b'",
-            "Prints: 1 2 5",
-            "NameError: name 'print_values' is not defined"
-        ],
-        "correct_answer": "SyntaxError: positional argument follows keyword argument",
-        "topic": "L2",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the issue with the following code? \n\"def outer_function(x):\n    def inner_function(y):\n        return x + y\n    x = 5  # Modifying x here\n    return inner_function(2)\n\nprint(outer_function(10))\"",
-        "code": "def outer_function(x):\n    def inner_function(y):\n        return x + y\n    x = 5  # Modifying x here\n    return inner_function(2)\n\nprint(outer_function(10))",
-        "options": [
-            "Prints 7",
-            "Prints 12",
-            "Prints 17",
-            "NameError: name 'inner_function' is not defined"
-        ],
-        "correct_answer": "Prints 7",
-        "topic": "L3",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What is wrong with the following code?\n\"def calculate_sum(numbers):\n    total = 0\n    for number in numbers:\n        total += number\n    print(\"The sum is:\", total)\n\ncalculate_sum((1, 2, 3))\"",
-        "code": "def calculate_sum(numbers):\n    total = 0\n    for number in numbers:\n        total += number\n    print(\"The sum is:\", total)\n\ncalculate_sum((1, 2, 3))",
-        "options": [
-            "There is no error. It calculates and prints the sum correctly.",
-            "TypeError: 'int' object is not iterable",
-            "NameError: name 'numbers' is not defined",
-            "SyntaxError: invalid syntax"
-        ],
-        "correct_answer": "There is no error. It calculates and prints the sum correctly.",
-        "topic": "L1",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output of the following program? Bug: Incorrect loop condition.",
-        "code": "x = 5\nwhile x > 0:\n  print(x)\n  x += 1",
-        "options": [
-            "5 6 7 8 9...",
-            "5",
-            "Infinite loop",
-            "None"
-        ],
-        "correct_answer": "Infinite loop",
-        "topic": "Loops",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the error in this code? Bug: NameError.",
-        "code": "print(y)",
-        "options": [
-            "SyntaxError",
-            "TypeError",
-            "NameError",
-            "ValueError"
-        ],
-        "correct_answer": "NameError",
-        "topic": "Variables",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output and bug in the following program? Bug: Incorrect variable assignment.",
-        "code": "a = 10\nb = \"20\"\nprint(a + b)",
-        "options": [
-            "30",
-            "1020",
-            "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
-            "NameError"
-        ],
-        "correct_answer": "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
-        "topic": "Data Types",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the bug in the following code? Bug: Incorrect Index.",
-        "code": "my_list = [1, 2, 3]\nprint(my_list[3])",
-        "options": [
-            "SyntaxError",
-            "TypeError",
-            "IndexError",
-            "ValueError"
-        ],
-        "correct_answer": "IndexError",
-        "topic": "Lists",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output? Bug: ZeroDivisionError.",
-        "code": "x = 5\ny = 0\nprint(x / y)",
-        "options": [
-            "0",
-            "5",
-            "ZeroDivisionError",
-            "None"
-        ],
-        "correct_answer": "ZeroDivisionError",
-        "topic": "Arithmetic",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output? Bug: Incorrect scope.",
-        "code": "def my_func():\n  x = 10\nprint(x)",
-        "options": [
-            "10",
-            "NameError: name 'x' is not defined",
-            "0",
-            "None"
-        ],
-        "correct_answer": "NameError: name 'x' is not defined",
-        "topic": "Functions",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output and bug? Bug: Incorrect Comparison.",
-        "code": "x = 5\nif x = 5:\n  print(\"Equal\")",
-        "options": [
-            "Equal",
-            "SyntaxError: invalid syntax",
-            "True",
-            "False"
-        ],
-        "correct_answer": "SyntaxError: invalid syntax",
-        "topic": "Conditional Statements",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output of the following code? Bug: Incorrect loop counter.",
-        "code": "for i in range(5):\n  print(i)",
-        "options": [
-            "0 1 2 3 4",
-            "1 2 3 4 5",
-            "0 1 2 3 4 5",
-            "1 2 3 4"
-        ],
-        "correct_answer": "0 1 2 3 4",
-        "topic": "Loops",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What will be printed? Bug: String concatenation issue.",
-        "code": "str1 = \"Hello\"\nstr2 = 123\nprint(str1 + str2)",
-        "options": [
-            "Hello123",
-            "TypeError: can only concatenate str (not \"int\") to str",
-            "Hello",
-            "123"
-        ],
-        "correct_answer": "TypeError: can only concatenate str (not \"int\") to str",
-        "topic": "Data Types",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output of this? Bug: Unhandled Exception.",
-        "code": "try:\n  result = 10 / 0\nexcept ValueError:\n  print(\"ValueError occurred\")",
-        "options": [
-            "ValueError occurred",
-            "ZeroDivisionError: division by zero",
-            "No output",
-            "SyntaxError"
-        ],
-        "correct_answer": "ZeroDivisionError: division by zero",
-        "topic": "Exceptions",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What is the issue with the code? Bug: Wrong argument type.",
-        "code": "def add(a, b):\n  return a + b\n\nprint(add(\"5\", 5))",
-        "options": [
-            "TypeError",
-            "ValueError",
-            "SyntaxError",
-            "NameError"
-        ],
-        "correct_answer": "TypeError",
-        "topic": "Functions",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output and bug? Bug: Incorrect function call.",
-        "code": "def greet(name):\n  print(\"Hello, \" + name)\n\ngreet",
-        "options": [
-            "Hello, ",
-            "None",
-            "NameError",
-            "Doesn't print anything"
-        ],
-        "correct_answer": "Doesn't print anything",
-        "topic": "Functions",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output and bug? Bug: Misunderstanding of list mutation.",
-        "code": "list1 = [1, 2, 3]\nlist2 = list1\nlist2.append(4)\nprint(list1)",
-        "options": [
-            "[1, 2, 3]",
-            "[1, 2, 3, 4]",
-            "[1, 2, 3]",
-            "[4]"
-        ],
-        "correct_answer": "[1, 2, 3, 4]",
-        "topic": "Lists",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What is the output and bug? Bug: Incorrect boolean logic.",
-        "code": "x = 5\ny = 10\nif x > 0 and y < 5:\n  print(\"Both conditions are true\")\nelse:\n  print(\"At least one condition is false\")",
-        "options": [
-            "Both conditions are true",
-            "At least one condition is false",
-            "SyntaxError",
-            "ValueError"
-        ],
-        "correct_answer": "At least one condition is false",
-        "topic": "Conditional Statements",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output? Bug: Incorrect variable update in loop.",
-        "code": "x = 0\nfor i in range(5):\n  x = i\nprint(x)",
-        "options": [
-            "0",
-            "1",
-            "4",
-            "5"
-        ],
-        "correct_answer": "4",
-        "topic": "Loops",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output? Bug: Incorrect indentation.",
-        "code": "x = 5\nif x > 2:\nprint(\"x is greater than 2\")",
-        "options": [
-            "x is greater than 2",
-            "IndentationError: expected an indented block",
-            "5",
-            "None"
-        ],
-        "correct_answer": "IndentationError: expected an indented block",
-        "topic": "Syntax",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the output? Bug: Incorrect use of global keyword.",
-        "code": "x = 10\ndef my_function():\n  x = 5\n  global x\nmy_function()\nprint(x)",
-        "options": [
-            "10",
-            "5",
-            "NameError",
-            "SyntaxError"
-        ],
-        "correct_answer": "10",
-        "topic": "Variables",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What is the output? Bug: Incorrect string formatting.",
-        "code": "name = \"Alice\"\nage = 30\nprint(\"Name: %s, Age: %d\" % name, age)",
-        "options": [
-            "Name: Alice, Age: 30",
-            "TypeError: not enough arguments for format string",
-            "ValueError",
-            "NameError"
-        ],
-        "correct_answer": "TypeError: not enough arguments for format string",
-        "topic": "Data Types",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is wrong with this code? Bug: Missing Colon.",
-        "code": "if True\n  print(\"Hello\")",
-        "options": [
-            "IndentationError",
-            "SyntaxError",
-            "NameError",
-            "TypeError"
-        ],
-        "correct_answer": "SyntaxError",
-        "topic": "Syntax",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is output? Bug: Logic Error.",
-        "code": "def is_even(num):\n    if num % 2 == 1:\n        return True\n    else:\n        return False\nprint(is_even(4))",
-        "options": [
-            "True",
-            "False",
-            "TypeError",
-            "ValueError"
-        ],
-        "correct_answer": "False",
-        "topic": "Functions",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is wrong with the following code that is intended to add two numbers?",
-        "code": "def add(x, y):\n return x + 'y'",
-        "options": [
-            "Incorrect operator used",
-            "Missing parentheses",
-            "Type mismatch",
-            "Syntax error"
-        ],
-        "correct_answer": "Type mismatch",
-        "topic": "Basic Operators",
-        "difficulty": "easy"
-    },
-    {
-        "question": "The following code raises an exception. What is the likely cause?",
-        "code": "my_list = [1, 2, 3]\nprint(my_list[3])",
-        "options": [
-            "IndexError: list index out of range",
-            "TypeError: invalid index",
-            "ValueError: invalid value",
-            "NameError: my_list not defined"
-        ],
-        "correct_answer": "IndexError: list index out of range",
-        "topic": "Lists and Indexing",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What is the error in this conditional statement?",
-        "code": "x = 5\nif x = 5:\n print(\"x is 5\")",
-        "options": [
-            "Incorrect comparison operator",
-            "Missing colon",
-            "Indentation error",
-            "SyntaxError: invalid syntax"
-        ],
-        "correct_answer": "Incorrect comparison operator",
-        "topic": "Conditional Statements",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What will be the output of this code snippet?",
-        "code": "x = 10\ndef my_func():\n x = 5\n print(x)\nmy_func()\nprint(x)",
-        "options": [
-            "5\\n5",
-            "10\\n10",
-            "5\\n10",
-            "10\\n5"
-        ],
-        "correct_answer": "5\\n10",
-        "topic": "Scope",
-        "difficulty": "medium"
-    },
-    {
-        "question": "Identify the error in the following loop.",
-        "code": "for i in range(5):\n print(i)",
-        "options": [
-            "Missing initialization",
-            "Incorrect range",
-            "Missing increment",
-            "No error"
-        ],
-        "correct_answer": "No error",
-        "topic": "Loops",
-        "difficulty": "easy"
-    },
-    {
-        "question": "What will be printed by the following?",
-        "code": "def foo(a):\n a += 1\n return a\n\nb = 5\nfoo(b)\nprint(b)",
-        "options": [
-            "5",
-            "6",
-            "Error",
-            "None"
-        ],
-        "correct_answer": "5",
-        "topic": "Functions and arguments",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What's wrong with the following code trying to open a file?",
-        "code": "try:\n f = open(\"myfile.txt\", \"r\")\nexcept:\n print(\"File not found\")\nf.close()",
-        "options": [
-            "File mode is incorrect",
-            "File is not closed in the try block",
-            "f.close() will always run, even if the file wasn't opened",
-            "No error"
-        ],
-        "correct_answer": "f.close() will always run, even if the file wasn't opened",
-        "topic": "File Handling",
-        "difficulty": "medium"
-    },
-    {
-        "question": "The following code attempts to calculate the average of a list. What's the issue?",
-        "code": "def average(numbers):\n sum = 0\n for number in numbers:\n sum += number\n return sum / len(numbers)\n\nprint(average([]))",
-        "options": [
-            "ZeroDivisionError",
-            "TypeError",
-            "ValueError",
-            "NameError"
-        ],
-        "correct_answer": "ZeroDivisionError",
-        "topic": "Functions and error handling",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the output of this code?",
-        "code": "my_dict = {\"a\": 1, \"b\": 2}\nprint(my_dict[\"c\"])",
-        "options": [
-            "1",
-            "2",
-            "KeyError: 'c'",
-            "None"
-        ],
-        "correct_answer": "KeyError: 'c'",
-        "topic": "Dictionaries",
-        "difficulty": "easy"
-    },
-    {
-        "question": "Identify the bug in the following class definition.",
-        "code": "class Dog:\n def __init__(self, name):\n name = name\n\ndog = Dog(\"Buddy\")\nprint(dog.name)",
-        "options": [
-            "Missing self keyword in print statement",
-            "Attribute 'name' not defined for class Dog",
-            "Assignment inside __init__ is incorrect",
-            "No error"
-        ],
-        "correct_answer": "Assignment inside __init__ is incorrect",
-        "topic": "Classes and Objects",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What happens when you execute this?",
-        "code": "def factorial(n):\n if n == 0:\n return 1\n else:\n return n * factorial(n-1)\n\nprint(factorial(-1))",
-        "options": [
-            "Returns 1",
-            "Returns -1",
-            "RecursionError",
-            "Returns 0"
-        ],
-        "correct_answer": "RecursionError",
-        "topic": "Recursion",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is the mistake in this lambda expression?",
-        "code": "numbers = [1, 2, 3, 4]\nsquared = map(lambda x: x * x, numbers)\nprint(list(squared))",
-        "options": [
-            "lambda syntax error",
-            "No mistake",
-            "map() doesn't return a list",
-            "Incorrect argument to lambda"
-        ],
-        "correct_answer": "No mistake",
-        "topic": "Lambda Functions",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What error will this produce?",
-        "code": "def divide(x, y):\n try:\n result = x / y\n except ZeroDivisionError:\n print(\"division by zero!\")\n else:\n print(\"result is\", result)\nfinally:\n print(\"executing finally clause\")\n\ndivide(2, 0)",
-        "options": [
-            "NameError",
-            "TypeError",
-            "Prints 'division by zero!' and 'executing finally clause'",
-            "Prints 'result is inf' and 'executing finally clause'"
-        ],
-        "correct_answer": "Prints 'division by zero!' and 'executing finally clause'",
-        "topic": "Exception handling",
-        "difficulty": "medium"
-    },
-    {
-        "question": "Which line causes an error?",
-        "code": "def foo():\n global x\n x = 5\n\nx = 10\nfoo()\nprint(x)",
-        "options": [
-            "Line 1",
-            "Line 2",
-            "Line 5",
-            "No error"
-        ],
-        "correct_answer": "No error",
-        "topic": "Scope and Global Variables",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What is wrong with the following code that's intending to print out each number from 1 to 5?",
-        "code": "i = 1\nwhile i < 5:\n print(i)",
-        "options": [
-            "Infinite loop",
-            "Prints only the number 1",
-            "Prints numbers 1 to 4",
-            "The initialization is wrong"
-        ],
-        "correct_answer": "Infinite loop",
-        "topic": "Loops",
-        "difficulty": "easy"
-    },
-    {
-        "question": "The following code attempts to use list comprehension, but it's not working correctly. What's the issue?",
-        "code": "numbers = [1, 2, 3, 4, 5]\nsquares = (x*x for x in numbers)\nprint(squares[0])",
-        "options": [
-            "TypeError: 'generator' object is not subscriptable",
-            "ValueError: invalid syntax",
-            "It outputs the square of the first element correctly",
-            "NameError: squares not defined"
-        ],
-        "correct_answer": "TypeError: 'generator' object is not subscriptable",
-        "topic": "List Comprehension",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What is the expected output of the following, if any?",
-        "code": "def some_function():\n print(variable)\nvariable = 10\nsome_function()",
-        "options": [
-            "10",
-            "NameError: name 'variable' is not defined",
-            "0",
-            "None"
-        ],
-        "correct_answer": "NameError: name 'variable' is not defined",
-        "topic": "Scope and variable definition",
-        "difficulty": "hard"
-    },
-    {
-        "question": "What's the bug in this file reading attempt?",
-        "code": "with open(\"test.txt\", \"w\") as f:\n f.write(\"Hello\")\nwith open(\"test.txt\", \"r\") as f:\n content = f.read()\nprint(content)",
-        "options": [
-            "The file is opened in write mode first.",
-            "No bug.",
-            "The file is not closed.",
-            "The content is not printed."
-        ],
-        "correct_answer": "No bug.",
-        "topic": "File Handling",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What happens with the shown code?",
-        "code": "def modify_list(my_list):\n my_list.append(4)\n return my_list\n\nlist1 = [1, 2, 3]\nlist2 = modify_list(list1)\nprint(list1, list2)",
-        "options": [
-            "[1, 2, 3] [1, 2, 3, 4]",
-            "[1, 2, 3, 4] [1, 2, 3]",
-            "[1, 2, 3, 4] [1, 2, 3, 4]",
-            "[1, 2, 3] [1, 2, 3]"
-        ],
-        "correct_answer": "[1, 2, 3, 4] [1, 2, 3, 4]",
-        "topic": "Lists and side effects",
-        "difficulty": "medium"
-    },
-    {
-        "question": "What will this code print?",
-        "code": "a = [1, 2, 3]\nb = a[:]\nb[0] = 5\nprint(a)",
-        "options": [
-            "[1, 2, 3]",
-            "[5, 2, 3]",
-            "[1, 5, 3]",
-            "[5, 5, 3]"
-        ],
-        "correct_answer": "[1, 2, 3]",
-        "topic": "List Copying",
-        "difficulty": "medium"
-    }
+  {
+    "question": "What will this code output?\n\nclass A(type):\n    def __new__(mcs, name, bases, attrs):\n        attrs['meta_attr'] = True\n        return super().__new__(mcs, name, bases, attrs)\n\nclass B(metaclass=A):\n    pass\n\nprint(B.meta_attr)",
+    "options": [
+      "True",
+      "Error",
+      "None",
+      "B"
+    ],
+    "correct_answer": "True",
+    "topic": "Metaclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nclass MyClass:\n    def __init__(self):\n        self._value = 0\n    \n    def __getattribute__(self, name):\n        if name == '_value':\n            return 100\n        return super().__getattribute__(name)\n\nobj = MyClass()\nprint(obj._value)",
+    "options": [
+      "AttributeError",
+      "0",
+      "100",
+      "Error"
+    ],
+    "correct_answer": "100",
+    "topic": "OOP Internals",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\ndef func():\n    x = 5\n    def inner():\n        return x\n    x = 10\n    return inner()\n\nprint(func())",
+    "options": [
+      "5",
+      "10",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "10",
+    "topic": "Closures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nclass A:\n    @staticmethod\n    def method():\n        return 'A'\n\nclass B(A):\n    @staticmethod\n    def method():\n        return super().method() + 'B'",
+    "options": [
+      "super() doesn't work in static methods",
+      "No bug - returns 'AB'",
+      "Static methods cannot be overridden",
+      "Both A and C"
+    ],
+    "correct_answer": "super() doesn't work in static methods",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nimport gc\n\nclass MyClass:\n    def __del__(self):\n        print('Destructed')\n\nobj = MyClass()\ndel obj\ngc.collect()",
+    "options": [
+      "Destructed",
+      "Error",
+      "None",
+      "Possible that nothing is printed"
+    ],
+    "correct_answer": "Possible that nothing is printed",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom typing import Protocol\n\nclass Duck(Protocol):\n    def quack(self) -> str:\n        ...\n\nclass MyDuck:\n    def quack(self) -> str:\n        return 'Quack'\n\ndef use_duck(d: Duck) -> None:\n    print(d.quack())\n\nuse_duck(MyDuck())",
+    "options": [
+      "Protocol doesn't work this way",
+      "No bug - prints 'Quack'",
+      "MyDuck doesn't inherit from Duck",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 'Quack'",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\ndef outer(x):\n    def middle(y):\n        def inner(z):\n            return x + y + z\n        return inner\n    return middle\n\nfunc = outer(1)(2)\nprint(func(3))",
+    "options": [
+      "3",
+      "6",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "6",
+    "topic": "Closures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nimport sys\n\nclass MyClass:\n    pass\n\nobj = MyClass()\nprint(sys.getrefcount(obj))",
+    "options": [
+      "getrefcount doesn't exist",
+      "Output varies (typically 2 or 3)",
+      "Cannot get reference count",
+      "Error"
+    ],
+    "correct_answer": "Output varies (typically 2 or 3)",
+    "topic": "Memory Model",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this code output?\n\nclass Descriptor:\n    def __get__(self, obj, objtype=None):\n        return 'Got'\n    \n    def __set__(self, obj, value):\n        print('Setting')\n\nclass MyClass:\n    attr = Descriptor()\n\nobj = MyClass()\nprint(obj.attr)\nobj.attr = 10",
+    "options": [
+      "Got\\nSetting",
+      "Error",
+      "10\\nSetting",
+      "Got"
+    ],
+    "correct_answer": "Got\\nSetting",
+    "topic": "Descriptors",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom abc import ABC, abstractmethod\n\nclass Base(ABC):\n    @property\n    @abstractmethod\n    def value(self):\n        pass\n\nclass Derived(Base):\n    @property\n    def value(self):\n        return 42\n\nobj = Derived()\nprint(obj.value)",
+    "options": [
+      "Cannot use @property with @abstractmethod",
+      "No bug - prints 42",
+      "Cannot instantiate abstract class",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 42",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nclass A:\n    pass\n\nclass B(A):\n    pass\n\nclass C(A):\n    pass\n\nclass D(B, C):\n    pass\n\nprint([cls.__name__ for cls in D.__mro__])",
+    "options": [
+      "['D', 'A']",
+      "['D', 'B', 'C', 'A', 'object']",
+      "['D', 'B', 'A', 'C', 'object']",
+      "Error"
+    ],
+    "correct_answer": "['D', 'B', 'C', 'A', 'object']",
+    "topic": "Method Resolution Order",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom functools import wraps\n\ndef decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        return func(*args, **kwargs)\n    return wrapper\n\n@decorator\ndef func(x):\n    \"\"\"My function\"\"\"\n    return x\n\nprint(func.__doc__)",
+    "options": [
+      "@wraps doesn't preserve docstring",
+      "No bug - prints 'My function'",
+      "Docstring is lost",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 'My function'",
+    "topic": "Decorators",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nclass MyClass:\n    def __getitem__(self, key):\n        return key * 2\n\nobj = MyClass()\nprint(obj[5])",
+    "options": [
+      "Error",
+      "5",
+      "10",
+      "[5]"
+    ],
+    "correct_answer": "10",
+    "topic": "Dunder Methods",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom collections import defaultdict\n\ndd = defaultdict(list)\ndd['a'].append(1)\ndd['a'].append(2)\nprint(dd)",
+    "options": [
+      "defaultdict doesn't work with list",
+      "No bug - prints defaultdict(...)",
+      "Keys cannot be strings",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints defaultdict(...)",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nclass MyIterator:\n    def __init__(self, max):\n        self.max = max\n        self.current = 0\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.current < self.max:\n            self.current += 1\n            return self.current - 1\n        else:\n            raise StopIteration\n\nfor i in MyIterator(3):\n    print(i, end=' ')",
+    "options": [
+      "0 1 2",
+      "1 2 3",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "0 1 2",
+    "topic": "Iterators",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nimport asyncio\n\nasync def async_func():\n    return 'Done'\n\nresult = async_func()\nprint(result)",
+    "options": [
+      "async functions must be awaited",
+      "No bug - prints 'Done'",
+      "async function returns coroutine object",
+      "Both A and C"
+    ],
+    "correct_answer": "Both A and C",
+    "topic": "Async Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this code output?\n\nfrom typing import List, TypeVar, Generic\n\nT = TypeVar('T')\n\nclass Stack(Generic[T]):\n    def __init__(self):\n        self.items = []\n    \n    def push(self, item: T) -> None:\n        self.items.append(item)\n    \n    def pop(self) -> T:\n        return self.items.pop()\n\nstack = Stack[int]()\nstack.push(1)\nstack.push(2)\nprint(stack.pop())",
+    "options": [
+      "1",
+      "2",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "2",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom weakref import ref\n\nclass MyClass:\n    pass\n\nobj = MyClass()\nweak_ref = ref(obj)\nprint(weak_ref())",
+    "options": [
+      "WeakRef doesn't work this way",
+      "No bug - prints MyClass instance",
+      "Cannot create weak reference",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints MyClass instance",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nclass A:\n    def method(self):\n        return 'A'\n\nclass B(A):\n    def method(self):\n        return super().method() + 'B'\n\nclass C(A):\n    def method(self):\n        return super().method() + 'C'\n\nclass D(B, C):\n    pass\n\nobj = D()\nprint(obj.method())",
+    "options": [
+      "'ABC'",
+      "'ACB'",
+      "Error",
+      "'BAC'"
+    ],
+    "correct_answer": "'ABC'",
+    "topic": "Method Resolution Order",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nclass MyClass:\n    __slots__ = ['x']\n    \n    def __init__(self, x):\n        self.x = x\n\nobj = MyClass(10)\nobj.y = 20\nprint(obj.y)",
+    "options": [
+      "Cannot add new attribute due to __slots__",
+      "No bug - prints 20",
+      "__slots__ doesn't restrict attributes",
+      "AttributeError"
+    ],
+    "correct_answer": "Cannot add new attribute due to __slots__",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nfrom enum import Enum\n\nclass Color(Enum):\n    RED = 1\n    GREEN = 2\n    BLUE = 3\n\nprint(Color.RED.value)",
+    "options": [
+      "Color.RED",
+      "1",
+      "Error",
+      "RED"
+    ],
+    "correct_answer": "1",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nclass MyClass:\n    def __init__(self, x):\n        self.x = x\n    \n    def __hash__(self):\n        return hash(id(self))\n    \n    def __eq__(self, other):\n        return self.x == other.x\n\nobj1 = MyClass(5)\nobj2 = MyClass(5)\nmy_dict = {obj1: 'a'}\nmy_dict[obj2] = 'b'\nprint(len(my_dict))",
+    "options": [
+      "1",
+      "2",
+      "Hash and equality mismatch",
+      "Both B and C"
+    ],
+    "correct_answer": "Both B and C",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom pathlib import Path\n\np = Path('.')\nprint(isinstance(p, Path))",
+    "options": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "True",
+    "topic": "Standard Library",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom contextlib import ExitStack\n\nfiles = []\nwith ExitStack() as stack:\n    for i in range(3):\n        f = open(f'file{i}.txt', 'w')\n        stack.callback(f.close)\n        files.append(f)\n\nprint('Files closed')",
+    "options": [
+      "Files are not closed properly",
+      "No bug - all files are properly closed",
+      "ExitStack doesn't work with callbacks",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - all files are properly closed",
+    "topic": "Context Managers",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nclass MyClass:\n    instances = []\n    \n    def __init__(self, value):\n        self.value = value\n        MyClass.instances.append(self)\n    \n    def __del__(self):\n        MyClass.instances.remove(self)\n\nobj1 = MyClass(1)\nobj2 = MyClass(2)\ndel obj1\nprint(len(MyClass.instances))",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "Error"
+    ],
+    "correct_answer": "1",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nimport threading\n\nresult = []\nlock = threading.Lock()\n\ndef worker():\n    with lock:\n        result.append(1)\n\nthreads = [threading.Thread(target=worker) for _ in range(5)]\nfor t in threads:\n    t.start()\nfor t in threads:\n    t.join()\n\nprint(len(result))",
+    "options": [
+      "Threading is not thread-safe",
+      "No bug - prints 5",
+      "Lock is used incorrectly",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 5",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom typing import cast\n\nx = 5\ny = cast(str, x)\nprint(type(y))",
+    "options": [
+      "<class 'str'>",
+      "<class 'int'>",
+      "Error",
+      "str"
+    ],
+    "correct_answer": "<class 'int'>",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nclass MyClass:\n    def __init__(self):\n        self._value = 0\n    \n    def __setattr__(self, name, value):\n        if name == '_value' and value < 0:\n            raise ValueError('Negative value')\n        super().__setattr__(name, value)\n\nobj = MyClass()\nobj._value = -5",
+    "options": [
+      "__setattr__ intercepts attribute assignment",
+      "ValueError is raised",
+      "Both A and B",
+      "No bug"
+    ],
+    "correct_answer": "Both A and B",
+    "topic": "Dunder Methods",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nfrom dataclasses import dataclass\n\n@dataclass\nclass Point:\n    x: int\n    y: int\n\np = Point(1, 2)\nprint(p == Point(1, 2))",
+    "options": [
+      "Error",
+      "True",
+      "False",
+      "Point(x=1, y=2)"
+    ],
+    "correct_answer": "True",
+    "topic": "Dataclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom functools import partial\n\ndef add(a, b, c):\n    return a + b + c\n\nadd_one = partial(add, 1)\nprint(add_one(2, 3))",
+    "options": [
+      "partial doesn't work this way",
+      "No bug - prints 6",
+      "Partial function is incorrect",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 6",
+    "topic": "Higher-order Functions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nclass A:\n    x = 5\n\nclass B(A):\n    x = 10\n\nclass C(B, A):\n    pass\n\nprint(C.x)",
+    "options": [
+      "5",
+      "10",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "10",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom collections import namedtuple\n\nPoint = namedtuple('Point', ['x', 'y'])\np = Point(1, 2)\nprint(p.x, p.y, p[0], p[1])",
+    "options": [
+      "namedtuple doesn't work this way",
+      "No bug - prints 1 2 1 2",
+      "Cannot access namedtuple both ways",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 1 2 1 2",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this code output?\n\nfrom itertools import islice\n\ndef infinite_counter():\n    i = 0\n    while True:\n        yield i\n        i += 1\n\nresult = list(islice(infinite_counter(), 5))\nprint(result)",
+    "options": [
+      "Error",
+      "[0, 1, 2, 3, 4]",
+      "Infinite loop",
+      "None"
+    ],
+    "correct_answer": "[0, 1, 2, 3, 4]",
+    "topic": "Generators",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom operator import attrgetter\n\nclass Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\npeople = [Person('Alice', 30), Person('Bob', 25), Person('Charlie', 35)]\nsorted_people = sorted(people, key=attrgetter('age'))\nprint([p.name for p in sorted_people])",
+    "options": [
+      "attrgetter doesn't work this way",
+      "No bug - prints ['Bob', 'Alice', 'Charlie']",
+      "Cannot sort custom objects",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints ['Bob', 'Alice', 'Charlie']",
+    "topic": "Higher-order Functions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nclass MyClass:\n    def __init__(self):\n        self.value = 10\n    \n    def __repr__(self):\n        return f'MyClass({self.value})'\n    \n    def __str__(self):\n        return f'Value: {self.value}'\n\nobj = MyClass()\nprint(str(obj))\nprint(repr(obj))",
+    "options": [
+      "Value: 10\\nMyClass(10)",
+      "MyClass(10)\\nValue: 10",
+      "Error",
+      "Both same"
+    ],
+    "correct_answer": "Value: 10\\nMyClass(10)",
+    "topic": "Dunder Methods",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom copy import deepcopy\n\noriginal = {'a': [1, 2, 3]}\ncopy_list = deepcopy(original)\ncopy_list['a'].append(4)\nprint(original)",
+    "options": [
+      "deepcopy doesn't work",
+      "original is modified to {'a': [1, 2, 3, 4]}",
+      "No bug - original remains unchanged",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - original remains unchanged",
+    "topic": "Standard Library",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nfrom typing import Union\n\ndef process(value: Union[int, str]) -> str:\n    if isinstance(value, int):\n        return str(value)\n    return value\n\nprint(process(42))",
+    "options": [
+      "Error",
+      "'42'",
+      "42",
+      "None"
+    ],
+    "correct_answer": "'42'",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom functools import cached_property\n\nclass MyClass:\n    def __init__(self):\n        self._value = None\n    \n    @cached_property\n    def value(self):\n        print('Computing')\n        self._value = 42\n        return self._value\n\nobj = MyClass()\nprint(obj.value)\nprint(obj.value)",
+    "options": [
+      "cached_property is used incorrectly",
+      "No bug - prints 'Computing'\\n42\\n42",
+      "Prints 'Computing' twice",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 'Computing'\\n42\\n42",
+    "topic": "Decorators",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom collections import Counter\n\nwords = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']\ncounter = Counter(words)\nprint(counter.most_common(2))",
+    "options": [
+      "[('apple', 3), ('banana', 2)]",
+      "Error",
+      "[('apple', 3), ('cherry', 1)]",
+      "None"
+    ],
+    "correct_answer": "[('apple', 3), ('banana', 2)]",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nimport pickle\n\nclass MyClass:\n    def __init__(self, value):\n        self.value = value\n\nobj = MyClass(42)\nserialized = pickle.dumps(obj)\nobj2 = pickle.loads(serialized)\nprint(obj2.value)",
+    "options": [
+      "pickle doesn't work with custom classes",
+      "No bug - prints 42",
+      "Custom class cannot be pickled",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 42",
+    "topic": "Serialization",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this code output?\n\nfrom itertools import chain\n\nlist1 = [1, 2, 3]\nlist2 = [4, 5, 6]\nresult = list(chain(list1, list2))\nprint(result)",
+    "options": [
+      "[[1, 2, 3], [4, 5, 6]]",
+      "[1, 2, 3, 4, 5, 6]",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "[1, 2, 3, 4, 5, 6]",
+    "topic": "Standard Library",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom typing import Callable\n\ndef decorator(func: Callable) -> Callable:\n    def wrapper(*args, **kwargs):\n        return func(*args, **kwargs)\n    return wrapper\n\n@decorator\ndef my_func(x: int) -> int:\n    return x * 2\n\nprint(my_func(5))",
+    "options": [
+      "Decorator with type hints is incorrect",
+      "No bug - prints 10",
+      "Type hints are invalid",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 10",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nclass MyClass:\n    def __init__(self, value):\n        self.value = value\n    \n    def __add__(self, other):\n        return MyClass(self.value + other.value)\n    \n    def __repr__(self):\n        return f'MyClass({self.value})'\n\nobj1 = MyClass(5)\nobj2 = MyClass(3)\nresult = obj1 + obj2\nprint(result)",
+    "options": [
+      "Error",
+      "MyClass(8)",
+      "8",
+      "None"
+    ],
+    "correct_answer": "MyClass(8)",
+    "topic": "Dunder Methods",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom inspect import signature\n\ndef my_func(a: int, b: str) -> bool:\n    return True\n\nsig = signature(my_func)\nprint(list(sig.parameters.keys()))",
+    "options": [
+      "signature doesn't work",
+      "No bug - prints ['a', 'b']",
+      "Cannot get function signature",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints ['a', 'b']",
+    "topic": "Introspection",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nfrom itertools import combinations\n\nitems = [1, 2, 3]\ncombs = list(combinations(items, 2))\nprint(combs)",
+    "options": [
+      "[(1, 2), (1, 3), (2, 3)]",
+      "[(1, 2), (2, 3), (1, 3)]",
+      "Error",
+      "[(1, 1), (2, 2), (3, 3)]"
+    ],
+    "correct_answer": "[(1, 2), (1, 3), (2, 3)]",
+    "topic": "Standard Library",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nclass MyClass:\n    def __init__(self):\n        pass\n    \n    def method(self):\n        return 'method'\n    \n    __call__ = method\n\nobj = MyClass()\nprint(obj())",
+    "options": [
+      "__call__ cannot be assigned from method",
+      "No bug - prints 'method'",
+      "method must be called explicitly",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 'method'",
+    "topic": "Dunder Methods",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom types import SimpleNamespace\n\nobj = SimpleNamespace(x=5, y=10)\nprint(obj.x + obj.y)",
+    "options": [
+      "Error",
+      "15",
+      "None",
+      "SimpleNamespace"
+    ],
+    "correct_answer": "15",
+    "topic": "Standard Library",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nclass MyClass:\n    def __init__(self):\n        self._data = []\n    \n    def __iter__(self):\n        return iter(self._data)\n    \n    def add(self, item):\n        self._data.append(item)\n\nobj = MyClass()\nobj.add(1)\nobj.add(2)\nfor item in obj:\n    print(item, end=' ')",
+    "options": [
+      "Custom iterator is used incorrectly",
+      "No bug - prints '1 2'",
+      "Cannot iterate custom objects",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints '1 2'",
+    "topic": "Iterators",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this code output?\n\nfrom typing import Optional\n\ndef process(value: Optional[int]) -> str:\n    if value is None:\n        return 'None'\n    return str(value)\n\nprint(process(None))\nprint(process(42))",
+    "options": [
+      "None\\n'42'",
+      "None\\n42",
+      "Error",
+      "'None'\\n'42'"
+    ],
+    "correct_answer": "None\\n'42'",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self) -> float:\n        pass\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n    \n    def area(self) -> float:\n        return 3.14 * self.radius ** 2\n\nc = Circle(5)\nprint(c.area())",
+    "options": [
+      "Abstract method implementation is incorrect",
+      "No bug - prints 78.5",
+      "Cannot instantiate Circle",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 78.5",
+    "topic": "OOP",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom functools import reduce\nfrom operator import itemgetter\n\ndata = [{'val': 1}, {'val': 2}, {'val': 3}]\nresult = reduce(lambda x, y: x + y['val'], data, 0)\nprint(result)",
+    "options": [
+      "Error",
+      "6",
+      "[{'val': 1}, {'val': 2}, {'val': 3}]",
+      "None"
+    ],
+    "correct_answer": "6",
+    "topic": "Higher-order Functions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom contextlib import suppress\n\ntry:\n    with suppress(ValueError):\n        raise ValueError('Test')\n    print('No error')\nexcept ValueError:\n    print('Error caught')",
+    "options": [
+      "suppress doesn't work",
+      "No bug - prints 'No error'",
+      "ValueError is still raised",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 'No error'",
+    "topic": "Context Managers",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nfrom typing import Literal\n\ndef process(value: Literal['red', 'green', 'blue']) -> str:\n    return f'Color: {value}'\n\nprint(process('red'))",
+    "options": [
+      "Color: red",
+      "Error",
+      "Literal not supported",
+      "None"
+    ],
+    "correct_answer": "Color: red",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom operator import mul\nfrom functools import reduce\n\nfactorial = lambda n: reduce(mul, range(1, n+1), 1)\nprint(factorial(5))",
+    "options": [
+      "Lambda with reduce is incorrect",
+      "No bug - prints 120",
+      "Range produces wrong values",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 120",
+    "topic": "Higher-order Functions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom dataclasses import field, dataclass\n\n@dataclass\nclass MyClass:\n    values: list = field(default_factory=list)\n\nobj1 = MyClass()\nobj1.values.append(1)\n\nobj2 = MyClass()\nprint(len(obj2.values))",
+    "options": [
+      "1",
+      "0",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "0",
+    "topic": "Dataclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nclass MyClass:\n    def __init__(self, x):\n        self.x = x\n    \n    def __contains__(self, item):\n        return item == self.x\n\nobj = MyClass(5)\nprint(3 in obj)",
+    "options": [
+      "__contains__ is incorrect",
+      "No bug - prints False",
+      "Cannot use 'in' operator with objects",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints False",
+    "topic": "Dunder Methods",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this code output?\n\nfrom itertools import repeat\n\nresult = list(zip([1, 2, 3], repeat('X', 3)))\nprint(result)",
+    "options": [
+      "[(1, 'X'), (2, 'X'), (3, 'X')]",
+      "Error",
+      "[1, 2, 3]",
+      "['X', 'X', 'X']"
+    ],
+    "correct_answer": "[(1, 'X'), (2, 'X'), (3, 'X')]",
+    "topic": "Standard Library",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom typing import TypedDict\n\nclass Person(TypedDict):\n    name: str\n    age: int\n\nperson: Person = {'name': 'Alice', 'age': 30}\nprint(person['name'])",
+    "options": [
+      "TypedDict doesn't work at runtime",
+      "No bug - prints 'Alice'",
+      "TypedDict is only for type checking",
+      "Both B and C"
+    ],
+    "correct_answer": "Both B and C",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nclass A:\n    def method(self):\n        return 'A'\n\nclass B(A):\n    pass\n\nclass C(A):\n    def method(self):\n        return 'C'\n\nclass D(B, C):\n    pass\n\nprint(D().method())",
+    "options": [
+      "'A'",
+      "'B'",
+      "'C'",
+      "Error"
+    ],
+    "correct_answer": "'C'",
+    "topic": "Method Resolution Order",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom typing import Final\n\nclass MyClass:\n    x: Final[int] = 10\n\nobj = MyClass()\nobj.x = 20\nprint(obj.x)",
+    "options": [
+      "Final prevents runtime modification",
+      "No bug - prints 20",
+      "Final only works at type checking",
+      "Both B and C"
+    ],
+    "correct_answer": "Both B and C",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nfrom itertools import takewhile\n\ndata = [1, 2, 3, 4, 5, 3, 2, 1]\nresult = list(takewhile(lambda x: x < 4, data))\nprint(result)",
+    "options": [
+      "[1, 2, 3]",
+      "[1, 2, 3, 4, 5]",
+      "Error",
+      "[3, 2, 1]"
+    ],
+    "correct_answer": "[1, 2, 3]",
+    "topic": "Standard Library",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom dataclasses import dataclass\n\n@dataclass\nclass Point:\n    x: int\n    y: int\n\ntp = Point(1, 2)\nprint(hash(tp))",
+    "options": [
+      "Dataclass instances are not hashable",
+      "No bug - prints hash value",
+      "hash() requires frozen=True",
+      "Both B and C"
+    ],
+    "correct_answer": "Dataclass instances are not hashable",
+    "topic": "Dataclasses",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom typing import overload\n\nclass MyClass:\n    @overload\n    def method(self, x: int) -> str: ...\n    \n    @overload\n    def method(self, x: str) -> int: ...\n    \n    def method(self, x):\n        return x if isinstance(x, int) else len(x)\n\nobj = MyClass()\nprint(obj.method(42))",
+    "options": [
+      "Error",
+      "42",
+      "'42'",
+      "None"
+    ],
+    "correct_answer": "42",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom typing import get_type_hints\n\ndef func(x: int, y: str) -> bool:\n    return True\n\nhints = get_type_hints(func)\nprint(hints)",
+    "options": [
+      "get_type_hints doesn't work",
+      "No bug - prints type hints dict",
+      "Cannot get type hints",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints type hints dict",
+    "topic": "Introspection",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this code output?\n\nfrom itertools import cycle\n\ndata = cycle([1, 2, 3])\nfor _ in range(7):\n    print(next(data), end=' ')",
+    "options": [
+      "1 2 3 1 2 3 1",
+      "Error",
+      "Infinite loop",
+      "1 2 3"
+    ],
+    "correct_answer": "1 2 3 1 2 3 1",
+    "topic": "Standard Library",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom typing import Sequence\n\nclass MyClass:\n    def __getitem__(self, index):\n        return index * 2\n    \n    def __len__(self):\n        return 5\n\nobj = MyClass()\nprint(obj[3])",
+    "options": [
+      "3",
+      "6",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "6",
+    "topic": "Dunder Methods",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom multiprocessing import Pool\n\ndef worker(x):\n    return x * 2\n\nwith Pool(processes=2) as pool:\n    result = pool.map(worker, [1, 2, 3, 4, 5])\n    print(result)",
+    "options": [
+      "Multiprocessing doesn't work in context",
+      "No bug - prints [2, 4, 6, 8, 10]",
+      "Pool cannot use map()",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints [2, 4, 6, 8, 10]",
+    "topic": "Concurrency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nfrom typing import ClassVar\n\nclass MyClass:\n    count: ClassVar[int] = 0\n    \n    def __init__(self):\n        MyClass.count += 1\n\nobj1 = MyClass()\nobj2 = MyClass()\nprint(MyClass.count)",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "Error"
+    ],
+    "correct_answer": "2",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom typing import Generic, TypeVar\n\nT = TypeVar('T')\n\nclass Container(Generic[T]):\n    def __init__(self, value: T):\n        self.value = value\n\nc = Container(42)\nprint(c.value)",
+    "options": [
+      "Generic TypeVar is incorrect",
+      "No bug - prints 42",
+      "Cannot use Generic with custom classes",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 42",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom operator import methodcaller\n\ndata = ['hello', 'world']\nresult = list(map(methodcaller('upper'), data))\nprint(result)",
+    "options": [
+      "['hello', 'world']",
+      "['HELLO', 'WORLD']",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "['HELLO', 'WORLD']",
+    "topic": "Higher-order Functions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom typing import assert_never\n\ndef func(x: int) -> str:\n    if x > 0:\n        return 'positive'\n    elif x < 0:\n        return 'negative'\n    else:\n        return 'zero'\n\nprint(func(5))",
+    "options": [
+      "assert_never is required",
+      "No bug - prints 'positive'",
+      "assert_never cannot be used",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 'positive'",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What will this print?\n\nfrom itertools import groupby\n\ndata = [1, 1, 2, 2, 3, 3]\ngroups = [(k, list(g)) for k, g in groupby(data)]\nprint(groups)",
+    "options": [
+      "[(1, [1, 1]), (2, [2, 2]), (3, [3, 3])]",
+      "[(1, 2), (2, 2), (3, 2)]",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "[(1, [1, 1]), (2, [2, 2]), (3, [3, 3])]",
+    "topic": "Standard Library",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the bug:\n\nfrom typing import Protocol\n\nclass Drawable(Protocol):\n    def draw(self) -> None: ...\n\nclass Circle:\n    def draw(self) -> None:\n        print('Drawing circle')\n\ndef render(obj: Drawable) -> None:\n    obj.draw()\n\nrender(Circle())",
+    "options": [
+      "Protocol doesn't support structural typing",
+      "No bug - prints 'Drawing circle'",
+      "Circle doesn't inherit from Drawable",
+      "Both B and C"
+    ],
+    "correct_answer": "No bug - prints 'Drawing circle'",
+    "topic": "Type Hints",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the output?\n\nfrom collections import OrderedDict\n\nod = OrderedDict([('b', 2), ('a', 1), ('c', 3)])\nprint(list(od.keys()))",
+    "options": [
+      "['a', 'b', 'c']",
+      "['b', 'a', 'c']",
+      "Error",
+      "None"
+    ],
+    "correct_answer": "['b', 'a', 'c']",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Identify the issue:\n\nfrom contextlib import asynccontextmanager\n\n@asynccontextmanager\nasync def my_context():\n    print('Enter')\n    yield\n    print('Exit')\n\n# Assuming async context is used correctly\nprint('Setup')",
+    "options": [
+      "asynccontextmanager requires async with",
+      "No bug - asynccontextmanager defined",
+      "Cannot use async with print",
+      "Both A and C"
+    ],
+    "correct_answer": "No bug - asynccontextmanager defined",
+    "topic": "Async Programming",
+    "difficulty": "hard"
+  }
 ]

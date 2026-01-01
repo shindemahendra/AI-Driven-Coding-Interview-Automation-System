@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Your colleague sends you an email asking for a document you have. The email is polite but vague about the deadline. What should you do?",
+    "options": [
+      "Ignore it until they follow up",
+      "Reply immediately saying you'll send it today and ask clarifying questions if needed",
+      "Forward it to your manager without responding",
+      "Send the document without asking questions"
+    ],
+    "correct_answer": "Reply immediately saying you'll send it today and ask clarifying questions if needed",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "During a team meeting, your manager asks for your input on a proposal. You have a question but worry it might sound silly. What should you do?",
+    "options": [
+      "Stay quiet to avoid looking incompetent",
+      "Ask the question politely and briefly",
+      "Wait until after the meeting to ask privately",
+      "Assume the answer and don't ask"
+    ],
+    "correct_answer": "Ask the question politely and briefly",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A team member made a small mistake on a task you're both working on. How should you address it?",
+    "options": [
+      "Tell the entire team about the error immediately",
+      "Speak privately with them in a respectful way",
+      "Point it out loudly during the next meeting",
+      "Correct it yourself without mentioning it"
+    ],
+    "correct_answer": "Speak privately with them in a respectful way",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You need to send a request to another department. What makes for good email etiquette?",
+    "options": [
+      "Be vague about your needs and let them guess",
+      "Use a clear subject line, explain what you need, and ask politely with a deadline",
+      "Use casual language and lots of emojis",
+      "Send multiple emails to ensure they see it"
+    ],
+    "correct_answer": "Use a clear subject line, explain what you need, and ask politely with a deadline",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your manager gives you feedback that you initially disagree with. What's the best approach?",
+    "options": [
+      "Argue your point immediately",
+      "Listen carefully, ask clarifying questions, and reflect before responding",
+      "Ignore the feedback",
+      "Complain to your peers about the feedback"
+    ],
+    "correct_answer": "Listen carefully, ask clarifying questions, and reflect before responding",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "During a daily stand-up meeting, your colleague is discussing a blockerand you know you can help. What should you do?",
+    "options": [
+      "Interrupt them to offer help",
+      "Wait until they finish speaking, then offer help during breaks",
+      "Say nothing and let them struggle",
+      "Help them without permission during the meeting"
+    ],
+    "correct_answer": "Wait until they finish speaking, then offer help during breaks",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your team is assigned a group task and roles need to be assigned. What's your best approach?",
+    "options": [
+      "Take the most important task without discussing",
+      "Discuss with the team, volunteer for a role that matches your strengths",
+      "Wait for someone else to assign you a role",
+      "Refuse to participate in group work"
+    ],
+    "correct_answer": "Discuss with the team, volunteer for a role that matches your strengths",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A new tool is introduced at work that you've never used before. You're unsure how to get started. What should you do?",
+    "options": [
+      "Avoid using it and stick to old methods",
+      "Ask your manager or a colleague for training, then practice",
+      "Pretend you know how to use it",
+      "Wait for others to master it first"
+    ],
+    "correct_answer": "Ask your manager or a colleague for training, then practice",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You have three tasks to complete today, but they all seem equally important. How should you prioritize?",
+    "options": [
+      "Pick randomly which one to do first",
+      "Ask your manager which one has the earliest deadline and do that first",
+      "Do whichever takes the least time",
+      "Work on all of them simultaneously without a plan"
+    ],
+    "correct_answer": "Ask your manager which one has the earliest deadline and do that first",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're introduced to a new colleague on your team. What's a good way to start building rapport?",
+    "options": [
+      "Ignore them until they approach you",
+      "Introduce yourself, offer to help them get familiar with the team, and be friendly",
+      "Give them a list of all the work rules",
+      "Ask them about their previous job immediately"
+    ],
+    "correct_answer": "Introduce yourself, offer to help them get familiar with the team, and be friendly",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A deadline for a project just moved up by two days. How should you respond?",
+    "options": [
+      "Panic and work inefficiently",
+      "Acknowledge the change, assess what can be done, and communicate concerns if it's impossible",
+      "Ignore the new deadline",
+      "Blame the person who made the change"
+    ],
+    "correct_answer": "Acknowledge the change, assess what can be done, and communicate concerns if it's impossible",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your manager asks if you can take on a task outside your usual responsibilities. What should you do?",
+    "options": [
+      "Immediately say yes even if you're overloaded",
+      "Consider your current workload honestly and discuss capacity with your manager",
+      "Say no without explanation",
+      "Agree but don't actually do it"
+    ],
+    "correct_answer": "Consider your current workload honestly and discuss capacity with your manager",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You notice a team member is struggling and seems stressed. What's an appropriate response?",
+    "options": [
+      "Pretend you didn't notice",
+      "Ask them privately if they need help or if you can do anything to support them",
+      "Talk about their stress with other team members",
+      "Tell your manager immediately without checking with them first"
+    ],
+    "correct_answer": "Ask them privately if they need help or if you can do anything to support them",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You realize you made a mistake on a task that affects your team. What should you do?",
+    "options": [
+      "Hide the mistake and hope no one notices",
+      "Immediately tell your manager and team, explain what happened, and propose a fix",
+      "Blame someone else",
+      "Continue as if nothing happened"
+    ],
+    "correct_answer": "Immediately tell your manager and team, explain what happened, and propose a fix",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a meeting, someone interrupts you while you're speaking. How should you handle it?",
+    "options": [
+      "Get angry and raise your voice",
+      "Politely pause and ask if they have an urgent point, then continue",
+      "Stop talking and never speak again in meetings",
+      "Interrupt them back immediately"
+    ],
+    "correct_answer": "Politely pause and ask if they have an urgent point, then continue",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You disagree with how a task is being done by a peer. What's your first step?",
+    "options": [
+      "Complain to your manager immediately",
+      "Talk privately with the person and ask about their approach",
+      "Do the task your own way without telling them",
+      "Send a critical email"
+    ],
+    "correct_answer": "Talk privately with the person and ask about their approach",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your company implements a new process that's different from what you're used to. How should you adapt?",
+    "options": [
+      "Stick to the old process and ignore the change",
+      "Learn the new process, ask questions if unclear, and practice applying it",
+      "Complain that change is unnecessary",
+      "Wait to see if others struggle before trying"
+    ],
+    "correct_answer": "Learn the new process, ask questions if unclear, and practice applying it",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A colleague asks you a question you don't know the answer to. What should you do?",
+    "options": [
+      "Make up an answer",
+      "Say you don't know, offer to find out, and follow up with them",
+      "Ignore the question",
+      "Tell them to ask someone else without trying to help"
+    ],
+    "correct_answer": "Say you don't know, offer to find out, and follow up with them",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You have two conflicting priorities at the end of your workday. What's your best move?",
+    "options": [
+      "Work late without telling anyone",
+      "Stay organized and ask your manager which takes priority",
+      "Randomly pick one and hope for the best",
+      "Leave both incomplete"
+    ],
+    "correct_answer": "Stay organized and ask your manager which takes priority",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "During a brainstorming session, you have an unconventional idea. Should you share it?",
+    "options": [
+      "Keep it to yourself because it might sound weird",
+      "Share it respectfully; brainstorming is meant for creative ideas",
+      "Only share if someone directly asks you",
+      "Mock the idea before others do"
+    ],
+    "correct_answer": "Share it respectfully; brainstorming is meant for creative ideas",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your teammate completed a task earlier than expected. How should you acknowledge this?",
+    "options": [
+      "Say nothing and assume it's expected",
+      "Thank them and, if appropriate, mention it to your manager",
+      "Question if the work is actually complete",
+      "Take credit for the early completion"
+    ],
+    "correct_answer": "Thank them and, if appropriate, mention it to your manager",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You receive constructive criticism from a colleague. How should you react?",
+    "options": [
+      "Get defensive and argue",
+      "Listen carefully, thank them for the feedback, and reflect on it",
+      "Dismiss it without considering",
+      "Retaliate with criticism"
+    ],
+    "correct_answer": "Listen carefully, thank them for the feedback, and reflect on it",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your manager asks you to explain your reasoning for a decision you made. What's the right approach?",
+    "options": [
+      "Give a vague answer and change the subject",
+      "Clearly explain your thought process, the factors you considered, and why you chose that option",
+      "Blame someone else for the decision",
+      "Admit you didn't think it through"
+    ],
+    "correct_answer": "Clearly explain your thought process, the factors you considered, and why you chose that option",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A new team member asks you to explain a routine task. How should you respond?",
+    "options": [
+      "Tell them to figure it out themselves",
+      "Patiently explain the task and offer to clarify if they have questions",
+      "Roll your eyes and give a rushed explanation",
+      "Do the task for them without explaining"
+    ],
+    "correct_answer": "Patiently explain the task and offer to clarify if they have questions",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You notice a communication gap between two team members causing issues. What should you do?",
+    "options": [
+      "Stay out of it completely",
+      "Bring it to the attention of your manager",
+      "Spread the information yourself",
+      "Let the problem escalate"
+    ],
+    "correct_answer": "Bring it to the attention of your manager",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your workload suddenly increases significantly. What's your first step?",
+    "options": [
+      "Start working overtime without telling anyone",
+      "Inform your manager about the increased workload and discuss priorities",
+      "Accept all tasks without questioning",
+      "Quit or get overwhelmed"
+    ],
+    "correct_answer": "Inform your manager about the increased workload and discuss priorities",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A team member's work is consistently missing deadlines. As a peer, what should you do?",
+    "options": [
+      "Report them to HR immediately",
+      "Talk to them privately to understand if they need support",
+      "Do their work for them",
+      "Complain publicly about their performance"
+    ],
+    "correct_answer": "Talk to them privately to understand if they need support",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're asked to work on a project in an area outside your expertise. How should you handle it?",
+    "options": [
+      "Refuse the assignment",
+      "Accept it, ask questions, seek training or mentorship, and do your best",
+      "Pretend to know what you're doing",
+      "Delegate it without permission"
+    ],
+    "correct_answer": "Accept it, ask questions, seek training or mentorship, and do your best",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You disagree with your manager's decision on how to approach a problem. What's appropriate?",
+    "options": [
+      "Ignore the decision and do it your own way",
+      "Ask to discuss your concerns professionally and present your reasoning",
+      "Complain to your coworkers",
+      "Refuse to work on the project"
+    ],
+    "correct_answer": "Ask to discuss your concerns professionally and present your reasoning",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your team is celebrating a completed project. How should you participate?",
+    "options": [
+      "Skip it because celebrations are unproductive",
+      "Join in, congratulate your teammates, and reflect on the teamwork",
+      "Mention only your own contributions",
+      "Act distant and uninterested"
+    ],
+    "correct_answer": "Join in, congratulate your teammates, and reflect on the teamwork",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You receive feedback that contradicts what you believed about your performance. What should you do?",
+    "options": [
+      "Dismiss it outright",
+      "Ask clarifying questions, listen with an open mind, and ask for examples",
+      "Immediately become defensive",
+      "Assume the person giving feedback is wrong"
+    ],
+    "correct_answer": "Ask clarifying questions, listen with an open mind, and ask for examples",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A colleague asks for your help with a task, but you're very busy. What's the best response?",
+    "options": [
+      "Ignore their request",
+      "Explain your current commitments and offer a specific time you could help",
+      "Help immediately even if it impacts your work",
+      "Refuse without explanation"
+    ],
+    "correct_answer": "Explain your current commitments and offer a specific time you could help",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You make the same mistake twice. When you catch it the second time, what should you do?",
+    "options": [
+      "Continue making the mistake",
+      "Analyze what you did wrong, adjust your approach, and inform your manager if it affects others",
+      "Blame external factors",
+      "Ignore it and hope no one notices"
+    ],
+    "correct_answer": "Analyze what you did wrong, adjust your approach, and inform your manager if it affects others",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your manager compliments your work in front of the team. How should you respond?",
+    "options": [
+      "Dismiss the compliment",
+      "Thank them, and credit team members who contributed",
+      "Act overly proud",
+      "Say nothing"
+    ],
+    "correct_answer": "Thank them, and credit team members who contributed",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're on a call with a client and don't understand their request. What should you do?",
+    "options": [
+      "Pretend you understand and guess",
+      "Politely ask them to clarify or repeat the request",
+      "End the call abruptly",
+      "Promise something you're unsure about"
+    ],
+    "correct_answer": "Politely ask them to clarify or repeat the request",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A team member seems upset after a meeting. What's your appropriate response?",
+    "options": [
+      "Ignore their mood",
+      "Check in privately and ask if they're okay and if there's anything you can help with",
+      "Gossip about their mood with others",
+      "Make jokes to lighten the mood"
+    ],
+    "correct_answer": "Check in privately and ask if they're okay and if there's anything you can help with",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your schedule changes last minute due to a client emergency. How do you adapt?",
+    "options": [
+      "Ignore the change and stick to your original plans",
+      "Quickly reassess priorities, inform affected people, and adjust your schedule",
+      "Complain about the change",
+      "Hope the situation resolves itself"
+    ],
+    "correct_answer": "Quickly reassess priorities, inform affected people, and adjust your schedule",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're working on a project with someone you don't usually interact with. How should you approach it?",
+    "options": [
+      "Avoid communicating as much as possible",
+      "Be professional, communicate regularly, and be open to their ideas",
+      "Assume you'll clash from the start",
+      "Only communicate when absolutely necessary"
+    ],
+    "correct_answer": "Be professional, communicate regularly, and be open to their ideas",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You notice the team's morale is low. What can you do as an individual contributor?",
+    "options": [
+      "Make it everyone else's problem",
+      "Be positive, offer support, and suggest team activities to boost morale",
+      "Point out all the problems",
+      "Leave the team"
+    ],
+    "correct_answer": "Be positive, offer support, and suggest team activities to boost morale",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A colleague gives you feedback that you could improve your communication skills. How should you respond?",
+    "options": [
+      "Ignore it",
+      "Thank them, ask for specific examples, and work on improvement",
+      "Become offended",
+      "Tell them their feedback is wrong"
+    ],
+    "correct_answer": "Thank them, ask for specific examples, and work on improvement",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You complete a task faster than expected. What should you do?",
+    "options": [
+      "Leave early without telling anyone",
+      "Inform your manager and ask if there are other priorities you should focus on",
+      "Take a long break",
+      "Do additional work without asking"
+    ],
+    "correct_answer": "Inform your manager and ask if there are other priorities you should focus on",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your manager asks you to mentor a junior team member. How should you approach it?",
+    "options": [
+      "Refuse because it's not your job",
+      "Agree to help, set regular check-ins, and be patient and supportive",
+      "Overwhelm them with too much information at once",
+      "Do the work for them instead of teaching"
+    ],
+    "correct_answer": "Agree to help, set regular check-ins, and be patient and supportive",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You receive an email with harsh or offensive language from a colleague. What's your best response?",
+    "options": [
+      "Respond immediately with anger",
+      "Take time to cool down, then respond professionally or seek HR guidance if needed",
+      "Spread the email around",
+      "Ignore it and harbor resentment"
+    ],
+    "correct_answer": "Take time to cool down, then respond professionally or seek HR guidance if needed",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A meeting runs overtime and conflicts with your next commitment. What should you do?",
+    "options": [
+      "Interrupt the meeting and leave",
+      "Wait for a break or end, then politely inform your manager you need to leave for your next meeting",
+      "Skip your next meeting without notice",
+      "Sit and miss your next meeting"
+    ],
+    "correct_answer": "Wait for a break or end, then politely inform your manager you need to leave for your next meeting",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're tasked with a project but don't have all the information you need. What's the right approach?",
+    "options": [
+      "Start without the information and hope it works out",
+      "Ask your manager or relevant people for the missing information before starting",
+      "Make assumptions about what you need",
+      "Delay the project indefinitely"
+    ],
+    "correct_answer": "Ask your manager or relevant people for the missing information before starting",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A team member's idea is presented that you think could be improved. How should you respond?",
+    "options": [
+      "Criticize it publicly",
+      "Approach them privately, ask questions about their idea, then tactfully suggest improvements",
+      "Say nothing and let a poor idea move forward",
+      "Dismiss the idea outright"
+    ],
+    "correct_answer": "Approach them privately, ask questions about their idea, then tactfully suggest improvements",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You make a commitment to complete something but realize you can't meet the deadline. What should you do?",
+    "options": [
+      "Miss the deadline without explanation",
+      "Inform the person as soon as possible, explain why, and propose a new timeline",
+      "Pretend you'll make it even though you won't",
+      "Blame someone else for the delay"
+    ],
+    "correct_answer": "Inform the person as soon as possible, explain why, and propose a new timeline",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your company transitions to a new software system. How should you adapt?",
+    "options": [
+      "Resist the change and use the old system",
+      "Attend training, practice using the new system, and ask for help when needed",
+      "Complain about the transition",
+      "Assume others will teach you eventually"
+    ],
+    "correct_answer": "Attend training, practice using the new system, and ask for help when needed",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You overhear negative feedback about your work. How should you handle it?",
+    "options": [
+      "Confront the person aggressively",
+      "Reflect on the feedback, ask the person directly for constructive details, and work on improvement",
+      "Assume it's not valid",
+      "Spread rumors about the person who gave feedback"
+    ],
+    "correct_answer": "Reflect on the feedback, ask the person directly for constructive details, and work on improvement",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A colleague takes credit for your work in a meeting. What's your appropriate response?",
+    "options": [
+      "Make a scene and yell at them",
+      "Calmly clarify your role and contributions afterward, either privately or in the next meeting",
+      "Let it go and resent them",
+      "Tell others about what happened behind the scenes"
+    ],
+    "correct_answer": "Calmly clarify your role and contributions afterward, either privately or in the next meeting",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your team has conflicting views on how to solve a problem. What's your role?",
+    "options": [
+      "Push your idea without listening",
+      "Listen to all perspectives, find common ground, and work toward consensus",
+      "Refuse to participate",
+      "Side with the most senior person without thinking"
+    ],
+    "correct_answer": "Listen to all perspectives, find common ground, and work toward consensus",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're assigned to work with someone known for being difficult. How should you start?",
+    "options": [
+      "Assume conflict is inevitable",
+      "Approach with professionalism, set clear expectations, and focus on common goals",
+      "Request a different partner",
+      "Prepare for the worst"
+    ],
+    "correct_answer": "Approach with professionalism, set clear expectations, and focus on common goals",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You notice a process that could be more efficient. Should you speak up?",
+    "options": [
+      "No, because you're new",
+      "Yes, present it respectfully with specific suggestions to your manager",
+      "Criticize the current process publicly",
+      "Implement changes without permission"
+    ],
+    "correct_answer": "Yes, present it respectfully with specific suggestions to your manager",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your personal life is stressful and it's affecting your work. What should you do?",
+    "options": [
+      "Let your work quality decline without explanation",
+      "Communicate with your manager about needing temporary support, and seek resources",
+      "Hide your stress and overwork yourself",
+      "Vent excessively to coworkers"
+    ],
+    "correct_answer": "Communicate with your manager about needing temporary support, and seek resources",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A colleague asks you to do their work so they can leave early. How should you respond?",
+    "options": [
+      "Agree immediately",
+      "Politely decline and suggest they speak to their manager",
+      "Do it reluctantly",
+      "Lecture them about responsibility"
+    ],
+    "correct_answer": "Politely decline and suggest they speak to their manager",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're unsure if your interpretation of a task is correct. What's the best action?",
+    "options": [
+      "Proceed with your assumption",
+      "Clarify with your manager or the person who assigned the task before proceeding",
+      "Ask a coworker without verifying",
+      "Wait and see if you're corrected later"
+    ],
+    "correct_answer": "Clarify with your manager or the person who assigned the task before proceeding",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You realize you don't have the skills needed for a promotion opportunity. What's your response?",
+    "options": [
+      "Give up on advancement",
+      "Ask your manager about training or development opportunities to build those skills",
+      "Pretend you already have those skills",
+      "Accept the role and struggle"
+    ],
+    "correct_answer": "Ask your manager about training or development opportunities to build those skills",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your team meeting is becoming unproductive with too many tangents. What should you do?",
+    "options": [
+      "Let it continue without comment",
+      "Politely suggest refocusing on the agenda",
+      "Dominate the conversation",
+      "Leave the meeting"
+    ],
+    "correct_answer": "Politely suggest refocusing on the agenda",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A junior team member asks for your advice on a career decision. How should you respond?",
+    "options": [
+      "Tell them to just do whatever you did",
+      "Listen carefully, share your perspective based on experience, and encourage them to consider their own goals",
+      "Say it's not your concern",
+      "Tell them the 'right' path without discussion"
+    ],
+    "correct_answer": "Listen carefully, share your perspective based on experience, and encourage them to consider their own goals",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're invited to an optional team social event. How should you consider attending?",
+    "options": [
+      "Skip it because socializing isn't work",
+      "Attend if you can; it builds team relationships",
+      "Only attend if specifically required",
+      "Go but stay disconnected from everyone"
+    ],
+    "correct_answer": "Attend if you can; it builds team relationships",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A task you completed is rejected by your manager. How should you respond?",
+    "options": [
+      "Defend yourself without listening",
+      "Ask for specific feedback on what didn't meet expectations, then revise",
+      "Redo it without understanding the issues",
+      "Blame external factors"
+    ],
+    "correct_answer": "Ask for specific feedback on what didn't meet expectations, then revise",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You disagree with a team decision, but you're outvoted. What should you do?",
+    "options": [
+      "Sabotage the decision",
+      "Support the team decision while documenting your concerns",
+      "Refuse to participate",
+      "Complain constantly about the decision"
+    ],
+    "correct_answer": "Support the team decision while documenting your concerns",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A colleague gives you a compliment that makes you uncomfortable. How should you respond?",
+    "options": [
+      "Accuse them of insincerity",
+      "Thank them politely and move on",
+      "Dismiss the compliment harshly",
+      "Avoid them afterward"
+    ],
+    "correct_answer": "Thank them politely and move on",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your work hours are changing to accommodate a project. How should you adapt?",
+    "options": [
+      "Refuse to adjust",
+      "Adjust your personal schedule if possible and discuss any conflicts with your manager",
+      "Show up whenever you want",
+      "Complain about every change"
+    ],
+    "correct_answer": "Adjust your personal schedule if possible and discuss any conflicts with your manager",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're asked to present your work to senior management. How should you prepare?",
+    "options": [
+      "Wing it without preparation",
+      "Practice your presentation, organize your thoughts clearly, and anticipate questions",
+      "Memorize word-for-word what to say",
+      "Present without visuals or support"
+    ],
+    "correct_answer": "Practice your presentation, organize your thoughts clearly, and anticipate questions",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A team member completes their work early and offers to help others. How should you respond as their manager?",
+    "options": [
+      "Assign them more work immediately",
+      "Appreciate their initiative, discuss how they'd like to contribute, and encourage peer learning",
+      "Tell them to take it easy",
+      "Ignore their offer"
+    ],
+    "correct_answer": "Appreciate their initiative, discuss how they'd like to contribute, and encourage peer learning",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're in a meeting and someone presents data that contradicts your earlier statement. What's the best response?",
+    "options": [
+      "Dispute the data without examining it",
+      "Thank them for the correction, examine the data, and adjust your understanding publicly",
+      "Ignore the data",
+      "Blame the person presenting"
+    ],
+    "correct_answer": "Thank them for the correction, examine the data, and adjust your understanding publicly",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your team has completed a challenging project successfully. What's an appropriate way to celebrate?",
+    "options": [
+      "Ignore the achievement",
+      "Acknowledge the team's effort publicly, celebrate together, and reflect on what was learned",
+      "Credit only yourself",
+      "Move immediately to the next project without pause"
+    ],
+    "correct_answer": "Acknowledge the team's effort publicly, celebrate together, and reflect on what was learned",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A new process is being introduced that seems complicated initially. How should you approach learning it?",
+    "options": [
+      "Refuse to use it and stick to the old way",
+      "Ask questions, give it a fair chance, practice, and ask for help when needed",
+      "Complain that it's too complicated",
+      "Wait for others to master it first"
+    ],
+    "correct_answer": "Ask questions, give it a fair chance, practice, and ask for help when needed",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your manager is making a decision you think is wrong but hasn't asked for your input. What should you do?",
+    "options": [
+      "Do nothing and let them make a mistake",
+      "Request time to discuss your concerns professionally and respectfully",
+      "Complain to your peers about the decision",
+      "Refuse to support the decision"
+    ],
+    "correct_answer": "Request time to discuss your concerns professionally and respectfully",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A colleague mentions they're struggling with a personal issue that's affecting work. How should you respond?",
+    "options": [
+      "Tell them personal issues are not work-related",
+      "Listen supportively, offer any help you can, and suggest they speak with HR or employee assistance",
+      "Spread the information to others",
+      "Minimize their concerns"
+    ],
+    "correct_answer": "Listen supportively, offer any help you can, and suggest they speak with HR or employee assistance",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're asked to work on a task you don't fully understand. What's your best approach?",
+    "options": [
+      "Pretend you understand and figure it out alone",
+      "Ask clarifying questions immediately to understand what's expected",
+      "Do your best without asking",
+      "Refuse the task"
+    ],
+    "correct_answer": "Ask clarifying questions immediately to understand what's expected",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A colleague gives you feedback in front of a group and it's embarrassing. How should you handle it?",
+    "options": [
+      "Get upset and defend yourself loudly",
+      "Stay calm, listen to the feedback, thank them, and discuss further privately if needed",
+      "Leave the room",
+      "Retaliate with criticism"
+    ],
+    "correct_answer": "Stay calm, listen to the feedback, thank them, and discuss further privately if needed",
+    "topic": "Communication",
+    "difficulty": "easy"
+  },
+  {
+    "question": "You're assigned a project on a tight deadline with an unfamiliar tool. How should you approach this?",
+    "options": [
+      "Try to avoid using the new tool",
+      "Learn the basics quickly through resources, apply them, and ask for support from those with experience",
+      "Use the tool anyway without learning it",
+      "Request more time indefinitely"
+    ],
+    "correct_answer": "Learn the basics quickly through resources, apply them, and ask for support from those with experience",
+    "topic": "Adaptability",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Your team member's approach to solving a problem is different from yours, but it might work. How should you respond?",
+    "options": [
+      "Impose your approach without discussion",
+      "Discuss the pros and cons of both approaches and agree on a path forward",
+      "Criticize their approach",
+      "Do it your way after they leave"
+    ],
+    "correct_answer": "Discuss the pros and cons of both approaches and agree on a path forward",
+    "topic": "Teamwork",
+    "difficulty": "easy"
+  }
+]

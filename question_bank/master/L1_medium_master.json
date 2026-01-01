@@ -1,1850 +1,902 @@
 [
-    {
-        "question": "All A are B. Some B are C. Which of the following conclusions can be drawn?",
-        "options": [
-            "All A are C",
-            "Some A are C",
-            "No A are C",
-            "Some B are not C"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If it is raining, then the ground is wet. The ground is wet. What can be concluded?",
-        "options": [
-            "It is raining",
-            "It is not raining",
-            "The ground is dry",
-            "It might be raining, or it might not be raining"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise 1: If the alarm rings, then I will wake up. Premise 2: I did not wake up. What can be concluded?",
-        "options": [
-            "The alarm rang",
-            "The alarm did not ring",
-            "I am asleep",
-            "I am awake"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "A is taller than B. C is shorter than B. Which statement is true?",
-        "options": [
-            "A is taller than C",
-            "C is taller than A",
-            "A and C are the same height",
-            "We cannot compare A and C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "All birds can fly. Penguins are birds. Therefore, penguins can fly. This is an example of:",
-        "options": [
-            "A deductive argument",
-            "An inductive argument",
-            "A fallacy of relevance",
-            "A faulty generalization"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Deduction"
-    },
-    {
-        "question": "Statement: Some students are athletes. No athletes are lazy. Conclusion: Some students are not lazy. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all students are athletes"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If you study hard, you will pass the exam. You did not pass the exam. What can you conclude?",
-        "options": [
-            "You studied hard",
-            "You did not study hard",
-            "The exam was easy",
-            "You will fail the next exam"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise: All squares are rectangles. Premise: All rectangles have four sides. Conclusion: All squares have four sides. This is a valid:",
-        "options": [
-            "Inductive reasoning",
-            "Deductive reasoning",
-            "Abductive reasoning",
-            "Analogical reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Deduction"
-    },
-    {
-        "question": "The sun rises in the east. The moon rises in the west. This is a statement about:",
-        "options": [
-            "Causation",
-            "Correlation",
-            "Contradiction",
-            "Analogy"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Contradiction"
-    },
-    {
-        "question": "If P, then Q. If Q, then R. Therefore, if P, then R. This is an example of:",
-        "options": [
-            "Modus Ponens",
-            "Modus Tollens",
-            "Hypothetical Syllogism",
-            "Disjunctive Syllogism"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All dogs are mammals. Some mammals are cats. What can be concluded?",
-        "options": [
-            "All dogs are cats",
-            "Some dogs are cats",
-            "No dogs are cats",
-            "Some mammals are not dogs"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Statement: If it is sunny, I wear sunglasses. I am not wearing sunglasses. Conclusion: It is not sunny. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if I always wear sunglasses when it's sunny"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "John is older than Mary. Peter is younger than Mary. Who is the youngest?",
-        "options": [
-            "John",
-            "Mary",
-            "Peter",
-            "Cannot be determined"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "A valid argument is one where:",
-        "options": [
-            "The premises are true",
-            "The conclusion is true",
-            "If the premises are true, the conclusion must be true",
-            "The conclusion is likely true"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Validity"
-    },
-    {
-        "question": "Statement: Some lawyers are rich. All rich people are happy. Conclusion: Some lawyers are happy. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all lawyers are rich"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If you are hungry, you will eat. You are eating. What can be concluded?",
-        "options": [
-            "You are hungry",
-            "You are not hungry",
-            "You might be hungry, or you might not be hungry",
-            "You are full"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise 1: All apples are fruits. Premise 2: Some fruits are red. Conclusion: Some apples are red. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all fruits are apples"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "The following are all numbers: 2, 4, 6, 8. The next number in the sequence is likely:",
-        "options": [
-            "10",
-            "7",
-            "9",
-            "11"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: If the train is late, I will miss my meeting. I missed my meeting. Conclusion: The train was late. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if missing the meeting always means the train was late"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All men are mortal. Socrates is a man. Therefore, Socrates is mortal. This is an example of:",
-        "options": [
-            "Inductive reasoning",
-            "Deductive reasoning",
-            "Abductive reasoning",
-            "Analogical reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Deduction"
-    },
-    {
-        "question": "Some politicians are honest. No honest people are corrupt. Conclusion: Some politicians are not corrupt. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all politicians are honest"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If I am tired, I will sleep. I am sleeping. What can be concluded?",
-        "options": [
-            "I am tired",
-            "I am not tired",
-            "I might be tired, or I might not be tired",
-            "I am awake"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise 1: If it is cold, I wear a coat. Premise 2: It is not cold. What can be concluded?",
-        "options": [
-            "I wear a coat",
-            "I do not wear a coat",
-            "I might wear a coat, or I might not wear a coat",
-            "It is warm"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A is to the left of B. C is to the right of B. Which statement is true?",
-        "options": [
-            "A is to the left of C",
-            "C is to the left of A",
-            "A and C are in the same position",
-            "We cannot compare A and C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: All cats have fur. My pet has fur. Conclusion: My pet is a cat. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all furry animals are cats"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All A are B. No B are C. Therefore, no A are C. This is a valid:",
-        "options": [
-            "Inductive argument",
-            "Deductive argument",
-            "Fallacy of generalization",
-            "Informal fallacy"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If you eat too much, you will feel sick. You feel sick. What can be concluded?",
-        "options": [
-            "You ate too much",
-            "You did not eat too much",
-            "You might have eaten too much, or you might not have",
-            "You are healthy"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise: All musicians are artists. Premise: John is an artist. Conclusion: John is a musician. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all artists are musicians"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "The sequence is: 1, 3, 5, 7. The next number is likely:",
-        "options": [
-            "9",
-            "8",
-            "10",
-            "6"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: If I study, I will pass. I passed. Conclusion: I studied. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if passing always means studying"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All elephants are large. Some large animals are mammals. What can be concluded?",
-        "options": [
-            "All elephants are mammals",
-            "Some elephants are mammals",
-            "No elephants are mammals",
-            "Some large animals are not elephants"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If it is not raining, I will go for a walk. I went for a walk. What can be concluded?",
-        "options": [
-            "It is not raining",
-            "It is raining",
-            "It might be raining, or it might not be raining",
-            "The weather is good"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise 1: If Sarah is happy, she sings. Premise 2: Sarah is singing. What can be concluded?",
-        "options": [
-            "Sarah is happy",
-            "Sarah is not happy",
-            "Sarah might be happy, or she might not be happy",
-            "Sarah is sad"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A is greater than B. B is greater than C. Which statement is true?",
-        "options": [
-            "A is greater than C",
-            "C is greater than A",
-            "A and C are equal",
-            "We cannot compare A and C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: All scientists are intelligent. Some intelligent people are artists. Conclusion: Some scientists are artists. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all scientists are intelligent"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If you are a doctor, you have a medical degree. You have a medical degree. What can be concluded?",
-        "options": [
-            "You are a doctor",
-            "You are not a doctor",
-            "You might be a doctor, or you might not be",
-            "You are a nurse"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All A are B. Some A are C. What can be concluded?",
-        "options": [
-            "Some B are C",
-            "All B are C",
-            "No B are C",
-            "Some A are not C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "The sequence is: 2, 4, 8, 16. The next number is likely:",
-        "options": [
-            "32",
-            "24",
-            "30",
-            "20"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: If the alarm rings, I will be alerted. I was alerted. Conclusion: The alarm rang. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if being alerted always means the alarm rang"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise: No birds are mammals. Premise: All sparrows are birds. Conclusion: No sparrows are mammals. This is a valid:",
-        "options": [
-            "Inductive reasoning",
-            "Deductive reasoning",
-            "Abductive reasoning",
-            "Analogical reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "All students who pass must study. John passed. Therefore, John must have studied. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if studying is the only way to pass"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A is to the north of B. B is to the north of C. Which statement is true?",
-        "options": [
-            "A is to the north of C",
-            "C is to the north of A",
-            "A and C are in the same location",
-            "We cannot determine the relationship between A and C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: All cars have wheels. My bicycle has wheels. Conclusion: My bicycle is a car. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all things with wheels are cars"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All X are Y. Some Y are Z. What can be concluded?",
-        "options": [
-            "All X are Z",
-            "Some X are Z",
-            "No X are Z",
-            "Some Y are not X"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If you are thirsty, you will drink water. You are drinking water. What can be concluded?",
-        "options": [
-            "You are thirsty",
-            "You are not thirsty",
-            "You might be thirsty, or you might not be",
-            "You are hungry"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise 1: If it is raining, the streets are wet. Premise 2: The streets are not wet. What can be concluded?",
-        "options": [
-            "It is raining",
-            "It is not raining",
-            "It might be raining, or it might not be raining",
-            "The streets are dry"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "The sequence is: 10, 20, 30, 40. The next number is likely:",
-        "options": [
-            "50",
-            "45",
-            "55",
-            "35"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: All birds have wings. A bat has wings. Conclusion: A bat is a bird. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all winged creatures are birds"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All A are B. No A are C. What can be concluded?",
-        "options": [
-            "No B are C",
-            "Some B are C",
-            "Some B are not C",
-            "No C are B"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If you are happy, you will smile. You are smiling. What can be concluded?",
-        "options": [
-            "You are happy",
-            "You are not happy",
-            "You might be happy, or you might not be",
-            "You are sad"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise: All mammals are warm-blooded. Premise: Some warm-blooded animals are birds. Conclusion: Some mammals are birds. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all warm-blooded animals are mammals"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "A is heavier than B. C is lighter than B. Who is the lightest?",
-        "options": [
-            "A",
-            "B",
-            "C",
-            "Cannot be determined"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: If it is hot, I will swim. I swam. Conclusion: It is hot. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if swimming always means it's hot"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All A are B. All B are C. Therefore, all A are C. This is a valid:",
-        "options": [
-            "Inductive reasoning",
-            "Deductive reasoning",
-            "Abductive reasoning",
-            "Analogical reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If the light is green, you can go. You cannot go. What can be concluded?",
-        "options": [
-            "The light is green",
-            "The light is not green",
-            "The light might be green, or it might not be",
-            "You should stop"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "The sequence is: 1, 4, 9, 16. The next number is likely:",
-        "options": [
-            "25",
-            "20",
-            "22",
-            "24"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: All dogs are animals. Fido is an animal. Conclusion: Fido is a dog. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all animals are dogs"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If the alarm rings, I will wake up. I woke up. What can be concluded?",
-        "options": [
-            "The alarm rang",
-            "The alarm did not ring",
-            "The alarm might have rung, or it might not have",
-            "I am still asleep"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All A are B. Some B are not C. What can be concluded?",
-        "options": [
-            "All A are C",
-            "Some A are C",
-            "No A are C",
-            "Some A are not C"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Premise 1: If it is raining, I will stay inside. Premise 2: I am outside. What can be concluded?",
-        "options": [
-            "It is raining",
-            "It is not raining",
-            "It might be raining, or it might not be",
-            "I am indoors"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "A is faster than B. C is slower than B. Who is the fastest?",
-        "options": [
-            "A",
-            "B",
-            "C",
-            "Cannot be determined"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: If a number is even, it is divisible by 2. The number 7 is not divisible by 2. Conclusion: The number 7 is not even. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all numbers not divisible by 2 are odd"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "All A are B. No B are C. Therefore, no A are C. This is a valid:",
-        "options": [
-            "Inductive argument",
-            "Deductive argument",
-            "Fallacy of relevance",
-            "Faulty induction"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If you are a student, you have a student ID. You do not have a student ID. What can be concluded?",
-        "options": [
-            "You are a student",
-            "You are not a student",
-            "You might be a student, or you might not be",
-            "You are a teacher"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "The sequence is: 3, 6, 9, 12. The next number is likely:",
-        "options": [
-            "15",
-            "14",
-            "16",
-            "10"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: All mammals have backbones. A fish has a backbone. Conclusion: A fish is a mammal. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all creatures with backbones are mammals"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "All A are B. Some C are A. What can be concluded?",
-        "options": [
-            "Some C are B",
-            "All C are B",
-            "No C are B",
-            "Some A are not B"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If it is sunny, I will be happy. I am happy. What can be concluded?",
-        "options": [
-            "It is sunny",
-            "It is not sunny",
-            "It might be sunny, or it might not be",
-            "I am sad"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise 1: If you win the lottery, you will be rich. Premise 2: You are not rich. What can be concluded?",
-        "options": [
-            "You won the lottery",
-            "You did not win the lottery",
-            "You might have won the lottery, or you might not have",
-            "You are poor"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "A is taller than B. B is taller than C. C is taller than D. Who is the tallest?",
-        "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: All squares are quadrilaterals. Some quadrilaterals are rectangles. Conclusion: Some squares are rectangles. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all quadrilaterals are rectangles"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If the power is out, the lights will not work. The lights are not working. What can be concluded?",
-        "options": [
-            "The power is out",
-            "The power is not out",
-            "The power might be out, or it might not be",
-            "The bulb is broken"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All cats are felines. Some felines are domestic. What can be concluded?",
-        "options": [
-            "All cats are domestic",
-            "Some cats are domestic",
-            "No cats are domestic",
-            "Some felines are not cats"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "The sequence is: 1, 1, 2, 3, 5. The next number is likely:",
-        "options": [
-            "8",
-            "7",
-            "6",
-            "9"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: If you are hungry, you will eat. You did not eat. Conclusion: You are not hungry. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if not eating always means you are not hungry"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "All A are B. Some C are not B. What can be concluded?",
-        "options": [
-            "All C are A",
-            "Some C are A",
-            "No C are A",
-            "Some C are not A"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Premise: All cyclists wear helmets. Premise: John is not wearing a helmet. Conclusion: John is not a cyclist. This is a valid:",
-        "options": [
-            "Inductive reasoning",
-            "Deductive reasoning",
-            "Abductive reasoning",
-            "Analogical reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "A is to the right of B. C is to the left of B. Which statement is true?",
-        "options": [
-            "A is to the right of C",
-            "C is to the right of A",
-            "A and C are in the same position",
-            "We cannot compare A and C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: If the weather is good, we will go for a picnic. We did not go for a picnic. Conclusion: The weather was not good. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if not picnicking always means the weather was bad"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All A are B. All C are A. Therefore, all C are B. This is a valid:",
-        "options": [
-            "Inductive reasoning",
-            "Deductive reasoning",
-            "Abductive reasoning",
-            "Analogical reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If you are in a car, you are in a vehicle. You are in a vehicle. What can be concluded?",
-        "options": [
-            "You are in a car",
-            "You are not in a car",
-            "You might be in a car, or you might not be",
-            "You are walking"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "The sequence is: 5, 10, 15, 20. The next number is likely:",
-        "options": [
-            "25",
-            "22",
-            "24",
-            "30"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: All dogs bark. My cat barks. Conclusion: My cat is a dog. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all barking animals are dogs"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All A are B. Some B are C. Some C are D. What can be concluded about A and D?",
-        "options": [
-            "Some A are D",
-            "No A are D",
-            "All A are D",
-            "Cannot be determined"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If it is Monday, I wear a blue shirt. I am wearing a blue shirt. What can be concluded?",
-        "options": [
-            "It is Monday",
-            "It is not Monday",
-            "It might be Monday, or it might not be",
-            "I like blue shirts"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise: All lawyers are professionals. Premise: Some professionals are not honest. Conclusion: Some lawyers are not honest. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all lawyers are professionals"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "A is older than B. B is older than C. Who is the oldest?",
-        "options": [
-            "A",
-            "B",
-            "C",
-            "Cannot be determined"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: If you are a painter, you use brushes. You do not use brushes. Conclusion: You are not a painter. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if not using brushes always means you are not a painter"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "All A are B. No A are C. Therefore, no C are B. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all B are A"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "The sequence is: 1, 8, 27, 64. The next number is likely:",
-        "options": [
-            "125",
-            "100",
-            "120",
-            "110"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "If it is hot, I feel tired. I do not feel tired. What can be concluded?",
-        "options": [
-            "It is hot",
-            "It is not hot",
-            "It might be hot, or it might not be",
-            "I am energetic"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "Statement: All flowers are plants. Some plants are trees. Conclusion: Some flowers are trees. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all plants are flowers"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "All A are B. All B are C. All C are D. What can be concluded?",
-        "options": [
-            "All A are D",
-            "Some A are D",
-            "No A are D",
-            "All D are A"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Premise 1: If you study, you will learn. Premise 2: You learned. What can be concluded?",
-        "options": [
-            "You studied",
-            "You did not study",
-            "You might have studied, or you might not have",
-            "You are a good student"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A is shorter than B. B is shorter than C. Which statement is true?",
-        "options": [
-            "A is shorter than C",
-            "C is shorter than A",
-            "A and C are the same height",
-            "We cannot compare A and C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: All squares have four equal sides. A rhombus has four equal sides. Conclusion: A rhombus is a square. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all shapes with four equal sides are squares"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If the alarm rings, I will wake up. I did not wake up. What can be concluded?",
-        "options": [
-            "The alarm rang",
-            "The alarm did not ring",
-            "The alarm might have rung, or it might not have",
-            "I am still asleep"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "All A are B. Some B are C. Some A are D. What can be concluded about C and D?",
-        "options": [
-            "Some C are D",
-            "No C are D",
-            "All C are D",
-            "Cannot be determined"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "The sequence is: 2, 5, 10, 17. The next number is likely:",
-        "options": [
-            "26",
-            "24",
-            "25",
-            "28"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: If it is raining, the ground is wet. The ground is not wet. Conclusion: It is not raining. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if not being wet always means it is not raining"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "All A are B. Some C are A. All D are C. What can be concluded?",
-        "options": [
-            "All D are B",
-            "Some D are B",
-            "No D are B",
-            "Cannot be determined"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If you are running, you are exercising. You are not exercising. What can be concluded?",
-        "options": [
-            "You are running",
-            "You are not running",
-            "You might be running, or you might not be",
-            "You are resting"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "Premise: All artists are creative. Premise: Some creative people are engineers. Conclusion: Some artists are engineers. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all creative people are artists"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "A is faster than B. B is faster than C. C is faster than D. Who is the slowest?",
-        "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: If a fruit is an apple, it is a fruit. The fruit is not an apple. Conclusion: The fruit is not a fruit. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all non-apples are not fruits"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All A are B. No C are A. What can be concluded?",
-        "options": [
-            "No C are B",
-            "Some C are B",
-            "Some C are not B",
-            "No B are C"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "The sequence is: 1, 1, 3, 5, 8. The next number is likely:",
-        "options": [
-            "13",
-            "12",
-            "11",
-            "14"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "If it is cold, I wear a scarf. I am wearing a scarf. What can be concluded?",
-        "options": [
-            "It is cold",
-            "It is not cold",
-            "It might be cold, or it might not be",
-            "I like scarves"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Statement: All birds have feathers. A penguin has feathers. Conclusion: A penguin is a bird. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all feathered creatures are birds"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "All A are B. All B are C. Some C are D. What can be concluded?",
-        "options": [
-            "Some A are D",
-            "No A are D",
-            "All A are D",
-            "Cannot be determined"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Premise: If the cat is hungry, it will meow. Premise: The cat is meowing. Conclusion: The cat is hungry. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if meowing always means the cat is hungry"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A is heavier than B. C is heavier than A. Who is the heaviest?",
-        "options": [
-            "A",
-            "B",
-            "C",
-            "Cannot be determined"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: All cars need fuel. My bicycle does not need fuel. Conclusion: My bicycle is not a car. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all things needing fuel are cars"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "All A are B. Some C are not A. What can be concluded?",
-        "options": [
-            "Some C are not B",
-            "All C are B",
-            "No C are B",
-            "Cannot be determined"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "The sequence is: 1, 4, 7, 10. The next number is likely:",
-        "options": [
-            "13",
-            "12",
-            "11",
-            "14"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "If you are an artist, you can draw. You can draw. What can be concluded?",
-        "options": [
-            "You are an artist",
-            "You are not an artist",
-            "You might be an artist, or you might not be",
-            "You are a teacher"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Statement: All dogs are mammals. Some mammals are cats. Conclusion: Some cats are dogs. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all mammals are dogs"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "All A are B. Some A are C. No C are D. What can be concluded?",
-        "options": [
-            "No A are D",
-            "Some A are not D",
-            "All A are D",
-            "Cannot be determined"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Premise: All students passed the exam. Premise: John is a student. Conclusion: John passed the exam. This is a valid:",
-        "options": [
-            "Inductive reasoning",
-            "Deductive reasoning",
-            "Abductive reasoning",
-            "Analogical reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Deduction"
-    },
-    {
-        "question": "A is to the north of B. C is to the east of B. Which statement is true?",
-        "options": [
-            "A is to the east of C",
-            "C is to the east of A",
-            "A and C are in the same location",
-            "We cannot determine the relationship between A and C"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Spatial Reasoning"
-    },
-    {
-        "question": "If you are a doctor, you treat patients. You do not treat patients. What can be concluded?",
-        "options": [
-            "You are a doctor",
-            "You are not a doctor",
-            "You might be a doctor, or you might not be",
-            "You are a nurse"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "The sequence is: 1, 3, 6, 10. The next number is likely:",
-        "options": [
-            "15",
-            "14",
-            "16",
-            "12"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: All elephants are mammals. Some mammals are grey. Conclusion: Some elephants are grey. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all mammals are elephants"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "All A are B. Some C are A. All D are B. What can be concluded?",
-        "options": [
-            "Some C are D",
-            "No C are D",
-            "All C are D",
-            "Cannot be determined"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "If it is Sunday, I relax. I am relaxing. What can be concluded?",
-        "options": [
-            "It is Sunday",
-            "It is not Sunday",
-            "It might be Sunday, or it might not be",
-            "I am bored"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "Premise: All married people are adults. Premise: John is an adult. Conclusion: John is married. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all adults are married"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "A is taller than B. C is taller than A. Who is the tallest?",
-        "options": [
-            "A",
-            "B",
-            "C",
-            "Cannot be determined"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: If a number is divisible by 4, it is divisible by 2. The number 6 is divisible by 2. Conclusion: The number 6 is divisible by 4. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all numbers divisible by 2 are divisible by 4"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "All A are B. No B are C. Therefore, no C are A. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all B are A"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "The sequence is: 1, 2, 4, 8. The next number is likely:",
-        "options": [
-            "16",
-            "15",
-            "17",
-            "10"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "If you are a teacher, you have a degree. You do not have a degree. What can be concluded?",
-        "options": [
-            "You are a teacher",
-            "You are not a teacher",
-            "You might be a teacher, or you might not be",
-            "You are a student"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "Statement: All dogs are animals. My cat is an animal. Conclusion: My cat is a dog. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all animals are dogs"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "All A are B. Some C are B. What can be concluded?",
-        "options": [
-            "Some A are C",
-            "No A are C",
-            "All A are C",
-            "Cannot be determined"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Premise: If it rains, the game is cancelled. Premise: The game is not cancelled. Conclusion: It did not rain. This is a valid:",
-        "options": [
-            "Inductive reasoning",
-            "Deductive reasoning",
-            "Abductive reasoning",
-            "Analogical reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "A is to the west of B. C is to the east of B. Which statement is true?",
-        "options": [
-            "A is to the east of C",
-            "C is to the east of A",
-            "A and C are in the same location",
-            "We cannot determine the relationship between A and C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Spatial Reasoning"
-    },
-    {
-        "question": "If you are a pilot, you can fly a plane. You can fly a plane. What can be concluded?",
-        "options": [
-            "You are a pilot",
-            "You are not a pilot",
-            "You might be a pilot, or you might not be",
-            "You are a flight attendant"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "The sequence is: 1, 3, 5, 7. The next number is likely:",
-        "options": [
-            "9",
-            "8",
-            "10",
-            "6"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: All squares are rectangles. A rectangle has four right angles. Conclusion: A square has four right angles. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all rectangles are squares"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "All A are B. Some A are C. What can be concluded?",
-        "options": [
-            "Some B are C",
-            "All B are C",
-            "No B are C",
-            "Some A are not C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Premise 1: If it is cold, I wear a hat. Premise 2: I am not wearing a hat. What can be concluded?",
-        "options": [
-            "It is cold",
-            "It is not cold",
-            "It might be cold, or it might not be",
-            "It is warm"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "A is to the north of B. C is to the south of B. Which statement is true?",
-        "options": [
-            "A is to the south of C",
-            "C is to the south of A",
-            "A and C are in the same location",
-            "We cannot determine the relationship between A and C"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Spatial Reasoning"
-    },
-    {
-        "question": "If you are a doctor, you wear a white coat. You are wearing a white coat. What can be concluded?",
-        "options": [
-            "You are a doctor",
-            "You are not a doctor",
-            "You might be a doctor, or you might not be",
-            "You are a scientist"
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "The sequence is: 1, 4, 9, 16. The next number is likely:",
-        "options": [
-            "25",
-            "20",
-            "22",
-            "24"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: All mammals breathe air. A fish breathes water. Conclusion: A fish is not a mammal. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all air-breathers are mammals"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "All A are B. No C are B. What can be concluded?",
-        "options": [
-            "No A are C",
-            "Some A are C",
-            "All A are C",
-            "Cannot be determined"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Premise: If a shape is a square, it has four sides. Premise: This shape does not have four sides. Conclusion: This shape is not a square. This is a valid:",
-        "options": [
-            "Inductive reasoning",
-            "Deductive reasoning",
-            "Abductive reasoning",
-            "Analogical reasoning"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "A is to the east of B. C is to the west of B. Which statement is true?",
-        "options": [
-            "A is to the west of C",
-            "C is to the west of A",
-            "A and C are in the same location",
-            "We cannot determine the relationship between A and C"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Spatial Reasoning"
-    },
-    {
-        "question": "If you are a musician, you play an instrument. You do not play an instrument. What can be concluded?",
-        "options": [
-            "You are a musician",
-            "You are not a musician",
-            "You might be a musician, or you might not be",
-            "You are a dancer"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Modus Tollens"
-    },
-    {
-        "question": "The sequence is: 2, 4, 6, 8. The next number is likely:",
-        "options": [
-            "10",
-            "9",
-            "11",
-            "7"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "topic": "Pattern Recognition"
-    },
-    {
-        "question": "Statement: All apples are fruits. This item is a fruit. Conclusion: This item is an apple. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all fruits are apples"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "All A are B. Some C are B. Some A are D. What can be concluded?",
-        "options": [
-            "Some C are D",
-            "No C are D",
-            "All C are D",
-            "Cannot be determined"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    },
-    {
-        "question": "Premise: If you study hard, you will get good grades. Premise: You got good grades. Conclusion: You studied hard. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if good grades always come from studying hard"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Conditional Statements"
-    },
-    {
-        "question": "A is heavier than B. C is lighter than A. Who is the heaviest?",
-        "options": [
-            "A",
-            "B",
-            "C",
-            "Cannot be determined"
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "topic": "Ordering"
-    },
-    {
-        "question": "Statement: All birds can fly. Ostriches are birds. Conclusion: Ostriches can fly. Is this conclusion valid?",
-        "options": [
-            "Yes",
-            "No",
-            "Cannot be determined",
-            "Only if all birds are ostriches"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "topic": "Syllogism"
-    }
+  {
+    "question": "A product's price increases by 20%, then decreases by 10%. What is the net change?",
+    "options": [
+      "8% increase",
+      "10% increase",
+      "12% increase",
+      "15% increase"
+    ],
+    "correct_answer": "8% increase",
+    "topic": "Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If a value increases by 25% and then by 20%, what is the total percentage increase?",
+    "options": [
+      "42%",
+      "45%",
+      "48%",
+      "50%"
+    ],
+    "correct_answer": "50%",
+    "topic": "Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A quantity decreases by 30%, then increases by 30%. What is the net change?",
+    "options": [
+      "9% decrease",
+      "18% decrease",
+      "0%",
+      "9% increase"
+    ],
+    "correct_answer": "9% decrease",
+    "topic": "Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The population of a city was 10,00,000 in 2020 and grew by 15% in 2021. What is the population in 2021?",
+    "options": [
+      "11,00,000",
+      "11,50,000",
+      "12,00,000",
+      "12,50,000"
+    ],
+    "correct_answer": "11,50,000",
+    "topic": "Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The average salary of 5 people is ₹40,000. If one person earning ₹60,000 leaves, what is the new average?",
+    "options": [
+      "₹35,000",
+      "₹36,000",
+      "₹37,000",
+      "₹38,000"
+    ],
+    "correct_answer": "₹37,000",
+    "topic": "Averages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "10 students score an average of 75. 5 more students join with an average score of 85. What is the new average?",
+    "options": [
+      "78",
+      "79",
+      "80",
+      "81"
+    ],
+    "correct_answer": "78",
+    "topic": "Averages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "₹1200 is divided among A, B, C in the ratio 2:3:5. How much does B get?",
+    "options": [
+      "₹240",
+      "₹360",
+      "₹600",
+      "₹720"
+    ],
+    "correct_answer": "₹360",
+    "topic": "Ratios & Proportions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If A:B = 3:4 and B:C = 2:3, what is A:B:C?",
+    "options": [
+      "3:4:6",
+      "6:8:12",
+      "3:4:3",
+      "2:3:4"
+    ],
+    "correct_answer": "6:8:12",
+    "topic": "Ratios & Proportions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A shopkeeper buys 10 items at ₹50 each and sells them at ₹70 each. What is the total profit?",
+    "options": [
+      "₹100",
+      "₹150",
+      "₹200",
+      "₹250"
+    ],
+    "correct_answer": "₹200",
+    "topic": "Profit & Loss",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If marked price is ₹1000, discount is 20%, and profit is 25%, what is the cost price?",
+    "options": [
+      "₹600",
+      "₹640",
+      "₹700",
+      "₹750"
+    ],
+    "correct_answer": "₹640",
+    "topic": "Profit & Loss",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A train travels 300 km in 5 hours. Another train travels 400 km in 5 hours. What is the difference in their speeds?",
+    "options": [
+      "20 km/hr",
+      "30 km/hr",
+      "40 km/hr",
+      "50 km/hr"
+    ],
+    "correct_answer": "20 km/hr",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A car travels at 60 km/hr for 2 hours and then at 80 km/hr for 3 hours. What is the average speed?",
+    "options": [
+      "70 km/hr",
+      "72 km/hr",
+      "75 km/hr",
+      "80 km/hr"
+    ],
+    "correct_answer": "72 km/hr",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 1, 4, 9, 16, 25, ?",
+    "options": [
+      "35",
+      "36",
+      "38",
+      "42"
+    ],
+    "correct_answer": "36",
+    "topic": "Number Series",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 2, 6, 12, 20, 30, ?",
+    "options": [
+      "40",
+      "42",
+      "45",
+      "50"
+    ],
+    "correct_answer": "42",
+    "topic": "Number Series",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 1, 3, 7, 15, 31, ?",
+    "options": [
+      "61",
+      "62",
+      "63",
+      "64"
+    ],
+    "correct_answer": "63",
+    "topic": "Number Series",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A person walks 10m east, then 15m north, then 10m west. What is his final distance from the starting point?",
+    "options": [
+      "15 m",
+      "20 m",
+      "25 m",
+      "30 m"
+    ],
+    "correct_answer": "15 m",
+    "topic": "Directions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A walks 20m north, 30m east, then 20m south. How far is A from the starting point?",
+    "options": [
+      "20 m",
+      "25 m",
+      "30 m",
+      "35 m"
+    ],
+    "correct_answer": "30 m",
+    "topic": "Directions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A's mother's brother's daughter is A's __?",
+    "options": [
+      "Cousin",
+      "Sister",
+      "Niece",
+      "Aunt"
+    ],
+    "correct_answer": "Cousin",
+    "topic": "Blood Relations",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If X is Y's brother and Y is Z's mother, then X is Z's __?",
+    "options": [
+      "Uncle",
+      "Father",
+      "Cousin",
+      "Grandfather"
+    ],
+    "correct_answer": "Uncle",
+    "topic": "Blood Relations",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If FAST is coded as GBRV, how is SLOW coded?",
+    "options": [
+      "TMPY",
+      "TMPZ",
+      "TNPZ",
+      "TNPY"
+    ],
+    "correct_answer": "TMPY",
+    "topic": "Coding-Decoding",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If APPLE is coded as 12345, then PALE is coded as?",
+    "options": [
+      "1234",
+      "1243",
+      "1342",
+      "2143"
+    ],
+    "correct_answer": "2143",
+    "topic": "Coding-Decoding",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which word is a synonym of 'expedite'?",
+    "options": [
+      "Accelerate",
+      "Delay",
+      "Halt",
+      "Stop"
+    ],
+    "correct_answer": "Accelerate",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which word is an antonym of 'meticulous'?",
+    "options": [
+      "Careful",
+      "Careless",
+      "Precise",
+      "Thorough"
+    ],
+    "correct_answer": "Careless",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Choose the correct sentence:",
+    "options": [
+      "He have completed the work",
+      "He has completed the work",
+      "He do complete the work",
+      "He did completed the work"
+    ],
+    "correct_answer": "He has completed the work",
+    "topic": "Grammar",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Correct: 'If I was you, I would accept the offer.'",
+    "options": [
+      "'was' to 'were'",
+      "'would' to 'could'",
+      "'accept' to 'accepted'",
+      "No correction needed"
+    ],
+    "correct_answer": "'was' to 'were'",
+    "topic": "Grammar",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Arrange in order: A) He scored a goal. B) The match began. C) The team celebrated. D) He was awarded Man of the Match.",
+    "options": [
+      "ABCD",
+      "ABDC",
+      "ACBD",
+      "BCAD"
+    ],
+    "correct_answer": "ABCD",
+    "topic": "Para Jumbles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The weather was ____ so the picnic was postponed.",
+    "options": [
+      "beautiful",
+      "rainy",
+      "sunny",
+      "clear"
+    ],
+    "correct_answer": "rainy",
+    "topic": "Cloze Test",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If the cost of 8 items is ₹240, what is the cost of 12 items?",
+    "options": [
+      "₹300",
+      "₹320",
+      "₹360",
+      "₹400"
+    ],
+    "correct_answer": "₹360",
+    "topic": "Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A mixture contains 60% water and 40% salt. If 100 liters of mixture is taken, how much salt is there?",
+    "options": [
+      "30 L",
+      "40 L",
+      "50 L",
+      "60 L"
+    ],
+    "correct_answer": "40 L",
+    "topic": "Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The average of 6 numbers is 30. If one number is replaced by 42, the new average is 32. What was the original number?",
+    "options": [
+      "24",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct_answer": "30",
+    "topic": "Averages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A recipe requires flour to sugar in ratio 4:1. If 8 cups of flour are used, how much sugar is needed?",
+    "options": [
+      "1 cup",
+      "2 cups",
+      "3 cups",
+      "4 cups"
+    ],
+    "correct_answer": "2 cups",
+    "topic": "Ratios & Proportions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A trader bought items for ₹500 and sold them for ₹650. If the overhead cost is ₹50, what is the net profit?",
+    "options": [
+      "₹100",
+      "₹150",
+      "₹200",
+      "₹250"
+    ],
+    "correct_answer": "₹100",
+    "topic": "Profit & Loss",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Two pipes can fill a tank in 8 and 12 hours respectively. How long will it take to fill the tank with both pipes?",
+    "options": [
+      "4.8 hours",
+      "5 hours",
+      "6 hours",
+      "7 hours"
+    ],
+    "correct_answer": "4.8 hours",
+    "topic": "Time & Work",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A boat travels 30 km upstream in 6 hours and 30 km downstream in 3 hours. What is the speed of the boat?",
+    "options": [
+      "5 km/hr",
+      "7.5 km/hr",
+      "10 km/hr",
+      "12.5 km/hr"
+    ],
+    "correct_answer": "7.5 km/hr",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 10, 20, 40, 80, ?",
+    "options": [
+      "100",
+      "120",
+      "140",
+      "160"
+    ],
+    "correct_answer": "160",
+    "topic": "Number Series",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 121, 144, 169, 196, ?",
+    "options": [
+      "220",
+      "225",
+      "230",
+      "235"
+    ],
+    "correct_answer": "225",
+    "topic": "Number Series",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A person walks 8m north, 6m east, then 8m south. What is the distance from start?",
+    "options": [
+      "4 m",
+      "6 m",
+      "8 m",
+      "10 m"
+    ],
+    "correct_answer": "6 m",
+    "topic": "Directions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If A's father's sister is B, then A is B's __?",
+    "options": [
+      "Nephew",
+      "Niece",
+      "Cousin",
+      "Grandson"
+    ],
+    "correct_answer": "Nephew",
+    "topic": "Blood Relations",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If HELLO is coded as GDKKN, how is WORLD coded?",
+    "options": [
+      "VNQKC",
+      "VNQLC",
+      "VNQLZ",
+      "VNQKZ"
+    ],
+    "correct_answer": "VNQLC",
+    "topic": "Coding-Decoding",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Synonym of 'obsolete' is?",
+    "options": [
+      "Modern",
+      "Outdated",
+      "New",
+      "Recent"
+    ],
+    "correct_answer": "Outdated",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Choose the correct form: 'If I ____ known, I would have helped.'",
+    "options": [
+      "had",
+      "have",
+      "was",
+      "were"
+    ],
+    "correct_answer": "had",
+    "topic": "Grammar",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Arrange: A) She entered the room. B) She saw a letter on the table. C) She opened it. D) The letter was from her mother.",
+    "options": [
+      "ABCD",
+      "ABDC",
+      "ACBD",
+      "BACD"
+    ],
+    "correct_answer": "ABCD",
+    "topic": "Para Jumbles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The student was ____ about his poor performance.",
+    "options": [
+      "happy",
+      "pleased",
+      "anxious",
+      "delighted"
+    ],
+    "correct_answer": "anxious",
+    "topic": "Cloze Test",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If the profit is 25% and cost is ₹400, what is the selling price?",
+    "options": [
+      "₹450",
+      "₹475",
+      "₹500",
+      "₹550"
+    ],
+    "correct_answer": "₹500",
+    "topic": "Profit & Loss",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A reduces from 100 to 90. What is the percentage decrease?",
+    "options": [
+      "9%",
+      "10%",
+      "11%",
+      "12%"
+    ],
+    "correct_answer": "10%",
+    "topic": "Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Average of 20, 40, 60, 80 is?",
+    "options": [
+      "40",
+      "50",
+      "60",
+      "70"
+    ],
+    "correct_answer": "50",
+    "topic": "Averages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If A:B = 5:6 and there are 55 items of A, how many items of B?",
+    "options": [
+      "60",
+      "66",
+      "70",
+      "75"
+    ],
+    "correct_answer": "66",
+    "topic": "Ratios & Proportions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A shop sells 100 items at ₹10 each and 50 items at ₹20 each. Average price per item?",
+    "options": [
+      "₹12",
+      "₹13.33",
+      "₹14",
+      "₹15"
+    ],
+    "correct_answer": "₹13.33",
+    "topic": "Averages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 5, 15, 45, ?",
+    "options": [
+      "90",
+      "120",
+      "135",
+      "150"
+    ],
+    "correct_answer": "135",
+    "topic": "Number Series",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A travels 50 km north, then turns west and travels 30 km. Direct distance from start?",
+    "options": [
+      "80 km",
+      "20 km",
+      "58.31 km",
+      "40 km"
+    ],
+    "correct_answer": "58.31 km",
+    "topic": "Directions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "X's son is Y's father. How are X and Y related?",
+    "options": [
+      "Father-Son",
+      "Grandfather-Grandson",
+      "Uncle-Nephew",
+      "Cousins"
+    ],
+    "correct_answer": "Grandfather-Grandson",
+    "topic": "Blood Relations",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If CAT is coded as 312, DOG is coded as 456, then COAT is coded as?",
+    "options": [
+      "3412",
+      "3142",
+      "3124",
+      "3214"
+    ],
+    "correct_answer": "3142",
+    "topic": "Coding-Decoding",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Antonym of 'verbose' is?",
+    "options": [
+      "Talkative",
+      "Concise",
+      "Lengthy",
+      "Wordy"
+    ],
+    "correct_answer": "Concise",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The correct sentence is: A) He is one of the best player. B) He is one of the best players.",
+    "options": [
+      "A",
+      "B",
+      "Both",
+      "Neither"
+    ],
+    "correct_answer": "B",
+    "topic": "Grammar",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A company has 1000 employees. After a 20% layoff, 30% of remaining resign. How many work?",
+    "options": [
+      "500",
+      "560",
+      "600",
+      "640"
+    ],
+    "correct_answer": "560",
+    "topic": "Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If 3 books cost ₹180, how much do 7 books cost?",
+    "options": [
+      "₹350",
+      "₹400",
+      "₹420",
+      "₹480"
+    ],
+    "correct_answer": "₹420",
+    "topic": "Ratios & Proportions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A factory produces 1200 items in 8 hours. How many items in 15 hours?",
+    "options": [
+      "2100",
+      "2250",
+      "2400",
+      "2550"
+    ],
+    "correct_answer": "2250",
+    "topic": "Time & Work",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A car covers 150 km with average speed 75 km/hr. Time taken?",
+    "options": [
+      "1 hour",
+      "1.5 hours",
+      "2 hours",
+      "2.5 hours"
+    ],
+    "correct_answer": "2 hours",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 2, 4, 8, 16, ?",
+    "options": [
+      "24",
+      "28",
+      "32",
+      "36"
+    ],
+    "correct_answer": "32",
+    "topic": "Number Series",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 3, 9, 27, ?",
+    "options": [
+      "54",
+      "72",
+      "81",
+      "90"
+    ],
+    "correct_answer": "81",
+    "topic": "Number Series",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A walks 5 units east, 12 units north. Shortest path back?",
+    "options": [
+      "13 units",
+      "17 units",
+      "15 units",
+      "20 units"
+    ],
+    "correct_answer": "13 units",
+    "topic": "Directions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Pointing to a man, a woman says, 'He is the father of my brother's only son.' The man is her __?",
+    "options": [
+      "Brother",
+      "Cousin",
+      "Uncle",
+      "Father"
+    ],
+    "correct_answer": "Cousin",
+    "topic": "Blood Relations",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If TRAIN is coded as USBJO, then PLANE is coded as?",
+    "options": [
+      "QNBOF",
+      "QMBOF",
+      "QNBOF",
+      "QMBNF"
+    ],
+    "correct_answer": "QMBOF",
+    "topic": "Coding-Decoding",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Synonym of 'augment' is?",
+    "options": [
+      "Decrease",
+      "Increase",
+      "Divide",
+      "Separate"
+    ],
+    "correct_answer": "Increase",
+    "topic": "Synonyms & Antonyms",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Choose correct: 'Neither...nor requires ____ verb form.",
+    "options": [
+      "plural",
+      "singular",
+      "either",
+      "both"
+    ],
+    "correct_answer": "singular",
+    "topic": "Grammar",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Arrange: A) The bird flew away. B) A cat approached. C) The bird sat on a tree. D) A loud noise startled everyone.",
+    "options": [
+      "DCAB",
+      "CDBA",
+      "DBCA",
+      "ACDB"
+    ],
+    "correct_answer": "DCAB",
+    "topic": "Para Jumbles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "He ____ for 10 years without achieving success.",
+    "options": [
+      "try",
+      "tried",
+      "trying",
+      "tries"
+    ],
+    "correct_answer": "tried",
+    "topic": "Cloze Test",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A merchant buys goods for ₹5000 and marks them up 40%. He gives 10% discount. Profit?",
+    "options": [
+      "₹700",
+      "₹800",
+      "₹900",
+      "₹1000"
+    ],
+    "correct_answer": "₹700",
+    "topic": "Profit & Loss",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If price increases from 100 to 120 to 132, total percentage increase?",
+    "options": [
+      "32%",
+      "45%",
+      "50%",
+      "55%"
+    ],
+    "correct_answer": "32%",
+    "topic": "Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Average of first 10 natural numbers?",
+    "options": [
+      "5",
+      "5.5",
+      "6",
+      "6.5"
+    ],
+    "correct_answer": "5.5",
+    "topic": "Averages",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If 2A = 3B = 4C, ratio A:B:C = ?",
+    "options": [
+      "6:4:3",
+      "2:3:4",
+      "4:3:2",
+      "12:8:6"
+    ],
+    "correct_answer": "6:4:3",
+    "topic": "Ratios & Proportions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 11, 22, 44, ?",
+    "options": [
+      "55",
+      "66",
+      "77",
+      "88"
+    ],
+    "correct_answer": "88",
+    "topic": "Number Series",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A goes 8 km south, then 15 km east. Distance from start?",
+    "options": [
+      "17 km",
+      "20 km",
+      "22 km",
+      "25 km"
+    ],
+    "correct_answer": "17 km",
+    "topic": "Directions",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A's daughter is B's mother. How are A and B related?",
+    "options": [
+      "Grandfather-Grandson",
+      "Father-Son",
+      "Uncle-Nephew",
+      "Cousin"
+    ],
+    "correct_answer": "Grandfather-Grandson",
+    "topic": "Blood Relations",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If BIRD is coded as 2486, then GIRL is coded as?",
+    "options": [
+      "6486",
+      "6184",
+      "6418",
+      "6481"
+    ],
+    "correct_answer": "6486",
+    "topic": "Coding-Decoding",
+    "difficulty": "medium"
+  }
 ]

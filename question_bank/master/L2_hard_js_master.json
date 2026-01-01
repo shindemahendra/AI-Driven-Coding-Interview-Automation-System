@@ -1,1250 +1,914 @@
 [
-    {
-        "question": "Explain the concept of **Lexical Scoping** and how it influences closures in JavaScript.",
-        "options": [
-            "Lexical scoping means variable scope is defined by runtime execution.",
-            "Lexical scoping means variable scope is defined by where the code is written, enabling closures to access variables from their defining environment.",
-            "Lexical scoping is an ES6 feature that restricts `var` usage.",
-            "Lexical scoping forces all variables to be globally accessible."
-        ],
-        "correct_answer": "Lexical scoping means variable scope is defined by where the code is written, enabling closures to access variables from their defining environment.",
-        "topic": "Scope and Closures",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **Temporal Dead Zone (TDZ)**, and how does it relate to `let` and `const` declarations?",
-        "options": [
-            "The TDZ is the time period when a `var` variable is hoisted but remains `undefined`.",
-            "The TDZ is the period between a `let`/`const` declaration being hoisted and its initialization, during which access results in a `ReferenceError`.",
-            "The TDZ only exists for variables declared within an IIFE.",
-            "The TDZ is a memory segment used by the V8 engine."
-        ],
-        "correct_answer": "The TDZ is the period between a `let`/`const` declaration being hoisted and its initialization, during which access results in a `ReferenceError`.",
-        "topic": "ES6 Variables and Hoisting",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Describe the core difference between the **Microtask Queue** and the **Macrotask Queue** (Event Loop mechanism).",
-        "options": [
-            "Microtasks handle network requests; Macrotasks handle DOM manipulation.",
-            "Microtasks (Promises, `queueMicrotask`) are processed immediately after the Call Stack clears, before the browser renders or moves to the next Macrotask (timers, I/O).",
-            "Macrotasks are always prioritized over Microtasks.",
-            "Macrotasks are only used in Node.js, Microtasks in browsers."
-        ],
-        "correct_answer": "Microtasks (Promises, `queueMicrotask`) are processed immediately after the Call Stack clears, before the browser renders or moves to the next Macrotask (timers, I/O).",
-        "topic": "Asynchronous JavaScript (Event Loop)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is a **WeakMap**, and what is its primary use case related to Garbage Collection?",
-        "options": [
-            "A Map where keys and values must be strings, used for caching.",
-            "A Map where keys must be objects, and if a key object is no longer referenced elsewhere, it can be garbage collected without interfering with the map.",
-            "A Map that prevents all objects within it from being garbage collected.",
-            "A Map that stores keys as weak references, but the values are strongly held."
-        ],
-        "correct_answer": "A Map where keys must be objects, and if a key object is no longer referenced elsewhere, it can be garbage collected without interfering with the map.",
-        "topic": "ES6 Data Structures and Memory",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What are **Generators** primarily used for in modern JavaScript development?",
-        "options": [
-            "To define recursive functions.",
-            "To create functions that can be paused and resumed, typically for creating iterators, asynchronous loops, or managing control flow.",
-            "To replace Promises for all asynchronous operations.",
-            "To enforce strict immutability on objects."
-        ],
-        "correct_answer": "To create functions that can be paused and resumed, typically for creating iterators, asynchronous loops, or managing control flow.",
-        "topic": "ES6+ Functions and Iteration",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the key difference between **`Object.seal()`** and **`Object.freeze()`**?",
-        "options": [
-            "`freeze` prevents adding/deleting properties; `seal` also prevents modification of existing properties.",
-            "`seal` prevents adding/deleting properties but allows modification; `freeze` prevents adding, deleting, and modifying.",
-            "Both methods are identical in function.",
-            "`freeze` only works on array objects."
-        ],
-        "correct_answer": "`seal` prevents adding/deleting properties but allows modification; `freeze` prevents adding, deleting, and modifying.",
-        "topic": "Object Manipulation and Immutability",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How can you implement **Property Privacy** in an ES6 Class (prior to ES2020 private fields)?",
-        "options": [
-            "Using the `private` keyword in the class definition.",
-            "Using Symbols or WeakMaps, or by convention (e.g., prefixing with an underscore `_`).",
-            "It is impossible without a transpiler.",
-            "Declaring the property with `const`."
-        ],
-        "correct_answer": "Using Symbols or WeakMaps, or by convention (e.g., prefixing with an underscore `_`).",
-        "topic": "ES6 Classes and Inheritance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Explain **Memoization** in the context of JavaScript function optimization.",
-        "options": [
-            "Memoization is the process of loading assets into browser memory.",
-            "Memoization is a technique for caching the results of expensive function calls based on their arguments to speed up future calls.",
-            "Memoization is a function that calls itself recursively.",
-            "Memoization is a way to declare immutable variables."
-        ],
-        "correct_answer": "Memoization is a technique for caching the results of expensive function calls based on their arguments to speed up future calls.",
-        "topic": "Functions and Optimization",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the major limitation of using **`JSON.parse(JSON.stringify(obj))`** for deep cloning?",
-        "options": [
-            "It only works for arrays, not objects.",
-            "It is slow and cannot clone functions, Date objects, Maps, Sets, or objects with circular references.",
-            "It throws an error on objects containing only strings.",
-            "It only creates a shallow clone."
-        ],
-        "correct_answer": "It is slow and cannot clone functions, Date objects, Maps, Sets, or objects with circular references.",
-        "topic": "Object Manipulation",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the purpose of the **`Symbol.iterator`** property?",
-        "options": [
-            "It defines the default value for a Map.",
-            "It is a required method for all objects used in a `for...in` loop.",
-            "It defines the function that returns an iterator for an object, making it iterable via `for...of` loops and the Spread Operator.",
-            "It is used to retrieve the current index of an array during iteration."
-        ],
-        "correct_answer": "It defines the function that returns an iterator for an object, making it iterable via `for...of` loops and the Spread Operator.",
-        "topic": "ES6+ Iteration",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "In the context of Promises, what does **`Promise.allSettled()`** guarantee?",
-        "options": [
-            "It guarantees that all Promises resolve successfully.",
-            "It rejects if any of the input Promises reject.",
-            "It waits for all Promises in an iterable to settle (either fulfill or reject) and returns an array of objects describing the outcome.",
-            "It returns the value of the fastest resolving Promise."
-        ],
-        "correct_answer": "It waits for all Promises in an iterable to settle (either fulfill or reject) and returns an array of objects describing the outcome.",
-        "topic": "Asynchronous JavaScript (Promises)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How does the **`new`** keyword change the behavior of a constructor function?",
-        "options": [
-            "It executes the constructor and returns `undefined`.",
-            "It only works with ES6 classes.",
-            "It creates a new empty object, sets the new object's prototype to the constructor's prototype, binds `this` to the new object, and returns the new object (unless the constructor returns an object).",
-            "It converts the function into an arrow function."
-        ],
-        "correct_answer": "It creates a new empty object, sets the new object's prototype to the constructor's prototype, binds `this` to the new object, and returns the new object (unless the constructor returns an object).",
-        "topic": "Prototypes and Execution Context",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the problem with relying on **`Date.now()`** for high-resolution timing or benchmarking in the browser?",
-        "options": [
-            "It only returns the time in seconds.",
-            "It is only accurate to the nearest minute.",
-            "It is subject to system clock adjustments and lacks sub-millisecond precision; `performance.now()` should be used instead.",
-            "It is blocked by the Event Loop."
-        ],
-        "correct_answer": "It is subject to system clock adjustments and lacks sub-millisecond precision; `performance.now()` should be used instead.",
-        "topic": "Web APIs and Performance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Explain **Monads** (without complex math) in the context of Functional Programming in JavaScript.",
-        "options": [
-            "A monad is a design pattern for object creation.",
-            "A monad is a structural pattern that allows functions to be chained, where the result of one function call (wrapped in a container, e.g., Promise) is the input for the next, managing side effects like error handling.",
-            "A monad is a highly optimized recursive function.",
-            "A monad is a simple object that holds a single value."
-        ],
-        "correct_answer": "A monad is a structural pattern that allows functions to be chained, where the result of one function call (wrapped in a container, e.g., Promise) is the input for the next, managing side effects like error handling.",
-        "topic": "Functional Programming",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the significance of the **Proxy** object (ES6)?",
-        "options": [
-            "It is used to create a new Promise.",
-            "It is used to define a custom message queue.",
-            "It allows you to intercept and customize fundamental operations for an object (like property lookup, assignment, enumeration, function invocation, etc.).",
-            "It creates a global singleton instance."
-        ],
-        "correct_answer": "It allows you to intercept and customize fundamental operations for an object (like property lookup, assignment, enumeration, function invocation, function invocation, etc.).",
-        "topic": "ES6+ Meta-Programming",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **`use strict`** directive, and what are its two main benefits?",
-        "options": [
-            "It is a compiler flag to enable type checking.",
-            "It enables strict mode, catching common coding errors/unsafe actions and preventing accidental global variable creation.",
-            "It forces synchronous code execution.",
-            "It optimizes V8 engine garbage collection."
-        ],
-        "correct_answer": "It enables strict mode, catching common coding errors/unsafe actions and preventing accidental global variable creation.",
-        "topic": "Execution Context",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "In the context of Array methods, what is a common use case for the second argument (`initialValue`) of **`reduce()`**?",
-        "options": [
-            "To define the starting index for the reduction.",
-            "To set the maximum number of iterations.",
-            "To ensure the accumulator starts as a specific type (e.g., an empty object `{}` or array `[]`) regardless of the array's first element.",
-            "To skip the first element of the array."
-        ],
-        "correct_answer": "To ensure the accumulator starts as a specific type (e.g., an empty object `{}` or array `[]`) regardless of the array's first element.",
-        "topic": "Array Methods (Reduce)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How do you detect if a JavaScript object has a **circular reference**?",
-        "options": [
-            "Use the `JSON.stringify()` method, which throws an error if it detects a circular structure.",
-            "Use a recursive function with a WeakSet or Set to track visited objects during traversal.",
-            "Use `Object.isFrozen()` on the object.",
-            "Circular references are automatically resolved by the Garbage Collector."
-        ],
-        "correct_answer": "Use a recursive function with a WeakSet or Set to track visited objects during traversal.",
-        "topic": "Object Manipulation and Memory",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is **Type Annotation** in JavaScript, and what modern tool often provides this feature?",
-        "options": [
-            "It is adding comments to describe variable types; provided by JSDoc.",
-            "It is the optional addition of type information to variables and functions; provided by TypeScript or Flow.",
-            "It is a mandatory syntax for all ES6 modules.",
-            "It is a feature of the V8 engine that optimizes compilation."
-        ],
-        "correct_answer": "It is the optional addition of type information to variables and functions; provided by TypeScript or Flow.",
-        "topic": "General Knowledge",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the primary motivation for using **`import()`** as a function (Dynamic Imports) over static `import` statements?",
-        "options": [
-            "Dynamic imports enforce synchronous loading.",
-            "To conditionally load modules at runtime and enable code splitting/lazy loading for better performance.",
-            "Static imports are faster to load.",
-            "To prevent the module from being bundled."
-        ],
-        "correct_answer": "To conditionally load modules at runtime and enable code splitting/lazy loading for better performance.",
-        "topic": "ES6 Modules and Performance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the difference in **`this`** binding between `call()` and `apply()`?",
-        "options": [
-            "`call` binds `this` to a fixed value; `apply` binds `this` to an array.",
-            "There is no difference in `this` binding; only the way arguments are passed differs (individually for `call`, as an array for `apply`).",
-            "`apply` is faster than `call`.",
-            "`call` creates a new function; `apply` executes it immediately."
-        ],
-        "correct_answer": "There is no difference in `this` binding; only the way arguments are passed differs (individually for `call`, as an array for `apply`).",
-        "topic": "Execution Context and Functions",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "When implementing **Asynchronous Iteration** (ES2018), which two keywords/constructs are required?",
-        "options": [
-            "`setTimeout` and `await`",
-            "`async` and `yield`",
-            "`async function*` and `for await...of`",
-            "`Promise` and `resolve`"
-        ],
-        "correct_answer": "`async function*` and `for await...of`",
-        "topic": "Asynchronous JavaScript (ES2018)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the significance of returning a non-Promise value from a `.then()` handler in a Promise chain?",
-        "options": [
-            "It terminates the chain with an error.",
-            "It is ignored, and the chain continues with `undefined`.",
-            "The returned value is automatically wrapped in a resolved Promise, which becomes the fulfillment value for the next `.then()` in the chain.",
-            "The function becomes synchronous."
-        ],
-        "correct_answer": "The returned value is automatically wrapped in a resolved Promise, which becomes the fulfillment value for the next `.then()` in the chain.",
-        "topic": "Asynchronous JavaScript (Promises)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Explain the concept of **Function Currying** and its benefit in functional programming.",
-        "options": [
-            "Currying is optimizing function recursion.",
-            "Currying is the transformation of a function with multiple arguments into a sequence of functions, each taking a single argument, useful for creating specialized, reusable functions.",
-            "Currying makes functions asynchronous.",
-            "Currying is a method for deep cloning objects."
-        ],
-        "correct_answer": "Currying is the transformation of a function with multiple arguments into a sequence of functions, each taking a single argument, useful for creating specialized, reusable functions.",
-        "topic": "Functional Programming",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **`configurable`** property descriptor in `Object.defineProperty()` used for?",
-        "options": [
-            "It controls whether the property can be iterated over.",
-            "It controls whether the property can be written to.",
-            "It controls whether the property descriptor can be changed (and whether the property can be deleted).",
-            "It controls whether the property is added to the global scope."
-        ],
-        "correct_answer": "It controls whether the property descriptor can be changed (and whether the property can be deleted).",
-        "topic": "Object Manipulation",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the potential pitfall of using `for...in` loops to iterate over array elements?",
-        "options": [
-            "It is very slow compared to other loops.",
-            "It always iterates in reverse order.",
-            "It iterates over all enumerable properties, including inherited prototype properties, which is usually undesirable for arrays.",
-            "It only works with sparse arrays."
-        ],
-        "correct_answer": "It iterates over all enumerable properties, including inherited prototype properties, which is usually undesirable for arrays.",
-        "topic": "Iteration and Prototypes",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How does **`Promise.all()`** handle a rejection in one of the input Promises?",
-        "options": [
-            "It ignores the rejection and waits for all others to resolve.",
-            "It immediately rejects with the reason of the first Promise that rejects.",
-            "It attempts to re-run the failed Promise.",
-            "It continues running and returns a mix of resolved and rejected statuses."
-        ],
-        "correct_answer": "It immediately rejects with the reason of the first Promise that rejects.",
-        "topic": "Asynchronous JavaScript (Promises)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the difference between a **`Host Object`** and a **`Native Object`** in JavaScript?",
-        "options": [
-            "Host objects are created by Node.js; Native objects by the browser.",
-            "Native objects (like `String`, `Date`, `Object`) are defined by the ECMAScript specification; Host objects (like `window`, `document`, DOM nodes) are provided by the environment (browser/Node.js).",
-            "Native objects are synchronous; Host objects are asynchronous.",
-            "Host objects are always immutable."
-        ],
-        "correct_answer": "Native objects (like `String`, `Date`, `Object`) are defined by the ECMAScript specification; Host objects (like `window`, `document`, DOM nodes) are provided by the environment (browser/Node.js).",
-        "topic": "Execution Context",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is **Debouncing**, and why is it used?",
-        "options": [
-            "A technique to ensure a function runs immediately and only once.",
-            "A technique to delay the execution of a function until a certain amount of time has passed since the last time the function was called, often used for performance optimization of continuous events (like scrolling, resizing, or typing).",
-            "A method to force synchronous execution.",
-            "A way to handle asynchronous errors."
-        ],
-        "correct_answer": "A technique to delay the execution of a function until a certain amount of time has passed since the last time the function was called, often used for performance optimization of continuous events (like scrolling, resizing, or typing).",
-        "topic": "Functions and Optimization",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "In the context of OOP, what does the **Decorator Pattern** allow you to do?",
-        "options": [
-            "It ensures only one instance of a class exists.",
-            "It structures the code into self-contained modules.",
-            "It dynamically adds new behavior or responsibilities to an object without altering its original class structure.",
-            "It defers the instantiation of an object."
-        ],
-        "correct_answer": "It dynamically adds new behavior or responsibilities to an object without altering its original class structure.",
-        "topic": "Design Patterns",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the primary difference between **`Object.keys()`** and **`Object.getOwnPropertyNames()`**?",
-        "options": [
-            "`Object.keys()` returns non-enumerable properties; `Object.getOwnPropertyNames()` returns only enumerable properties.",
-            "`Object.keys()` returns only enumerable properties; `Object.getOwnPropertyNames()` returns all own properties (enumerable or not), excluding Symbols.",
-            "Both methods are identical in modern JavaScript.",
-            "`Object.getOwnPropertyNames()` includes inherited properties."
-        ],
-        "correct_answer": "`Object.keys()` returns only enumerable properties; `Object.getOwnPropertyNames()` returns all own properties (enumerable or not), excluding Symbols.",
-        "topic": "Object Methods",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How do you correctly implement a function that accepts an indefinite number of arguments and sums them up (ES6)?",
-        "options": [
-            "Using the `arguments` object.",
-            "Using the Rest Parameter (`...args`) in the function definition.",
-            "Using `Array.prototype.slice.call(arguments)`.",
-            "Using a global array variable."
-        ],
-        "correct_answer": "Using the Rest Parameter (`...args`) in the function definition.",
-        "topic": "ES6 Features",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is **Tail Call Optimization (TCO)**, and why is its support limited in JavaScript engines?",
-        "options": [
-            "TCO is an optimization for network calls.",
-            "TCO optimizes the last function call in a recursive sequence to prevent stack overflow; support is limited/non-existent because of its impact on debuggability and call stack inspection.",
-            "TCO is used for DOM manipulation performance.",
-            "TCO is an ES5 feature that was removed in ES6."
-        ],
-        "correct_answer": "TCO optimizes the last function call in a recursive sequence to prevent stack overflow; support is limited/non-existent because of its impact on debuggability and call stack inspection.",
-        "topic": "Functions and Optimization",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Explain the concept of **Prototype Chaining** and how property lookup works.",
-        "options": [
-            "Prototype chaining is only used for array methods.",
-            "Property lookup starts at the object itself and proceeds up the chain of linked prototype objects until the property is found or the chain ends at `null`.",
-            "Prototype chaining refers to the memory location of objects.",
-            "Property lookup is always restricted to the object's own properties."
-        ],
-        "correct_answer": "Property lookup starts at the object itself and proceeds up the chain of linked prototype objects until the property is found or the chain ends at `null`.",
-        "topic": "Prototypes and Inheritance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **`target`** property of an Event object, and how does it differ from **`currentTarget`** during event propagation?",
-        "options": [
-            "`target` is the element the listener is attached to; `currentTarget` is the element the event originated on.",
-            "`target` is the element the event originated on; `currentTarget` is the element the event listener was attached to.",
-            "They are identical during the bubbling phase.",
-            "They are only available in the capture phase."
-        ],
-        "correct_answer": "`target` is the element the event originated on; `currentTarget` is the element the event listener was attached to.",
-        "topic": "DOM and Events",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **`finally`** block of an `async/await` structure used for?",
-        "options": [
-            "To handle specific errors.",
-            "To guarantee code execution whether the Promise is fulfilled or rejected.",
-            "To define the starting point of the asynchronous operation.",
-            "To set the default value of the returned Promise."
-        ],
-        "correct_answer": "To guarantee code execution whether the Promise is fulfilled or rejected.",
-        "topic": "Asynchronous JavaScript (ES6+)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How can you implement **Mixin** pattern in JavaScript to share methods between classes?",
-        "options": [
-            "By using the `extends` keyword multiple times.",
-            "By manually copying methods from a source object (mixin) to a target class's prototype, or using `Object.assign()` in the class definition.",
-            "By defining all shared methods as `static`.",
-            "Mixins are only possible using TypeScript interfaces."
-        ],
-        "correct_answer": "By manually copying methods from a source object (mixin) to a target class's prototype, or using `Object.assign()` in the class definition.",
-        "topic": "Design Patterns",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the significance of the **`export default`** statement in ES6 modules?",
-        "options": [
-            "It exports a private variable.",
-            "It defines a single entity (variable, function, or class) to be exported from the module, which can be imported with any name.",
-            "It automatically exports all variables defined in the module.",
-            "It only allows other modules to read, not modify, the export."
-        ],
-        "correct_answer": "It defines a single entity (variable, function, or class) to be exported from the module, which can be imported with any name.",
-        "topic": "ES6 Modules",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the fundamental difference between **`map()`** and **`forEach()`** on an Array?",
-        "options": [
-            "`map` is synchronous; `forEach` is asynchronous.",
-            "`map` always returns a new array of the same length, transformed by the callback; `forEach` iterates with side effects and returns `undefined`.",
-            "`forEach` is faster than `map`.",
-            "`map` mutates the original array; `forEach` does not."
-        ],
-        "correct_answer": "`map` always returns a new array of the same length, transformed by the callback; `forEach` iterates with side effects and returns `undefined`.",
-        "topic": "Array Methods",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What does the **`delete`** operator do, and what type of properties can it *not* remove?",
-        "options": [
-            "It sets the property value to `null`; it cannot remove user-defined properties.",
-            "It removes an object property; it cannot remove non-configurable properties (like properties of built-in objects or those defined with `configurable: false`).",
-            "It sets the property value to `undefined`; it cannot remove inherited properties.",
-            "It can remove any property except those declared with `const`."
-        ],
-        "correct_answer": "It removes an object property; it cannot remove non-configurable properties (like properties of built-in objects or those defined with `configurable: false`).",
-        "topic": "Object Manipulation",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Explain the concept of **Throttling** and its use case.",
-        "options": [
-            "Throttling executes a function immediately, then blocks further calls until a defined time has passed, ensuring the function runs at most once per interval, often used for performance optimization.",
-            "Throttling delays function execution until the user stops interacting.",
-            "Throttling is a security protocol for web requests.",
-            "Throttling limits the number of variables in a scope."
-        ],
-        "correct_answer": "Throttling executes a function immediately, then blocks further calls until a defined time has passed, ensuring the function runs at most once per interval, often used for performance optimization.",
-        "topic": "Functions and Optimization",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is **`requestAnimationFrame()`** and when should it be used over `setTimeout()` or `setInterval()`?",
-        "options": [
-            "It's a function for network requests; use it for fetching data.",
-            "It's a function to execute code only once, after all DOM elements are loaded.",
-            "It's a method that tells the browser you want to perform an animation and calls a function before the browser's next repaint, ensuring animations are smooth and aligned with the display's refresh rate.",
-            "It's used for handling events in the capture phase."
-        ],
-        "correct_answer": "It's a method that tells the browser you want to perform an animation and calls a function before the browser's next repaint, ensuring animations are smooth and aligned with the display's refresh rate.",
-        "topic": "Web APIs and Performance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What are **Higher-Order Functions** in JavaScript?",
-        "options": [
-            "Functions that are declared outside of a class.",
-            "Functions that operate on other functions, either by taking them as arguments or by returning a function.",
-            "Functions that are only available in strict mode.",
-            "Functions that require two or more arguments."
-        ],
-        "correct_answer": "Functions that operate on other functions, either by taking them as arguments or by returning a function.",
-        "topic": "Functional Programming",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How can you distinguish between an object literal (`{}`) and an array literal (`[]`) if `typeof` returns 'object' for both?",
-        "options": [
-            "Use the `Object.keys()` method and check the result length.",
-            "Use the `instanceof` operator or the `Array.isArray()` method.",
-            "Check for the presence of the `length` property.",
-            "Use a `try...catch` block on the object."
-        ],
-        "correct_answer": "Use the `instanceof` operator or the `Array.isArray()` method.",
-        "topic": "Data Types and Operators",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Explain the difference between **`WeakSet`** and **`Set`**.",
-        "options": [
-            "`Set` only accepts numbers; `WeakSet` only accepts objects.",
-            "`Set` holds strong references and can store any value; `WeakSet` only accepts objects and holds weak references, allowing for garbage collection if the object is no longer referenced elsewhere.",
-            "`WeakSet` allows duplicate values; `Set` does not.",
-            "`WeakSet` is iterable; `Set` is not."
-        ],
-        "correct_answer": "`Set` holds strong references and can store any value; `WeakSet` only accepts objects and holds weak references, allowing for garbage collection if the object is no longer referenced elsewhere.",
-        "topic": "ES6 Data Structures and Memory",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the result of using the **Comma Operator** (`operator, expression`)?",
-        "options": [
-            "It always returns `true`.",
-            "It executes all expressions and returns the value of the last one.",
-            "It concatenates two strings.",
-            "It throws a syntax error in strict mode."
-        ],
-        "correct_answer": "It executes all expressions and returns the value of the last one.",
-        "topic": "Operators",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is **`Promise.any()`** (ES2021), and how does it handle rejections?",
-        "options": [
-            "It rejects if any Promise rejects.",
-            "It waits for the fastest resolved Promise; it rejects only if *all* of the input Promises are rejected.",
-            "It returns the value of the slowest resolved Promise.",
-            "It always resolves, regardless of rejections."
-        ],
-        "correct_answer": "It waits for the fastest resolved Promise; it rejects only if *all* of the input Promises are rejected.",
-        "topic": "Asynchronous JavaScript (ES2021)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How can you check if an object is an **empty object** (`{}`) without iterating over its properties?",
-        "options": [
-            "Use `Object.is(obj, {})`.",
-            "Use `Object.keys(obj).length === 0`.",
-            "Use `obj.length === 0`.",
-            "Use `typeof obj === 'empty'`."
-        ],
-        "correct_answer": "Use `Object.keys(obj).length === 0`.",
-        "topic": "Object Manipulation",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Explain the concept of **Idempotence** in functional programming.",
-        "options": [
-            "A function is idempotent if it is non-blocking.",
-            "A function is idempotent if it returns the same result every time it is called.",
-            "A function is idempotent if it can be called multiple times without causing different effects beyond the initial call (e.g., `Math.abs()`).",
-            "A function is idempotent if it has no side effects."
-        ],
-        "correct_answer": "A function is idempotent if it can be called multiple times without causing different effects beyond the initial call (e.g., `Math.abs()`).",
-        "topic": "Functional Programming",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What does the **`isPrototypeOf()`** method check for?",
-        "options": [
-            "If two objects are identical.",
-            "If an object exists anywhere in the prototype chain of another object.",
-            "If an object has the same properties as another object.",
-            "If the object is a constructor function."
-        ],
-        "correct_answer": "If an object exists anywhere in the prototype chain of another object.",
-        "topic": "Prototypes and Inheritance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the difference between `element.remove()` and `element.removeChild(child)` in the DOM?",
-        "options": [
-            "`remove()` deletes the element from the DOM; `removeChild()` hides it temporarily.",
-            "`remove()` is a method on the child node itself (ES6); `removeChild()` is a method on the parent node, requiring the child as an argument (ES5).",
-            "`removeChild()` is faster than `remove()`.",
-            "`remove()` is only for elements created with `document.createElement()`."
-        ],
-        "correct_answer": "`remove()` is a method on the child node itself (ES6); `removeChild()` is a method on the parent node, requiring the child as an argument (ES5).",
-        "topic": "DOM and Events",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **Singleton Pattern**, and how is it commonly implemented in JavaScript?",
-        "options": [
-            "A pattern to manage multiple instances of a class.",
-            "A pattern that restricts the instantiation of a class to a single object, often implemented by checking if an instance already exists before creating a new one (e.g., using a closure or module export).",
-            "A pattern for asynchronous operations.",
-            "A pattern for defining private variables."
-        ],
-        "correct_answer": "A pattern that restricts the instantiation of a class to a single object, often implemented by checking if an instance already exists before creating a new one (e.g., using a closure or module export).",
-        "topic": "Design Patterns",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What does **`Array.prototype.flat(Infinity)`** achieve?",
-        "options": [
-            "It sorts the array indefinitely.",
-            "It creates an infinite loop.",
-            "It recursively flattens a nested array to the greatest depth possible, removing all nested array structures.",
-            "It flattens an array only one level deep."
-        ],
-        "correct_answer": "It recursively flattens a nested array to the greatest depth possible, removing all nested array structures.",
-        "topic": "Array Methods (ES2019)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "In `async/await`, how do you handle errors that occur during an `await` call?",
-        "options": [
-            "By chaining a `.catch()` after the `await` expression.",
-            "By wrapping the `await` call in a `try...catch` block.",
-            "Errors are automatically logged to the console.",
-            "Use `Promise.error()`."
-        ],
-        "correct_answer": "By wrapping the `await` call in a `try...catch` block.",
-        "topic": "Asynchronous JavaScript (ES6+)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What are **Type Arrays** in JavaScript, and what are they used for?",
-        "options": [
-            "Arrays that only store strings.",
-            "Objects used for storing binary data (like images or audio) in a memory buffer, often used in conjunction with the `ArrayBuffer` object.",
-            "Arrays created using TypeScript syntax.",
-            "Arrays that are restricted to immutable values."
-        ],
-        "correct_answer": "Objects used for storing binary data (like images or audio) in a memory buffer, often used in conjunction with the `ArrayBuffer` object.",
-        "topic": "Data Types and Memory",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the benefit of using **Tree Shaking** in module bundlers like webpack or Rollup?",
-        "options": [
-            "It converts ES6 code to ES5.",
-            "It removes unused code from the final bundle, leading to smaller file sizes and faster load times.",
-            "It generates a visual tree of the module dependencies.",
-            "It splits the code into multiple files."
-        ],
-        "correct_answer": "It removes unused code from the final bundle, leading to smaller file sizes and faster load times.",
-        "topic": "ES6 Modules and Performance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **`writable`** property descriptor in `Object.defineProperty()` used for?",
-        "options": [
-            "It controls whether the property can be iterated over.",
-            "It controls whether the property can be reassigned (changed).",
-            "It controls whether the property can be deleted.",
-            "It controls whether the property is added to the global scope."
-        ],
-        "correct_answer": "It controls whether the property can be reassigned (changed).",
-        "topic": "Object Manipulation",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the concept of **Referential Transparency** in functional programming?",
-        "options": [
-            "A function that returns a new object.",
-            "A function that uses only immutable data.",
-            "A function is referentially transparent if it can be replaced by its corresponding value (the return value) without changing the program's behavior, implying it has no side effects and is deterministic.",
-            "A function whose parameters are all objects."
-        ],
-        "correct_answer": "A function is referentially transparent if it can be replaced by its corresponding value (the return value) without changing the program's behavior, implying it has no side effects and is deterministic.",
-        "topic": "Functional Programming",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the difference between a **`for...in`** loop and a **`for...of`** loop?",
-        "options": [
-            "`for...in` iterates over values; `for...of` iterates over indices.",
-            "`for...in` iterates over enumerable property keys; `for...of` iterates over the values of iterable objects (like arrays, strings, Maps, Sets) using the `Symbol.iterator`.",
-            "`for...of` is asynchronous; `for...in` is synchronous.",
-            "Both are identical for non-array objects."
-        ],
-        "correct_answer": "`for...in` iterates over enumerable property keys; `for...of` iterates over the values of iterable objects (like arrays, strings, Maps, Sets) using the `Symbol.iterator`.",
-        "topic": "Iteration and ES6+",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "In ES6 Classes, why is it mandatory to call **`super()`** if a subclass defines its own `constructor`?",
-        "options": [
-            "To prevent the class from being instantiated.",
-            "To ensure the subclass has access to all static methods.",
-            "Because `this` is uninitialized until `super()` is called in the subclass constructor, inheriting the parent's `this` context and running the parent's initialization logic.",
-            "To enforce strict mode."
-        ],
-        "correct_answer": "Because `this` is uninitialized until `super()` is called in the subclass constructor, inheriting the parent's `this` context and running the parent's initialization logic.",
-        "topic": "ES6 Classes and Inheritance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is a **Custom Event** in the DOM, and how is it typically dispatched?",
-        "options": [
-            "A custom event is a predefined browser event.",
-            "A custom event is a user-defined event created via `new CustomEvent()` and dispatched on an element using `element.dispatchEvent(event)`.",
-            "A custom event is only used for network requests.",
-            "A custom event replaces the native `click` event."
-        ],
-        "correct_answer": "A custom event is a user-defined event created via `new CustomEvent()` and dispatched on an element using `element.dispatchEvent(event)`.",
-        "topic": "DOM and Events",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the main limitation of using a **Set** to store objects for uniqueness?",
-        "options": [
-            "Sets are slower than arrays for adding elements.",
-            "Sets can only store primitive values.",
-            "Sets use strict equality (`===`) for comparison, meaning two different object instances with the same properties are considered distinct (not unique).",
-            "Sets do not allow iteration."
-        ],
-        "correct_answer": "Sets use strict equality (`===`) for comparison, meaning two different object instances with the same properties are considered distinct (not unique).",
-        "topic": "ES6 Data Structures",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Explain the concept of **Function Composition**.",
-        "options": [
-            "Combining two functions into a single function, where the output of one function becomes the input of the next.",
-            "Defining a function that returns a new object.",
-            "A function that calls itself recursively.",
-            "Ensuring a function runs asynchronously."
-        ],
-        "correct_answer": "Combining two functions into a single function, where the output of one function becomes the input of the next.",
-        "topic": "Functional Programming",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How do you correctly get the value of a property named `my-key` from an object named `config` using ES6 **Computed Property Names**?",
-        "options": [
-            "config.my-key",
-            "config['my-key']",
-            "config.get('my-key')",
-            "let key = 'my-key'; config[key]"
-        ],
-        "correct_answer": "let key = 'my-key'; config[key]",
-        "topic": "ES6 Features",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **`prototype`** property of a constructor function?",
-        "options": [
-            "The object instance created by the constructor.",
-            "An object whose properties and methods are inherited by all instances created with that constructor.",
-            "A private method only accessible within the constructor.",
-            "The name of the constructor function."
-        ],
-        "correct_answer": "An object whose properties and methods are inherited by all instances created with that constructor.",
-        "topic": "Prototypes and Inheritance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the purpose of the **`Symbol()`** data type (ES6)?",
-        "options": [
-            "To define private variables that cannot be accessed.",
-            "To create unique, non-string property keys for objects, primarily used to avoid name collisions.",
-            "To represent the return value of a generator function.",
-            "To define asynchronous iteration."
-        ],
-        "correct_answer": "To create unique, non-string property keys for objects, primarily used to avoid name collisions.",
-        "topic": "ES6 Data Types",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "In a regular function (not arrow function), what is the value of **`this`** when the function is called without an owning object (in strict mode)?",
-        "options": [
-            "The global object (`window`/`global`).",
-            "The function itself.",
-            "`undefined`.",
-            "The prototype object."
-        ],
-        "correct_answer": "`undefined`.",
-        "topic": "Execution Context and Functions",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the danger of modifying an object's prototype while iterating over its own properties?",
-        "options": [
-            "It causes an error in the Event Loop.",
-            "It might lead to unexpected or infinite loops as the iteration mechanism can include the newly added or modified properties.",
-            "It triggers automatic garbage collection.",
-            "It prevents the use of `for...of` loops."
-        ],
-        "correct_answer": "It might lead to unexpected or infinite loops as the iteration mechanism can include the newly added or modified properties.",
-        "topic": "Prototypes and Iteration",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **Nullish Coalescing Operator** (`??`) used for (ES2020)?",
-        "options": [
-            "To check if a value is `null` or `undefined`, providing a default value only in those cases.",
-            "To check if a value is falsy (including 0 or '') and provide a default value.",
-            "To perform bitwise operations.",
-            "To check if an object property is iterable."
-        ],
-        "correct_answer": "To check if a value is `null` or `undefined`, providing a default value only in those cases.",
-        "topic": "ES2020 Features",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is **Type Juggling** (or Type Coercion)?",
-        "options": [
-            "The process of explicitly casting a variable to a different type.",
-            "The automatic or implicit conversion of values from one data type to another during operations like addition or comparison.",
-            "An ES6 feature that restricts type conversions.",
-            "A method to secure data types."
-        ],
-        "correct_answer": "The automatic or implicit conversion of values from one data type to another during operations like addition or comparison.",
-        "topic": "Data Types and Operators",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How does **`Promise.race()`** handle rejection?",
-        "options": [
-            "It waits for all Promises to resolve.",
-            "It rejects immediately if the first Promise to settle is a rejection.",
-            "It ignores rejections and only waits for resolution.",
-            "It throws an error if no Promise settles within 1 second."
-        ],
-        "correct_answer": "It rejects immediately if the first Promise to settle is a rejection.",
-        "topic": "Asynchronous JavaScript (Promises)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Which design pattern is used to wrap an object to simplify its interface and hide complexity?",
-        "options": [
-            "Decorator Pattern",
-            "Factory Pattern",
-            "Facade Pattern",
-            "Singleton Pattern"
-        ],
-        "correct_answer": "Facade Pattern",
-        "topic": "Design Patterns",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the result of using the **Bitwise XOR** operator (`^`) on two identical numbers (e.g., `5 ^ 5`)?",
-        "options": [
-            "5",
-            "10",
-            "0",
-            "Error"
-        ],
-        "correct_answer": "0",
-        "topic": "Operators (Bitwise)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How does the **V8 engine** optimize object property access (e.g., in a class instance)?",
-        "options": [
-            "It caches property values in the global scope.",
-            "It uses **Hidden Classes** (or internal map/descriptor) to efficiently structure objects and allow the engine to use fixed memory offsets for properties.",
-            "It converts all objects to JSON internally.",
-            "It forces all properties to be non-enumerable."
-        ],
-        "correct_answer": "It uses **Hidden Classes** (or internal map/descriptor) to efficiently structure objects and allow the engine to use fixed memory offsets for properties.",
-        "topic": "V8 Engine and Performance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the primary difference between **`==`** and **`Object.is()`** for comparing two values?",
-        "options": [
-            "`Object.is()` only works for objects; `==` works for primitives.",
-            "`==` performs type coercion; `Object.is()` performs no coercion and returns `true` for cases where `==` and `===` fail (e.g., `NaN` and positive/negative zero).",
-            "`Object.is()` is faster than `==`.",
-            "They are functionally identical for all values."
-        ],
-        "correct_answer": "`==` performs type coercion; `Object.is()` performs no coercion and returns `true` for cases where `==` and `===` fail (e.g., `NaN` and positive/negative zero).",
-        "topic": "Data Types and Operators",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the purpose of the **`Intl.DateTimeFormat`** API?",
-        "options": [
-            "To parse a date string into a Date object.",
-            "To securely transmit date data.",
-            "To provide language-sensitive date and time formatting, allowing customization of locale, timezone, and style.",
-            "To calculate the difference between two dates."
-        ],
-        "correct_answer": "To provide language-sensitive date and time formatting, allowing customization of locale, timezone, and style.",
-        "topic": "Built-in Objects and APIs",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "When should you use the **`Passive Event Listeners`** option (`{ passive: true }`)?",
-        "options": [
-            "When you want to prevent event bubbling.",
-            "When the listener will call `event.preventDefault()`.",
-            "On touch/scroll events to tell the browser the listener won't call `preventDefault()`, allowing the browser to handle scrolling/zooming immediately for better performance.",
-            "When the event handler is asynchronous."
-        ],
-        "correct_answer": "On touch/scroll events to tell the browser the listener won't call `preventDefault()`, allowing the browser to handle scrolling/zooming immediately for better performance.",
-        "topic": "DOM and Events",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What does the **`with`** statement do, and why is it officially deprecated?",
-        "options": [
-            "It defines a new function scope; it's deprecated due to performance issues.",
-            "It extends the scope chain; it's deprecated because it creates ambiguous references, breaks `strict mode`, and hinders V8 optimizations.",
-            "It creates an object prototype; it's deprecated because ES6 classes replaced it.",
-            "It is used for error handling; it's deprecated because `try...catch` is better."
-        ],
-        "correct_answer": "It extends the scope chain; it's deprecated because it creates ambiguous references, breaks `strict mode`, and hinders V8 optimizations.",
-        "topic": "Execution Context",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "In the context of OOP, what does **`class A extends B`** achieve primarily through prototypes?",
-        "options": [
-            "It copies all properties from B to A.",
-            "It sets `A.prototype`'s internal prototype to `B.prototype` and handles the `constructor` binding.",
-            "It only allows A to access static methods of B.",
-            "It makes A's instances immutable."
-        ],
-        "correct_answer": "It sets `A.prototype`'s internal prototype to `B.prototype` and handles the `constructor` binding.",
-        "topic": "ES6 Classes and Inheritance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the output of `console.log(typeof null)` and why is it considered a legacy bug?",
-        "options": [
-            "'null'; it is correct.",
-            "'undefined'; it is incorrect.",
-            "'object'; it is a historical mistake dating back to the first implementation of JavaScript.",
-            "'function'; because `null` can be coerced to an empty object."
-        ],
-        "correct_answer": "'object'; it is a historical mistake dating back to the first implementation of JavaScript.",
-        "topic": "Data Types and Operators",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the purpose of the **`Symbol.asyncIterator`**?",
-        "options": [
-            "To define synchronous iteration for an object.",
-            "To enable the object to be used with the `for await...of` loop for asynchronous data streams.",
-            "To make all methods in a class asynchronous.",
-            "To enforce that all Promises must be awaited."
-        ],
-        "correct_answer": "To enable the object to be used with the `for await...of` loop for asynchronous data streams.",
-        "topic": "Asynchronous JavaScript (ES2018)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is **Currying**?",
-        "options": [
-            "A way to define default function parameters.",
-            "The transformation of a function that takes multiple arguments into a sequence of nested functions, each taking a single argument.",
-            "A process to convert a synchronous function into an asynchronous one.",
-            "A technique to optimize array iteration."
-        ],
-        "correct_answer": "The transformation of a function that takes multiple arguments into a sequence of nested functions, each taking a single argument.",
-        "topic": "Functional Programming",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How do you define a property on an object that cannot be iterated over by `for...in` or `Object.keys()`?",
-        "options": [
-            "Declare it with `const`.",
-            "Use `Object.defineProperty()` and set `enumerable: false`.",
-            "Use a `WeakMap`.",
-            "Prefix the property name with an underscore (`_`)."
-        ],
-        "correct_answer": "Use `Object.defineProperty()` and set `enumerable: false`.",
-        "topic": "Object Manipulation",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the **`globalThis`** property (ES2020) used for?",
-        "options": [
-            "It is a new property on the global object that always refers to the global object in a cross-platform, environment-agnostic way (browser `window`, Node `global`, web workers, etc.).",
-            "It is only available inside worker threads.",
-            "It refers to the prototype of the current object.",
-            "It restricts the scope of the current function."
-        ],
-        "correct_answer": "It is a new property on the global object that always refers to the global object in a cross-platform, environment-agnostic way (browser `window`, Node `global`, web workers, etc.).",
-        "topic": "ES2020 Features",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the difference between `element.classList.add('class')` and `element.className += ' class'`?",
-        "options": [
-            "`className` is faster; `classList` is deprecated.",
-            "`classList.add` safely adds the class without duplicates or overriding existing classes; `className +=` can lead to duplicate class names and requires manual spacing management.",
-            "`classList.add` only works for classes, not IDs.",
-            "`className +=` is non-mutating."
-        ],
-        "correct_answer": "`classList.add` safely adds the class without duplicates or overriding existing classes; `className +=` can lead to duplicate class names and requires manual spacing management.",
-        "topic": "DOM and Events",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "When using `reduce()` to sum numbers, what happens if the array is empty and no initial value is provided?",
-        "options": [
-            "It returns 0.",
-            "It returns `undefined`.",
-            "It throws a `TypeError`.",
-            "It returns the last element."
-        ],
-        "correct_answer": "It throws a `TypeError`.",
-        "topic": "Array Methods (Reduce)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the purpose of the **`Object.setPrototypeOf()`** method?",
-        "options": [
-            "To define a new class.",
-            "To set the prototype (the internal `[[Prototype]]` link) of an object to another object or `null`.",
-            "To make an object immutable.",
-            "To copy properties from one object to another."
-        ],
-        "correct_answer": "To set the prototype (the internal `[[Prototype]]` link) of an object to another object or `null`.",
-        "topic": "Prototypes and Inheritance",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the difference between a **`Set`** and an **`Array`** for storing a collection of unique items?",
-        "options": [
-            "Arrays are mutable; Sets are immutable.",
-            "Sets automatically enforce uniqueness and provide efficient operations for adding/checking existence; Arrays require manual checks to enforce uniqueness.",
-            "Arrays can only store primitives; Sets can store objects.",
-            "Sets are iterable; Arrays are not."
-        ],
-        "correct_answer": "Sets automatically enforce uniqueness and provide efficient operations for adding/checking existence; Arrays require manual checks to enforce uniqueness.",
-        "topic": "ES6 Data Structures",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "In functional programming, what is a **Pure Function**?",
-        "options": [
-            "A function that only accepts one argument.",
-            "A function that returns a Promise.",
-            "A function that, given the same inputs, always returns the same output and has no side effects (does not modify external state).",
-            "A function that is defined inside an IIFE."
-        ],
-        "correct_answer": "A function that, given the same inputs, always returns the same output and has no side effects (does not modify external state).",
-        "topic": "Functional Programming",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is **`Promise.withResolvers()`** (ES2024), and what problem does it solve?",
-        "options": [
-            "It creates a new, immediately resolved Promise.",
-            "It creates a Promise and returns an object containing the Promise and its associated `resolve` and `reject` functions, solving the problem of needing to hoist the resolve/reject functions out of the Promise constructor.",
-            "It converts a callback-based function to a Promise.",
-            "It makes a Promise run synchronously."
-        ],
-        "correct_answer": "It creates a Promise and returns an object containing the Promise and its associated `resolve` and `reject` functions, solving the problem of needing to hoist the resolve/reject functions out of the Promise constructor.",
-        "topic": "Asynchronous JavaScript (ES2024)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Which design pattern is used to encapsulate object creation logic, providing an interface for creating instances but allowing subclasses to decide which class to instantiate?",
-        "options": [
-            "Singleton Pattern",
-            "Observer Pattern",
-            "Decorator Pattern",
-            "Factory Pattern"
-        ],
-        "correct_answer": "Factory Pattern",
-        "topic": "Design Patterns",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What does **`Array.prototype.findIndex()`** return if no element satisfies the testing function?",
-        "options": [
-            "The first element.",
-            "`-1`.",
-            "`undefined`.",
-            "`0`."
-        ],
-        "correct_answer": "`-1`.",
-        "topic": "Array Methods",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the purpose of the **`get`** and **`set`** keywords on object properties (Accessors)?",
-        "options": [
-            "They define static methods on a class.",
-            "They define functions that execute upon retrieving (`get`) or setting (`set`) a property's value, allowing computed properties or custom validation.",
-            "They define private class fields.",
-            "They are used only for network requests."
-        ],
-        "correct_answer": "They define functions that execute upon retrieving (`get`) or setting (`set`) a property's value, allowing computed properties or custom validation.",
-        "topic": "Object Manipulation (ES5+)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the primary difference between **`try...catch...finally`** and Promise chaining with `.then().catch().finally()`?",
-        "options": [
-            "The `try...catch` block handles errors from synchronous code; the Promise chain handles errors from asynchronous operations.",
-            "`try...catch` is for global errors; Promise chain is for local errors.",
-            "They are used for different data types.",
-            "They are functionally identical."
-        ],
-        "correct_answer": "The `try...catch` block handles errors from synchronous code; the Promise chain handles errors from asynchronous operations.",
-        "topic": "Asynchronous JavaScript (Error Handling)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How do **ES6 modules** (`import`/`export`) handle variable binding (live bindings)?",
-        "options": [
-            "The imported variables are fixed values (clones) at the time of import.",
-            "The imported variables are live bindings that reflect the current value in the exporting module (if mutable, e.g., `let` or `var`).",
-            "They are always treated as constants.",
-            "They are only available within arrow functions."
-        ],
-        "correct_answer": "The imported variables are live bindings that reflect the current value in the exporting module (if mutable, e.g., `let` or `var`).",
-        "topic": "ES6 Modules",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the concept of a **Tagged Template Literal** (ES6)?",
-        "options": [
-            "A template literal that automatically escapes HTML characters.",
-            "A template literal prefixed with a function call, allowing the function to process the template's parts (the string array and the expression values) before the string is assembled.",
-            "A template literal that is always evaluated asynchronously.",
-            "A template literal that only supports multiline strings."
-        ],
-        "correct_answer": "A template literal prefixed with a function call, allowing the function to process the template's parts (the string array and the expression values) before the string is assembled.",
-        "topic": "ES6 Features",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the problem with using **`eval()`** in modern JavaScript, and how does it relate to security and performance?",
-        "options": [
-            "It is restricted to only numerical calculations.",
-            "It executes arbitrary code, posing a security risk (XSS); it also prevents modern JS engines from optimizing the code, leading to performance degradation.",
-            "It only works in synchronous code blocks.",
-            "It is required for all ES6 module loading."
-        ],
-        "correct_answer": "It executes arbitrary code, posing a security risk (XSS); it also prevents modern JS engines from optimizing the code, leading to performance degradation.",
-        "topic": "Execution Context and Security",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How do you detect if a property is directly defined on an object and not inherited from its prototype?",
-        "options": [
-            "Use the `in` operator.",
-            "Use the `Object.keys()` method.",
-            "Use the `Object.hasOwnProperty()` method.",
-            "Check if `typeof property` is not `undefined`."
-        ],
-        "correct_answer": "Use the `Object.hasOwnProperty()` method.",
-        "topic": "Object Manipulation",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the key purpose of **`Promise.withResolvers()`** (ES2024)?",
-        "options": [
-            "To simplify the creation of Promises by eliminating the need to define the `resolve` and `reject` functions outside the constructor, allowing for more straightforward integration with non-Promise APIs.",
-            "To replace `Promise.all()` entirely.",
-            "To make all Promises run synchronously.",
-            "To define private variables in a Promise."
-        ],
-        "correct_answer": "To simplify the creation of Promises by eliminating the need to define the `resolve` and `reject` functions outside the constructor, allowing for more straightforward integration with non-Promise APIs.",
-        "topic": "Asynchronous JavaScript (ES2024)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the difference between `let` and `var` in terms of adding variables to the global object (`window` or `global`)?",
-        "options": [
-            "`let` and `var` both add variables to the global object.",
-            "`var` adds a variable to the global object; `let` (and `const`) does not, making them truly block-scoped.",
-            "Neither `let` nor `var` add variables to the global object in strict mode.",
-            "`let` adds it, but `var` does not."
-        ],
-        "correct_answer": "`var` adds a variable to the global object; `let` (and `const`) does not, making them truly block-scoped.",
-        "topic": "ES6 Variables and Scope",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the result of using the **Bitwise OR** operator (`|`) to convert a floating-point number to an integer?",
-        "options": [
-            "It rounds the number up.",
-            "It truncates the decimal part, effectively flooring positive numbers and ceiling negative numbers (similar to `Math.trunc()`).",
-            "It rounds the number to the nearest whole number.",
-            "It returns `NaN`."
-        ],
-        "correct_answer": "It truncates the decimal part, effectively flooring positive numbers and ceiling negative numbers (similar to `Math.trunc()`).",
-        "topic": "Operators (Bitwise)",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "How can you implement **Asynchronous Function Composition** (chaining async functions)?",
-        "options": [
-            "Using a simple sequence of function calls.",
-            "Using `await` inside a wrapper `async` function, or chaining Promises (`.then()`) to pass results sequentially.",
-            "Using only `setTimeout`.",
-            "Using the `eval()` function."
-        ],
-        "correct_answer": "Using `await` inside a wrapper `async` function, or chaining Promises (`.then()`) to pass results sequentially.",
-        "topic": "Functional Programming and Asynchronicity",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "What is the output of `console.log(typeof Symbol.iterator)`?",
-        "options": [
-            "'object'",
-            "'symbol'",
-            "'undefined'",
-            "'function'"
-        ],
-        "correct_answer": "'symbol'",
-        "topic": "ES6 Data Types",
-        "difficulty": "advanced"
-    },
-    {
-        "question": "Which design pattern is used to dynamically attach new responsibilities to an object?",
-        "options": [
-            "Factory Pattern",
-            "Singleton Pattern",
-            "Adapter Pattern",
-            "Decorator Pattern"
-        ],
-        "correct_answer": "Decorator Pattern",
-        "topic": "Design Patterns",
-        "difficulty": "advanced"
-    }
+  {
+    "question": "What is the relationship between execution context and scope chain?",
+    "options": [
+      "They are the same",
+      "Execution context creates the scope chain for variable resolution",
+      "Scope chain creates execution context",
+      "They are unrelated"
+    ],
+    "correct_answer": "Execution context creates the scope chain for variable resolution",
+    "topic": "Execution Context",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What are the phases of JavaScript execution?",
+    "options": [
+      "Parsing and execution",
+      "Creation phase and execution phase",
+      "Compilation and runtime",
+      "Loading and initialization"
+    ],
+    "correct_answer": "Creation phase and execution phase",
+    "topic": "Execution Context",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What happens during the creation phase of execution?",
+    "options": [
+      "Code is executed",
+      "Variable and function declarations are hoisted and initialized",
+      "Memory is deallocated",
+      "Functions are invoked"
+    ],
+    "correct_answer": "Variable and function declarations are hoisted and initialized",
+    "topic": "Execution Context",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between global execution context and function execution context?",
+    "options": [
+      "They are identical",
+      "Global is created first, function contexts created when functions are called",
+      "Function contexts are created first",
+      "Only global context exists"
+    ],
+    "correct_answer": "Global is created first, function contexts created when functions are called",
+    "topic": "Execution Context",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the call stack?",
+    "options": [
+      "A stack of function calls",
+      "A data structure tracking the execution order of functions",
+      "A type of array",
+      "A memory location"
+    ],
+    "correct_answer": "A data structure tracking the execution order of functions",
+    "topic": "Execution Context",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the relationship between closures and the scope chain?",
+    "options": [
+      "Unrelated",
+      "Closures maintain references to the scope chain even after the parent function returns",
+      "Scope chain creates closures",
+      "Closures delete the scope chain"
+    ],
+    "correct_answer": "Closures maintain references to the scope chain even after the parent function returns",
+    "topic": "Closures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is lexical scoping?",
+    "options": [
+      "Scope determined at compile time",
+      "Scope determined by the physical placement of code in the source file",
+      "Scope determined at runtime",
+      "Scope determined by execution order"
+    ],
+    "correct_answer": "Scope determined by the physical placement of code in the source file",
+    "topic": "Scope",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is dynamic scoping and why doesn't JavaScript use it?",
+    "options": [
+      "JavaScript uses dynamic scoping",
+      "Scope determined at runtime based on call stack; JavaScript uses lexical scoping for predictability",
+      "Dynamic scoping is faster",
+      "JavaScript has both"
+    ],
+    "correct_answer": "Scope determined at runtime based on call stack; JavaScript uses lexical scoping for predictability",
+    "topic": "Scope",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the relationship between this and the execution context?",
+    "options": [
+      "Unrelated",
+      "this is determined by the execution context",
+      "this is always the global object",
+      "this is determined by the closure"
+    ],
+    "correct_answer": "this is determined by the execution context",
+    "topic": "Execution Context",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does this binding work in different contexts?",
+    "options": [
+      "Always refers to the global object",
+      "Depends on how the function is called (method, function, constructor, or call/apply/bind)",
+      "Always refers to the object",
+      "Determined by scope chain"
+    ],
+    "correct_answer": "Depends on how the function is called (method, function, constructor, or call/apply/bind)",
+    "topic": "this Keyword",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the this binding in arrow functions vs regular functions?",
+    "options": [
+      "Arrow functions have their own this",
+      "Arrow functions inherit this from lexical scope, regular functions determine this by call context",
+      "Both determine this the same way",
+      "Regular functions use lexical scoping"
+    ],
+    "correct_answer": "Arrow functions inherit this from lexical scope, regular functions determine this by call context",
+    "topic": "Arrow Functions",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is implicit this binding?",
+    "options": [
+      "Explicit binding of this",
+      "When this is determined by the object calling the method",
+      "When this is not bound",
+      "When this is undefined"
+    ],
+    "correct_answer": "When this is determined by the object calling the method",
+    "topic": "this Keyword",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is explicit this binding?",
+    "options": [
+      "this determined by object",
+      "Using call(), apply(), or bind() to explicitly set this",
+      "this determined at runtime",
+      "this determined by scope"
+    ],
+    "correct_answer": "Using call(), apply(), or bind() to explicitly set this",
+    "topic": "this Keyword",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the new binding in JavaScript?",
+    "options": [
+      "Creating new variables",
+      "When this is bound to a newly created object via the new keyword",
+      "Creating new functions",
+      "Creating new scopes"
+    ],
+    "correct_answer": "When this is bound to a newly created object via the new keyword",
+    "topic": "this Keyword",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the order of this binding precedence?",
+    "options": [
+      "new > explicit > implicit > default",
+      "implicit > explicit > new > default",
+      "default > new > explicit > implicit",
+      "explicit > implicit > new > default"
+    ],
+    "correct_answer": "new > explicit > implicit > default",
+    "topic": "this Keyword",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the prototype chain and how does property lookup work?",
+    "options": [
+      "A chain of prototypes used for property and method lookup",
+      "A data structure for inheritance",
+      "A way to organize code",
+      "A loop mechanism"
+    ],
+    "correct_answer": "A chain of prototypes used for property and method lookup",
+    "topic": "Prototype Chain",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between [[Prototype]] and prototype property?",
+    "options": [
+      "They are the same",
+      "[[Prototype]] is the internal link, prototype is a property on constructor functions",
+      "prototype is internal",
+      "[[Prototype]] is external"
+    ],
+    "correct_answer": "[[Prototype]] is the internal link, prototype is a property on constructor functions",
+    "topic": "Prototype Chain",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of constructor.prototype?",
+    "options": [
+      "Stores constructor data",
+      "Provides the prototype object for instances created by the constructor",
+      "Creates new prototypes",
+      "Deletes prototypes"
+    ],
+    "correct_answer": "Provides the prototype object for instances created by the constructor",
+    "topic": "Prototype Chain",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the relationship between Object.prototype, Function.prototype, and other prototypes?",
+    "options": [
+      "They are all the same",
+      "All built-in objects eventually inherit from Object.prototype through the prototype chain",
+      "Function.prototype is separate",
+      "They are unrelated"
+    ],
+    "correct_answer": "All built-in objects eventually inherit from Object.prototype through the prototype chain",
+    "topic": "Prototype Chain",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is method overriding in prototypal inheritance?",
+    "options": [
+      "Preventing method calls",
+      "Defining a method in the child that shadows the parent method",
+      "Creating multiple methods",
+      "A type of error"
+    ],
+    "correct_answer": "Defining a method in the child that shadows the parent method",
+    "topic": "Prototype Chain",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between class-based and prototype-based inheritance?",
+    "options": [
+      "They are the same",
+      "Classes are syntactic sugar over prototypes; JavaScript uses prototypes internally",
+      "JavaScript uses classes only",
+      "Prototypes are deprecated"
+    ],
+    "correct_answer": "Classes are syntactic sugar over prototypes; JavaScript uses prototypes internally",
+    "topic": "OOP Concepts",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the event loop and how does it handle async operations?",
+    "options": [
+      "A loop that executes code",
+      "Coordinates between call stack, callback queue, and Web APIs to manage async operations",
+      "A type of function",
+      "A memory management system"
+    ],
+    "correct_answer": "Coordinates between call stack, callback queue, and Web APIs to manage async operations",
+    "topic": "Event Loop",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between the callback queue and the microtask queue?",
+    "options": [
+      "They are the same",
+      "Microtask queue (for Promises) has higher priority and executes before callback queue",
+      "Callback queue has higher priority",
+      "They execute simultaneously"
+    ],
+    "correct_answer": "Microtask queue (for Promises) has higher priority and executes before callback queue",
+    "topic": "Event Loop",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is starvation in the context of the event loop?",
+    "options": [
+      "Lack of memory",
+      "When long-running code blocks the event loop preventing callbacks from executing",
+      "An error condition",
+      "A type of bug"
+    ],
+    "correct_answer": "When long-running code blocks the event loop preventing callbacks from executing",
+    "topic": "Event Loop",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is garbage collection in JavaScript?",
+    "options": [
+      "Collecting garbage",
+      "Automatic memory reclamation of unreferenced objects",
+      "Deleting files",
+      "A user operation"
+    ],
+    "correct_answer": "Automatic memory reclamation of unreferenced objects",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a memory leak?",
+    "options": [
+      "Leaking data",
+      "When objects are retained in memory longer than necessary, preventing garbage collection",
+      "A security issue",
+      "A type of error"
+    ],
+    "correct_answer": "When objects are retained in memory longer than necessary, preventing garbage collection",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What causes common memory leaks in JavaScript?",
+    "options": [
+      "Too many variables",
+      "Detached DOM nodes, global variables, unreleased references",
+      "Large objects",
+      "Type mismatches"
+    ],
+    "correct_answer": "Detached DOM nodes, global variables, unreleased references",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between stack and heap memory?",
+    "options": [
+      "They are the same",
+      "Stack stores primitives and references, heap stores objects",
+      "Stack is faster",
+      "Heap is temporary"
+    ],
+    "correct_answer": "Stack stores primitives and references, heap stores objects",
+    "topic": "Memory Management",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of WeakMap and WeakSet?",
+    "options": [
+      "Weak versions of Map and Set",
+      "Hold weak references allowing garbage collection of keys/values",
+      "Deprecated structures",
+      "Performance optimization"
+    ],
+    "correct_answer": "Hold weak references allowing garbage collection of keys/values",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between Promise and async/await in error handling?",
+    "options": [
+      "They are the same",
+      "async/await makes error handling clearer with try-catch similar to synchronous code",
+      "Promise is better for errors",
+      "async/await doesn't handle errors"
+    ],
+    "correct_answer": "async/await makes error handling clearer with try-catch similar to synchronous code",
+    "topic": "Async/Await",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is Promise.allSettled() vs Promise.all()?",
+    "options": [
+      "They are the same",
+      "Promise.all() rejects if any promise rejects, Promise.allSettled() always resolves with all results",
+      "Promise.allSettled() fails on error",
+      "Promise.all() always succeeds"
+    ],
+    "correct_answer": "Promise.all() rejects if any promise rejects, Promise.allSettled() always resolves with all results",
+    "topic": "Promises",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What are unhandled promise rejections and their implications?",
+    "options": [
+      "Normal errors",
+      "Rejected promises without a .catch() or try-catch that can crash the application",
+      "A type of warning",
+      "Not important"
+    ],
+    "correct_answer": "Rejected promises without a .catch() or try-catch that can crash the application",
+    "topic": "Promises",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a microtask in JavaScript?",
+    "options": [
+      "A small task",
+      "High-priority tasks (Promises, MutationObserver) executed before macrotasks",
+      "A deprecated feature",
+      "A function call"
+    ],
+    "correct_answer": "High-priority tasks (Promises, MutationObserver) executed before macrotasks",
+    "topic": "Event Loop",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between mutable and immutable data structures?",
+    "options": [
+      "They are the same",
+      "Mutable can be modified after creation, immutable cannot",
+      "Mutable is better",
+      "Immutable is deprecated"
+    ],
+    "correct_answer": "Mutable can be modified after creation, immutable cannot",
+    "topic": "Data Structures",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is structural vs referential equality?",
+    "options": [
+      "The same",
+      "Structural checks values, referential checks if objects are the same instance",
+      "Referential is faster",
+      "Structural is deprecated"
+    ],
+    "correct_answer": "Structural checks values, referential checks if objects are the same instance",
+    "topic": "Equality",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between Number and BigInt?",
+    "options": [
+      "They are the same",
+      "Number has precision limits, BigInt can represent arbitrary precision integers",
+      "BigInt is faster",
+      "Number is deprecated"
+    ],
+    "correct_answer": "Number has precision limits, BigInt can represent arbitrary precision integers",
+    "topic": "Data Types",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the event delegation pattern?",
+    "options": [
+      "Delegating to events",
+      "Adding a single event listener to a parent to handle events on multiple children",
+      "Creating events",
+      "A type of error"
+    ],
+    "correct_answer": "Adding a single event listener to a parent to handle events on multiple children",
+    "topic": "DOM Events",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between event bubbling and capturing?",
+    "options": [
+      "They are the same",
+      "Bubbling goes up the DOM, capturing goes down the DOM",
+      "Both go up",
+      "Both go down"
+    ],
+    "correct_answer": "Bubbling goes up the DOM, capturing goes down the DOM",
+    "topic": "DOM Events",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of event.preventDefault()?",
+    "options": [
+      "Prevents element creation",
+      "Prevents the default action of an event",
+      "Stops execution",
+      "Deletes elements"
+    ],
+    "correct_answer": "Prevents the default action of an event",
+    "topic": "DOM Events",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of event.stopPropagation()?",
+    "options": [
+      "Stops element propagation",
+      "Prevents event from bubbling up to parent elements",
+      "Stops execution",
+      "Deletes events"
+    ],
+    "correct_answer": "Prevents event from bubbling up to parent elements",
+    "topic": "DOM Events",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between event.stopPropagation() and event.stopImmediatePropagation()?",
+    "options": [
+      "They are the same",
+      "stopPropagation stops bubbling, stopImmediatePropagation also prevents other handlers on the same element",
+      "stopImmediatePropagation stops bubbling",
+      "No difference"
+    ],
+    "correct_answer": "stopPropagation stops bubbling, stopImmediatePropagation also prevents other handlers on the same element",
+    "topic": "DOM Events",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is tail call optimization?",
+    "options": [
+      "Optimizing last function call",
+      "When a function's last operation is a function call that can be optimized to use the same stack frame",
+      "Recursive function optimization",
+      "Compiler feature"
+    ],
+    "correct_answer": "When a function's last operation is a function call that can be optimized to use the same stack frame",
+    "topic": "Performance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is memoization?",
+    "options": [
+      "Storing memories",
+      "Caching function results based on arguments to avoid redundant computation",
+      "A type of memory",
+      "Garbage collection"
+    ],
+    "correct_answer": "Caching function results based on arguments to avoid redundant computation",
+    "topic": "Performance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is debouncing?",
+    "options": [
+      "Removing bugs",
+      "Limiting function calls by waiting for a period of inactivity before executing",
+      "A type of function",
+      "Throttling"
+    ],
+    "correct_answer": "Limiting function calls by waiting for a period of inactivity before executing",
+    "topic": "Performance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is throttling?",
+    "options": [
+      "Limiting speed",
+      "Executing a function at most once per specified time interval",
+      "Similar to debouncing",
+      "Event handling"
+    ],
+    "correct_answer": "Executing a function at most once per specified time interval",
+    "topic": "Performance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between debouncing and throttling?",
+    "options": [
+      "They are the same",
+      "Debouncing waits for inactivity, throttling executes at intervals",
+      "Throttling is faster",
+      "Debouncing is faster"
+    ],
+    "correct_answer": "Debouncing waits for inactivity, throttling executes at intervals",
+    "topic": "Performance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is lazy evaluation?",
+    "options": [
+      "Slow evaluation",
+      "Computing values only when needed rather than upfront",
+      "Performance optimization",
+      "A type of function"
+    ],
+    "correct_answer": "Computing values only when needed rather than upfront",
+    "topic": "Performance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is partial application?",
+    "options": [
+      "Applying parts",
+      "Fixing some arguments of a function and returning a new function",
+      "A type of function",
+      "Currying"
+    ],
+    "correct_answer": "Fixing some arguments of a function and returning a new function",
+    "topic": "Functional Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is currying?",
+    "options": [
+      "Related to curry",
+      "Transforming a function to accept arguments one at a time",
+      "A design pattern",
+      "Function composition"
+    ],
+    "correct_answer": "Transforming a function to accept arguments one at a time",
+    "topic": "Functional Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is function composition?",
+    "options": [
+      "Combining functions",
+      "Creating new functions by combining existing functions",
+      "A design pattern",
+      "A type of inheritance"
+    ],
+    "correct_answer": "Creating new functions by combining existing functions",
+    "topic": "Functional Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is pure function?",
+    "options": [
+      "A clean function",
+      "A function with no side effects that always returns the same output for the same input",
+      "A function without parameters",
+      "A reserved keyword"
+    ],
+    "correct_answer": "A function with no side effects that always returns the same output for the same input",
+    "topic": "Functional Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is immutability in functional programming?",
+    "options": [
+      "Mutating data",
+      "Data cannot be changed after creation, new data is created instead",
+      "Performance feature",
+      "Deprecated concept"
+    ],
+    "correct_answer": "Data cannot be changed after creation, new data is created instead",
+    "topic": "Functional Programming",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is tree shaking in module bundlers?",
+    "options": [
+      "Shaking a tree",
+      "Removing unused code during bundling to reduce bundle size",
+      "A type of optimization",
+      "A reserved keyword"
+    ],
+    "correct_answer": "Removing unused code during bundling to reduce bundle size",
+    "topic": "Modules",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is code splitting?",
+    "options": [
+      "Splitting code into parts",
+      "Dividing code into smaller chunks that can be loaded on demand",
+      "A type of optimization",
+      "Minification"
+    ],
+    "correct_answer": "Dividing code into smaller chunks that can be loaded on demand",
+    "topic": "Performance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between JavaScript specification (ECMAScript) and implementations?",
+    "options": [
+      "They are the same",
+      "Specification defines the standard, implementations are browser/runtime specific",
+      "Specification is code",
+      "Implementations define the standard"
+    ],
+    "correct_answer": "Specification defines the standard, implementations are browser/runtime specific",
+    "topic": "JavaScript Fundamentals",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the relationship between Node.js and V8?",
+    "options": [
+      "They are the same",
+      "Node.js uses V8 as its JavaScript engine",
+      "V8 uses Node.js",
+      "They are unrelated"
+    ],
+    "correct_answer": "Node.js uses V8 as its JavaScript engine",
+    "topic": "JavaScript Runtime",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is JIT compilation in JavaScript engines?",
+    "options": [
+      "Just-in-time compilation",
+      "Compiling code to machine code during runtime for optimization",
+      "A type of interpretation",
+      "An error handling mechanism"
+    ],
+    "correct_answer": "Compiling code to machine code during runtime for optimization",
+    "topic": "JavaScript Engines",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is inline caching in JavaScript engines?",
+    "options": [
+      "Caching inline",
+      "Optimizing property access by caching type information",
+      "A memory feature",
+      "A deprecated concept"
+    ],
+    "correct_answer": "Optimizing property access by caching type information",
+    "topic": "JavaScript Engines",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is hidden classes in JavaScript engines?",
+    "options": [
+      "Secret classes",
+      "Internal structures tracking object properties for optimization",
+      "A language feature",
+      "A deprecated concept"
+    ],
+    "correct_answer": "Internal structures tracking object properties for optimization",
+    "topic": "JavaScript Engines",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is polymorphic inline cache?",
+    "options": [
+      "Many caches",
+      "Caching type information for multiple object shapes",
+      "A performance feature",
+      "An optimization technique"
+    ],
+    "correct_answer": "Caching type information for multiple object shapes",
+    "topic": "JavaScript Engines",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the relationship between types and objects in JavaScript?",
+    "options": [
+      "All objects are instances of types",
+      "JavaScript is dynamically typed but objects have internal type information for optimization",
+      "Types are separate from objects",
+      "No relationship"
+    ],
+    "correct_answer": "JavaScript is dynamically typed but objects have internal type information for optimization",
+    "topic": "Data Types",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is hoisting behavior for function expressions vs function declarations?",
+    "options": [
+      "Both are hoisted equally",
+      "Function declarations are fully hoisted, function expressions are not",
+      "Function expressions are hoisted first",
+      "Neither is hoisted"
+    ],
+    "correct_answer": "Function declarations are fully hoisted, function expressions are not",
+    "topic": "Hoisting",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does the this keyword behave in strict mode vs non-strict mode?",
+    "options": [
+      "Identically in both modes",
+      "In strict mode, this is undefined in functions; in non-strict, it's the global object",
+      "In strict mode, this is the global object",
+      "Strict mode doesn't affect this"
+    ],
+    "correct_answer": "In strict mode, this is undefined in functions; in non-strict, it's the global object",
+    "topic": "Execution Context",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the relationship between async/await and generator functions?",
+    "options": [
+      "They are unrelated",
+      "async/await is built on Promise and generator-like syntax",
+      "async/await creates generators",
+      "Generators create async functions"
+    ],
+    "correct_answer": "async/await is built on Promise and generator-like syntax",
+    "topic": "Async/Await",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does the JavaScript engine optimize repeated property access?",
+    "options": [
+      "It doesn't optimize",
+      "Through hidden classes and inline caching tracking object shapes",
+      "By caching object values",
+      "Through memory pooling"
+    ],
+    "correct_answer": "Through hidden classes and inline caching tracking object shapes",
+    "topic": "JavaScript Engines",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What happens when a property is added to an object after construction?",
+    "options": [
+      "The object remains optimized",
+      "The engine may change the object's hidden class, affecting optimization",
+      "Memory is reallocated",
+      "The property is not stored"
+    ],
+    "correct_answer": "The engine may change the object's hidden class, affecting optimization",
+    "topic": "JavaScript Engines",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the purpose of Object.defineProperty beyond simple property assignment?",
+    "options": [
+      "Simple assignment only",
+      "Controlling enumerability, writability, and configurability of properties",
+      "Speeding up assignment",
+      "Creating read-only objects"
+    ],
+    "correct_answer": "Controlling enumerability, writability, and configurability of properties",
+    "topic": "Objects",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does destructuring relate to the MutableObjectProto semantics?",
+    "options": [
+      "They are unrelated",
+      "Destructuring uses internal prototype lookup similar to property access",
+      "Destructuring bypasses prototypes",
+      "No relationship exists"
+    ],
+    "correct_answer": "Destructuring uses internal prototype lookup similar to property access",
+    "topic": "ES6+ Features",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the observable difference between var and let in temporal dead zone?",
+    "options": [
+      "No difference",
+      "let variables exist in TDZ before declaration; var are initialized to undefined",
+      "var has TDZ, let doesn't",
+      "They have identical behavior"
+    ],
+    "correct_answer": "let variables exist in TDZ before declaration; var are initialized to undefined",
+    "topic": "Variables",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does the module system affect scope and hoisting?",
+    "options": [
+      "No effect",
+      "Modules create their own scope, and hoisting is module-scoped",
+      "Modules prevent hoisting",
+      "Hoisting ignores module boundaries"
+    ],
+    "correct_answer": "Modules create their own scope, and hoisting is module-scoped",
+    "topic": "Modules",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the relationship between Symbol and object property enumeration?",
+    "options": [
+      "Symbols are enumerated normally",
+      "Symbols are not enumerable by default and require special handling",
+      "Symbols are always enumerable",
+      "Symbols are deprecated"
+    ],
+    "correct_answer": "Symbols are not enumerable by default and require special handling",
+    "topic": "Data Types",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How does the for...in loop interact with Symbol properties?",
+    "options": [
+      "It enumerates Symbols",
+      "It skips Symbol properties entirely",
+      "It enumerates Symbols first",
+      "Behavior depends on browser"
+    ],
+    "correct_answer": "It skips Symbol properties entirely",
+    "topic": "Loops",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the performance impact of spreading vs concatenating arrays?",
+    "options": [
+      "They have identical performance",
+      "Spreading may allocate new memory, concatenation does too; context matters",
+      "Spreading is always faster",
+      "Concatenation is always faster"
+    ],
+    "correct_answer": "Spreading may allocate new memory, concatenation does too; context matters",
+    "topic": "Performance",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How do modern engines optimize numeric operations vs generic operations?",
+    "options": [
+      "All operations are generic",
+      "Engines use type specialization and Typed Arrays for better numeric performance",
+      "Numeric ops are slower",
+      "No optimization occurs"
+    ],
+    "correct_answer": "Engines use type specialization and Typed Arrays for better numeric performance",
+    "topic": "JavaScript Engines",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the relationship between requestAnimationFrame and the event loop?",
+    "options": [
+      "Unrelated",
+      "requestAnimationFrame callbacks are macrotasks synchronized with browser rendering",
+      "They are identical",
+      "requestAnimationFrame is a microtask"
+    ],
+    "correct_answer": "requestAnimationFrame callbacks are macrotasks synchronized with browser rendering",
+    "topic": "Event Loop",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How do modern engines handle megamorphic call sites?",
+    "options": [
+      "They don't exist",
+      "Engines fall back to slower generic code paths when too many object types are seen",
+      "All call sites are optimized equally",
+      "Megamorphic sites are faster"
+    ],
+    "correct_answer": "Engines fall back to slower generic code paths when too many object types are seen",
+    "topic": "JavaScript Engines",
+    "difficulty": "hard"
+  }
 ]

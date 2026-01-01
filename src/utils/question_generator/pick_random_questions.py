@@ -1,81 +1,154 @@
+# src/utils/question_generator/pick_random_questions.py
+
+"""
+Question selection & per-candidate test generation.
+
+SUPPORTS:
+- Legacy difficulty + domain based generation (DO NOT BREAK)
+- New ROLE based generation with optional domain round
+- L4 coding round is NOT handled here
+
+THIS FILE IS THE ONLY PLACE that reads:
+- ROLE_TO_TEST_CONFIG
+"""
+
 import os
 import json
 import random
-from src.utils.question_generator.uid_helper import generate_uid
+from typing import Dict, List, Tuple
 
-# Where your master banks live
+from src.utils.question_generator.uid_helper import generate_uid
+from src.utils.question_generator.role_config import ROLE_TO_TEST_CONFIG
+
+# -------------------------------------------------
+# PATHS
+# -------------------------------------------------
 MASTER_DIR = "question_bank/master"
-# Where per-candidate tests will be stored
 TEST_DIR = "question_bank/tests"
 
 os.makedirs(TEST_DIR, exist_ok=True)
 
-# How many questions per level
-LEVEL_QUESTION_COUNTS = {
-    "L1": 15,  # Logic MCQ
-    "L2": 15,  # Python MCQ
-    "L3": 15,  # Debugging / code MCQ
-    "L5": 15,  # Soft skills MCQ
-    "L4": 1,   # Coding round
+# -------------------------------------------------
+# CONSTANTS
+# -------------------------------------------------
+QUESTIONS_PER_ROUND = 15
+
+DOMAIN_ROUND_MAP = {
+    "storage": "L5_storage-master_questions.json",
+    "virtualization": "L5_virtualisation_master_questions.json",
+    "networking": "L5_networking_master_questions.json",
 }
 
+# -------------------------------------------------
+# LOW-LEVEL HELPERS
+# -------------------------------------------------
+def _load_master_questions(filename: str) -> List[dict]:
+    path = os.path.join(MASTER_DIR, filename)
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"Master question file not found: {path}")
 
-def pick_questions_from_master(level: str, difficulty: str, count: int, domain: str):
-    """
-    Read the master bank JSON for given level+difficulty and domain, and randomly select `count` questions.
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
 
-    If domain is 'js' or 'javascript' and level is L2 or L3, it looks for the '_js' suffix.
-
-    Raises:
-        FileNotFoundError if the master file does not exist
-        ValueError if not enough questions in the bank
-    """
-    difficulty = difficulty.lower().strip()
-    domain = domain.lower().strip()
-
-    # Determine the domain suffix for L2 and L3
-    domain_suffix = ""
-    if level in ["L2", "L3"] and domain in ["js", "javascript"]:
-        domain_suffix = "_js"
-    # L4 is a coding round (repo), L1 and L5 are domain-agnostic.
-
-    file_path = f"{MASTER_DIR}/{level}_{difficulty}{domain_suffix}_master.json"
-
-    if not os.path.exists(file_path):
-        # Provide context in the error message about the file path being sought
-        raise FileNotFoundError(f"Master bank missing: {file_path}")
-
-    with open(file_path, "r", encoding="utf-8") as f:
-        bank = json.load(f)
-
-    if len(bank) < count:
+    if len(data) < QUESTIONS_PER_ROUND:
         raise ValueError(
-            f"Not enough questions in {file_path}. "
-            f"Required: {count}, Available: {len(bank)}"
+            f"Not enough questions in {filename}. "
+            f"Required={QUESTIONS_PER_ROUND}, Found={len(data)}"
         )
 
-    return random.sample(bank, count)
+    return data
 
 
-def generate_candidate_test(full_name: str, email: str, difficulty: str, domain: str):
+def _pick_random_questions(filename: str) -> List[dict]:
+    bank = _load_master_questions(filename)
+    return random.sample(bank, QUESTIONS_PER_ROUND)
+
+
+# -------------------------------------------------
+# NEW: ROLE-BASED GENERATION (PRIMARY)
+# -------------------------------------------------
+def generate_candidate_test_by_role(
+    full_name: str,
+    email: str,
+    role_key: str,
+    domain: str | None = None,
+) -> Tuple[str, str]:
     """
-    Generate a per-candidate full test JSON for ALL rounds (L1-L5) for the given difficulty.
-
-    - Uses master banks: question_bank/master/L{n}_{difficulty}_master.json
-    - Creates: question_bank/tests/{uid}_{difficulty}.json
+    Generate candidate test JSON using ROLE configuration.
 
     Returns:
         (uid, json_path)
-
-    Raises:
-        FileNotFoundError: if any required master bank file is missing
-        ValueError: if any bank doesn't have enough questions
     """
-    difficulty = difficulty.lower().strip()
+
+    if role_key not in ROLE_TO_TEST_CONFIG:
+        raise ValueError(f"Invalid role key: {role_key}")
+
+    role_cfg = ROLE_TO_TEST_CONFIG[role_key]
 
     uid = generate_uid(full_name)
-    print(f"\nGenerating test for: {full_name} ({difficulty})")
-    print(f"UID → {uid}")
+
+    test_data: Dict[str, list] = {
+        "candidate": {
+            "name": full_name,
+            "email": email,
+            "uid": uid,
+            "role": role_key,
+        }
+    }
+
+    for level, source in role_cfg.items():
+
+        # ---------------- L4 (CODING) ----------------
+        if source == "coding":
+            continue  # handled elsewhere
+
+        # ---------------- DOMAIN OPTIONAL ----------------
+        if source == "domain_optional":
+            if not domain:
+                continue
+
+            domain = domain.lower()
+            if domain not in DOMAIN_ROUND_MAP:
+                raise ValueError(f"Invalid domain: {domain}")
+
+            filename = DOMAIN_ROUND_MAP[domain]
+
+        # ---------------- NORMAL MCQ ----------------
+        else:
+            filename = source
+
+        test_data[level] = _pick_random_questions(filename)
+
+    json_path = os.path.join(TEST_DIR, f"{uid}_role.json")
+
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(test_data, f, indent=4)
+
+    return uid, json_path
+
+
+# -------------------------------------------------
+# LEGACY: DIFFICULTY + DOMAIN BASED (DO NOT REMOVE)
+# -------------------------------------------------
+def generate_candidate_test(
+    full_name: str,
+    email: str,
+    difficulty: str,
+    domain: str,
+) -> Tuple[str, str]:
+    """
+    ⚠️ LEGACY FLOW (kept for backward compatibility)
+
+    Uses files like:
+    L1_easy_master.json
+    L2_medium_master.json
+    etc.
+    """
+
+    difficulty = difficulty.lower().strip()
+    domain = domain.lower().strip()
+
+    uid = generate_uid(full_name)
 
     test_data = {
         "candidate": {
@@ -83,33 +156,31 @@ def generate_candidate_test(full_name: str, email: str, difficulty: str, domain:
             "email": email,
             "uid": uid,
             "difficulty": difficulty,
+            "domain": domain,
         }
     }
 
-    missing_files = []
+    LEVEL_COUNTS = {
+        "L1": 15,
+        "L2": 15,
+        "L3": 15,
+        "L5": 15,
+    }
 
-    # Build test for all levels
-    for level, q_count in LEVEL_QUESTION_COUNTS.items():
-        try:
-            selected_questions = pick_questions_from_master(level, difficulty, q_count, domain)
-            test_data[level] = selected_questions
-        except FileNotFoundError as e:
-            missing_files.append(str(e))
+    for level, count in LEVEL_COUNTS.items():
+        suffix = ""
 
-    if missing_files:
-        # If ANY master bank is missing → fail completely
-        message = (
-            f"Cannot generate test for difficulty '{difficulty}'.\n\n"
-            f"The following master banks are missing:\n"
-            + "\n".join(missing_files)
-            + "\n\nPlease generate these master banks first."
+        if level in ["L2", "L3"] and domain in ["js", "javascript"]:
+            suffix = "_js"
+
+        filename = f"{level}_{difficulty}{suffix}_master.json"
+        test_data[level] = random.sample(
+            _load_master_questions(filename), count
         )
-        raise FileNotFoundError(message)
 
-    # Save per-candidate JSON
-    json_path = f"{TEST_DIR}/{uid}_{difficulty}.json"
+    json_path = os.path.join(TEST_DIR, f"{uid}_{difficulty}.json")
+
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(test_data, f, indent=4)
 
-    print(f"✔ Test created → {json_path}")
     return uid, json_path

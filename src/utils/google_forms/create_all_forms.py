@@ -1,3 +1,5 @@
+# /opt/interview_app/AI-Driven-Coding-Interview-Automation-System/src/utils/google_forms/create_all_forms.py
+
 import json
 import os
 
@@ -11,12 +13,22 @@ from src.utils.google_forms.html_wrapper import generate_timed_html
 TIMER_MINUTES = 20
 OUTPUT_DIR = "timed_forms"
 
+# MCQ rounds only (L4 is coding → skipped here)
+MCQ_LEVEL_ORDER = ["L1", "L2", "L3", "L5", "L6"]
+
 
 def create_all_google_forms(json_path):
+    """
+    Create Google Forms ONLY for MCQ rounds present in candidate JSON.
+    - Safe for role-based configs
+    - Safe for optional domain round
+    - Does NOT assume L5 always exists
+    - Does NOT touch L4
+    """
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    with open(json_path, "r") as f:
+    with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     candidate = data["candidate"]
@@ -28,48 +40,33 @@ def create_all_google_forms(json_path):
 
     form_ids = {}
 
-    # ---- L1 ----
-    print("🔵 Creating L1 Form...")
-    form_ids["L1"] = create_mcq_form("L1", candidate_uid, data["L1"])
-    generate_timed_html(
-        form_id=form_ids["L1"],
-        minutes=TIMER_MINUTES,
-        output_path=f"{OUTPUT_DIR}/{candidate_uid}_L1_timed.html",
-        title=f"{candidate_uid} - L1 Timed Test"
-    )
+    # ------------------------------------------------
+    # CREATE MCQ FORMS (ONLY IF PRESENT)
+    # ------------------------------------------------
+    for level in MCQ_LEVEL_ORDER:
+        if level not in data:
+            print(f"⚪ Skipping {level} (not applicable for this role)")
+            continue
 
-    # ---- L2 ----
-    print("🔵 Creating L2 Form...")
-    form_ids["L2"] = create_mcq_form("L2", candidate_uid, data["L2"])
-    generate_timed_html(
-        form_id=form_ids["L2"],
-        minutes=TIMER_MINUTES,
-        output_path=f"{OUTPUT_DIR}/{candidate_uid}_L2_timed.html",
-        title=f"{candidate_uid} - L2 Timed Test"
-    )
+        print(f"🔵 Creating {level} Form...")
 
-    # ---- L3 ----
-    print("🔵 Creating L3 Form...")
-    form_ids["L3"] = create_mcq_form("L3", candidate_uid, data["L3"])
-    generate_timed_html(
-        form_id=form_ids["L3"],
-        minutes=TIMER_MINUTES,
-        output_path=f"{OUTPUT_DIR}/{candidate_uid}_L3_timed.html",
-        title=f"{candidate_uid} - L3 Timed Test"
-    )
+        form_ids[level] = create_mcq_form(
+            level,
+            candidate_uid,
+            data[level],
+        )
 
-    # ---- L5 ----
-    print("🔵 Creating L5 Form...")
-    form_ids["L5"] = create_mcq_form("L5", candidate_uid, data["L5"])
-    generate_timed_html(
-        form_id=form_ids["L5"],
-        minutes=TIMER_MINUTES,
-        output_path=f"{OUTPUT_DIR}/{candidate_uid}_L5_timed.html",
-        title=f"{candidate_uid} - L5 Timed Test"
-    )
+        generate_timed_html(
+            form_id=form_ids[level],
+            minutes=TIMER_MINUTES,
+            output_path=f"{OUTPUT_DIR}/{candidate_uid}_{level}_timed.html",
+            title=f"{candidate_uid} - {level} Timed Test",
+        )
 
-    # ❌ REMOVE L4 FORM CREATION
-    print("🟣 L4 Google Form Skipped (Using Localhost Coding Server Instead)")
+    # ------------------------------------------------
+    # L4 IS CODING ROUND (EXTERNAL SERVER)
+    # ------------------------------------------------
+    print("🟣 L4 Google Form Skipped (Using Coding Server Instead)")
 
-    print("\n🎉 ALL MCQ GOOGLE FORMS CREATED!")
+    print("\n🎉 ALL APPLICABLE MCQ GOOGLE FORMS CREATED!")
     return form_ids
