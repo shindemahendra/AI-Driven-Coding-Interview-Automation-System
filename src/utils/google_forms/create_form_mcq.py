@@ -3,18 +3,34 @@
 from src.utils.google_forms.form_api import get_forms_service
 
 
-def _dedupe_options(options):
+def _clean_text(text: str) -> str:
     """
-    Remove duplicate options while preserving order.
-    Also trims whitespace to avoid Google Forms rejection.
+    Google Forms does NOT allow newlines.
+    This function:
+    - Removes \n and \r
+    - Collapses extra spaces
+    """
+    if not text:
+        return ""
+
+    return " ".join(str(text).replace("\n", " ").replace("\r", " ").split())
+
+
+def _dedupe_and_clean_options(options):
+    """
+    - Remove duplicate options (case-insensitive)
+    - Remove newlines
+    - Preserve order
     """
     seen = set()
     clean = []
 
     for opt in options:
-        val = str(opt).strip()
-        if val.lower() not in seen:
-            seen.add(val.lower())
+        val = _clean_text(opt)
+        key = val.lower()
+
+        if key and key not in seen:
+            seen.add(key)
             clean.append(val)
 
     return clean
@@ -22,9 +38,10 @@ def _dedupe_options(options):
 
 def create_mcq_form(level: str, candidate_uid: str, questions: list):
     """
-    Create a Google Form MCQ safely.
-    - Deduplicates options per question
-    - Prevents Google Forms API 400 errors
+    SAFE Google Form MCQ creation:
+    - Removes duplicate options
+    - Removes newlines (CRITICAL FIX)
+    - Prevents Google Forms 400 errors
     """
 
     forms_service = get_forms_service()
@@ -45,24 +62,23 @@ def create_mcq_form(level: str, candidate_uid: str, questions: list):
     )
 
     form_id = form["formId"]
-
     requests = []
 
     for idx, q in enumerate(questions):
+        question_text = _clean_text(q.get("question", ""))
         raw_options = q.get("options", [])
 
-        # ✅ CRITICAL FIX HERE
-        options = _dedupe_options(raw_options)
+        options = _dedupe_and_clean_options(raw_options)
 
-        # Safety fallback (Google requires >= 2 options)
-        if len(options) < 2:
+        # Google requires at least 2 options
+        if not question_text or len(options) < 2:
             continue
 
         requests.append(
             {
                 "createItem": {
                     "item": {
-                        "title": q["question"],
+                        "title": question_text,
                         "questionItem": {
                             "question": {
                                 "required": True,
@@ -81,7 +97,7 @@ def create_mcq_form(level: str, candidate_uid: str, questions: list):
         )
 
     # -------------------------------------------------
-    # APPLY BATCH UPDATE
+    # APPLY UPDATE
     # -------------------------------------------------
     if requests:
         forms_service.forms().batchUpdate(
