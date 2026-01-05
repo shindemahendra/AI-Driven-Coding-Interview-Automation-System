@@ -180,15 +180,37 @@ if st.button("🚀 Generate Tests for All Candidates"):
     total = len(ui["candidates"])
 
     for i, cand in enumerate(ui["candidates"], start=1):
+
+        domain_selected = cand["domain"] != "None"
+
         uid, json_path = run_candidate_test_generation_by_role(
             full_name=cand["name"],
             email=cand["email"],
             role_key=cand["role"],
-            domain=None if cand["domain"] == "None" else cand["domain"].lower(),
+            domain=None if not domain_selected else cand["domain"].lower(),
         )
 
-        forms = create_all_google_forms(json_path)
+        # ---- Create Google Forms from JSON ----
+        raw_forms = create_all_google_forms(json_path)
 
+        # ---- FIX: L5 / L6 MAPPING BASED ON DOMAIN ----
+        forms = {}
+
+        forms["L1"] = raw_forms.get("L1")
+        forms["L2"] = raw_forms.get("L2")
+        forms["L3"] = raw_forms.get("L3")
+
+        # L4 is added later (coding)
+        # L5/L6 logic:
+        if domain_selected:
+            # Domain → L5, Soft Skills → L6
+            forms["L5"] = raw_forms.get("L5")   # domain
+            forms["L6"] = raw_forms.get("L6")   # soft skills
+        else:
+            # No domain → Soft Skills stays at L5
+            forms["L5"] = raw_forms.get("L5")
+
+        # ---- START L4 CODING SERVER ----
         port = 5001
         while True:
             try:
@@ -210,6 +232,7 @@ if st.button("🚀 Generate Tests for All Candidates"):
 
         cand["forms"] = forms
         cand["json_path"] = json_path
+
         progress.progress(i / total)
 
     commit_state()
