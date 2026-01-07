@@ -245,7 +245,7 @@ def build_email_links(forms: dict) -> dict:
 # ================================================================
 # ADD CANDIDATE
 # ================================================================
-if len(ui["candidates"]) < 10:
+if len(ui["candidates"]) < 30:
     if st.button("➕ Add Candidate"):
         ui["candidates"].append({
             "name": "",
