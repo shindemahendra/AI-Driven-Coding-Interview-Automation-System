@@ -527,9 +527,12 @@ if st.button("Evaluate Selected", key="eval_btn"):
                 )
 
             elif rnd in cand.get("forms", {}):
-                form_entry = cand["forms"][rnd]
+                form_entry = cand["forms"].get(rnd)
 
-                # form_entry is a dict for MCQ rounds
+                # 🚨 Skip if round not applicable / not generated
+                if not isinstance(form_entry, dict):
+                    continue
+
                 form_id = form_entry.get("form_id")
                 if not form_id:
                     continue
@@ -538,6 +541,7 @@ if st.button("Evaluate Selected", key="eval_btn"):
                     form_id,
                     cand["json_path"]
                 )
+
 
 
             # -------- NOT ATTEMPTED --------
