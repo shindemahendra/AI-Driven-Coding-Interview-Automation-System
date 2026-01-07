@@ -40,8 +40,9 @@ def create_mcq_form(level: str, candidate_uid: str, questions: list):
     """
     SAFE Google Form MCQ creation:
     - Removes duplicate options
-    - Removes newlines (CRITICAL FIX)
+    - Removes newlines
     - Prevents Google Forms 400 errors
+    - RETURNS PUBLIC RESPONDER URL (CRITICAL FIX)
     """
 
     forms_service = get_forms_service()
@@ -62,6 +63,10 @@ def create_mcq_form(level: str, candidate_uid: str, questions: list):
     )
 
     form_id = form["formId"]
+
+    # ✅ CRITICAL LINE (DO NOT REMOVE)
+    responder_uri = form["responderUri"]
+
     requests = []
 
     for idx, q in enumerate(questions):
@@ -105,4 +110,5 @@ def create_mcq_form(level: str, candidate_uid: str, questions: list):
             body={"requests": requests},
         ).execute()
 
-    return form_id
+    # ✅ RETURN PUBLIC URL (NOT form_id)
+    return responder_uri

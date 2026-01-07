@@ -9,6 +9,105 @@ import streamlit as st
 import pandas as pd
 
 # ================================================================
+# ROUND DISPLAY LABELS (UI ONLY)
+# ================================================================
+ROUND_LABELS_BY_ROLE = {
+    "python_entry": {
+        "L1": "Aptitude",
+        "L2": "Python",
+        "L3": "Python Debugging",
+        "L4": "Coding Round",
+        "L5": "Soft Skills",
+    },
+
+    "java_entry": {
+        "L1": "Aptitude",
+        "L2": "Java",
+        "L3": "Java Debugging",
+        "L4": "Coding Round",
+        "L5": "Soft Skills",
+    },
+
+    "js_entry": {
+        "L1": "Aptitude",
+        "L2": "JavaScript",
+        "L3": "JS Debugging",
+        "L4": "Coding Round",
+        "L5": "Soft Skills",
+    },
+
+    "python_qa": {
+        "L1": "Aptitude",
+        "L2": "Python",
+        "L3": "QA & Testing",
+        "L4": "Coding Round",
+        "L5": "Soft Skills",
+    },
+
+    "python_qa_linux": {
+        "L1": "Linux",
+        "L2": "Python",
+        "L3": "QA & Testing",
+        "L4": "Coding Round",
+        "L5": "Soft Skills",
+    },
+
+    "python_dev": {
+        "L1": "Aptitude",
+        "L2": "Python",
+        "L3": "Python Dev",
+        "L4": "Coding Round",
+        "L5": "Soft Skills",
+    },
+
+    "python_ai_ml": {
+        "L1": "Aptitude",
+        "L2": "Python",
+        "L3": "AI / ML",
+        "L4": "Coding Round",
+        "L5": "Soft Skills",
+    },
+
+    "java_aws": {
+        "L1": "Aptitude",
+        "L2": "Java",
+        "L3": "AWS",
+        "L4": "Coding Round",
+        "L5": "Soft Skills",
+    },
+
+    "java_qa": {
+        "L1": "Aptitude",
+        "L2": "Java",
+        "L3": "QA & Testing",
+        "L4": "Coding Round",
+        "L5": "Soft Skills",
+    },
+}
+
+def get_round_label(role_key: str, round_key: str, domain: str | None):
+    """
+    Returns human-readable label for a round.
+    UI-only helper.
+    """
+
+    base = ROUND_LABELS_BY_ROLE.get(role_key, {})
+
+    # Coding is always fixed
+    if round_key == "L4":
+        return "Coding Round"
+
+    # Domain selected → swap L5 / L6
+    if domain and domain != "None":
+        if round_key == "L5":
+            return f"Domain – {domain.capitalize()}"
+        if round_key == "L6":
+            return "Soft Skills"
+
+    return base.get(round_key, round_key)
+
+
+# ================================================================
 # VM IP (DO NOT TOUCH – WORKING)
 # ================================================================
 def get_vm_ip():
@@ -126,6 +225,23 @@ with reset_col:
         commit_state()
         st.rerun()
 
+def build_email_links(forms: dict) -> dict:
+    """
+    Forms dict already contains FULL URLs.
+    This function exists only for clarity & safety.
+    """
+    email_links = {}
+
+    for rnd, url in forms.items():
+        if not url:
+            continue
+
+        # L4 is coding server URL, others are Google Form URLs
+        email_links[rnd] = url.strip()
+
+    return email_links
+
+
 # ================================================================
 # ADD CANDIDATE
 # ================================================================
@@ -144,12 +260,22 @@ if len(ui["candidates"]) < 10:
 # ================================================================
 # CANDIDATE ROWS
 # ================================================================
+from src.utils.email.send_assessment_email import send_assessment_email
+
 for idx, cand in enumerate(ui["candidates"]):
-    cols = st.columns([3, 3, 3, 2, 0.4])
 
-    cand["name"] = cols[0].text_input("Name", cand["name"], key=f"name_{idx}")
-    cand["email"] = cols[1].text_input("Email", cand["email"], key=f"email_{idx}")
+    # 🔧 Added one more column for Email button
+    cols = st.columns([3, 3, 3, 2, 1, 0.4])
 
+    # -------- Name & Email --------
+    cand["name"] = cols[0].text_input(
+        "Name", cand["name"], key=f"name_{idx}"
+    )
+    cand["email"] = cols[1].text_input(
+        "Email", cand["email"], key=f"email_{idx}"
+    )
+
+    # -------- Role --------
     role_label = cols[2].selectbox(
         "Role",
         options=list(ROLE_OPTIONS.keys()),
@@ -158,6 +284,7 @@ for idx, cand in enumerate(ui["candidates"]):
     )
     cand["role"] = ROLE_OPTIONS[role_label]
 
+    # -------- Domain --------
     cand["domain"] = cols[3].selectbox(
         "Domain (optional)",
         DOMAIN_OPTIONS,
@@ -165,12 +292,51 @@ for idx, cand in enumerate(ui["candidates"]):
         key=f"domain_{idx}",
     )
 
-    if cols[4].button("✕", key=f"remove_{idx}"):
+    # -------- Send Email Button --------
+    if cols[4].button("📧 Send Links", key=f"mail_{idx}"):
+
+        if not cand.get("forms"):
+            st.warning("⚠️ Generate tests before sending email.")
+        else:
+            # Human readable labels (already correct)
+            round_labels = {
+                rnd: get_round_label(
+                    cand["role"],
+                    rnd,
+                    None if cand["domain"] == "None" else cand["domain"]
+                )
+                for rnd in cand["forms"]
+            }
+
+            try:
+                # 🔥 USE FORMS AS-IS (FULL URLs)
+                email_links = build_email_links(cand["forms"])
+
+                # DEBUG (KEEP THIS FOR NOW)
+                st.write("EMAIL LINKS BEING SENT:")
+                st.json(email_links)
+
+                send_assessment_email(
+                    candidate_name=cand["name"],
+                    candidate_email=cand["email"],
+                    company_name="Aziro Technologies Pvt Ltd",
+                    round_links=email_links,  # ✅ FULL URLs
+                    round_labels=round_labels,
+                )
+
+                st.success(f"✅ Email sent to {cand['email']}")
+
+            except Exception as e:
+                st.error(f"❌ Email failed: {e}")
+
+
+    # -------- Remove Candidate --------
+    if cols[5].button("✕", key=f"remove_{idx}"):
         ui["candidates"].pop(idx)
         commit_state()
         st.rerun()
 
-commit_state()
+    commit_state()
 
 # ================================================================
 # GENERATE TESTS
@@ -239,7 +405,7 @@ if st.button("🚀 Generate Tests for All Candidates"):
     st.success("All candidate tests generated successfully")
 
 # ================================================================
-# TEST LINKS (UNCHANGED UI, SAFE)
+# TEST LINKS (FINAL – DO NOT MODIFY URL)
 # ================================================================
 if ui["candidates"]:
     st.header("Test Links")
@@ -255,13 +421,16 @@ if ui["candidates"]:
             if not link:
                 continue
 
-            url = (
-                link
-                if lvl == "L4"
-                else f"https://docs.google.com/forms/d/{link}/viewform"
-            )
-            cols[i].markdown(f"[Test ({lvl})]({url})")
+            # ✅ USE LINK AS-IS (FULL URL)
+            url = link
 
+            label = get_round_label(
+                cand["role"],
+                lvl,
+                None if cand["domain"] == "None" else cand["domain"]
+            )
+
+            cols[i].markdown(f"[{label} ({lvl})]({url})")
 
 # ================================================================
 # EVALUATION
@@ -383,9 +552,19 @@ os.makedirs(LOCAL_TMP_DIR, exist_ok=True)
 
 
 def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
+    """
+    FINAL RESULT EXPORT (CSV + LINK)
+
+    - One CSV per candidate
+    - Contains L1–L6
+    - Replaces existing file
+    - Returns Google Drive file_id
+    """
+
     csv_path = f"{LOCAL_TMP_DIR}/{uid}_results.csv"
     ROUND_ORDER = ["L1", "L2", "L3", "L4", "L5", "L6"]
 
+    # -------- Write CSV locally --------
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow([
@@ -417,6 +596,7 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
     drive = get_drive_service()
     file_name = f"{uid}_results.csv"
 
+    # -------- Delete existing CSV if any --------
     query = (
         f"name='{file_name}' and "
         f"'{GOOGLE_DRIVE_FOLDER_ID}' in parents and trashed=false"
@@ -428,7 +608,8 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
     for f in existing:
         drive.files().delete(fileId=f["id"]).execute()
 
-    drive.files().create(
+    # -------- Upload new CSV --------
+    uploaded = drive.files().create(
         body={
             "name": file_name,
             "parents": [GOOGLE_DRIVE_FOLDER_ID],
@@ -436,6 +617,8 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
         media_body=csv_path,
         fields="id",
     ).execute()
+
+    return uploaded["id"]
 
 
 # ================================================================
@@ -465,12 +648,23 @@ for label in ui["evaluation_selected_candidates"]:
             "📄 Save Results as CSV",
             key=f"csv_btn_{uid}"
         ):
-            generate_candidate_csv_and_upload(
+            file_id = generate_candidate_csv_and_upload(
                 uid=uid,
                 cand=cand,
                 results=results
             )
+
+            ui["evaluation_cache"].setdefault(uid, {})
+            ui["evaluation_cache"][uid]["csv_file_id"] = file_id
+            commit_state()
+
             st.success("✅ CSV generated & uploaded to Google Drive")
+
+    # 🔗 OPEN CSV LINK (THIS IS THE FIX YOU ASKED)
+    csv_file_id = results.get("csv_file_id")
+    if csv_file_id:
+        csv_url = f"https://drive.google.com/file/d/{csv_file_id}/view"
+        st.markdown(f"🔗 [Open CSV Results]({csv_url})")
 
     # ---- Per-round details ----
     for rnd in ["L1", "L2", "L3", "L4", "L5", "L6"]:
@@ -481,7 +675,13 @@ for label in ui["evaluation_selected_candidates"]:
         score = res.get("score_percent", 0.0)
         status = res.get("status", "NO_RESPONSE")
 
-        with st.expander(f"{rnd} | {score}% | {status}"):
+        label_name = get_round_label(
+            cand["role"],
+            rnd,
+            None if cand["domain"] == "None" else cand["domain"]
+        )
+
+        with st.expander(f"{label_name} ({rnd}) | {score}% | {status}"):
             st.json({
                 "Total Questions": res.get("total_questions", 0),
                 "Correct Answers": res.get("correct_count", 0),
