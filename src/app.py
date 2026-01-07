@@ -163,7 +163,7 @@ from src.utils.google_forms.evaluate_round import (
     evaluate_round_core,
     evaluate_l4_round,
 )
-from src.utils.google_forms.save_results_to_sheet import save_round_result
+#from src.utils.google_forms.save_results_to_sheet import save_round_result
 from generate_candidate_test import run_candidate_test_generation_by_role
 
 # ================================================================
@@ -526,12 +526,16 @@ if st.button("Evaluate Selected", key="eval_btn"):
                     }
                 )
 
-            # -------- MCQ ROUNDS --------
             elif rnd in cand.get("forms", {}):
                 form_entry = cand["forms"][rnd]
 
+                # form_entry is a dict for MCQ rounds
+                form_id = form_entry.get("form_id")
+                if not form_id:
+                    continue
+
                 res = evaluate_round_core(
-                    form_entry["form_id"],  # ✅ API needs form_id
+                    form_id,
                     cand["json_path"]
                 )
 
@@ -559,32 +563,78 @@ if st.button("Evaluate Selected", key="eval_btn"):
         st.warning("⚠️ No rounds were evaluated.")
 
 
-# ================================================================
-# CSV EXPORT + GOOGLE DRIVE UPLOAD
-# ================================================================
 import csv
+import os
 from datetime import datetime
 from src.utils.google_forms.form_api import get_drive_service
 
-GOOGLE_DRIVE_FOLDER_ID = "1pcXw5Rn-2z3YBULkkbTmiPo91P9xxjRm"
+GOOGLE_DRIVE_RESULTS_ROOT = "1pcXw5Rn-2z3YBULkkbTmiPo91P9xxjRm"
 LOCAL_TMP_DIR = "/opt/interview_app/tmp_results"
 os.makedirs(LOCAL_TMP_DIR, exist_ok=True)
 
 
+def safe_filename(text: str) -> str:
+    return "_".join(text.strip().split())
+
+
+def get_or_create_drive_folder(drive, name: str, parent_id: str) -> str:
+    query = (
+        f"name='{name}' and "
+        f"mimeType='application/vnd.google-apps.folder' and "
+        f"'{parent_id}' in parents and trashed=false"
+    )
+
+    res = drive.files().list(q=query, fields="files(id)").execute()
+    files = res.get("files", [])
+
+    if files:
+        return files[0]["id"]
+
+    folder = drive.files().create(
+        body={
+            "name": name,
+            "mimeType": "application/vnd.google-apps.folder",
+            "parents": [parent_id],
+        },
+        fields="id",
+    ).execute()
+
+    return folder["id"]
+
+
 def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
     """
-    FINAL RESULT EXPORT (CSV + LINK)
+    FINAL CSV EXPORT ONLY (NO SHEETS)
 
-    - One CSV per candidate
-    - Contains L1–L6
-    - Replaces existing file
-    - Returns Google Drive file_id
+    Folder structure:
+    Results/
+      └── Jan_7_2026/
+           └── python_qa/
+                └── FullName_UID.csv
     """
 
-    csv_path = f"{LOCAL_TMP_DIR}/{uid}_results.csv"
+    drive = get_drive_service()
+
+    # -------- Date folder --------
+    today_folder_name = datetime.now().strftime("%b_%d_%Y")  # Jan_7_2026
+    date_folder_id = get_or_create_drive_folder(
+        drive, today_folder_name, GOOGLE_DRIVE_RESULTS_ROOT
+    )
+
+    # -------- Role folder --------
+    role_folder_name = cand["role"]
+    role_folder_id = get_or_create_drive_folder(
+        drive, role_folder_name, date_folder_id
+    )
+
+    # -------- CSV filename --------
+    safe_name = safe_filename(cand["name"])
+    filename = f"{safe_name}_{uid}.csv"
+    csv_path = os.path.join(LOCAL_TMP_DIR, filename)
+
     ROUND_ORDER = ["L1", "L2", "L3", "L4", "L5", "L6"]
 
-    # -------- Write CSV locally --------
+    # -------- Write CSV --------
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow([
@@ -613,33 +663,26 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
                 datetime.now().isoformat(timespec="seconds"),
             ])
 
-    drive = get_drive_service()
-    file_name = f"{uid}_results.csv"
-
-    # -------- Delete existing CSV if any --------
+    # -------- Delete existing file if any --------
     query = (
-        f"name='{file_name}' and "
-        f"'{GOOGLE_DRIVE_FOLDER_ID}' in parents and trashed=false"
+        f"name='{filename}' and "
+        f"'{role_folder_id}' in parents and trashed=false"
     )
-    existing = drive.files().list(
-        q=query, fields="files(id)"
-    ).execute().get("files", [])
-
+    existing = drive.files().list(q=query, fields="files(id)").execute().get("files", [])
     for f in existing:
         drive.files().delete(fileId=f["id"]).execute()
 
-    # -------- Upload new CSV --------
+    # -------- Upload CSV --------
     uploaded = drive.files().create(
         body={
-            "name": file_name,
-            "parents": [GOOGLE_DRIVE_FOLDER_ID],
+            "name": filename,
+            "parents": [role_folder_id],
         },
         media_body=csv_path,
         fields="id",
     ).execute()
 
     return uploaded["id"]
-
 
 # ================================================================
 # DISPLAY EVALUATION RESULTS (UI FEEDBACK)
