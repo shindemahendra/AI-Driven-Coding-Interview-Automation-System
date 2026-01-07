@@ -111,4 +111,8 @@ def create_mcq_form(level: str, candidate_uid: str, questions: list):
         ).execute()
 
     # ✅ RETURN PUBLIC URL (NOT form_id)
-    return responder_uri
+    return {
+        "form_id": form_id,
+        "responder_url": responder_uri
+    }
+

@@ -50,11 +50,13 @@ def create_all_google_forms(json_path):
 
         print(f"🔵 Creating {level} Form...")
 
-        form_ids[level] = create_mcq_form(
+        form_data = create_mcq_form(
             level,
             candidate_uid,
             data[level],
         )
+
+        form_ids[level] = form_data
 
         generate_timed_html(
             form_id=form_ids[level],

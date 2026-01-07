@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import os
 import sys
 import time
@@ -226,18 +229,16 @@ with reset_col:
         st.rerun()
 
 def build_email_links(forms: dict) -> dict:
-    """
-    Forms dict already contains FULL URLs.
-    This function exists only for clarity & safety.
-    """
     email_links = {}
 
-    for rnd, url in forms.items():
-        if not url:
+    for rnd, entry in forms.items():
+        if not entry:
             continue
 
-        # L4 is coding server URL, others are Google Form URLs
-        email_links[rnd] = url.strip()
+        if rnd == "L4":
+            email_links[rnd] = entry
+        else:
+            email_links[rnd] = entry["responder_url"]
 
     return email_links
 
@@ -405,10 +406,11 @@ if st.button("🚀 Generate Tests for All Candidates"):
     st.success("All candidate tests generated successfully")
 
 # ================================================================
-# TEST LINKS (FINAL – DO NOT MODIFY URL)
+# TEST LINKS (FINAL – SAFE FOR MIXED TYPES)
 # ================================================================
 if ui["candidates"]:
     st.header("Test Links")
+
     for cand in ui["candidates"]:
         if not cand.get("forms"):
             continue
@@ -417,12 +419,27 @@ if ui["candidates"]:
         cols = st.columns(6)
 
         for i, lvl in enumerate(["L1", "L2", "L3", "L4", "L5", "L6"]):
-            link = cand["forms"].get(lvl)
-            if not link:
+            entry = cand["forms"].get(lvl)
+            if not entry:
                 continue
 
-            # ✅ USE LINK AS-IS (FULL URL)
-            url = link
+            # -------------------------------
+            # L4 = coding server (string URL)
+            # -------------------------------
+            if lvl == "L4":
+                url = entry
+
+            # -------------------------------
+            # MCQ rounds = dict with responder_url
+            # -------------------------------
+            elif isinstance(entry, dict):
+                url = entry.get("responder_url")
+
+            else:
+                continue
+
+            if not url:
+                continue
 
             label = get_round_label(
                 cand["role"],
@@ -511,10 +528,13 @@ if st.button("Evaluate Selected", key="eval_btn"):
 
             # -------- MCQ ROUNDS --------
             elif rnd in cand.get("forms", {}):
+                form_entry = cand["forms"][rnd]
+
                 res = evaluate_round_core(
-                    cand["forms"][rnd],
+                    form_entry["form_id"],  # ✅ API needs form_id
                     cand["json_path"]
                 )
+
 
             # -------- NOT ATTEMPTED --------
             else:
