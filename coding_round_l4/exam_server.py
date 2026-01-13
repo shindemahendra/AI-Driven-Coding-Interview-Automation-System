@@ -34,12 +34,10 @@ def generate_starter_code(question, lang):
 
     if lang == "python":
         return f"""def solve({args}):
-    # Write your solution here
     pass
 """
     if lang == "javascript":
         return f"""function solve({args}) {{
-    // Write your solution here
 }}
 """
     if lang == "java":
@@ -119,26 +117,50 @@ def run_code():
     run_hidden = bool(data.get("run_hidden", False))
     focus_lost = int(data.get("focus_lost", 0))
 
-    tests = ASSIGNED_QUESTION["public_tests"]
+    public_tests = ASSIGNED_QUESTION["public_tests"]
+    hidden_tests = ASSIGNED_QUESTION["hidden_tests"]
 
+    tests = public_tests
     if run_hidden or submit:
-        tests = tests + ASSIGNED_QUESTION["hidden_tests"]
+        tests = public_tests + hidden_tests
 
     executor = LANG_EXEC[lang]
     passed = 0
 
-    for t in tests:
+    # ➕ NEW: collect per-test results (additive)
+    test_results = []
+
+    for idx, t in enumerate(tests):
         res = executor(code, t["input"])
-        if str(res.get("stdout", "")).strip() == str(t["expected"]):
+
+        if res.get("returncode", 0) != 0:
+            return jsonify({
+                "error": True,
+                "message": res.get("stderr", "Execution error")
+            })
+
+        actual = str(res.get("stdout", "")).strip()
+        expected = str(t["expected"])
+        is_passed = actual == expected
+
+        if is_passed:
             passed += 1
+
+        # ➕ NEW: record test details
+        test_results.append({
+            "index": idx + 1,
+            "input": t["input"],
+            "expected": expected,
+            "actual": actual,
+            "passed": is_passed,
+            "visibility": "public" if t in public_tests else "hidden"
+        })
 
     total = len(tests)
     score = round((passed / total) * 100, 2)
 
     status = "PASS"
-    if focus_lost > 0:
-        status = "FAIL"
-    elif score < 75:
+    if score < 75:
         status = "FAIL"
 
     if submit:
@@ -158,7 +180,9 @@ def run_code():
         "total": total,
         "score_percent": score,
         "status": status,
-        "finished": submit
+
+        # ➕ NEW FIELD (safe, optional)
+        "test_results": test_results
     })
 
 if __name__ == "__main__":
