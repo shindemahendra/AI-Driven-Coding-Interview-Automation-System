@@ -13,12 +13,50 @@ const violationDisplay = document.getElementById("violation-display");
 const langSelect = document.getElementById("lang-select");
 
 // ===========================================================
-// STARTER CODE
+// CONSTANTS & STORAGE KEYS
 // ===========================================================
-editor.value = STARTERS["python"];
+const TOTAL_TIME_SECONDS = 30 * 60;
+
+const STORAGE_KEYS = {
+    START_TIME: "examStartTime",
+    FOCUS_COUNT: "focusLostCount",
+    CODE: "savedCode"
+};
 
 // ===========================================================
-// SAMPLE TESTS
+// STATE FLAGS
+// ===========================================================
+let examFinished = false;
+let isPageRefreshing = false;
+
+// ===========================================================
+// RESTORE STATE ON LOAD
+// ===========================================================
+let examStartTime = sessionStorage.getItem(STORAGE_KEYS.START_TIME);
+if (!examStartTime) {
+    examStartTime = Date.now();
+    sessionStorage.setItem(STORAGE_KEYS.START_TIME, examStartTime);
+} else {
+    examStartTime = parseInt(examStartTime, 10);
+}
+
+let tabViolations = parseInt(
+    sessionStorage.getItem(STORAGE_KEYS.FOCUS_COUNT) || "0",
+    10
+);
+
+violationDisplay.textContent =
+    tabViolations > 0 ? `Focus lost ${tabViolations} time(s)` : "Focus OK";
+
+const savedCode = sessionStorage.getItem(STORAGE_KEYS.CODE);
+if (savedCode !== null) {
+    editor.value = savedCode;
+} else {
+    editor.value = STARTERS["python"];
+}
+
+// ===========================================================
+// SAMPLE TESTS (LEFT PANEL) — UNCHANGED
 // ===========================================================
 if (QUESTION && Array.isArray(QUESTION.public_tests)) {
     QUESTION.public_tests.forEach((t, idx) => {
@@ -47,42 +85,68 @@ function appendOutput(msg) {
 }
 
 // ===========================================================
-// TIMER & PROCTORING
+// TIMER LOGIC (REFRESH SAFE, 30 MIN, STOPS AT 0:00)
 // ===========================================================
-let examFinished = false;
-let tabViolations = 0;
-let timeLeft = 20 * 60;
-
 function formatTime(seconds) {
     const m = Math.floor(seconds / 60);
     const s = seconds % 60;
     return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
+function computeTimeLeft() {
+    const elapsed = Math.floor((Date.now() - examStartTime) / 1000);
+    return Math.max(TOTAL_TIME_SECONDS - elapsed, 0);
+}
+
+let timeLeft = computeTimeLeft();
 timerDisplay.textContent = formatTime(timeLeft);
 
 const timerId = setInterval(() => {
     if (examFinished) return;
 
-    timeLeft--;
+    timeLeft = computeTimeLeft();
+    timerDisplay.textContent = formatTime(timeLeft);
+
     if (timeLeft <= 60) timerDisplay.style.color = "#ff5555";
 
     if (timeLeft <= 0) {
-        appendOutput("\n⏳ Time is up! Auto-submitting...");
+        setOutput("\n⏳ Time is up! Auto-submitting...");
         submitTest();
         clearInterval(timerId);
-        return;
     }
-
-    timerDisplay.textContent = formatTime(timeLeft);
 }, 1000);
 
+// ===========================================================
+// REFRESH DETECTION (PREVENT FALSE FOCUS LOST)
+// ===========================================================
+window.addEventListener("beforeunload", () => {
+    isPageRefreshing = true;
+});
+
+// ===========================================================
+// TAB SWITCH DETECTION (ONLY REAL TAB SWITCHES)
+// ===========================================================
 document.addEventListener("visibilitychange", () => {
     if (!examFinished && document.hidden) {
+        if (isPageRefreshing) return;
+
         tabViolations++;
+        sessionStorage.setItem(STORAGE_KEYS.FOCUS_COUNT, tabViolations);
+
         violationDisplay.textContent = `Focus lost ${tabViolations} time(s)`;
         appendOutput(`[Proctor] Focus lost #${tabViolations}`);
+
+        alert(
+            `⚠️ Warning!\n\nTab switch detected.\nFocus lost: ${tabViolations} time(s).\n\nPlease stay on the test tab.`
+        );
     }
+});
+
+// ===========================================================
+// EDITOR AUTO-SAVE (REFRESH SAFE)
+// ===========================================================
+editor.addEventListener("input", () => {
+    sessionStorage.setItem(STORAGE_KEYS.CODE, editor.value);
 });
 
 // ===========================================================
@@ -113,20 +177,58 @@ async function executeTests({ submit = false, runHidden = false }) {
 }
 
 // ===========================================================
+// TEST CASE DETAILS RENDERER (ADDITIVE ONLY)
+// ===========================================================
+function appendTestResults(testResults) {
+    if (!Array.isArray(testResults)) return;
+
+    appendOutput("\n📋 Test Case Details:\n");
+
+    testResults.forEach(tc => {
+        appendOutput(
+            `${tc.passed ? "✅" : "❌"} Test Case ${tc.index} (${tc.visibility})`
+        );
+        appendOutput(`Input: ${JSON.stringify(tc.input)}`);
+        appendOutput(`Expected: ${tc.expected}`);
+        appendOutput(`Actual: ${tc.actual}\n`);
+    });
+}
+
+// ===========================================================
 // BUTTON ACTIONS
 // ===========================================================
 async function runPublicTests() {
     const result = await executeTests({ submit: false, runHidden: false });
 
+    if (result.error) {
+        setOutput("❌ Error:\n\n" + result.message);
+        scoreDisplay.textContent = "Score: 0/0";
+        return;
+    }
+
     scoreDisplay.textContent = `Score: ${result.passed}/${result.total}`;
     setOutput(`✅ Public Tests Passed: ${result.passed}/${result.total}`);
+
+    // ADDITIVE: show per-test details
+    appendTestResults(
+        result.test_results.filter(t => t.visibility === "public")
+    );
 }
 
 async function runHiddenTests() {
     const result = await executeTests({ submit: false, runHidden: true });
 
+    if (result.error) {
+        setOutput("❌ Error:\n\n" + result.message);
+        scoreDisplay.textContent = "Hidden: 0/0";
+        return;
+    }
+
     scoreDisplay.textContent = `Hidden: ${result.passed}/${result.total}`;
     setOutput(`🔒 Hidden Tests Passed: ${result.passed}/${result.total}`);
+
+    // ADDITIVE: show per-test details
+    appendTestResults(result.test_results);
 }
 
 async function submitTest() {
@@ -140,10 +242,11 @@ async function submitTest() {
     const result = await executeTests({ submit: true });
 
     scoreDisplay.textContent = `Final Score: ${result.passed}/${result.total}`;
-    setOutput(
-        "✅ Test submitted successfully.\n\n" +
-        "You may now close this page."
-    );
+    setOutput("✅ Test submitted successfully.\n\nYou may now close this page.");
+
+    sessionStorage.removeItem(STORAGE_KEYS.START_TIME);
+    sessionStorage.removeItem(STORAGE_KEYS.FOCUS_COUNT);
+    sessionStorage.removeItem(STORAGE_KEYS.CODE);
 }
 
 // ===========================================================
@@ -155,5 +258,6 @@ submitBtn.addEventListener("click", submitTest);
 
 langSelect.addEventListener("change", () => {
     editor.value = STARTERS[langSelect.value];
+    sessionStorage.setItem(STORAGE_KEYS.CODE, editor.value);
     setOutput(`📝 ${langSelect.value.toUpperCase()} template loaded`);
 });
