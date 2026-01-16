@@ -573,8 +573,18 @@ from datetime import datetime
 from src.utils.google_forms.form_api import get_drive_service
 
 GOOGLE_DRIVE_RESULTS_ROOT = "1pcXw5Rn-2z3YBULkkbTmiPo91P9xxjRm"
-LOCAL_TMP_DIR = "/opt/interview_app/tmp_results"
-os.makedirs(LOCAL_TMP_DIR, exist_ok=True)
+from pathlib import Path
+import tempfile
+
+# ================================================================
+# LOCAL TEMP RESULTS DIR (OS-AWARE)
+# ================================================================
+if os.name == "nt":  # Windows (local dev)
+    LOCAL_TMP_DIR = Path(tempfile.gettempdir()) / "aziro_tmp_results"
+else:  # Linux (VM / prod)
+    LOCAL_TMP_DIR = Path("/opt/interview_app/tmp_results")
+
+LOCAL_TMP_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def safe_filename(text: str) -> str:
@@ -605,40 +615,58 @@ def get_or_create_drive_folder(drive, name: str, parent_id: str) -> str:
 
     return folder["id"]
 
+from googleapiclient.http import MediaFileUpload
+import os
+import csv
+from datetime import datetime
+
 
 def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
     """
-    FINAL CSV EXPORT ONLY (NO SHEETS)
-
-    Folder structure:
-    Results/
-      └── Jan_7_2026/
-           └── python_qa/
-                └── FullName_UID.csv
+    VM-ONLY IMPLEMENTATION (Ubuntu)
+    - Generates CSV
+    - Generates L4 PDF
+    - Uploads both to SAME Drive folder
     """
 
     drive = get_drive_service()
 
-    # -------- Date folder --------
-    today_folder_name = datetime.now().strftime("%b_%d_%Y")  # Jan_7_2026
+    # ============================================================
+    # Ensure UID is clean (Linux-safe)
+    # ============================================================
+    uid = os.path.basename(uid).replace(".json", "")
+
+    # ============================================================
+    # Google Drive folder structure
+    # Results / <DATE> / <ROLE> /
+    # ============================================================
+    today_folder_name = datetime.now().strftime("%b_%d_%Y")
+
     date_folder_id = get_or_create_drive_folder(
-        drive, today_folder_name, GOOGLE_DRIVE_RESULTS_ROOT
+        drive,
+        today_folder_name,
+        GOOGLE_DRIVE_RESULTS_ROOT
     )
 
-    # -------- Role folder --------
-    role_folder_name = cand["role"]
     role_folder_id = get_or_create_drive_folder(
-        drive, role_folder_name, date_folder_id
+        drive,
+        cand["role"],
+        date_folder_id
     )
 
-    # -------- CSV filename --------
-    safe_name = safe_filename(cand["name"])
-    filename = f"{safe_name}_{uid}.csv"
-    csv_path = os.path.join(LOCAL_TMP_DIR, filename)
+    # ============================================================
+    # Local filesystem (VM)
+    # ============================================================
+    safe_candidate = safe_filename(cand["name"])
+    local_dir = os.path.join(LOCAL_TMP_DIR, safe_candidate)
+    os.makedirs(local_dir, exist_ok=True)
 
-    ROUND_ORDER = ["L1", "L2", "L3", "L4", "L5", "L6"]
+    filename = f"{safe_candidate}_{uid}.csv"
+    csv_path = os.path.join(local_dir, filename)
 
-    # -------- Write CSV --------
+    # ============================================================
+    # Write CSV
+    # ============================================================
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow([
@@ -653,7 +681,7 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
             "Last Updated",
         ])
 
-        for rnd in ROUND_ORDER:
+        for rnd in ["L1", "L2", "L3", "L4", "L5", "L6"]:
             res = results.get(rnd, {})
             writer.writerow([
                 uid,
@@ -667,17 +695,26 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
                 datetime.now().isoformat(timespec="seconds"),
             ])
 
-    # -------- Delete existing file if any --------
+    # ============================================================
+    # Delete existing CSV in Drive (if any)
+    # ============================================================
     query = (
         f"name='{filename}' and "
         f"'{role_folder_id}' in parents and trashed=false"
     )
-    existing = drive.files().list(q=query, fields="files(id)").execute().get("files", [])
+
+    existing = drive.files().list(
+        q=query,
+        fields="files(id)"
+    ).execute().get("files", [])
+
     for f in existing:
         drive.files().delete(fileId=f["id"]).execute()
 
-    # -------- Upload CSV --------
-    uploaded = drive.files().create(
+    # ============================================================
+    # Upload CSV
+    # ============================================================
+    uploaded_csv = drive.files().create(
         body={
             "name": filename,
             "parents": [role_folder_id],
@@ -686,7 +723,60 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
         fields="id",
     ).execute()
 
-    return uploaded["id"]
+    csv_file_id = uploaded_csv["id"]
+
+    # ============================================================
+    # L4 PDF generation + upload
+    # ============================================================
+    pdf_file_id = None
+    l4_result = results.get("L4")
+
+    if l4_result:
+        pdf_path = generate_l4_pdf(
+            output_dir=local_dir,
+            uid=uid,
+            cand=cand,
+            l4_result=l4_result,
+        )
+
+        pdf_name = os.path.basename(pdf_path)
+
+        # Delete existing PDF if any
+        query = (
+            f"name='{pdf_name}' and "
+            f"'{role_folder_id}' in parents and trashed=false"
+        )
+
+        existing_pdfs = drive.files().list(
+            q=query,
+            fields="files(id)"
+        ).execute().get("files", [])
+
+        for f in existing_pdfs:
+            drive.files().delete(fileId=f["id"]).execute()
+
+        media = MediaFileUpload(pdf_path, mimetype="application/pdf")
+
+        uploaded_pdf = drive.files().create(
+            body={
+                "name": pdf_name,
+                "parents": [role_folder_id],
+            },
+            media_body=media,
+            fields="id",
+        ).execute()
+
+        pdf_file_id = uploaded_pdf["id"]
+
+    # ============================================================
+    # Return IDs
+    # ============================================================
+    return {
+        "csv_file_id": csv_file_id,
+        "pdf_file_id": pdf_file_id,
+    }
+
+
 
 # ================================================================
 # DISPLAY EVALUATION RESULTS (UI FEEDBACK)
@@ -712,20 +802,28 @@ for label in ui["evaluation_selected_candidates"]:
 
     with btn_col:
         if st.button(
-            "📄 Save Results as CSV",
-            key=f"csv_btn_{uid}"
+                "📄 Save Results as CSV",
+                key=f"csv_btn_{uid}"
         ):
-            file_id = generate_candidate_csv_and_upload(
+            ids = generate_candidate_csv_and_upload(
                 uid=uid,
                 cand=cand,
                 results=results
             )
 
             ui["evaluation_cache"].setdefault(uid, {})
-            ui["evaluation_cache"][uid]["csv_file_id"] = file_id
+
+            # Store CSV + PDF file IDs
+            ui["evaluation_cache"][uid]["csv_file_id"] = ids.get("csv_file_id")
+            ui["evaluation_cache"][uid]["pdf_file_id"] = ids.get("pdf_file_id")
+
             commit_state()
 
-            st.success("✅ CSV generated & uploaded to Google Drive")
+            st.success("✅ CSV & PDF generated and uploaded to Google Drive")
+    pdf_file_id = results.get("pdf_file_id")
+    if pdf_file_id:
+        pdf_url = f"https://drive.google.com/file/d/{pdf_file_id}/view"
+        st.markdown(f"📑 [Open L4 Coding Report (PDF)]({pdf_url})")
 
     # 🔗 OPEN CSV LINK (THIS IS THE FIX YOU ASKED)
     csv_file_id = results.get("csv_file_id")
