@@ -9,8 +9,6 @@ from pathlib import Path
 import socket
 
 import streamlit as st
-from src.utils.reports.generate_candidate_pdf import generate_candidate_pdf_and_upload
-
 import pandas as pd
 
 # ================================================================
@@ -714,42 +712,26 @@ for label in ui["evaluation_selected_candidates"]:
 
     with btn_col:
         if st.button(
-                "📄 Save Results (CSV + PDF)",
-                key=f"csv_btn_{uid}"
+            "📄 Save Results as CSV",
+            key=f"csv_btn_{uid}"
         ):
-            # ---------- CSV ----------
-            csv_file_id = generate_candidate_csv_and_upload(
+            file_id = generate_candidate_csv_and_upload(
                 uid=uid,
                 cand=cand,
                 results=results
             )
 
-            # ---------- PDF ----------
-            pdf_file_id = generate_candidate_pdf_and_upload(
-                uid=uid,
-                cand=cand,
-                results=results,
-                drive_root_folder_id=GOOGLE_DRIVE_RESULTS_ROOT,
-                local_tmp_dir=LOCAL_TMP_DIR,
-            )
-
             ui["evaluation_cache"].setdefault(uid, {})
-            ui["evaluation_cache"][uid]["csv_file_id"] = csv_file_id
-            ui["evaluation_cache"][uid]["pdf_file_id"] = pdf_file_id
+            ui["evaluation_cache"][uid]["csv_file_id"] = file_id
             commit_state()
 
-            st.success("✅ CSV & PDF generated and uploaded successfully")
+            st.success("✅ CSV generated & uploaded to Google Drive")
 
     # 🔗 OPEN CSV LINK (THIS IS THE FIX YOU ASKED)
     csv_file_id = results.get("csv_file_id")
     if csv_file_id:
         csv_url = f"https://drive.google.com/file/d/{csv_file_id}/view"
         st.markdown(f"🔗 [Open CSV Results]({csv_url})")
-
-    pdf_file_id = results.get("pdf_file_id")
-    if pdf_file_id:
-        pdf_url = f"https://drive.google.com/file/d/{pdf_file_id}/view"
-        st.markdown(f"📄 [Open Detailed PDF Report]({pdf_url})")
 
     # ---- Per-round details ----
     for rnd in ["L1", "L2", "L3", "L4", "L5", "L6"]:
