@@ -1,129 +1,163 @@
 import os
-from textwrap import wrap
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
+from reportlab.lib import colors
 
-from src.utils.reports.l4_summary import generate_l4_summary
+# =========================================================
+# THEME COLORS (ORG SAFE)
+# =========================================================
+HEADING_COLOR = colors.HexColor("#1F4FD8")   # Corporate Blue
+TEXT_COLOR = colors.black
+CODE_COLOR = colors.HexColor("#1F4FD8")      # Dark Purple (code)
+
+PAGE_WIDTH, PAGE_HEIGHT = A4
+LEFT_MARGIN = 50
+TOP_MARGIN = PAGE_HEIGHT - 50
+BOTTOM_MARGIN = 50
 
 
-def generate_l4_pdf(
-    output_dir: str,
-    uid: str,
-    cand: dict,
-    all_results: dict,   # IMPORTANT: full results, not only L4
-) -> str:
+def generate_l4_pdf(output_dir: str, uid: str, cand: dict, all_results: dict) -> str:
     """
-    Generates a detailed PDF report:
-    - Summary of ALL rounds (L1–L6)
-    - Detailed L4 Coding Round section
+    Generates a clean, well-formatted PDF report.
+    DOES NOT change evaluation logic.
     """
 
-    safe_name = "_".join(cand["name"].split())
-    pdf_name = f"{safe_name}_{uid}.pdf"
-    pdf_path = os.path.join(output_dir, pdf_name)
+    os.makedirs(output_dir, exist_ok=True)
+    pdf_path = os.path.join(output_dir, f"{uid}_role.pdf")
 
     c = canvas.Canvas(pdf_path, pagesize=A4)
-    width, height = A4
-    y = height - 40
+    y = TOP_MARGIN
 
-    def write(text="", gap=14):
+    # =====================================================
+    # Helpers
+    # =====================================================
+    def new_page():
         nonlocal y
-        for line in wrap(str(text), 95):
-            c.drawString(40, y, line)
-            y -= gap
-            if y < 40:
-                c.showPage()
-                y = height - 40
+        c.showPage()
+        y = TOP_MARGIN
 
-    # ============================================================
+    def ensure_space(lines=1):
+        nonlocal y
+        if y - (lines * 14) < BOTTOM_MARGIN:
+            new_page()
+
+    def write_heading(text):
+        nonlocal y
+        ensure_space(2)
+        c.setFont("Helvetica-Bold", 12)
+        c.setFillColor(HEADING_COLOR)
+        c.drawString(LEFT_MARGIN, y, text)
+        y -= 20
+        c.setFillColor(TEXT_COLOR)
+        c.setFont("Helvetica", 10)
+
+    def write_subheading(text):
+        nonlocal y
+        ensure_space(1)
+        c.setFont("Helvetica-Bold", 10)
+        c.drawString(LEFT_MARGIN, y, text)
+        y -= 16
+        c.setFont("Helvetica", 10)
+
+    def write_text(text, indent=20, gap=14):
+        nonlocal y
+        ensure_space(1)
+        c.drawString(LEFT_MARGIN + indent, y, text)
+        y -= gap
+
+    def write_code_block(code: str):
+        nonlocal y
+        ensure_space(3)
+        c.setFont("Helvetica-Bold", 9)
+        c.setFillColor(CODE_COLOR)
+
+        for line in code.splitlines():
+            if y < BOTTOM_MARGIN:
+                new_page()
+                c.setFont("Helvetica-Bold", 9)
+                c.setFillColor(CODE_COLOR)
+
+            c.drawString(LEFT_MARGIN + 10, y, line)
+            y -= 12
+
+        c.setFillColor(TEXT_COLOR)
+        c.setFont("Helvetica", 10)
+
+    # =====================================================
     # HEADER
-    # ============================================================
-    write(f"Candidate Name : {cand['name']}")
-    write(f"Email          : {cand['email']}")
-    write(f"UID            : {uid}")
-    write(f"Role           : {cand['role']}")
-    write("")
-    write("=" * 95)
+    # =====================================================
+    c.setFont("Helvetica-Bold", 11)
+    c.drawString(LEFT_MARGIN, y, f"Candidate Name : {cand['name']}")
+    y -= 16
+    c.drawString(LEFT_MARGIN, y, f"Email          : {cand['email']}")
+    y -= 16
+    c.drawString(LEFT_MARGIN, y, f"UID            : {uid}")
+    y -= 16
+    c.drawString(LEFT_MARGIN, y, f"Role           : {cand['role']}")
+    y -= 22
 
-    # ============================================================
-    # ALL ROUNDS SUMMARY
-    # ============================================================
-    write("ROUND-WISE SUMMARY")
-    write("-" * 95)
+    c.line(LEFT_MARGIN, y, PAGE_WIDTH - LEFT_MARGIN, y)
+    y -= 20
 
-    from src.utils.reports.l4_summary import summarize_round
-
-    for rnd in ["L1", "L2", "L3", "L4", "L5", "L6"]:
+    # =====================================================
+    # ALL ROUNDS (EXCEPT L4)
+    # =====================================================
+    for rnd in ["L1", "L2", "L3", "L5", "L6"]:
         res = all_results.get(rnd)
         if not res:
             continue
 
-        write(summarize_round(rnd, res))
+        write_heading(f"{rnd} ROUND")
 
-    write("")
-    write("=" * 95)
+        write_text(f"Total Questions : {res.get('total_questions', 0)}")
+        write_text(f"Score %         : {res.get('score_percent', 0.0)}")
+        write_text(f"Status          : {res.get('status', 'NO_RESPONSE')}")
 
-    # ============================================================
-    # L4 CODING ROUND (DETAILED)
-    # ============================================================
+        summary = f"{rnd}: Not attempted."
+        if res.get("status") != "NO_RESPONSE":
+            summary = f"{rnd}: Performance recorded."
+
+        write_text(f"Summary         : {summary}")
+        y -= 10
+
+    # =====================================================
+    # L4 DETAILED EVALUATION
+    # =====================================================
     l4 = all_results.get("L4")
-    if not l4:
-        write("L4 Coding Round was not attempted.")
-        c.save()
-        return pdf_path
+    if l4:
+        write_heading("L4 CODING ROUND – DETAILED EVALUATION")
 
-    write("L4 CODING ROUND – DETAILED EVALUATION")
-    write("-" * 95)
+        write_text(f"Score  : {l4.get('score_percent', 0.0)}%")
+        write_text(f"Status : {l4.get('status')}")
 
-    score = l4.get("score_percent", 0)
-    status = l4.get("status", "NO_RESPONSE")
+        # Execution details
+        details = l4.get("details", [])
+        if details:
+            y -= 6
+            write_subheading("Execution Details")
+            for idx, d in enumerate(details, 1):
+                write_text(f"{idx}. {d.get('title')}", indent=20)
+                write_text(f"Result   : {d.get('user_answer')}", indent=40)
+                write_text(f"Expected : {d.get('correct_answer')}", indent=40)
+                write_text(f"Correct  : {d.get('is_correct')}", indent=40)
+                y -= 6
 
-    test_cases = l4.get("test_cases", [])
-    passed = sum(1 for t in test_cases if t.get("passed"))
-    total = len(test_cases)
-    failed = total - passed
+        # Evaluator summary
+        evaluator_summary = l4.get("evaluator_summary")
+        if evaluator_summary:
+            write_subheading("Evaluator Summary")
+            write_text(evaluator_summary, indent=20)
 
-    write(f"Score           : {score}%")
-    write(f"Status          : {status}")
-    write(f"Test Cases      : {passed} Passed / {failed} Failed / {total} Total")
-    write("")
+        # Submitted code
+        submitted_code = l4.get("submitted_code")
+        if submitted_code:
+            write_subheading("SUBMITTED CODE")
+            write_code_block(submitted_code)
+        else:
+            write_text("No code submission found.", indent=20)
 
-    # ============================================================
-    # Evaluator Summary
-    # ============================================================
-    write("Evaluator Summary:")
-    write(generate_l4_summary(l4))
-    write("")
-    write("-" * 95)
-
-    # ============================================================
-    # Test Case Details
-    # ============================================================
-    if test_cases:
-        write("Test Case Details:")
-        for idx, tc in enumerate(test_cases, start=1):
-            write(f"Test Case {idx}:")
-            write(f"Input    : {tc.get('input')}")
-            write(f"Expected : {tc.get('expected')}")
-            write(f"Actual   : {tc.get('actual')}")
-            write(f"Result   : {'PASS' if tc.get('passed') else 'FAIL'}")
-            write("-" * 60)
-    else:
-        write("No test case execution data available.")
-
-    write("")
-    write("=" * 95)
-
-    # ============================================================
-    # SUBMITTED CODE
-    # ============================================================
-    submitted_code = l4.get("submitted_code")
-    if submitted_code:
-        write("SUBMITTED CODE:")
-        write("-" * 95)
-        write(submitted_code)
-    else:
-        write("No code submission found.")
-
+    # =====================================================
+    # FINALIZE
+    # =====================================================
     c.save()
     return pdf_path

@@ -61,11 +61,19 @@ def build_question_index(candidate_data: dict) -> Dict[str, Tuple[str, str]]:
     return index
 
 
+from typing import Dict, Any
+import os
+import json
+
+
 # =========================================================
 # L4 EVALUATION (SINGLE SOURCE OF TRUTH)
 # =========================================================
-
 def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
+
+    # -----------------------------------------------------
+    # Case 1: No result file
+    # -----------------------------------------------------
     if not os.path.exists(result_path):
         spreadsheet_id = save_round_result(
             uid=candidate_data["uid"],
@@ -86,8 +94,16 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
             "status": "NO_RESPONSE",
             "spreadsheet_id": spreadsheet_id,
             "details": [],
+            # NEW (safe defaults)
+            "submitted_code": None,
+            "test_cases": [],
+            "passed_test_cases": 0,
+            "failed_test_cases": 0,
         }
 
+    # -----------------------------------------------------
+    # Case 2: Result exists
+    # -----------------------------------------------------
     with open(result_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -96,8 +112,32 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
     score_percent = float(data.get("score_percent", 0))
     focus_lost = int(data.get("focus_lost", 0))
 
-    status = "PASS" if score_percent >= 75 and focus_lost == 0 else "FAIL"
+    # ✅ PASS threshold changed to 65%
+    status = "PASS" if score_percent >= 65 else "FAIL"
 
+    # -----------------------------------------------------
+    # Structured test case extraction (NEW)
+    # -----------------------------------------------------
+    raw_test_cases = data.get("test_cases", [])
+    structured_test_cases = []
+
+    for idx, tc in enumerate(raw_test_cases, start=1):
+        expected = tc.get("expected_output")
+        actual = tc.get("actual_output")
+
+        structured_test_cases.append({
+            "test_case_id": idx,
+            "input": tc.get("input"),
+            "expected_output": expected,
+            "actual_output": actual,
+            "passed": expected == actual,
+        })
+
+    failed = max(total - passed, 0)
+
+    # -----------------------------------------------------
+    # Save to Google Sheets (unchanged behavior)
+    # -----------------------------------------------------
     spreadsheet_id = save_round_result(
         uid=candidate_data["uid"],
         candidate_name=candidate_data["name"],
@@ -110,6 +150,9 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
         focus_violations=focus_lost,
     )
 
+    # -----------------------------------------------------
+    # Final result (BACKWARD + FORWARD compatible)
+    # -----------------------------------------------------
     return {
         "round_name": "L4",
         "total_questions": total,
@@ -117,17 +160,29 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
         "score_percent": score_percent,
         "status": status,
         "spreadsheet_id": spreadsheet_id,
+
+        # Existing UI-compatible field
         "details": [
-            {
-                "title": "Coding Test",
-                "user_answer": f"{passed}/{total}",
-                "correct_answer": ">= 75% and no focus loss",
-                "is_correct": status == "PASS",
-            }
-        ],
+    {
+        "title": "Coding Test",
+        "user_answer": f"{passed}/{total}",
+        "correct_answer": ">= 65%",
+        "is_correct": status == "PASS",
+    },
+    {
+        "title": "Focus Warnings",
+        "user_answer": str(focus_lost),
+        "correct_answer": "Informational only",
+        "is_correct": True,
     }
+],
 
-
+        # NEW structured fields (used by PDF)
+        "submitted_code": data.get("submitted_code"),
+        "test_cases": structured_test_cases,
+        "passed_test_cases": passed,
+        "failed_test_cases": failed,
+    }
 # =========================================================
 # CORE EVALUATION (MCQ ROUNDS)
 # =========================================================

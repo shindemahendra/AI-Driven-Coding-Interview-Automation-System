@@ -1,3 +1,13 @@
+import sys
+from pathlib import Path
+
+# ================================================================
+# PATH FIX
+# ================================================================
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
 from dotenv import load_dotenv
 
 from src.utils.reports.l4_pdf_generator import generate_l4_pdf
@@ -5,10 +15,9 @@ from src.utils.reports.l4_pdf_generator import generate_l4_pdf
 load_dotenv()
 
 import os
-import sys
+
 import time
 import subprocess
-from pathlib import Path
 import socket
 
 import streamlit as st
@@ -126,12 +135,7 @@ def get_vm_ip():
     return ip
 
 
-# ================================================================
-# PATH FIX
-# ================================================================
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.append(str(PROJECT_ROOT))
+
 
 # ================================================================
 # STATE MANAGER
@@ -807,7 +811,7 @@ for label in ui["evaluation_selected_candidates"]:
 
     with btn_col:
         if st.button(
-                "📄 Save Results as CSV",
+                "📄 Generate Report",
                 key=f"csv_btn_{uid}"
         ):
             ids = generate_candidate_csv_and_upload(

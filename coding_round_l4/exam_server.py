@@ -115,6 +115,8 @@ def run_code():
     lang = data["language"]
     submit = bool(data.get("submit", False))
     run_hidden = bool(data.get("run_hidden", False))
+
+    # 🔹 PHASE 2: focus_lost is now WARNINGS count
     focus_lost = int(data.get("focus_lost", 0))
 
     public_tests = ASSIGNED_QUESTION["public_tests"]
@@ -127,7 +129,7 @@ def run_code():
     executor = LANG_EXEC[lang]
     passed = 0
 
-    # ➕ NEW: collect per-test results (additive)
+    # 🔹 PHASE 1: structured per-test results
     test_results = []
 
     for idx, t in enumerate(tests):
@@ -146,23 +148,22 @@ def run_code():
         if is_passed:
             passed += 1
 
-        # ➕ NEW: record test details
         test_results.append({
             "index": idx + 1,
             "input": t["input"],
-            "expected": expected,
-            "actual": actual,
+            "expected_output": expected,
+            "actual_output": actual,
             "passed": is_passed,
             "visibility": "public" if t in public_tests else "hidden"
         })
 
     total = len(tests)
-    score = round((passed / total) * 100, 2)
+    score = round((passed / total) * 100, 2) if total else 0.0
 
-    status = "PASS"
-    if score < 75:
-        status = "FAIL"
+    # 🔹 PHASE 2: PASS / FAIL decided ONLY by score (65%)
+    status = "PASS" if score >= 65 else "FAIL"
 
+    # 🔹 PHASE 1: persist full L4 result
     if submit:
         with open(RESULT_FILE, "w", encoding="utf-8") as f:
             json.dump({
@@ -170,9 +171,16 @@ def run_code():
                 "total": total,
                 "score_percent": score,
                 "language": lang,
+
+                # warnings only, NOT used for fail
                 "focus_lost": focus_lost,
+
                 "status": status,
-                "timestamp": datetime.utcnow().isoformat()
+                "timestamp": datetime.utcnow().isoformat(),
+
+                # 🔥 NEW (core requirement)
+                "submitted_code": code,
+                "test_cases": test_results
             }, f, indent=2)
 
     return jsonify({
@@ -181,8 +189,9 @@ def run_code():
         "score_percent": score,
         "status": status,
 
-        # ➕ NEW FIELD (safe, optional)
-        "test_results": test_results
+        # Optional, safe response data
+        "test_results": test_results,
+        "focus_warnings": focus_lost
     })
 
 if __name__ == "__main__":
