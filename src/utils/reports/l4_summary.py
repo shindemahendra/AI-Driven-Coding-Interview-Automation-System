@@ -1,29 +1,38 @@
+def summarize_round(round_name: str, result: dict) -> str:
+    score = result.get("score_percent", 0)
+    status = result.get("status", "NO_RESPONSE")
+
+    if status == "NO_RESPONSE":
+        return f"{round_name}: Not attempted."
+
+    if score >= 85:
+        return f"{round_name}: Strong performance with high accuracy."
+    elif score >= 60:
+        return f"{round_name}: Moderate performance with acceptable understanding."
+    elif score > 0:
+        return f"{round_name}: Basic attempt; improvement needed."
+    else:
+        return f"{round_name}: Unable to demonstrate required skills."
+
+
 def generate_l4_summary(l4_result: dict) -> str:
     """
-    Generates a short, HR-friendly summary for L4 coding round
+    Dedicated L4 coding summary
     """
-
     score = l4_result.get("score_percent", 0)
-    passed = l4_result.get("passed_test_cases", 0)
-    total = l4_result.get("total_test_cases", 0)
-    status = l4_result.get("status", "NO_RESPONSE")
 
-    if status != "PASS" or score == 0:
-        return "Candidate was unable to provide a working solution."
-
-    if score >= 85 and passed == total:
+    if score >= 85:
         return (
-            "Strong coding skills demonstrated. "
-            "Solution passed all test cases with correct logic."
+            "Excellent coding skills demonstrated. "
+            "Solution is logically sound and passes most or all test cases."
         )
-
-    if score >= 60:
+    elif score >= 60:
         return (
-            "Moderate performance. "
-            "Solution passed some test cases but requires optimization or edge case handling."
+            "Good problem-solving approach, but solution "
+            "has partial correctness or misses edge cases."
         )
-
-    return (
-        "Basic attempt observed. "
-        "Solution logic is incomplete or fails multiple test cases."
-    )
+    else:
+        return (
+            "Candidate attempted the problem but could not "
+            "produce a correct or complete solution."
+        )

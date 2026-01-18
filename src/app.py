@@ -1,4 +1,7 @@
 from dotenv import load_dotenv
+
+from src.utils.reports.l4_pdf_generator import generate_l4_pdf
+
 load_dotenv()
 
 import os
@@ -624,8 +627,8 @@ from datetime import datetime
 def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
     """
     VM-ONLY IMPLEMENTATION (Ubuntu)
-    - Generates CSV
-    - Generates L4 PDF
+    - Generates CSV (unchanged logic)
+    - Generates detailed PDF (ALL rounds + L4 deep dive)
     - Uploads both to SAME Drive folder
     """
 
@@ -665,7 +668,7 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
     csv_path = os.path.join(local_dir, filename)
 
     # ============================================================
-    # Write CSV
+    # Write CSV (UNCHANGED)
     # ============================================================
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
@@ -726,47 +729,48 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
     csv_file_id = uploaded_csv["id"]
 
     # ============================================================
-    # L4 PDF generation + upload
+    # PDF generation (ALL rounds + detailed L4)
     # ============================================================
-    pdf_file_id = None
-    l4_result = results.get("L4")
+    pdf_path = generate_l4_pdf(
+        output_dir=local_dir,
+        uid=uid,
+        cand=cand,
+        all_results=results,   # ✅ correct call-site change
+    )
 
-    if l4_result:
-        pdf_path = generate_l4_pdf(
-            output_dir=local_dir,
-            uid=uid,
-            cand=cand,
-            l4_result=l4_result,
-        )
+    pdf_name = os.path.basename(pdf_path)
 
-        pdf_name = os.path.basename(pdf_path)
+    # ============================================================
+    # Delete existing PDF in Drive (if any)
+    # ============================================================
+    query = (
+        f"name='{pdf_name}' and "
+        f"'{role_folder_id}' in parents and trashed=false"
+    )
 
-        # Delete existing PDF if any
-        query = (
-            f"name='{pdf_name}' and "
-            f"'{role_folder_id}' in parents and trashed=false"
-        )
+    existing_pdfs = drive.files().list(
+        q=query,
+        fields="files(id)"
+    ).execute().get("files", [])
 
-        existing_pdfs = drive.files().list(
-            q=query,
-            fields="files(id)"
-        ).execute().get("files", [])
+    for f in existing_pdfs:
+        drive.files().delete(fileId=f["id"]).execute()
 
-        for f in existing_pdfs:
-            drive.files().delete(fileId=f["id"]).execute()
+    # ============================================================
+    # Upload PDF
+    # ============================================================
+    media = MediaFileUpload(pdf_path, mimetype="application/pdf")
 
-        media = MediaFileUpload(pdf_path, mimetype="application/pdf")
+    uploaded_pdf = drive.files().create(
+        body={
+            "name": pdf_name,
+            "parents": [role_folder_id],
+        },
+        media_body=media,
+        fields="id",
+    ).execute()
 
-        uploaded_pdf = drive.files().create(
-            body={
-                "name": pdf_name,
-                "parents": [role_folder_id],
-            },
-            media_body=media,
-            fields="id",
-        ).execute()
-
-        pdf_file_id = uploaded_pdf["id"]
+    pdf_file_id = uploaded_pdf["id"]
 
     # ============================================================
     # Return IDs
@@ -775,6 +779,7 @@ def generate_candidate_csv_and_upload(uid: str, cand: dict, results: dict):
         "csv_file_id": csv_file_id,
         "pdf_file_id": pdf_file_id,
     }
+
 
 
 
