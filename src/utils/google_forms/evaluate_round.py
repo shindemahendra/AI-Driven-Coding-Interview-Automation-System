@@ -65,7 +65,6 @@ from typing import Dict, Any
 import os
 import json
 
-
 # =========================================================
 # L4 EVALUATION (SINGLE SOURCE OF TRUTH)
 # =========================================================
@@ -94,7 +93,6 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
             "status": "NO_RESPONSE",
             "spreadsheet_id": spreadsheet_id,
             "details": [],
-            # NEW (safe defaults)
             "submitted_code": None,
             "test_cases": [],
             "passed_test_cases": 0,
@@ -112,11 +110,11 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
     score_percent = float(data.get("score_percent", 0))
     focus_lost = int(data.get("focus_lost", 0))
 
-    # ✅ PASS threshold changed to 65%
+    # ✅ PASS threshold = 65%
     status = "PASS" if score_percent >= 65 else "FAIL"
 
     # -----------------------------------------------------
-    # Structured test case extraction (NEW)
+    # Structured test case extraction
     # -----------------------------------------------------
     raw_test_cases = data.get("test_cases", [])
     structured_test_cases = []
@@ -136,7 +134,7 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
     failed = max(total - passed, 0)
 
     # -----------------------------------------------------
-    # Save to Google Sheets (unchanged behavior)
+    # Save to Google Sheets
     # -----------------------------------------------------
     spreadsheet_id = save_round_result(
         uid=candidate_data["uid"],
@@ -151,7 +149,7 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
     )
 
     # -----------------------------------------------------
-    # Final result (BACKWARD + FORWARD compatible)
+    # Final return (UI + PDF compatible)
     # -----------------------------------------------------
     return {
         "round_name": "L4",
@@ -161,21 +159,20 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
         "status": status,
         "spreadsheet_id": spreadsheet_id,
 
-        # Existing UI-compatible field
         "details": [
-    {
-        "title": "Coding Test",
-        "user_answer": f"{passed}/{total}",
-        "correct_answer": ">= 65%",
-        "is_correct": status == "PASS",
-    },
-    {
-        "title": "Focus Warnings",
-        "user_answer": str(focus_lost),
-        "correct_answer": "Informational only",
-        "is_correct": True,
-    }
-],
+            {
+                "title": "Coding Test",
+                "user_answer": f"{passed}/{total}",
+                "correct_answer": ">= 65%",
+                "is_correct": status == "PASS",
+            },
+            {
+                "title": "Focus Warnings",
+                "user_answer": str(focus_lost),
+                "correct_answer": "Informational only",
+                "is_correct": True,
+            },
+        ],
 
         # NEW structured fields (used by PDF)
         "submitted_code": data.get("submitted_code"),
@@ -183,6 +180,8 @@ def evaluate_l4_round(result_path: str, candidate_data: dict) -> Dict[str, Any]:
         "passed_test_cases": passed,
         "failed_test_cases": failed,
     }
+
+
 # =========================================================
 # CORE EVALUATION (MCQ ROUNDS)
 # =========================================================

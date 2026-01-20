@@ -209,6 +209,15 @@ DOMAIN_OPTIONS = ["None", "Storage", "Virtualization", "Networking"]
 # DEFAULTS
 # ================================================================
 ui.setdefault("candidates", [])
+# ------------------------------------------------
+# Backward compatibility for existing candidates
+# ------------------------------------------------
+for cand in ui["candidates"]:
+    if "tests_generated" not in cand:
+        cand["tests_generated"] = bool(cand.get("forms"))
+    if "email_sent" not in cand:
+        cand["email_sent"] = False
+
 ui.setdefault("evaluation_cache", {})
 ui.setdefault("evaluation_selected_candidates", [])
 ui.setdefault("evaluation_round", "L1")
@@ -262,6 +271,8 @@ if len(ui["candidates"]) < 30:
             "domain": "None",
             "forms": None,
             "json_path": None,
+            "tests_generated": False,  # 👈 NEW
+            "email_sent": False,  # 👈 for resend UX
         })
         commit_state()
 
@@ -300,13 +311,14 @@ for idx, cand in enumerate(ui["candidates"]):
         key=f"domain_{idx}",
     )
 
-    # -------- Send Email Button --------
-    if cols[4].button("📧 Send Links", key=f"mail_{idx}"):
+    # -------- Send / Resend Email Button --------
+    btn_label = "📧 Resend Links" if cand.get("email_sent") else "📧 Send Links"
+
+    if cols[4].button(btn_label, key=f"mail_{idx}"):
 
         if not cand.get("forms"):
             st.warning("⚠️ Generate tests before sending email.")
         else:
-            # Human readable labels (already correct)
             round_labels = {
                 rnd: get_round_label(
                     cand["role"],
@@ -317,26 +329,24 @@ for idx, cand in enumerate(ui["candidates"]):
             }
 
             try:
-                # 🔥 USE FORMS AS-IS (FULL URLs)
                 email_links = build_email_links(cand["forms"])
-
-                # DEBUG (KEEP THIS FOR NOW)
-                st.write("EMAIL LINKS BEING SENT:")
-                st.json(email_links)
 
                 send_assessment_email(
                     candidate_name=cand["name"],
                     candidate_email=cand["email"],
                     company_name="Aziro Technologies Pvt Ltd",
-                    round_links=email_links,  # ✅ FULL URLs
+                    round_links=email_links,
                     round_labels=round_labels,
                 )
+
+                # ✅ THIS IS THE IMPORTANT PART
+                cand["email_sent"] = True
+                commit_state()
 
                 st.success(f"✅ Email sent to {cand['email']}")
 
             except Exception as e:
                 st.error(f"❌ Email failed: {e}")
-
 
     # -------- Remove Candidate --------
     if cols[5].button("✕", key=f"remove_{idx}"):
@@ -349,11 +359,18 @@ for idx, cand in enumerate(ui["candidates"]):
 # ================================================================
 # GENERATE TESTS
 # ================================================================
-if st.button("🚀 Generate Tests for All Candidates"):
-    progress = st.progress(0)
-    total = len(ui["candidates"])
+if st.button("🚀 Generate Tests for New Candidates"):
+    pending = [c for c in ui["candidates"] if not c.get("tests_generated")]
 
-    for i, cand in enumerate(ui["candidates"], start=1):
+    if not pending:
+        st.info("✅ All candidates already have generated tests.")
+        st.stop()
+
+    progress = st.progress(0)
+    total = len(pending)
+
+    for i, cand in enumerate(pending, start=1):
+
 
         domain_selected = cand["domain"] != "None"
 
@@ -398,8 +415,14 @@ if st.button("🚀 Generate Tests for All Candidates"):
         proc = subprocess.Popen(
             [sys.executable, PROJECT_ROOT / "coding_round_l4" / "exam_server.py", str(port)],
             cwd=str(PROJECT_ROOT / "coding_round_l4"),
+            env={
+                **os.environ,
+                "CANDIDATE_UID": uid,  # 🔥 KEY FIX
+            }
         )
-        st.session_state.l4_process = proc
+
+        st.session_state.setdefault("l4_processes", {})
+        st.session_state.l4_processes[uid] = proc
 
         time.sleep(1)
         forms["L4"] = f"http://{get_vm_ip()}:{port}"
@@ -407,45 +430,70 @@ if st.button("🚀 Generate Tests for All Candidates"):
         cand["forms"] = forms
         cand["json_path"] = json_path
 
-        progress.progress(i / total)
+        # 🔥 ADD THIS (Step 3)
+        cand["l4_result_path"] = str(
+            PROJECT_ROOT / "coding_round_l4" / f"l4_result_{uid}.json"
+        )
 
-    commit_state()
+        cand["tests_generated"] = True
+        commit_state()
+
     st.success("All candidate tests generated successfully")
 
+
+# st.markdown("---")
+# st.markdown("### Add More Candidates")
+
+if st.button("➕ Add More Candidates"):
+    ui["candidates"].append({
+        "name": "",
+        "email": "",
+        "role": list(ROLE_OPTIONS.values())[0],
+        "domain": "None",
+        "forms": None,
+        "json_path": None,
+        "tests_generated": False,
+        "email_sent": False,
+    })
+    commit_state()
+    st.rerun()   # ✅ THIS IS THE FIX
+
 # ================================================================
-# TEST LINKS (FINAL – SAFE FOR MIXED TYPES)
+# TEST LINKS (COMPACT & CLEAN)
 # ================================================================
 if ui["candidates"]:
-    st.header("Test Links")
+    st.markdown(
+        "<h4 style='margin-bottom:4px;'>Generated Tests</h4>",
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        "<hr style='margin:4px 0 8px 0;'>",
+        unsafe_allow_html=True
+    )
 
     for cand in ui["candidates"]:
         if not cand.get("forms"):
             continue
 
-        st.subheader(cand["name"])
-        cols = st.columns(6)
+        # Candidate name (tight spacing)
+        st.markdown(
+            f"<div style='font-weight:600; margin-bottom:2px;'>{cand['name']}</div>",
+            unsafe_allow_html=True
+        )
 
-        for i, lvl in enumerate(["L1", "L2", "L3", "L4", "L5", "L6"]):
+        # Test links with spacing
+        links_html = []
+        for lvl in ["L1", "L2", "L3", "L4", "L5", "L6"]:
             entry = cand["forms"].get(lvl)
             if not entry:
                 continue
 
-            # -------------------------------
-            # L4 = coding server (string URL)
-            # -------------------------------
             if lvl == "L4":
                 url = entry
-
-            # -------------------------------
-            # MCQ rounds = dict with responder_url
-            # -------------------------------
             elif isinstance(entry, dict):
                 url = entry.get("responder_url")
-
             else:
-                continue
-
-            if not url:
                 continue
 
             label = get_round_label(
@@ -454,9 +502,15 @@ if ui["candidates"]:
                 None if cand["domain"] == "None" else cand["domain"]
             )
 
-            cols[i].markdown(f"[{label} ({lvl})]({url})")
+            links_html.append(
+                f"<a href='{url}' target='_blank' style='margin-right:12px;'>{label}</a>"
+            )
 
-# ================================================================
+        st.markdown(
+            f"<div style='margin-bottom:8px;'>{''.join(links_html)}</div>",
+            unsafe_allow_html=True
+        )
+
 # EVALUATION
 # ================================================================
 st.divider()
@@ -525,13 +579,15 @@ if st.button("Evaluate Selected", key="eval_btn"):
             # -------- L4 (CODING) --------
             if rnd == "L4":
                 res = evaluate_l4_round(
-                    str(PROJECT_ROOT / "coding_round_l4" / "l4_result.json"),
-                    {
+                    result_path=cand.get("l4_result_path"),
+                    candidate_data={
                         "uid": uid,
                         "name": cand["name"],
                         "email": cand["email"],
                     }
                 )
+
+
 
             elif rnd in cand.get("forms", {}):
                 form_entry = cand["forms"].get(rnd)
