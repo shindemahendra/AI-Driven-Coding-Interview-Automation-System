@@ -1,15 +1,58 @@
-# Google Credentials
+# ================================
+# 🔐 Secrets & Credentials
+# ================================
 credentials.json
 service_account.json
 token.pickle
-venv/
-__pycache__/
+token.json
 .env
+
+# ================================
+# 🐍 Python / Virtual Environments
+# ================================
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+
+# ================================
+# 📦 IDE / OS Files
+# ================================
 .idea/
 .vscode/
 .DS_Store
-credentials.json
-token.json
-.idea/
-credentials.json
+
+# ================================
+# 🧪 Runtime / Generated Files
+# ================================
+runtime_state/
+timed_forms/
+
+# ================================
+# 🧠 Coding Round L4 (Runtime Artifacts)
+# ================================
+coding_round_l4/*.json
+coding_round_l4/*.txt
+coding_round_l4/*.java
+coding_round_l4/*.js
+coding_round_l4/*.py
+coding_round_l4/temp_user_code.*
+
+# ================================
+# 📊 Logs
+# ================================
+*.log
+streamlit_*.log
+
+# ================================
+# 🧪 Test Artifacts
+# ================================
+question_bank/tests/
+
+# ================================
+# 🧰 Local-only Scripts
+# ================================
+start_hr_sessions.sh
+
